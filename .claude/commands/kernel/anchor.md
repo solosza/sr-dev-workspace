@@ -1,6 +1,6 @@
 # /kernel/anchor
 
-Re-center on protocol. Invoke at session start, every 5 actions, or when context drifts.
+Re-center on protocol. Invoke at session start, every 10 actions, or when context drifts.
 
 ## Instructions
 
@@ -95,7 +95,7 @@ Re-center on protocol. Invoke at session start, every 5 actions, or when context
 ## When to Invoke
 
 - After `/kernel/session-start` (mandatory - hook enforced)
-- Every 5 actions (Write, Edit, Bash) - hook enforced
+- Every 10 actions (Write, Edit, Bash) - hook enforced
 - After any failure (before fixing)
 - When resuming from break
 - When context seems off

@@ -17,7 +17,7 @@ When user gives any task or says "continue":
 ```
 session-start → anchor → WORK ─────────────────→ complete
                    ↑         ↓                       ↑
-                   └─ every 5 actions ←──────────────┘
+                   └─ every 10 actions ←─────────────┘
                              ↓
                    failure? → fix → learn (MANDATORY)
 ```
@@ -28,14 +28,14 @@ session-start → anchor → WORK ───────────────�
 WORK:
   1. Write/Edit/Bash (any action)
   2. Hook AUTO-INCREMENTS counter (you don't need to)
-  3. Every 5 actions → hook blocks → /kernel/anchor
+  3. Every 10 actions → hook blocks → /kernel/anchor
   4. Run tests
   5. If test fails → fix → /kernel/learn
   6. Repeat until done
   7. /kernel/complete
 ```
 
-**Auto Counter:** Hook automatically tracks Write, Edit, AND Bash. Blocks at 5 actions (configurable via `actions_limit`). You do NOT need to increment manually.
+**Auto Counter:** Hook automatically tracks Write, Edit, AND Bash. Blocks at 10 actions (configurable via `actions_limit`). You do NOT need to increment manually.
 
 ### Learn Triggers (Enforced by Hook)
 

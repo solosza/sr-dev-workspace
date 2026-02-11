@@ -138,7 +138,7 @@ def main():
 
         # Gate 4: Action limit (Write, Edit, Bash all count)
         # AUTO-INCREMENT: Hook increments counter, not agent
-        actions_limit = domain_state.get('actions_limit', 7)
+        actions_limit = domain_state.get('actions_limit', 10)
         actions_since = domain_state.get('actions_since_anchor', 0)
 
         # Increment BEFORE checking (this action counts)

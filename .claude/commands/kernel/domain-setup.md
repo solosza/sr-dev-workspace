@@ -199,14 +199,14 @@ Create `.claude/state/[normalized_domain]_workflow.json`:
   "hooks_created": true,
   "anchored": false,
   "actions_since_anchor": 0,
-  "actions_limit": 7,
+  "actions_limit": 10,
   "timestamp": "..."
 }
 ```
 
 **Counter Fields:**
 - `actions_since_anchor`: Hook auto-increments on Write/Edit/Bash
-- `actions_limit`: Configurable limit (default 7) before anchor required
+- `actions_limit`: Configurable limit (default 10) before anchor required
 
 **IMPORTANT:** The domain value in session_state.json MUST match the workflow filename prefix.
 
