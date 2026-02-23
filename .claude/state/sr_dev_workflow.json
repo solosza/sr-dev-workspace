@@ -1,0 +1,21 @@
+{
+  "domain": "sr_dev",
+  "setup_complete": true,
+  "protocol_created": true,
+  "commands_created": true,
+  "hooks_created": true,
+  "anchored": true,
+  "anchor_timestamp": "2026-02-22T11:00:00Z",
+  "actions_since_anchor": 2,
+  "actions_limit": 10,
+  "validated": false,
+  "files_checked": [],
+  "lesson_recorded": true,
+  "lessons_count": 1,
+  "last_lesson": "Agent bypassed hook enforcement by editing state directly",
+  "last_lesson_timestamp": "2026-02-21T03:45:00Z",
+  "hooks_updated": true,
+  "timestamp": "2026-02-20T13:30:00Z",
+  "complete": true,
+  "complete_timestamp": "2026-02-20T14:30:00Z"
+}

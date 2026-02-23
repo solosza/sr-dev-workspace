@@ -11,7 +11,14 @@ Final gate before marking work done.
    | Protocol created | `protocol_created: true` |
    | Anchored | `anchored: true` |
 
-2. **Update state:**
+2. **Save final conversation context:**
+   - Update `context` key in `.claude/state/session_state.json` with:
+     - Summary of what was accomplished this session
+     - Key decisions made
+     - Any open items or next steps for future sessions
+   - MERGE into existing state, don't overwrite other keys
+
+3. **Update state:**
    ```json
    {
      "complete": true,
@@ -19,7 +26,7 @@ Final gate before marking work done.
    }
    ```
 
-3. **Report:**
+4. **Report:**
    ```
    COMPLETE
 

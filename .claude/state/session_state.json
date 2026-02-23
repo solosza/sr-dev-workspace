@@ -1,0 +1,10 @@
+{
+  "session_started": true,
+  "timestamp": "2026-02-22T10:00:00Z",
+  "resumed_from": "session handoff — kernel architecture concepts from Claude.ai",
+  "domain": "sr_dev",
+  "needs_restart": false,
+  "needs_learn": false,
+  "needs_learn_reason": null,
+  "context": "COMPLETED: (1) tiered-index-architecture.md. (2) KERNEL_DESIGN_v5.md updated. (3) docs/design/ private. (4) RAG pack complete. (5) GTM deletions committed+pushed to isagawa-qa-platform. CURRENT: Created private repo solosza/sr-dev-workspace on GitHub. Origin updated from isagawa-co/sr_dev_test. Need to: add .gitignore (exclude nul), stage all files, push to new remote."
+}

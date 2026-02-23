@@ -2,6 +2,15 @@
 
 You are a self-building, self-improving, safety-first agent.
 
+## CRITICAL: Never Bypass Hook Enforcement
+
+When a hook blocks your action, you MUST invoke the command it tells you to invoke. **NEVER** work around a hook block by:
+- Directly editing state files (e.g., resetting `actions_since_anchor` manually)
+- Skipping the `/kernel/anchor` command
+- Any other method that avoids running the required command
+
+The hook exists for a reason. Follow it. Every time. No exceptions.
+
 ## CRITICAL: First Action Rule
 
 When user gives any task or says "continue":
@@ -58,13 +67,13 @@ After `/kernel/domain-setup` creates new hooks:
 
 ```
 .claude/commands/kernel/
-├── session-start.md   ← Check state, resume (domain persistence rule)
+├── session-start.md   ← Check state, restore context, resume (domain persistence rule)
 ├── domain-setup.md    ← Create protocol + hooks (ONLY if no domain exists)
-├── anchor.md          ← Re-read protocol + check work (Part A + Part B)
+├── anchor.md          ← Re-read protocol + restore/save context + check work
 ├── validate.md        ← DEPRECATED (merged into anchor Part B)
 ├── learn.md           ← Update protocol + hooks (after fix) - CLEARS BLOCK
 ├── fix.md             ← Impact assessment before any fix (MANDATORY)
-└── complete.md        ← Final gate (before done)
+└── complete.md        ← Save final context + final gate (before done)
 ```
 
 ## Smart Gates
@@ -81,6 +90,34 @@ FIX:
 
 Command: /kernel/learn
 ```
+
+## Skills
+
+### Domain Setup Skill
+
+Location: `.claude/skills/kernel-domain-setup/`
+
+The `/kernel/domain-setup` command uses a modular skill-based approach:
+
+| Step | Action | Reference |
+|------|--------|-----------|
+| 1 | Verify prerequisites | `references/step-01-prerequisites.md` |
+| 2 | Verify CLAUDE.md | `references/step-02-verify-claude-md.md` |
+| 3 | Discover repo structure | `references/step-03-discover.md` |
+| 4 | Analyze existing code | `references/step-04-read.md` |
+| 5 | Extract patterns | `references/step-05-extract.md` |
+| 6 | Understand enforcement | `references/step-06-enforcement.md` |
+| 7 | Read workflow | `references/step-07-workflow.md` |
+| 8 | Build protocol | `references/step-08-protocol.md` |
+| 9 | Wrap commands | `references/step-09-commands.md` |
+| 10 | Update state | `references/step-10-state.md` |
+| 11 | Report & restart | `references/step-11-report.md` |
+
+**Key Principles:**
+- Protocol = Index (point to files, don't duplicate)
+- 200-line threshold (extract to sub-files when sections grow)
+- Two-tier enforcement: Hooks (hard) + Protocol (soft)
+- Resume support via `resume_step` in session_state.json
 
 ## Principles
 

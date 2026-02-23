@@ -25,6 +25,7 @@ SKIP_PATTERNS = [
     r'_test\.',
     r'\.spec\.',
     r'spec_',
+    r'docs/design/',
 ]
 
 # Debug statement patterns by extension

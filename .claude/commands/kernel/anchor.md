@@ -21,13 +21,18 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
    - Note any recent additions
    - These are mistakes to avoid
 
+4. **Restore conversation context:**
+   - Read `context` key from `.claude/state/session_state.json`
+   - If exists, internalize prior decisions, direction changes, and task thread
+   - This recovers context that may have been lost to context window compression
+
 ### Part B: Check Recent Work (if any)
 
-4. **Review recent work:**
+5. **Review recent work:**
    - What files were created/modified since last anchor?
-   - If none, skip to Step 7
+   - If none, skip to Step 8
 
-5. **Check against protocol:**
+6. **Check against protocol:**
 
    | Check | Status |
    |-------|--------|
@@ -36,7 +41,7 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
    | Anti-patterns avoided? | ✓/✗ |
    | Quality gates passed? | ✓/✗ |
 
-6. **If violation found:**
+7. **If violation found:**
    - STOP
    - Set `needs_learn: true, needs_learn_reason: "anchor_violation"` in session_state.json
    - Fix the violation
@@ -45,11 +50,20 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
 
 ### Part C: Reset and Proceed
 
-7. **State current task:**
+8. **Save conversation context:**
+   - Update `context` key in `.claude/state/session_state.json` with:
+     - Key decisions made since last anchor
+     - Direction changes or pivots
+     - Current task thread and next steps
+     - Any user preferences or constraints discovered
+   - Keep concise — key/value pairs, not narrative
+   - MERGE into existing state, don't overwrite other keys
+
+9. **State current task:**
    - What are you about to do?
    - How does it fit the protocol?
 
-8. **Update state:**
+10. **Update state:**
 
    Update `.claude/state/[domain]_workflow.json`:
    ```json
@@ -68,7 +82,7 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
    }
    ```
 
-9. **Confirm:**
+11. **Confirm:**
    ```
    ANCHORED: [domain]
 

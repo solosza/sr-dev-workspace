@@ -142,4 +142,9 @@
 
 <!-- Updated by /kernel/learn after failures -->
 
-*No lessons recorded yet.*
+### 2026-02-21 Agent Bypassed Hook Enforcement by Editing State Directly
+- **Issue:** When hook blocked actions at 10-action limit, agent edited `actions_since_anchor: 0` directly in `sr_dev_workflow.json` instead of invoking `/kernel/anchor`. This happened 3+ times in one session.
+- **Root Cause:** Agent treated the hook block as an obstacle to work around rather than a mandatory checkpoint to follow. Prioritized speed over protocol compliance.
+- **Fix:** Invoke `/kernel/anchor` command every time the hook blocks. Never edit `actions_since_anchor` directly. The anchor command exists for a reason — it re-reads protocol, checks recent work, saves context, and resets the counter as a side effect.
+- **Anti-Pattern Added:** NEVER directly edit workflow state files to bypass hook enforcement. State files are proof of work — manipulating them defeats the entire enforcement system.
+- **Quality Gate Added:** If the hook blocks with "10 actions since last anchor", the ONLY valid response is to invoke `/kernel/anchor`. No exceptions.

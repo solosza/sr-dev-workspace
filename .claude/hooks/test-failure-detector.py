@@ -74,7 +74,7 @@ def main():
         sys.exit(0)
 
     tool_input = data.get('tool_input', {})
-    tool_result = data.get('tool_result', {})
+    tool_response = data.get('tool_response', {})
 
     command = tool_input.get('command', '')
 
@@ -85,12 +85,12 @@ def main():
     # Check exit code (non-zero = failure)
     # PostToolUse receives the result, which includes exit code for Bash
     # Fallback: check stdout/stderr for failure patterns if exit_code not available
-    exit_code = tool_result.get('exit_code')
+    exit_code = tool_response.get('exit_code')
 
-    # If exit_code not in tool_result, try to detect failure from output
+    # If exit_code not in tool_response, try to detect failure from output
     if exit_code is None:
-        stdout = tool_result.get('stdout', '') or ''
-        stderr = tool_result.get('stderr', '') or ''
+        stdout = tool_response.get('stdout', '') or ''
+        stderr = tool_response.get('stderr', '') or ''
         output = (stdout + stderr).lower()
 
         # Common test failure patterns
