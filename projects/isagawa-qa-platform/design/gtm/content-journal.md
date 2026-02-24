@@ -7,6 +7,8 @@ Tracks all published and planned content for Isagawa QA Platform GTM.
 | # | Date | Platform | Type | Title / Hook | File | Engagement |
 |---|------|----------|------|-------------|------|------------|
 | 1 | 2026-02-22 | LinkedIn | Post + Video | "I built a highly scalable, maintainable, enterprise-grade test automation platform powered by AI..." | social-media.md (Section 1) | TBD |
+| X-1 | 2026-02-23 | X (@isagawa_co) | Post (pinned) | "AI can generate test scripts. But without enforcement, every test comes out different..." | See Post Drafts below | TBD |
+| 3 | 2026-02-23 | LinkedIn + X | Post | "Every manual tester has the same fear: AI is going to replace me." | See Post Drafts below | TBD |
 
 ## Ready to Publish
 
@@ -18,12 +20,12 @@ Tracks all published and planned content for Isagawa QA Platform GTM.
 
 | # | Target | Platform | Type | Angle | Notes |
 |---|--------|----------|------|-------|-------|
-| 3 | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model — human approves every fix, 5-option failure protocol |
-| 4 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive — Screenplay-inspired, reference implementations |
-| 5 | TBD | LinkedIn | Post | "I automated 17 tests on a client site in [X] hours" | Business results story — zentyant.app, 4 domains, time savings |
-| 6 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning — what makes enforcement different from instructions |
+| 4 | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model — human approves every fix, 5-option failure protocol |
+| 5 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive — Screenplay-inspired, reference implementations |
+| 6 | TBD | LinkedIn | Post | "I automated 17 tests on a client site in [X] hours" | Business results story — zentyant.app, 4 domains, time savings |
+| 7 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning — what makes enforcement different from instructions |
 | 7 | TBD | Reddit | Posts | r/QualityAssurance, r/selenium, r/softwaretesting, r/ClaudeAI | Drafts in social-media.md |
-| 8 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md. Requires @isagawa account (PENDING) |
+| 8 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md. @isagawa_co account LIVE |
 | 9 | TBD | Blog | Article | "AI Governance vs AI Execution Management" | blog-post.md (ready) |
 | 10 | TBD | Product Hunt | Listing | Launch listing | Draft in social-media.md |
 
@@ -31,10 +33,11 @@ Tracks all published and planned content for Isagawa QA Platform GTM.
 
 1. **Post 1 (published):** Here's what it does — demo video on a live site
 2. **Post 2 (ready):** Here's how it learns — 10 failures on zentyant.app
-3. **Post 3:** Why I don't let AI code alone (HITL)
-4. **Post 4:** 5 layers that make AI-generated tests maintainable (architecture)
-5. **Post 5:** I automated 17 tests on a client site (business results)
-6. **Post 6:** Most AI coding tools suggest. Mine enforces. (competitive)
+3. **Post 3 (published):** Manual testers — AI replaces the gap, not you
+4. **Post 4:** Why I don't let AI code alone (HITL)
+5. **Post 5:** 5 layers that make AI-generated tests maintainable (architecture)
+6. **Post 6:** I automated 17 tests on a client site (business results)
+7. **Post 7:** Most AI coding tools suggest. Mine enforces. (competitive)
 
 ## Tracking Notes
 
@@ -44,6 +47,49 @@ Tracks all published and planned content for Isagawa QA Platform GTM.
 ---
 
 ## Post Drafts
+
+### X Post #1: Introduction (Pinned)
+
+**Status:** Published
+**Date:** 2026-02-23
+**Platform:** X (@isagawa_co)
+
+---
+
+AI can generate test scripts. But without enforcement, every test comes out different, it's inconsistent, unmaintainable, impossible to scale.
+
+We built a system that manages how AI writes tests. Every script follows the same architecture. Industry grade, enterprise quality code, automatically.
+
+Open source. MIT license.
+github.com/isagawa-qa/platform
+
+---
+
+### Post #3: Manual Testers
+
+**Status:** Published
+**Date:** 2026-02-23
+**Platform:** LinkedIn + X (@isagawa_co)
+
+---
+
+Every manual tester has the same fear: "AI is going to replace me."
+Here's what's actually happening, AI is replacing the gap between manual and automation testing.
+
+You don't need to mass learn Python. You don't need a bootcamp. You don't need 2 years of writing test scripts from scratch.
+
+You need to understand what a good test looks like and you already do. You've been writing test cases your entire career. You know the workflows, the edge cases, the places where things break.
+
+The learning curve? Understanding selectors, how to find elements on a page, how to interact with grids, modals, iframes, dropdowns, dynamic tables. The stuff that AI even trips up on. That's what you learn instead of learning to code from scratch. That's only a fraction of the effort it used to take to learn test automation.
+
+My platform lets you take that knowledge and turn it into automated test scripts. AI writes the code and the system enforces the architecture. You tell it what to test, guide it, review the output and approve it.
+
+That's the shift, from writing tests manually to managing how AI writes them for you. The testers who figure this out first won't get replaced. They'll be the ones running automation for entire teams.
+
+Open source. MIT license.
+https://github.com/isagawa-qa/platform
+
+---
 
 ### Post #2: The Learning Loop
 
