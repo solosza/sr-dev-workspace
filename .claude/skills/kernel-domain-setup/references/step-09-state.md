@@ -1,6 +1,8 @@
 # Step 9: Update State
 
-## Session State
+Three files MUST be created/updated. All three are required for the kernel to function.
+
+## 1. Session State
 
 Create/update `.claude/state/session_state.json`:
 
@@ -14,7 +16,7 @@ Create/update `.claude/state/session_state.json`:
 }
 ```
 
-## Workflow State
+## 2. Workflow State
 
 Create `.claude/state/[domain]_workflow.json`:
 
@@ -30,6 +32,57 @@ Create `.claude/state/[domain]_workflow.json`:
   "timestamp": "[ISO-8601]"
 }
 ```
+
+## 3. Hook Registration (REQUIRED)
+
+Create/update `.claude/settings.local.json` to register hooks.
+
+**MERGE RULE:** If `settings.local.json` already exists (e.g., MCP config from Step 1), MERGE the `hooks` key into the existing file. Do NOT overwrite — you will destroy MCP server config and other settings.
+
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/universal-gate-enforcer.py"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/test-failure-detector.py"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**If file already exists:** Read it first, add the `hooks` key, preserve all other keys (`enableAllProjectMcpServers`, `enabledMcpjsonServers`, etc.).
+
+**If PostToolUse hook doesn't exist yet:** Omit the PostToolUse entry. Only register hooks that have corresponding Python files in `.claude/hooks/`.
+
+## Verification Checklist
+
+Before proceeding to Step 10, verify ALL three files exist:
+
+| File | Check |
+|------|-------|
+| `.claude/state/session_state.json` | Contains `domain`, `needs_restart: true` |
+| `.claude/state/[domain]_workflow.json` | Contains `setup_complete: true`, `anchored: false` |
+| `.claude/settings.local.json` | Contains `hooks` key with PreToolUse entry |
+
+**If any file is missing, Step 9 is incomplete. Do not proceed.**
 
 ## State Fields
 

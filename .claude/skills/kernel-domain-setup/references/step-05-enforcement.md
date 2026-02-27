@@ -13,7 +13,21 @@ The universal hook (`.claude/hooks/universal-gate-enforcer.py`) enforces:
 | Anchor | `anchored = true` | `/kernel/anchor` |
 | Actions | `actions_since_anchor <= limit` | `/kernel/anchor` |
 
-This is automatic. No domain-specific configuration needed.
+The hook file is universal — it works for any domain without code changes.
+
+**However, hooks must be REGISTERED in `settings.local.json` to run.** An unregistered hook is a dead file. See **Step 9** for the exact registration template.
+
+## Hook Registration (REQUIRED)
+
+Hooks are Python scripts, but Claude Code only executes them if they're registered in `.claude/settings.local.json` under the `hooks` key. Registration maps trigger events (PreToolUse, PostToolUse) to the hook script path.
+
+**Without registration:**
+- Hook file exists but never executes
+- No gates fire, no counters increment
+- Kernel enforcement is completely absent
+- Agent appears to work but has zero safety rails
+
+Registration is done in Step 9 alongside other state files.
 
 ## Layer 2: Agent Self-Enforcement (via protocol)
 
