@@ -148,3 +148,35 @@ Not all repos need feature branches. The strategy depends on the repo's role:
 - Descriptive commit messages on main already tell the story
 
 **Feature branch naming for product repos:** `feature/` prefix + short kebab-case description of the capability being built. The name describes **what**, not **when**.
+
+## 2026-03-03 First Autonomous Cycling Run — 5 Lessons
+
+### Lesson 1: Learn Self-Enforcement — Hook Is Safety Net, Not Only Trigger
+
+- **Issue:** Agent skipped `/kernel/learn` after test failures when `needs_learn` was not set in state. The hook fix (test-failure-detector) hadn't been restarted yet, so the hook never fired.
+- **Root Cause:** Agent treated `needs_learn: true` in state as the only trigger for `/kernel/learn`. Without the hook setting the flag, the agent continued without recording lessons from failures.
+- **Fix:** Self-enforce: if a test fails (non-zero exit), invoke `/kernel/learn` after fixing — regardless of whether `needs_learn` is set. The hook is a safety net, not the only trigger. Protocol rule added to CLAUDE.md.
+
+### Lesson 2: Complete Gate Possibly Skipped for Specs 003-005
+
+- **Issue:** No visible `Skill(/kernel:complete)` invocation for specs 003-005 in the cycling run. The complete format was printed but the skill may not have been actually invoked.
+- **Root Cause:** Agent may have printed the COMPLETE format without invoking the actual `/kernel/complete` skill. Printing "COMPLETE" is not the same as invoking the gate.
+- **Fix:** Workflow updated to explicitly state: invoke `/kernel/complete` via the Skill tool (NOT by printing the format). The complete command is a gate — it checks state, updates cycling state, and commits. Printing without invoking is a protocol violation.
+
+### Lesson 3: Stale Session State Between Specs
+
+- **Issue:** `session_state.json` context was not updated after spec completion — only during anchor. This means if compaction occurred between specs, the context would reference the previous spec, not the current one.
+- **Root Cause:** `/kernel/complete` cycling continuation updated `[domain]_workflow.json` but did not explicitly require updating `session_state.json` with a completion summary and next-spec context.
+- **Fix:** Complete command updated to require dual state update after each spec: workflow.json tracks cycling state, session_state.json tracks context for compaction recovery. Both MUST be updated.
+
+### Lesson 4: Redundant Spec Created by Domain-Setup
+
+- **Issue:** Step-07 (roadmap) created a placeholder `001-setup.md` when `specs/` already contained populated spec files from the domain spec.
+- **Root Cause:** Step-07 had a blanket rule: "If no domain spec exists yet, create a placeholder." It didn't check whether `specs/` was already populated.
+- **Fix:** Added pre-existing specs check to step-07: if `specs/` directory already exists AND contains `.md` files, report the count and SKIP creation. Only create specs if the directory is empty or missing.
+
+### Lesson 5: Uncommitted Domain-Setup Output
+
+- **Issue:** After domain-setup completed and set `needs_restart: true`, all generated files (framework, commands, protocol, state) were left untracked. On restart, the agent had to work with dirty state.
+- **Root Cause:** No step in domain-setup committed the output before requesting restart. Step-10 (state) created files, step-11 (report) printed the summary, but neither committed.
+- **Fix:** Added a commit step to domain-setup before setting `needs_restart`: git add all domain-setup artifacts and commit with "feat: domain-setup output for [domain]". Ensures clean state on restart.
