@@ -6,6 +6,6 @@
   "needs_restart": false,
   "needs_learn": false,
   "needs_learn_reason": null,
-  "context": "Cycling-fixes plan DONE. cognitive-agent clean on feature/cycling-fixes (d81f368). Lessons tiered into 5 topic files. Next: commit sr_dev_test lessons refactor.",
+  "context": "Writing seeded expert lessons for cognitive-agent. All 7 topic files + 3 sub-payloads complete. advanced-interactions split into index+3 payloads (200-line rule). User now wants folder structure instead of flat file layout for lessons directory. Next: reorganize lessons into sub-folders.",
   "actions_log": []
 }

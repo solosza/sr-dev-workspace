@@ -4,6 +4,23 @@ Issues discovered during first autonomous cycling run (7 specs, 28 tests, ~15 mi
 
 ---
 
+## Testing Context — What We're Doing
+
+cognitive-agent is the testing ground for **kernel + autonomous cycling + domain spec**.
+
+**The test flow:**
+1. Reset cognitive-agent to `origin/main` (clean vanilla kernel)
+2. Create `feature/cycling-fixes` with the 6 fixes cherry-picked on top
+3. Drop the playwright spec into the repo (untracked — domain-setup discovers it)
+4. Run: `session-start` → `domain-setup` → restart → `continue` → `/kernel/autonomous-cycle`
+5. Verify all 6 fixes work during the cycling run
+
+**Domain spec files are UNTRACKED on purpose.** Domain-setup reads them, builds protocol/state/hooks from them, then commits the output. The spec itself stays untracked until domain-setup commits it as part of "feat: domain-setup output for [domain]".
+
+**Don't commit the spec before domain-setup.** Don't ask "should I commit this?" — the answer is always no. The spec is input, not output.
+
+---
+
 ## 2026-03-03 First Autonomous Cycling Run — 5 Lessons
 
 ### Lesson 1: Learn Self-Enforcement — Hook Is Safety Net, Not Only Trigger
