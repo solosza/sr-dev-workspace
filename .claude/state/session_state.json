@@ -6,6 +6,6 @@
   "needs_restart": false,
   "needs_learn": false,
   "needs_learn_reason": null,
-  "context": "Cycling-fixes plan nearly complete. Part 1 DONE: 5 lessons in sr_dev_test. Part 2 DONE: 6 fixes committed on cognitive-agent feature/cycling-fixes (commit 0f89bfb). Remaining: commit sr_dev_test lessons+state (was blocked by hook, now anchored).",
+  "context": "Cycling-fixes plan DONE. cognitive-agent clean on feature/cycling-fixes (d81f368). Lessons tiered into 5 topic files. Next: commit sr_dev_test lessons refactor.",
   "actions_log": []
 }
