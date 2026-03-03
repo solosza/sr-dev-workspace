@@ -13,6 +13,9 @@ Tracks all published and planned content for Isagawa QA Platform GTM.
 | L-1 | 2026-02-24 | LinkedIn | Post + Video | "AI agents drift... So I built a leash." (Kernel governance loop, 48s video) | 67 impressions, 1 reaction, 1 repost |
 | 4 | 2026-02-25 | LinkedIn | Post | "Everyone's talking about spec-driven development. I call it Self-Driven Development." | 45 impressions |
 | 5 | 2026-02-25 | LinkedIn | Post | "I ran the same management system on two completely different tech stacks." | TBD |
+| 6 | 2026-02-26 | LinkedIn | Post + Video | "Live demo found a real bug — full QA cycle in 41 minutes" | 7,488 impressions, 4,433 reached, 42 reactions, 2 comments, 3 reposts, 22 saves, 51 GitHub clicks, 2,820 video views, 24 followers gained. Demographics: 49% IT Services, 48% Senior, 29% 10K+ employees. **BEST POST — use as format template.** |
+| 7 | 2026-02-26 | LinkedIn + X | Post + Video | "Vibe Coder Spec discovery phase — spec-driven development in action" | TBD |
+| 8 | 2026-03-02 | LinkedIn | Post | "I automated 19 tests on a client's production app. Script generation alone: about 8 hours." | TBD |
 
 ## Ready to Publish
 
@@ -120,17 +123,14 @@ https://github.com/isagawa-qa/platform
 
 | # | Target | Platform | Type | Angle | Notes |
 |---|--------|----------|------|-------|-------|
-| 6 | 2026-02-26 | LinkedIn | Post | "Live demo found a real bug — full QA cycle in 41 minutes" | Real story: zentyant.app demo, bug found live, fix + retest |
-| 6b | TBD | LinkedIn | Post | "Monolithic specs get skipped. Here's why." | Tiered indexing, modular specs, 200-line threshold |
-| 7 | 2026-02-26 | LinkedIn + X | Post + Video | "Vibe Coder Spec discovery phase" | SDD discovery video, teases Vibe Coder Spec + Kernel |
-| 7b | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model — human approves every fix, 5-option failure protocol |
-| 8 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive — Screenplay-inspired, reference implementations |
-| 9 | TBD | LinkedIn | Post | "I automated 17 tests on a client site in [X] hours" | Business results story — zentyant.app, 4 domains, time savings |
-| 10 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning — what makes enforcement different from instructions |
-| 11 | TBD | Reddit | Posts | r/QualityAssurance, r/selenium, r/softwaretesting, r/ClaudeAI | Drafts in social-media.md |
-| 12 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md. @isagawa_co account LIVE |
-| 13 | TBD | Blog | Article | "AI Governance vs AI Execution Management" | blog-post.md (ready) |
-| 14 | TBD | Product Hunt | Listing | Launch listing | Draft in social-media.md |
+| 9 | TBD | LinkedIn | Post | "Monolithic specs get skipped. Here's why." | Tiered indexing, modular specs, 200-line threshold |
+| 10 | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model — human approves every fix, 5-option failure protocol |
+| 11 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive — Screenplay-inspired, reference implementations |
+| 12 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning — what makes enforcement different from instructions |
+| 13 | TBD | Reddit | Posts | r/QualityAssurance, r/selenium, r/softwaretesting, r/ClaudeAI | Drafts in social-media.md |
+| 14 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md. @isagawa_co account LIVE |
+| 15 | TBD | Blog | Article | "AI Governance vs AI Execution Management" | blog-post.md (ready) |
+| 16 | TBD | Product Hunt | Listing | Launch listing | Draft in social-media.md |
 
 ## Post Series Arc
 
@@ -140,18 +140,41 @@ https://github.com/isagawa-qa/platform
 4. **Post L-1 (published 2/24):** AI agents drift — "I built a leash" (kernel governance + video)
 5. **Post 4 (published 2/25):** Claim SDD — Self-Driven Development philosophy
 6. **Post 5 (published 2/25):** Portability proof — same kernel, two frameworks, two tech stacks
-7. **Post 6 (ready 2/26):** Live demo bug — full QA cycle in 41 minutes (real story)
-8. **Post 7 (ready 2/26):** Vibe Coder Spec discovery phase — SDD in action (video)
-9. **Post 6b:** Monolithic specs get skipped — tiered indexing, modular specs
-10. **Post 7b:** Why I don't let AI code alone (HITL)
-9. **Post 8:** 5 layers that make AI-generated tests maintainable (architecture)
-10. **Post 9:** I automated 17 tests on a client site (business results)
-11. **Post 10:** Most AI coding tools suggest. Mine enforces. (competitive)
+7. **Post 6 (published 2/26):** Live demo bug — full QA cycle in 41 minutes (real story + defect video)
+8. **Post 7 (published 2/26):** Vibe Coder Spec discovery phase — SDD in action (video)
+9. **Post 8 (published 3/2):** 19 tests on a client app, 8 hours codegen — business results story
+10. **Post 9:** Monolithic specs get skipped — tiered indexing, modular specs
+11. **Post 10:** Why I don't let AI code alone (HITL)
+12. **Post 11:** 5 layers that make AI-generated tests maintainable (architecture)
+13. **Post 12:** Most AI coding tools suggest. Mine enforces. (competitive)
 
 ## Tracking Notes
 
 - Update Engagement column after 48 hours (impressions, likes, comments, reposts, DMs)
 - Note which hooks/angles generate the most engagement to inform future content
+
+## Post Format Template (based on Post #6 — 7,488 impressions, best performer)
+
+Every future post should follow this format. Post #6 is the reference.
+
+**What works:**
+1. **Real story** — something that actually happened, not a concept or philosophy
+2. **Concrete numbers** — timelines, durations, counts (20 min, 21 min, 18 seconds, 41 minutes total)
+3. **Stakes** — real production app, real bug the team didn't know existed, live demo
+4. **Narrative arc** — setup ("I was demoing"), conflict ("It failed"), resolution ("Passed. 18.42 seconds.")
+5. **Short video evidence** — 18s defect video attached, 2,820 views, 18s avg watch time (people watch the whole thing)
+6. **Clear timeline/bullet summary** — scannable breakdown of what happened
+7. **One-liner closer** — "The test script that found the bug is the same one that confirmed the fix."
+8. **Open source CTA** — GitHub links at the end (51 clicks)
+
+**What doesn't work (from other posts):**
+- Philosophy posts (Post #4 SDD: 45 impressions)
+- Abstract concepts without a story (Post L-1: 67 impressions)
+- "Here's how it works" without "here's what happened" (Post #3: 193 impressions)
+
+**Formula:** Real story + concrete numbers + video evidence + narrative arc = engagement
+
+**Demographics that respond:** 49% IT Services, 48% Senior level, 29% at 10K+ companies. Write for senior QA/engineering leaders at enterprise companies.
 
 ---
 
@@ -324,3 +347,67 @@ Playwright/TypeScript — github.com/isagawa-qa/platform-playwright
 Kernel — github.com/isagawa-co/isagawa-kernel
 
 Open source. MIT license.
+
+---
+
+### Post #8: 19 Tests on a Client App — Business Results
+
+**Status:** Published
+**Date:** 2026-03-02
+**Platform:** LinkedIn
+**Angle:** Business results — real numbers, real client app, codegen speed, modular architecture, maintainability
+
+---
+
+I automated 19 tests on a client's production app. Script generation alone: about 8 hours.
+
+Here's what happened.
+
+A client's production app had no automated tests. I pointed my AI test automation platform at it and started building. One domain at a time, 25 minutes per test on average.
+
+The first few tests were rough. The AI hardcoded XPath selectors — wrong element types, three failures in a row from the same mistake. The system caught all three, collapsed them into one permanent lesson: use element-agnostic selectors. The AI never made that mistake again.
+
+By the third domain, the AI was writing tests that passed on the first or second try. Every past failure was already blocked — toast notifications that disappear before you can assert them, dynamic dropdowns that go stale between clicks, text matching patterns that break on nested elements. Twelve lessons total, each one permanent.
+
+The result:
+
+- 19 automated tests across 5 business domains
+- ~8 hours total script generation
+- 25 minutes average per test
+- 12 permanent lessons the AI learned from its own failures
+- 10 seconds average per test run
+
+That's just codegen. Setup, test planning, bug reporting, retests, and maintenance are on top of that — the full QA workload that comes with any real engagement.
+
+Goal Management, Task Management, Employee Management, Scheduled Tasks, Lead Capture. Each domain has its own role, task modules, and page objects. Each test within a domain shares common domain modules. And all domains share the same login module and the same enforced architecture. Change the login flow once, every domain picks it up. That's maintainability built into the structure, not bolted on after.
+
+This isn't the entire app. It's a fraction of it. And every new test the AI writes is faster than the last because the lessons stack. The 19th test benefits from every mistake the 1st test made.
+
+A manual tester writing these from scratch — weeks. An AI without enforcement — inconsistent, unmaintainable code every time. An AI with enforcement — 8 hours of codegen, consistent architecture, and it gets faster with every test.
+
+The framework is open source with reference implementations included. Point it at your own app and start building.
+
+https://github.com/isagawa-qa/platform
+
+I also set up full QA infrastructure for teams — framework, config, credential management, and training. DM me or email alain@isagawa.co.
+
+#TestAutomation #QA #AI #OpenSource #ClaudeCode
+
+---
+
+**X:**
+
+I automated 19 tests on a client's production app. Script generation: about 8 hours. 25 minutes per test.
+
+The first few tests failed — AI hardcoded XPath selectors, wrong element types, three failures in a row. The system caught all three, collapsed them into one permanent lesson. Never happened again.
+
+By the third domain, tests were passing on the first or second try. Every past failure was already blocked. 12 lessons total, each one permanent.
+
+19 tests. 5 business domains. 8 hours of codegen. 10 seconds average per test run. And it gets faster — the 19th test benefits from every mistake the 1st test made.
+
+This is a fraction of the app. A manual tester writing these from scratch — weeks. AI without enforcement — inconsistent code every time. AI with enforcement — 8 hours, consistent architecture, gets faster with every test.
+
+Open source. MIT license.
+github.com/isagawa-qa/platform
+
+#TestAutomation #QA #AI #OpenSource #ClaudeCode

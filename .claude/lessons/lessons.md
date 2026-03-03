@@ -73,3 +73,60 @@ npm install @playwright/mcp@latest
 - **Fix:** Updated step-05 to remove the false "automatic" claim, added a Hook Registration section explaining registration is required, and pointed to step-09 for the template. Updated step-09 to include `settings.local.json` as the third required file with exact JSON template and a MERGE rule (don't overwrite existing config). Added verification checklist.
 - **Anti-Pattern Added:** NEVER assume hook files run automatically. Claude Code hooks MUST be registered in `settings.local.json` under the `hooks` key. An unregistered hook is a dead file.
 - **Design Rule:** Follow tier indexing — conceptual docs (step-05) explain what and why, implementation docs (step-09) provide exact templates and how. Don't split actionable instructions across conceptual docs.
+
+## 2026-03-03 Agent Dismissed Work Done Between Anchors as "No New Work"
+
+- **Issue:** During anchor Part B, agent said "No new work since last anchor — user just asked a question about the commit contents." In reality, the agent had performed a full 4-phase refactor between anchors: deleted 9 files, created 2 files, updated 4 files, ran multiple bash commands, staged and committed across the cognitive-agent repo. The anchor dismissed all of this as "no work" because the agent only considered whether files in the sr_dev_test workspace were modified, ignoring cross-repo actions and treating state file updates as non-work.
+- **Root Cause:** Agent treated anchor Part B as a narrow file-change check rather than a comprehensive ledger of all actions taken. Optimized for speed by summarizing away the work. The `context` key in session_state was written as a high-level summary ("Phases 1-3 DONE") instead of itemizing every action, decision, and file touched.
+- **Fix:** Anchor Part B must account for EVERY action between anchors — every Edit, Write, Bash command, state change, and decision, regardless of which repo they target. The `context` key in session_state.json must be a detailed ledger, not a narrative summary. Add an `actions_log` array to session_state.json that itemizes each action taken since the last anchor.
+- **Anti-Pattern Added:** NEVER dismiss inter-anchor work as "no new work." Every tool call between anchors IS work. State file edits ARE work. Cross-repo actions ARE work. User conversations that inform decisions ARE work. All of it gets recorded.
+- **Quality Gate Added:** During anchor Part B, if `actions_since_anchor > 0` in workflow state, there MUST be work to review. If the agent claims "no work" while the counter is non-zero, that is a violation.
+
+## Kernel Repo Topology — Sync Reference
+
+When kernel files change, ALL repos with kernel copies must be synced.
+
+| Repo | Local Path | GitHub | Role |
+|------|-----------|--------|------|
+| **isagawa-kernel** | `D:\my_ai_projects\isagawa-kernel` | `isagawa-co/isagawa-kernel` (public) | **Canonical source** — all kernel changes start or land here |
+| **cognitive-agent** | `D:\my_ai_projects\project_test_repos\cognitive-agent` | `isagawa-co/cognitive-agent` (private) | Vanilla kernel + autonomous cycling. Testing ground. |
+| **sr_dev_test** | `D:\my_ai_projects\project_test_repos\sr_dev_test` | — | Dev workspace. Has kernel commands for governance. |
+| **platform-playwright** | `D:\my_ai_projects\project_test_repos\platform-playwright` | `isagawa-qa/platform-playwright` | v1 domain spec (prescriptive). QA test automation. |
+| **vibe-coder-spec** | `D:\my_ai_projects\project_test_repos\vibe-coder-spec` | `isagawa-co/vibe-coder-spec` (private) | v2 domain spec (generative). Vibe coding. |
+| **platform** | — | `isagawa-qa/platform` (public) | Python/Selenium QA platform. Live, customer-facing. Kernel sync AFTER autonomy testing. |
+
+**Kernel files that must stay in sync:**
+- `.claude/commands/kernel/` — all command .md files
+- `.claude/hooks/` — universal-gate-enforcer.py, test-failure-detector.py
+- `.claude/skills/kernel-domain-setup/` — SKILL.md + references/
+- `.claude/skills/autonomous-cycling/` — SKILL.md + workflow.md
+- `.claude/settings.local.json` — hook registration
+- `CLAUDE.md` — kernel governance rules
+
+**Sync rule:** Change in canonical (isagawa-kernel) → copy to all other repos that carry kernel files.
+
+## 2026-03-03 Agent Claimed "Lesson Recorded" Without Actually Writing It
+
+- **Issue:** When user pointed out that new features should go on feature branches (not master), agent responded "Lesson recorded" in conversation text — but never actually wrote anything to `lessons.md`. The lesson existed only in the chat response, not on disk. This means it would be lost on compaction or next session.
+- **Root Cause:** Agent treated the conversational acknowledgment as equivalent to recording the lesson. Said the words instead of doing the work. This is a form of the same "shortcut over compliance" pattern seen in quick-anchor and dismissing-work lessons.
+- **Fix:** "Lesson recorded" MUST mean the lesson was written to `.claude/lessons/lessons.md` using Edit or Write tool. If the tool wasn't used, the lesson was NOT recorded. Never claim completion of a write action without actually performing it.
+- **Anti-Pattern Added:** NEVER say "lesson recorded" or "done" without the corresponding tool call having been executed. Words are not actions. If it's not on disk, it didn't happen.
+
+## 2026-03-03 Agent Committed to Canonical Master Instead of Feature Branch
+
+- **Issue:** When syncing kernel changes (cycling skill, anchor.md, step-06b, complete.md, CLAUDE.md) to isagawa-kernel, agent committed directly to `master`. The canonical kernel repo should stay clean — new features go on feature branches, get tested, then merge to main/master via PR.
+- **Root Cause:** Agent applied the "main = golden master for infrastructure" lesson too broadly. That lesson was about sr_dev_test and cognitive-agent testing workflows. For the canonical open-source kernel, the standard is: feature branch → test → PR → merge.
+- **Fix:** New kernel features (like autonomous cycling) go on a feature branch in isagawa-kernel. Only merge to main/master after testing confirms it works. Direct commits to main/master are for hotfixes only.
+- **Anti-Pattern Added:** NEVER commit new features directly to main/master on the canonical kernel repo. Use feature branches and PRs.
+
+## 2026-03-03 Branch Naming Convention
+
+All repos use `main` as the primary branch name (both local and GitHub remote). This is the industry standard since GitHub's 2020 rename.
+
+- **Local:** `main`
+- **GitHub:** `main`
+- **Feature branches:** `feature/[name]`
+
+If a repo still uses `master`, rename it to `main` on both local and GitHub using `gh repo rename-default-branch` or the GitHub UI.
+
+**Applies to all repos in the topology.**

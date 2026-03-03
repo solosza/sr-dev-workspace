@@ -67,13 +67,13 @@ After `/kernel/domain-setup` creates new hooks:
 
 ```
 .claude/commands/kernel/
-├── session-start.md   ← Check state, restore context, resume (domain persistence rule)
+├── session-start.md   ← Check state, resume (domain persistence rule)
 ├── domain-setup.md    ← Create protocol + hooks (ONLY if no domain exists)
-├── anchor.md          ← Re-read protocol + restore/save context + check work
-├── validate.md        ← DEPRECATED (merged into anchor Part B)
+├── anchor.md          ← Re-read protocol + check work (Part A + Part B)
 ├── learn.md           ← Update protocol + hooks (after fix) - CLEARS BLOCK
 ├── fix.md             ← Impact assessment before any fix (MANDATORY)
-└── complete.md        ← Save final context + final gate (before done)
+├── complete.md        ← Final gate (before done)
+└── reset.md           ← Dev tool: fresh state for testing
 ```
 
 ## Smart Gates
@@ -102,16 +102,15 @@ The `/kernel/domain-setup` command uses a modular skill-based approach:
 | Step | Action | Reference |
 |------|--------|-----------|
 | 1 | Verify prerequisites | `references/step-01-prerequisites.md` |
-| 2 | Verify CLAUDE.md | `references/step-02-verify-claude-md.md` |
-| 3 | Discover repo structure | `references/step-03-discover.md` |
-| 4 | Analyze existing code | `references/step-04-read.md` |
-| 5 | Extract patterns | `references/step-05-extract.md` |
-| 6 | Understand enforcement | `references/step-06-enforcement.md` |
-| 7 | Read workflow | `references/step-07-workflow.md` |
-| 8 | Build protocol | `references/step-08-protocol.md` |
-| 9 | Wrap commands | `references/step-09-commands.md` |
-| 10 | Update state | `references/step-10-state.md` |
-| 11 | Report & restart | `references/step-11-report.md` |
+| 2 | Discover repo structure | `references/step-02-discover.md` |
+| 3 | Read reference code | `references/step-03-read.md` |
+| 4 | Extract patterns | `references/step-04-extract.md` |
+| 5 | Understand enforcement | `references/step-05-enforcement.md` |
+| 6 | Read workflow | `references/step-06-workflow.md` |
+| 7 | Build protocol | `references/step-07-protocol.md` |
+| 8 | Wrap commands | `references/step-08-commands.md` |
+| 9 | Update state | `references/step-09-state.md` |
+| 10 | Report & restart | `references/step-10-report.md` |
 
 **Key Principles:**
 - Protocol = Index (point to files, don't duplicate)
