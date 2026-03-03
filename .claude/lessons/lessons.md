@@ -130,3 +130,21 @@ All repos use `main` as the primary branch name (both local and GitHub remote). 
 If a repo still uses `master`, rename it to `main` on both local and GitHub using `gh repo rename-default-branch` or the GitHub UI.
 
 **Applies to all repos in the topology.**
+
+## 2026-03-03 Branch Strategy Per Repo Type
+
+Not all repos need feature branches. The strategy depends on the repo's role:
+
+| Repo Type | Strategy | Example |
+|-----------|----------|---------|
+| **Workspace** (sr_dev_test) | Main only. Commit often, push when a logical batch is done. No feature branches — sessions span multiple topics. | `main` |
+| **Canonical kernel** (isagawa-kernel) | Feature branches for new capabilities. PR to main after testing. | `feature/autonomous-cycling` |
+| **Product repos** (cognitive-agent, platform-playwright, platform) | Feature branches for new capabilities. | `feature/[capability]` |
+
+**Why no feature branches on sr_dev_test:**
+- Private workspace, no collaborators, no PRs needed
+- No deployable artifact to protect with branch isolation
+- Sessions are multi-topic — a branch name can't describe the work accurately
+- Descriptive commit messages on main already tell the story
+
+**Feature branch naming for product repos:** `feature/` prefix + short kebab-case description of the capability being built. The name describes **what**, not **when**.
