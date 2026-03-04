@@ -244,7 +244,7 @@ The agent picked its own selectors — data-testid attributes and CSS selectors 
 
 Previous posts showed human-in-the-loop — the human reviews every fix, approves every change. This run, the human wasn't in the loop. The agent fixed its own mistakes, recorded its own lessons, and kept going. 5 tasks, start to finish, alone.
 
-AI that does QA. Not AI that assists with it.
+Next step: point it at something that breaks. I want to see how the autonomous agent handles failure when nobody's there to help.
 
 Open source. MIT license.
 https://github.com/isagawa-co/isagawa-kernel
@@ -268,7 +268,7 @@ Tasks 3, 4, 5 — all passed on the first run. It learned enough from its earlie
 
 13 files generated. Login flows, modals, toasts, cross-domain popups — all handled. Human intervention: zero. Maintainability: 4/5.
 
-AI that does QA. Not AI that assists with it.
+Next: point it at something that breaks. I want to see how it handles failure when nobody's there to help.
 
 github.com/isagawa-co/isagawa-kernel
 
