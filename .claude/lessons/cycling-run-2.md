@@ -827,4 +827,53 @@ Arguments for agent's self-learned approach:
 
 ---
 
+## Overall Scoring
+
+### Code Maintainability Score: 4/5
+
+| Category | Score | Notes |
+|----------|-------|-------|
+| Architecture compliance | 5/5 | Every file in the right layer. When something breaks, you know exactly where. |
+| POM pattern | 5/5 | Static readonly, return this, state-checks separated, BI constructor. Textbook. |
+| Task/Role pattern | 4/5 | @autologger, void returns, correct composition. -1 for Role importing Page (cross-domain). |
+| Test pattern | 5/5 | AAA. One role call. Assert via POM. No orchestration. |
+| Locator centralization | 5/5 | Every selector is a static readonly constant. One-line fix when they break. |
+| Locator durability | 3/5 | data-testid stable enough. Some CSS classes will break on redesign. |
+| Instrumentation | 3/5 | 7 BI bypasses — black boxes for debugging. Framework gap, not agent fault. |
+| Code reuse | 3/5 | Duplicate LoginPage. Good reuse within goal-management. No shared common/. |
+
+### Overall Run Score: 4/5
+
+| Dimension | Result | Score |
+|-----------|--------|-------|
+| Task completion | 6/6, 0 skipped | 5/5 |
+| Tests pass | All pass, tasks 4-6 on first run | 5/5 |
+| Architecture quality | 5-layer clean across 13 files | 5/5 |
+| Code maintainability | Centralized patterns, one-line fixes | 4/5 |
+| Self-improvement | Measurable (3 iterations → first-run by task 4) | 4/5 |
+| Spec effectiveness | Architecture followed, pre-filled inputs worked | 4/5 |
+| MCP integration | Multi-domain, popups, DOM inspection, accessibility tree | 5/5 |
+| Quality gate enforcement | Anchor/learn/pr all degraded | 2/5 |
+| Zero HITL | Fully autonomous start to finish | 5/5 |
+
+### What Was Hard About QA for Autonomy — And the Agent Handled It
+
+- Live app with real, unpredictable DOM
+- Authentication with static credentials
+- Cross-domain navigation (zentyent.app → get.zentyent.app → cal.com)
+- New tab/popup capture and BrowserInterface creation
+- Dynamic elements (Radix UI toasts, modals, comboboxes)
+- Strict mode on duplicate content
+- Stateful test sequences (create → delete → verify)
+
+### Verdict
+
+**The thesis is validated:** cognitive agent + domain spec CAN autonomously build a real QA test suite against a live app. The architecture came out clean. The tests work. The agent learned and improved mid-run.
+
+The gap to 5/5 is quality enforcement — the drift issue. But that's a spec tuning problem, not a fundamental failure. Most fixes identified are spec refinements (make selector priority a recommendation, add BI methods for `.first()`, tune the `/pr` checklist). The foundation works.
+
+The hard part — autonomous QA against a real app — is solved. What's left is polish.
+
+---
+
 *Cycling run 2 observation complete. 31 observations, 22 fixes recorded. 6/6 tasks passed. Core finding: agent self-improves functionally (first-run passes by task 4) but drifts on maintainability patterns. `/pr` review pending to quantify the debt.*
