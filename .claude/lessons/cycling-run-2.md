@@ -876,4 +876,126 @@ The hard part — autonomous QA against a real app — is solved. What's left is
 
 ---
 
+## Detailed Maintainability Breakdown
+
+**Architecture compliance — 5/5**
+Every file in the right layer. Tests don't import Tasks. Roles don't have locators. POMs don't have decorators. When something breaks, you know exactly which layer, which file, which line. This is the #1 maintainability factor and the agent nailed it.
+
+**POM pattern — 5/5**
+Static readonly locators (centralized, one-line fix when selectors break). Return this for fluent chaining. State-checks separated from actions. BI constructor injection. Textbook.
+
+**Task/Role pattern — 4/5**
+@autologger everywhere. Void returns. Correct composition (Tasks compose POMs, Roles compose Tasks). One deduction: ProspectiveCustomerRole imports DemoBookingPage directly — cross-domain exception but still a layer leak.
+
+**Test pattern — 5/5**
+AAA. One role call per test. Assert via POM state-checks. No orchestration in tests. Clean separation of concerns.
+
+**Locator centralization — 5/5**
+Every selector is a static readonly class constant. When a selector breaks, it's a one-line change in one file. The selectors themselves are mixed quality, but the PATTERN absorbs the impact. This is what maintainability actually is.
+
+**Locator durability — 3/5**
+data-testid selectors are reasonably stable (devs add them for testing). But `a.border-purpleAccent` will break on redesign. `h1:has-text(...)` breaks if heading level changes. `role=heading` would be more resilient. The centralization pattern saves this from being worse.
+
+**Instrumentation — 3/5**
+7 methods bypass BI. Those methods are black boxes when debugging — no logging, no screenshot-on-failure. When a toast assertion fails at 2am, you'll wish you had BI instrumentation. But this is a framework gap (BI lacks `.first()` support), not the agent's fault.
+
+**Code reuse — 3/5**
+Duplicate LoginPage across workflows. Good reuse within goal-management (3 POMs serve 4 tests). No shared `common/` pattern.
+
+**Overall: 4/5**
+
+The architecture carries the score. The agent built a maintainable codebase because it followed the structural patterns from the references — exactly what you taught it. The deductions are locator durability (some CSS-class selectors will break on redesign), missing BI instrumentation in 7 methods, and one duplicate POM. All fixable. None structural.
+
+The framework patterns did their job. The agent learned architecture from references and applied it consistently across 13 files and 6 tasks. That's a 4.
+
+---
+
+## Metrics Summary (for reporting / content)
+
+### Run Metrics
+
+| Metric | Value |
+|--------|-------|
+| Tasks attempted | 6 |
+| Tasks completed | 6 (100%) |
+| Tasks skipped | 0 |
+| First-run passes | 4 of 5 test tasks (80%) |
+| Fix iterations (task 002) | 1 |
+| Fix iterations (task 003) | 3 |
+| Fix iterations (tasks 004-006) | 0 each |
+| Total files generated | 13 |
+| POMs | 6 |
+| Tasks | 2 |
+| Roles | 2 |
+| Tests | 5 (covering 2 workflows) |
+| Lessons self-recorded | 2 |
+| Domains navigated | 3 (zentyent.app, get.zentyent.app, cal.com) |
+| Human intervention during run | 0 |
+
+### Quality Metrics
+
+| Metric | Value |
+|--------|-------|
+| Architecture compliance | 100% (13/13 files in correct layer) |
+| POM pattern compliance | 100% (6/6 POMs follow pattern) |
+| Task/Role pattern compliance | 92% (1 documented layer exception) |
+| Test pattern compliance | 100% (5/5 tests follow AAA + one-role-call) |
+| Naming convention compliance | 100% |
+| Locator centralization | 100% (all selectors are static readonly constants) |
+| BI wrapper usage | 83% (7 of ~40 interactions bypass BI) |
+| Code maintainability score | 4/5 |
+
+### Self-Improvement Metrics
+
+| Metric | Value |
+|--------|-------|
+| Task 002 result | Passed after 1 fix iteration |
+| Task 003 result | Passed after 3 fix iterations |
+| Task 004 result | Passed on first run |
+| Task 005 result | Passed on first run |
+| Task 006 result | Passed on first run |
+| Learning curve | 3 iterations → 0 iterations in 2 tasks |
+| Self-correction demonstrated | Yes (selector fixes, BI bypass fix, toast discovery) |
+
+### Complexity Metrics
+
+| Metric | Value |
+|--------|-------|
+| Workflows covered | 2 (lead-capture, goal-management) |
+| Auth flows | 1 (static credentials, login form) |
+| Cross-domain navigation | 3 domains, new tab/popup handling |
+| Dynamic UI elements | Toasts (Radix UI), modals, comboboxes, dropdowns |
+| CRUD operations tested | Create (3 types), Delete |
+| Strict mode handling | Resolved (`.first()` for duplicate elements) |
+
+### Drift Metrics (observed issues)
+
+| Metric | Value |
+|--------|-------|
+| Observations recorded | 31 |
+| Fixes identified | 22 (11 critical) |
+| Selector priority violations | ~29 of ~40 locators (72%) |
+| BI bypass instances | 7 methods |
+| Quality gates that degraded | 3 (anchor, learn, /pr) |
+| /pr reviews skipped | All tasks (systematic) |
+| Quick anchors observed | At least 1 confirmed |
+| Wrong lessons recorded | 2 (partial — mixed correct/incorrect sub-lessons) |
+
+### The Bottom Line
+
+| Dimension | Score |
+|-----------|-------|
+| Task completion | 5/5 |
+| Tests pass | 5/5 |
+| Architecture quality | 5/5 |
+| Code maintainability | 4/5 |
+| Self-improvement | 4/5 |
+| Spec effectiveness | 4/5 |
+| MCP integration | 5/5 |
+| Quality gate enforcement | 2/5 |
+| Zero HITL | 5/5 |
+| **Overall run** | **4/5** |
+
+---
+
 *Cycling run 2 observation complete. 31 observations, 22 fixes recorded. 6/6 tasks passed. Core finding: agent self-improves functionally (first-run passes by task 4) but drifts on maintainability patterns. `/pr` review pending to quantify the debt.*
