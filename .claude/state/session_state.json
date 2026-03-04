@@ -6,6 +6,9 @@
   "needs_restart": false,
   "needs_learn": false,
   "needs_learn_reason": null,
-  "context": "Writing seeded expert lessons for cognitive-agent. All 7 topic files + 3 sub-payloads complete. advanced-interactions split into index+3 payloads (200-line rule). User now wants folder structure instead of flat file layout for lessons directory. Next: reorganize lessons into sub-folders.",
-  "actions_log": []
+  "context": "Cycling run 2 observation COMPLETE. 31 observations, 22 fixes. Core finding: soft gates fail in autonomous mode — all drift. Run 3 priority: hard gates. Agent still cycling (004-006, unobserved). Next work: implement fixes in cognitive-agent before run 3.",
+  "actions_log": [
+    "Edit: cycling-run-2.md — added observations 17-19, 20-26, 27-31, meta-finding table, run conclusion",
+    "Edit: cycling-run-2.md — added fixes 14-22 to summary table"
+  ]
 }

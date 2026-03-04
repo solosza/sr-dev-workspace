@@ -9,4 +9,5 @@
 | Git & Branching | `git-and-branching.md` | Golden master, feature branches, branch strategy per repo type, repo reset |
 | Infrastructure & Setup | `infrastructure-setup.md` | Playwright MCP setup, hook registration |
 | Repo Topology | `repo-topology.md` | Kernel repo map, sync rules |
-| Cycling Run | `cycling-run.md` | Learn self-enforcement, complete gate, dual state, redundant specs, uncommitted output |
+| Cycling Run 1 | `cycling-run.md` | Learn self-enforcement, complete gate, dual state, redundant specs, uncommitted output |
+| Cycling Run 2 | `cycling-run-2.md` | Recreated existing files, CSS over role selectors, anchor missed violation, fix priorities |
