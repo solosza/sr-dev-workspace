@@ -199,6 +199,84 @@ github.com/isagawa-qa/platform
 
 ---
 
+### Post #9: Autonomous AI QA — 6 Tasks, 0 Human Intervention
+
+**Status:** Ready to publish
+**Date:** 2026-03-03
+**Platform:** LinkedIn
+**Angle:** Full autonomy — the human left the room and it still worked. First post where the agent ran completely alone against a live production app.
+**Media:** None (run too long for video). Consider screenshot of the final results table if possible.
+**Source:** `.claude/lessons/cycling-run-2.md`
+
+---
+
+**LinkedIn:**
+
+I gave my AI agent 6 QA tasks on a live production app and walked away.
+
+No supervision. No approvals. No "human reviews and approves the fix." Just the agent, the tasks, and a live app it had never seen before.
+
+Here's what happened.
+
+The agent logged into zentyent.app, navigated across 3 different domains, discovered page elements through the browser's accessibility tree, and started building test scripts. Page objects, task modules, roles, test files — 13 files total, following the same 5-layer architecture my framework enforces.
+
+Task 1 was setup. Task 2 passed after one fix — a marketing page had duplicate "Schedule a Live Demo" links and the agent had to figure out which one to click.
+
+Task 3 was rough. The agent failed 3 times. Wrong selectors, a toast notification it couldn't find, strict mode violations from duplicate elements. Each time it failed, it fixed the issue and tried again. By the third fix, the test passed.
+
+Then something happened.
+
+Tasks 4, 5, and 6 — all passed on the first run. No failures. No retries. The agent had learned enough from its earlier mistakes to get them right the first time.
+
+The results:
+
+- 6 tasks completed, 0 skipped
+- 13 files generated (6 page objects, 2 task modules, 2 roles, 5 tests)
+- 3 domains navigated (zentyent.app, get.zentyent.app, cal.com)
+- Cross-domain popups, login flows, modals, dropdowns, toast notifications — all handled
+- Tasks 4-6: first-run passes
+- Human intervention: zero
+
+I scored the output: 4/5 on maintainability. The architecture is clean — every file in the right layer, every locator centralized, every test following the same pattern. The agent learned the structural rules from reference code I gave it and applied them consistently across all 13 files.
+
+The selectors aren't what I would have picked. The agent chose its own — data-testid attributes and CSS selectors it discovered through the browser. My framework recommends role-based selectors. But the agent's choices work. Every test passes. And it got there faster by finding what works for this specific app instead of following abstract rules.
+
+That's the tradeoff with autonomy. You don't get perfect adherence to your preferences. You get working code that improves with every task.
+
+Previous posts showed human-in-the-loop — the human reviews every fix, approves every change. This run, the human wasn't in the loop. The agent fixed its own mistakes, recorded its own lessons, and kept going. 6 tasks, start to finish, alone.
+
+This is what I've been building toward. Not AI that assists with QA. AI that does QA.
+
+Open source. MIT license.
+https://github.com/isagawa-co/isagawa-kernel
+https://github.com/isagawa-qa/platform-playwright
+
+#TestAutomation #QA #AI #Autonomy #OpenSource #ClaudeCode
+
+---
+
+**X:**
+
+I gave my AI agent 6 QA tasks on a live production app and walked away.
+
+No supervision. No approvals. Just the agent, the tasks, and a live app.
+
+Task 3 failed 3 times. The agent fixed its own mistakes each time.
+
+Tasks 4, 5, 6 — all passed on the first run. Zero retries. It learned enough from its earlier failures to get them right.
+
+The results: 13 files generated, 3 domains navigated, cross-domain popups, login flows, modals, toasts — all handled autonomously. Human intervention: zero.
+
+Maintainability score: 4/5. Architecture is clean across all 13 files. The agent learned the structural patterns from reference code and applied them consistently.
+
+Not AI that assists with QA. AI that does QA.
+
+github.com/isagawa-co/isagawa-kernel
+
+#TestAutomation #QA #AI #Autonomy #ClaudeCode
+
+---
+
 ### Post #3: Manual Testers
 
 **Status:** Published
