@@ -123,14 +123,15 @@ https://github.com/isagawa-qa/platform
 
 | # | Target | Platform | Type | Angle | Notes |
 |---|--------|----------|------|-------|-------|
-| 9 | TBD | LinkedIn | Post | "Monolithic specs get skipped. Here's why." | Tiered indexing, modular specs, 200-line threshold |
-| 10 | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model — human approves every fix, 5-option failure protocol |
-| 11 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive — Screenplay-inspired, reference implementations |
-| 12 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning — what makes enforcement different from instructions |
-| 13 | TBD | Reddit | Posts | r/QualityAssurance, r/selenium, r/softwaretesting, r/ClaudeAI | Drafts in social-media.md |
-| 14 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md. @isagawa_co account LIVE |
-| 15 | TBD | Blog | Article | "AI Governance vs AI Execution Management" | blog-post.md (ready) |
-| 16 | TBD | Product Hunt | Listing | Launch listing | Draft in social-media.md |
+| 9 | TBD | LinkedIn | Post + Video | Autonomous AI QA: 6 tasks, 13 files, 3 domains, 0 human intervention | Cycling run 2 results. Self-improvement curve, full autonomy, 4/5 maintainability. Source: `.claude/lessons/cycling-run-2.md` |
+| 10 | TBD | LinkedIn | Post | "Monolithic specs get skipped. Here's why." | Tiered indexing, modular specs, 200-line threshold |
+| 11 | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model — human approves every fix, 5-option failure protocol |
+| 12 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive — Screenplay-inspired, reference implementations |
+| 13 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning — what makes enforcement different from instructions |
+| 14 | TBD | Reddit | Posts | r/QualityAssurance, r/selenium, r/softwaretesting, r/ClaudeAI | Drafts in social-media.md |
+| 15 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md. @isagawa_co account LIVE |
+| 16 | TBD | Blog | Article | "AI Governance vs AI Execution Management" | blog-post.md (ready) |
+| 17 | TBD | Product Hunt | Listing | Launch listing | Draft in social-media.md |
 
 ## Post Series Arc
 
@@ -143,10 +144,11 @@ https://github.com/isagawa-qa/platform
 7. **Post 6 (published 2/26):** Live demo bug — full QA cycle in 41 minutes (real story + defect video)
 8. **Post 7 (published 2/26):** Vibe Coder Spec discovery phase — SDD in action (video)
 9. **Post 8 (published 3/2):** 19 tests on a client app, 8 hours codegen — business results story
-10. **Post 9:** Monolithic specs get skipped — tiered indexing, modular specs
-11. **Post 10:** Why I don't let AI code alone (HITL)
-12. **Post 11:** 5 layers that make AI-generated tests maintainable (architecture)
-13. **Post 12:** Most AI coding tools suggest. Mine enforces. (competitive)
+10. **Post 9:** Autonomous AI QA — 6 tasks, 13 files, 3 domains, 0 human intervention. Self-improvement curve (3 iterations → 0 in 2 tasks). Full autonomy on live production app.
+11. **Post 10:** Monolithic specs get skipped — tiered indexing, modular specs
+12. **Post 11:** Why I don't let AI code alone (HITL)
+13. **Post 12:** 5 layers that make AI-generated tests maintainable (architecture)
+14. **Post 13:** Most AI coding tools suggest. Mine enforces. (competitive)
 
 ## Tracking Notes
 
