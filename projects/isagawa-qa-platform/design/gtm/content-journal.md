@@ -246,6 +246,8 @@ Previous posts showed human-in-the-loop — the human reviews every fix, approve
 
 Next step: point it at something that breaks. I want to see how the autonomous agent handles failure when nobody's there to help.
 
+The autonomous cycling loop isn't in the repo yet — still testing. I've built this modularly, so it plugs right into the kernel when it's ready.
+
 Open source. MIT license.
 https://github.com/isagawa-co/isagawa-kernel
 https://github.com/isagawa-qa/platform-playwright
@@ -269,6 +271,8 @@ Tasks 3, 4, 5 — all passed on the first run. It learned enough from its earlie
 13 files generated. Login flows, modals, toasts, cross-domain popups — all handled. Human intervention: zero. Maintainability: 4/5.
 
 Next: point it at something that breaks. I want to see how it handles failure when nobody's there to help.
+
+The autonomous cycling loop isn't in the repo yet — still testing. Built modularly, so it plugs right into the kernel when ready.
 
 github.com/isagawa-co/isagawa-kernel
 
