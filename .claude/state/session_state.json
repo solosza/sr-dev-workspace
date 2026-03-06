@@ -6,6 +6,6 @@
   "needs_restart": false,
   "needs_learn": false,
   "needs_learn_reason": null,
-  "context": "Autonomous cycling 017-033. Task 019 research doc written, needs commit + advance to 020. User away 2 days — run without stopping. Skills-only distribution (no Gumroad).",
+  "context": "Tasks 020-024 complete — kernel-spec fully built and pushed to GitHub. 4 commits: repo init, skill files, reference+commands, lessons, docs. Next: task 025 (audit domain-setup rerunability). User away 2 days.",
   "actions_log": []
 }
