@@ -5,8 +5,8 @@
   "commands_created": true,
   "hooks_created": true,
   "anchored": true,
-  "anchor_timestamp": "2026-03-06T01:20:00Z",
-  "actions_since_anchor": 6,
+  "anchor_timestamp": "2026-03-06T02:00:00Z",
+  "actions_since_anchor": 2,
   "actions_limit": 10,
   "validated": false,
   "lesson_recorded": true,
@@ -21,7 +21,7 @@
   "cycling_complete": false,
   "cycling_complete_timestamp": null,
   "total_tasks": 41,
-  "current_task": "017-audit-kernel-for-skill-packaging.md",
+  "current_task": "019-design-kernel-spec-schema.md",
   "completed_tasks": [
     "001-research-lease-option-deal-structure.md",
     "002-research-buyer-types-matching-criteria.md",
@@ -38,7 +38,9 @@
     "013-build-seeded-lessons.md",
     "014-build-webhook-receiver.md",
     "015-build-gws-cli-integration.md",
-    "016-documentation-and-push.md"
+    "016-documentation-and-push.md",
+    "017-audit-kernel-for-skill-packaging.md",
+    "018-compare-spec-templates.md"
   ],
   "skipped_tasks": [],
   "attempts_on_current": 0
