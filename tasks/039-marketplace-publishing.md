@@ -1,9 +1,9 @@
-# Marketplace Publishing
+# Skill Marketplace Publishing
 
 ## Context
-Publish domain specs to distribution channels. Set up Gumroad (or chosen marketplace from task 033 research) for Tier 1 passive sales. Set up auto-provisioning of GitHub repo access after purchase.
+Publish domain specs to skill marketplaces identified in task 033. Format specs for submission, create listings, and submit for review.
 
-**HUMAN REQUIRED:** Needs Gumroad account setup, pricing decisions, and payment integration configuration. These are business decisions only the user can make.
+**HUMAN REQUIRED:** Needs pricing decisions and marketplace account setup.
 
 ## Dependencies
 - **033** — marketplace research complete (knows which channels to use)
@@ -15,53 +15,49 @@ Publish domain specs to distribution channels. Set up Gumroad (or chosen marketp
 
 ## Requirements
 
-### Set up Gumroad (or recommended channel)
-Based on task 033 research, set up the primary distribution channel:
+### Prepare skill listings
+For each packaged spec, prepare a marketplace listing:
 
-1. **Create product listings** for each packaged spec:
+1. **Listing metadata** for each spec:
    - Selenium QA Spec — price TBD by user
    - Playwright QA Spec — price TBD by user
    - Docker Image Testing Spec — price TBD by user
 
-2. **Write product descriptions** — pull from each spec's README:
+2. **Write listing descriptions** — pull from each spec's README:
    - What it does
    - Prerequisites (kernel installed)
    - Install flow
    - What the user gets
 
-3. **Set up access provisioning:**
-   - After purchase → invite buyer to private GitHub repo
-   - Gumroad webhook → GitHub API → repo invite
-   - OR manual process documented for MVP
+3. **Format for marketplace:**
+   - Apply any format changes identified in task 033
+   - Ensure specs match marketplace submission requirements
 
-### Set up skill marketplace (if available)
-If task 033 found a live skill marketplace:
-- Format specs for marketplace submission
-- Submit for review
-- Document the process
+### Submit to marketplace(s)
+Based on task 033 research:
+- Submit specs to recommended marketplace(s)
+- Follow submission process documented in research
+- Track review status
 
 ### Document the distribution setup
 Create `docs/distribution-setup.md` with:
-- Channel configuration
+- Marketplace(s) used
+- Submission process followed
+- Listing URLs (once approved)
 - Pricing (once user decides)
-- Access provisioning flow
-- Product listing URLs
 
 ### User decisions needed
 The user must decide:
 - [ ] Pricing for each spec
-- [ ] Whether to use Gumroad, skill marketplace, or both
-- [ ] Whether to automate access provisioning or start manual
+- [ ] Which marketplace(s) to publish on
 
 ## Output
-- Distribution channel configured
-- Product listings created (or drafts ready)
+- Specs submitted to skill marketplace(s)
 - `docs/distribution-setup.md`
 
 ## Validation
-- [ ] At least one distribution channel set up
-- [ ] Product listing(s) created or drafted
-- [ ] Access provisioning documented
+- [ ] At least one spec submitted to a marketplace
+- [ ] Listing descriptions written
 - [ ] Distribution setup documented
 
 ## Completion Signal

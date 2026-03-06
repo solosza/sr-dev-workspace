@@ -1,7 +1,7 @@
 # Research Skill Marketplaces
 
 ## Context
-Research distribution channels for domain specs. The spec-led growth strategy identifies Gumroad as Tier 1 distribution, but Claude Code skill marketplace and other AI tool marketplaces may offer native distribution. This research informs marketplace publishing tasks later.
+Research distribution channels for domain specs as installable skills. No payment platforms (Gumroad, etc.) — distribution is through skill marketplaces only.
 
 ## Dependencies
 - None (can run in parallel with other autonomous tasks)
@@ -21,17 +21,17 @@ Research distribution channels for domain specs. The spec-led growth strategy id
 - GitHub Marketplace (Actions, Apps — could specs be distributed as Actions?)
 - VS Code marketplace (could a VS Code extension wrap the spec install?)
 
-### Research Gumroad distribution
-- How to auto-provision GitHub repo access after Gumroad purchase
-- Gumroad API capabilities for access provisioning
-- Payment → private repo invite automation
-- Alternatives: Lemon Squeezy, Paddle, Stripe + custom provisioning
+### Research skill format requirements
+- What file structure do different marketplaces expect?
+- How do our specs map to each marketplace's skill format?
+- Any packaging changes needed beyond what tasks 027-029 already do?
+- Discovery and search — how do users find skills?
 
 ### Document findings
 Create `research/033-skill-marketplace-research.md` with:
 1. **Marketplace comparison table** — name, status, format, revenue share, submission process
 2. **Recommended primary channel** — based on format fit and audience reach
-3. **Gumroad automation plan** — payment → access flow
+3. **Format mapping** — how our spec structure maps to each marketplace's requirements
 4. **Timeline** — what's available now vs coming soon
 
 ## Output
@@ -39,8 +39,8 @@ Create `research/033-skill-marketplace-research.md` with:
 
 ## Validation
 - [ ] At least 3 marketplaces researched
-- [ ] Gumroad automation plan documented
 - [ ] Comparison table with actionable recommendations
+- [ ] Format mapping documented
 - [ ] Primary distribution channel recommended
 
 ## Completion Signal
