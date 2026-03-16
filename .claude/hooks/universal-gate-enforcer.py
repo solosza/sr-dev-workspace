@@ -19,10 +19,15 @@ Learn triggers (set by other mechanisms):
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 
-STATE_DIR = Path('.claude/state')
+# Resolve state dir relative to this hook's location (.claude/hooks/)
+# so subagents in child workspaces hit their own state, not the parent's.
+_HOOK_DIR = Path(__file__).resolve().parent          # .claude/hooks/
+_WORKSPACE_ROOT = _HOOK_DIR.parent.parent            # workspace root
+STATE_DIR = _WORKSPACE_ROOT / '.claude' / 'state'
 SESSION_STATE = STATE_DIR / 'session_state.json'
 
 # Bash commands that are always allowed (read-only / safe)
@@ -100,22 +105,9 @@ def main():
     # For Write/Edit: get file path
     file_path = tool_input.get('file_path', '').replace('\\', '/')
 
-    # Skip most .claude/ paths (commands, hooks, settings, protocols)
-    # BUT enforce that workflow state action counters can't be directly edited
+    # Skip all .claude/ paths (state, commands, hooks, settings, protocols)
     if tool_name in ('Write', 'Edit'):
         if '/.claude/' in file_path or file_path.startswith('.claude/'):
-            # Block TARGETED edits to actions_since_anchor in workflow state files
-            # Agent MUST use /kernel/anchor to reset the counter, not edit state directly
-            # Only blocks Edit tool (targeted field change) — allows Write tool (full state updates from commands)
-            if '_workflow.json' in file_path and tool_name == 'Edit':
-                old_string = tool_input.get('old_string', '')
-                new_string = tool_input.get('new_string', '')
-                if 'actions_since_anchor' in old_string or 'actions_since_anchor' in new_string:
-                    smart_block(
-                        missing="Direct edit to action counter detected",
-                        fix_command="/kernel/anchor",
-                        fix_description="Use /kernel/anchor to reset the counter — never edit actions_since_anchor directly"
-                    )
             sys.exit(0)
 
     # Read session state

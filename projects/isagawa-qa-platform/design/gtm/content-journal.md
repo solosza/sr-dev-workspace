@@ -123,32 +123,60 @@ https://github.com/isagawa-qa/platform
 
 | # | Target | Platform | Type | Angle | Notes |
 |---|--------|----------|------|-------|-------|
-| 9 | TBD | LinkedIn | Post + Video | Autonomous AI QA: 6 tasks, 13 files, 3 domains, 0 human intervention | Cycling run 2 results. Self-improvement curve, full autonomy, 4/5 maintainability. Source: `.claude/lessons/cycling-run-2.md` |
-| 10 | TBD | LinkedIn | Post | "Monolithic specs get skipped. Here's why." | Tiered indexing, modular specs, 200-line threshold |
-| 11 | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model — human approves every fix, 5-option failure protocol |
-| 12 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive — Screenplay-inspired, reference implementations |
-| 13 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning — what makes enforcement different from instructions |
-| 14 | TBD | Reddit | Posts | r/QualityAssurance, r/selenium, r/softwaretesting, r/ClaudeAI | Drafts in social-media.md |
-| 15 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md. @isagawa_co account LIVE |
-| 16 | TBD | Blog | Article | "AI Governance vs AI Execution Management" | blog-post.md (ready) |
-| 17 | TBD | Product Hunt | Listing | Launch listing | Draft in social-media.md |
+| 9 | 2026-03-07 | LinkedIn | Post | Autonomous AI QA: 5 tasks, 13 files, 0 human intervention | **PUBLISHED.** 12,691 impressions, 99 reactions, 10 comments, 3 reposts. |
+| 10 | TBD | LinkedIn | Post + Video | Docker image security validation — 7 tests, 18 seconds, cold start | Same 5-layer architecture, new transport. CIS-level checks on rockylinux:9. **DRAFTED.** |
+
+### SDD Pivot Series (New Arc — starts Post #11)
+
+**Strategy:** Shift from QA-specific content to Spec-Driven Development + kernel. Tell stories about the spec and kernel, not the test output. Use the formula that works (real story + concrete numbers + narrative arc). Build the concept once, prove it repeatedly, then let the audience pull toward demand.
+
+| # | Target | Platform | Type | Angle | Notes |
+|---|--------|----------|------|-------|-------|
+| 11 | TBD | LinkedIn | Post | **"I gave my agent a spec and walked away. It built its own enforcement."** | ANCHOR POST. Explains kernel + spec concept through domain-setup story. The agent read a spec, scanned the codebase, built its own protocol, wrapped its own commands. |
+| 12 | TBD | LinkedIn | Post | **"I dropped a QA spec in and it built a testing platform"** | Playwright spec → platform-playwright. Self-built, self-enforcing. Proves the concept from Post 11. |
+| 13 | TBD | LinkedIn | Post | **"Same kernel, different spec — now it does Docker compliance"** | Docker spec → platform-docker. Same loop, different domain. Second proof. |
+| 14 | TBD | LinkedIn | Post | **"I added API testing to an existing spec in one session"** | Spec update cascaded through the whole system. Sub-agents validated it. |
+| 15 | TBD | LinkedIn | Post | **"12 specs across 5 industries. One kernel."** | The catalog. QA, Docker, health insurance, DevOps, real estate. |
+| 16 | TBD | LinkedIn | Post | **"What domain should I build next?"** | Audience pull. Market research disguised as engagement. |
+
+### Backlog (deprioritized)
+
+| # | Target | Platform | Type | Angle | Notes |
+|---|--------|----------|------|-------|-------|
+| B-1 | TBD | LinkedIn | Post | "Monolithic specs get skipped. Here's why." | Tiered indexing, modular specs, 200-line threshold |
+| B-2 | TBD | LinkedIn | Post | "Why I don't let AI code alone" | HITL pair programming model |
+| B-3 | TBD | LinkedIn | Post | "5 layers that make AI-generated tests maintainable" | Architecture deep-dive |
+| B-4 | TBD | LinkedIn | Post | "Most AI coding tools suggest. Mine enforces." | Competitive positioning |
+| B-5 | TBD | Reddit | Posts | r/QualityAssurance, r/selenium, r/softwaretesting, r/ClaudeAI | Drafts in social-media.md |
+| B-6 | TBD | X/Twitter | Thread | 8-tweet thread on AI Execution Management | Draft in social-media.md |
+| B-7 | TBD | Blog | Article | "AI Governance vs AI Execution Management" | blog-post.md (ready) |
+| B-8 | TBD | Product Hunt | Listing | Launch listing | Draft in social-media.md |
 
 ## Post Series Arc
 
-1. **Post 1 (published 2/22):** Here's what it does — demo video on a live site
-2. **Post 2 (published 2/23):** Here's how it learns — 10 failures on zentyent.app (best: 942 impressions)
-3. **Post 3 (published 2/23):** Manual testers — AI replaces the gap, not you
-4. **Post L-1 (published 2/24):** AI agents drift — "I built a leash" (kernel governance + video)
-5. **Post 4 (published 2/25):** Claim SDD — Self-Driven Development philosophy
-6. **Post 5 (published 2/25):** Portability proof — same kernel, two frameworks, two tech stacks
-7. **Post 6 (published 2/26):** Live demo bug — full QA cycle in 41 minutes (real story + defect video)
-8. **Post 7 (published 2/26):** Vibe Coder Spec discovery phase — SDD in action (video)
-9. **Post 8 (published 3/2):** 19 tests on a client app, 8 hours codegen — business results story
-10. **Post 9:** Autonomous AI QA — 6 tasks, 13 files, 3 domains, 0 human intervention. Self-improvement curve (3 iterations → 0 in 2 tasks). Full autonomy on live production app.
-11. **Post 10:** Monolithic specs get skipped — tiered indexing, modular specs
-12. **Post 11:** Why I don't let AI code alone (HITL)
-13. **Post 12:** 5 layers that make AI-generated tests maintainable (architecture)
-14. **Post 13:** Most AI coding tools suggest. Mine enforces. (competitive)
+### Phase 1: QA Platform (published)
+
+1. **Post 1 (2/22):** Here's what it does — demo video on a live site
+2. **Post 2 (2/23):** Here's how it learns — 10 failures on zentyent.app (942 impressions)
+3. **Post 3 (2/23):** Manual testers — AI replaces the gap, not you
+4. **Post L-1 (2/24):** AI agents drift — "I built a leash" (kernel governance + video)
+5. **Post 4 (2/25):** Claim SDD — Self-Driven Development philosophy (45 impressions — flopped)
+6. **Post 5 (2/25):** Portability proof — same kernel, two frameworks, two tech stacks
+7. **Post 6 (2/26):** Live demo bug — full QA cycle in 41 minutes (**7,488 impressions — best format**)
+8. **Post 7 (2/26):** Vibe Coder Spec discovery phase — SDD in action (video)
+9. **Post 8 (3/2):** 19 tests on a client app, 8 hours codegen — business results story
+10. **Post 9 (3/7):** Autonomous cycling — 5 tasks, 0 human intervention (**12,691 impressions — best overall**)
+
+### Phase 2: SDD Pivot (upcoming)
+
+11. **Post 11:** ANCHOR — "I gave my agent a spec and it built its own enforcement." (kernel + spec concept through story)
+12. **Post 12:** QA spec proof — "Dropped a spec in, got a testing platform"
+13. **Post 13:** Docker spec proof — "Same kernel, different spec, now it does compliance"
+14. **Post 14:** Spec evolution — "Added API testing to a spec in one session"
+15. **Post 15:** Catalog reveal — "12 specs across 5 industries. One kernel."
+16. **Post 16:** Audience pull — "What domain should I build next?"
+
+**Key insight:** Philosophy posts flop (Post #4: 45 impressions). Story posts with concrete numbers work (Post #9: 12,691). The SDD pivot must tell stories about the spec/kernel, not explain concepts.
 
 ## Tracking Notes
 
@@ -494,3 +522,73 @@ Open source. MIT license.
 github.com/isagawa-qa/platform
 
 #TestAutomation #QA #AI #OpenSource #ClaudeCode
+
+---
+
+### Post #10: Docker Image Security Validation — 7 Tests, 18 Seconds, Cold Start
+
+**Status:** Draft
+**Date:** 2026-03-05
+**Platform:** LinkedIn + X
+**Angle:** Portability proof #2 — same 5-layer architecture that tests web apps now tests Docker images. CIS-level security hardening checks. Cold-start lifecycle (Docker wasn't running). Agent built the framework from a spec.
+**Media:** Video of terminal run (cold start → 7/7 passed → teardown) + HTML evidence report (screenshot or PDF attachment)
+**Source:** cognitive-agent repo with docker-spec. `tests/test_rocky_security_validation.py`, `evidence/security_report.html`
+
+---
+
+**LinkedIn:**
+
+I pointed my QA platform at a Docker image instead of a web app. 7 security tests passed in 18 seconds.
+
+Here's what happened.
+
+My platform was built for browser testing, Selenium, Playwright, web apps. The same architecture across both, designed to be interface-agnostic. I wanted to prove it.
+
+I wrote a spec for Docker image testing. It teaches the agent what to build and how. Same 5 layers, swap the interface. BrowserInterface becomes ImageInterface. Page Objects become Image Objects. The kernel enforces discipline while the agent builds.
+
+I dropped the spec into my agent. It built what the spec taught, the ImageInterface, Image Objects, and Roles. Then I gave it 4 tasks. It autonomously cycled through each one, building the tests, running them, fixing failures, and moving to the next. No human intervention.
+
+Then the test ran. I made sure that Docker Desktop wasn't running also. The framework auto-launched Docker Desktop, waited 8 seconds, pulled rockylinux:9, started a container and ran 7 security hardening checks:
+
+- Prohibited services (avahi-daemon, cups, rpcbind, nfs-server, vsftpd). None were running
+- Prohibited ports (FTP, Telnet, SMTP, NFS). None listening
+- UID 0 audit. Only root
+- Login shell audit. Only authorized users
+- File permissions. /etc/shadow, /etc/gshadow locked to 0640
+- File ownership. All sensitive files root:root
+
+7/7 passed. 18.36 seconds. The Container was removed on teardown and an HTML evidence report generated.
+
+These map to real compliance frameworks. CIS benchmarks, DISA-STIG. If you're shipping container images to production, these are the baselines you validate before release.
+
+Three frameworks. Three interfaces. One architecture.
+
+The kernel that manages the agent is open source.
+https://github.com/isagawa-co/isagawa-kernel
+
+Want image testing for your container pipeline? DM me or email alain@isagawa.co.
+
+#TestAutomation #QA #Docker #Security #CIS #OpenSource #ClaudeCode
+
+---
+
+**X:**
+
+I pointed my QA platform at a Docker image instead of a web app. 7 security tests. 18 seconds. Cold start.
+
+Same architecture I use for browser testing, designed to be interface-agnostic. BrowserInterface becomes ImageInterface. Page Objects become Image Objects.
+
+I wrote a spec that teaches the agent what to build. Dropped it in. It built what the spec taught, then cycled through 4 tasks autonomously — building tests, running them, fixing failures. No human intervention.
+
+Docker Desktop wasn't even running. The framework auto-launched it, pulled rockylinux:9, and ran 7 CIS-level security checks. Prohibited services, ports, UID 0 audit, login shells, file permissions, file ownership.
+
+7/7 passed. 18.36 seconds. HTML evidence report generated. Container removed on teardown.
+
+Three frameworks. Three interfaces. One architecture.
+
+The kernel that manages the agent is open source.
+github.com/isagawa-co/isagawa-kernel
+
+Want image testing for your container pipeline? DM me.
+
+#TestAutomation #QA #Docker #Security #OpenSource #ClaudeCode

@@ -13,7 +13,7 @@ This workspace (`D:\my_ai_projects\project_test_repos\sr_dev_test`) is the dev w
 | Project | Local Path | GitHub |
 |---------|-----------|--------|
 | **Isagawa Kernel** | `D:\my_ai_projects\isagawa-kernel` | [isagawa-co/isagawa-kernel](https://github.com/isagawa-co/isagawa-kernel) |
-| **QA Platform** | `D:\my_ai_projects\isagawa-qa-platform` | [isagawa-qa/platform](https://github.com/isagawa-qa/platform) |
+| **QA Platform (Selenium)** | `D:\my_ai_projects\project_test_repos\isagawa-qa-platform` | [isagawa-qa/platform-selenium](https://github.com/isagawa-qa/platform-selenium) |
 
 **Orgs:**
 - **isagawa-co** — company org (kernel, future projects)

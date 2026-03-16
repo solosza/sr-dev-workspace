@@ -16,10 +16,11 @@ This skill guides the agent through setting up domain-specific enforcement. It c
 | 4 | Extract patterns | → `references/step-04-extract.md` |
 | 5 | Understand enforcement | → `references/step-05-enforcement.md` |
 | 6 | Read workflow | → `references/step-06-workflow.md` |
-| 7 | Build protocol | → `references/step-07-protocol.md` |
-| 8 | Wrap commands | → `references/step-08-commands.md` |
-| 9 | Update state | → `references/step-09-state.md` |
-| 10 | Report & restart | → `references/step-10-report.md` |
+| 7 | Build roadmap | → `references/step-07-roadmap.md` |
+| 8 | Build protocol | → `references/step-08-protocol.md` |
+| 9 | Wrap commands | → `references/step-09-commands.md` |
+| 10 | Update state | → `references/step-10-state.md` |
+| 11 | Report & restart | → `references/step-11-report.md` |
 
 ## Execution
 
