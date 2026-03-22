@@ -1,28 +1,11 @@
 {
   "session_started": true,
-  "timestamp": "2026-03-13T12:00:00Z",
-  "resumed_from": "context_continuation_ai_football",
+  "timestamp": "2026-03-18T00:00:00Z",
+  "resumed_from": null,
   "domain": "sr_dev",
   "needs_restart": false,
   "needs_learn": false,
   "needs_learn_reason": null,
-  "context": "Created ai-football-game repo at D:\\my_ai_projects\\project_test_repos\\ai-football-game. Pushed to isagawa-co/ai-football-game (private). Kernel + autonomous cycling + ai-football spec + terminal-game-builder spec installed. 71 task files written (001-071, 4 phases, 96 REQ IDs). Tasks 001-004 pre-completed. Next: user opens Claude Code in game repo, runs domain-setup, then autonomous-cycle.",
-  "actions_log": [
-    "Bash: git init ai-football-game repo",
-    "Bash: cp kernel .claude/ from isagawa-kernel",
-    "Bash: cp ai-football spec as skill",
-    "Bash: cp terminal-game-builder spec as skill",
-    "Write: .gitignore for game repo",
-    "Agent: wrote 7 Phase 0 task files (001-007)",
-    "Agent: wrote 17 Phase 1 task files (008-024)",
-    "Agent: wrote 16 Phase 2 task files (025-040)",
-    "Agent: wrote 19 Phase 3 task files (041-059)",
-    "Agent: wrote 12 Phase 4 task files (060-071)",
-    "Write: session_state.json for game repo",
-    "Bash: git commit initial 128 files",
-    "Bash: gh repo create isagawa-co/ai-football-game --private",
-    "Edit: CLAUDE.md — added ai-football + terminal-game-builder spec sections",
-    "Bash: git push to GitHub",
-    "Edit: MEMORY.md — added ai-football-game repo + spec entries"
-  ]
+  "context": "README updated on isagawa-kernel (product page rewrite with SDD, harness positioning, capabilities, domain spec drop-in guide, try-it-yourself CTA). Pushed to main. Topics and description updated on GitHub. LinkedIn + X post drafted for DeepEval domain spec demo. Post needs real LLM test run for credibility — mocked tests aren't enough. Created test_rag_pipeline_live.py in test-platform-deepeval/framework/_reference/tests/ — removes all mocks, calls real DeepEval LLM-as-judge. User set new OPENAI_API_KEY in PowerShell. Cycling: 38/41 tasks done. Current: 039-marketplace-publishing (HUMAN REQUIRED). Remaining: 039 (marketplace publishing), 040 (continuous factory loop). Task 041 already done.",
+  "actions_log": []
 }

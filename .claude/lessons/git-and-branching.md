@@ -41,3 +41,9 @@ Branch strategy, commit practices, and repo reset procedures.
   Then create feature branch and cherry-pick/rebase commits to keep.
 - **Anti-Pattern:** NEVER manually delete files to "reset" a repo. NEVER assume `git reset --hard` alone is sufficient — it leaves gitignored artifacts.
 - **Rule:** The remote is the source of truth for clean state. Local = disposable. `reset --hard` + `clean -fdx` = true match with remote.
+
+## 2026-03-18 Check Branch Before Push — Don't Assume Main
+- **Issue:** `git push` failed with "no upstream branch" because README commit was made on `feature/hook-workspace-relative-paths` instead of `main`. Had to cherry-pick to main.
+- **Root Cause:** Didn't check current branch before committing. Assumed we were on main.
+- **Fix:** Always run `git branch --show-current` before committing cross-repo changes. If on wrong branch, checkout main first.
+- **Anti-Pattern:** NEVER commit + push without verifying you're on the intended branch — especially when working across multiple repos in one session.
