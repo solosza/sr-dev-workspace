@@ -6,7 +6,9 @@ Check state and resume if needed. Always invoke first.
 
 1. **Check for existing state:**
    - Read `.claude/state/session_state.json` if exists
-   - If `context` key exists, read and internalize it — this is prior conversation context
+   - If `context` key exists, read and internalize it:
+     - If `context` is a JSON object: read `current_task`, `progress`, `last_completed`, `next_step`, `notes`
+     - If `context` is a string (legacy): treat as `{ "notes": "the string" }`
    - Report context summary so continuity is established
    - If `needs_restart` is true, handle restart resume (see Step 2)
 
@@ -39,12 +41,24 @@ Check state and resume if needed. Always invoke first.
    - New capabilities (API, UI, etc.) extend existing protocol via `/kernel/learn`
    - Only invoke `/kernel/domain-setup` if NO domain exists at all
 
-5. **Update session state (MERGE, don't overwrite):**
+5. **Update session state (MERGE — read → modify → write):**
 
-   CRITICAL: Merge these fields into existing state. Do NOT overwrite the entire file.
-   Preserve existing keys, especially `context`.
+   **Merge pattern (MANDATORY):**
+   1. Read `session_state.json` into a variable
+   2. Modify ONLY these fields: `session_started`, `timestamp`, `resumed_from`
+   3. Write the full object back (preserving all other keys)
+
+   **Fields that MUST be preserved (do NOT overwrite):**
+   - `context` — prior conversation state for resume
+   - `domain` — which domain is active
+   - `needs_learn` / `needs_learn_reason` — pending learn obligations
+   - `one_shot` — set by run-task.sh for headless mode
+   - `actions_log` — populated by PostToolUse hook
+
+   **NEVER write a fresh JSON object.** Always read first, merge, then write.
 
    ```json
+   // Merge these INTO the existing object:
    {
      "session_started": true,
      "timestamp": "...",
@@ -52,18 +66,22 @@ Check state and resume if needed. Always invoke first.
    }
    ```
 
-6. **Force anchor on fresh start:**
+6. **Force anchor on fresh start (MERGE — read → modify → write):**
 
    If NOT resuming from restart (i.e., `needs_restart` was false or missing):
-   - Set `anchored: false` in domain_workflow.json (if domain exists)
-   - This ensures hook blocks until anchor is invoked
 
-   ```json
-   // In [domain]_workflow.json:
-   {
-     "anchored": false
-   }
-   ```
+   **Merge pattern (MANDATORY):**
+   1. Read `[domain]_workflow.json` into a variable
+   2. Set ONLY `anchored: false`
+   3. Write the full object back
+
+   **Fields that MUST be preserved (do NOT overwrite):**
+   - `completed_tasks` — progress across one-shot invocations
+   - `skipped_tasks` — skipped task tracking
+   - `cycling` / `task_folder` / `total_tasks` — cycling state
+   - `actions_since_anchor` — current counter value
+
+   **NEVER write a fresh JSON object.** Always read first, merge, then write.
 
 7. **Report:**
    ```

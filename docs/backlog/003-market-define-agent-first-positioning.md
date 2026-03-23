@@ -79,3 +79,8 @@ Every repo above is about making agents **do more**. None of them address making
 - Twitter thread: @levie March 8-9 2026
 - GitHub trending repos analysis (Agency Agents, Auto Research, Lightpanda, llmfit, CLI-Anything)
 - Backlog 001: Zep Cloud memory research (cross-session persistence)
+
+## Task Builder Input
+- **Deliverable:** Positioning document (one-liner, narrative, comparison matrix), demo video plans, distribution strategy, pricing model draft
+- **Scope:** RESEARCH + BUILD (docs, not code)
+- **Constraints:** Internal docs only — never in public repos. Needs user review on messaging tone and pricing decisions (HUMAN REQUIRED for final approval)

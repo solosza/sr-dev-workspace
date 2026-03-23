@@ -81,9 +81,18 @@ If nothing, state: "No breaking changes identified"
 **Proceed with fix?**
 ```
 
-### Step 5: Wait for Approval
+### Step 5: Approval Gate (Cycling-Aware)
 
-Do NOT implement until user explicitly approves.
+Check `[domain]_workflow.json` for `cycling: true`:
+
+**If cycling mode is active (`cycling: true`):**
+- Auto-proceed after impact assessment — do NOT wait for user approval
+- Log: "Auto-proceeding: cycling mode active. Impact assessment complete, no breaking changes identified."
+- If breaking changes ARE identified during cycling: STOP and ask user anyway — auto-proceed only when safe
+
+**If NOT cycling (interactive mode):**
+- Do NOT implement until user explicitly approves
+- Present the impact assessment and wait
 
 ### Step 6: Implement Fix
 

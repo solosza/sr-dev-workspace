@@ -62,3 +62,8 @@ confirmation screenshot / verification
 - resume-ai-pipeline: github.com/solosza/resume-ai-pipeline
 - Greenhouse form field analysis: FDE role (4985877008) fully mapped
 - QA platforms: isagawa-qa/platform-selenium, isagawa-qa/platform-playwright
+
+## Task Builder Input
+- **Deliverable:** Page objects for Greenhouse/Lever ATS forms, config-driven form filler, dry-run mode, integration with resume-ai-pipeline output
+- **Scope:** BUILD
+- **Constraints:** Depends on resume-ai-pipeline Phase 2 (batch generation). Uses QA platform (Selenium or Playwright). Phase 2/3 work — not immediate.

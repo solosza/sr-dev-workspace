@@ -2,7 +2,7 @@
 
 **Domain:** sr_dev
 **Type:** Indexed
-**Updated:** 2026-02-24
+**Updated:** 2026-03-22
 
 ---
 
@@ -37,7 +37,12 @@ This workspace (`D:\my_ai_projects\project_test_repos\sr_dev_test`) is the dev w
 | Reference | File |
 |-----------|------|
 | Domain Setup Skill | `.claude/skills/kernel-domain-setup/SKILL.md` |
+| Autonomous Cycling Skill | `.claude/skills/autonomous-cycling/SKILL.md` |
+| Task Builder Skill | `.claude/skills/task-builder/SKILL.md` |
+| Audit Workflow Skill | `.claude/skills/audit-workflow/SKILL.md` |
 | Kernel Commands | `.claude/commands/kernel/` |
+| Backlog Command | `.claude/commands/kernel/backlog.md` |
+| Auto-Approve Hook | `.claude/hooks/auto-approve-claude-writes.py` |
 
 ### Lessons Learned
 → `.claude/lessons/lessons.md`

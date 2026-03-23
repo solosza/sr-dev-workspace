@@ -112,3 +112,8 @@ Run `/spec-factory-run content-production` from the factory repo and feed this:
 - Twitter thread: skill graph for 10 social media accounts (March 2026)
 - @arscontexta Claude Code plugin (generates skill graph structure)
 - Existing spec architecture: `.claude/skills/` pattern across all Isagawa repos
+
+## Task Builder Input
+- **Deliverable:** Content production domain spec repo (`isagawa-co/content-production-spec`) with SKILL.md, workflow.md, gate-contract.md, steps/, references/, config/
+- **Scope:** BUILD
+- **Constraints:** Use spec factory pattern. Test by generating content for Isagawa's own accounts. Marketplace packaging required.

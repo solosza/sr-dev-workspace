@@ -18,3 +18,8 @@ The kernel currently uses `session_state.json` for cross-session context and `ac
 
 ## Origin
 External observation — comparing Isagawa kernel's state persistence with Zep Cloud's memory layer.
+
+## Task Builder Input
+- **Deliverable:** Research document with Zep Cloud architecture analysis + recommendations for kernel JSONL execution log
+- **Scope:** RESEARCH
+- **Constraints:** Web research only, no code changes. Output to `docs/research/`

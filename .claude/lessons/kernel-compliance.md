@@ -16,6 +16,7 @@ Hook enforcement, anchor behavior, learn triggers, and protocol adherence.
 - **Root Cause:** Agent treated anchor as a counter reset mechanism rather than an actual re-centering checkpoint.
 - **Fix:** Anchor Part A MUST use the Read tool on protocol, lessons, and session_state every time. No "quick anchor." No "already read."
 - **Anti-Pattern:** NEVER skip reading files during anchor. "Already read this session" is not valid.
+- **Recurrence (2026-03-22):** Same violation. Counter hit 10, agent skipped Part A and Part B entirely, just reset counter and printed confirmation. This was AFTER the lesson already existed AND after updating anchor step 4 to require concrete verbs. The lesson was read earlier in the session but not applied when it mattered. Anchor is NOT optional even when you're in a hurry to get back to work.
 
 ## 2026-03-03 Agent Dismissed Work Done Between Anchors as "No New Work"
 - **Issue:** Agent said "No new work since last anchor" while `actions_since_anchor > 0`. In reality, a full 4-phase refactor had been performed across repos.
