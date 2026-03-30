@@ -36,7 +36,8 @@
     "Bash: git -C \"C:/Users/solos/AppData/Local/Temp/test-platform-deepeval\" add README.md ",
     "Bash: git status --short 2>&1 | head -30",
     "Bash: git status --short 2>&1 | wc -l && echo \"---\" && git branch --show-current",
-    "Bash: git status --short 2>&1 | grep \"^??\" | head -20"
+    "Bash: git status --short 2>&1 | grep \"^??\" | head -20",
+    "Bash: git stash && git checkout main && git merge feature/audit-fixes-and-new-commands"
   ],
   "one_shot": false
 }
