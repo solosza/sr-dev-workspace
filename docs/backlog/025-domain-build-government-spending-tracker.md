@@ -50,15 +50,89 @@ The agent runs continuously. New grants are published daily. The agent watches.
 - **Pattern 8:** Officers/directors with prior fraud convictions or sanctions
 - **Pattern 9:** Org claims serving population that doesn't match geography or scale
 
-## What Needs Research
-- Exact qui tam filing process — do we need a law firm partner or can we file directly?
-- Whether AI-discovered fraud qualifies as "original source" under the FCA (key legal question)
+## Legal Viability — "Original Source" Question: RESOLVED
+
+The 2010 ACA amendment changed the FCA's "original source" requirement. You **no longer need direct and independent knowledge** of the fraud. You need to **"materially add"** to publicly disclosed information (31 U.S.C. 3730(e)(4)).
+
+**This means:** Taking public data (USASpending + IRS 990s + SAM.gov) and connecting dots nobody else connected = materially adding. The fraud patterns may exist in public records, but assembling them into a cross-referenced evidence package that expands scope, adds timeframe, or establishes defendant knowledge IS the material addition.
+
+AI-discovered fraud from public data qualifies as long as the analysis goes beyond what's already publicly known as a fraud allegation. We're not forwarding news articles — we're building evidence packages from 8+ databases that no human assembled.
+
+## Investigation Loop — "Follow the Money" in Practice
+
+The agent runs a 6-layer investigation loop per entity, all from public data:
+
+**Layer 1: Who Got Paid?** (USASpending.gov API — free, daily updates)
+- Every federal award is public: recipient, amount, program, date
+- Scan for awards to entities matching fraud patterns
+
+**Layer 2: Are They Real?** (IRS 990 + SAM.gov + Secretary of State)
+- IRS 990: 3M+ filings searchable on ProPublica. Revenue vs. award size mismatch = red flag
+- SAM.gov: registration date, exclusion/debarment status
+- State incorporation: formation date, address, officer names
+
+**Layer 3: Where Did It Go?** (990 expense analysis + county records)
+- 990 expense categories: if $10M nutrition award but $0 food costs = flag
+- Officer compensation vs. program spending ratio
+- County assessor records: did officers buy property after large awards?
+
+**Layer 4: Who Are These People?** (OSINT)
+- PACER: prior fraud convictions ($0.10/page)
+- OFAC SDN: sanctioned individuals
+- OpenCorporates: officers running multiple grant-receiving entities
+- Public profiles: does org's claimed capacity match its staff?
+
+**Layer 5: Connect the Network** (cross-entity analysis)
+- Same address across multiple recipients
+- Same officers across multiple entities
+- Related-party transactions visible in 990 disclosures
+- Geographic clustering of awards to entities with no local presence
+
+**Layer 6: Build the Case** (evidence package for attorney)
+- Timeline: entity creation → award → spending anomalies
+- Every claim sourced to a public record with URL
+- Estimated fraud amount calculated
+- Mapped to specific FCA violation elements
+
+## Execution Architecture — run-task.sh Based
+
+The fraud detection loop runs as a scheduled agent pipeline via `run-task.sh`:
+
+```
+Daily cron → run-task.sh fraud-scan-repo →
+  Task 1: Ingest new USASpending awards (API pull)
+  Task 2: Cross-reference against IRS 990 database
+  Task 3: Cross-reference against SAM.gov
+  Task 4: Apply fraud pattern scoring
+  Task 5: Deep-dive flagged entities (PACER, state records, OSINT)
+  Task 6: Generate evidence packages for high-score findings
+  Task 7: Alert Isagawa team of new findings
+```
+
+Each task is a spawned `claude -p` agent operating under kernel enforcement. The pipeline runs daily, scanning every new federal award. Zero marginal cost per investigation.
+
+## Public Data Access — All Free or Low Cost
+
+| Data | Source | Cost |
+|------|--------|------|
+| Federal awards | USASpending.gov API | Free |
+| Nonprofit 990 filings | ProPublica Nonprofit Explorer | Free |
+| Entity registration | SAM.gov API | Free |
+| State incorporation | Secretary of State websites | Free |
+| Federal court records | PACER | $0.10/page |
+| Sanctioned entities | OFAC SDN List | Free |
+| Corporate officers | OpenCorporates | Free tier |
+| Real estate records | County assessor websites | Free |
+| FinCEN alerts | FinCEN.gov | Free |
+
+## What Still Needs Research
 - Which federal programs have the highest fraud rates (target those first)
-- Whether state False Claims Acts offer additional reward channels (many states have their own)
+- State False Claims Acts — additional reward channels (many states have their own)
 - SEC whistleblower program (10-30% for securities fraud) — separate channel
 - IRS whistleblower program (15-30% for tax fraud over $2M) — separate channel
 - How to structure Isagawa's legal entity for qui tam filings
 - Attorney partnership model — qui tam attorneys typically work on contingency
+- Optimal cron schedule and API rate limits for daily scanning
 
 ## Data Sources
 - **USASpending.gov** — federal award and subaward data (REST API, updated daily)
@@ -82,6 +156,6 @@ The agent runs continuously. New grants are published daily. The agent watches.
 - Context: $375B IRA/climate disbursements, Minnesota Feeding Our Future ($300M), Bessent crackdown
 
 ## Task Builder Input
-- **Deliverable:** Phase 1: Research report on qui tam legal viability + attorney partner identification. Phase 2: Agent pipeline scanning USASpending.gov with fraud pattern matching. Phase 3: Evidence package generator for attorney review.
-- **Scope:** RESEARCH (Phase 1), then BUILD (Phases 2-3)
-- **Constraints:** Phase 1 is critical — must confirm AI-discovered fraud qualifies as "original source" before building. Need qui tam attorney consultation. All data public records only. Agent runs in sr-dev-workspace or dedicated fraud-detection repo.
+- **Deliverable:** Phase 1: Attorney partner identification + engagement letter. Phase 2: Fraud-scan repo with run-task.sh pipeline (daily USASpending ingest → cross-reference → score → evidence package). Phase 3: First batch of findings submitted through attorney.
+- **Scope:** BUILD
+- **Constraints:** Legal viability confirmed (materially adds standard). Need qui tam attorney on contingency. All data public records only. Pipeline runs via run-task.sh + cron in dedicated fraud-scan repo. Kernel enforces investigation quality gates.
