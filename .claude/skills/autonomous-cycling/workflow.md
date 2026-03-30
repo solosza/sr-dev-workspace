@@ -33,8 +33,20 @@ Each task's acceptance criteria define "done". Verify each criterion mechanicall
 | Uses pattern X | Grep the file for the pattern |
 | Pattern absent | Grep to confirm absence |
 | Method signature | Read the file and verify |
+| Factory output | Spawn agent in target repo, verify expected files produced |
 
 If a criterion can't be verified mechanically, state what you checked and why you believe it's met.
+
+### Factory Task Execution
+
+When a task has `## Execution: factory`, the cycling agent:
+1. Reads the `## Factory` section for target_repo, command, expected_output
+2. Spawns an Agent with the target repo context
+3. Agent operates under that repo's kernel (hooks, commands, state)
+4. Parent waits for result, verifies expected_output exists
+5. Continues cycling
+
+→ See `task-builder/references/cross-repo-delegation.md` for details.
 
 ## State Tracking
 

@@ -1,0 +1,47 @@
+{
+  "scope": "REFACTOR",
+  "convention_source": "convention-check.json — verified against platform-selenium, platform-playwright, docker-spec",
+  "structural_corrections": {
+    "framework/_reference/ssh_interface.py": "MOVE → framework/interfaces/ssh_interface.py",
+    "framework/_reference/tests/conftest.py": "MOVE → tests/conftest.py",
+    "framework/_reference/fixtures/host_configs.json": "MOVE → tests/data/host_configs.json"
+  },
+  "new_files": {
+    "framework/interfaces/ssh_interface.py": "L1: SSH Interface moved to correct location (from _reference/)",
+    "tests/conftest.py": "Top-level conftest with all fixtures — moved from _reference/ + compliance fixtures added",
+    "tests/data/host_configs.json": "Host configs moved to correct location (from _reference/fixtures/)",
+    "tests/data/compliance/stig-rocky9.json": "STIG rules for Rocky Linux 9",
+    "tests/data/compliance/cis-rocky9-l1.json": "CIS Level 1 benchmarks for Rocky 9",
+    "tests/data/compliance/nist-800-171.json": "NIST 800-171 Rev 3 controls mapped to checks",
+    "tests/data/compliance/fips-140-3.json": "FIPS 140-3 crypto validation checks",
+    "tests/data/clients/ciq-rlc-pro.json": "CIQ Rocky Linux Pro client config",
+    "tests/data/clients/ciq-rlc-pro-ai.json": "CIQ Rocky Linux Pro AI/HPC client config",
+    "framework/_reference/validators/stig_validator.py": "L2: STIG compliance validator reference",
+    "framework/_reference/validators/cis_validator.py": "L2: CIS benchmark validator reference",
+    "framework/_reference/validators/nist_800_171_validator.py": "L2: NIST 800-171 validator reference",
+    "framework/_reference/validators/fips_validator.py": "L2: FIPS 140-3 validator reference",
+    "framework/_reference/tasks/compliance_tasks.py": "L3: Compliance domain operations reference",
+    "framework/_reference/roles/compliance_auditor.py": "L4: Compliance auditor role reference",
+    "tests/test_compliance.py": "L5: Compliance test suite (actual tests — NOT in _reference/)"
+  },
+  "modified_files": {
+    "references/validator-catalog.md": "Add compliance validators to catalog",
+    "FRAMEWORK.md": "Document compliance additions + corrected directory structure",
+    "README.md": "Add compliance testing section"
+  },
+  "unchanged_files": {
+    "framework/_reference/validators/package_validator.py": "Composed by compliance validators — no changes",
+    "framework/_reference/validators/kernel_validator.py": "Composed by compliance validators — no changes",
+    "framework/_reference/validators/service_validator.py": "Composed by compliance validators — no changes",
+    "framework/_reference/validators/config_validator.py": "Composed by compliance validators — no changes",
+    "framework/_reference/tasks/run_ssh_command.py": "Existing task reference — no changes",
+    "framework/_reference/roles/ssh_batch_executor.py": "Existing role reference — no changes",
+    "framework/_reference/tests/test_ssh_batch.py": "Stays as reference example",
+    "requirements.txt": "No new deps expected"
+  },
+  "deleted_files": {
+    "framework/_reference/ssh_interface.py": "Moved to framework/interfaces/ssh_interface.py",
+    "framework/_reference/tests/conftest.py": "Moved to tests/conftest.py",
+    "framework/_reference/fixtures/host_configs.json": "Moved to tests/data/host_configs.json"
+  }
+}

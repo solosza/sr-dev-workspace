@@ -104,7 +104,14 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
     - What are you about to do?
     - How does it fit the protocol?
 
-13. **Update state:**
+13. **Confirm anchor token (MANDATORY if token exists):**
+    - Read `pending_anchor_token` from `session_state.json`
+    - If a token exists: include it in your anchor confirmation output
+    - Set `anchor_token_confirmed: true` in session_state.json
+    - Clear `pending_anchor_token` (set to null)
+    - If you skip this step, the hook will block your next action — the token proves you ran the full anchor
+
+14. **Update state:**
 
     Update `.claude/state/[domain]_workflow.json`:
     ```json
@@ -115,7 +122,15 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
     }
     ```
 
-    If resuming from restart, also update `.claude/state/session_state.json`:
+    Update `.claude/state/session_state.json` (merge):
+    ```json
+    {
+      "anchor_token_confirmed": true,
+      "pending_anchor_token": null
+    }
+    ```
+
+    If resuming from restart, also set:
     ```json
     {
       "needs_restart": false,
@@ -123,9 +138,10 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
     }
     ```
 
-14. **Confirm:**
+15. **Confirm:**
     ```
     ANCHORED: [domain]
+    Token: [token from pending_anchor_token, or "none"]
 
     Key patterns:
     - [pattern 1]

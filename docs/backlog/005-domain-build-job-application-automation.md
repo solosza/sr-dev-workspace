@@ -1,69 +1,57 @@
-# Backlog 005: Job Application Form Automation
+# Install Kernel + Audit Job Application Spec
 
 ## Status
 Open
 
 ## Priority
-Medium — useful when applying at volume (Phase 2/3 of resume-ai-pipeline)
+Medium — spec exists, needs kernel integration then gap audit
 
 ## Summary
-Use the Isagawa QA automation platform (Selenium or Playwright) to automate job application form submissions. The resume-ai-pipeline already generates tailored resumes and cover letters per job. This closes the loop by automating the actual submission. Same problem the platform already solves: navigate to URL, locate fields, fill data from structured source, submit, verify confirmation.
+The job-application-spec repo (`C:\Users\solos\my_ai_projects\job-application-spec`) has a well-structured skill (SKILL.md, workflow.md, 5 reference files, 1 command). The spec defines the blueprint but has no kernel infrastructure. Install the kernel, run domain-setup to build protocol from the spec, then audit for gaps — the domain-setup output will reveal what the spec actually missed vs what it promised.
 
-## Why This Fits
-Job application forms (Greenhouse, Lever, Workday, etc.) are standard HTML forms with predictable field patterns. The QA platform already handles form interaction, file uploads, dropdown selection, and submission verification. This is a natural extension, not a new capability.
+Auditing the spec in isolation is premature. The real gaps surface after domain-setup builds the protocol, hooks, and state — then we can measure the spec against a running system.
 
-## Target Platforms
-| ATS | Used By | Form Pattern |
-|-----|---------|-------------|
-| Greenhouse | Anthropic, many startups | Standard HTML form, file upload for resume |
-| Lever | Mid-size tech companies | Similar pattern |
-| Workday | Enterprise (Fortune 500) | More complex, multi-page |
-| Custom | Varies | Case-by-case |
+## Steps
 
-## Data Flow
-```
-resume-ai-pipeline (generates content)
-    ↓
-application-data.json (structured answers per job)
-    ↓
-QA platform (fills form, uploads resume, submits)
-    ↓
-confirmation screenshot / verification
-```
+### Phase 1: Install Kernel
+- [ ] Copy kernel files (CLAUDE.md, .claude/commands/, .claude/hooks/, .claude/skills/kernel-*, .claude/settings.local.json) into job-application-spec repo
+- [ ] Run `/kernel/domain-setup` — let it discover the job-application skill and build the protocol
+- [ ] Restart for hooks to load
+- [ ] Run `/kernel/anchor` — verify protocol reads correctly
 
-## Field Categories (Greenhouse Example)
-| Category | Fields | Source |
-|----------|--------|--------|
-| Personal info | Name, email, phone, LinkedIn | Static config (reusable) |
-| Yes/No questions | Visa, relocation, in-office, prior interview | Static config |
-| Essays | "Why [company]?", cover letter | Generated per job by resume-ai-pipeline |
-| Resume upload | PDF file | Generated per job by resume-ai-pipeline |
-| EEOC | Gender, race, veteran, disability | Static config (optional) |
+### Phase 2: Post-Setup Audit
+- [ ] Run `/kernel/audit-workflow` — scan for infrastructure gaps
+- [ ] Test `/job-apply` with a dry-run against a real job posting URL
+- [ ] Identify gaps across 5 categories:
+  - **Implementation:** What's missing from the kernel integration?
+  - **Workflow:** Which steps fail or have no error recovery?
+  - **Data Mapping:** Which form fields can't be mapped to profile?
+  - **Decision Logic:** Where does the agent guess instead of having a rule?
+  - **Application Boundaries:** What external factors break the workflow?
+- [ ] Generate fix tasks from audit findings
 
-## Implementation Approach
-- Page Object per ATS platform (Greenhouse first)
-- Config-driven: personal info in shared config, per-job answers in job-specific JSON
-- Resume-ai-pipeline outputs job-specific JSON alongside HTML resume
-- File upload handling for resume PDF
-- Confirmation page verification (screenshot + assertion)
-- Dry-run mode: fill all fields but don't submit (for review)
+### Phase 3: Fix + Validate
+- [ ] Execute fix tasks via `/kernel/task-builder`
+- [ ] Re-run dry-run test
+- [ ] Verify all gaps closed
 
-## When to Build
-- **Not now:** 3 manual applications don't justify the setup cost
-- **Phase 2:** When resume-ai-pipeline scrapes job listings and generates resumes in batch
-- **Phase 3:** Full end-to-end: scrape jobs, generate resume, fill application, submit, track status
+## Preliminary Gap Notes (from spec read — to be validated post-setup)
+- No CLAUDE.md, no kernel infrastructure, no hooks wired
+- Field mapping table only has ~13 labels (real forms have 30+)
+- Fuzzy matching algorithm undefined
+- No confidence threshold for auto-fill vs HITL
+- No authentication/credential management for login-required sites
+- No anti-bot detection strategy beyond CAPTCHA flagging
+- No application history log
 
-## Dependencies
-- resume-ai-pipeline Phase 2 (job scraping + batch generation)
-- Structured output format from resume-ai-pipeline (JSON with form answers)
-- Platform page objects for target ATS systems
+These are observations from reading the spec files — the real audit happens after domain-setup.
 
 ## References
-- resume-ai-pipeline: github.com/solosza/resume-ai-pipeline
-- Greenhouse form field analysis: FDE role (4985877008) fully mapped
-- QA platforms: isagawa-qa/platform-selenium, isagawa-qa/platform-playwright
+- Spec repo: `C:\Users\solos\my_ai_projects\job-application-spec`
+- Pattern: same as backlog 013/014 (QA platform with/without kernel)
+- Existing files: SKILL.md, workflow.md, 5 references, 1 command, .mcp.json
 
 ## Task Builder Input
-- **Deliverable:** Page objects for Greenhouse/Lever ATS forms, config-driven form filler, dry-run mode, integration with resume-ai-pipeline output
-- **Scope:** BUILD
-- **Constraints:** Depends on resume-ai-pipeline Phase 2 (batch generation). Uses QA platform (Selenium or Playwright). Phase 2/3 work — not immediate.
+- **Deliverable:** Kernel installed, domain-setup complete, post-setup audit report, fix tasks generated and executed
+- **Scope:** BUILD + TEST
+- **Constraints:** Target repo is job-application-spec. Needs restart after domain-setup (HUMAN REQUIRED). Playwright MCP must be configured for dry-run test. HUMAN REQUIRED for profile.json setup.

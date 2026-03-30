@@ -30,3 +30,10 @@ Hook enforcement, anchor behavior, learn triggers, and protocol adherence.
 - **Root Cause:** Agent treated conversational acknowledgment as equivalent to recording. Said the words instead of doing the work.
 - **Fix:** "Lesson recorded" MUST mean the lesson was written to disk using Edit or Write tool.
 - **Anti-Pattern:** NEVER say "lesson recorded" or "done" without the corresponding tool call. Words are not actions. If it's not on disk, it didn't happen.
+
+## 2026-03-23 Agent Read "One Action" Rule Then Wrote Multi-Action Tasks
+- **Issue:** Step-04-atomize.md says "One action — a single file write." Agent read this, then wrote tasks like "Copy 11 command files" and "Create 10 sub-reference files." Each of those is 10+ atomic actions bundled into one task.
+- **Root Cause:** Agent optimized for fewer task files over correct granularity. Treated "atomic" as "logically grouped" instead of "literally one action." Read the rule but applied judgment to override it.
+- **Fix:** One file = one task. If a task creates 4 validators, that's 4 tasks. If it copies 11 commands, that's 11 tasks. No bundling. The rule is literal, not interpretive.
+- **Anti-Pattern:** NEVER bundle multiple file operations into one task. "Copy all hooks" is not atomic — "Copy auto-approve-claude-writes.py" is atomic.
+- **Recurrence pattern:** Same as quick-anchor — agent reads rule, understands rule, then violates rule because it seems inefficient. Efficiency is not the goal. Drift prevention is.

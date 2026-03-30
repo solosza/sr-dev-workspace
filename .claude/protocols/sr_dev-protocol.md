@@ -2,7 +2,7 @@
 
 **Domain:** sr_dev
 **Type:** Indexed
-**Updated:** 2026-03-22
+**Updated:** 2026-03-23
 
 ---
 
@@ -40,9 +40,14 @@ This workspace (`D:\my_ai_projects\project_test_repos\sr_dev_test`) is the dev w
 | Autonomous Cycling Skill | `.claude/skills/autonomous-cycling/SKILL.md` |
 | Task Builder Skill | `.claude/skills/task-builder/SKILL.md` |
 | Audit Workflow Skill | `.claude/skills/audit-workflow/SKILL.md` |
+| Production Test Skill | `.claude/skills/prod-test/SKILL.md` |
 | Kernel Commands | `.claude/commands/kernel/` |
 | Backlog Command | `.claude/commands/kernel/backlog.md` |
+| Universal Gate Enforcer | `.claude/hooks/universal-gate-enforcer.py` |
+| Domain Gate Enforcer | `.claude/hooks/sr_dev-gate-enforcer.py` |
 | Auto-Approve Hook | `.claude/hooks/auto-approve-claude-writes.py` |
+| Actions Log Appender | `.claude/hooks/actions-log-appender.py` |
+| Test Failure Detector | `.claude/hooks/test-failure-detector.py` |
 
 ### Lessons Learned
 → `.claude/lessons/lessons.md`

@@ -1,0 +1,18 @@
+{
+  "siblings_checked": ["platform-selenium", "platform-playwright", "docker-spec"],
+  "orgs_checked": ["isagawa-qa", "isagawa-co"],
+  "conventions": {
+    "conftest_location": "tests/conftest.py — top-level, not inside _reference/ (Selenium: tests/conftest.py, Playwright: tests/fixtures/index.ts, Docker: tests/conftest.py)",
+    "test_data_location": "tests/data/ — fixture JSON lives here (Selenium: tests/data/test_users.json, Playwright: tests/data/test_users.json, Docker: tests/data/test_images.json)",
+    "interface_location": "framework/interfaces/ — not inside _reference/ (Selenium: framework/interfaces/browser_interface.py, Playwright: framework/interfaces/browser-interface.ts, Docker: framework/interfaces/image_interface.py)",
+    "reference_tests": "framework/_reference/tests/ — example tests only, not the actual test suite (all 3 siblings have reference tests here AND separate tests/ dir)",
+    "reference_usage": "framework/_reference/ contains ONLY reference implementations for AI code generation — no production test infra, no fixtures, no conftest"
+  },
+  "target_deviations": [
+    "conftest.py is inside framework/_reference/tests/ instead of tests/ — deviates from all 3 siblings",
+    "host_configs.json is inside framework/_reference/fixtures/ instead of tests/data/ — deviates from all 3 siblings",
+    "No framework/interfaces/ directory — ssh_interface.py is inside framework/_reference/ instead of framework/interfaces/ — deviates from all 3 siblings",
+    "No top-level tests/ directory at all — deviates from all 3 siblings"
+  ],
+  "correction_required": true
+}

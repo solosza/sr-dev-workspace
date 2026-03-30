@@ -388,6 +388,89 @@ Verified with `python -m py_compile` - syntax now OK.
 
 ---
 
+## DEF-012: Task-builder atomize step allows action bundling
+
+**Date:** 2026-03-23
+**Severity:** High
+**Status:** OPEN
+
+### What Happened
+User asked 3 times to decompose tasks to maximum granularity (one action per task). Agent repeatedly bundled 3-10 actions into single tasks. E2E test (task 043) had 6+ distinct actions in one task file. Validation tasks (037-040) similarly bundled.
+
+### Expected Behavior
+Each task file contains exactly ONE action: one file write, one test run, one config change, one copy operation. No bundling.
+
+### Actual Behavior
+- Agent grouped "related" actions into single tasks
+- E2E test had: create workspace + install kernel + 3 run-task iterations + verify results = 6+ actions
+- Agent applied subjective "merge if <3 criteria" rule to justify bundling
+- User had to correct 3 times
+
+### Root Cause
+1. step-04-atomize.md has conflicting rules: "one action per task" vs "merge if <3 subtasks"
+2. The merge rule gives the agent permission to bundle, overriding the atomicity rule
+3. No explicit "NEVER bundle multiple file writes/commands into one task" directive
+4. Agent optimizes for fewer tasks (feels more efficient) rather than following granularity instruction
+
+### Impact
+- Tasks not executable in one-shot mode (too many actions per iteration)
+- Violations of DRY principle — user repeats same instruction 3 times
+- Erodes user trust in agent's ability to follow instructions
+
+### Proposed Fix
+1. Remove "merge if <3" rule from step-04-atomize.md — it contradicts atomicity
+2. Add explicit "NEVER bundle" rule to atomize step
+3. Add lesson to lessons.md
+4. Re-decompose coarse tasks (037-043) into truly atomic ones
+
+### Resolution
+**RESOLVED 2026-03-23** — Root cause fixed in task-builder skill:
+
+1. **step-04-atomize.md** — Removed "merge if <3" rule. Replaced with "NEVER merge" + "One task = one action. No exceptions." Added explicit anti-bundling rules in Rules section.
+2. **step-03-decompose.md** — Removed "too small → merge" and "3-10 tasks, not 40" cap. Replaced with "small is GOOD" and "task count driven by work, not arbitrary cap."
+3. **Lesson recorded** — via /kernel/learn (see lessons.md)
+
+Files modified:
+- `.claude/skills/task-builder/references/step-04-atomize.md` — Removed merge rule, added granularity rule
+- `.claude/skills/task-builder/references/step-03-decompose.md` — Removed merge rule, removed task cap
+
+Still needed: re-decompose coarse tasks (037-043) into truly atomic ones.
+
+---
+
+## DEF-013: Production testing requirement missing from step-04-atomize
+
+**Date:** 2026-03-23
+**Severity:** High
+**Status:** RESOLVED
+
+### What Happened
+Level 3 production tests were never planned during task decomposition. The 3-tier testing requirement (Level 1/2/3) only appears in step-06-execute.md and production-testing.md — but test tasks are planned in step 4-5. By step 6 the task list is finalized.
+
+### Expected Behavior
+Step 4 should require verifying every deliverable has Level 1, 2, AND 3 tests before moving to step 5.
+
+### Actual Behavior
+Agent created tasks with only Level 1 (file_exists) and some Level 2 (run_code). No Level 3 production tests. User caught the gap manually.
+
+### Root Cause
+production-testing.md is referenced only in step-06 (execute). Step-04 (atomize) — where test tasks are planned — has no mention of testing hierarchy or production testing.
+
+### Resolution
+**RESOLVED 2026-03-23** — Added "Testing Completeness Check (MANDATORY)" section to step-04-atomize.md:
+
+1. References production-testing.md via wikilink (was only in step-06)
+2. Documents 3-tier hierarchy (L1/L2/L3) inline
+3. Mandatory checklist: for each deliverable, verify L1/L2/L3 test tasks exist
+4. Explicit "simulate is NOT Level 3" rule
+5. Common L3 gaps list to watch for
+6. Updated Output section to include "testing completeness verified"
+
+Files modified:
+- `.claude/skills/task-builder/references/step-04-atomize.md` — Added testing completeness section
+
+---
+
 ## Template
 
 ```markdown

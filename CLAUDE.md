@@ -99,6 +99,7 @@ After `/kernel/domain-setup` creates new hooks:
 ├── task-builder.md        ← Decompose goal into tasks + auto-execute (user-invoked)
 ├── backlog.md             ← Create backlog item in standard format (user-invoked)
 ├── audit-workflow.md      ← Scan for gaps + auto-fix (user-invoked)
+├── prod-test.md           ← Production test a deliverable repo (modular, stackable)
 └── reset.md               ← Dev tool: fresh state for testing
 ```
 
@@ -160,17 +161,24 @@ Domain spec that teaches the agent to loop through numbered tasks autonomously. 
 
 Location: `.claude/skills/task-builder/`
 
-Takes a user goal, decomposes into tasks with Phase Gates, and auto-executes via cycling.
+Takes a user goal, decomposes into tasks with gate contracts and test fixtures, then executes — BUILD tasks inline, TEST tasks via spawned sub-agents. Produces validation report.
 
 | File | Purpose |
 |------|---------|
 | `SKILL.md` | Identity, step table, principles |
 | `references/step-01-parse-goal.md` | Understand the goal |
 | `references/step-02-research.md` | Gather context |
-| `references/step-03-decompose.md` | Break into main tasks |
-| `references/step-04-atomize.md` | Expand to atomic subtasks |
-| `references/step-05-write-tasks.md` | Write task files with Phase Gates |
-| `references/step-06-execute.md` | Start autonomous cycling |
+| `references/step-03-convention-check.md` | Verify directory conventions against sibling platforms (both orgs) |
+| `references/step-04-resolve-template.md` | Read template platform, produce file map + path mapping |
+| `references/step-05-decompose.md` | Break into main tasks + phase boundary rule |
+| `references/step-06-atomize.md` | Atomic subtasks + gate contract + path validation |
+| `references/step-07-plan-review.md` | Present full plan to user for approval before writing |
+| `references/step-08-write-tasks.md` | Write tasks + gate contract + test fixtures |
+| `references/step-09-execute.md` | Dual execution (BUILD inline, TEST spawned) + validation report |
+| `references/step-10-structural-audit.md` | Post-execution diff against template platform |
+| `references/template-resolution.md` | Platform schema, path mapping format, banned patterns |
+| `references/verification-methods.md` | 3-tier verification + retry decision tree + fixture formats + test data principles |
+| `references/production-testing.md` | Level 3 e2e testing — deliverable-specific methods + production test template |
 
 **Usage:** `/kernel/task-builder Build the RAGA eval spec`
 
@@ -188,9 +196,31 @@ Scans all kernel infrastructure for gaps, generates fix tasks, and auto-executes
 | `references/step-03-scan-hooks.md` | Verify hooks wired in settings |
 | `references/step-04-scan-protocol.md` | Verify protocol + CLAUDE.md complete |
 | `references/step-05-scan-state.md` | Verify state + lessons consistent |
-| `references/step-06-report-fix.md` | Aggregate, generate fix tasks, cycle |
+| `references/step-06-scan-testing.md` | Verify testing completeness (Level 1-3, kernel integration, gates) |
+| `references/step-07-scan-atomicity.md` | Verify task atomicity (one action per task, decision logic for edge cases) |
+| `references/step-08-report-fix.md` | Aggregate, generate fix tasks, cycle |
 
 **Usage:** `/kernel/audit-workflow`
+
+### Production Test Skill
+
+Location: `.claude/skills/prod-test/`
+
+Takes a deliverable repo, assembles a master with kernel, runs domain-setup, copies to a test repo, sets up infrastructure, runs L1/L2/L3 tests via inner `run-task.sh`. Modular — callable standalone or by other commands.
+
+| File | Purpose |
+|------|---------|
+| `SKILL.md` | Identity, step table, composability |
+| `references/step-01-parse.md` | Parse input, discover repo structure |
+| `references/step-02-master.md` | Assemble master repo (code + kernel + scripts) |
+| `references/step-03-validate.md` | Run domain-setup, verify protocol + hooks |
+| `references/step-04-copy.md` | Copy master → disposable test repo |
+| `references/step-05-infra.md` | Set up test target (Docker, mock, or none) |
+| `references/step-06-inner-tasks.md` | Write L1/L2/L3 test tasks in test repo |
+| `references/step-07-execute.md` | Run inner test batch via run-task.sh |
+| `references/step-08-report.md` | Collect report, cleanup infra |
+
+**Usage:** `/kernel/prod-test C:/path/to/deliverable-repo`
 
 ## Principles
 
