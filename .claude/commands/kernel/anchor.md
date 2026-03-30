@@ -96,7 +96,12 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
    - If context is a string (legacy format), convert to: `{ "notes": "old string" }`
    - MERGE into existing state, don't overwrite other keys
 
-11. **Clear and reset actions log:**
+11. **Archive and reset actions log:**
+    - Read current `actions_log` from `session_state.json`
+    - If log is non-empty, archive it:
+      - Path: `.claude/state/anchor-logs/YYYY-MM-DD/HH-MM-SSZ.json`
+      - Content: `{ "anchor_timestamp": "...", "actions_count": N, "violations_found": 0, "actions": [...] }`
+      - Create date subfolder if it doesn't exist
     - Clear the `actions_log` array in `session_state.json` (set to `[]`)
     - The log resets each anchor — new actions get appended as they happen
 
