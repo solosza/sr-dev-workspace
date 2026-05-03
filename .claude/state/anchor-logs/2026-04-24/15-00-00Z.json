@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-04-24T15:00:00Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-24T09:06:18Z", "tool": "Bash", "entry": "Bash: python -c archive actions log"},
+    {"timestamp": "2026-04-24T09:07:37Z", "tool": "Bash", "entry": "Bash: ls extraction dir"},
+    {"timestamp": "2026-04-24T09:09:24Z", "tool": "Write", "entry": "Write: shader-terminal.json"},
+    {"timestamp": "2026-04-24T09:09:33Z", "tool": "Bash", "entry": "Bash: python -c verify acceptance criteria"}
+  ]
+}

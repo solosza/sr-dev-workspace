@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://careers.caterpillar.com/en/jobs/r0000352674/senior-principal-architect-applied-ai-enterprise/",
+    "company": "Caterpillar",
+    "title": "Senior Principal Architect, Applied AI Enterprise",
+    "location": "Broomfield, CO / Chicago, IL / Mossville, IL / Irving, TX",
+    "remote": "hybrid",
+    "tier": "tier3-emerging",
+    "salary_range": "$200,000-$300,000 (est.)",
+    "notes": "F100 company. Designs AI application technical infrastructure including orchestration layers and tool integrations. Leads evaluation and deployment of emerging AI technologies. Enterprise AI Systems Architect archetype."
+  },
+  {
+    "url": "https://jobs.hireheroesusa.org/jobs/525062094-senior-ai-systems-architect-at-leidos",
+    "company": "Leidos",
+    "title": "Senior AI Systems Architect",
+    "location": "Remote (US-based)",
+    "remote": "remote",
+    "tier": "tier3-emerging",
+    "salary_range": "$180,000-$280,000 (est.)",
+    "notes": "Defense/government contractor. Full-time telework. AI systems architecture for federal clients. Emerging role bridging AI governance and deployment architecture."
+  },
+  {
+    "url": "https://sierra.ai/careers",
+    "company": "Sierra AI",
+    "title": "Software Engineer, Agent",
+    "location": "San Francisco, CA",
+    "remote": "hybrid",
+    "tier": "tier3-emerging",
+    "salary_range": "$200,000-$400,000 (est.)",
+    "notes": "Conversational AI platform. Bret Taylor (ex-Salesforce CEO) co-founded. Builds AI agents for leading global brands. Median comp $179K, top SWE packages reach $1.2M+ with equity. Agent deployment architecture role."
+  },
+  {
+    "url": "https://decagon.ai/careers",
+    "company": "Decagon",
+    "title": "Solutions Architect / AI Agent Architect",
+    "location": "San Francisco, CA",
+    "remote": "onsite",
+    "tier": "tier3-emerging",
+    "salary_range": "$180,000-$300,000 (est.)",
+    "notes": "Leading conversational AI platform. Clients: Avis Budget Group, Cash App, Square, Chime, Oura Health. Leads technical pre-sales design engagements and architectural consensus for enterprise AI agent deployments. a16z backed."
+  },
+  {
+    "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4508312005",
+    "company": "Glean",
+    "title": "Principal Solutions Architect (Glean Agents)",
+    "location": "Palo Alto, CA",
+    "remote": "hybrid",
+    "tier": "tier3-emerging",
+    "salary_range": "$160,000-$250,000",
+    "notes": "Enterprise AI search and agents platform. Guides customers through architecture, design, and implementation. Helps technical teams build agents that automate real work processes. Base $160-250K."
+  },
+  {
+    "url": "https://scale.com/careers/4599700005",
+    "company": "Scale AI",
+    "title": "Staff Infrastructure Software Engineer, Enterprise AI",
+    "location": "San Francisco, CA",
+    "remote": "hybrid",
+    "tier": "tier3-emerging",
+    "salary_range": "$220,000-$350,000 (est.)",
+    "notes": "Enterprise AI infrastructure. Builds the platform that powers AI agent deployment at scale. Infrastructure architecture for enterprise AI systems."
+  },
+  {
+    "url": "https://www.governance.ai/opportunities",
+    "company": "Centre for the Governance of AI (GovAI)",
+    "title": "Research Fellow, AI Governance",
+    "location": "Oxford, UK / Remote",
+    "remote": "remote",
+    "tier": "tier3-emerging",
+    "salary_range": "$120,000-$180,000 (est.)",
+    "notes": "AI Governance Architect archetype. Research-focused. Frameworks like NIST AI RMF, ISO/IEC 42001, EU AI Act. 98.5% of orgs report inadequate AI governance staffing — massive demand signal."
+  },
+  {
+    "url": "https://www.roberthalf.com/us/en/job-details/ai-architect",
+    "company": "Multiple (via Robert Half)",
+    "title": "AI Architect (various F500)",
+    "location": "Various US locations",
+    "remote": "hybrid",
+    "tier": "tier3-emerging",
+    "salary_range": "$128,000-$300,000",
+    "notes": "Market-wide data: avg $128K, top range $300K. Microsoft offers $250-320K for senior AI architect. Amazon reaches $280K for principal AI engineer. Engineers with 2+ AI skills earn 43% more. LLM fine-tuning, MLOps, RAG architectures in high demand."
+  },
+  {
+    "url": "https://securityboulevard.com/2026/03/rsac-2026-innovation-sandbox-geordie-ai-architect-of-enterprise-ai-agent-security-governance-systems/",
+    "company": "Geordie AI",
+    "title": "AI Agent Security Governance Architect",
+    "location": "Remote",
+    "remote": "remote",
+    "tier": "tier3-emerging",
+    "salary_range": "$180,000-$280,000 (est.)",
+    "notes": "RSAC 2026 Innovation Sandbox winner. Emerging niche: AI agent security governance. Designs governance systems for enterprise AI agent deployments. Intersection of AI governance + agent deployment architecture."
+  },
+  {
+    "url": "https://www.glean.com/careers",
+    "company": "Glean",
+    "title": "Solutions Architect",
+    "location": "Palo Alto, CA",
+    "remote": "hybrid",
+    "tier": "tier3-emerging",
+    "salary_range": "$160,000-$250,000",
+    "notes": "Primary technical advisor post-sale. Guides enterprise architecture, design, and implementation of Work AI platform. Emerging Enterprise AI Infrastructure Architect role pattern."
+  }
+]

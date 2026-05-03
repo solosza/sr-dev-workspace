@@ -1,0 +1,25 @@
+{
+  "anchor_timestamp": "2026-04-29T12:02:00Z",
+  "actions_count": 20,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-29T11:18:39Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:18:46Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html"},
+    {"timestamp": "2026-04-29T11:45:13Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html — audience icons"},
+    {"timestamp": "2026-04-29T11:45:30Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css — icon styles"},
+    {"timestamp": "2026-04-29T11:46:26Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css — green icon color"},
+    {"timestamp": "2026-04-29T11:56:46Z", "tool": "Bash", "entry": "Bash: git status"},
+    {"timestamp": "2026-04-29T11:56:47Z", "tool": "Bash", "entry": "Bash: git diff --stat"},
+    {"timestamp": "2026-04-29T11:56:47Z", "tool": "Bash", "entry": "Bash: git log --oneline -5"},
+    {"timestamp": "2026-04-29T11:57:00Z", "tool": "Bash", "entry": "Bash: git add + commit ssh-compliance changes"},
+    {"timestamp": "2026-04-29T11:57:29Z", "tool": "Bash", "entry": "Bash: git log feature branch commits"},
+    {"timestamp": "2026-04-29T11:57:37Z", "tool": "Bash", "entry": "Bash: checkout main + merge ssh-compliance"},
+    {"timestamp": "2026-04-29T11:58:01Z", "tool": "Bash", "entry": "Bash: git push origin main"},
+    {"timestamp": "2026-04-29T12:00:25Z", "tool": "Bash", "entry": "Bash: git branch -a"},
+    {"timestamp": "2026-04-29T12:00:31Z", "tool": "Bash", "entry": "Bash: git log live-feed-update"},
+    {"timestamp": "2026-04-29T12:00:32Z", "tool": "Bash", "entry": "Bash: git log showcase-attestation"},
+    {"timestamp": "2026-04-29T12:00:55Z", "tool": "Bash", "entry": "Bash: grep conflict markers"},
+    {"timestamp": "2026-04-29T12:01:13Z", "tool": "Edit", "entry": "Edit: index.html — resolve merge conflict"},
+    {"timestamp": "2026-04-29T12:01:23Z", "tool": "Bash", "entry": "Bash: git add + commit merge resolution"}
+  ]
+}

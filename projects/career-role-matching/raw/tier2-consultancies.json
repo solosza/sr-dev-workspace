@@ -1,0 +1,112 @@
+[
+  {
+    "url": "https://apply.deloitte.com/en_US/careers/JobDetail/AI-Governance-and-Privacy-Senior-Consultant/329391",
+    "company": "Deloitte",
+    "title": "Cyber AI Governance and Privacy Senior Consultant",
+    "location": "Multiple US locations",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$100,000-$180,000 (est.)",
+    "notes": "AI governance operating models, GenAI/agentic AI deployments. NIST AI RMF, ISO/IEC 42001, EU AI Act. Recruiting ends 5/31/2026."
+  },
+  {
+    "url": "https://apply.deloitte.com/en_US/careers/JobDetail?jobId=316466",
+    "company": "Deloitte",
+    "title": "AI Solution Architecture - Specialist Leader",
+    "location": "Multiple US locations",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$167,000-$307,500",
+    "notes": "End-to-end AI/ML solutions design and implementation. Specialist Leader level. Recruiting ended 1/1/2026 — may reopen."
+  },
+  {
+    "url": "https://apply.deloitte.com/en_US/careers/JobDetail/AI-Engineering-Manager-Solutions-Architect-SFL-Scientific/319125",
+    "company": "Deloitte",
+    "title": "AI Engineering Manager / Solutions Architect - SFL Scientific",
+    "location": "Multiple US locations",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$150,000-$280,000 (est.)",
+    "notes": "AI engineering management + solutions architecture. SFL Scientific practice. Recruiting ends 5/31/2026."
+  },
+  {
+    "url": "https://careers.ey.com/ey/job/Atlanta-Senior-Manager-AI-Architecture-Knowledge-AI-GA-30308/1276813001/",
+    "company": "EY (Ernst & Young)",
+    "title": "Senior Manager - AI Architecture - Knowledge AI",
+    "location": "Atlanta, GA",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$152,700-$266,000",
+    "notes": "Lead design/implementation of knowledge-based AI systems. Foundation model management, safety, agentic design, AI app integration."
+  },
+  {
+    "url": "https://www.jobilize.com/amp/job/ca-toronto-senior-manager-agentic-ai-architect-ernst-young-advisory-pr1wudu",
+    "company": "EY (Ernst & Young)",
+    "title": "Senior Manager - Agentic AI Architect",
+    "location": "Toronto, Canada",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "CAD $140,000-$220,000 (est.)",
+    "notes": "Agentic AI architecture. Advisory practice. Enterprise AI governance and model management frameworks."
+  },
+  {
+    "url": "https://www.accenture.com/us-en/careers/jobdetails?id=R00302650_en",
+    "company": "Accenture",
+    "title": "Advanced AI Architect",
+    "location": "Multiple US locations",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$150,000-$280,000 (est.)",
+    "notes": "Full-stack AI architecture for AI platforms. Governance, security, observability, AgentOps, LLMOps. 5+ years AI/ML required. $3B AI investment, 45K AI professionals."
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/chicago/ai-insurance-solutions-architect-sr-manager/932/93266110432",
+    "company": "PwC",
+    "title": "AI Insurance Solutions Architect, Sr. Manager",
+    "location": "Chicago, IL",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$150,000-$260,000 (est.)",
+    "notes": "AI solutions architecture for insurance vertical. Senior Manager level."
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/phoenix/digital-assurance-and-transparency-responsible-ai-director/932/87826803184",
+    "company": "PwC",
+    "title": "Digital Assurance & Transparency - Responsible AI - Director",
+    "location": "Phoenix, AZ",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$180,000-$350,000 (est.)",
+    "notes": "Full-stack AI solutions with LLM integration. AI model lifecycle management. Director level — strong governance/compliance alignment."
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/chicago/responsible-ai-analyst-ai-and-emtech-pwc-labs/932/14164668160",
+    "company": "PwC",
+    "title": "Responsible AI Analyst - AI & EmTech - PwC Labs",
+    "location": "Multiple US (Chicago, Raleigh, Charlotte, Grand Rapids)",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$80,000-$130,000 (est.)",
+    "notes": "RAI go-to-market support, frameworks, training integration. Senior Associate level — entry point into responsible AI."
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/dallas/ai-engineer-senior-manager-commercial-technology-and-innovation/932/87007100416",
+    "company": "PwC",
+    "title": "AI Engineer - Senior Manager - Commercial Technology & Innovation",
+    "location": "Dallas, TX",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$150,000-$270,000 (est.)",
+    "notes": "AI architecture with enterprise integrations. Champions governance and Responsible AI practices. Mentoring role."
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/tampa/rfm-ai-governance-manager/932/83578271104",
+    "company": "PwC",
+    "title": "RFM AI Governance Manager",
+    "location": "Tampa, FL (also Raleigh, Charlotte, Chicago)",
+    "remote": "hybrid",
+    "tier": "tier2-consultancy",
+    "salary_range": "$120,000-$200,000 (est.)",
+    "notes": "AI governance management. Risk, fraud, and monitoring practice. HIPAA/SOX-adjacent compliance work."
+  }
+]

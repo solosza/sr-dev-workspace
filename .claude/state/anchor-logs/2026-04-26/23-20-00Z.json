@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-04-26T23:20:00Z",
+  "actions_count": 6,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T13:46:18Z", "tool": "Bash", "entry": "Bash: ls career-role-matching dir"},
+    {"timestamp": "2026-04-26T13:46:58Z", "tool": "Write", "entry": "Write: tier3-emerging.json"},
+    {"timestamp": "2026-04-26T13:47:03Z", "tool": "Bash", "entry": "Bash: python json validation"},
+    {"timestamp": "2026-04-26T13:47:21Z", "tool": "Bash", "entry": "Bash: test file exists"},
+    {"timestamp": "2026-04-26T13:47:24Z", "tool": "Bash", "entry": "Bash: python json validation"},
+    {"timestamp": "2026-04-26T13:47:44Z", "tool": "Bash", "entry": "Bash: ls career-role-matching dir"}
+  ]
+}

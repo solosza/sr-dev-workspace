@@ -1,0 +1,56 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "056a34c2358972340d1e754131b4ddb365d7fe9b76d6ebbf84ed5b0b994bb9ed",
+      "parameters": "f7e754767119f09f31a6cd134740e05515a4477668bd2f9715c067c543cf579e",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T10:07:12.907761+00:00",
+          "raw_input_hash": "eccce7cd33dd860e244e3f20f3101229535ee19b5e2e13bd6ae633c2449e788c",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/fraud-detector-grant-laundering/gate-contract.md",
+          "sha256": "308067114d1283ad6a52469e6a83d59c0cdf5f6c6ce9a33c19d191ad8b416df1"
+        },
+        {
+          "path": "tasks/fraud-detector-grant-laundering/000-index.md",
+          "sha256": "942b217eff6d42d1f831bdbad3f8c740154e53f32b7ebb8c1d2ed9737a7a445c"
+        },
+        {
+          "path": "tasks/fraud-detector-grant-laundering/001-add-pattern-json.md",
+          "sha256": "8b08d83f9082311046ced8caaf5917d6d3dae6f90d9f6dce31fe523a86686ba4"
+        },
+        {
+          "path": "tasks/fraud-detector-grant-laundering/002-add-check-function.md",
+          "sha256": "9012b438832cc4ca666d38d53ce52c3a0a8ebec86b280f9f9bbb979eedcb3756"
+        },
+        {
+          "path": "tasks/fraud-detector-grant-laundering/gate-contract.md",
+          "sha256": "308067114d1283ad6a52469e6a83d59c0cdf5f6c6ce9a33c19d191ad8b416df1"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T11:17:27.010624+00:00",
+      "end": "2026-04-28T11:17:27.010624+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/068-domain-upgrade-fraud-detector-grant-laundering.md",
+      "task_folder": "tasks/fraud-detector-grant-laundering/",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1397953216",
+      "logIndex": "1397953216"
+    }
+  }
+}

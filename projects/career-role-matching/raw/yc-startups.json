@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://www.ycombinator.com/companies/rubric-ai",
+    "company": "Rubric AI",
+    "title": "Founding Engineer (inferred)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "Runtime reasoning infrastructure for vertical AI agents — turns expert judgment into training signals and runtime guidance. Target: healthcare, legal, finance. Directly relevant to agent reliability/governance experience. No public job listing found; likely hiring via network."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/salus",
+    "company": "Salus",
+    "title": "Founding Engineer (inferred)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "API guardrails that validate agent actions before execution. Evidence cache, PII detection, budget/loop protection, HITL escalation. Reduced misalignment 52% across 12 frontier models. Founded by Stanford CS grads. No public listing found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/sentrial",
+    "company": "Sentrial",
+    "title": "Founding Engineer (inferred)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "AI agent failure detection — monitors, evaluates, and improves agent performance in production. Real-time root-cause analysis + automated remediation. Founded by UC Berkeley CS grads (Anay, Neel). No public listing found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/moda",
+    "company": "Moda",
+    "title": "Chief of Staff",
+    "location": "New York, NY (hybrid)",
+    "remote": false,
+    "tier": 2,
+    "yc_batch": "W26",
+    "funding_stage": "Seed ($7.5M raised)",
+    "notes": "Monitoring & reliability layer for AI agents — surfaces hallucinations, laziness, tool call failures. Analytics on user frustration, NPS, retention. Currently hiring Chief of Staff (not engineering). Engineering roles likely coming."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/openspec",
+    "company": "OpenSpec (Fission AI)",
+    "title": "Founding Engineer (inferred)",
+    "location": "Remote",
+    "remote": true,
+    "tier": 1,
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "Spec-driven development framework for coding agents. 20k+ GitHub stars. Building Workspaces for team collaboration. Contact: tabish@openspec.dev. Directly relevant — SDD is core to our kernel architecture. No public listing found."
+  },
+  {
+    "url": "https://www.cofia.ai/team",
+    "company": "Cofia",
+    "title": "Founding Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 2,
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "AI automations that write themselves — learns how you work and builds automations. Hiring Founding Engineer, $180K-$250K, full-stack, NYC office. Active listing confirmed."
+  },
+  {
+    "url": "https://github.com/generalaction/emdash",
+    "company": "Emdash (General Action)",
+    "title": "Founding Engineer (inferred)",
+    "location": "Unknown",
+    "remote": true,
+    "tier": 2,
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "Open-source agentic dev environment — run multiple coding agents in parallel, any provider. Wellfound page exists but no active listings. Careers page at emdash.io/careers/. Relevant to multi-agent orchestration experience."
+  }
+]

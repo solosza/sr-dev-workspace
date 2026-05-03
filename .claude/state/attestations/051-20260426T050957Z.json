@@ -1,0 +1,124 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "359f4952e80cdb2d5cd00f3f02d867226ee68f72b57a94e3707c03a724c215b9",
+      "parameters": "203b08bfc05cfd29dc6a9401095b621a02595348d16088231728fe3e6742f5f4",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-25T23:16:22.837872+00:00",
+          "raw_input_hash": "52c7d0c58f7fe681c27da3f18c02a5622b7912222678215f1e5c00143f955bad",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-04-25T23:18:52.710024+00:00",
+          "raw_input_hash": "299a5193a6cac7c3c7867ca15f3d5d4b1db08ecd92fff898dafdf7406020ab81",
+          "backlog_hash_after": "050c1a25e1adf4ff0f485d2a169c7765de27c56b76ca6f1af8457c56d933241b"
+        },
+        {
+          "rev": 3,
+          "timestamp": "2026-04-25T23:34:38.061003+00:00",
+          "raw_input_hash": "63fa3c487884e61f0e5912d4f52648582dd9b76690917b574fc0b4a2bc0546e1",
+          "backlog_hash_after": "76ba7fdd43cd2870fc3932964ad4e85c0b28279b199232f7cb8a9b357743b570"
+        },
+        {
+          "rev": 4,
+          "timestamp": "2026-04-25T23:35:36.043422+00:00",
+          "raw_input_hash": "a18f137546f5d684668f395469245e8ac62d060c321285259c3168f8f099bf59",
+          "backlog_hash_after": "b6fd14a676a606ead0437594d8a87ab927224a995106b642a97c84417558e72e"
+        },
+        {
+          "rev": 5,
+          "timestamp": "2026-04-25T23:49:29.552418+00:00",
+          "raw_input_hash": "3cc665f9044161f0e4778ffdf8b74f18ff25eb1d711ec47ff34cd6c481ceb1e1",
+          "backlog_hash_after": "359f4952e80cdb2d5cd00f3f02d867226ee68f72b57a94e3707c03a724c215b9"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/execute-pipeline-gaps/gate-contract.md",
+          "sha256": "c970281ffe2d8e1dfd9287a2fa3a0cbc47bbf9ca3fce78ceb906fd273e9e6213"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/000-index.md",
+          "sha256": "cdecd76fce4c1709b81f4a4dc668a1bc34bea0895617eb43763086027cb761c1"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/001-build-edit-step03-plan-review.md",
+          "sha256": "083bd226fc129f5689db891f0b996b1faf8a13a3d419f391d644e8f546feaf19"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/002-build-edit-run-task-timeout-feedback.md",
+          "sha256": "bb9061da747c451c489239c91d1f96c88d204889e4f2b7c49cf8bd6fd495cadd"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/003-build-edit-step09-mode-docs.md",
+          "sha256": "1159dbaeb85a9f1e5dfed034a16a19da70067941ad9cf3b9642736c2c45c79e8"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/004-build-edit-complete-gate-verify.md",
+          "sha256": "bb25e42970be2cff3df7ec2740f2f251c260fd6d260426974acd5fa2f1b956a1"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/005-build-edit-run-task-move-to-done.md",
+          "sha256": "404f7ac439935c00b5e498638bb2c104f505450b73e237388aecc817ce53d94e"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/006-build-edit-step04-backlog-path.md",
+          "sha256": "255fc061c708093acd36f6f5fc369d70ebb83e45f59c1ed3dc76ebf0e4eb06a4"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/007-build-rewrite-step04-dispatch.md",
+          "sha256": "8279ff91ed1761848c35d7fa2a8bbe8a9efee0dfc680e5c918de5bac6e85534a"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/008-build-write-granularity-reference.md",
+          "sha256": "8dd32fa564b16d7c78fb0abb2419d831b1a66b75036e559eb41860622e0de27a"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/009-build-edit-step05-decompose-wikilink.md",
+          "sha256": "dbab05962f52c8def804a4d7a5f7dc6e58b7281799f10284244c60b1f7b3e429"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/010-build-edit-step06-atomize-wikilink.md",
+          "sha256": "a59e4881b2e57aebf54b20f580e4f2e256ed64de0f8b3713ced94fa2d04ffc83"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/011-test-l1-verify-all-files.md",
+          "sha256": "310ebda7a5205367a0088c0d0008b26a6c341457023f40e3112a68035ab4ab24"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/012-test-l2-bash-syntax.md",
+          "sha256": "02803a9a4e8d4c365a96a1b3ca148c80e7e220bb052dc93bf4d3a8b3aa600db1"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/013-test-l3-dispatch-coherence.md",
+          "sha256": "ab8a15dc21e3e9c35eba40f0bab95ea7afd552a22f10f1e3221eaa01bce9100c"
+        },
+        {
+          "path": "tasks/execute-pipeline-gaps/gate-contract.md",
+          "sha256": "c970281ffe2d8e1dfd9287a2fa3a0cbc47bbf9ca3fce78ceb906fd273e9e6213"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-26T05:09:57.426640+00:00",
+      "end": "2026-04-26T05:09:57.430648+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/051-kernel-fix-execute-pipeline-gaps.md",
+      "task_folder": "tasks/execute-pipeline-gaps/",
+      "task_count": 0,
+      "completed_count": 115,
+      "skipped_count": 1
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1386854559",
+      "logIndex": "1386854559"
+    }
+  }
+}

@@ -10,6 +10,7 @@ Gates:
 3. anchored = true
 4. actions_since_anchor <= limit (AUTO-INCREMENTED by hook, not agent)
 5. anchor_token_confirmed = true (if pending_anchor_token exists)
+6. protocol_hash matches current protocol file (if set)
 
 Gate 5 prevents quick-anchoring: when the hook blocks at the action limit,
 it generates a random token. The anchor command must read this token and
@@ -31,6 +32,7 @@ Learn triggers (set by other mechanisms):
 - Anchor violation (self-catch via /kernel/anchor Part B)
 """
 
+import hashlib
 import json
 import os
 import sys
@@ -43,6 +45,7 @@ _HOOK_DIR = Path(__file__).resolve().parent          # .claude/hooks/
 _WORKSPACE_ROOT = _HOOK_DIR.parent.parent            # workspace root
 STATE_DIR = _WORKSPACE_ROOT / '.claude' / 'state'
 SESSION_STATE = STATE_DIR / 'session_state.json'
+ACTIONS_LOG = STATE_DIR / 'actions.jsonl'
 
 # Bash commands that are always allowed through gates (read-only / safe)
 # NOTE: These still increment the counter — they just don't get blocked.
@@ -54,6 +57,17 @@ SAFE_BASH_PREFIXES = (
 )
 
 
+def get_actions_count() -> int:
+    """Count actions from the JSONL log file (authoritative action count source)."""
+    if not ACTIONS_LOG.exists():
+        return 0
+    try:
+        content = ACTIONS_LOG.read_text(encoding='utf-8').strip()
+        return len(content.split('\n')) if content else 0
+    except Exception:
+        return 0
+
+
 def get_domain_state_file(domain: str) -> Path:
     return STATE_DIR / f'{domain}_workflow.json'
 
@@ -62,7 +76,7 @@ def read_state(state_file: Path) -> dict:
     if not state_file.exists():
         return {}
     try:
-        return json.loads(state_file.read_text())
+        return json.loads(state_file.read_text(encoding='utf-8'))
     except:
         return {}
 
@@ -70,7 +84,7 @@ def read_state(state_file: Path) -> dict:
 def write_state(state_file: Path, state: dict):
     """Write state back to file."""
     try:
-        state_file.write_text(json.dumps(state, indent=2))
+        state_file.write_text(json.dumps(state, indent=2), encoding='utf-8')
     except:
         pass  # Best effort - don't block on write failure
 
@@ -110,6 +124,7 @@ def check_and_increment_counter(session_state: dict, safe_bash: bool) -> int:
         return 0
 
     actions_limit = domain_state.get('actions_limit', 10)
+    # actions_since_anchor is the primary trigger; actions.jsonl is the authoritative source
     actions_since = domain_state.get('actions_since_anchor', 0)
 
     # Check limit BEFORE incrementing — block if AT limit (not after)
@@ -133,6 +148,21 @@ def check_and_increment_counter(session_state: dict, safe_bash: bool) -> int:
     write_state(get_domain_state_file(domain), domain_state)
 
     return actions_since
+
+
+def verify_protocol_hash(session_state: dict) -> bool:
+    """Verify that protocol_hash in state matches actual protocol file content."""
+    domain = session_state.get('domain')
+    if not domain:
+        return True  # No domain = no protocol to verify
+    protocol_hash = session_state.get('protocol_hash')
+    if not protocol_hash:
+        return True  # No hash stored yet = first anchor hasn't run with new code
+    protocol_path = _WORKSPACE_ROOT / '.claude' / 'protocols' / f'{domain}-protocol.md'
+    if not protocol_path.exists():
+        return True  # No protocol file = skip
+    actual_hash = hashlib.sha256(protocol_path.read_bytes()).hexdigest()
+    return actual_hash == protocol_hash
 
 
 def main():
@@ -163,9 +193,14 @@ def main():
     # Read session state
     session_state = read_state(SESSION_STATE)
 
+    # One-shot agents (spawned by run-task.sh) skip anchor, counter, token, and hash gates.
+    # They execute one task and exit — anchor drift isn't a risk for single-task agents.
+    # Gates 1 (session) and 2 (learn) still apply to one-shot agents.
+    is_one_shot = session_state.get('one_shot', False)
+
     # Gate checks — safe bash skips these (never blocked) but still increments below
     if not safe_bash:
-        # Gate 1: Session started?
+        # Gate 1: Session started? (applies to ALL agents including one-shot)
         if not session_state.get('session_started'):
             smart_block(
                 missing="Session not started",
@@ -173,7 +208,7 @@ def main():
                 fix_description="This initializes the session"
             )
 
-        # Gate 2: Needs learn? (must invoke learn before continuing)
+        # Gate 2: Needs learn? (applies to ALL agents including one-shot)
         if session_state.get('needs_learn'):
             reason = session_state.get('needs_learn_reason', 'unknown')
             smart_block(
@@ -182,30 +217,40 @@ def main():
                 fix_description="Record what you learned from the fix"
             )
 
-        # Gate 3: Anchored?
-        domain = session_state.get('domain')
-        if domain:
-            domain_state = read_state(get_domain_state_file(domain))
-            if not domain_state.get('anchored'):
+        # Gate 3: Anchored? (skip for one-shot agents)
+        if not is_one_shot:
+            domain = session_state.get('domain')
+            if domain:
+                domain_state = read_state(get_domain_state_file(domain))
+                if not domain_state.get('anchored'):
+                    smart_block(
+                        missing="Protocol not anchored",
+                        fix_command="/kernel/anchor",
+                        fix_description="This reads protocol and updates state"
+                    )
+
+        # Gate 5: Anchor token confirmed? (skip for one-shot agents)
+        if not is_one_shot:
+            if session_state.get('pending_anchor_token') and not session_state.get('anchor_token_confirmed'):
+                token = session_state.get('pending_anchor_token')
                 smart_block(
-                    missing="Protocol not anchored",
+                    missing=f"Anchor not completed properly (token {token} not confirmed)",
                     fix_command="/kernel/anchor",
-                    fix_description="This reads protocol and updates state"
+                    fix_description=f"Run FULL anchor. Read the token '{token}' from session_state.json and confirm it in your anchor output"
                 )
 
-        # Gate 5: Anchor token confirmed?
-        # Prevents quick-anchoring — if a token was issued, anchor must confirm it
-        if session_state.get('pending_anchor_token') and not session_state.get('anchor_token_confirmed'):
-            token = session_state.get('pending_anchor_token')
-            smart_block(
-                missing=f"Anchor not completed properly (token {token} not confirmed)",
-                fix_command="/kernel/anchor",
-                fix_description=f"Run FULL anchor. Read the token '{token}' from session_state.json and confirm it in your anchor output"
-            )
+        # Gate 6: Protocol hash valid? (skip for one-shot agents)
+        if not is_one_shot:
+            if not verify_protocol_hash(session_state):
+                smart_block(
+                    missing="Protocol file changed since last anchor (hash mismatch)",
+                    fix_command="/kernel/anchor",
+                    fix_description="Protocol was modified — re-anchor to re-read and update hash"
+                )
 
-    # Gate 4 + AUTO-INCREMENT: check limit then increment
-    # Blocks at limit BEFORE incrementing — no off-by-one
-    check_and_increment_counter(session_state, safe_bash)
+    # Gate 4 + AUTO-INCREMENT: check limit then increment (skip for one-shot agents)
+    if not is_one_shot:
+        check_and_increment_counter(session_state, safe_bash)
 
     sys.exit(0)
 

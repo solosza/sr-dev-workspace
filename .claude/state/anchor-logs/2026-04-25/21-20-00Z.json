@@ -1,0 +1,1 @@
+{"anchor_timestamp": "2026-04-25T21:20:00Z", "actions_count": 2, "violations_found": 0, "actions": [{"timestamp": "2026-04-25T21:12:26Z", "tool": "Write", "entry": "Write: intent.py"}, {"timestamp": "2026-04-25T21:12:29Z", "tool": "Bash", "entry": "Bash: python intent.py self-test"}]}

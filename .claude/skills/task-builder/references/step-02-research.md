@@ -6,6 +6,7 @@ Gather information needed to decompose the goal intelligently.
 
 1. **Read any referenced materials:**
    - Backlog items identified in step 1
+   - **Design Documents** — if the backlog has a Design Documents table with wikilinks, read ALL linked reference files from the companion folder (e.g., `docs/backlog/NNN-tag-verb-object/*.md`). These contain research, gaps analysis, design decisions, and requirements that directly inform task decomposition.
    - Template repos or specs the user mentioned
    - Existing code or docs that relate to the goal
 

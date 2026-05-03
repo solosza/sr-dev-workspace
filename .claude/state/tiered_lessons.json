@@ -1,0 +1,11 @@
+{
+  "219094d6456359b1": {
+    "pattern_key": "219094d6456359b1",
+    "tier": "warm",
+    "last_triggered": "2026-04-06T12:32:53.787266",
+    "trigger_count": 1,
+    "promoted_at": null,
+    "demoted_at": null,
+    "issue_summary": "Auto-added from recurrence (count=4)"
+  }
+}

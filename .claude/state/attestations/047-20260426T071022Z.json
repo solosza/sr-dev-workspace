@@ -1,0 +1,47 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "",
+      "parameters": "",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-25T23:29:38.307769+00:00",
+          "raw_input_hash": "cc6eb687eebacee649c8c6ba8b545ae5086f4706eaa96ad93b8d90015d835e99",
+          "backlog_hash_after": "6b9ced2acd07792b2be0661197bbc7d8a6596adcd84596fc519151ff5f31cc4b"
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-04-25T23:30:45.581959+00:00",
+          "raw_input_hash": "2f1045bd895cfe58c99dbc42748f7d1df7d7d44ab2aa1ce2e20aa14e6a0f5b12",
+          "backlog_hash_after": "5a6cc2bfa40c602018fc3552267bea0f5b58ec980b2fb6623fd2de8fe8a7a9f7"
+        },
+        {
+          "rev": 3,
+          "timestamp": "2026-04-26T06:28:18.891975+00:00",
+          "raw_input_hash": "adb7c4c99f4c8790dc74cd636ef7734b53f2dda9def18ec9f2beee47b0fb42ba",
+          "backlog_hash_after": "c98910a0812eff189c6153cceb88071070f9644abab05e72ae8891b528cb6dd6"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": []
+    },
+    "timestamp": {
+      "start": "2026-04-26T07:10:22.960114+00:00",
+      "end": "2026-04-26T07:10:22.961120+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/047-market-build-portfolio-site-loop-theme.md",
+      "task_folder": "tasks/portfolio-site",
+      "task_count": 25,
+      "completed_count": 149,
+      "skipped_count": 1
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1387966928",
+      "logIndex": "1387966928"
+    }
+  }
+}

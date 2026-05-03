@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-04-25T01:31:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-25T01:27:18Z", "tool": "Bash", "entry": "Bash: test -f attestation file check", "session": "current"},
+    {"timestamp": "2026-04-25T01:30:42Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash compute", "session": "current"}
+  ]
+}

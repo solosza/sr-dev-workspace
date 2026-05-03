@@ -1,0 +1,46 @@
+Title,Action,Expected Result
+AC01-002 Exclude File - File not found in shared drive,,
+,Ensure no exclusion .xlsx file exists at <<PATH>>.,File is not present at path.
+,Trigger <<JOB_NAME>>.,Job logs "file not found" and exits gracefully (failure or no-op) without crash.
+,Check database tables.,No data inserted or modified.
+AC01-003 Exclude File - Access denied on shared drive,,
+,Place an exclusion .xlsx file at <<PATH>> and remove read permission for the service account.,File exists but is not accessible by service account.
+,Trigger <<JOB_NAME>>.,Job logs "access denied" or "permission denied" error and exits gracefully.
+,Check database tables.,No data inserted or modified.
+AC01-004 Exclude File - Corrupt or unopenable file,,
+,Place a corrupt/renamed .xlsx file at <<PATH>> (e.g. a .txt renamed to .xlsx).,File exists at path.
+,Trigger <<JOB_NAME>>.,Job fails with actionable error indicating file is corrupt or unreadable.
+,Check database tables.,No data inserted or modified.
+AC02-002 Exclude File - Empty required fields rejected,,
+,Place a valid .xlsx file at <<PATH>> with one or more rows containing empty required fields.,File is visible and opens without error.
+,Trigger <<JOB_NAME>>.,Job rejects rows with empty required fields; logs show row numbers and column names of failures.
+,Check database tables.,Invalid rows not inserted. Valid rows processed normally.
+AC02-003 Exclude File - Invalid data types or malformed dates rejected,,
+,Place a valid .xlsx file at <<PATH>> with rows containing invalid data types or malformed dates.,File is visible and opens without error.
+,Trigger <<JOB_NAME>>.,Job rejects invalid rows; logs show row numbers and error detail.
+,Check database tables.,Invalid rows not inserted. Valid rows processed normally.
+AC02-004 Exclude File - Duplicate exclusion keys rejected,,
+,Place a valid .xlsx file at <<PATH>> with duplicate exclusion keys (e.g. same DRG code + effective date).,File is visible and opens without error.
+,Trigger <<JOB_NAME>>.,Job rejects duplicate rows; logs identify which rows were duplicates.
+,Check database tables.,Only one instance of each key inserted. Duplicates rejected.
+AC03-002 Exclude File - Update existing exclusion data,,
+,Load an initial exclusion .xlsx file at <<PATH>> and trigger <<JOB_NAME>>.,Initial data loaded successfully.
+,Place an updated exclusion .xlsx file at <<PATH>> with modified values for existing records.,File is visible and opens without error.
+,Trigger <<JOB_NAME>>.,Existing records updated with new values; logs show update count.
+,Query database tables.,Updated values reflected. No duplicate records created.
+AC03-003 Exclude File - Terminate/end-date existing exclusion records,,
+,Load an initial exclusion .xlsx file at <<PATH>> and trigger <<JOB_NAME>>.,Initial data loaded successfully.
+,Place an updated exclusion .xlsx file at <<PATH>> with termination/end dates for existing records.,File is visible and opens without error.
+,Trigger <<JOB_NAME>>.,Records terminated/end-dated as expected; logs show termination count.
+,Query database tables.,Terminated records reflect end date. Active records unchanged.
+AC03-004 Exclude File - Build number / commit artifact captured,,
+,Trigger <<JOB_NAME>> with a valid exclusion .xlsx file at <<PATH>>.,Job completes successfully.
+,Check audit/log table or job metadata.,Build number or commit artifact is captured and associated with this run.
+AC04-002 Exclude File - Machine-readable validation report,,
+,Place an exclusion .xlsx file at <<PATH>> with a mix of valid and invalid rows.,File is visible and opens without error.
+,Trigger <<JOB_NAME>>.,Job completes with partial success.
+,Access validation report output.,Report is machine-readable; shows pass/fail per row with reason codes.
+AC03-005 Mapping File - Partial failure with mixed valid and invalid rows,,
+,Place a mapping .xlsx file at <<PATH>> with a mix of valid rows and invalid rows (e.g. bad data types or missing fields).,File is visible and opens without error.
+,Trigger <<JOB_NAME>>.,Valid rows load successfully. Invalid rows rejected with row numbers and error detail.
+,Query database tables.,Valid rows present. Invalid rows not inserted. Row counts match expected.

@@ -49,7 +49,7 @@ def read_state(state_file: Path) -> dict:
     if not state_file.exists():
         return {}
     try:
-        return json.loads(state_file.read_text())
+        return json.loads(state_file.read_text(encoding='utf-8'))
     except:
         return {}
 
@@ -58,7 +58,7 @@ def write_state(state_file: Path, state: dict):
     """Write state back to file."""
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     try:
-        state_file.write_text(json.dumps(state, indent=2))
+        state_file.write_text(json.dumps(state, indent=2), encoding='utf-8')
     except:
         pass  # Best effort
 

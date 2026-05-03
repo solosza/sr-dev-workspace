@@ -8,25 +8,29 @@ set -uo pipefail
 # State files on disk provide continuity between successful iterations.
 #
 # Usage:
-#   ./run-task.sh [repo_path] [max_iterations] [task_folder]
+#   ./run-task.sh [repo_path] [max_iterations] [task_folder] [backlog_path]
 #
 # Arguments:
 #   repo_path       Path to kernel-enabled repo (default: current directory)
 #   max_iterations  Max tasks to attempt (default: 10, use task_count + 2 for buffer)
 #   task_folder     Subfolder under tasks/ (default: none, uses tasks/)
 #                   Example: "kernel-test" → tasks/kernel-test/
+#   backlog_path    Path to backlog .md file (optional). If provided, on ALL_TASKS_COMPLETE
+#                   the backlog is moved to docs/backlog/done/ and task folder to tasks/completed/
 
 # --- Configuration ---
 REPO="${1:-.}"
 MAX_ITERATIONS="${2:-10}"
 TASK_SUBFOLDER="${3:-}"
+BACKLOG_PATH="${4:-}"
 COMPLETED=0
 FAILED=0
 CONSECUTIVE_FAILS=0
 MAX_CONSECUTIVE_FAILS=2
 MAX_RESUME_RETRIES=2
-TASK_TIMEOUT=300  # 5 min per claude -p invocation
+TASK_TIMEOUT=600  # 10 min per claude -p invocation (extraction tasks need more time)
 SLEEP_BETWEEN=2
+CURRENT_TASK=""   # Global: current task name, set before each run_claude call
 
 # --- Resolve script directory and source shared lib ---
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -69,6 +73,13 @@ Continue where you left off:
 After completing the task, output the exact text ONE_SHOT_COMPLETE on its own line.
 If there are no incomplete tasks remaining, output ALL_TASKS_COMPLETE on its own line."
 
+# --- Log prefix (namespace by task subfolder to avoid cross-pipeline overwrites) ---
+if [ -n "$TASK_SUBFOLDER" ]; then
+  LOG_PREFIX="${TASK_SUBFOLDER}_"
+else
+  LOG_PREFIX=""
+fi
+
 # --- Trap for clean exit on signals ---
 cleanup() {
   echo ""
@@ -76,14 +87,22 @@ cleanup() {
   echo "  INTERRUPTED"
   echo "  Completed: $COMPLETED"
   echo "  Failed: $FAILED"
-  echo "  Check logs: ${LOG_DIR}/iteration_*.log"
+  echo "  Check logs: ${LOG_DIR}/${LOG_PREFIX:-}iteration_*.log"
   echo "============================================"
+  # Kill any lingering claude processes spawned by this script
+  if [ -n "${CLAUDE_PID:-}" ] && kill -0 "$CLAUDE_PID" 2>/dev/null; then
+    kill_process_tree "$CLAUDE_PID"
+  fi
   exit 130
 }
 trap cleanup SIGINT SIGTERM
 
 # --- Helper: run claude and return result ---
 # Sets: LAST_SESSION_ID, LAST_RESULT, LAST_STATUS
+#
+# Uses FILE-BASED output capture instead of $() command substitution.
+# On Windows (Git Bash), $() drops output from background Agent subprocesses.
+# Writing directly to a file is reliable on all platforms.
 run_claude() {
   local mode="$1"       # "fresh" or "resume"
   local session_id="$2" # only used for resume
@@ -100,19 +119,89 @@ run_claude() {
     echo "[RUNNING] claude -p (fresh) ..."
   fi
 
-  local raw_output
-  raw_output=$(timeout "$TASK_TIMEOUT" claude "${cmd_args[@]}" "$prompt" 2>&1) || true
+  # Strip CLAUDECODE env vars so nested claude -p doesn't try MCP handshake
+  local claude_env_args=()
+  while IFS='=' read -r var _; do
+    claude_env_args+=("-u" "$var")
+  done < <(env | grep -i '^CLAUDECODE' || true)
 
-  # Save raw output to log
-  write_log "$raw_output" "$logfile"
+  # Build the full command array
+  local full_cmd=()
+  if [ ${#claude_env_args[@]} -gt 0 ]; then
+    full_cmd=(env "${claude_env_args[@]}" claude "${cmd_args[@]}" "$prompt")
+  else
+    full_cmd=(claude "${cmd_args[@]}" "$prompt")
+  fi
 
-  # Extract fields
-  LAST_SESSION_ID=$(extract_session_id "$raw_output")
-  LAST_RESULT=$(extract_result "$raw_output")
+  # File-based output capture: write directly to logfile, no $() substitution
+  # This avoids the Windows Git Bash bug where $() returns empty for background processes
+  > "$logfile"  # truncate
+
+  if [ "$IS_WINDOWS" = true ]; then
+    # Windows: run in background, poll for completion, kill tree on timeout
+    "${full_cmd[@]}" > "$logfile" 2>&1 &
+    local claude_pid=$!
+    CLAUDE_PID=$claude_pid  # expose for cleanup trap
+    local elapsed=0
+
+    while kill -0 "$claude_pid" 2>/dev/null; do
+      sleep 2
+      elapsed=$((elapsed + 2))
+      if [ "$elapsed" -ge "$TASK_TIMEOUT" ]; then
+        echo "[TIMEOUT] Task '$CURRENT_TASK' — claude -p exceeded ${TASK_TIMEOUT}s (PID $claude_pid)"
+        kill_process_tree "$claude_pid"
+        break
+      fi
+    done
+    wait "$claude_pid" 2>/dev/null || true
+    CLAUDE_PID=""  # clear after completion
+  else
+    # Unix: timeout works correctly, use it directly
+    timeout "$TASK_TIMEOUT" "${full_cmd[@]}" > "$logfile" 2>&1 || true
+  fi
+
+  # Verify logfile has content
+  if [ ! -s "$logfile" ]; then
+    echo "[WARNING] claude -p produced no output (logfile empty: $logfile)"
+    LAST_SESSION_ID=""
+    LAST_RESULT=""
+    LAST_STATUS="no_signal"
+    return
+  fi
+
+  # Extract fields from logfile (file-based, not piped)
+  LAST_SESSION_ID=$(extract_session_id "$logfile")
+  LAST_RESULT=$(extract_result "$logfile")
   LAST_STATUS=$(check_completion "$LAST_RESULT")
 
-  # Print result to screen
-  printf '%s\n' "$LAST_RESULT"
+  # Print result summary to screen
+  if [ -n "$LAST_RESULT" ]; then
+    printf '%s\n' "$LAST_RESULT" | head -20
+    local line_count
+    line_count=$(printf '%s\n' "$LAST_RESULT" | wc -l)
+    if [ "$line_count" -gt 20 ]; then
+      echo "... ($line_count lines total, see $logfile)"
+    fi
+  fi
+}
+
+# --- Helper: move completed backlog + task folder to done/completed ---
+move_to_done() {
+  if [ -n "$BACKLOG_PATH" ] && [ -f "$BACKLOG_PATH" ]; then
+    echo "[MOVE] Moving backlog to done: $BACKLOG_PATH"
+    mkdir -p docs/backlog/done
+    mv "$BACKLOG_PATH" docs/backlog/done/
+    # If backlog has a companion folder, move that too
+    local backlog_dir="${BACKLOG_PATH%.md}"
+    if [ -d "$backlog_dir" ]; then
+      mv "$backlog_dir" docs/backlog/done/
+    fi
+  fi
+  if [ -n "$TASK_SUBFOLDER" ]; then
+    echo "[MOVE] Moving task folder to completed: tasks/$TASK_SUBFOLDER"
+    mkdir -p tasks/completed
+    mv "tasks/$TASK_SUBFOLDER" "tasks/completed/$TASK_SUBFOLDER"
+  fi
 }
 
 # --- Banner ---
@@ -133,6 +222,41 @@ for i in $(seq 1 "$MAX_ITERATIONS"); do
   echo ""
   echo "=== Iteration $i/$MAX_ITERATIONS ==="
 
+  # PRE-ITERATION EXIT GUARD: check workflow state before spawning another claude -p
+  # This prevents the bug where ALL_TASKS_COMPLETE was returned but we still spawn the next iteration
+  if [ "$i" -gt 1 ]; then
+    PRECHECK=$($PYTHON_CMD -c "
+import json, pathlib
+sf = pathlib.Path('$STATE_FILE')
+if not sf.exists(): print('continue'); exit()
+s = json.loads(sf.read_text())
+d = s.get('domain', '')
+if not d: print('continue'); exit()
+wf = sf.parent / (d + '_workflow.json')
+if not wf.exists(): print('continue'); exit()
+w = json.loads(wf.read_text())
+total = w.get('total_tasks', 0)
+done = len(w.get('completed_tasks', []))
+skipped = len(w.get('skipped_tasks', []))
+if total > 0 and (done + skipped) >= total:
+    print('all_done')
+else:
+    print('continue')
+" 2>/dev/null || echo "continue")
+
+    if [ "$PRECHECK" = "all_done" ]; then
+      echo "-> Pre-check: all tasks already complete/skipped in workflow state."
+      move_to_done
+      echo ""
+      echo "============================================"
+      echo "  ALL TASKS COMPLETE (detected at iteration start)"
+      echo "  Tasks completed this run: $COMPLETED"
+      echo "  Total iterations: $((i - 1))"
+      echo "============================================"
+      exit 0
+    fi
+  fi
+
   # Show state before
   echo "[STATE before]"
   print_state
@@ -141,13 +265,29 @@ for i in $(seq 1 "$MAX_ITERATIONS"); do
   # Pre-init state (session_started + one_shot)
   pre_init_state "session_started=True,one_shot=True"
 
+  # Identify current task from workflow state
+  CURRENT_TASK=$($PYTHON_CMD -c "
+import json, pathlib
+sf = pathlib.Path('$STATE_FILE')
+if not sf.exists(): print('unknown'); exit()
+s = json.loads(sf.read_text())
+d = s.get('domain', '')
+if not d: print('unknown'); exit()
+wf = sf.parent / (d + '_workflow.json')
+if not wf.exists(): print('unknown'); exit()
+w = json.loads(wf.read_text())
+print(w.get('current_task', '') or 'unknown')
+" 2>/dev/null || echo "unknown")
+  echo "[TASK] Attempting: $CURRENT_TASK"
+
   # Fresh run
-  LOGFILE="${LOG_DIR}/iteration_${i}.log"
+  LOGFILE="${LOG_DIR}/${LOG_PREFIX}iteration_${i}.log"
   run_claude "fresh" "" "$LOGFILE"
 
   # --- Handle result ---
   if [ "$LAST_STATUS" = "all_done" ]; then
     COMPLETED=$((COMPLETED + 1))
+    move_to_done
     echo ""
     echo "============================================"
     echo "  ALL TASKS COMPLETE"
@@ -180,11 +320,12 @@ for i in $(seq 1 "$MAX_ITERATIONS"); do
       echo ""
       echo "--- Resume attempt $r/$MAX_RESUME_RETRIES (session: $RESUME_SESSION_ID) ---"
 
-      RESUME_LOGFILE="${LOG_DIR}/iteration_${i}_resume_${r}.log"
+      RESUME_LOGFILE="${LOG_DIR}/${LOG_PREFIX}iteration_${i}_resume_${r}.log"
       run_claude "resume" "$RESUME_SESSION_ID" "$RESUME_LOGFILE"
 
       if [ "$LAST_STATUS" = "all_done" ]; then
         COMPLETED=$((COMPLETED + 1))
+        move_to_done
         echo ""
         echo "============================================"
         echo "  ALL TASKS COMPLETE (after resume)"
@@ -222,7 +363,7 @@ for i in $(seq 1 "$MAX_ITERATIONS"); do
         echo "  ABORTING: $MAX_CONSECUTIVE_FAILS consecutive failures"
         echo "  Completed: $COMPLETED"
         echo "  Failed: $FAILED"
-        echo "  Check logs: ${LOG_DIR}/iteration_*.log"
+        echo "  Check logs: ${LOG_DIR}/${LOG_PREFIX}iteration_*.log"
         echo "============================================"
         exit 1
       fi
@@ -238,5 +379,6 @@ echo "  MAX ITERATIONS REACHED"
 echo "  Completed: $COMPLETED"
 echo "  Failed: $FAILED"
 echo "  Iterations: $MAX_ITERATIONS"
+echo "  Check logs: ${LOG_DIR}/${LOG_PREFIX}iteration_*.log"
 echo "============================================"
 exit 1

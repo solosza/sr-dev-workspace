@@ -1,0 +1,104 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "16ad516ddae722ad8ef1c0a1d497ad29ddb46c909688f8a923314173776f5966",
+      "parameters": "d5b2ac4530fcd6cbabd366b8279c3a54995e2b9d23a93f6942342713ea7ce26e",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T08:09:03.862131+00:00",
+          "raw_input_hash": "1880350f5ef17d84ea9b39a9b74627521f70b846e4390736d3c6b2c4135f2774",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/sync-workspace-to-master/gate-contract.md",
+          "sha256": "1969512425dc30a37d6beedbeb6d02d7d1bd8a63467147962622cbd042957199"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/000-index.md",
+          "sha256": "0299163d1baa8f585c07964e1385ec915296e87f70cbb79044e47dfa1b58823f"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/001-build-sync-kernel-commands.md",
+          "sha256": "560751ebfe6691dbe045d35eb42c9c3a5e7fc8b8554a9f074427cb5c5892f0de"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/002-build-sync-top-level-commands.md",
+          "sha256": "efeb2a164f8f09de6e6b98c7d82e45e8f4cc051cc33a672825563abf60cdc9eb"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/003-build-sync-skill-autonomous-cycling.md",
+          "sha256": "94f464f182696e971c186fd45c27fc59d95171a8d291637b51ca604d64874431"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/004-build-sync-skill-domain-setup.md",
+          "sha256": "5149cf742a3c01c4d51d406e976f1dbfb5e0ad6fde0758c4a7b6b39263b05f03"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/005-build-sync-missing-skills.md",
+          "sha256": "547ae4b7d2f6fb109f6242a49683d50801f2b62c5eb35522244439b92c77064e"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/006-build-sync-hooks.md",
+          "sha256": "78746309e08d8a04c570170db033973fb26a1ea59c2b78a372de99762ec5092c"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/007-build-sync-settings.md",
+          "sha256": "d3ec6e4f28af1465f4dedf4c245c6fbaa67f5f24cbd3700014d8d87634932ca1"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/008-build-sync-lib.md",
+          "sha256": "53b87da69f351881d667713b9f941cf60ca2f7cad5a9ebbc6bcfe32ddbab21d0"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/009-build-sync-shell-scripts.md",
+          "sha256": "9de8b88e9c019d10c1960116508be1c3d3f5d1352e897c24121c94ebaf1e0c02"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/010-build-sync-lessons.md",
+          "sha256": "b092d006a50756c24f75b4cdce946d817b16953f2d3de5c226160af6de8848fd"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/011-build-sync-claude-md.md",
+          "sha256": "0103fc93bc84858dfb586e8662ceef719cca27324b5fd4183e7a69b0a5b44616"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/012-build-stamp-manifest.md",
+          "sha256": "c86f594ed88c6c7b72aef11e86dad87b72a0147f7f2f235760e4aeb6f60af6cd"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/013-test-l1-verify-file-counts.md",
+          "sha256": "00c20d90b6c95c8a0cf6f43f5c5000ff1bf6ec88fa7226f5cc5e509b1620c405"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/014-test-l2-verify-content-match.md",
+          "sha256": "b98282f1b00fe2f7ae3674fba5ff49160a5caee819d81d8f19ea0d78a9d8bea5"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/015-test-l3-verify-preservation.md",
+          "sha256": "78dd18df7e5c9792d32edf3230f50920f152379633391b0f8e215890905ce629"
+        },
+        {
+          "path": "tasks/sync-workspace-to-master/gate-contract.md",
+          "sha256": "1969512425dc30a37d6beedbeb6d02d7d1bd8a63467147962622cbd042957199"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T08:22:15.158344+00:00",
+      "end": "2026-04-28T08:22:15.161763+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/061-kernel-refactor-sync-workspace-to-master.md",
+      "task_folder": "tasks/sync-workspace-to-master/",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    }
+  }
+}

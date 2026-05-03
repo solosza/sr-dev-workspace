@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-04-24T06:28:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-24T06:25:55Z", "tool": "Bash", "entry": "Bash: ls anchor-logs dir"},
+    {"timestamp": "2026-04-24T06:26:12Z", "tool": "Bash", "entry": "Bash: ls extraction dir"},
+    {"timestamp": "2026-04-24T06:26:56Z", "tool": "Write", "entry": "Write: suero-structure.md"},
+    {"timestamp": "2026-04-24T06:27:01Z", "tool": "Bash", "entry": "Bash: test -f suero-structure.md"},
+    {"timestamp": "2026-04-24T06:28:28Z", "tool": "Bash", "entry": "Bash: ls portfolio-site tasks"}
+  ]
+}

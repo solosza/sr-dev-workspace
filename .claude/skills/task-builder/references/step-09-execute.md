@@ -2,6 +2,40 @@
 
 Start autonomous cycling for BUILD tasks. Spawn isolated sub-agents for TEST tasks. Produce validation report.
 
+## Pipeline Mode — No Execute Check
+
+If `pipeline_mode.no_execute` is `true` in `.claude/state/session_state.json`, **skip this entire step**. Report the task folder and return control to the caller.
+
+This flag is set by `/kernel/execute-pipeline` when it wants to handle execution itself via `run-task.sh` instead of in-session cycling.
+
+**Check:**
+1. Read `.claude/state/session_state.json`
+2. If `pipeline_mode` exists AND `pipeline_mode.no_execute` is `true`:
+   - Report:
+     ```
+     TASK BUILDER — EXECUTION DEFERRED
+
+     Project: [project-name]
+     Task folder: tasks/[project-name]/
+     Task count: [N]
+     Reason: pipeline_mode.no_execute = true (caller handles execution)
+     ```
+   - Set `pipeline_state.task_folder` and `pipeline_state.task_count` in session_state.json
+   - Do NOT start cycling or spawn sub-agents
+   - Return — caller (execute-pipeline) takes over
+3. Otherwise: continue with execution below
+
+## Mode Clarification — Execution Path Divergence
+
+Step 9 behavior depends on how the task builder was invoked:
+
+| Invocation | Execution Path |
+|------------|---------------|
+| `/kernel/execute-pipeline` | **Step 9 is skipped entirely.** The pipeline sets `pipeline_mode.no_execute = true`, so execution is deferred. The pipeline then runs all tasks (BUILD, TEST, RESEARCH) via `run-task.sh` — one spawned agent per task, sequentially. |
+| Standalone `/kernel/task-builder` | **Dual-mode execution.** BUILD and RESEARCH tasks run inline via `/kernel/autonomous-cycle`. TEST tasks are spawned as isolated sub-agents (or run inline for simple verification). |
+
+The dual-mode logic below (inline BUILD + spawned TEST) only fires in standalone mode. If you arrived here from execute-pipeline, the check above already returned control to the caller.
+
 ## Process
 
 1. **Report task plan to user:**
@@ -110,7 +144,27 @@ Start autonomous cycling for BUILD tasks. Spawn isolated sub-agents for TEST tas
    }
    ```
 
-5. **Present results to user:**
+5. **Move backlog item to done:**
+
+   - Read the backlog source from `000-index.md` (`## Source` section)
+   - If a backlog file path is referenced and execution result is PASS or PARTIAL:
+     ```bash
+     mkdir -p docs/backlog/done
+     mv [backlog_path] docs/backlog/done/
+     ```
+   - Skip if no backlog source (goal was provided as free text, not a backlog item)
+   - Leave in place on FAIL
+
+6. **Move task folder to completed (on PASS or PARTIAL):**
+
+   ```bash
+   mkdir -p tasks/completed
+   mv tasks/[project-name]/ tasks/completed/[project-name]/
+   ```
+   - Leave in place on FAIL — may need re-execution
+   - The audit-workflow skill excludes `tasks/completed/` from scans
+
+7. **Present results to user:**
 
    ```
    EXECUTION COMPLETE
@@ -119,6 +173,7 @@ Start autonomous cycling for BUILD tasks. Spawn isolated sub-agents for TEST tas
    BUILD tasks: N/N completed
    TEST tasks: N/N completed (M spawned as sub-agents)
    Gates: N/N passed
+   Backlog: [moved to done/ | still open (FAIL) | N/A]
 
    Failed gates:
    - [GATE-ID]: [check] — [detail]

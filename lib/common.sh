@@ -4,6 +4,12 @@
 #
 # Source this file: source "$(dirname "$0")/lib/common.sh"
 
+# --- Detect platform ---
+IS_WINDOWS=false
+if [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "cygwin" ]] || [[ "$OSTYPE" == "win32" ]]; then
+  IS_WINDOWS=true
+fi
+
 # --- Validate dependencies ---
 validate_deps() {
   # Find a working Python — test with actual execution, not just PATH lookup
@@ -48,6 +54,20 @@ resolve_paths() {
     LOG_DIR="$repo/.claude/state"
   fi
   mkdir -p "$LOG_DIR"
+}
+
+# --- Kill a process and its children ---
+kill_process_tree() {
+  local pid="$1"
+  if [ -z "$pid" ]; then return; fi
+
+  if [ "$IS_WINDOWS" = true ]; then
+    # Windows: taskkill with /T kills entire process tree
+    taskkill //F //T //PID "$pid" &>/dev/null || true
+  else
+    # Unix: kill process group
+    kill -- -"$pid" 2>/dev/null || kill "$pid" 2>/dev/null || true
+  fi
 }
 
 # --- Pre-initialize session state ---
@@ -95,11 +115,15 @@ else:
 
 # --- Extract session_id from JSON output ---
 extract_session_id() {
-  local json_output="$1"
-  printf '%s' "$json_output" | $PYTHON_CMD -c "
+  local logfile="$1"
+  if [ ! -f "$logfile" ] || [ ! -s "$logfile" ]; then
+    echo ""
+    return
+  fi
+  $PYTHON_CMD -c "
 import sys, json
 try:
-    data = json.loads(sys.stdin.read())
+    data = json.loads(open('$logfile').read())
     print(data.get('session_id', ''))
 except Exception:
     print('')
@@ -108,11 +132,15 @@ except Exception:
 
 # --- Extract result text from JSON output ---
 extract_result() {
-  local json_output="$1"
-  printf '%s' "$json_output" | $PYTHON_CMD -c "
+  local logfile="$1"
+  if [ ! -f "$logfile" ] || [ ! -s "$logfile" ]; then
+    echo ""
+    return
+  fi
+  $PYTHON_CMD -c "
 import sys, json
 try:
-    data = json.loads(sys.stdin.read())
+    data = json.loads(open('$logfile').read())
     print(data.get('result', ''))
 except Exception:
     print('')

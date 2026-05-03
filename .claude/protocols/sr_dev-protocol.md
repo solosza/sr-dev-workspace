@@ -40,6 +40,7 @@ This workspace (`D:\my_ai_projects\project_test_repos\sr_dev_test`) is the dev w
 | Autonomous Cycling Skill | `.claude/skills/autonomous-cycling/SKILL.md` |
 | Task Builder Skill | `.claude/skills/task-builder/SKILL.md` |
 | Audit Workflow Skill | `.claude/skills/audit-workflow/SKILL.md` |
+| Execute Pipeline Skill | `.claude/skills/execute-pipeline/SKILL.md` |
 | Production Test Skill | `.claude/skills/prod-test/SKILL.md` |
 | Kernel Commands | `.claude/commands/kernel/` |
 | Backlog Command | `.claude/commands/kernel/backlog.md` |

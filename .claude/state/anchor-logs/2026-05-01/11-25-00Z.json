@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-05-01T11:25:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-01T11:13:56Z", "tool": "Edit", "entry": "Edit: index.html"},
+    {"timestamp": "2026-05-01T11:14:08Z", "tool": "Edit", "entry": "Edit: attestation.html"},
+    {"timestamp": "2026-05-01T11:14:10Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html"},
+    {"timestamp": "2026-05-01T11:14:11Z", "tool": "Edit", "entry": "Edit: qa-platforms.html"},
+    {"timestamp": "2026-05-01T11:15:30Z", "tool": "Bash", "entry": "Bash: compute protocol hash"}
+  ]
+}

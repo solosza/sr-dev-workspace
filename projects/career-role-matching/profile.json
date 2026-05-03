@@ -1,0 +1,75 @@
+{
+  "skills": [
+    { "name": "AI Agent Runtime Governance", "strength": 5 },
+    { "name": "Hook-Based Enforcement Systems", "strength": 5 },
+    { "name": "Autonomous Pipeline Design", "strength": 5 },
+    { "name": "Spec-Driven Development", "strength": 5 },
+    { "name": "Production Test Framework Design", "strength": 5 },
+    { "name": "Task Decomposition & Gate Contracts", "strength": 5 },
+    { "name": "Python", "strength": 4 },
+    { "name": "TypeScript", "strength": 4 },
+    { "name": "Playwright / Selenium", "strength": 4 },
+    { "name": "Docker / Infrastructure", "strength": 4 },
+    { "name": "Healthcare Domain (HIPAA, HMSA)", "strength": 4 },
+    { "name": "Compliance (PCI, SOX, STIG, CIS, NIST, FIPS)", "strength": 4 },
+    { "name": "Git Workflow / CI-CD", "strength": 4 },
+    { "name": "Sigstore / Cryptographic Attestation", "strength": 3 },
+    { "name": "T-SQL / Data Pipelines", "strength": 3 },
+    { "name": "LLM API Integration", "strength": 4 }
+  ],
+  "domains": [
+    "AI Agent Infrastructure",
+    "QA Automation / Test Platforms",
+    "Healthcare (HIPAA, HMSA, 30-day readmissions)",
+    "Compliance & Security (STIG, CIS, NIST, FIPS, PCI, SOX)",
+    "DevOps / SSH Compliance",
+    "Real Estate",
+    "Fraud Detection",
+    "Government Spending"
+  ],
+  "differentiators": [
+    "Self-governing agent runtime with mechanical enforcement — not advisory, actual blocks",
+    "Spec-Driven Development — domain expertise as installable specs, 27+ manufactured",
+    "End-to-end delivery pipeline: one sentence to verified, signed artifact",
+    "Production test system: disposable test repos with inner agent execution",
+    "Spec factory: 12-step system that compiles natural language into structured specs",
+    "Solo-built and shipped — not prototypes, working systems producing real output",
+    "37 published repos across 2 GitHub orgs",
+    "14 specs manufactured autonomously via spec factory",
+    "6 platforms shipped (Selenium, Playwright, Docker, DeepEval, SSH, Zentyent)",
+    "Cryptographic attestation pipeline (Sigstore/Rekor)"
+  ],
+  "tier_definitions": {
+    "tier_1": {
+      "label": "Strongest Fit",
+      "roles": [
+        "Senior / Staff AI Platform Engineer ($180K-$280K base)",
+        "Forward Deployed Engineer at AI infra companies ($200K-$350K TC)",
+        "Founding Engineer at seed-stage AI agent startups ($150K-$200K + 0.5-2% equity)",
+        "AI Engineer at vertical AI agent companies ($170K-$260K)"
+      ],
+      "companies": ["Anthropic", "OpenAI", "Scale AI", "Sierra", "Glean", "Rubric AI", "Salus", "Sentrial", "Moda", "OpenSpec", "Cofia", "Emdash", "Paratus Health", "Moby Analytics", "Bravi", "Throxy", "Ovlo"]
+    },
+    "tier_2": {
+      "label": "Strong Fit with Repositioning",
+      "roles": [
+        "AI Solutions Architect at big-four consultancies ($160K-$240K)",
+        "Senior QA Automation Engineer / SDET ($140K-$190K)",
+        "Staff Engineer at non-AI companies ($220K-$320K)"
+      ],
+      "companies": ["Deloitte", "EY", "Accenture", "PwC", "Stripe", "Figma", "Datadog", "Cloudflare"]
+    },
+    "tier_3": {
+      "label": "Emerging Role (monitor)",
+      "roles": [
+        "AI Systems Architect — designing how AI agents are deployed and governed at enterprise scale"
+      ],
+      "companies": ["F500 companies", "Cloud providers (AWS, Azure, GCP)", "Big-four consultancies"]
+    }
+  },
+  "preferences": {
+    "remote": true,
+    "relocation_for": ["Anthropic", "OpenAI", "Google DeepMind"],
+    "location_preference": "Remote-first, major tech hubs acceptable"
+  }
+}

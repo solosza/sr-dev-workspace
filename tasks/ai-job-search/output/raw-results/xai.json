@@ -1,0 +1,51 @@
+{
+  "company": "xAI",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "Member of Technical Staff - Government Infrastructure",
+      "url": "https://x.ai/careers/open-roles",
+      "location": "Los Angeles, CA / Palo Alto, CA / Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Government infrastructure engineering",
+        "AI systems deployment",
+        "Security-focused infrastructure"
+      ]
+    },
+    {
+      "title": "Member of Technical Staff - Deployment & Compliance (Air-Gapped Infrastructure)",
+      "url": "https://x.ai/careers/open-roles",
+      "location": "Palo Alto, CA / Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Air-gapped infrastructure deployment",
+        "Compliance engineering",
+        "Secure AI systems deployment"
+      ]
+    },
+    {
+      "title": "Full Stack Engineer",
+      "url": "https://x.ai/careers/open-roles",
+      "location": "Palo Alto, CA / San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "AI-driven feature development",
+        "Platform performance and scalability",
+        "Full stack development"
+      ]
+    },
+    {
+      "title": "Network Engineer",
+      "url": "https://x.ai/careers/open-roles",
+      "location": "Palo Alto, CA / Memphis, TN",
+      "remote": false,
+      "requirements": [
+        "Large-scale network design and optimization",
+        "AI/HPC networking",
+        "Performance metrics analysis",
+        "Training and inference workload optimization"
+      ]
+    }
+  ]
+}

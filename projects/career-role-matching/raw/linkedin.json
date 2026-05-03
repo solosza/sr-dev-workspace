@@ -1,0 +1,145 @@
+[
+  {
+    "url": "https://www.linkedin.com/jobs/view/ai-agent-software-engineer-agent-performance-engineering-at-assembled-4240532163",
+    "company": "Assembled",
+    "title": "AI Agent Software Engineer — Agent Performance Engineering",
+    "location": "United States",
+    "remote": true,
+    "tier": 1,
+    "salary_range": "$180K-$260K",
+    "posted_date": "2026-04",
+    "notes": "AI agent-focused role — strong fit for agent runtime governance experience"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-ai-engineer-at-palantir-technologies-3867112975",
+    "company": "Palantir Technologies",
+    "title": "Forward Deployed AI Engineer",
+    "location": "United States",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$200K-$350K TC",
+    "posted_date": "2026-04",
+    "notes": "Classic FDE role at Palantir — customer-facing AI deployment, strong brand signal"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-new-grad-2026-at-domino-data-lab-4308289983",
+    "company": "Domino Data Lab",
+    "title": "Forward Deployed Engineer — New Grad 2026",
+    "location": "United States",
+    "remote": true,
+    "tier": 1,
+    "salary_range": "$130K-$170K",
+    "posted_date": "2026-04",
+    "notes": "New grad level — below target seniority but Domino is strong AI infra company"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-co-op-fall-2026-svl-at-ibm-4384449602",
+    "company": "IBM",
+    "title": "Forward Deployed Engineer Co-Op Fall 2026",
+    "location": "San Jose, CA",
+    "remote": false,
+    "tier": 2,
+    "salary_range": "N/A (co-op)",
+    "posted_date": "2026-04",
+    "notes": "Co-op level — below target seniority, but IBM AI platform is relevant domain"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/ai-agent-applications-developer-at-bark-4169616977",
+    "company": "BARK",
+    "title": "AI Agent & Applications Developer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$170K-$240K",
+    "posted_date": "2026-04",
+    "notes": "AI agent development role — direct match for agent infrastructure skills"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/senior-enterprise-ai-solutions-architect-remote-at-florida-blue-3674806458",
+    "company": "Florida Blue",
+    "title": "Senior Enterprise AI Solutions Architect",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$160K-$220K",
+    "posted_date": "2026-04",
+    "notes": "Healthcare + AI architecture — strong domain overlap with HIPAA/HMSA experience"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/ai-ml-solutions-architect-at-jobs-via-dice-4232575799",
+    "company": "Dice (Agency)",
+    "title": "AI/ML Solutions Architect",
+    "location": "Reston, VA",
+    "remote": false,
+    "tier": 2,
+    "salary_range": "$160K-$240K",
+    "posted_date": "2026-04",
+    "notes": "Solutions architect role — government-adjacent location (Reston), compliance skills valuable"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/senior-qa-automation-engineer-virtual-remote-at-inductivehealth-4076668971",
+    "company": "InductiveHealth",
+    "title": "Senior QA Automation Engineer (Virtual/Remote)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$140K-$175K",
+    "posted_date": "2026-04",
+    "notes": "Healthcare QA — strong fit for HIPAA domain + QA automation expertise"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/staff-engineer-ai-team-c++-python-remote-at-veed-io-3537643822",
+    "company": "VEED.IO",
+    "title": "Staff Engineer — AI Team (C++/Python, Remote)",
+    "location": "EMEA",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$220K-$300K TC",
+    "posted_date": "2026-04",
+    "notes": "Staff-level AI team — Python match, cross-team technical leadership"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/site-reliability-engineer-ml-ai-platform-remote-at-cisco-meraki-3103971632",
+    "company": "Cisco Meraki",
+    "title": "Site Reliability Engineer — ML/AI Platform (Remote)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$180K-$260K",
+    "posted_date": "2026-04",
+    "notes": "AI platform SRE — infrastructure + reliability focus, Docker/cloud skills match"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/staff-machine-learning-engineer-remote-us-only-at-apollo-io-3597644722",
+    "company": "Apollo.io",
+    "title": "Staff Machine Learning Engineer (Remote, US Only)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$200K-$280K",
+    "posted_date": "2026-04",
+    "notes": "Staff ML engineer — 6+ years ML/AI required, cloud deployment experience"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/infrastructure-engineer-at-stability-ai-3453740175",
+    "company": "Stability AI",
+    "title": "Infrastructure Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$180K-$280K",
+    "posted_date": "2026-04",
+    "notes": "AI infrastructure at a frontier AI company — strong brand, infra focus"
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/staff-full-stack-engineer-remote-at-smartbiz-3494261149",
+    "company": "SmartBiz",
+    "title": "Staff Full Stack Engineer (Remote)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$200K-$280K",
+    "posted_date": "2026-04",
+    "notes": "AI-powered fintech — staff level, full stack, less direct agent infra match"
+  }
+]

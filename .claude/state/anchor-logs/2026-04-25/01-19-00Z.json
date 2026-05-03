@@ -1,0 +1,1 @@
+{"anchor_timestamp": "2026-04-25T01:19:00Z", "actions_count": 3, "violations_found": 0, "actions": [{"timestamp": "2026-04-25T01:18:39Z", "tool": "Bash", "entry": "Bash: echo anchor archive"}, {"timestamp": "2026-04-25T01:19:47Z", "tool": "Write", "entry": "Write: attest.py"}, {"timestamp": "2026-04-25T01:19:56Z", "tool": "Bash", "entry": "Bash: python attest.py dry-run"}]}

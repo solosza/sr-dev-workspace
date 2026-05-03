@@ -1,0 +1,44 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "14ae59d19021f181f9070543390896093ec298e60e6138fc98bd32a13ae4974f",
+      "parameters": "01f905c68a705322fcbb08b305519caa7e8401eefd00ae9a2eb8e722eed4ff32",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-27T23:54:53.706840+00:00",
+          "raw_input_hash": "4cfbbc33870337ef1ce6d293353fc6e73bb1b69b86cddbd621e71a89c7b44387",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/qa-platform-site/gate-contract.md",
+          "sha256": "2868e20f13e05e31dd15daed1e047e0a42455dd228d388f5069a414a440eefaf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/qa-platform-site/000-index.md",
+          "sha256": "a3540d8b21b8dc8ca1b6659f2ffa34c80d4bf692f52b46579ce13a18cffa946b"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/qa-platform-site/gate-contract.md",
+          "sha256": "2868e20f13e05e31dd15daed1e047e0a42455dd228d388f5069a414a440eefaf"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T10:43:37.963383+00:00",
+      "end": "2026-04-28T10:43:37.963383+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/060-market-research-qa-platform-site-integration.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/qa-platform-site/",
+      "task_count": 13,
+      "completed_count": 0,
+      "skipped_count": 0
+    }
+  }
+}

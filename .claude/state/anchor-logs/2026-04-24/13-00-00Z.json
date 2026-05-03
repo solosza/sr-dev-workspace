@@ -1,0 +1,121 @@
+{
+  "anchor_timestamp": "2026-04-24T13:00:00Z",
+  "actions_count": 19,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-04-24T07:25:41Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwith open('D:/my_ai_projects/project_test_repos/sr_dev_w",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:26:12Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/isagawa-portfolio-site/extraction/\" 2>/dev/null | head -5",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:26:24Z",
+      "tool": "Write",
+      "entry": "Write: shader-borders.json",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:26:29Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/isagawa-portfolio-site/extraction/shader-borders.json",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:26:34Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwith open('D:/my_ai_projects/isagawa-portfolio-site/extr",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:26:53Z",
+      "tool": "Bash",
+      "entry": "Bash: ps -ef 2>/dev/null | grep -i \"run-task\\|claude.*-p\" | grep -v grep | awk '{print",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:27:02Z",
+      "tool": "Bash",
+      "entry": "Bash: wmic process where \"commandline like '%run-task%'\" get processid,commandline 2>/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:27:12Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:27:22Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"C:\\Users\\solos\\AppData\\Local\\Temp\\claude\\D--my-ai-projects-project-test-rep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:27:27Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-rep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:28:03Z",
+      "tool": "Bash",
+      "entry": "Bash: sleep 30 && cat \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-proj",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:28:09Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/run-task.sh\" && he",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:28:27Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwith open('D:/my_ai_projects/project_test_repos/sr_dev_w",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T07:28:44Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwith open('D:/my_ai_projects/project_test_repos/sr_dev_w",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T08:58:15Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/isagawa-portfolio-site/extraction/\" 2>/dev/null",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T08:58:26Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwith open('D:/my_ai_projects/project_test_repos/sr_dev_w",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T08:58:47Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:14Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" | sort ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:18Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/\" | ",
+      "session": "current"
+    }
+  ]
+}

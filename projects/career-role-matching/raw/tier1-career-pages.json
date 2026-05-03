@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://www.anthropic.com/careers/jobs/4985877008",
+    "company": "Anthropic",
+    "title": "Forward Deployed Engineer, Applied AI",
+    "location": "San Francisco, CA / Multiple US cities / London",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$350K-$550K TC (mid-senior, estimated from levels.fyi)",
+    "notes": "Embed with strategic customers to drive AI adoption. Requires 3+ yrs customer-facing technical role. Python + LLM production experience. Manager-level FDE roles also open in Boston, NYC, Seattle, DC."
+  },
+  {
+    "url": "https://www.anthropic.com/careers/jobs/4970314008",
+    "company": "Anthropic",
+    "title": "Staff+ Software Engineer, Infrastructure",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$400K-$600K+ TC (staff level, estimated from levels.fyi)",
+    "notes": "Infrastructure engineering role. Staff+ level indicates senior IC track. Anthropic SWE TC ranges $300K-$490K mid-level, higher for staff."
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-software-engineer-sf-san-francisco/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Software Engineer",
+    "location": "San Francisco, CA / Seattle / NYC",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$350K-$550K TC (mid-senior, from FDE salary guide 2026)",
+    "notes": "Build custom software leveraging OpenAI APIs for enterprise customers. Multiple locations. High equity component."
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-engineer-gov-washington-dc/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Engineer, Gov",
+    "location": "Washington, DC",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$350K-$550K TC (mid-senior, estimated)",
+    "notes": "Lead complex deployments of frontier models in production for government and public sector. Clearance likely required. Delivery-urgent, high-ambiguity environments."
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-engineer-(fde)-life-sciences-sf-san-francisco/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Engineer, Life Sciences",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 2,
+    "salary_range": "$350K-$550K TC (mid-senior, estimated)",
+    "notes": "Deploy production AI systems across scientific and operational workflows for life sciences orgs. Domain specialization in biotech/pharma."
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-engineer-semiconductor-san-francisco/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Engineer, Semiconductor",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 2,
+    "salary_range": "$350K-$550K TC (mid-senior, estimated)",
+    "notes": "Deploy production AI across chip design, verification, and tooling workflows for semiconductor companies."
+  },
+  {
+    "url": "https://scale.com/careers/4597399005",
+    "company": "Scale AI",
+    "title": "Forward Deployed AI Engineer, Enterprise",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$150K-$300K+ TC (from levels.fyi/FDE guide 2026)",
+    "notes": "Technical bridge between Scale AI capabilities and strategic customers. Architect custom AI solutions, ensure production deployment and adoption."
+  },
+  {
+    "url": "https://scale.com/careers/4593571005",
+    "company": "Scale AI",
+    "title": "Forward Deployed Engineer, GenAI",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$150K-$300K+ TC (estimated)",
+    "notes": "Customer-focused solution engineering with hands-on infrastructure and development. GenAI platform focus."
+  },
+  {
+    "url": "https://scale.com/careers/4554341005",
+    "company": "Scale AI",
+    "title": "Forward Deployed Engineer, Agent Oversight",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$150K-$300K+ TC (estimated)",
+    "notes": "Agent oversight specialization — directly relevant to AI agent infrastructure experience. Bridges customer needs and cutting-edge agent tech."
+  },
+  {
+    "url": "https://sierra.ai/careers",
+    "company": "Sierra",
+    "title": "Agent Engineer",
+    "location": "San Francisco, CA / New York, NY",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "Not disclosed (Series C unicorn, competitive)",
+    "notes": "Build AI agents for leading global brands. Requires expertise in LLMs, vector DBs, prompt engineering, agent architecture, AI orchestration. APX rotational program also available for new grads. Founded by ex-Google/Salesforce leadership (Bret Taylor, Clay Bavor)."
+  },
+  {
+    "url": "https://www.glean.com/careers",
+    "company": "Glean",
+    "title": "Software Engineer (Platform/Infrastructure)",
+    "location": "Palo Alto, CA",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "Not disclosed (valued at $4.6B, competitive)",
+    "notes": "Work AI platform with 100+ connectors, enterprise graph, LLM integration. Building engineering agents (PR review, Jira resolution, launch docs). AI-native enterprise search. No specific FDE title but platform/infra roles align."
+  },
+  {
+    "url": "https://deepmind.google/careers/",
+    "company": "Google DeepMind",
+    "title": "Research Engineer / Software Engineer",
+    "location": "Multiple (London, Mountain View, etc.)",
+    "remote": false,
+    "tier": 2,
+    "salary_range": "$200K-$500K+ TC (Google L4-L6 bands, estimated)",
+    "notes": "Research engineers combine engineering + ML/DL expertise. Software engineers build scalable AI infrastructure. No specific FDE title — roles are research-engineering or platform-focused. Paid internships available (12-24 weeks)."
+  }
+]

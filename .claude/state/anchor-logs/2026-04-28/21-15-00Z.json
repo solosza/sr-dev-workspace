@@ -1,0 +1,26 @@
+{
+  "anchor_timestamp": "2026-04-28T21:15:00Z",
+  "actions_count": 20,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-28T20:58:03Z", "tool": "Bash", "entry": "Bash: git checkout feature/showcase-attestation branch"},
+    {"timestamp": "2026-04-28T20:58:37Z", "tool": "Write", "entry": "Write: attestation.css"},
+    {"timestamp": "2026-04-28T20:59:20Z", "tool": "Write", "entry": "Write: attestation.html"},
+    {"timestamp": "2026-04-28T20:59:24Z", "tool": "Bash", "entry": "Bash: grep attestation.html in index.html"},
+    {"timestamp": "2026-04-28T20:59:28Z", "tool": "Bash", "entry": "Bash: grep Attestation Pipeline in index.html"},
+    {"timestamp": "2026-04-28T20:59:39Z", "tool": "Edit", "entry": "Edit: index.html — add attestation link"},
+    {"timestamp": "2026-04-28T20:59:43Z", "tool": "Bash", "entry": "Bash: python -m http.server 8767"},
+    {"timestamp": "2026-04-28T21:00:12Z", "tool": "Bash", "entry": "Bash: kill server"},
+    {"timestamp": "2026-04-28T21:00:19Z", "tool": "Bash", "entry": "Bash: git add attestation files"},
+    {"timestamp": "2026-04-28T21:00:33Z", "tool": "Bash", "entry": "Bash: run attestation"},
+    {"timestamp": "2026-04-28T21:00:43Z", "tool": "Bash", "entry": "Bash: mv backlog to done"},
+    {"timestamp": "2026-04-28T21:00:43Z", "tool": "Bash", "entry": "Bash: mv tasks to completed"},
+    {"timestamp": "2026-04-28T21:03:00Z", "tool": "Bash", "entry": "Bash: python -m http.server 8767"},
+    {"timestamp": "2026-04-28T21:06:58Z", "tool": "Write", "entry": "Write: attestation.css v2"},
+    {"timestamp": "2026-04-28T21:07:50Z", "tool": "Write", "entry": "Write: attestation.html v2"},
+    {"timestamp": "2026-04-28T21:08:15Z", "tool": "Bash", "entry": "Bash: git add attestation files"},
+    {"timestamp": "2026-04-28T21:12:28Z", "tool": "Edit", "entry": "Edit: attestation.css — remove dash bullets"},
+    {"timestamp": "2026-04-28T21:12:36Z", "tool": "Edit", "entry": "Edit: attestation.html — remove dashes line 33"},
+    {"timestamp": "2026-04-28T21:12:42Z", "tool": "Edit", "entry": "Edit: attestation.html — remove dashes line 44"}
+  ]
+}

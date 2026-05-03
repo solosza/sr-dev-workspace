@@ -1,0 +1,31 @@
+{
+  "company": "Databricks",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "Senior Applied AI Engineer - ML for Systems & Infrastructure",
+      "url": "https://www.databricks.com/company/careers/engineering---pipeline/senior-applied-ai-engineer--ml-for-systems--infrastructure-7859597002",
+      "location": "Mountain View, CA",
+      "remote": false,
+      "requirements": [
+        "Machine learning and optimization algorithms",
+        "Infrastructure and systems performance improvement",
+        "Cluster management and query compilation",
+        "Cost-efficiency optimization",
+        "Working closely with researchers"
+      ]
+    },
+    {
+      "title": "AI Forward Deployed Engineer",
+      "url": "https://www.databricks.com/company/careers/open-positions",
+      "location": "United States",
+      "remote": false,
+      "requirements": [
+        "Customer-facing AI engineering",
+        "Professional services for government customers",
+        "AI solution deployment",
+        "Data Intelligence Platform expertise"
+      ]
+    }
+  ]
+}

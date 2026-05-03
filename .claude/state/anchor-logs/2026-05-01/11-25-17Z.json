@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-05-01T11:25:17Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-01T11:23:37Z", "tool": "Write", "entry": "Write: vibe-coder.css"},
+    {"timestamp": "2026-05-01T11:23:44Z", "tool": "Bash", "entry": "Bash: verify task 004 acceptance criteria"},
+    {"timestamp": "2026-05-01T11:23:48Z", "tool": "Bash", "entry": "Bash: check vibe-coder.css exists"},
+    {"timestamp": "2026-05-01T11:24:02Z", "tool": "Bash", "entry": "Bash: verify gate contract for task 004"},
+    {"timestamp": "2026-05-01T11:24:05Z", "tool": "Bash", "entry": "Bash: list vibe-coder-showcase tasks"},
+    {"timestamp": "2026-05-01T11:24:34Z", "tool": "Bash", "entry": "Bash: confirm task 004 complete"},
+    {"timestamp": "2026-05-01T11:25:07Z", "tool": "Bash", "entry": "Bash: compute protocol hash"},
+    {"timestamp": "2026-05-01T11:25:17Z", "tool": "Bash", "entry": "Bash: create anchor log directory"}
+  ]
+}

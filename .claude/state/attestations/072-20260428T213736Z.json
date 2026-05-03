@@ -1,0 +1,84 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "af108e464c2e3f63b704bd23d055ca7826c7d66b6304291453018fa59a8fa843",
+      "parameters": "7784665ce5118f6a8a4ac75b93b04fb7dddbf387b9f269f97082d800e57d629a",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T17:31:57.470609+00:00",
+          "raw_input_hash": "0406d6ce833d134503c5da9d2e02c4f228db31cd706360732a9d17d8287715a4",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-04-28T17:43:34.852000+00:00",
+          "raw_input_hash": "c46fedc6972ffffaa502e34073679568a53d5718a1a78e97e2d1b18bec89492d",
+          "backlog_hash_after": "013434508336c070fcd1052d436faed461ab08a0b06c80d513aa00eba8e8cd4a"
+        },
+        {
+          "rev": 3,
+          "timestamp": "2026-04-28T18:40:51.625677+00:00",
+          "raw_input_hash": "a98faabdaadfd1184caa7c6facde0e13d280a6942a52298cd3c5cdd6e36a7fb5",
+          "backlog_hash_after": "af108e464c2e3f63b704bd23d055ca7826c7d66b6304291453018fa59a8fa843"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/gate-contract.md",
+          "sha256": "8157e305ef75c40aeb6ddf6e19b05a859f7c4a024718c076dc4e75268c352c19"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/000-index.md",
+          "sha256": "073cee73462114888765d49399ce8ee06faf09d5197e34c4bb990c6bc13bed03"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/001-build-create-feature-branch.md",
+          "sha256": "dfe100bc9525e841869b73ee10a97273b8eff09d9982d415df331e4fe71cf7c7"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/002-build-write-css.md",
+          "sha256": "3267129dcc3e866c8279d01fdbefb7ebc4bfe1b94a116f0e245f768314159a0c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/003-build-write-html.md",
+          "sha256": "149ef9e393809ece8288d46129220222d2fec34b646f30e8551bad6402927966"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/004-build-add-homepage-link.md",
+          "sha256": "03f295da7dfebea3762da1f013896d3593df8fa4bced0eab59b49b8a7a2596f5"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/005-build-git-commit.md",
+          "sha256": "259841c4c7580793d9dbae2422fb7ff37f45e5f55358f3c553ec1b7d7b129876"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/006-test-verify-files-exist.md",
+          "sha256": "1cd5bf2110a3b74a4ba18e253aa888600a40cb9f96ea988aff254ec653244e93"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/gate-contract.md",
+          "sha256": "8157e305ef75c40aeb6ddf6e19b05a859f7c4a024718c076dc4e75268c352c19"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T21:37:36.041787+00:00",
+      "end": "2026-04-28T21:37:36.044969+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/072-market-build-portfolio-ssh-compliance-showcase.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-compliance-showcase/",
+      "task_count": 6,
+      "completed_count": 3,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1398096516",
+      "logIndex": "1398096516"
+    }
+  }
+}

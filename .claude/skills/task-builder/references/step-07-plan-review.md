@@ -2,6 +2,19 @@
 
 Spawn a sub-agent to audit the decomposition plan against the convention check and path mapping before writing task files.
 
+## Pipeline Mode — Skip Check
+
+If `pipeline_mode.skip_plan_review` is `true` in `.claude/state/session_state.json`, **skip this entire step** and proceed directly to step 8 (write tasks).
+
+This flag is set by `/kernel/execute-pipeline` when running the full autonomous pipeline (backlog → task-builder → run-task.sh). The pipeline skips plan review because execution is fully autonomous with no user pause points.
+
+**Check:**
+1. Read `.claude/state/session_state.json`
+2. If `pipeline_mode` exists AND `pipeline_mode.skip_plan_review` is `true`:
+   - Log: `"Plan review skipped (pipeline_mode.skip_plan_review = true)"`
+   - Proceed to step 8
+3. Otherwise: continue with plan review below
+
 ## When This Step Applies
 
 **ALWAYS.** This is not optional. Every task-builder run validates the plan here before committing to task files.

@@ -1,0 +1,35 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "0ec16ba291d9eb90612eb9eac413a398874c3878dbe6753e9926f361ed35984f",
+      "parameters": "",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-30T23:33:15.747451+00:00",
+          "raw_input_hash": "e1482cd86f310032d86f35b22d8389b39f02857582a538057d917478e90d574e",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": []
+    },
+    "timestamp": {
+      "start": "2026-05-01T02:59:57.877223+00:00",
+      "end": "2026-05-01T02:59:57.878055+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/084-domain-build-ssh-iso27001-validator.md",
+      "task_folder": "inline",
+      "task_count": 9,
+      "completed_count": 9,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1416855984",
+      "logIndex": "1416855984"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "628485d25de1e0334a0c545c092c2ac9b6c22d3b2b88ebf65a767c67ad5d6e32",
+      "parameters": "",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-30T23:33:15.348451+00:00",
+          "raw_input_hash": "1ae6eff24e7b5e52d026fb25045080c8e34bd01db0dc29c7213251d8971952c2",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": []
+    },
+    "timestamp": {
+      "start": "2026-05-01T02:59:30.141552+00:00",
+      "end": "2026-05-01T02:59:30.143068+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/080-domain-build-ssh-fips-validator.md",
+      "task_folder": "inline",
+      "task_count": 9,
+      "completed_count": 9,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1416851831",
+      "logIndex": "1416851831"
+    }
+  }
+}

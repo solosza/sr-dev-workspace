@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-04-26T21:20:00Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T13:05:08Z", "tool": "Bash", "entry": "Bash: ls raw dir"},
+    {"timestamp": "2026-04-26T13:05:35Z", "tool": "Write", "entry": "Write: yc-startups.json"},
+    {"timestamp": "2026-04-26T13:05:41Z", "tool": "Bash", "entry": "Bash: python validate JSON"},
+    {"timestamp": "2026-04-26T13:07:25Z", "tool": "Bash", "entry": "Bash: python protocol hash"}
+  ]
+}

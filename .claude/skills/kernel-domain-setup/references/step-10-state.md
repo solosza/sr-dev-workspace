@@ -39,12 +39,14 @@ Create/update `.claude/settings.local.json` to register hooks.
 
 **MERGE RULE:** If `settings.local.json` already exists (e.g., MCP config from Step 1), MERGE the `hooks` key into the existing file. Do NOT overwrite — you will destroy MCP server config and other settings.
 
+**CRITICAL — Copy this EXACTLY. Do NOT flatten the structure. Each entry MUST have a nested `"hooks"` array. Without it, Claude Code rejects the file with "hooks: Expected array, but received undefined".**
+
 ```json
 {
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "",
+        "matcher": "Write|Edit|Bash",
         "hooks": [
           {
             "type": "command",
@@ -62,11 +64,34 @@ Create/update `.claude/settings.local.json` to register hooks.
             "command": "python .claude/hooks/test-failure-detector.py"
           }
         ]
+      },
+      {
+        "matcher": "Write|Edit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/actions-log-appender.py"
+          }
+        ]
       }
     ]
   }
 }
 ```
+
+**WRONG (causes Settings Error):**
+```json
+{
+  "PreToolUse": [
+    {
+      "matcher": "Write|Edit|Bash",
+      "type": "command",
+      "command": "python .claude/hooks/universal-gate-enforcer.py"
+    }
+  ]
+}
+```
+The wrong format puts `type` and `command` directly in the entry. The correct format wraps them in a `"hooks": [...]` array.
 
 **If file already exists:** Read it first, add the `hooks` key, preserve all other keys (`enableAllProjectMcpServers`, `enabledMcpjsonServers`, etc.).
 

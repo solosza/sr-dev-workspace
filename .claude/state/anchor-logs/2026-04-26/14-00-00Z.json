@@ -1,0 +1,16 @@
+{
+  "anchor_timestamp": "2026-04-26T14:00:00Z",
+  "actions_count": 9,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T18:59:06Z", "tool": "Write", "entry": "Write: decision-framework.md"},
+    {"timestamp": "2026-04-26T18:59:10Z", "tool": "Bash", "entry": "Bash: test -f decision-framework.md"},
+    {"timestamp": "2026-04-26T18:59:14Z", "tool": "Bash", "entry": "Bash: grep -c decision criteria sections"},
+    {"timestamp": "2026-04-26T18:59:25Z", "tool": "Bash", "entry": "Bash: test -f decision-framework.md"},
+    {"timestamp": "2026-04-26T18:59:26Z", "tool": "Bash", "entry": "Bash: grep -q when to use"},
+    {"timestamp": "2026-04-26T18:59:30Z", "tool": "Bash", "entry": "Bash: grep -i when to use"},
+    {"timestamp": "2026-04-26T18:59:35Z", "tool": "Edit", "entry": "Edit: decision-framework.md"},
+    {"timestamp": "2026-04-26T18:59:38Z", "tool": "Bash", "entry": "Bash: grep -q when to use (verify fix)"},
+    {"timestamp": "2026-04-26T18:59:40Z", "tool": "Bash", "entry": "Bash: tasklist process check"}
+  ]
+}

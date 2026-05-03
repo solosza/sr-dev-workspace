@@ -1,0 +1,45 @@
+{
+  "company": "Meta AI",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "AI Software Engineer, AI Infrastructure",
+      "url": "https://www.metacareers.com/areas-of-work/ai-infrastructure/",
+      "location": "Menlo Park, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "requirements": [
+        "AI Infrastructure development",
+        "Developing AI algorithms or AI-System infrastructure in C/C++ or Python",
+        "Distributed systems or on-device algorithm development",
+        "Integrating AI tools to optimize/redesign workflows",
+        "Prompt/context engineering, agent orchestration"
+      ]
+    },
+    {
+      "title": "AI Platform Engineer, Llama Infrastructure",
+      "url": "https://www.metacareers.com/teams/technology?tab=AI",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "requirements": [
+        "LLM infrastructure and deployment",
+        "Python and C++ proficiency",
+        "PyTorch or TensorFlow experience",
+        "Cloud platform certifications",
+        "Scalable systems and performance optimization"
+      ]
+    },
+    {
+      "title": "Software Engineer, Agent Framework (Confucius/KernelEvolve)",
+      "url": "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "requirements": [
+        "Internal AI agent framework development",
+        "Complex multistep reasoning tasks",
+        "Code generation capabilities",
+        "SDK for integrating with internal tooling systems",
+        "Job schedulers, experiment tracking, codebase navigation tools"
+      ]
+    }
+  ]
+}

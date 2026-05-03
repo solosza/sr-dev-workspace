@@ -1,0 +1,9 @@
+{
+  "reviewed": true,
+  "review_cycles": 1,
+  "checks_passed": ["gate_coverage", "test_completeness"],
+  "checks_failed": [],
+  "checks_skipped": ["path_consistency", "convention_compliance", "structural_integrity"],
+  "skip_reason": "RESEARCH project — no path-mapping.json, no convention-check.json, no template",
+  "fixes_applied": []
+}

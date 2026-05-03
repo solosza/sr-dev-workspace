@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-04-26T23:50:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T13:58:06Z", "tool": "Bash", "entry": "Bash: python -c log path check"},
+    {"timestamp": "2026-04-26T14:00:13Z", "tool": "Write", "entry": "Write: report.md"},
+    {"timestamp": "2026-04-26T14:00:33Z", "tool": "Bash", "entry": "Bash: python -c file verification"},
+    {"timestamp": "2026-04-26T14:00:50Z", "tool": "Bash", "entry": "Bash: test -f career report verification"},
+    {"timestamp": "2026-04-26T23:50:00Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash computation"}
+  ]
+}

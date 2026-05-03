@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://www.ycombinator.com/companies/paratus-health/jobs/lvkvIu2-forward-deployed-engineer",
+    "company": "Paratus Health",
+    "title": "Forward Deployed Engineer",
+    "location": "Menlo Park, CA",
+    "remote": null,
+    "tier": 1,
+    "domain_vertical": "healthcare",
+    "notes": "Medical voice agents for patient management — handles calls, intake, insurance, documentation. Integrated with EHRs (Epic, Athena). YC-backed, 6 employees. Founded 2024. Also hiring Founding Engineer #2. Governance-heavy domain: HIPAA, patient data, insurance workflows."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/paratus-health/jobs/DoE5rYm-founding-engineer-2",
+    "company": "Paratus Health",
+    "title": "Founding Engineer #2",
+    "location": "Menlo Park, CA",
+    "remote": null,
+    "tier": 1,
+    "domain_vertical": "healthcare",
+    "notes": "Early technical leader, ship products end-to-end from AI voice agents to insurance verification and EHR integrations. Small team (6), high ownership. YC-backed."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/moby-analytics",
+    "company": "Moby Analytics",
+    "title": "Engineering (inferred — no public listing found)",
+    "location": "Paris, France",
+    "remote": null,
+    "tier": 1,
+    "domain_vertical": "finance/audit",
+    "notes": "AI analytics platform automating audit procedures — deploys AI agents for revenue, payroll, inventory, fixed assets workflows. Real-time dashboard. YC-backed, 4 employees, founded 2022. Governance-critical: audit compliance, financial accuracy. No specific job listings found — likely hiring via network."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/bravi/jobs",
+    "company": "Bravi",
+    "title": "Operations role (1 open position)",
+    "location": "San Francisco, CA",
+    "remote": null,
+    "tier": 2,
+    "domain_vertical": "home services",
+    "notes": "AI operating system for home services businesses — voice and chat assistants for installers (shutters, solar, HVAC). YC F25, 2 employees. Founded 2025. Only hiring operations, not engineering. Lower governance needs than healthcare/finance verticals."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/throxy/jobs/14BDrba-ai-engineer",
+    "company": "Throxy",
+    "title": "AI Engineer",
+    "location": "London, UK",
+    "remote": null,
+    "tier": 1,
+    "domain_vertical": "sales automation",
+    "notes": "Vertical AI sales agents for outbound sales into legacy industries. Productionize AI agents at massive scale, design data-ingestion and orchestration layers, ship agentic workflows. Also hiring Fullstack SWE and AI Customer Success Manager. AI-native team. careers.throxy.com"
+  },
+  {
+    "url": "https://careers.throxy.com/software-engineer-fullstack",
+    "company": "Throxy",
+    "title": "Software Engineer (Fullstack)",
+    "location": "London, UK",
+    "remote": null,
+    "tier": 1,
+    "domain_vertical": "sales automation",
+    "notes": "TypeScript, React, Next.js, modern AI tooling. Infrastructure: SingleStore, OpenSearch, Trigger.dev, Axiom. AI-native company — every employee ships with AI daily."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/ovlo",
+    "company": "Ovlo",
+    "title": "Engineering (inferred — no public listing found)",
+    "location": "Unknown",
+    "remote": null,
+    "tier": 2,
+    "domain_vertical": "supply chain",
+    "notes": "No-code AI platform for supply chain teams — custom agents for demand forecasting, compliance validation, invoice reconciliation, inventory optimization. YC-backed, Pre-Seed. Founders from Meta/Google and HelloFresh/Amazon. No public job listings found."
+  },
+  {
+    "url": "https://hippocraticai.com/careers/",
+    "company": "Hippocratic AI",
+    "title": "Multiple engineering roles (76 open positions)",
+    "location": "Multiple locations",
+    "remote": null,
+    "tier": 1,
+    "domain_vertical": "healthcare",
+    "notes": "Healthcare-specific AI agents — patient communications, appointment scheduling, chronic disease management, post-discharge follow-ups. Outcomes-based pricing. 76 open positions on Glassdoor. Also runs Deployment Engineering Residency program ($55/hr, 3+ months). Heavily regulated domain (HIPAA). Large-scale agentic systems."
+  },
+  {
+    "url": "https://www.harvey.ai/company/careers/3fc0953f-8a03-46f2-8f4b-d12cf95f2800",
+    "company": "Harvey",
+    "title": "Legal Engineer",
+    "location": "San Francisco, CA / New York, NY / Dallas, TX",
+    "remote": false,
+    "tier": 1,
+    "domain_vertical": "legal",
+    "notes": "AI platform for legal and professional services — contract analysis, due diligence, compliance, litigation. 1000+ customers in 60+ countries. $600M+ total funding (Series E $300M in 2025). Salary $210K-$320K depending on role/location. Note: Legal Engineer roles require JD — may not match engineering profile. Check for pure SWE roles on jobs.ashbyhq.com/harvey."
+  },
+  {
+    "url": "https://www.vanta.com/company/careers",
+    "company": "Vanta",
+    "title": "Senior Software Engineer - AI Platform",
+    "location": "United States (Remote) / New York, NY",
+    "remote": true,
+    "tier": 1,
+    "domain_vertical": "compliance/security",
+    "notes": "Trust management platform — SOC 2, ISO 27001, HIPAA, PCI, GDPR compliance automation. AI Agent guides compliance workflows, drafts policies, completes questionnaires, flags issues. Also hiring Senior Applied ML Engineer. Opening NYC office. Governance is the core product — strong fit for agent governance scaffolding expertise."
+  }
+]

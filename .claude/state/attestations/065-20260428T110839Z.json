@@ -1,0 +1,52 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "0b2ac3609ddbff4c9a6b25fc9d5b2117b7da336c54c63510a932e6a883c87c05",
+      "parameters": "e3fee74758b6e5e60e0dee6bb579dab5f81c3b93a3068364f95d95d94d5f5a29",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T10:07:12.670533+00:00",
+          "raw_input_hash": "24be7cc4342c122f85aa4abd450c086981921e780829f4870831d6e9ef42c4d0",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/ai-youtube-pipeline/gate-contract.md",
+          "sha256": "00f759a56fd749204685f610e25d8fb21d96f1a2848cf2b971f72030aab28eba"
+        },
+        {
+          "path": "tasks/ai-youtube-pipeline/000-index.md",
+          "sha256": "de44478fa415105c1cb3265982b4e45ba69b9752266694de3f4b9f47b2aa9da9"
+        },
+        {
+          "path": "tasks/ai-youtube-pipeline/001-research-write-report.md",
+          "sha256": "1edc7f82dc8a15e13ae071033c84a87bad5fa55352543405d2612aa8559d5064"
+        },
+        {
+          "path": "tasks/ai-youtube-pipeline/gate-contract.md",
+          "sha256": "00f759a56fd749204685f610e25d8fb21d96f1a2848cf2b971f72030aab28eba"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T11:08:39.601991+00:00",
+      "end": "2026-04-28T11:08:39.602991+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/065-market-research-ai-youtube-content-pipeline.md",
+      "task_folder": "tasks/ai-youtube-pipeline/",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1397952620",
+      "logIndex": "1397952620"
+    }
+  }
+}

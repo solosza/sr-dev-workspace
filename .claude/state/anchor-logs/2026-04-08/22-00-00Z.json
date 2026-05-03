@@ -1,0 +1,1 @@
+{"anchor_timestamp":"2026-04-08T22:00:00Z","actions_count":6,"violations_found":0,"actions":["Bash: ls fraud-detection-app","Bash: ls fraud-detection-app/src","Write: CLAUDE.md","Bash: test CLAUDE.md exists","Bash: grep Fraud Detection","Bash: grep BaseAPIClient"]}

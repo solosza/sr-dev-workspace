@@ -1,0 +1,25 @@
+{
+  "anchor_timestamp": "2026-05-01T10:20:30Z",
+  "actions_count": 18,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-01T10:00:08Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+    {"timestamp": "2026-05-01T10:00:24Z", "tool": "Bash", "entry": "Bash: git -C isagawa-co.github.io status"},
+    {"timestamp": "2026-05-01T10:01:04Z", "tool": "Bash", "entry": "Bash: python -c lessons schema import"},
+    {"timestamp": "2026-05-01T10:01:08Z", "tool": "Bash", "entry": "Bash: find .claude/lessons -name *.py"},
+    {"timestamp": "2026-05-01T10:01:28Z", "tool": "Bash", "entry": "Bash: python -c lessons.schema import"},
+    {"timestamp": "2026-05-01T10:01:39Z", "tool": "Bash", "entry": "Bash: python -c generate_fingerprint"},
+    {"timestamp": "2026-05-01T10:02:19Z", "tool": "Bash", "entry": "Bash: git -C isagawa-co.github.io diff --stat"},
+    {"timestamp": "2026-05-01T10:02:31Z", "tool": "Bash", "entry": "Bash: git -C isagawa-co.github.io add feed-count.txt feed-data.json"},
+    {"timestamp": "2026-05-01T10:02:36Z", "tool": "Bash", "entry": "Bash: git -C isagawa-co.github.io push origin main"},
+    {"timestamp": "2026-05-01T10:07:32Z", "tool": "Edit", "entry": "Edit: attest.py — auto feed update"},
+    {"timestamp": "2026-05-01T10:07:45Z", "tool": "Edit", "entry": "Edit: attest.py — auto feed update"},
+    {"timestamp": "2026-05-01T10:07:50Z", "tool": "Bash", "entry": "Bash: python attest.py --dry-run"},
+    {"timestamp": "2026-05-01T10:08:12Z", "tool": "Edit", "entry": "Edit: attest.py — fix feed update"},
+    {"timestamp": "2026-05-01T10:08:18Z", "tool": "Edit", "entry": "Edit: attest.py — fix feed update"},
+    {"timestamp": "2026-05-01T10:08:55Z", "tool": "Bash", "entry": "Bash: python attest.py 085 attestation"},
+    {"timestamp": "2026-05-01T10:20:15Z", "tool": "Bash", "entry": "Bash: python intent.py record 086"},
+    {"timestamp": "2026-05-01T10:20:21Z", "tool": "Bash", "entry": "Bash: ls backlog dir"},
+    {"timestamp": "2026-05-01T10:20:24Z", "tool": "Bash", "entry": "Bash: mkdir 086 subfolder"}
+  ]
+}

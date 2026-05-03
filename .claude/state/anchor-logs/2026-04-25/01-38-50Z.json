@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-04-25T01:38:50Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-25T01:35:38Z", "tool": "Bash", "entry": "Bash: python collect.py --test (prior session)"},
+    {"timestamp": "2026-04-25T01:35:50Z", "tool": "Bash", "entry": "Bash: python -c import+test hash_directory (prior session)"},
+    {"timestamp": "2026-04-25T01:38:11Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash computation"},
+    {"timestamp": "2026-04-25T01:38:44Z", "tool": "Bash", "entry": "Bash: mkdir -p anchor-logs/2026-04-25"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-04-24T06:20:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-24T06:18:26Z", "tool": "Bash", "entry": "Bash: ls anchor-logs dir"},
+    {"timestamp": "2026-04-24T06:19:20Z", "tool": "Bash", "entry": "Bash: ls suero-desktop file"}
+  ]
+}

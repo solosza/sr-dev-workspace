@@ -1,0 +1,35 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "09c34d4e73833c2311647b6620970709d03fe17503e67d114487704d8354a656",
+      "parameters": "",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-30T23:33:15.451256+00:00",
+          "raw_input_hash": "4dd6acb5866efd9b457e78b41d0c30bfc1b0fa3839fb13dcfd277505edf406d3",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": []
+    },
+    "timestamp": {
+      "start": "2026-05-01T02:59:36.584635+00:00",
+      "end": "2026-05-01T02:59:36.587149+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/081-domain-build-ssh-pci-validator.md",
+      "task_folder": "inline",
+      "task_count": 9,
+      "completed_count": 9,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1416852950",
+      "logIndex": "1416852950"
+    }
+  }
+}

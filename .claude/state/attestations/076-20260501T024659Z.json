@@ -1,0 +1,84 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "f563fbb9a39a3658a257c218cb0752d1ddd10db9bf0aeb5b7f005c30e1377c52",
+      "parameters": "e533656257e7b1a81be9ff1ac7002beb4a49892ee81225c18a724d6f67909b6e",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-30T23:33:07.617709+00:00",
+          "raw_input_hash": "fcb2122ec2d8f4b704537128e5cbe89517d981cadb1533b098dfb75334070e55",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/gate-contract.md",
+          "sha256": "3f97f86fe996d34a2205a74e3628d24be9d57f93daa71fdfc050bdfc248eb7e2"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/000-index.md",
+          "sha256": "fab63203495efcec96d3c5b0b0b1457c448a2e3aaaad3499cd175ecb6ef8c4d1"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/001-build-write-compliance-validator.md",
+          "sha256": "e5a6c244a9cf093085b00a6514ab47d45be5e027cfc1933bdbf3146bce9d7843"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/002-build-edit-service-validator.md",
+          "sha256": "8ca3cb1766dba61a69eef6d4c43051631919c8982a757130481b45b22c1e7887"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/003-build-edit-host-configs.md",
+          "sha256": "6a479d46edff8f7e04874694ae3a57d008899388007458beea61a13188e2688b"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/004-build-edit-batch-executor.md",
+          "sha256": "5441e2edd378d73d36718536c773d79c1b48f3db34e12c3a12fe2f079aba553e"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/005-build-write-test-fixture.md",
+          "sha256": "f75b41c542ffaefe8ee9b4df1617aff99ba005f7e12ef0fd07a90d69a62ce754"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/006-build-write-compliance-tests.md",
+          "sha256": "4f60e52f1c05e59639fcf6f98cadcf8932c8530e34f31257a436be1e7dc06d4b"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/007-test-l1-structural-verification.md",
+          "sha256": "1cb31e47953b4b13b4645ae64ed5738170a420fcb621c1122c338a517ce4432b"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/008-test-l2-import-verification.md",
+          "sha256": "c9c3ea4ca073afe8664e54e92c0c3767bc7595c4f33dc9fd0de1f24d699db5b8"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/009-test-l3-live-ssh-compliance.md",
+          "sha256": "2f360c2f54b90a9e97fb4b96df3334433e141f4a2a197f1435736b9d82eb13a5"
+        },
+        {
+          "path": "tasks/completed/ssh-compliance-foundation/gate-contract.md",
+          "sha256": "3f97f86fe996d34a2205a74e3628d24be9d57f93daa71fdfc050bdfc248eb7e2"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-01T02:46:59.747359+00:00",
+      "end": "2026-05-01T02:46:59.752665+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/076-domain-build-ssh-compliance-foundation.md",
+      "task_folder": "tasks/completed/ssh-compliance-foundation/",
+      "task_count": 9,
+      "completed_count": 9,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1416783260",
+      "logIndex": "1416783260"
+    }
+  }
+}

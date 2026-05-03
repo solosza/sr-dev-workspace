@@ -1,0 +1,85 @@
+{
+  "anchor_timestamp": "2026-04-27T00:30:00Z",
+  "actions_count": 13,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-04-26T18:40:37Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\n# Read actions.jsonl\nwith open('D:/my_ai_projects/projec",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:40:39Z",
+      "tool": "Write",
+      "entry": "Write: navigation-footer.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:40:43Z",
+      "tool": "Write",
+      "entry": "Write: hero-cta.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:40:52Z",
+      "tool": "Write",
+      "entry": "Write: em-dash-cleanup.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:40:59Z",
+      "tool": "Bash",
+      "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/in",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:41:58Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/government-spending-tracker/\" 2>/dev/null || ls \"D:/my_ai_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:42:07Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"D:/my_ai_projects/fraud-detection-app/src\" -name \"*.py\" | sort",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:42:12Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"D:/my_ai_projects/fraud-detection-app/tests\" -name \"*.py\" | sort && echo \"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:43:15Z",
+      "tool": "Write",
+      "entry": "Write: analysis-fraud-detector.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:43:19Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-a",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:43:47Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/kernel-architect",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:45:02Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:45:18Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+      "session": "current"
+    }
+  ]
+}

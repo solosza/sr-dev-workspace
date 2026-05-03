@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-04-26T05:25:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T05:20:10Z", "tool": "Bash", "entry": "Bash: mkdir -p docs/backlog/done"},
+    {"timestamp": "2026-04-26T05:22:39Z", "tool": "Bash", "entry": "Bash: session_state merge - session_started"},
+    {"timestamp": "2026-04-26T05:22:40Z", "tool": "Bash", "entry": "Bash: workflow merge - anchored false"}
+  ]
+}

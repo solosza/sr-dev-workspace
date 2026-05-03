@@ -1,0 +1,520 @@
+{
+  "compiled_date": "2026-04-05",
+  "total_jobs": 40,
+  "companies_searched": 10,
+  "jobs": [
+    {
+      "company": "Anthropic",
+      "title": "Software Engineer, Agents Infrastructure",
+      "url": "https://boards.greenhouse.io/anthropic/jobs/4138401008",
+      "location": "San Francisco, CA / New York City, NY",
+      "remote": false,
+      "requirements": [
+        "Design and implement secure, scalable sandboxed execution environments for AI agents",
+        "Containerization technologies experience",
+        "Building infrastructure and SDKs for LLM-based agents",
+        "Developing sandboxed code execution environments and tool use SDKs"
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "title": "Staff+ Software Engineer, Infrastructure",
+      "url": "https://www.anthropic.com/careers/jobs/4970314008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Massive cluster training infrastructure",
+        "Production infrastructure serving millions of users",
+        "Developer platforms for engineering velocity",
+        "Novel scaling challenges at the frontier"
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "title": "Sr. Software Engineer, Infrastructure",
+      "url": "https://boards.greenhouse.io/anthropic/jobs/4034864008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Data Infrastructure: Spark, Airflow, dbt across GCP and AWS",
+        "Core Infrastructure: Large Kubernetes clusters with GPU/TPU/Trainium workloads",
+        "Developer Productivity: Secure, efficient development tooling",
+        "Product Infrastructure: Performance, reliability, developer velocity"
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "title": "Security Software Engineer, D&R Platform",
+      "url": "https://www.anthropic.com/careers/jobs/4595463008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Detection and response platform engineering",
+        "Security software engineering",
+        "Platform security infrastructure"
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "title": "Software Engineer, Accelerator Build Infrastructure",
+      "url": "https://www.anthropic.com/careers/jobs/4943668008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Build infrastructure and low-level systems optimization",
+        "Compilation processes and hardware-software interfaces",
+        "Build systems expertise",
+        "System-level debugging and optimization"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "title": "Software Engineer, Agent Infrastructure",
+      "url": "https://openai.com/careers/software-engineer-agent-infrastructure-san-francisco/",
+      "location": "San Francisco, CA / New York City, NY",
+      "remote": false,
+      "requirements": [
+        "Container orchestration platform beyond Kubernetes",
+        "FastAPI and gRPC APIs",
+        "Terraform for complex infrastructure",
+        "Building systems for training and deployment of AI agents",
+        "Hybrid: 3 days in office per week"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "title": "Software Engineer, Codex Core Agents",
+      "url": "https://openai.com/careers/software-engineer-codex-core-agents-san-francisco/",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Infrastructure for running, testing, debugging model-generated code",
+        "State and memory systems for agent context persistence",
+        "Optimize tokens, latency, reliability, cost",
+        "Backend systems, APIs, and developer tooling",
+        "Shared platform capabilities for product teams and open source"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "title": "Software Engineer, Computer-Using Agent",
+      "url": "https://openai.com/careers/software-engineer-computer-using-agent/",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Systems for model control of operating systems and browsers",
+        "CUA-specific containers on high-scale Kubernetes clusters",
+        "Terraform for large-scale infrastructure",
+        "RL training environments",
+        "Secure agent execution environments"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "title": "Software Engineer, Enterprise AI Platform",
+      "url": "https://openai.com/careers/software-engineer-enterprise-ai-platform-san-francisco/",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Foundational data and processing stack for OpenAI API",
+        "Infrastructure for serving latest models and agentic workflows",
+        "Enterprise platform engineering"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "title": "Client Platform Engineer",
+      "url": "https://openai.com/careers/client-platform-engineer-remote-us/",
+      "location": "Remote, US",
+      "remote": true,
+      "requirements": [
+        "Client platform engineering",
+        "Remote position available across US"
+      ]
+    },
+    {
+      "company": "Google DeepMind",
+      "title": "Machine Learning Software Engineer, GeminiApp Agents",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/99181829663138502-machine-learning-software-engineer/",
+      "location": "United States",
+      "remote": false,
+      "requirements": [
+        "5 years ML design and ML infrastructure experience",
+        "3 years taking technical products from conception to launch",
+        "3 years experience with Generative AI and LLMs",
+        "Scalable data collection and evaluation infrastructure",
+        "Model Context Protocol (MCP) integrations",
+        "Autoraters, autousers, automatic prompt optimization"
+      ]
+    },
+    {
+      "company": "Google DeepMind",
+      "title": "Machine Learning Quality Engineer, DeepMind - Project Janus",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/98197930501907142-machine-learning-quality-engineer-deepmind-project-janus",
+      "location": "United States",
+      "remote": false,
+      "requirements": [
+        "Evaluation sets and infrastructure setup",
+        "Agentic orchestration flows",
+        "Prompt iteration and context engineering",
+        "Experience building or using AI Agents and LLM-based frameworks",
+        "Automating software engineering tasks",
+        "SFT and RL techniques"
+      ]
+    },
+    {
+      "company": "Google DeepMind",
+      "title": "Forward Deployed Engineer III, Applied AI, Google Cloud",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/72473773101458118-forward-deployed-engineer-iii/",
+      "location": "United States",
+      "remote": false,
+      "requirements": [
+        "Implementing multi-agent systems using frameworks (LangGraph, CrewAI, Google ADK)",
+        "Complex patterns: ReAct, self-reflection, hierarchical delegation",
+        "High-performance evaluation pipelines and observability frameworks",
+        "Agentic workload optimization",
+        "Production-grade security and networking"
+      ]
+    },
+    {
+      "company": "Google DeepMind",
+      "title": "Software Engineer, Model Lifecycle Engineering, Robotics, DeepMind",
+      "url": "https://careers.google.com/jobs/results/114199152748831430-software-engineer/",
+      "location": "United States",
+      "remote": false,
+      "requirements": [
+        "Scalable platforms to train, evaluate and deploy Gemini Robotics models",
+        "Model lifecycle engineering",
+        "Deep proficiency in JAX alongside PyTorch"
+      ]
+    },
+    {
+      "company": "Meta AI",
+      "title": "AI Software Engineer, AI Infrastructure",
+      "url": "https://www.metacareers.com/areas-of-work/ai-infrastructure/",
+      "location": "Menlo Park, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "requirements": [
+        "AI Infrastructure development",
+        "Developing AI algorithms or AI-System infrastructure in C/C++ or Python",
+        "Distributed systems or on-device algorithm development",
+        "Integrating AI tools to optimize/redesign workflows",
+        "Prompt/context engineering, agent orchestration"
+      ]
+    },
+    {
+      "company": "Meta AI",
+      "title": "AI Platform Engineer, Llama Infrastructure",
+      "url": "https://www.metacareers.com/teams/technology?tab=AI",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "requirements": [
+        "LLM infrastructure and deployment",
+        "Python and C++ proficiency",
+        "PyTorch or TensorFlow experience",
+        "Cloud platform certifications",
+        "Scalable systems and performance optimization"
+      ]
+    },
+    {
+      "company": "Meta AI",
+      "title": "Software Engineer, Agent Framework (Confucius/KernelEvolve)",
+      "url": "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "requirements": [
+        "Internal AI agent framework development",
+        "Complex multistep reasoning tasks",
+        "Code generation capabilities",
+        "SDK for integrating with internal tooling systems",
+        "Job schedulers, experiment tracking, codebase navigation tools"
+      ]
+    },
+    {
+      "company": "xAI",
+      "title": "Member of Technical Staff - Government Infrastructure",
+      "url": "https://x.ai/careers/open-roles#gov-infra",
+      "location": "Los Angeles, CA / Palo Alto, CA / Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Government infrastructure engineering",
+        "AI systems deployment",
+        "Security-focused infrastructure"
+      ]
+    },
+    {
+      "company": "xAI",
+      "title": "Member of Technical Staff - Deployment & Compliance (Air-Gapped Infrastructure)",
+      "url": "https://x.ai/careers/open-roles#deploy-compliance",
+      "location": "Palo Alto, CA / Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Air-gapped infrastructure deployment",
+        "Compliance engineering",
+        "Secure AI systems deployment"
+      ]
+    },
+    {
+      "company": "xAI",
+      "title": "Full Stack Engineer",
+      "url": "https://x.ai/careers/open-roles#fullstack",
+      "location": "Palo Alto, CA / San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "AI-driven feature development",
+        "Platform performance and scalability",
+        "Full stack development"
+      ]
+    },
+    {
+      "company": "xAI",
+      "title": "Network Engineer",
+      "url": "https://x.ai/careers/open-roles#network",
+      "location": "Palo Alto, CA / Memphis, TN",
+      "remote": false,
+      "requirements": [
+        "Large-scale network design and optimization",
+        "AI/HPC networking",
+        "Performance metrics analysis",
+        "Training and inference workload optimization"
+      ]
+    },
+    {
+      "company": "Cohere",
+      "title": "Senior Software Engineer, Agent Infrastructure",
+      "url": "https://jobs.ashbyhq.com/cohere#agent-infra",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "requirements": [
+        "Agent infrastructure development",
+        "LLM-based agent systems",
+        "Scalable infrastructure design",
+        "Python proficiency"
+      ]
+    },
+    {
+      "company": "Cohere",
+      "title": "Forward Deployed Engineer, Agentic Platform (Public Sector)",
+      "url": "https://jobs.ashbyhq.com/cohere#fde-agentic",
+      "location": "Ottawa, Canada (Hybrid)",
+      "remote": false,
+      "requirements": [
+        "Building and shipping AI workspace platform features",
+        "Developing autonomous agents",
+        "End-to-end deployment management",
+        "Client-facing engineering"
+      ]
+    },
+    {
+      "company": "Cohere",
+      "title": "Software Engineer, GPU Infrastructure",
+      "url": "https://jobs.ashbyhq.com/cohere#gpu-infra",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "requirements": [
+        "Building and operating Kubernetes GPU superclusters",
+        "AI workload infrastructure optimization",
+        "System stability and performance improvement"
+      ]
+    },
+    {
+      "company": "Cohere",
+      "title": "Site Reliability Engineer",
+      "url": "https://jobs.ashbyhq.com/cohere#sre",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "requirements": [
+        "Developing, deploying, and operating AI infrastructure",
+        "High-performance ML systems",
+        "Kubernetes and cloud platforms",
+        "Scalable infrastructure"
+      ]
+    },
+    {
+      "company": "Mistral AI",
+      "title": "DevOps/Platform Engineer",
+      "url": "https://jobs.lever.co/mistral#devops-platform",
+      "location": "Paris, France",
+      "remote": false,
+      "requirements": [
+        "System design and implementation",
+        "Data pipeline optimization",
+        "Research productivity enhancement",
+        "Platform infrastructure"
+      ]
+    },
+    {
+      "company": "Mistral AI",
+      "title": "Software Engineer (Infrastructure)",
+      "url": "https://jobs.lever.co/mistral#infra",
+      "location": "Paris, France",
+      "remote": false,
+      "requirements": [
+        "Model deployment and API integration",
+        "Infrastructure enhancement",
+        "AI safety implementation",
+        "Resource optimization",
+        "High service availability"
+      ]
+    },
+    {
+      "company": "Mistral AI",
+      "title": "Applied AI Engineer",
+      "url": "https://jobs.lever.co/mistral#applied-ai",
+      "location": "Paris, France / New York, NY",
+      "remote": false,
+      "requirements": [
+        "Customer onboarding to AI products",
+        "Advanced AI application development",
+        "Product capability improvement",
+        "Integration support"
+      ]
+    },
+    {
+      "company": "Mistral AI",
+      "title": "AI Developer Advocate",
+      "url": "https://jobs.lever.co/mistral#devrel",
+      "location": "New York, NY",
+      "remote": false,
+      "requirements": [
+        "Developer advocacy and community building",
+        "AI platform evangelism",
+        "Technical content creation",
+        "Developer experience improvement"
+      ]
+    },
+    {
+      "company": "Databricks",
+      "title": "Senior Applied AI Engineer - ML for Systems & Infrastructure",
+      "url": "https://www.databricks.com/company/careers/engineering---pipeline/senior-applied-ai-engineer--ml-for-systems--infrastructure-7859597002",
+      "location": "Mountain View, CA",
+      "remote": false,
+      "requirements": [
+        "Machine learning and optimization algorithms",
+        "Infrastructure and systems performance improvement",
+        "Cluster management and query compilation",
+        "Cost-efficiency optimization",
+        "Working closely with researchers"
+      ]
+    },
+    {
+      "company": "Databricks",
+      "title": "AI Forward Deployed Engineer",
+      "url": "https://www.databricks.com/company/careers/open-positions",
+      "location": "United States",
+      "remote": false,
+      "requirements": [
+        "Customer-facing AI engineering",
+        "Professional services for government customers",
+        "AI solution deployment",
+        "Data Intelligence Platform expertise"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "title": "Staff Software Engineer, Full-Stack - Enterprise Gen AI",
+      "url": "https://scale.com/careers/4529529005",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "requirements": [
+        "GenAI Platform development",
+        "AI-driven agent building, deployment, and management",
+        "Full-stack development",
+        "Enterprise AI solutions"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "title": "Software Engineer, Gen AI",
+      "url": "https://scale.com/careers/4591300005",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "requirements": [
+        "End-to-end feature design and implementation",
+        "TypeScript, MongoDB, Elasticsearch",
+        "Compute orchestration with Temporal",
+        "High-impact technical systems"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "title": "Software Engineer - Public Sector (Agentic Systems)",
+      "url": "https://scale.com/careers#agentic-public-sector",
+      "location": "San Francisco, CA / Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Scalable backend systems for Federal customers",
+        "Cloud-native AI infrastructure",
+        "Agentic systems with multi-layered guardrails",
+        "Data pipelines and ML infrastructure for agents",
+        "Data retrieval optimization"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "title": "Senior Software Engineer - Agent-Powered Data Products",
+      "url": "https://scale.com/careers#agent-data-products",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Agent-powered data product development",
+        "End-to-end product ownership (frontend to backend)",
+        "AI and intelligent workflows",
+        "Full stack proficiency"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "title": "Applied AI Engineer (Public Sector)",
+      "url": "https://scale.com/careers#applied-ai-public",
+      "location": "Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Building AI applications for public sector",
+        "Dataset creation and evaluation",
+        "LLM integration and agentic workflows",
+        "RAG and agent orchestration"
+      ]
+    },
+    {
+      "company": "Hugging Face",
+      "title": "ML Research Engineer, AI Agents",
+      "url": "https://apply.workable.com/huggingface/#ml-agents",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "requirements": [
+        "AI agent research and development",
+        "Open-source ML platform experience",
+        "Machine learning and NLP expertise",
+        "PyTorch or TensorFlow proficiency",
+        "Git and version control"
+      ]
+    },
+    {
+      "company": "Hugging Face",
+      "title": "Cloud Machine Learning Engineer",
+      "url": "https://apply.workable.com/huggingface/#cloud-ml",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "requirements": [
+        "ML solutions with cloud technologies",
+        "Model integration and API design",
+        "Documentation and community advocacy",
+        "Cloud ML infrastructure"
+      ]
+    },
+    {
+      "company": "Hugging Face",
+      "title": "Cloud ML DevRel Engineer",
+      "url": "https://apply.workable.com/huggingface/#cloud-devrel",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "requirements": [
+        "Developer relations for ML cloud products",
+        "Technical content and community building",
+        "ML platform evangelism",
+        "Open-source community engagement"
+      ]
+    }
+  ]
+}

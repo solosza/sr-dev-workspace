@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-04-26T21:30:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T13:09:15Z", "tool": "Bash", "entry": "Bash: ls career-role-matching dir"},
+    {"timestamp": "2026-04-26T13:09:51Z", "tool": "Write", "entry": "Write: tier1-career-pages.json"},
+    {"timestamp": "2026-04-26T13:09:56Z", "tool": "Bash", "entry": "Bash: python validation of tier1-career-pages.json"}
+  ]
+}

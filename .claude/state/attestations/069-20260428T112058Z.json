@@ -1,0 +1,52 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "c619b8fb9584719a097b1db8570a1ea91bdf396ca6b40232d156617651ab0b21",
+      "parameters": "e10a532914097424eb94e7dd6a05ebe5f6abb97fe7b2504f7a2e6614c524add4",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T10:11:11.520360+00:00",
+          "raw_input_hash": "c4b4641407f142041a0b780b6080112a7f3e143fa40d96cf157d6e5b2f8ed8f6",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/local-business-pipeline/gate-contract.md",
+          "sha256": "81f1957f4853df8c5e047102a457ee822b1f469365b973694545077aadc6c7e6"
+        },
+        {
+          "path": "tasks/local-business-pipeline/000-index.md",
+          "sha256": "ebe65de9998f9fd0ed6e5d516d3b5d9b253254688dbec1b1dca704d7fded3332"
+        },
+        {
+          "path": "tasks/local-business-pipeline/001-research-write-report.md",
+          "sha256": "cc6e237bff5567822689e0a992ac4dfa76eb159053538916699119ba4a78743c"
+        },
+        {
+          "path": "tasks/local-business-pipeline/gate-contract.md",
+          "sha256": "81f1957f4853df8c5e047102a457ee822b1f469365b973694545077aadc6c7e6"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T11:20:58.275313+00:00",
+      "end": "2026-04-28T11:20:58.276307+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/069-market-research-local-business-ai-pipeline.md",
+      "task_folder": "tasks/local-business-pipeline/",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1397953580",
+      "logIndex": "1397953580"
+    }
+  }
+}

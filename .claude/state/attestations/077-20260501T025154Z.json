@@ -1,0 +1,68 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "b2895cf91463993f8f5318859b08666732a559ae0e31e79b459b37ad4554c30c",
+      "parameters": "56c4a11af65a5bbe6934675be868a5c2597c9ab157b89614705f558b08b522fd",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-30T23:33:15.028687+00:00",
+          "raw_input_hash": "3b0d12203b7359920a1a0d4bcc02972cbf803294475b41c3a180e2afe911d600",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/completed/ssh-stig-validator/gate-contract.md",
+          "sha256": "f4cbd531fc384640844a817756cd4fb183b3028a42e30c456a59e995a9b51bda"
+        },
+        {
+          "path": "tasks/completed/ssh-stig-validator/000-index.md",
+          "sha256": "524e70a01c90b9679f44eb5bd25c39d03564a86a004113c555f61b4295c53ce2"
+        },
+        {
+          "path": "tasks/completed/ssh-stig-validator/001-build-write-stig-fixture.md",
+          "sha256": "fbc2be909072ee27a0adeec686dc183bfda76f282cb5d29e8ea4c521d857b6c5"
+        },
+        {
+          "path": "tasks/completed/ssh-stig-validator/002-build-write-stig-validator.md",
+          "sha256": "6ffe295367c23ca98e76f587b6feb7156eab95c3a33d32cf34dcce87711cd2e0"
+        },
+        {
+          "path": "tasks/completed/ssh-stig-validator/003-build-write-stig-tests.md",
+          "sha256": "79c3be88b06e5b87e9699a798a0fa898cfe32cddbac517a68cc2277067a006f6"
+        },
+        {
+          "path": "tasks/completed/ssh-stig-validator/004-test-l1-l2-verification.md",
+          "sha256": "25f45f5d1700e38c3b025d2257eafe938b2981ad7c7692813ecc1033fd5d7e95"
+        },
+        {
+          "path": "tasks/completed/ssh-stig-validator/005-test-l3-live-stig.md",
+          "sha256": "86fbbd3c48fbfe7cbc554dfb27599433bb92d9371e855fa93a36443f8d1cb6c4"
+        },
+        {
+          "path": "tasks/completed/ssh-stig-validator/gate-contract.md",
+          "sha256": "f4cbd531fc384640844a817756cd4fb183b3028a42e30c456a59e995a9b51bda"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-01T02:51:54.012482+00:00",
+      "end": "2026-05-01T02:51:54.015499+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/077-domain-build-ssh-stig-validator.md",
+      "task_folder": "tasks/completed/ssh-stig-validator/",
+      "task_count": 9,
+      "completed_count": 9,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1416802795",
+      "logIndex": "1416802795"
+    }
+  }
+}

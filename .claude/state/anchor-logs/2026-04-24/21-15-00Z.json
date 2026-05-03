@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-04-24T21:15:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-24T09:59:53Z", "tool": "Edit", "entry": "Edit: index.html"},
+    {"timestamp": "2026-04-24T10:02:27Z", "tool": "Bash", "entry": "Bash: compute protocol hash"},
+    {"timestamp": "2026-04-24T10:02:39Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"}
+  ]
+}

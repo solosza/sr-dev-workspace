@@ -1,21 +1,46 @@
 {
   "session_started": true,
-  "timestamp": "2026-04-01T12:00:00Z",
-  "resumed_from": "context_continuation",
+  "timestamp": "2026-05-01T12:08:00Z",
+  "resumed_from": "pipeline_step5_validation",
   "domain": "sr_dev",
   "needs_restart": false,
   "needs_learn": false,
   "needs_learn_reason": null,
+  "last_learn_timestamp": "2026-05-01T10:00:00Z",
   "pending_anchor_token": null,
   "anchor_token_confirmed": true,
+  "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
+  "protocol_hash_timestamp": "2026-05-01T12:06:00Z",
   "context": {
     "current_task": null,
     "task_folder": null,
-    "progress": "Created qa-process.md (18-step reusable QA system), testing-layers.md (living doc per phase), updated phase1-execution-plan.md with TFS structure, standup script, SIT/UAT questions. Deleted redundant shift-left-layers.md. Adding test categories/pyramid section to qa-process.md next.",
-    "last_completed": "Created testing-layers.md with Phase 1-5 anticipated layers + cross-phase layers",
-    "next_step": "Add test categories/pyramid section to qa-process.md, then draft standup email",
-    "notes": "3 docs now: phase1-execution-plan.md (Phase 1 specific), qa-process.md (reusable framework), testing-layers.md (living doc grows per phase). User wants test pyramid from py_sel_framework_mcp integrated. User joining mid-project, standup tomorrow 1:30pm, sending email in morning. SIT/UAT ownership TBD. SP validation overlap TBD. Column specs available but not yet added."
+    "progress": "Pipeline 074 complete",
+    "last_completed": "074-market-build-portfolio-vibe-coder-showcase",
+    "next_step": "User review of vibe-coder page, then merge feature branch",
+    "notes": "Pipeline 074 done. 12/12 tasks passed. Attestation deferred (user timeout). Feature branch feature/showcase-vibe-coder ready for review."
   },
-  "actions_log": [],
-  "one_shot": false
+  "actions_log": [
+    "Bash: attestation attest.py \u2014 timed out (60s), deferred",
+    "Bash: python -m http.server 8888 --directory \"D:/my_ai_projects/isagawa-co.github.io\" ",
+    "Edit: vibe-coder.css",
+    "Edit: vibe-coder.css",
+    "Edit: vibe-coder.css",
+    "Bash: python -m http.server 8888 --directory \"D:/my_ai_projects/isagawa-co.github.io\" ",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status -s | head ",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" log --oneline -5",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status -s | wc -l",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" diff --stat HEAD "
+  ],
+  "last_attestation": {
+    "timestamp": "2026-05-01T11:00:05Z",
+    "backlog": "docs/backlog/done/073-market-build-portfolio-ui-testing-showcase.md",
+    "task_folder": "tasks/completed/portfolio-qa-showcase/",
+    "status": "success",
+    "rekor_url": "https://search.sigstore.dev/?logIndex=1417788423"
+  },
+  "pipeline_state": null,
+  "pipeline_mode": null,
+  "one_shot": false,
+  "complete": true,
+  "complete_timestamp": "2026-05-01T12:08:00Z"
 }

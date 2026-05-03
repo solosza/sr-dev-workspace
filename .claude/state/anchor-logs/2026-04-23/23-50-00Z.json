@@ -1,0 +1,8 @@
+{
+  "anchor_timestamp": "2026-04-23T23:50:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-23T23:01:04Z", "tool": "Bash", "entry": "Bash: > actions.jsonl (truncate)"}
+  ]
+}

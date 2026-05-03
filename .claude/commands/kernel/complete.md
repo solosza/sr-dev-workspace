@@ -27,7 +27,33 @@ Final gate before marking work done.
 
    **Report verification in the completion output.** List what you checked and the result.
 
-3. **Determine completion mode:**
+3. **Verify gate contract (if applicable):**
+
+   If a task folder is set in workflow state AND `gate-contract.md` exists in it:
+
+   a. Read `gate-contract.md` from the task folder
+   b. Find gates matching the current task (by task number prefix, e.g., task `005-build-*` matches gates `BUILD-05` or any gate whose check references files from task 005)
+   c. For each matching gate, run the verification method:
+
+   | Method | How to verify |
+   |--------|--------------|
+   | `file_exists` | Check the file exists (`test -f [path]`) |
+   | `grep` | Run the grep command, check exit 0 |
+   | `run_code` | Execute the command, check exit 0 |
+   | `run_test` | Execute the test, check exit 0 |
+
+   d. **If any gate fails:**
+      - Report which gate failed, the method, and the actual result
+      - Do NOT mark the task complete
+      - Set `needs_learn: true, needs_learn_reason: "gate_failure"` in session_state.json
+      - The agent must fix the issue and re-attempt completion
+
+   e. **If all gates pass (or no gates match this task):**
+      - Proceed normally to completion mode
+
+   Gate verification is mechanical enforcement — the agent cannot self-report completion without passing its gates. Tasks with no matching gates in the contract complete normally.
+
+4. **Determine completion mode:**
 
    Read `session_state.json` and `[domain]_workflow.json`.
    Check `one_shot` in `session_state.json` FIRST:
@@ -91,7 +117,7 @@ Final gate before marking work done.
 
    Default behavior — just save context and report done.
 
-4. **Save final conversation context (STRUCTURED):**
+5. **Save final conversation context (STRUCTURED):**
    - Update `context` key in `.claude/state/session_state.json` as a JSON object:
 
    ```json
@@ -109,7 +135,7 @@ Final gate before marking work done.
 
    - MERGE into existing state, don't overwrite other keys
 
-5. **Update state:**
+6. **Update state:**
    ```json
    {
      "complete": true,
@@ -117,7 +143,7 @@ Final gate before marking work done.
    }
    ```
 
-6. **Report:**
+7. **Report:**
    ```
    COMPLETE
 

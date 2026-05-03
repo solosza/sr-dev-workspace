@@ -1,0 +1,1914 @@
+[
+  {
+    "url": "https://www.vanta.com/company/careers",
+    "company": "Vanta",
+    "title": "Senior Software Engineer - AI Platform",
+    "location": "United States (Remote) / New York, NY",
+    "remote": true,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "compliance/security",
+    "notes": "Trust management platform \u00e2\u20ac\u201d SOC 2, ISO 27001, HIPAA, PCI, GDPR compliance automation. AI Agent guides compliance workflows, drafts policies, completes questionnaires, flags issues. Also hiring Senior Applied ML Engineer. Opening NYC office. Governance is the core product \u00e2\u20ac\u201d strong fit for agent governance scaffolding expertise.",
+    "match_score": 50.5,
+    "score_breakdown": {
+      "skill_alignment": 39.8,
+      "domain_overlap": 42.2,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/senior-enterprise-ai-solutions-architect-remote-at-florida-blue-3674806458",
+    "company": "Florida Blue",
+    "title": "Senior Enterprise AI Solutions Architect",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "$160K-$220K",
+    "posted_date": "2026-04",
+    "notes": "Healthcare + AI architecture \u00e2\u20ac\u201d strong domain overlap with HIPAA/HMSA experience",
+    "match_score": 45.9,
+    "score_breakdown": {
+      "skill_alignment": 11.8,
+      "domain_overlap": 40.5,
+      "compensation_fit": 100,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://scale.com/careers/4554341005",
+    "company": "Scale AI",
+    "title": "Forward Deployed Engineer, Agent Oversight",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "$150K-$300K+ TC (estimated)",
+    "notes": "Agent oversight specialization \u00e2\u20ac\u201d directly relevant to AI agent infrastructure experience. Bridges customer needs and cutting-edge agent tech.",
+    "match_score": 45.4,
+    "score_breakdown": {
+      "skill_alignment": 23.7,
+      "domain_overlap": 33.8,
+      "compensation_fit": 100,
+      "growth_potential": 65,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://job-boards.greenhouse.io/rapidfortinc/jobs/4193607009",
+    "company": "RapidFort",
+    "title": "Senior SDET / Sr QA Automation Engineer",
+    "location": "Remote (US)",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-qa-sdet",
+    "salary_range": "$120,000-$180,000",
+    "notes": "Python-based test automation for CLI-driven container security platform. 10+ years SDET/QA, pytest required. Docker/Podman, CI/CD pipeline integration. Supply chain security domain.",
+    "match_score": 43.0,
+    "score_breakdown": {
+      "skill_alignment": 36.6,
+      "domain_overlap": 23.6,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/ai-agent-software-engineer-agent-performance-engineering-at-assembled-4240532163",
+    "company": "Assembled",
+    "title": "AI Agent Software Engineer \u00e2\u20ac\u201d Agent Performance Engineering",
+    "location": "United States",
+    "remote": true,
+    "tier": 1,
+    "source": "linkedin",
+    "salary_range": "$180K-$260K",
+    "posted_date": "2026-04",
+    "notes": "AI agent-focused role \u00e2\u20ac\u201d strong fit for agent runtime governance experience",
+    "match_score": 41.7,
+    "score_breakdown": {
+      "skill_alignment": 15.1,
+      "domain_overlap": 16.9,
+      "compensation_fit": 100,
+      "growth_potential": 65,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/ai-agent-applications-developer-at-bark-4169616977",
+    "company": "BARK",
+    "title": "AI Agent & Applications Developer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "source": "linkedin",
+    "salary_range": "$170K-$240K",
+    "posted_date": "2026-04",
+    "notes": "AI agent development role \u00e2\u20ac\u201d direct match for agent infrastructure skills",
+    "match_score": 41.5,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 33.8,
+      "compensation_fit": 100,
+      "growth_potential": 65,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/senior-qa-automation-engineer-virtual-remote-at-inductivehealth-4076668971",
+    "company": "InductiveHealth",
+    "title": "Senior QA Automation Engineer (Virtual/Remote)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "$140K-$175K",
+    "posted_date": "2026-04",
+    "notes": "Healthcare QA \u00e2\u20ac\u201d strong fit for HIPAA domain + QA automation expertise",
+    "match_score": 41.0,
+    "score_breakdown": {
+      "skill_alignment": 17.2,
+      "domain_overlap": 40.5,
+      "compensation_fit": 60,
+      "growth_potential": 50,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/rubric-ai",
+    "company": "Rubric AI",
+    "title": "Founding Engineer (inferred)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "yc-startups",
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "Runtime reasoning infrastructure for vertical AI agents \u00e2\u20ac\u201d turns expert judgment into training signals and runtime guidance. Target: healthcare, legal, finance. Directly relevant to agent reliability/governance experience. No public job listing found; likely hiring via network.",
+    "match_score": 40.2,
+    "score_breakdown": {
+      "skill_alignment": 29.0,
+      "domain_overlap": 30.4,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://weworkremotely.com/remote-jobs/secure-privacy-qa-engineer-ai-automation-intelligent-testing",
+    "company": "Secure Privacy",
+    "title": "QA Engineer - AI, Automation & Intelligent Testing",
+    "location": "Remote (Anywhere)",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-qa-sdet",
+    "salary_range": "$100,000-$150,000 (est.)",
+    "notes": "Playwright-based test automation for privacy/consent compliance platform. AI-powered testing with Claude Code, Cursor, GitHub Copilot. Azure DevOps CI/CD. DSAR workflows, OAuth2/JWT.",
+    "match_score": 39.2,
+    "score_breakdown": {
+      "skill_alignment": 28.0,
+      "domain_overlap": 22.0,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/site-reliability-engineer-ml-ai-platform-remote-at-cisco-meraki-3103971632",
+    "company": "Cisco Meraki",
+    "title": "Site Reliability Engineer \u00e2\u20ac\u201d ML/AI Platform (Remote)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "$180K-$260K",
+    "posted_date": "2026-04",
+    "notes": "AI platform SRE \u00e2\u20ac\u201d infrastructure + reliability focus, Docker/cloud skills match",
+    "match_score": 38.1,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 10.1,
+      "compensation_fit": 100,
+      "growth_potential": 50,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://securityboulevard.com/2026/03/rsac-2026-innovation-sandbox-geordie-ai-architect-of-enterprise-ai-agent-security-governance-systems/",
+    "company": "Geordie AI",
+    "title": "AI Agent Security Governance Architect",
+    "location": "Remote",
+    "remote": true,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$180,000-$280,000 (est.)",
+    "notes": "RSAC 2026 Innovation Sandbox winner. Emerging niche: AI agent security governance. Designs governance systems for enterprise AI agent deployments. Intersection of AI governance + agent deployment architecture.",
+    "match_score": 38.1,
+    "score_breakdown": {
+      "skill_alignment": 18.3,
+      "domain_overlap": 27.0,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/3829989-founding-senior-applied-ai-engineer-agentic-systems",
+    "company": "PunttAI",
+    "title": "Founding Senior Applied AI Engineer (Agentic Systems)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "wellfound",
+    "salary_range": "$180K-$250K (est.)",
+    "equity_range": "1.0%-2.0%",
+    "posted_date": "2026-04",
+    "notes": "Multi-agent LLM systems, RAG pipelines, fault-tolerant orchestration. 5-7+ yrs production systems + 1-2 yrs LLM. Direct match for agent runtime governance experience.",
+    "match_score": 37.5,
+    "score_breakdown": {
+      "skill_alignment": 22.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 100,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://hippocraticai.com/careers/",
+    "company": "Hippocratic AI",
+    "title": "Multiple engineering roles (76 open positions)",
+    "location": "Multiple locations",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "healthcare",
+    "notes": "Healthcare-specific AI agents \u00e2\u20ac\u201d patient communications, appointment scheduling, chronic disease management, post-discharge follow-ups. Outcomes-based pricing. 76 open positions on Glassdoor. Also runs Deployment Engineering Residency program ($55/hr, 3+ months). Heavily regulated domain (HIPAA). Large-scale agentic systems.",
+    "match_score": 37.0,
+    "score_breakdown": {
+      "skill_alignment": 22.6,
+      "domain_overlap": 43.9,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/carrot-labs",
+    "company": "Carrot Labs",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Continuous learning platform for AI agents. Enhances agent performance through continuous learning and evaluation services. Part of agent infrastructure sub-cluster. No public job listings found.",
+    "match_score": 35.7,
+    "score_breakdown": {
+      "skill_alignment": 19.4,
+      "domain_overlap": 33.8,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://scale.com/careers/4599700005",
+    "company": "Scale AI",
+    "title": "Staff Infrastructure Software Engineer, Enterprise AI",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$220,000-$350,000 (est.)",
+    "notes": "Enterprise AI infrastructure. Builds the platform that powers AI agent deployment at scale. Infrastructure architecture for enterprise AI systems.",
+    "match_score": 35.0,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 33.8,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://vastdata.com/career/database-qa-automation-engineer/",
+    "company": "VAST Data",
+    "title": "Database QA Automation Engineer",
+    "location": "Remote",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-qa-sdet",
+    "salary_range": "$140,000-$180,000 (est.)",
+    "notes": "Database testing infrastructure and automation tools. Linux, Python, 3-4 years experience. VAST Data median comp ~$150K. Enterprise data platform company.",
+    "match_score": 34.1,
+    "score_breakdown": {
+      "skill_alignment": 20.4,
+      "domain_overlap": 13.5,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/moby-analytics",
+    "company": "Moby Analytics",
+    "title": "Engineering (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "Paris, France",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "finance/audit",
+    "notes": "AI analytics platform automating audit procedures \u00e2\u20ac\u201d deploys AI agents for revenue, payroll, inventory, fixed assets workflows. Real-time dashboard. YC-backed, 4 employees, founded 2022. Governance-critical: audit compliance, financial accuracy. No specific job listings found \u00e2\u20ac\u201d likely hiring via network.",
+    "match_score": 33.6,
+    "score_breakdown": {
+      "skill_alignment": 23.7,
+      "domain_overlap": 28.7,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://scale.com/careers/4593571005",
+    "company": "Scale AI",
+    "title": "Forward Deployed Engineer, GenAI",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "$150K-$300K+ TC (estimated)",
+    "notes": "Customer-focused solution engineering with hands-on infrastructure and development. GenAI platform focus.",
+    "match_score": 33.5,
+    "score_breakdown": {
+      "skill_alignment": 15.1,
+      "domain_overlap": 0.0,
+      "compensation_fit": 100,
+      "growth_potential": 65,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/infrastructure-engineer-at-stability-ai-3453740175",
+    "company": "Stability AI",
+    "title": "Infrastructure Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "source": "linkedin",
+    "salary_range": "$180K-$280K",
+    "posted_date": "2026-04",
+    "notes": "AI infrastructure at a frontier AI company \u00e2\u20ac\u201d strong brand, infra focus",
+    "match_score": 33.4,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 16.9,
+      "compensation_fit": 100,
+      "growth_potential": 65,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/cascade",
+    "company": "Cascade",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Distills proprietary intelligence for safe autonomous systems. Builds guardrails and testing frameworks for trusting AI systems in production. Agent governance/security sector. No public job listings found.",
+    "match_score": 32.8,
+    "score_breakdown": {
+      "skill_alignment": 26.9,
+      "domain_overlap": 10.1,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://decagon.ai/careers",
+    "company": "Decagon",
+    "title": "Solutions Architect / AI Agent Architect",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$180,000-$300,000 (est.)",
+    "notes": "Leading conversational AI platform. Clients: Avis Budget Group, Cash App, Square, Chime, Oura Health. Leads technical pre-sales design engagements and architectural consensus for enterprise AI agent deployments. a16z backed.",
+    "match_score": 32.5,
+    "score_breakdown": {
+      "skill_alignment": 18.3,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/staff-engineer-ai-team-c++-python-remote-at-veed-io-3537643822",
+    "company": "VEED.IO",
+    "title": "Staff Engineer \u00e2\u20ac\u201d AI Team (C++/Python, Remote)",
+    "location": "EMEA",
+    "remote": true,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "$220K-$300K TC",
+    "posted_date": "2026-04",
+    "notes": "Staff-level AI team \u00e2\u20ac\u201d Python match, cross-team technical leadership",
+    "match_score": 32.4,
+    "score_breakdown": {
+      "skill_alignment": 8.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 80,
+      "growth_potential": 70,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://scale.com/careers/4597399005",
+    "company": "Scale AI",
+    "title": "Forward Deployed AI Engineer, Enterprise",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "$150K-$300K+ TC (from levels.fyi/FDE guide 2026)",
+    "notes": "Technical bridge between Scale AI capabilities and strategic customers. Architect custom AI solutions, ensure production deployment and adoption.",
+    "match_score": 32.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 100,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/ai-ml-solutions-architect-at-jobs-via-dice-4232575799",
+    "company": "Dice (Agency)",
+    "title": "AI/ML Solutions Architect",
+    "location": "Reston, VA",
+    "remote": false,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "$160K-$240K",
+    "posted_date": "2026-04",
+    "notes": "Solutions architect role \u00e2\u20ac\u201d government-adjacent location (Reston), compliance skills valuable",
+    "match_score": 32.1,
+    "score_breakdown": {
+      "skill_alignment": 7.5,
+      "domain_overlap": 20.3,
+      "compensation_fit": 100,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/tampa/rfm-ai-governance-manager/932/83578271104",
+    "company": "PwC",
+    "title": "RFM AI Governance Manager",
+    "location": "Tampa, FL (also Raleigh, Charlotte, Chicago)",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$120,000-$200,000 (est.)",
+    "notes": "AI governance management. Risk, fraud, and monitoring practice. HIPAA/SOX-adjacent compliance work.",
+    "match_score": 32.1,
+    "score_breakdown": {
+      "skill_alignment": 20.4,
+      "domain_overlap": 33.8,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-new-grad-2026-at-domino-data-lab-4308289983",
+    "company": "Domino Data Lab",
+    "title": "Forward Deployed Engineer \u00e2\u20ac\u201d New Grad 2026",
+    "location": "United States",
+    "remote": true,
+    "tier": 1,
+    "source": "linkedin",
+    "salary_range": "$130K-$170K",
+    "posted_date": "2026-04",
+    "notes": "New grad level \u00e2\u20ac\u201d below target seniority but Domino is strong AI infra company",
+    "match_score": 31.9,
+    "score_breakdown": {
+      "skill_alignment": 5.4,
+      "domain_overlap": 16.9,
+      "compensation_fit": 60,
+      "growth_potential": 65,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://sierra.ai/careers",
+    "company": "Sierra",
+    "title": "Agent Engineer",
+    "location": "San Francisco, CA / New York, NY",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "Not disclosed (Series C unicorn, competitive)",
+    "notes": "Build AI agents for leading global brands. Requires expertise in LLMs, vector DBs, prompt engineering, agent architecture, AI orchestration. APX rotational program also available for new grads. Founded by ex-Google/Salesforce leadership (Bret Taylor, Clay Bavor).",
+    "match_score": 31.8,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 85,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.governance.ai/opportunities",
+    "company": "Centre for the Governance of AI (GovAI)",
+    "title": "Research Fellow, AI Governance",
+    "location": "Oxford, UK / Remote",
+    "remote": true,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$120,000-$180,000 (est.)",
+    "notes": "AI Governance Architect archetype. Research-focused. Frameworks like NIST AI RMF, ISO/IEC 42001, EU AI Act. 98.5% of orgs report inadequate AI governance staffing \u00e2\u20ac\u201d massive demand signal.",
+    "match_score": 31.8,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 11.8,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/openspec",
+    "company": "OpenSpec (Fission AI)",
+    "title": "Founding Engineer (inferred)",
+    "location": "Remote",
+    "remote": true,
+    "tier": 1,
+    "source": "yc-startups",
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "Spec-driven development framework for coding agents. 20k+ GitHub stars. Building Workspaces for team collaboration. Contact: tabish@openspec.dev. Directly relevant \u00e2\u20ac\u201d SDD is core to our kernel architecture. No public listing found.",
+    "match_score": 31.6,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 85,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/tensol",
+    "company": "Tensol",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "AI Employees for your company, built on OpenClaw. Multi-agent orchestration. Deploys autonomous agents for defined business functions with minimal human oversight. Part of agent infrastructure sub-cluster. No public job listings found.",
+    "match_score": 31.5,
+    "score_breakdown": {
+      "skill_alignment": 19.4,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/agentic-fabriq",
+    "company": "Agentic Fabriq",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Identity and access management layer for AI agents. Built by MIT researchers (Paulina and Matthew) who dropped out to build this. Agent identity/permissions infrastructure. No public job listings found.",
+    "match_score": 31.5,
+    "score_breakdown": {
+      "skill_alignment": 19.4,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/paratus-health/jobs/lvkvIu2-forward-deployed-engineer",
+    "company": "Paratus Health",
+    "title": "Forward Deployed Engineer",
+    "location": "Menlo Park, CA",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "healthcare",
+    "notes": "Medical voice agents for patient management \u00e2\u20ac\u201d handles calls, intake, insurance, documentation. Integrated with EHRs (Epic, Athena). YC-backed, 6 employees. Founded 2024. Also hiring Founding Engineer #2. Governance-heavy domain: HIPAA, patient data, insurance workflows.",
+    "match_score": 31.3,
+    "score_breakdown": {
+      "skill_alignment": 24.7,
+      "domain_overlap": 13.5,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/sentrial",
+    "company": "Sentrial",
+    "title": "Founding Engineer (inferred)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "yc-startups",
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "AI agent failure detection \u00e2\u20ac\u201d monitors, evaluates, and improves agent performance in production. Real-time root-cause analysis + automated remediation. Founded by UC Berkeley CS grads (Anay, Neel). No public listing found.",
+    "match_score": 31.2,
+    "score_breakdown": {
+      "skill_alignment": 15.1,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/staff-machine-learning-engineer-remote-us-only-at-apollo-io-3597644722",
+    "company": "Apollo.io",
+    "title": "Staff Machine Learning Engineer (Remote, US Only)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "$200K-$280K",
+    "posted_date": "2026-04",
+    "notes": "Staff ML engineer \u00e2\u20ac\u201d 6+ years ML/AI required, cloud deployment experience",
+    "match_score": 30.6,
+    "score_breakdown": {
+      "skill_alignment": 6.5,
+      "domain_overlap": 0.0,
+      "compensation_fit": 80,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/3681101-founding-engineer",
+    "company": "The Sentience Company",
+    "title": "Founding Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "source": "wellfound",
+    "salary_range": "95th percentile cash (est. $200K-$280K)",
+    "equity_range": "significant (undisclosed)",
+    "posted_date": "2026-04",
+    "notes": "Memory + agent architecture, user simulation tech. $6M raised, top-tier VCs. 3-10 yrs shipping production software. In-person NYC 5 days/week.",
+    "match_score": 30.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 80,
+      "growth_potential": 85,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/staff-full-stack-engineer-remote-at-smartbiz-3494261149",
+    "company": "SmartBiz",
+    "title": "Staff Full Stack Engineer (Remote)",
+    "location": "United States",
+    "remote": true,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "$200K-$280K",
+    "posted_date": "2026-04",
+    "notes": "AI-powered fintech \u00e2\u20ac\u201d staff level, full stack, less direct agent infra match",
+    "match_score": 29.7,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 80,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/2996315-founding-engineer",
+    "company": "Besty AI",
+    "title": "Founding Engineer at AI Startup",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "source": "wellfound",
+    "salary_range": "$150K-$200K (est.)",
+    "equity_range": "1.0%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "12-person startup, 5 engineers. AI brain for the $360B hotel/short-term-rental industry. Seed stage.",
+    "match_score": 29.7,
+    "score_breakdown": {
+      "skill_alignment": 5.4,
+      "domain_overlap": 0.0,
+      "compensation_fit": 80,
+      "growth_potential": 95,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/3794975-founding-engineer-product-minded",
+    "company": "Our Story Magic.ai",
+    "title": "Founding Engineer (Product-Minded)",
+    "location": "London (Remote)",
+    "remote": true,
+    "tier": 2,
+    "source": "wellfound",
+    "salary_range": "$100K-$160K (est.)",
+    "equity_range": "1.0%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "Story generation AI platform. Mobile + backend. London-based but remote-friendly.",
+    "match_score": 29.3,
+    "score_breakdown": {
+      "skill_alignment": 10.8,
+      "domain_overlap": 0.0,
+      "compensation_fit": 60,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/terminal-use",
+    "company": "Terminal Use",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Infrastructure for background agents. Part of the agent infrastructure sub-cluster in W26. No public job listings found.",
+    "match_score": 29.3,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/3279816-founding-ai-engineer",
+    "company": "Casium",
+    "title": "Founding AI Engineer",
+    "location": "Seattle, WA",
+    "remote": false,
+    "tier": 1,
+    "source": "wellfound",
+    "salary_range": "$140K-$200K (est.)",
+    "equity_range": "1.5%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "Pre-seed legal tech AI startup, 1-10 employees. ML + AI focus. Unlimited PTO.",
+    "match_score": 29.2,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 80,
+      "growth_potential": 95,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://remotive.com/remote/jobs/qa/senior-sdet-4416978",
+    "company": "CI&T",
+    "title": "Senior SDET",
+    "location": "Remote",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-qa-sdet",
+    "salary_range": "$120,000-$160,000 (est.)",
+    "notes": "Multicultural digital transformation consultancy. Java/C#/Python/JS, Selenium/Cypress/TestNG. API testing with Java + HTTP client frameworks. Advanced English required.",
+    "match_score": 29.0,
+    "score_breakdown": {
+      "skill_alignment": 16.1,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://remotive.com/remote/jobs/qa/senior-qa-engineer-4471064",
+    "company": "Autodesk",
+    "title": "Senior QA Engineer",
+    "location": "Remote (US/Canada)",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-qa-sdet",
+    "salary_range": "$140,000-$190,000 (est. US)",
+    "notes": "Test infrastructure for field operations platform \u00e2\u20ac\u201d React web, React Native iOS/Android, Python/Django backend. Goal: eliminate manual testing. Avg Senior QA at Autodesk ~$152K.",
+    "match_score": 29.0,
+    "score_breakdown": {
+      "skill_alignment": 16.1,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://motionrecruitment.com/tech-jobs/qa-sdet",
+    "company": "Multiple (via Motion Recruitment)",
+    "title": "Senior QA / SDET Roles",
+    "location": "Remote (US)",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-qa-sdet",
+    "salary_range": "$140,000-$170,000 (est.)",
+    "notes": "Staffing agency specializing in QA/SDET placements. Senior SDET avg $145K-$170K per 2026 salary guides. Contract-to-hire and permanent roles.",
+    "match_score": 28.7,
+    "score_breakdown": {
+      "skill_alignment": 12.9,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/fission-ai",
+    "company": "OpenSpec (Fission AI)",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Open-source spec-driven framework for coding agents. 20K+ GitHub stars. Plans complex features by creating lightweight spec docs as durable context for coding agents. Solo founder (ex-Q-CTRL team lead, seed to $113M Series B). No revenue yet \u00e2\u20ac\u201d team/enterprise product unbuilt. No public job listings found.",
+    "match_score": 28.6,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 95,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/3059023-founding-full-stack-ai-engineer",
+    "company": "The Outdoor Builders",
+    "title": "Founding Full Stack & AI Engineer",
+    "location": "San Francisco, CA",
+    "remote": true,
+    "tier": 2,
+    "source": "wellfound",
+    "salary_range": "$130K-$180K (est.)",
+    "equity_range": "1.0%-2.5% (est.)",
+    "posted_date": "2026-04",
+    "notes": "100+ models, 4 AI pipelines for contractor quoting platform. Product already progressed. Remote OK.",
+    "match_score": 28.4,
+    "score_breakdown": {
+      "skill_alignment": 8.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 60,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://jobs.hireheroesusa.org/jobs/525062094-senior-ai-systems-architect-at-leidos",
+    "company": "Leidos",
+    "title": "Senior AI Systems Architect",
+    "location": "Remote (US-based)",
+    "remote": true,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$180,000-$280,000 (est.)",
+    "notes": "Defense/government contractor. Full-time telework. AI systems architecture for federal clients. Emerging role bridging AI governance and deployment architecture.",
+    "match_score": 28.3,
+    "score_breakdown": {
+      "skill_alignment": 5.4,
+      "domain_overlap": 8.4,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.accenture.com/us-en/careers/jobdetails?id=R00302650_en",
+    "company": "Accenture",
+    "title": "Advanced AI Architect",
+    "location": "Multiple US locations",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$150,000-$280,000 (est.)",
+    "notes": "Full-stack AI architecture for AI platforms. Governance, security, observability, AgentOps, LLMOps. 5+ years AI/ML required. $3B AI investment, 45K AI professionals.",
+    "match_score": 28.1,
+    "score_breakdown": {
+      "skill_alignment": 22.6,
+      "domain_overlap": 10.1,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/moda",
+    "company": "Moda",
+    "title": "Chief of Staff",
+    "location": "New York, NY (hybrid)",
+    "remote": false,
+    "tier": 2,
+    "source": "yc-startups",
+    "yc_batch": "W26",
+    "funding_stage": "Seed ($7.5M raised)",
+    "notes": "Monitoring & reliability layer for AI agents \u00e2\u20ac\u201d surfaces hallucinations, laziness, tool call failures. Analytics on user frustration, NPS, retention. Currently hiring Chief of Staff (not engineering). Engineering roles likely coming.",
+    "match_score": 27.6,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ziprecruiter.com/Jobs/Remote-Sdet",
+    "company": "Multiple (aggregated)",
+    "title": "Staff SDET (Platform-Wide Influence)",
+    "location": "Remote (US)",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-qa-sdet",
+    "salary_range": "$150,000-$170,000",
+    "notes": "Staff-level IC role owning test architecture and quality frameworks. Platform-wide influence. Multiple listings at this tier across ZipRecruiter and Wellfound.",
+    "match_score": 27.5,
+    "score_breakdown": {
+      "skill_alignment": 7.5,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 70,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://github.com/generalaction/emdash",
+    "company": "Emdash (General Action)",
+    "title": "Founding Engineer (inferred)",
+    "location": "Unknown",
+    "remote": true,
+    "tier": 2,
+    "source": "yc-startups",
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "Open-source agentic dev environment \u00e2\u20ac\u201d run multiple coding agents in parallel, any provider. Wellfound page exists but no active listings. Careers page at emdash.io/careers/. Relevant to multi-agent orchestration experience.",
+    "match_score": 27.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://himalayas.app/companies/affirm/jobs/staff-software-engineer-backend-growth-platform",
+    "company": "Affirm",
+    "title": "Staff Software Engineer, Backend (Growth Platform)",
+    "location": "Remote (US)",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$225,000-$305,000 (est.)",
+    "notes": "Growth Platform team building shared backend platforms powering incentives, experimentation, personalization, data-driven decisioning. BNPL fintech, high growth.",
+    "match_score": 27.3,
+    "score_breakdown": {
+      "skill_alignment": 3.2,
+      "domain_overlap": 10.1,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/3876398-founding-engineer",
+    "company": "Stealth Startup",
+    "title": "Founding Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 2,
+    "source": "wellfound",
+    "salary_range": "$150K-$220K (est.)",
+    "equity_range": "1.0%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "Stealth-mode AI startup in NYC. Limited public details available.",
+    "match_score": 27.2,
+    "score_breakdown": {
+      "skill_alignment": 5.4,
+      "domain_overlap": 0.0,
+      "compensation_fit": 80,
+      "growth_potential": 70,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/throxy/jobs/14BDrba-ai-engineer",
+    "company": "Throxy",
+    "title": "AI Engineer",
+    "location": "London, UK",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "sales automation",
+    "notes": "Vertical AI sales agents for outbound sales into legacy industries. Productionize AI agents at massive scale, design data-ingestion and orchestration layers, ship agentic workflows. Also hiring Fullstack SWE and AI Customer Success Manager. AI-native team. careers.throxy.com",
+    "match_score": 26.8,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 16.9,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.harvey.ai/company/careers/3fc0953f-8a03-46f2-8f4b-d12cf95f2800",
+    "company": "Harvey",
+    "title": "Legal Engineer",
+    "location": "San Francisco, CA / New York, NY / Dallas, TX",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "legal",
+    "notes": "AI platform for legal and professional services \u00e2\u20ac\u201d contract analysis, due diligence, compliance, litigation. 1000+ customers in 60+ countries. $600M+ total funding (Series E $300M in 2025). Salary $210K-$320K depending on role/location. Note: Legal Engineer roles require JD \u00e2\u20ac\u201d may not match engineering profile. Check for pure SWE roles on jobs.ashbyhq.com/harvey.",
+    "match_score": 26.8,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 11.8,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://wellfound.com/l/2AkcuQ",
+    "company": "Berry",
+    "title": "Founding Full Stack Engineer \u00e2\u20ac\u201d AI, LLM",
+    "location": "Europe (Remote)",
+    "remote": true,
+    "tier": 2,
+    "source": "wellfound",
+    "salary_range": "$120K-$180K (est.)",
+    "equity_range": "1.0%-2.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "YC-backed. AI onboarding assistant for SaaS companies. No prior LLM experience required. Europe-based.",
+    "match_score": 26.7,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 60,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/emdash",
+    "company": "Emdash",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Open-source Agentic Development Environment (ADE). Run multiple coding agents in parallel. Provider-agnostic desktop app. Founded by Arne and Raban (Stanford MS, MIT CSAIL, prior YC S24 company Soff, a16z Scout). Strong technical depth. Wellfound page exists but no specific listings found.",
+    "match_score": 26.6,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/ashr",
+    "company": "Ashr",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Automated multi-modal testing for agents. Simulates real user behavior inside production-like environments before shipping. Agent testing and evaluation infrastructure. No public job listings found.",
+    "match_score": 26.4,
+    "score_breakdown": {
+      "skill_alignment": 17.2,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.glean.com/careers",
+    "company": "Glean",
+    "title": "Software Engineer (Platform/Infrastructure)",
+    "location": "Palo Alto, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "Not disclosed (valued at $4.6B, competitive)",
+    "notes": "Work AI platform with 100+ connectors, enterprise graph, LLM integration. Building engineering agents (PR review, Jira resolution, launch docs). AI-native enterprise search. No specific FDE title but platform/infra roles align.",
+    "match_score": 26.0,
+    "score_breakdown": {
+      "skill_alignment": 22.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.cloudflare.com/careers/jobs/",
+    "company": "Cloudflare",
+    "title": "Staff/Principal Engineer (multiple openings)",
+    "location": "San Francisco, CA / Austin, TX / Remote",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$200,000-$326,000",
+    "notes": "Edge computing, CDN, security infrastructure. 185+ remote engineering positions available. Principal Engineer range $104K-$227K base + equity. L5 total comp up to $326K per Levels.fyi.",
+    "match_score": 26.0,
+    "score_breakdown": {
+      "skill_alignment": 7.5,
+      "domain_overlap": 10.1,
+      "compensation_fit": 50,
+      "growth_potential": 70,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/bravi/jobs",
+    "company": "Bravi",
+    "title": "Operations role (1 open position)",
+    "location": "San Francisco, CA",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "home services",
+    "notes": "AI operating system for home services businesses \u00e2\u20ac\u201d voice and chat assistants for installers (shutters, solar, HVAC). YC F25, 2 employees. Founded 2025. Only hiring operations, not engineering. Lower governance needs than healthcare/finance verticals.",
+    "match_score": 25.7,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 13.5,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/ovlo",
+    "company": "Ovlo",
+    "title": "Engineering (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "Unknown",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "supply chain",
+    "notes": "No-code AI platform for supply chain teams \u00e2\u20ac\u201d custom agents for demand forecasting, compliance validation, invoice reconciliation, inventory optimization. YC-backed, Pre-Seed. Founders from Meta/Google and HelloFresh/Amazon. No public job listings found.",
+    "match_score": 25.0,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 11.8,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/phoenix/digital-assurance-and-transparency-responsible-ai-director/932/87826803184",
+    "company": "PwC",
+    "title": "Digital Assurance & Transparency - Responsible AI - Director",
+    "location": "Phoenix, AZ",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$180,000-$350,000 (est.)",
+    "notes": "Full-stack AI solutions with LLM integration. AI model lifecycle management. Director level \u00e2\u20ac\u201d strong governance/compliance alignment.",
+    "match_score": 25.0,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 11.8,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/salus",
+    "company": "Salus",
+    "title": "Founding Engineer (inferred)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "yc-startups",
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "API guardrails that validate agent actions before execution. Evidence cache, PII detection, budget/loop protection, HITL escalation. Reduced misalignment 52% across 12 frontier models. Founded by Stanford CS grads. No public listing found.",
+    "match_score": 24.9,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/syntropy",
+    "company": "Syntropy",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Agentic coding for complex tasks. Next-generation coding agent application. Dev tools category in W26. No public job listings found.",
+    "match_score": 24.9,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://deepmind.google/careers/",
+    "company": "Google DeepMind",
+    "title": "Research Engineer / Software Engineer",
+    "location": "Multiple (London, Mountain View, etc.)",
+    "remote": false,
+    "tier": 2,
+    "source": "tier1-career-pages",
+    "salary_range": "$200K-$500K+ TC (Google L4-L6 bands, estimated)",
+    "notes": "Research engineers combine engineering + ML/DL expertise. Software engineers build scalable AI infrastructure. No specific FDE title \u00e2\u20ac\u201d roles are research-engineering or platform-focused. Paid internships available (12-24 weeks).",
+    "match_score": 24.7,
+    "score_breakdown": {
+      "skill_alignment": 8.6,
+      "domain_overlap": 16.9,
+      "compensation_fit": 20,
+      "growth_potential": 50,
+      "remote_location": 90
+    }
+  },
+  {
+    "url": "https://www.anthropic.com/careers/jobs/4985877008",
+    "company": "Anthropic",
+    "title": "Forward Deployed Engineer, Applied AI",
+    "location": "San Francisco, CA / Multiple US cities / London",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "$350K-$550K TC (mid-senior, estimated from levels.fyi)",
+    "notes": "Embed with strategic customers to drive AI adoption. Requires 3+ yrs customer-facing technical role. Python + LLM production experience. Manager-level FDE roles also open in Boston, NYC, Seattle, DC.",
+    "match_score": 24.1,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 20,
+      "growth_potential": 65,
+      "remote_location": 90
+    }
+  },
+  {
+    "url": "https://apply.deloitte.com/en_US/careers/JobDetail/AI-Governance-and-Privacy-Senior-Consultant/329391",
+    "company": "Deloitte",
+    "title": "Cyber AI Governance and Privacy Senior Consultant",
+    "location": "Multiple US locations",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$100,000-$180,000 (est.)",
+    "notes": "AI governance operating models, GenAI/agentic AI deployments. NIST AI RMF, ISO/IEC 42001, EU AI Act. Recruiting ends 5/31/2026.",
+    "match_score": 24.0,
+    "score_breakdown": {
+      "skill_alignment": 14.0,
+      "domain_overlap": 11.8,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-engineer-gov-washington-dc/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Engineer, Gov",
+    "location": "Washington, DC",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "$350K-$550K TC (mid-senior, estimated)",
+    "notes": "Lead complex deployments of frontier models in production for government and public sector. Clearance likely required. Delivery-urgent, high-ambiguity environments.",
+    "match_score": 23.8,
+    "score_breakdown": {
+      "skill_alignment": 5.4,
+      "domain_overlap": 8.4,
+      "compensation_fit": 20,
+      "growth_potential": 75,
+      "remote_location": 90
+    }
+  },
+  {
+    "url": "https://www.dropbox.com/careers",
+    "company": "Dropbox",
+    "title": "Staff Backend Software Engineer, Commerce Platform",
+    "location": "Remote (US)",
+    "remote": true,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$220,000-$297,000 (est.)",
+    "notes": "Design and improve scalable backend systems for Commerce Platform. System reliability, data consistency, technical strategy influence. Virtual First company.",
+    "match_score": 23.5,
+    "score_breakdown": {
+      "skill_alignment": 0.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.cofia.ai/team",
+    "company": "Cofia",
+    "title": "Founding Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 2,
+    "source": "yc-startups",
+    "yc_batch": "W26",
+    "funding_stage": "Seed (YC-backed)",
+    "notes": "AI automations that write themselves \u00e2\u20ac\u201d learns how you work and builds automations. Hiring Founding Engineer, $180K-$250K, full-stack, NYC office. Active listing confirmed.",
+    "match_score": 23.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/cofia",
+    "company": "Cofia",
+    "title": "Founding Engineer (inferred \u00e2\u20ac\u201d no public listing found)",
+    "location": "New York, NY",
+    "remote": null,
+    "tier": 2,
+    "source": "tier1-agent-startups",
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "AI automations that write themselves. Learns how you work and builds tailor-made automations without prompts, code, or workflow builders. Enterprise workflow tool. Co-founders: Paola Martinez (Stanford) and Moses Wayne, based in NYC. No public job listings found.",
+    "match_score": 23.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/3679566-full-stack-ai-dev-contract-to-founding-engineer",
+    "company": "1280 Labs",
+    "title": "Full-stack AI Dev (Contract to Founding Engineer)",
+    "location": "Remote (US/Canada)",
+    "remote": true,
+    "tier": 2,
+    "source": "wellfound",
+    "salary_range": "$60K-$96K ($5K-$8K/mo contract)",
+    "equity_range": "3.0%-5.0%",
+    "posted_date": "2026-04",
+    "notes": "Bootstrapped, 6-figure ARR. Document ingestion + retrieval AI platform. Contract-to-hire (2-4 week trial). Low cash, high equity.",
+    "match_score": 23.3,
+    "score_breakdown": {
+      "skill_alignment": 10.8,
+      "domain_overlap": 0.0,
+      "compensation_fit": 20,
+      "growth_potential": 60,
+      "remote_location": 100
+    }
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/paratus-health/jobs/DoE5rYm-founding-engineer-2",
+    "company": "Paratus Health",
+    "title": "Founding Engineer #2",
+    "location": "Menlo Park, CA",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "healthcare",
+    "notes": "Early technical leader, ship products end-to-end from AI voice agents to insurance verification and EHR integrations. Small team (6), high ownership. YC-backed.",
+    "match_score": 22.9,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 85,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://stripe.com/jobs/listing/staff-engineer-payments/7416957",
+    "company": "Stripe",
+    "title": "Staff Engineer, Payments",
+    "location": "San Francisco, CA / Seattle, WA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Scoping, designing, building APIs and large-scale systems handling billions of money movement requests. 10+ years experience. Global-scale financial infrastructure.",
+    "match_score": 22.9,
+    "score_breakdown": {
+      "skill_alignment": 8.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://stripe.com/jobs/listing/staff-engineer-usage-based-billing/7124531",
+    "company": "Stripe",
+    "title": "Staff Engineer, Usage Based Billing",
+    "location": "San Francisco, CA / Seattle, WA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Staff Backend Engineer guiding Usage-Based Billing to GA. High-profile GenAI company users. System design at scale, metering and billing infrastructure.",
+    "match_score": 22.9,
+    "score_breakdown": {
+      "skill_alignment": 8.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-ai-engineer-at-palantir-technologies-3867112975",
+    "company": "Palantir Technologies",
+    "title": "Forward Deployed AI Engineer",
+    "location": "United States",
+    "remote": false,
+    "tier": 1,
+    "source": "linkedin",
+    "salary_range": "$200K-$350K TC",
+    "posted_date": "2026-04",
+    "notes": "Classic FDE role at Palantir \u00e2\u20ac\u201d customer-facing AI deployment, strong brand signal",
+    "match_score": 22.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 60,
+      "growth_potential": 65,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.roberthalf.com/us/en/job-details/ai-architect",
+    "company": "Multiple (via Robert Half)",
+    "title": "AI Architect (various F500)",
+    "location": "Various US locations",
+    "remote": false,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$128,000-$300,000",
+    "notes": "Market-wide data: avg $128K, top range $300K. Microsoft offers $250-320K for senior AI architect. Amazon reaches $280K for principal AI engineer. Engineers with 2+ AI skills earn 43% more. LLM fine-tuning, MLOps, RAG architectures in high demand.",
+    "match_score": 21.4,
+    "score_breakdown": {
+      "skill_alignment": 8.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.anthropic.com/careers/jobs/4970314008",
+    "company": "Anthropic",
+    "title": "Staff+ Software Engineer, Infrastructure",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "$400K-$600K+ TC (staff level, estimated from levels.fyi)",
+    "notes": "Infrastructure engineering role. Staff+ level indicates senior IC track. Anthropic SWE TC ranges $300K-$490K mid-level, higher for staff.",
+    "match_score": 21.2,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 20,
+      "growth_potential": 75,
+      "remote_location": 90
+    }
+  },
+  {
+    "url": "https://stripe.com/jobs/listing/staff-software-engineer-stream-infrastructure/7517258",
+    "company": "Stripe",
+    "title": "Staff Software Engineer, Stream Infrastructure",
+    "location": "San Francisco, CA / Seattle, WA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Kafka-first streaming infrastructure. Availability, resilience, automated recovery at scale. Hardest problems in operating Kafka in production.",
+    "match_score": 21.2,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.figma.com/careers/",
+    "company": "Figma",
+    "title": "Staff Software Engineer, Agentic SDK",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Setting technical strategy for Agentic SDK team. Design tools company, high compensation ($819K total comp at L4 per Levels.fyi). Collaborative product engineering culture.",
+    "match_score": 21.2,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4508312005",
+    "company": "Glean",
+    "title": "Principal Solutions Architect (Glean Agents)",
+    "location": "Palo Alto, CA",
+    "remote": false,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$160,000-$250,000",
+    "notes": "Enterprise AI search and agents platform. Guides customers through architecture, design, and implementation. Helps technical teams build agents that automate real work processes. Base $160-250K.",
+    "match_score": 21.0,
+    "score_breakdown": {
+      "skill_alignment": 7.5,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 75,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-engineer-(fde)-life-sciences-sf-san-francisco/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Engineer, Life Sciences",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier1-career-pages",
+    "salary_range": "$350K-$550K TC (mid-senior, estimated)",
+    "notes": "Deploy production AI systems across scientific and operational workflows for life sciences orgs. Domain specialization in biotech/pharma.",
+    "match_score": 20.9,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 20,
+      "growth_potential": 50,
+      "remote_location": 90
+    }
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-software-engineer-sf-san-francisco/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Software Engineer",
+    "location": "San Francisco, CA / Seattle / NYC",
+    "remote": false,
+    "tier": 1,
+    "source": "tier1-career-pages",
+    "salary_range": "$350K-$550K TC (mid-senior, from FDE salary guide 2026)",
+    "notes": "Build custom software leveraging OpenAI APIs for enterprise customers. Multiple locations. High equity component.",
+    "match_score": 20.7,
+    "score_breakdown": {
+      "skill_alignment": 5.4,
+      "domain_overlap": 0.0,
+      "compensation_fit": 20,
+      "growth_potential": 65,
+      "remote_location": 90
+    }
+  },
+  {
+    "url": "https://careers.caterpillar.com/en/jobs/r0000352674/senior-principal-architect-applied-ai-enterprise/",
+    "company": "Caterpillar",
+    "title": "Senior Principal Architect, Applied AI Enterprise",
+    "location": "Broomfield, CO / Chicago, IL / Mossville, IL / Irving, TX",
+    "remote": false,
+    "tier": 3,
+    "source": "tier3-emerging",
+    "salary_range": "$200,000-$300,000 (est.)",
+    "notes": "F100 company. Designs AI application technical infrastructure including orchestration layers and tool integrations. Leads evaluation and deployment of emerging AI technologies. Enterprise AI Systems Architect archetype.",
+    "match_score": 20.7,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 85,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://careers.datadoghq.com/detail/3210217/",
+    "company": "Datadog",
+    "title": "Staff Software Engineer",
+    "location": "New York, NY / Boston, MA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$234,000-$300,000",
+    "notes": "Technical leader delivering industry-leading observability systems. Data visualization, planet-scale streaming, storage engines handling hundreds of millions of records/sec.",
+    "match_score": 20.5,
+    "score_breakdown": {
+      "skill_alignment": 0.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 70,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://careers.datadoghq.com/detail/5608424/",
+    "company": "Datadog",
+    "title": "Senior Staff Software Engineer",
+    "location": "New York, NY / Boston, MA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$280,000-$350,000 (est.)",
+    "notes": "Senior Staff level. Lead engineer building new products or rebuilding critical services for next two orders of magnitude of scale. Observability domain.",
+    "match_score": 20.5,
+    "score_breakdown": {
+      "skill_alignment": 0.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 70,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://www.samsara.com/careers",
+    "company": "Samsara",
+    "title": "Staff Software Engineer",
+    "location": "San Francisco, CA / Remote",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-staff-eng",
+    "salary_range": "$200,000-$280,000 (est.)",
+    "notes": "IoT platform for physical operations. Lead and develop high-performing team. Connected operations cloud, fleet management, industrial IoT. High-growth public company.",
+    "match_score": 20.5,
+    "score_breakdown": {
+      "skill_alignment": 0.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 70,
+      "remote_location": 60
+    }
+  },
+  {
+    "url": "https://careers.throxy.com/software-engineer-fullstack",
+    "company": "Throxy",
+    "title": "Software Engineer (Fullstack)",
+    "location": "London, UK",
+    "remote": null,
+    "tier": 1,
+    "source": "tier1-vertical-ai",
+    "domain_vertical": "sales automation",
+    "notes": "TypeScript, React, Next.js, modern AI tooling. Infrastructure: SingleStore, OpenSearch, Trigger.dev, Axiom. AI-native company \u00e2\u20ac\u201d every employee ships with AI daily.",
+    "match_score": 20.4,
+    "score_breakdown": {
+      "skill_alignment": 8.6,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.jobilize.com/amp/job/ca-toronto-senior-manager-agentic-ai-architect-ernst-young-advisory-pr1wudu",
+    "company": "EY (Ernst & Young)",
+    "title": "Senior Manager - Agentic AI Architect",
+    "location": "Toronto, Canada",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "CAD $140,000-$220,000 (est.)",
+    "notes": "Agentic AI architecture. Advisory practice. Enterprise AI governance and model management frameworks.",
+    "match_score": 20.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/dallas/ai-engineer-senior-manager-commercial-technology-and-innovation/932/87007100416",
+    "company": "PwC",
+    "title": "AI Engineer - Senior Manager - Commercial Technology & Innovation",
+    "location": "Dallas, TX",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$150,000-$270,000 (est.)",
+    "notes": "AI architecture with enterprise integrations. Champions governance and Responsible AI practices. Mentoring role.",
+    "match_score": 20.4,
+    "score_breakdown": {
+      "skill_alignment": 9.7,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-co-op-fall-2026-svl-at-ibm-4384449602",
+    "company": "IBM",
+    "title": "Forward Deployed Engineer Co-Op Fall 2026",
+    "location": "San Jose, CA",
+    "remote": false,
+    "tier": 2,
+    "source": "linkedin",
+    "salary_range": "N/A (co-op)",
+    "posted_date": "2026-04",
+    "notes": "Co-op level \u00e2\u20ac\u201d below target seniority, but IBM AI platform is relevant domain",
+    "match_score": 19.8,
+    "score_breakdown": {
+      "skill_alignment": 10.8,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://apply.deloitte.com/en_US/careers/JobDetail/AI-Engineering-Manager-Solutions-Architect-SFL-Scientific/319125",
+    "company": "Deloitte",
+    "title": "AI Engineering Manager / Solutions Architect - SFL Scientific",
+    "location": "Multiple US locations",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$150,000-$280,000 (est.)",
+    "notes": "AI engineering management + solutions architecture. SFL Scientific practice. Recruiting ends 5/31/2026.",
+    "match_score": 19.5,
+    "score_breakdown": {
+      "skill_alignment": 7.5,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://openai.com/careers/forward-deployed-engineer-semiconductor-san-francisco/",
+    "company": "OpenAI",
+    "title": "Forward Deployed Engineer, Semiconductor",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier1-career-pages",
+    "salary_range": "$350K-$550K TC (mid-senior, estimated)",
+    "notes": "Deploy production AI across chip design, verification, and tooling workflows for semiconductor companies.",
+    "match_score": 19.2,
+    "score_breakdown": {
+      "skill_alignment": 5.4,
+      "domain_overlap": 0.0,
+      "compensation_fit": 20,
+      "growth_potential": 50,
+      "remote_location": 90
+    }
+  },
+  {
+    "url": "https://apply.deloitte.com/en_US/careers/JobDetail?jobId=316466",
+    "company": "Deloitte",
+    "title": "AI Solution Architecture - Specialist Leader",
+    "location": "Multiple US locations",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$167,000-$307,500",
+    "notes": "End-to-end AI/ML solutions design and implementation. Specialist Leader level. Recruiting ended 1/1/2026 \u00e2\u20ac\u201d may reopen.",
+    "match_score": 19.2,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 70,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://careers.ey.com/ey/job/Atlanta-Senior-Manager-AI-Architecture-Knowledge-AI-GA-30308/1276813001/",
+    "company": "EY (Ernst & Young)",
+    "title": "Senior Manager - AI Architecture - Knowledge AI",
+    "location": "Atlanta, GA",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$152,700-$266,000",
+    "notes": "Lead design/implementation of knowledge-based AI systems. Foundation model management, safety, agentic design, AI app integration.",
+    "match_score": 19.2,
+    "score_breakdown": {
+      "skill_alignment": 4.3,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 70,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/chicago/ai-insurance-solutions-architect-sr-manager/932/93266110432",
+    "company": "PwC",
+    "title": "AI Insurance Solutions Architect, Sr. Manager",
+    "location": "Chicago, IL",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$150,000-$260,000 (est.)",
+    "notes": "AI solutions architecture for insurance vertical. Senior Manager level.",
+    "match_score": 17.8,
+    "score_breakdown": {
+      "skill_alignment": 3.2,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 60,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://wellfound.com/jobs/4063456-founding-full-stack-engineer-ai-systems",
+    "company": "Brandora AI",
+    "title": "Founding Full-Stack Engineer (AI Systems)",
+    "location": "Gurgaon, India",
+    "remote": false,
+    "tier": 3,
+    "source": "wellfound",
+    "salary_range": "N/A (India market)",
+    "equity_range": "undisclosed",
+    "posted_date": "2026-04",
+    "notes": "D2C + performance marketing AI. India-based, likely below US salary targets.",
+    "match_score": 17.0,
+    "score_breakdown": {
+      "skill_alignment": 0.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 65,
+      "remote_location": 30
+    }
+  },
+  {
+    "url": "https://jobs.us.pwc.com/job/chicago/responsible-ai-analyst-ai-and-emtech-pwc-labs/932/14164668160",
+    "company": "PwC",
+    "title": "Responsible AI Analyst - AI & EmTech - PwC Labs",
+    "location": "Multiple US (Chicago, Raleigh, Charlotte, Grand Rapids)",
+    "remote": false,
+    "tier": 2,
+    "source": "tier2-consultancies",
+    "salary_range": "$80,000-$130,000 (est.)",
+    "notes": "RAI go-to-market support, frameworks, training integration. Senior Associate level \u00e2\u20ac\u201d entry point into responsible AI.",
+    "match_score": 15.5,
+    "score_breakdown": {
+      "skill_alignment": 0.0,
+      "domain_overlap": 0.0,
+      "compensation_fit": 50,
+      "growth_potential": 50,
+      "remote_location": 30
+    }
+  }
+]

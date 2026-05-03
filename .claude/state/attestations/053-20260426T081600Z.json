@@ -1,0 +1,118 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "329d11a1fc21baca896a6b4d0f2945000be0739268ef99989d111a53c7c55976",
+      "parameters": "59088e2f8b74808af6e913b8cdf071eae708a624af1c68bb1429e8e5f484eebc",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-26T07:56:00.838171+00:00",
+          "raw_input_hash": "bb46aa9654bfa5e814a618e22b81a2c26a2127571b74fd0e0f9dca646deb539d",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-04-26T07:58:31.399327+00:00",
+          "raw_input_hash": "bb46aa9654bfa5e814a618e22b81a2c26a2127571b74fd0e0f9dca646deb539d",
+          "backlog_hash_after": "329d11a1fc21baca896a6b4d0f2945000be0739268ef99989d111a53c7c55976"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/portfolio-visual-refactor\\gate-contract.md",
+          "sha256": "e7cf46a87c6339c728bb873e7c5a6e4e15612225e19c688607d1cfb3915ad904"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\000-index.md",
+          "sha256": "d6528c9b30cb01327102019b6d6b8b9bc78f730933c87019eae00d0265f0a50c"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\001-build-css-typography-hierarchy.md",
+          "sha256": "f2ea5728391519d3e1095b748fdced8ed54e17bc76d062b0f51be7ca1b0734d9"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\002-build-css-whitespace-texture.md",
+          "sha256": "50f306fcc65be6b992244519d94cd00f12dfe806dc786d4327024bd1e84b197c"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\003-build-css-cards-tags-bold.md",
+          "sha256": "d93cc62ad5dfb2731e71c150078ee88f49fbc7d9ae22fb7b7d44d4eec4c61f60"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\004-build-css-chain-provenance.md",
+          "sha256": "1dfd0779a091dcfc4b0d5f304508c22144c14ebc9d32195f875b9db94cad9f5c"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\005-build-css-nav-cta.md",
+          "sha256": "403791269aa03788e816d824f89f6952f5b605681249e267d9ede2f4398bc8a7"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\006-build-css-footer.md",
+          "sha256": "cdf2dfb6f9af448401355380a3a631c2ea9eaab74e59b7086b23014262672aaa"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\007-build-html-em-dash-cleanup.md",
+          "sha256": "59ed7bac5753f28d7375d7c6f06b6ebc687e43065a6b2f1927e5bfefed5bde12"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\008-build-html-bold-emphasis.md",
+          "sha256": "63c0706216f72c387f6cc582387d4c3c3ec3044b7143233a2e89e3b56e9df74b"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\009-build-html-tags-stats.md",
+          "sha256": "8750f053c843a514b0e9ba23685e83b83d345b27d911e69bf1ff73b194274506"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\010-build-html-nav-cta.md",
+          "sha256": "b833bbc0abf93590f1d068f79de9689a30a337b92c8e11886ee129da5ffa4fe8"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\011-build-html-footer.md",
+          "sha256": "1cea471c3e9202cba0e9f13d9b84dee844ecc6adc93d824d1ccd698687fb3638"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\012-build-html-provenance-third-card.md",
+          "sha256": "e0317c5cbf0578a2303ea30a8eb930db06ebd2f2e4d898d0ca93925540f39921"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\013-test-l1-structural.md",
+          "sha256": "42219384f387104e32a9e63dd2aa932036b5412d9e7fc122611dc68e1af88a4e"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\014-test-l2-desktop-visual.md",
+          "sha256": "4809974c5fcbc958b1c315fa5b03e22b47516fc87a142ab8a527afe1c4373335"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\015-test-l2-mobile-visual.md",
+          "sha256": "7740d045daf1fb826f176f30114ff8072946fe7bbfd2102685ddd2f244523f32"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\016-test-l3-interactivity.md",
+          "sha256": "d60c90a2e743d305cbcd80073b832e2acc171f17f52833044196f7e2efc8fed7"
+        },
+        {
+          "path": "tasks/portfolio-visual-refactor\\gate-contract.md",
+          "sha256": "e7cf46a87c6339c728bb873e7c5a6e4e15612225e19c688607d1cfb3915ad904"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-26T08:16:00.302958+00:00",
+      "end": "2026-04-26T08:16:00.308950+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/053-market-refactor-portfolio-site-visual-layer.md",
+      "task_folder": "tasks/portfolio-visual-refactor",
+      "task_count": 16,
+      "completed_count": 165,
+      "skipped_count": 1
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1388628067",
+      "logIndex": "1388628067"
+    }
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "generated": "2026-04-05",
+  "source_backlog": "029-market-research-ai-harness-engineering-jobs",
+  "total_jobs": 36,
+  "companies_searched": 10,
+  "scoring_method": {
+    "skills_overlap_weight": 0.40,
+    "role_alignment_weight": 0.30,
+    "remote_preference_weight": 0.15,
+    "company_tier_weight": 0.15,
+    "minimum_score": 40
+  },
+  "jobs": [
+    {
+      "url": "https://boards.greenhouse.io/anthropic/jobs/4138401008",
+      "company": "Anthropic",
+      "title": "Software Engineer, Agents Infrastructure",
+      "location": "San Francisco, CA / New York City, NY",
+      "remote": false,
+      "match_score": 92,
+      "score_breakdown": {
+        "skills_overlap": 38,
+        "role_alignment": 29,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Direct agent infrastructure role matching AI agent architecture, MCP server design, hook-based governance. Sandboxed execution aligns with agent harness work. Top-tier company. SF/NYC relocation considered."
+      },
+      "requirements": ["Design and implement secure, scalable sandboxed execution environments for AI agents", "Containerization technologies experience", "Building infrastructure and SDKs for LLM-based agents", "Developing sandboxed code execution environments and tool use SDKs"]
+    },
+    {
+      "url": "https://openai.com/careers/software-engineer-codex-core-agents-san-francisco/",
+      "company": "OpenAI",
+      "title": "Software Engineer, Codex Core Agents",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 91,
+      "score_breakdown": {
+        "skills_overlap": 38,
+        "role_alignment": 28,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "State/memory for agent persistence directly maps to session persistence, context window management. Developer tooling aligns with DX Engineer target. API and platform work matches FastAPI, agent framework experience."
+      },
+      "requirements": ["Infrastructure for running, testing, debugging model-generated code", "State and memory systems for agent context persistence", "Optimize tokens, latency, reliability, cost", "Backend systems, APIs, and developer tooling", "Shared platform capabilities for product teams and open source"]
+    },
+    {
+      "url": "https://openai.com/careers/software-engineer-agent-infrastructure-san-francisco/",
+      "company": "OpenAI",
+      "title": "Software Engineer, Agent Infrastructure",
+      "location": "San Francisco, CA / New York City, NY",
+      "remote": false,
+      "match_score": 89,
+      "score_breakdown": {
+        "skills_overlap": 36,
+        "role_alignment": 28,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "FastAPI listed as direct skill match. Agent infrastructure aligns perfectly with AI agent architecture experience. Container orchestration maps to containerized agent environments."
+      },
+      "requirements": ["Container orchestration platform beyond Kubernetes", "FastAPI and gRPC APIs", "Terraform for complex infrastructure", "Building systems for training and deployment of AI agents", "Hybrid: 3 days in office per week"]
+    },
+    {
+      "url": "https://www.google.com/about/careers/applications/jobs/results/98197930501907142-machine-learning-quality-engineer-deepmind-project-janus",
+      "company": "Google DeepMind",
+      "title": "Machine Learning Quality Engineer, DeepMind - Project Janus",
+      "location": "United States",
+      "remote": false,
+      "match_score": 87,
+      "score_breakdown": {
+        "skills_overlap": 35,
+        "role_alignment": 27,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Agentic orchestration flows directly match multi-loop agent architecture. QA background (20+ years) perfectly suits Quality Engineer. Context engineering maps to context window management. Automating SE tasks = core Isagawa value prop."
+      },
+      "requirements": ["Evaluation sets and infrastructure setup", "Agentic orchestration flows", "Prompt iteration and context engineering", "Experience building or using AI Agents and LLM-based frameworks", "Automating software engineering tasks", "SFT and RL techniques"]
+    },
+    {
+      "url": "https://www.google.com/about/careers/applications/jobs/results/99181829663138502-machine-learning-software-engineer/",
+      "company": "Google DeepMind",
+      "title": "Machine Learning Software Engineer, GeminiApp Agents",
+      "location": "United States",
+      "remote": false,
+      "match_score": 85,
+      "score_breakdown": {
+        "skills_overlap": 34,
+        "role_alignment": 26,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "MCP integrations directly match MCP server design skill. Evaluation infrastructure aligns with QA platform experience. Product launch track record matches. LLM experience matches but formal ML research may be gap."
+      },
+      "requirements": ["5 years ML design and ML infrastructure experience", "3 years taking technical products from conception to launch", "3 years experience with Generative AI and LLMs", "Scalable data collection and evaluation infrastructure", "Model Context Protocol (MCP) integrations", "Autoraters, autousers, automatic prompt optimization"]
+    },
+    {
+      "url": "https://www.google.com/about/careers/applications/jobs/results/72473773101458118-forward-deployed-engineer-iii/",
+      "company": "Google DeepMind",
+      "title": "Forward Deployed Engineer III, Applied AI, Google Cloud",
+      "location": "United States",
+      "remote": false,
+      "match_score": 84,
+      "score_breakdown": {
+        "skills_overlap": 34,
+        "role_alignment": 25,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Multi-agent systems and hierarchical delegation match multi-loop agent architecture. Evaluation pipelines align with QA platform. Self-reflection pattern maps to learn loop. Customer-facing aspect leverages QA leadership experience."
+      },
+      "requirements": ["Implementing multi-agent systems using frameworks (LangGraph, CrewAI, Google ADK)", "Complex patterns: ReAct, self-reflection, hierarchical delegation", "High-performance evaluation pipelines and observability frameworks", "Agentic workload optimization", "Production-grade security and networking"]
+    },
+    {
+      "url": "https://scale.com/careers#agentic-public-sector",
+      "company": "Scale AI",
+      "title": "Software Engineer - Public Sector (Agentic Systems)",
+      "location": "San Francisco, CA / Washington, D.C.",
+      "remote": false,
+      "match_score": 80,
+      "score_breakdown": {
+        "skills_overlap": 36,
+        "role_alignment": 26,
+        "remote_preference": 8,
+        "company_tier": 10,
+        "notes": "Multi-layered guardrails directly match defense-in-depth enforcement and hook-based governance. Agentic systems align with core AI agent architecture skills. Federal experience from IBM/Nakupuna background."
+      },
+      "requirements": ["Scalable backend systems for Federal customers", "Cloud-native AI infrastructure", "Agentic systems with multi-layered guardrails", "Data pipelines and ML infrastructure for agents", "Data retrieval optimization"]
+    },
+    {
+      "url": "https://scale.com/careers#agent-data-products",
+      "company": "Scale AI",
+      "title": "Senior Software Engineer - Agent-Powered Data Products",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 78,
+      "score_breakdown": {
+        "skills_overlap": 34,
+        "role_alignment": 26,
+        "remote_preference": 8,
+        "company_tier": 10,
+        "notes": "Agent-powered products match AI agent architecture. End-to-end ownership aligns with shipping 4 products. Intelligent workflows match event-driven workflows and state machines."
+      },
+      "requirements": ["Agent-powered data product development", "End-to-end product ownership (frontend to backend)", "AI and intelligent workflows", "Full stack proficiency"]
+    },
+    {
+      "url": "https://openai.com/careers/software-engineer-computer-using-agent/",
+      "company": "OpenAI",
+      "title": "Software Engineer, Computer-Using Agent",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 77,
+      "score_breakdown": {
+        "skills_overlap": 28,
+        "role_alignment": 24,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Secure agent execution environments align with agent governance. Browser control maps to Playwright/Selenium expertise. Kubernetes and Terraform less directly in skillset. Top-tier company."
+      },
+      "requirements": ["Systems for model control of operating systems and browsers", "CUA-specific containers on high-scale Kubernetes clusters", "Terraform for large-scale infrastructure", "RL training environments", "Secure agent execution environments"]
+    },
+    {
+      "url": "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/",
+      "company": "Meta AI",
+      "title": "Software Engineer, Agent Framework (Confucius/KernelEvolve)",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "match_score": 76,
+      "score_breakdown": {
+        "skills_overlap": 34,
+        "role_alignment": 26,
+        "remote_preference": 8,
+        "company_tier": 8,
+        "notes": "Agent framework development is core competency (Isagawa Kernel). SDK design maps to MCP server design. Multistep reasoning matches multi-loop agent architecture. Internal tooling aligns with developer tools experience."
+      },
+      "requirements": ["Internal AI agent framework development", "Complex multistep reasoning tasks", "Code generation capabilities", "SDK for integrating with internal tooling systems", "Job schedulers, experiment tracking, codebase navigation tools"]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/cohere#agent-infra",
+      "company": "Cohere",
+      "title": "Senior Software Engineer, Agent Infrastructure",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "match_score": 76,
+      "score_breakdown": {
+        "skills_overlap": 34,
+        "role_alignment": 27,
+        "remote_preference": 15,
+        "company_tier": 0,
+        "notes": "Agent infrastructure is direct match. Remote role gets full preference bonus. Python is direct skill. LLM-based agent systems match core competency. Not top-tier but strong alignment."
+      },
+      "requirements": ["Agent infrastructure development", "LLM-based agent systems", "Scalable infrastructure design", "Python proficiency"]
+    },
+    {
+      "url": "https://scale.com/careers/4529529005",
+      "company": "Scale AI",
+      "title": "Staff Software Engineer, Full-Stack - Enterprise Gen AI",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "match_score": 75,
+      "score_breakdown": {
+        "skills_overlap": 32,
+        "role_alignment": 25,
+        "remote_preference": 8,
+        "company_tier": 10,
+        "notes": "Agent building and management aligns well. GenAI Platform maps to AI agent platform target role. Seattle/NYC relocation considered."
+      },
+      "requirements": ["GenAI Platform development", "AI-driven agent building, deployment, and management", "Full-stack development", "Enterprise AI solutions"]
+    },
+    {
+      "url": "https://www.metacareers.com/areas-of-work/ai-infrastructure/",
+      "company": "Meta AI",
+      "title": "AI Software Engineer, AI Infrastructure",
+      "location": "Menlo Park, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "match_score": 74,
+      "score_breakdown": {
+        "skills_overlap": 32,
+        "role_alignment": 24,
+        "remote_preference": 8,
+        "company_tier": 10,
+        "notes": "Agent orchestration and context engineering are direct matches. Python is strong match. AI infrastructure maps to target roles. C/C++ is a gap. NYC/Seattle relocation considered."
+      },
+      "requirements": ["AI Infrastructure development", "Developing AI algorithms or AI-System infrastructure in C/C++ or Python", "Distributed systems or on-device algorithm development", "Integrating AI tools to optimize/redesign workflows", "Prompt/context engineering, agent orchestration"]
+    },
+    {
+      "url": "https://openai.com/careers/software-engineer-enterprise-ai-platform-san-francisco/",
+      "company": "OpenAI",
+      "title": "Software Engineer, Enterprise AI Platform",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 73,
+      "score_breakdown": {
+        "skills_overlap": 24,
+        "role_alignment": 24,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Agentic workflows align with agent architecture. Platform engineering matches target. Less specific agent infrastructure focus compared to other OpenAI roles."
+      },
+      "requirements": ["Foundational data and processing stack for OpenAI API", "Infrastructure for serving latest models and agentic workflows", "Enterprise platform engineering"]
+    },
+    {
+      "url": "https://apply.workable.com/huggingface/#ml-agents",
+      "company": "Hugging Face",
+      "title": "ML Research Engineer, AI Agents",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "match_score": 72,
+      "score_breakdown": {
+        "skills_overlap": 28,
+        "role_alignment": 24,
+        "remote_preference": 15,
+        "company_tier": 5,
+        "notes": "AI agent R&D directly matches. Open-source experience (37 repos, 2 orgs) strong fit. Git proficiency is direct match. Remote EMEA may require timezone flexibility. ML research depth may be gap."
+      },
+      "requirements": ["AI agent research and development", "Open-source ML platform experience", "Machine learning and NLP expertise", "PyTorch or TensorFlow proficiency", "Git and version control"]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/cohere#fde-agentic",
+      "company": "Cohere",
+      "title": "Forward Deployed Engineer, Agentic Platform (Public Sector)",
+      "location": "Ottawa, Canada (Hybrid)",
+      "remote": false,
+      "match_score": 71,
+      "score_breakdown": {
+        "skills_overlap": 30,
+        "role_alignment": 25,
+        "remote_preference": 8,
+        "company_tier": 8,
+        "notes": "Autonomous agent development is direct Isagawa match. Shipping products aligns with 4 shipped products. Client-facing leverages QA leadership. Canada location may require relocation."
+      },
+      "requirements": ["Building and shipping AI workspace platform features", "Developing autonomous agents", "End-to-end deployment management", "Client-facing engineering"]
+    },
+    {
+      "url": "https://scale.com/careers#applied-ai-public",
+      "company": "Scale AI",
+      "title": "Applied AI Engineer (Public Sector)",
+      "location": "Washington, D.C.",
+      "remote": false,
+      "match_score": 70,
+      "score_breakdown": {
+        "skills_overlap": 30,
+        "role_alignment": 22,
+        "remote_preference": 8,
+        "company_tier": 10,
+        "notes": "Agent orchestration and agentic workflows match. Evaluation experience aligns with QA background. Public sector federal experience from IBM/Nakupuna."
+      },
+      "requirements": ["Building AI applications for public sector", "Dataset creation and evaluation", "LLM integration and agentic workflows", "RAG and agent orchestration"]
+    },
+    {
+      "url": "https://scale.com/careers/4591300005",
+      "company": "Scale AI",
+      "title": "Software Engineer, Gen AI",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "match_score": 68,
+      "score_breakdown": {
+        "skills_overlap": 28,
+        "role_alignment": 22,
+        "remote_preference": 8,
+        "company_tier": 10,
+        "notes": "TypeScript and JavaScript direct match. Compute orchestration maps to event-driven workflows. End-to-end aligns with shipped products. MongoDB/Elasticsearch less directly in skillset."
+      },
+      "requirements": ["End-to-end feature design and implementation", "TypeScript, MongoDB, Elasticsearch", "Compute orchestration with Temporal", "High-impact technical systems"]
+    },
+    {
+      "url": "https://openai.com/careers/client-platform-engineer-remote-us/",
+      "company": "OpenAI",
+      "title": "Client Platform Engineer",
+      "location": "Remote, US",
+      "remote": true,
+      "match_score": 67,
+      "score_breakdown": {
+        "skills_overlap": 20,
+        "role_alignment": 17,
+        "remote_preference": 15,
+        "company_tier": 15,
+        "notes": "Remote US is perfect location match. Top-tier company. Client platform less specific to agent infrastructure. Limited requirements info."
+      },
+      "requirements": ["Client platform engineering", "Remote position available across US"]
+    },
+    {
+      "url": "https://www.anthropic.com/careers/jobs/4970314008",
+      "company": "Anthropic",
+      "title": "Staff+ Software Engineer, Infrastructure",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 66,
+      "score_breakdown": {
+        "skills_overlap": 22,
+        "role_alignment": 19,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Developer platforms align with DX target role. Top-tier company. Production infrastructure at massive scale is adjacent but cluster training infrastructure is less direct match."
+      },
+      "requirements": ["Massive cluster training infrastructure", "Production infrastructure serving millions of users", "Developer platforms for engineering velocity", "Novel scaling challenges at the frontier"]
+    },
+    {
+      "url": "https://www.metacareers.com/teams/technology?tab=AI",
+      "company": "Meta AI",
+      "title": "AI Platform Engineer, Llama Infrastructure",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "match_score": 64,
+      "score_breakdown": {
+        "skills_overlap": 26,
+        "role_alignment": 22,
+        "remote_preference": 8,
+        "company_tier": 8,
+        "notes": "Python match strong. LLM infrastructure maps to AI agent work. C++ and PyTorch/TensorFlow are gaps. Cloud platform experience less demonstrated."
+      },
+      "requirements": ["LLM infrastructure and deployment", "Python and C++ proficiency", "PyTorch or TensorFlow experience", "Cloud platform certifications", "Scalable systems and performance optimization"]
+    },
+    {
+      "url": "https://www.databricks.com/company/careers/engineering---pipeline/senior-applied-ai-engineer--ml-for-systems--infrastructure-7859597002",
+      "company": "Databricks",
+      "title": "Senior Applied AI Engineer - ML for Systems & Infrastructure",
+      "location": "Mountain View, CA",
+      "remote": false,
+      "match_score": 62,
+      "score_breakdown": {
+        "skills_overlap": 24,
+        "role_alignment": 22,
+        "remote_preference": 8,
+        "company_tier": 8,
+        "notes": "Systems infrastructure aligns broadly. ML algorithms for systems optimization is adjacent. Cluster management less directly in skillset."
+      },
+      "requirements": ["Machine learning and optimization algorithms", "Infrastructure and systems performance improvement", "Cluster management and query compilation", "Cost-efficiency optimization", "Working closely with researchers"]
+    },
+    {
+      "url": "https://boards.greenhouse.io/anthropic/jobs/4034864008",
+      "company": "Anthropic",
+      "title": "Sr. Software Engineer, Infrastructure",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 61,
+      "score_breakdown": {
+        "skills_overlap": 18,
+        "role_alignment": 18,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Developer Productivity track is strongest match. Top-tier company. Spark/Airflow/dbt/Kubernetes specializations are gaps. Multiple tracks available."
+      },
+      "requirements": ["Data Infrastructure: Spark, Airflow, dbt across GCP and AWS", "Core Infrastructure: Large Kubernetes clusters with GPU/TPU/Trainium workloads", "Developer Productivity: Secure, efficient development tooling", "Product Infrastructure: Performance, reliability, developer velocity"]
+    },
+    {
+      "url": "https://jobs.lever.co/mistral#applied-ai",
+      "company": "Mistral AI",
+      "title": "Applied AI Engineer",
+      "location": "Paris, France / New York, NY",
+      "remote": false,
+      "match_score": 58,
+      "score_breakdown": {
+        "skills_overlap": 24,
+        "role_alignment": 20,
+        "remote_preference": 6,
+        "company_tier": 8,
+        "notes": "AI application development aligns. Customer-facing leverages QA leadership. NYC is relocation option. Paris would be challenging."
+      },
+      "requirements": ["Customer onboarding to AI products", "Advanced AI application development", "Product capability improvement", "Integration support"]
+    },
+    {
+      "url": "https://apply.workable.com/huggingface/#cloud-ml",
+      "company": "Hugging Face",
+      "title": "Cloud Machine Learning Engineer",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "match_score": 57,
+      "score_breakdown": {
+        "skills_overlap": 20,
+        "role_alignment": 17,
+        "remote_preference": 15,
+        "company_tier": 5,
+        "notes": "Remote is strong match. API design aligns with FastAPI/MCP server design. Cloud ML infrastructure is adjacent but less direct. EMEA timezone may be issue."
+      },
+      "requirements": ["ML solutions with cloud technologies", "Model integration and API design", "Documentation and community advocacy", "Cloud ML infrastructure"]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/cohere#gpu-infra",
+      "company": "Cohere",
+      "title": "Software Engineer, GPU Infrastructure",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "match_score": 55,
+      "score_breakdown": {
+        "skills_overlap": 18,
+        "role_alignment": 17,
+        "remote_preference": 15,
+        "company_tier": 5,
+        "notes": "Remote is strong match. GPU infrastructure and Kubernetes superclusters are less directly in skillset. System optimization is adjacent."
+      },
+      "requirements": ["Building and operating Kubernetes GPU superclusters", "AI workload infrastructure optimization", "System stability and performance improvement"]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/cohere#sre",
+      "company": "Cohere",
+      "title": "Site Reliability Engineer",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "match_score": 54,
+      "score_breakdown": {
+        "skills_overlap": 18,
+        "role_alignment": 16,
+        "remote_preference": 15,
+        "company_tier": 5,
+        "notes": "Remote is strong match. AI infrastructure is adjacent. SRE role is less aligned with target roles. Kubernetes expertise is a gap."
+      },
+      "requirements": ["Developing, deploying, and operating AI infrastructure", "High-performance ML systems", "Kubernetes and cloud platforms", "Scalable infrastructure"]
+    },
+    {
+      "url": "https://jobs.lever.co/mistral#infra",
+      "company": "Mistral AI",
+      "title": "Software Engineer (Infrastructure)",
+      "location": "Paris, France",
+      "remote": false,
+      "match_score": 52,
+      "score_breakdown": {
+        "skills_overlap": 22,
+        "role_alignment": 18,
+        "remote_preference": 4,
+        "company_tier": 8,
+        "notes": "AI safety implementation maps to AI Safety Infrastructure target role. API integration matches. Paris location is challenging."
+      },
+      "requirements": ["Model deployment and API integration", "Infrastructure enhancement", "AI safety implementation", "Resource optimization", "High service availability"]
+    },
+    {
+      "url": "https://jobs.lever.co/mistral#devops-platform",
+      "company": "Mistral AI",
+      "title": "DevOps/Platform Engineer",
+      "location": "Paris, France",
+      "remote": false,
+      "match_score": 50,
+      "score_breakdown": {
+        "skills_overlap": 20,
+        "role_alignment": 18,
+        "remote_preference": 4,
+        "company_tier": 8,
+        "notes": "Platform engineering aligns with target roles. System design matches. Paris location challenging."
+      },
+      "requirements": ["System design and implementation", "Data pipeline optimization", "Research productivity enhancement", "Platform infrastructure"]
+    },
+    {
+      "url": "https://www.databricks.com/company/careers/open-positions",
+      "company": "Databricks",
+      "title": "AI Forward Deployed Engineer",
+      "location": "United States",
+      "remote": false,
+      "match_score": 50,
+      "score_breakdown": {
+        "skills_overlap": 18,
+        "role_alignment": 16,
+        "remote_preference": 8,
+        "company_tier": 8,
+        "notes": "Customer-facing AI leverages QA leadership. Government experience from IBM/Nakupuna. Data Intelligence Platform expertise is a gap."
+      },
+      "requirements": ["Customer-facing AI engineering", "Professional services for government customers", "AI solution deployment", "Data Intelligence Platform expertise"]
+    },
+    {
+      "url": "https://careers.google.com/jobs/results/114199152748831430-software-engineer/",
+      "company": "Google DeepMind",
+      "title": "Software Engineer, Model Lifecycle Engineering, Robotics, DeepMind",
+      "location": "United States",
+      "remote": false,
+      "match_score": 48,
+      "score_breakdown": {
+        "skills_overlap": 14,
+        "role_alignment": 14,
+        "remote_preference": 5,
+        "company_tier": 15,
+        "notes": "Top-tier company boosts score. Robotics specialization is not aligned. JAX/PyTorch deep proficiency is a gap."
+      },
+      "requirements": ["Scalable platforms to train, evaluate and deploy Gemini Robotics models", "Model lifecycle engineering", "Deep proficiency in JAX alongside PyTorch"]
+    },
+    {
+      "url": "https://www.anthropic.com/careers/jobs/4595463008",
+      "company": "Anthropic",
+      "title": "Security Software Engineer, D&R Platform",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 47,
+      "score_breakdown": {
+        "skills_overlap": 12,
+        "role_alignment": 10,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Top-tier company. Security specialization is a gap despite governance/enforcement experience."
+      },
+      "requirements": ["Detection and response platform engineering", "Security software engineering", "Platform security infrastructure"]
+    },
+    {
+      "url": "https://www.anthropic.com/careers/jobs/4943668008",
+      "company": "Anthropic",
+      "title": "Software Engineer, Accelerator Build Infrastructure",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "match_score": 42,
+      "score_breakdown": {
+        "skills_overlap": 10,
+        "role_alignment": 7,
+        "remote_preference": 10,
+        "company_tier": 15,
+        "notes": "Top-tier company. Low-level systems, compilation, and hardware-software interfaces are significant gaps."
+      },
+      "requirements": ["Build infrastructure and low-level systems optimization", "Compilation processes and hardware-software interfaces", "Build systems expertise", "System-level debugging and optimization"]
+    },
+    {
+      "url": "https://apply.workable.com/huggingface/#cloud-devrel",
+      "company": "Hugging Face",
+      "title": "Cloud ML DevRel Engineer",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "match_score": 42,
+      "score_breakdown": {
+        "skills_overlap": 10,
+        "role_alignment": 12,
+        "remote_preference": 15,
+        "company_tier": 5,
+        "notes": "Remote match. Open-source community aligns with 37 published repos. DevRel is not a target role."
+      },
+      "requirements": ["Developer relations for ML cloud products", "Technical content and community building", "ML platform evangelism", "Open-source community engagement"]
+    },
+    {
+      "url": "https://jobs.lever.co/mistral#devrel",
+      "company": "Mistral AI",
+      "title": "AI Developer Advocate",
+      "location": "New York, NY",
+      "remote": false,
+      "match_score": 40,
+      "score_breakdown": {
+        "skills_overlap": 12,
+        "role_alignment": 14,
+        "remote_preference": 6,
+        "company_tier": 8,
+        "notes": "DX improvement aligns with DX Engineer target. NYC is relocation option. Advocacy role is not primary target."
+      },
+      "requirements": ["Developer advocacy and community building", "AI platform evangelism", "Technical content creation", "Developer experience improvement"]
+    }
+  ]
+}

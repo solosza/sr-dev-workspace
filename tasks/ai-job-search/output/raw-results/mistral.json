@@ -1,0 +1,55 @@
+{
+  "company": "Mistral AI",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "DevOps/Platform Engineer",
+      "url": "https://jobs.lever.co/mistral",
+      "location": "Paris, France",
+      "remote": false,
+      "requirements": [
+        "System design and implementation",
+        "Data pipeline optimization",
+        "Research productivity enhancement",
+        "Platform infrastructure"
+      ]
+    },
+    {
+      "title": "Software Engineer (Infrastructure)",
+      "url": "https://jobs.lever.co/mistral",
+      "location": "Paris, France",
+      "remote": false,
+      "requirements": [
+        "Model deployment and API integration",
+        "Infrastructure enhancement",
+        "AI safety implementation",
+        "Resource optimization",
+        "High service availability"
+      ]
+    },
+    {
+      "title": "Applied AI Engineer",
+      "url": "https://jobs.lever.co/mistral",
+      "location": "Paris, France / New York, NY",
+      "remote": false,
+      "requirements": [
+        "Customer onboarding to AI products",
+        "Advanced AI application development",
+        "Product capability improvement",
+        "Integration support"
+      ]
+    },
+    {
+      "title": "AI Developer Advocate",
+      "url": "https://jobs.lever.co/mistral",
+      "location": "New York, NY",
+      "remote": false,
+      "requirements": [
+        "Developer advocacy and community building",
+        "AI platform evangelism",
+        "Technical content creation",
+        "Developer experience improvement"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "anchor_timestamp": "2026-04-25T01:14:00Z",
+  "actions_count": 9,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-04-25T01:10:51Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/anchor-l",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:10:56Z",
+      "tool": "Bash",
+      "entry": "Bash: echo '{\"anchor_timestamp\": \"2026-04-24T12:00:00Z\", \"actions_count\": 4, \"violatio",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:11:23Z",
+      "tool": "Bash",
+      "entry": "Bash: which cosign 2>/dev/null || echo \"cosign not found in PATH\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:11:28Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import sigstore; print(sigstore.__version__)\" 2>&1 || echo \"sigstore-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:11:29Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/\" 2>/d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:11:45Z",
+      "tool": "Write",
+      "entry": "Write: sign.py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:11:49Z",
+      "tool": "Bash",
+      "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/si",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:13:31Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-25T01:13:47Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/anchor-l",
+      "session": "current"
+    }
+  ]
+}

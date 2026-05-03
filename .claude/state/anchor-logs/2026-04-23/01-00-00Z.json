@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-04-23T01:00:00Z",
+  "actions_count": 20,
+  "violations_found": 0,
+  "actions": [
+    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/037-\"*.md",
+    "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/anchor-int",
+    "Write: 000-index.md",
+    "Write: gate-contract.md",
+    "Write: 001-build-edit-anchor-command.md",
+    "Write: 002-build-edit-gate-enforcer.md",
+    "Write: 003-test-l1-verify-changes.md",
+    "Write: 004-test-l2-hook-smoke-test.md",
+    "Write: 005-test-l3-full-anchor-cycle.md",
+    "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/actions-lo",
+    "Write: 000-index.md",
+    "Write: gate-contract.md",
+    "Write: 001-build-edit-appender-hook.md",
+    "Write: 002-build-edit-anchor-command.md",
+    "Write: 003-build-edit-gate-enforcer-log-read.md",
+    "Write: 004-test-l1-verify-changes.md",
+    "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && python -c \"\nimport",
+    "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && python -c \"\nimport",
+    "Write: 005-test-l2-hook-smoke-test.md",
+    "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an"
+  ]
+}

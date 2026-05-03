@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-04-26T23:30:00Z",
+  "actions_count": 6,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T13:50:42Z", "tool": "Bash", "entry": "Bash: ls career-role-matching project dir"},
+    {"timestamp": "2026-04-26T13:51:26Z", "tool": "Bash", "entry": "Bash: python compile/normalize listings script"},
+    {"timestamp": "2026-04-26T13:51:34Z", "tool": "Bash", "entry": "Bash: python verify compiled-listings.json"},
+    {"timestamp": "2026-04-26T13:51:49Z", "tool": "Bash", "entry": "Bash: test -f compiled-listings.json"},
+    {"timestamp": "2026-04-26T13:51:51Z", "tool": "Bash", "entry": "Bash: python json.load verify"},
+    {"timestamp": "2026-04-26T13:51:52Z", "tool": "Bash", "entry": "Bash: python field count verify"}
+  ]
+}

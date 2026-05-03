@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-04-26T23:00:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T13:35:41Z", "tool": "Bash", "entry": "Bash: ls career-role-matching raw dir"},
+    {"timestamp": "2026-04-26T13:37:21Z", "tool": "Write", "entry": "Write: tier2-qa-sdet.json"},
+    {"timestamp": "2026-04-26T13:37:26Z", "tool": "Bash", "entry": "Bash: python validate JSON"},
+    {"timestamp": "2026-04-26T13:37:42Z", "tool": "Bash", "entry": "Bash: test file exists"},
+    {"timestamp": "2026-04-26T13:37:52Z", "tool": "Bash", "entry": "Bash: ls raw dir"}
+  ]
+}

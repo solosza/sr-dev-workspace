@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://stripe.com/jobs/listing/staff-engineer-payments/7416957",
+    "company": "Stripe",
+    "title": "Staff Engineer, Payments",
+    "location": "San Francisco, CA / Seattle, WA",
+    "remote": "hybrid",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Scoping, designing, building APIs and large-scale systems handling billions of money movement requests. 10+ years experience. Global-scale financial infrastructure."
+  },
+  {
+    "url": "https://stripe.com/jobs/listing/staff-engineer-usage-based-billing/7124531",
+    "company": "Stripe",
+    "title": "Staff Engineer, Usage Based Billing",
+    "location": "San Francisco, CA / Seattle, WA",
+    "remote": "hybrid",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Staff Backend Engineer guiding Usage-Based Billing to GA. High-profile GenAI company users. System design at scale, metering and billing infrastructure."
+  },
+  {
+    "url": "https://stripe.com/jobs/listing/staff-software-engineer-stream-infrastructure/7517258",
+    "company": "Stripe",
+    "title": "Staff Software Engineer, Stream Infrastructure",
+    "location": "San Francisco, CA / Seattle, WA",
+    "remote": "hybrid",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Kafka-first streaming infrastructure. Availability, resilience, automated recovery at scale. Hardest problems in operating Kafka in production."
+  },
+  {
+    "url": "https://www.figma.com/careers/",
+    "company": "Figma",
+    "title": "Staff Software Engineer, Agentic SDK",
+    "location": "San Francisco, CA",
+    "remote": "hybrid",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$250,000-$350,000 (est.)",
+    "notes": "Setting technical strategy for Agentic SDK team. Design tools company, high compensation ($819K total comp at L4 per Levels.fyi). Collaborative product engineering culture."
+  },
+  {
+    "url": "https://careers.datadoghq.com/detail/3210217/",
+    "company": "Datadog",
+    "title": "Staff Software Engineer",
+    "location": "New York, NY / Boston, MA",
+    "remote": "hybrid",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$234,000-$300,000",
+    "notes": "Technical leader delivering industry-leading observability systems. Data visualization, planet-scale streaming, storage engines handling hundreds of millions of records/sec."
+  },
+  {
+    "url": "https://careers.datadoghq.com/detail/5608424/",
+    "company": "Datadog",
+    "title": "Senior Staff Software Engineer",
+    "location": "New York, NY / Boston, MA",
+    "remote": "hybrid",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$280,000-$350,000 (est.)",
+    "notes": "Senior Staff level. Lead engineer building new products or rebuilding critical services for next two orders of magnitude of scale. Observability domain."
+  },
+  {
+    "url": "https://www.cloudflare.com/careers/jobs/",
+    "company": "Cloudflare",
+    "title": "Staff/Principal Engineer (multiple openings)",
+    "location": "San Francisco, CA / Austin, TX / Remote",
+    "remote": "hybrid/remote",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$200,000-$326,000",
+    "notes": "Edge computing, CDN, security infrastructure. 185+ remote engineering positions available. Principal Engineer range $104K-$227K base + equity. L5 total comp up to $326K per Levels.fyi."
+  },
+  {
+    "url": "https://himalayas.app/companies/affirm/jobs/staff-software-engineer-backend-growth-platform",
+    "company": "Affirm",
+    "title": "Staff Software Engineer, Backend (Growth Platform)",
+    "location": "Remote (US)",
+    "remote": "remote",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$225,000-$305,000 (est.)",
+    "notes": "Growth Platform team building shared backend platforms powering incentives, experimentation, personalization, data-driven decisioning. BNPL fintech, high growth."
+  },
+  {
+    "url": "https://www.dropbox.com/careers",
+    "company": "Dropbox",
+    "title": "Staff Backend Software Engineer, Commerce Platform",
+    "location": "Remote (US)",
+    "remote": "remote",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$220,000-$297,000 (est.)",
+    "notes": "Design and improve scalable backend systems for Commerce Platform. System reliability, data consistency, technical strategy influence. Virtual First company."
+  },
+  {
+    "url": "https://www.samsara.com/careers",
+    "company": "Samsara",
+    "title": "Staff Software Engineer",
+    "location": "San Francisco, CA / Remote",
+    "remote": "hybrid/remote",
+    "tier": "tier2-staff-eng",
+    "salary_range": "$200,000-$280,000 (est.)",
+    "notes": "IoT platform for physical operations. Lead and develop high-performing team. Connected operations cloud, fleet management, industrial IoT. High-growth public company."
+  }
+]

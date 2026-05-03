@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://job-boards.greenhouse.io/rapidfortinc/jobs/4193607009",
+    "company": "RapidFort",
+    "title": "Senior SDET / Sr QA Automation Engineer",
+    "location": "Remote (US)",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$120,000-$180,000",
+    "notes": "Python-based test automation for CLI-driven container security platform. 10+ years SDET/QA, pytest required. Docker/Podman, CI/CD pipeline integration. Supply chain security domain."
+  },
+  {
+    "url": "https://remotive.com/remote/jobs/qa/senior-sdet-4416978",
+    "company": "CI&T",
+    "title": "Senior SDET",
+    "location": "Remote",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$120,000-$160,000 (est.)",
+    "notes": "Multicultural digital transformation consultancy. Java/C#/Python/JS, Selenium/Cypress/TestNG. API testing with Java + HTTP client frameworks. Advanced English required."
+  },
+  {
+    "url": "https://remotive.com/remote/jobs/qa/senior-qa-engineer-4471064",
+    "company": "Autodesk",
+    "title": "Senior QA Engineer",
+    "location": "Remote (US/Canada)",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$140,000-$190,000 (est. US)",
+    "notes": "Test infrastructure for field operations platform — React web, React Native iOS/Android, Python/Django backend. Goal: eliminate manual testing. Avg Senior QA at Autodesk ~$152K."
+  },
+  {
+    "url": "https://weworkremotely.com/remote-jobs/secure-privacy-qa-engineer-ai-automation-intelligent-testing",
+    "company": "Secure Privacy",
+    "title": "QA Engineer - AI, Automation & Intelligent Testing",
+    "location": "Remote (Anywhere)",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$100,000-$150,000 (est.)",
+    "notes": "Playwright-based test automation for privacy/consent compliance platform. AI-powered testing with Claude Code, Cursor, GitHub Copilot. Azure DevOps CI/CD. DSAR workflows, OAuth2/JWT."
+  },
+  {
+    "url": "https://vastdata.com/career/database-qa-automation-engineer/",
+    "company": "VAST Data",
+    "title": "Database QA Automation Engineer",
+    "location": "Remote",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$140,000-$180,000 (est.)",
+    "notes": "Database testing infrastructure and automation tools. Linux, Python, 3-4 years experience. VAST Data median comp ~$150K. Enterprise data platform company."
+  },
+  {
+    "url": "https://www.ziprecruiter.com/Jobs/Remote-Sdet",
+    "company": "Multiple (aggregated)",
+    "title": "Staff SDET (Platform-Wide Influence)",
+    "location": "Remote (US)",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$150,000-$170,000",
+    "notes": "Staff-level IC role owning test architecture and quality frameworks. Platform-wide influence. Multiple listings at this tier across ZipRecruiter and Wellfound."
+  },
+  {
+    "url": "https://www.ziprecruiter.com/Jobs/Remote-Sdet",
+    "company": "Multiple (aggregated)",
+    "title": "Staff SDET",
+    "location": "Remote (Palo Alto-based)",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$160,000-$190,000",
+    "notes": "Palo Alto-based company, fully remote. Staff-level SDET. Strong demand for test infrastructure ownership at this level."
+  },
+  {
+    "url": "https://motionrecruitment.com/tech-jobs/qa-sdet",
+    "company": "Multiple (via Motion Recruitment)",
+    "title": "Senior QA / SDET Roles",
+    "location": "Remote (US)",
+    "remote": "remote",
+    "tier": "tier2-qa-sdet",
+    "salary_range": "$140,000-$170,000 (est.)",
+    "notes": "Staffing agency specializing in QA/SDET placements. Senior SDET avg $145K-$170K per 2026 salary guides. Contract-to-hire and permanent roles."
+  }
+]

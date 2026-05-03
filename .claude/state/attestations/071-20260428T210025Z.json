@@ -1,0 +1,84 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "5347287af025e2967e81e0aa8e762c63ad3767405ffe1bc6050d2722fce220d2",
+      "parameters": "51b0914d2750ab366210d8297885d143c1e6a6d5dbf6978af1f19067c9bc5ecc",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T17:31:56.514987+00:00",
+          "raw_input_hash": "5bdda19465d0d37490dc176c80cab8fedf0cb634587df8f4b240f60de40a6854",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-04-28T17:43:33.858010+00:00",
+          "raw_input_hash": "d97c60a22d81c0c245ed4b825613e281cf22c41409bad751a3e39645184fce1c",
+          "backlog_hash_after": "67dc56c5a51ec302e02428e724858feb9af3d2971c4144e0ff2ce0dd6176f741"
+        },
+        {
+          "rev": 3,
+          "timestamp": "2026-04-28T18:40:23.040887+00:00",
+          "raw_input_hash": "f15777b278a24c287b955c35b0e4f4221e041b77917f21583df8680e19ac7484",
+          "backlog_hash_after": "5347287af025e2967e81e0aa8e762c63ad3767405ffe1bc6050d2722fce220d2"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/attestation-showcase/gate-contract.md",
+          "sha256": "84f7dcf2427e09f429c3e3987f16bea3d05943887255fc35df7c2c293d6b8296"
+        },
+        {
+          "path": "tasks/attestation-showcase/000-index.md",
+          "sha256": "4b8ce2af8e44218509843a338edb8dc5daead228a50fc8fe1177e53df1fb89ef"
+        },
+        {
+          "path": "tasks/attestation-showcase/001-build-create-feature-branch.md",
+          "sha256": "0d3a30d16c336e823b59713d7d78ee31571c0c137466cd71157e3460e1799b96"
+        },
+        {
+          "path": "tasks/attestation-showcase/002-build-write-attestation-css.md",
+          "sha256": "3fb532099420219731330de52e6a825d925ec96cc8bd3dc3459fa95167de7cba"
+        },
+        {
+          "path": "tasks/attestation-showcase/003-build-write-attestation-html.md",
+          "sha256": "05374143f94b3dccc7fe92be67c5801df8aba98f3494966d8e30278215567556"
+        },
+        {
+          "path": "tasks/attestation-showcase/004-build-update-index-link.md",
+          "sha256": "32203f918d8c657ac3763b2627f098a7070d694a8466fe1491cd95dd75df5cb1"
+        },
+        {
+          "path": "tasks/attestation-showcase/005-test-visual-playwright.md",
+          "sha256": "cd36fea94d787d347f35fc616be8e48405fa97900376da7f1385195096f22d17"
+        },
+        {
+          "path": "tasks/attestation-showcase/006-build-commit-files.md",
+          "sha256": "3b8fec6b6bf2dcb48c4d2c42bef9ab48a11b7487c2a4abb735e542d543d09d74"
+        },
+        {
+          "path": "tasks/attestation-showcase/gate-contract.md",
+          "sha256": "84f7dcf2427e09f429c3e3987f16bea3d05943887255fc35df7c2c293d6b8296"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T21:00:25.418819+00:00",
+      "end": "2026-04-28T21:00:25.418819+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/071-market-build-portfolio-attestation-showcase.md",
+      "task_folder": "tasks/attestation-showcase/",
+      "task_count": 6,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1397985690",
+      "logIndex": "1397985690"
+    }
+  }
+}

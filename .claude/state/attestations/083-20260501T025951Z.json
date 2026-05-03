@@ -1,0 +1,35 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "310795ab006d5a84b776b6043773d920866b794c1b05977ae3c299a8bf1d1aa1",
+      "parameters": "",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-30T23:33:15.651781+00:00",
+          "raw_input_hash": "5fb321b0c417387987f845f32a16812d4d28dc1641f747cf637d707994dc9aaa",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": []
+    },
+    "timestamp": {
+      "start": "2026-05-01T02:59:51.414013+00:00",
+      "end": "2026-05-01T02:59:51.414013+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/083-domain-build-ssh-soc2-validator.md",
+      "task_folder": "inline",
+      "task_count": 9,
+      "completed_count": 9,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1416855229",
+      "logIndex": "1416855229"
+    }
+  }
+}

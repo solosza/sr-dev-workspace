@@ -1,0 +1,9 @@
+{
+  "reviewed": true,
+  "review_cycles": 1,
+  "checks_passed": ["gate_coverage", "structural_integrity", "test_completeness"],
+  "checks_skipped": ["path_consistency", "convention_compliance"],
+  "checks_skipped_reason": "Not a platform build from template — no _context/path-mapping.json",
+  "checks_failed": [],
+  "fixes_applied": []
+}

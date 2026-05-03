@@ -27,21 +27,21 @@ Update protocol AND hooks after fixing any failure. Make the same mistake imposs
    If the lesson reveals a pattern worth codifying:
 
    a. **Read the protocol index** (`.claude/protocols/[domain]-protocol.md`) to discover what reference files exist
-   b. **Check for domain pack** — look for `.claude/skills/*-domain-pack/` or domain pack references in the protocol index
+   b. **Check for domain spec** — look for `.claude/skills/` domain spec folders or domain spec references in the protocol index
    c. **Follow the appropriate path:**
 
-   **Domain pack present** — the pack defines the reference structure. Follow it:
-   - Match the lesson to the pack's reference files (anti-patterns, quality gates, etc.)
-   - Write directly — domain pack mappings are pre-approved by the pack author
-   - Stay consistent with the pack's existing format and conventions
+   **Domain spec present** — the spec defines the reference structure. Follow it:
+   - Match the lesson to the spec's reference files (anti-patterns, quality gates, etc.)
+   - Write directly — domain spec mappings are pre-approved by the spec author
+   - Stay consistent with the spec's existing format and conventions
 
-   **No domain pack** — generic/vanilla kernel. Discover dynamically:
+   **No domain spec** — generic/vanilla kernel. Discover dynamically:
    - Determine which reference file the lesson applies to (if any)
    - Propose the update to the user — state which file, what you'd add, and why
    - Only write after user approves
    - If no existing reference file fits, propose a new one
 
-   The human is the source of truth. Domain packs encode pre-approved human expertise.
+   The human is the source of truth. Domain specs encode pre-approved human expertise.
 
 4. **Update hooks if enforceable:**
 
@@ -52,12 +52,44 @@ Update protocol AND hooks after fixing any failure. Make the same mistake imposs
    PROTECTED_PATHS['new/path/'] = 'new_state_key'
    ```
 
-5. **Create new command if recurring:**
+5. **Recurrence Check:**
+
+   After recording the lesson, run the recurrence detection pipeline:
+
+   a. **Generate fingerprint:**
+      ```python
+      from lessons.schema import generate_fingerprint
+      pattern_key = generate_fingerprint(issue, root_cause)
+      ```
+
+   b. **Track recurrence:**
+      ```python
+      from lessons.recurrence import RecurrenceTracker
+      tracker = RecurrenceTracker()
+      count = tracker.record(lesson)
+      ```
+
+   c. **Check threshold and escalate if needed:**
+      ```python
+      from lessons.alerts import check_threshold, escalate
+      if check_threshold(tracker, pattern_key):
+          message = escalate(pattern_key, count, issue)
+          # Include escalation alert in the report output
+      ```
+
+   d. **Notify integrations (when ready):**
+      ```python
+      from lessons.integrations import notify_tiered_decay, notify_skill_extraction
+      notify_tiered_decay(pattern_key, count)
+      notify_skill_extraction(pattern_key, count, issue, fix)
+      ```
+
+6. **Create new command if recurring:**
 
    If this is a pattern that needs checking:
    - Create `.claude/commands/[domain]-check-[issue].md`
 
-6. **Update state:**
+7. **Update state:**
 
    Update `.claude/state/session_state.json`:
    ```json
@@ -78,13 +110,17 @@ Update protocol AND hooks after fixing any failure. Make the same mistake imposs
    }
    ```
 
-7. **Report:**
+8. **Report:**
    ```
    LESSON RECORDED
 
    Issue: [what failed]
    Root Cause: [why]
    Fix: [how resolved]
+
+   Pattern Key: [fingerprint]
+   Recurrence Count: [N]
+   Escalation: [yes/no — if yes, include escalation message]
 
    Lesson file updated: .claude/lessons/lessons.md
    Reference files updated:

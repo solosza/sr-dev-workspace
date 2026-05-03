@@ -1,0 +1,52 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "1eb8a41f5a9d68b3c025be4fc1eb14380b95d8b36ec1625dbd176c76bd8ab1ef",
+      "parameters": "82a3b9c12e05fe1fd52ca87e3f306501287b00bb2a9b8eee651be39bf89377d5",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T10:07:12.751692+00:00",
+          "raw_input_hash": "e12834aec4e181e70527e5ca142bfb4949a81ff609b5d1940499284cd8037e40",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/claude-code-course/gate-contract.md",
+          "sha256": "953480357314cff216f4e950db1aaab3e61ccf1a7d70e6b31d0624ac0da475de"
+        },
+        {
+          "path": "tasks/claude-code-course/000-index.md",
+          "sha256": "d106f885dae4fcc598d516bf30234b5c2c2732184b7e9b01f5c3f872e75b4948"
+        },
+        {
+          "path": "tasks/claude-code-course/001-research-write-report.md",
+          "sha256": "4149188ab136b2c3fa87686b7dc6bb1497ce6215bc11d4906990225237498bd5"
+        },
+        {
+          "path": "tasks/claude-code-course/gate-contract.md",
+          "sha256": "953480357314cff216f4e950db1aaab3e61ccf1a7d70e6b31d0624ac0da475de"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T11:13:43.620805+00:00",
+      "end": "2026-04-28T11:13:43.621142+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/066-market-research-claude-code-course-content.md",
+      "task_folder": "tasks/claude-code-course/",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1397952829",
+      "logIndex": "1397952829"
+    }
+  }
+}

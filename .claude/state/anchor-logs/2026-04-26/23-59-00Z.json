@@ -1,0 +1,283 @@
+{
+  "anchor_timestamp": "2026-04-26T23:59:00Z",
+  "actions_count": 46,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-04-26T14:06:52Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json, sys, os\n\nbase = 'D:/my_ai_projects/project_test_repos/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:07:10Z",
+      "tool": "Bash",
+      "entry": "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && python -c \"import ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:07:11Z",
+      "tool": "Bash",
+      "entry": "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && python -c \"import ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:07:12Z",
+      "tool": "Bash",
+      "entry": "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && python -c \"import ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:07:14Z",
+      "tool": "Bash",
+      "entry": "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && python -c \"import ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:07:15Z",
+      "tool": "Bash",
+      "entry": "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && python -c \"import ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:07:55Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:08:00Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"C:\\Users\\solos\\AppData\\Local\\Temp\\claude\\D--my-ai-projects-project-test-rep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:10:10Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:10:20Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/career-role-matc",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:10:24Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/career",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:10:34Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -lt \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/anch",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:10:50Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -lt \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/care",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:10:58Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/036-marke",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T14:11:37Z",
+      "tool": "Bash",
+      "entry": "Bash: cd \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" && env -u CLAUDECODE ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:29:30Z",
+      "tool": "Bash",
+      "entry": "Bash: tail -50 \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-tes",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:29:34Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:29:38Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-rep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:29:46Z",
+      "tool": "Bash",
+      "entry": "Bash: tasklist 2>/dev/null | grep -i \"claude\\|node\\|bash\" | head -10",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:29:52Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/career-ro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:29:57Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/career-ro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:30:03Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import json; d=json.load(open('D:/my_ai_projects/project_test_repos/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:30:09Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/036\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:30:44Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"tasks/kernel-architecture/_context\" \"tasks/kernel-architecture/_test\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:30:54Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:00Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:07Z",
+      "tool": "Write",
+      "entry": "Write: 001-build-create-project-dir.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:12Z",
+      "tool": "Write",
+      "entry": "Write: 002-research-analyze-website-cloner.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:15Z",
+      "tool": "Write",
+      "entry": "Write: 003-research-analyze-fraud-detector.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:20Z",
+      "tool": "Write",
+      "entry": "Write: 004-research-analyze-portfolio-hybrid.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:24Z",
+      "tool": "Write",
+      "entry": "Write: 005-research-generation-skills-gap.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:28Z",
+      "tool": "Write",
+      "entry": "Write: 006-research-skill-composability.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:32Z",
+      "tool": "Write",
+      "entry": "Write: 007-build-write-decision-framework.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:36Z",
+      "tool": "Write",
+      "entry": "Write: 008-build-write-generation-skill-design.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:39Z",
+      "tool": "Write",
+      "entry": "Write: 009-build-write-research-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:43Z",
+      "tool": "Write",
+      "entry": "Write: 010-test-l1-verify-deliverables.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:45Z",
+      "tool": "Write",
+      "entry": "Write: 011-test-l2-verify-completeness.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:33:41Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:34:04Z",
+      "tool": "Bash",
+      "entry": "Bash: head -5 \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/run-task.sh\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:35Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/\" | grep -i swar",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:43Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/agent-swar",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:45Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:45Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/kernel-architect",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:51Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:53Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:57Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    }
+  ]
+}

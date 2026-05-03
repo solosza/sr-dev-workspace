@@ -25,6 +25,23 @@ Run the inner test tasks inside the test repo via `run-task.sh`.
    - Marks complete via /kernel/complete
    - Exits
 
+   **NOTE:** If prod-test is invoked from a terminal or via `run-task.sh`, this works directly —
+   bash has no `CLAUDECODE` env var, so `claude -p` nesting is not blocked.
+
+   **If invoked from an interactive Claude session:** You MUST use a background Agent with
+   `env -u CLAUDECODE` to strip the blocking env var. Same pattern as execute-pipeline step 4:
+
+   ```
+   Agent(
+     description: "Execute prod-test inner tasks via run-task.sh",
+     prompt: "Run: env -u CLAUDECODE bash [test_path]/run-task.sh [test_path] [count+2] prod-test",
+     run_in_background: true
+   )
+   ```
+
+   Interactive sessions set `CLAUDECODE=1` which blocks nested `claude -p`. The background
+   Agent + `env -u CLAUDECODE` creates a decoupled subprocess where `claude -p` works normally.
+
 3. **Wait for completion:**
    - run-task.sh reports `ALL_TASKS_COMPLETE` or exits with failure
    - Do NOT poll — wait for the process to finish

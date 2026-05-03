@@ -1,0 +1,43 @@
+{
+  "company": "Hugging Face",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "ML Research Engineer, AI Agents",
+      "url": "https://apply.workable.com/huggingface/",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "requirements": [
+        "AI agent research and development",
+        "Open-source ML platform experience",
+        "Machine learning and NLP expertise",
+        "PyTorch or TensorFlow proficiency",
+        "Git and version control"
+      ]
+    },
+    {
+      "title": "Cloud Machine Learning Engineer",
+      "url": "https://apply.workable.com/huggingface/",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "requirements": [
+        "ML solutions with cloud technologies",
+        "Model integration and API design",
+        "Documentation and community advocacy",
+        "Cloud ML infrastructure"
+      ]
+    },
+    {
+      "title": "Cloud ML DevRel Engineer",
+      "url": "https://apply.workable.com/huggingface/",
+      "location": "EMEA (Remote)",
+      "remote": true,
+      "requirements": [
+        "Developer relations for ML cloud products",
+        "Technical content and community building",
+        "ML platform evangelism",
+        "Open-source community engagement"
+      ]
+    }
+  ]
+}

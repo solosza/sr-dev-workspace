@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-04-28T11:20:00Z",
+  "actions_count": 20,
+  "violations_found": 0,
+  "actions": [
+    {"tool": "Write", "entry": "verification-walkthrough.md (agent-attestation-spec)"},
+    {"tool": "Bash", "entry": "dry-run self-test attest.py"},
+    {"tool": "Bash", "entry": "find agent-attestation-spec files"},
+    {"tool": "Bash", "entry": "attestation for pipeline 059"},
+    {"tool": "Bash", "entry": "move 059 to done + completed"},
+    {"tool": "Bash", "entry": "mkdir qa-platform-site folders"},
+    {"tool": "Write", "entry": "qa-platform-site research report"},
+    {"tool": "Bash", "entry": "task files for 060"},
+    {"tool": "Bash", "entry": "verify gate contract 060"},
+    {"tool": "Bash", "entry": "attestation for pipeline 060"},
+    {"tool": "Bash", "entry": "move 060 to done + completed"},
+    {"tool": "Bash", "entry": "mkdir vibe-coder-site folders"},
+    {"tool": "Write", "entry": "vibe-coder-site research report"},
+    {"tool": "Bash", "entry": "task files for 062"},
+    {"tool": "Bash", "entry": "attestation for pipeline 062"},
+    {"tool": "Bash", "entry": "move 062 to done + completed"},
+    {"tool": "Bash", "entry": "mkdir game-dev-site folders"},
+    {"tool": "Write", "entry": "game-dev-site research report"},
+    {"tool": "Bash", "entry": "task files for 063"},
+    {"tool": "Bash", "entry": "attestation for 063 (blocked by hook)"}
+  ]
+}

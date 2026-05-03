@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-04-09T00:02:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    "Bash: ls tasks/fraud-detection-app/",
+    "Bash: ls fraud-detection-app/src/pipeline/",
+    "Bash: ls fraud-detection-app/src/",
+    "Bash: ls entity/ and reporting/",
+    "Write: layer2_entity_verification.py",
+    "Bash: test -f layer2_entity_verification.py",
+    "Bash: grep -q class EntityVerification",
+    "Bash: grep -c verify_entity and checks"
+  ]
+}

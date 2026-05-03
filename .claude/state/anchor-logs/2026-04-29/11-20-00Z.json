@@ -1,0 +1,25 @@
+{
+  "anchor_timestamp": "2026-04-29T11:20:00Z",
+  "actions_count": 18,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-29T11:01:47Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:03:04Z", "tool": "Bash", "entry": "Bash: git diff HEAD -- ssh-compliance.html"},
+    {"timestamp": "2026-04-29T11:03:09Z", "tool": "Bash", "entry": "Bash: git diff HEAD -- ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:03:10Z", "tool": "Bash", "entry": "Bash: git diff HEAD -- ssh-compliance.js"},
+    {"timestamp": "2026-04-29T11:03:32Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html"},
+    {"timestamp": "2026-04-29T11:03:47Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:03:52Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:04:11Z", "tool": "Edit", "entry": "Edit: ssh-compliance.js"},
+    {"timestamp": "2026-04-29T11:08:18Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html"},
+    {"timestamp": "2026-04-29T11:09:03Z", "tool": "Edit", "entry": "Edit: ssh-compliance.js"},
+    {"timestamp": "2026-04-29T11:09:10Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:10:02Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html"},
+    {"timestamp": "2026-04-29T11:10:17Z", "tool": "Edit", "entry": "Edit: ssh-compliance.js"},
+    {"timestamp": "2026-04-29T11:10:39Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:11:21Z", "tool": "Bash", "entry": "Bash: grep scan-row ssh-compliance.css"},
+    {"timestamp": "2026-04-29T11:12:02Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html"},
+    {"timestamp": "2026-04-29T11:17:22Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css — bump scan-row font size"},
+    {"timestamp": "2026-04-29T11:17:26Z", "tool": "Edit", "entry": "Edit: ssh-compliance.css — bump badge font size"}
+  ]
+}

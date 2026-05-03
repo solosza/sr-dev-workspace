@@ -1,0 +1,1 @@
+{"anchor_timestamp": "2026-04-25T24:05:00Z", "actions_count": 1, "violations_found": 0, "actions": [{"timestamp": "2026-04-25T23:57:05Z", "tool": "Bash", "entry": "Bash: grep -n skip_plan_review in step-03"}]}

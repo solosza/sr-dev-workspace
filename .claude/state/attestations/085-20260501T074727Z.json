@@ -1,0 +1,116 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "f982e6a4702f052404c23a2e9dc69513525913bc1440da2d30e5ad9983aa474c",
+      "parameters": "3ca41de7aa1a8e48d5407ba3885ccaf23185d799ee4826b01c1ca97b05cfdc4d",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-01T03:46:51.817793+00:00",
+          "raw_input_hash": "b2298016c64949fe0b68de5e9e34a54b51e086088d79783f7f10d0bb455d3129",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "projects/kernel-architecture/agent-swarms-harness-fit.md",
+          "sha256": "e091372a425e150cb052dc9817eaccd6229102a991a2d2c7f08129f3caf54be4"
+        },
+        {
+          "path": "projects/kernel-architecture/analysis-composability.md",
+          "sha256": "fb81ac554e55cd02f2db97dd32e46389a0798229207807f76880175952c5f623"
+        },
+        {
+          "path": "projects/kernel-architecture/analysis-fraud-detector.md",
+          "sha256": "b384e064e050a0d8bca569d40f2c17e97e7874d90e16f860ad66bef05bbbc91d"
+        },
+        {
+          "path": "projects/kernel-architecture/analysis-generation-gap.md",
+          "sha256": "98f1a23a453d286d194bddb5e1969b0e0f3baaee1df0e94bb7917158e5df4db1"
+        },
+        {
+          "path": "projects/kernel-architecture/analysis-portfolio-hybrid.md",
+          "sha256": "60c5c202c24ab1c689c82cddfe7d87d8480d7dc4d89200da327f636541850c58"
+        },
+        {
+          "path": "projects/kernel-architecture/analysis-website-cloner.md",
+          "sha256": "36f69b1a23143d26a810881fe50944ff62f1fa25cdd3b332d8f6b8540a6c7deb"
+        },
+        {
+          "path": "projects/kernel-architecture/artifact-versioning-report.md",
+          "sha256": "a7821edf87b33ddad36c49a5c5ad0507b1171dd5c3434c1b900f4f4d9f24bf99"
+        },
+        {
+          "path": "projects/kernel-architecture/decision-framework.md",
+          "sha256": "5394c86ac841991707c1ae95ac7c56db3d334ef4e25eb399463f3afca8d0a7fd"
+        },
+        {
+          "path": "projects/kernel-architecture/generation-skill-design.md",
+          "sha256": "31a73d1089df85b2aefca788e00a47c4ffec5d6a44cf13832ba89fde11693d85"
+        },
+        {
+          "path": "projects/kernel-architecture/kernel-manifest-schema.json",
+          "sha256": "9e366375fc588d7861d42ccfb2be8c4dc87d64df733e7b611077700ec26cb765"
+        },
+        {
+          "path": "projects/kernel-architecture/loop-portability-research.md",
+          "sha256": "f6cf60efc44745efa77988c9c12e0ab1aa6eda27ac0d32d03cbefdc8da003340"
+        },
+        {
+          "path": "projects/kernel-architecture/report.md",
+          "sha256": "cddf21ad11b15719f42e59b9ff7cd5768d5cbea3fd7064028746370cf975a004"
+        },
+        {
+          "path": "projects/kernel-architecture/skill-as-app-research.md",
+          "sha256": "ee70a182724ce72d90dfa193c4ef6f350cd805001d5937840274d5bb28ec2e9e"
+        },
+        {
+          "path": "projects/kernel-architecture/ssh-compliance-spec-decomposition.md",
+          "sha256": "0f3b343be3ee796c557c33aecd50f918251382fdf799a576c0223f3807dbe7b1"
+        },
+        {
+          "path": "projects/kernel-architecture/swarms-architectural-gaps.md",
+          "sha256": "701935500367535e35793972e013e5001068e0d8a3271242bb9f5a200a948f99"
+        },
+        {
+          "path": "projects/kernel-architecture/swarms-codebase-mapping.md",
+          "sha256": "970586edcd3d5146d9f292bc627b0cf09cac015da7977332762db6d44856e358"
+        },
+        {
+          "path": "projects/kernel-architecture/swarms-competitor-analysis.md",
+          "sha256": "4b699a0a6b9545705a39968255528febc5a70994ea36c8b56b4a07efcb99dda9"
+        },
+        {
+          "path": "projects/kernel-architecture/swarms-dedicated-jobs.md",
+          "sha256": "0b6e1c3440ab956edf77bdab61f375e98eba31ce80e97f0856b064320501df81"
+        },
+        {
+          "path": "projects/kernel-architecture/swarms-moat-assessment.md",
+          "sha256": "3b33c408bddd24e920c6f576fbbe4c7d2e40dc72781bee44f72778396a7e6878"
+        },
+        {
+          "path": "projects/kernel-architecture/swarms-viral-hooks.md",
+          "sha256": "f32dc5136e1193692fe5aafdb7a23412f5d2572c467444ca10c1d23dccd0cca0"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-01T07:47:27.500379+00:00",
+      "end": "2026-05-01T07:47:27.507010+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/085-kernel-research-ssh-compliance-spec-decomposition.md",
+      "task_folder": "projects/kernel-architecture/",
+      "task_count": 9,
+      "completed_count": 9,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1417401476",
+      "logIndex": "1417401476"
+    }
+  }
+}

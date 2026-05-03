@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-04-26T12:00:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T18:45:24Z", "tool": "Bash", "entry": "Bash: python script to read actions.jsonl"},
+    {"timestamp": "2026-04-26T18:46:17Z", "tool": "Bash", "entry": "Bash: ls completed portfolio tasks"},
+    {"timestamp": "2026-04-26T18:47:16Z", "tool": "Write", "entry": "Write: analysis-portfolio-hybrid.md"},
+    {"timestamp": "2026-04-26T18:47:21Z", "tool": "Bash", "entry": "Bash: test -f projects/kernel-architecture/ file"},
+    {"timestamp": "2026-04-26T18:47:38Z", "tool": "Bash", "entry": "Bash: test -f tasks/kernel-architecture/ file"}
+  ]
+}

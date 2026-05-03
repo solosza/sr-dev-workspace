@@ -1,0 +1,18 @@
+{
+  "anchor_timestamp": "2026-05-01T12:06:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-01T11:32:30Z", "tool": "Bash", "entry": "state update python"},
+    {"timestamp": "2026-05-01T11:32:48Z", "tool": "Bash", "entry": "state update python"},
+    {"timestamp": "2026-05-01T11:32:52Z", "tool": "Bash", "entry": "state update python"},
+    {"timestamp": "2026-05-01T11:33:05Z", "tool": "Bash", "entry": "find tasks/vibe-coder-showcase"},
+    {"timestamp": "2026-05-01T11:33:14Z", "tool": "Bash", "entry": "state update python"},
+    {"timestamp": "2026-05-01T11:33:22Z", "tool": "Bash", "entry": "run-task.sh background agent"},
+    {"timestamp": "2026-05-01T11:33:35Z", "tool": "Bash", "entry": "ls anchor-logs"},
+    {"timestamp": "2026-05-01T11:33:44Z", "tool": "Bash", "entry": "grep LOG_DIR in hooks"},
+    {"timestamp": "2026-05-01T11:33:56Z", "tool": "Bash", "entry": "ls vibe-coder state"},
+    {"timestamp": "2026-05-01T11:34:08Z", "tool": "Bash", "entry": "ls completed tasks"},
+    {"timestamp": "2026-05-01T11:34:12Z", "tool": "Bash", "entry": "ls backlog done 074"}
+  ]
+}

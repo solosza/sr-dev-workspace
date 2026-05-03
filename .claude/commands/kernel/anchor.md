@@ -13,6 +13,11 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
 1. **Read protocol (USE READ TOOL):**
    - Open `.claude/protocols/[domain]-protocol.md`
    - Read entire file — use the Read tool, not memory
+   - **Compute protocol hash** — run:
+     ```bash
+     python -c "import hashlib; print(hashlib.sha256(open('.claude/protocols/[domain]-protocol.md','rb').read()).hexdigest())"
+     ```
+     Save the output for Step 14 (protocol_hash field in session_state.json).
 
 2. **Summarize key points:**
    - Architecture patterns
@@ -44,11 +49,12 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
 **CRITICAL: If `actions_since_anchor > 0` in workflow state, there IS work to review. NEVER claim "no new work" when the counter is non-zero.**
 
 6. **Read the actions log:**
-   - Read `actions_log` array from `session_state.json`
-   - This is the itemized ledger of every action since the last anchor
+   - Read `.claude/state/actions.jsonl` — each line is a JSON object with `timestamp`, `tool`, `entry` fields
+   - This is the authoritative, append-only ledger of every action since the last anchor
    - Every Edit, Write, Bash, Task, and Read that modified state IS work
    - Cross-repo actions ARE work
    - State file updates ARE work
+   - Note: `actions_log` in session_state.json is a backward-compatible summary (last 10 entries only) — always prefer actions.jsonl
 
 7. **Review each action against protocol:**
 
@@ -97,12 +103,13 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
    - MERGE into existing state, don't overwrite other keys
 
 11. **Archive and reset actions log:**
-    - Read current `actions_log` from `session_state.json`
+    - Read `.claude/state/actions.jsonl` (authoritative log)
     - If log is non-empty, archive it:
       - Path: `.claude/state/anchor-logs/YYYY-MM-DD/HH-MM-SSZ.json`
       - Content: `{ "anchor_timestamp": "...", "actions_count": N, "violations_found": 0, "actions": [...] }`
       - Create date subfolder if it doesn't exist
-    - Clear the `actions_log` array in `session_state.json` (set to `[]`)
+    - truncate `actions.jsonl` to empty (write empty string)
+    - Clear `actions_log` array in `session_state.json` to `[]` (backward-compatible summary)
     - The log resets each anchor — new actions get appended as they happen
 
 12. **State current task:**
@@ -131,7 +138,9 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
     ```json
     {
       "anchor_token_confirmed": true,
-      "pending_anchor_token": null
+      "pending_anchor_token": null,
+      "protocol_hash": "<sha256 hex digest from Step 1>",
+      "protocol_hash_timestamp": "<ISO timestamp>"
     }
     ```
 

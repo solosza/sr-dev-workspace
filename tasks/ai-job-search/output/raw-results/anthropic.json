@@ -1,0 +1,65 @@
+{
+  "company": "Anthropic",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "Software Engineer, Agents Infrastructure",
+      "url": "https://boards.greenhouse.io/anthropic/jobs/4138401008",
+      "location": "San Francisco, CA / New York City, NY",
+      "remote": false,
+      "requirements": [
+        "Design and implement secure, scalable sandboxed execution environments for AI agents",
+        "Containerization technologies experience",
+        "Building infrastructure and SDKs for LLM-based agents",
+        "Developing sandboxed code execution environments and tool use SDKs"
+      ]
+    },
+    {
+      "title": "Staff+ Software Engineer, Infrastructure",
+      "url": "https://www.anthropic.com/careers/jobs/4970314008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Massive cluster training infrastructure",
+        "Production infrastructure serving millions of users",
+        "Developer platforms for engineering velocity",
+        "Novel scaling challenges at the frontier"
+      ]
+    },
+    {
+      "title": "Sr. Software Engineer, Infrastructure",
+      "url": "https://boards.greenhouse.io/anthropic/jobs/4034864008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Data Infrastructure: Spark, Airflow, dbt across GCP and AWS",
+        "Core Infrastructure: Large Kubernetes clusters with GPU/TPU/Trainium workloads",
+        "Developer Productivity: Secure, efficient development tooling",
+        "Product Infrastructure: Performance, reliability, developer velocity"
+      ]
+    },
+    {
+      "title": "Security Software Engineer, D&R Platform",
+      "url": "https://www.anthropic.com/careers/jobs/4595463008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Detection and response platform engineering",
+        "Security software engineering",
+        "Platform security infrastructure"
+      ]
+    },
+    {
+      "title": "Software Engineer, Accelerator Build Infrastructure",
+      "url": "https://www.anthropic.com/careers/jobs/4943668008",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Build infrastructure and low-level systems optimization",
+        "Compilation processes and hardware-software interfaces",
+        "Build systems expertise",
+        "System-level debugging and optimization"
+      ]
+    }
+  ]
+}

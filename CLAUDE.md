@@ -97,6 +97,7 @@ After `/kernel/domain-setup` creates new hooks:
 ├── complete.md            ← Final gate (before done) + cycling continuation
 ├── autonomous-cycle.md    ← Start cycling through tasks (user-invoked)
 ├── task-builder.md        ← Decompose goal into tasks + auto-execute (user-invoked)
+├── execute-pipeline.md    ← Backlog → tasks → run-task.sh (fully autonomous)
 ├── backlog.md             ← Create backlog item in standard format (user-invoked)
 ├── audit-workflow.md      ← Scan for gaps + auto-fix (user-invoked)
 ├── prod-test.md           ← Production test a deliverable repo (modular, stackable)

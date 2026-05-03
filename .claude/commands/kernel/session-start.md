@@ -68,7 +68,12 @@ Check state and resume if needed. Always invoke first.
 
 6. **Force anchor on fresh start (MERGE — read → modify → write):**
 
-   If NOT resuming from restart (i.e., `needs_restart` was false or missing):
+   **one_shot guard:** If `one_shot: true` in session_state.json, **SKIP this entire step.**
+   One-shot agents (spawned by run-task.sh) must not reset the parent's anchor state.
+   They inherit the parent's `anchored: true` and proceed without re-anchoring.
+   This prevents the state contention bug where sub-agents invalidate the parent's anchor.
+
+   If NOT resuming from restart AND NOT one_shot (i.e., `needs_restart` was false or missing, AND `one_shot` is false or missing):
 
    **Merge pattern (MANDATORY):**
    1. Read `[domain]_workflow.json` into a variable

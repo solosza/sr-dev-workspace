@@ -1,0 +1,48 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "a4d667bda59b63eb8005cb53a689959cb6112dec8ae5392035ecabcf18c2b925",
+      "parameters": "cbcfb6e53d54ae8abc96f0c19854c870f918ae7d1e085435eb7bcbd4a8bbd3c1",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T09:49:55.702266+00:00",
+          "raw_input_hash": "4a7d530087ff1103d9b377056bbf4588a78c62a1df0a05689b3253963a5bdd78",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/game-content-pipeline/gate-contract.md",
+          "sha256": "062e4187cff2e5477e666531ed897f06eea0489b03724aec9a6d11899dd55a6d"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/game-content-pipeline/000-index.md",
+          "sha256": "6d743cec4d1f3a17f36e6e5490116d0420132114c15a65a246bc89a899750080"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/game-content-pipeline/gate-contract.md",
+          "sha256": "062e4187cff2e5477e666531ed897f06eea0489b03724aec9a6d11899dd55a6d"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T11:04:02.188200+00:00",
+      "end": "2026-04-28T11:04:02.188200+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/064-market-research-autonomous-game-content-pipeline.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/game-content-pipeline/",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1397952425",
+      "logIndex": "1397952425"
+    }
+  }
+}

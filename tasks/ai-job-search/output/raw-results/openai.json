@@ -1,0 +1,66 @@
+{
+  "company": "OpenAI",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "Software Engineer, Agent Infrastructure",
+      "url": "https://openai.com/careers/software-engineer-agent-infrastructure-san-francisco/",
+      "location": "San Francisco, CA / New York City, NY",
+      "remote": false,
+      "requirements": [
+        "Container orchestration platform beyond Kubernetes",
+        "FastAPI and gRPC APIs",
+        "Terraform for complex infrastructure",
+        "Building systems for training and deployment of AI agents",
+        "Hybrid: 3 days in office per week"
+      ]
+    },
+    {
+      "title": "Software Engineer, Codex Core Agents",
+      "url": "https://openai.com/careers/software-engineer-codex-core-agents-san-francisco/",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Infrastructure for running, testing, debugging model-generated code",
+        "State and memory systems for agent context persistence",
+        "Optimize tokens, latency, reliability, cost",
+        "Backend systems, APIs, and developer tooling",
+        "Shared platform capabilities for product teams and open source"
+      ]
+    },
+    {
+      "title": "Software Engineer, Computer-Using Agent",
+      "url": "https://openai.com/careers/software-engineer-computer-using-agent/",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Systems for model control of operating systems and browsers",
+        "CUA-specific containers on high-scale Kubernetes clusters",
+        "Terraform for large-scale infrastructure",
+        "RL training environments",
+        "Secure agent execution environments"
+      ]
+    },
+    {
+      "title": "Software Engineer, Enterprise AI Platform",
+      "url": "https://openai.com/careers/software-engineer-enterprise-ai-platform-san-francisco/",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Foundational data and processing stack for OpenAI API",
+        "Infrastructure for serving latest models and agentic workflows",
+        "Enterprise platform engineering"
+      ]
+    },
+    {
+      "title": "Client Platform Engineer",
+      "url": "https://openai.com/careers/client-platform-engineer-remote-us/",
+      "location": "Remote, US",
+      "remote": true,
+      "requirements": [
+        "Client platform engineering",
+        "Remote position available across US"
+      ]
+    }
+  ]
+}

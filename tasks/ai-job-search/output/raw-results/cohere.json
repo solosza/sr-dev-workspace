@@ -1,0 +1,53 @@
+{
+  "company": "Cohere",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "Senior Software Engineer, Agent Infrastructure",
+      "url": "https://jobs.ashbyhq.com/cohere",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "requirements": [
+        "Agent infrastructure development",
+        "LLM-based agent systems",
+        "Scalable infrastructure design",
+        "Python proficiency"
+      ]
+    },
+    {
+      "title": "Forward Deployed Engineer, Agentic Platform (Public Sector)",
+      "url": "https://jobs.ashbyhq.com/cohere",
+      "location": "Ottawa, Canada (Hybrid)",
+      "remote": false,
+      "requirements": [
+        "Building and shipping AI workspace platform features",
+        "Developing autonomous agents",
+        "End-to-end deployment management",
+        "Client-facing engineering"
+      ]
+    },
+    {
+      "title": "Software Engineer, GPU Infrastructure",
+      "url": "https://jobs.ashbyhq.com/cohere",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "requirements": [
+        "Building and operating Kubernetes GPU superclusters",
+        "AI workload infrastructure optimization",
+        "System stability and performance improvement"
+      ]
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "url": "https://jobs.ashbyhq.com/cohere",
+      "location": "Toronto, Canada (Remote)",
+      "remote": true,
+      "requirements": [
+        "Developing, deploying, and operating AI infrastructure",
+        "High-performance ML systems",
+        "Kubernetes and cloud platforms",
+        "Scalable infrastructure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "company": "Scale AI",
+  "search_date": "2026-04-05",
+  "jobs": [
+    {
+      "title": "Staff Software Engineer, Full-Stack - Enterprise Gen AI",
+      "url": "https://scale.com/careers/4529529005",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "requirements": [
+        "GenAI Platform development",
+        "AI-driven agent building, deployment, and management",
+        "Full-stack development",
+        "Enterprise AI solutions"
+      ]
+    },
+    {
+      "title": "Software Engineer, Gen AI",
+      "url": "https://scale.com/careers/4591300005",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "remote": false,
+      "requirements": [
+        "End-to-end feature design and implementation",
+        "TypeScript, MongoDB, Elasticsearch",
+        "Compute orchestration with Temporal",
+        "High-impact technical systems"
+      ]
+    },
+    {
+      "title": "Software Engineer - Public Sector (Agentic Systems)",
+      "url": "https://scale.com/careers",
+      "location": "San Francisco, CA / Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Scalable backend systems for Federal customers",
+        "Cloud-native AI infrastructure",
+        "Agentic systems with multi-layered guardrails",
+        "Data pipelines and ML infrastructure for agents",
+        "Data retrieval optimization"
+      ]
+    },
+    {
+      "title": "Senior Software Engineer - Agent-Powered Data Products",
+      "url": "https://scale.com/careers",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "requirements": [
+        "Agent-powered data product development",
+        "End-to-end product ownership (frontend to backend)",
+        "AI and intelligent workflows",
+        "Full stack proficiency"
+      ]
+    },
+    {
+      "title": "Applied AI Engineer (Public Sector)",
+      "url": "https://scale.com/careers",
+      "location": "Washington, D.C.",
+      "remote": false,
+      "requirements": [
+        "Building AI applications for public sector",
+        "Dataset creation and evaluation",
+        "LLM integration and agentic workflows",
+        "RAG and agent orchestration"
+      ]
+    }
+  ]
+}

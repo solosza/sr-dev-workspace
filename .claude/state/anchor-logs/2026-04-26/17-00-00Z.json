@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-04-26T17:00:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T19:09:00Z", "tool": "Write", "entry": "Write: report.md"},
+    {"timestamp": "2026-04-26T19:09:09Z", "tool": "Bash", "entry": "Bash: test -f report.md (BUILD-04 gate)"},
+    {"timestamp": "2026-04-26T19:09:21Z", "tool": "Bash", "entry": "Bash: grep -q website-cloner (FUNC-01 gate)"},
+    {"timestamp": "2026-04-26T19:09:22Z", "tool": "Bash", "entry": "Bash: grep -q fraud (FUNC-02 gate)"},
+    {"timestamp": "2026-04-26T19:09:35Z", "tool": "Bash", "entry": "Bash: wc -l report.md"},
+    {"timestamp": "2026-04-26T19:09:41Z", "tool": "Bash", "entry": "Bash: grep -c required sections"},
+    {"timestamp": "2026-04-26T19:09:51Z", "tool": "Bash", "entry": "Bash: ls tasks/kernel-architecture/*.md"},
+    {"timestamp": "2026-04-26T19:10:00Z", "tool": "Bash", "entry": "Bash: python hash computation"}
+  ]
+}

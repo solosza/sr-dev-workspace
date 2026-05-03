@@ -1,0 +1,73 @@
+/* === Reset === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Custom Properties === */
+:root {
+  --color-bg: #eeeeee;
+  --color-text: #000000;
+  --color-link: #334488;
+  --font-body: system-ui, sans-serif;
+  --font-size-base: 16px;
+  --font-size-h1: 24px;
+}
+
+/* === Base === */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: normal;
+  margin: 135px 288px;
+}
+
+/* === Main Content === */
+.content {
+  margin: 0;
+  padding: 0;
+}
+
+/* === Heading === */
+.content__title {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 16px 0;
+  line-height: normal;
+}
+
+/* === Paragraph === */
+.content__text {
+  font-size: var(--font-size-base);
+  font-family: var(--font-body);
+  color: var(--color-text);
+  margin: 16px 0;
+  line-height: normal;
+}
+
+/* === Link === */
+.content__link {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+.content__link:hover {
+  text-decoration: none;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  body {
+    margin: 60px 40px;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    margin: 40px 20px;
+  }
+}

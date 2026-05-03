@@ -1,0 +1,34 @@
+# Search Anthropic Jobs
+
+## Context
+Search for AI agent platform, harness engineering, infrastructure, evaluation, and developer tools roles at Anthropic. Anthropic is a top-priority company (relocation considered).
+
+## Type
+RESEARCH
+
+## Execution
+inline
+
+## Dependencies
+- 001-research-extract-resume-profile
+
+## Phase Gate
+- [ ] `tasks/ai-job-search/output/resume-profile.json` exists
+
+## Requirements
+- Use WebSearch to find current job openings at Anthropic matching target roles
+- Search queries should include: "Anthropic careers AI agent platform engineer", "Anthropic jobs infrastructure engineer", "Anthropic developer tools engineer"
+- Capture: job title, URL, location, remote status, key requirements
+- Write results to `tasks/ai-job-search/output/raw-results/anthropic.json`
+- Do NOT filter at this stage — capture all potentially relevant listings
+
+## Acceptance Criteria
+- [ ] `tasks/ai-job-search/output/raw-results/anthropic.json` exists
+- [ ] JSON is valid and contains a `jobs` array
+- [ ] Each job entry has: title, url, location, remote (boolean), requirements (array)
+
+## Gates Satisfied
+- BUILD-04
+
+## Completion Signal
+When ALL acceptance criteria are met, proceed to next task.

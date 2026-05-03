@@ -1067,3 +1067,12 @@ Mental Map — The 2-Week Path
 | 5. Automation plan | 1-2 days | Steps 1-4 complete |
 
 **Total: ~2 weeks** from kickoff to automation plan ready.
+
+## Questions for [Lead] (when he returns)
+
+1. **AC alignment** — Exclusion file ACs were told to match mapping file, but do they actually need to? The file types serve different purposes.
+2. **Database testing scope** — Are we testing data integrity after the file loads (Layer 2/3), or just that the pipeline processes correctly (Layer 1)?
+3. **AC02 gaps (empty fields, invalid types, duplicates)** — Should these be added to the exclusion test repo? They only matter if we're validating file contents.
+4. **AC04-002 (validation report)** — Is this being built? What format?
+5. **SIT/UAT ownership** — Who tests what? Tests assigned to devs in SIT noticed.
+6. **New exclusion TCs** — Adding to the test repo. Walk through together when he's back.

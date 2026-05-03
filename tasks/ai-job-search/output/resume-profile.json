@@ -1,0 +1,92 @@
+{
+  "name": "Alain Ignacio",
+  "title": "AI Agent Architect | Founder, Isagawa",
+  "location": "Las Vegas, NV",
+  "relocation": ["San Francisco, CA", "New York, NY", "Seattle, WA"],
+  "remote_preferred": true,
+  "skills": [
+    "AI agent architecture",
+    "agent governance infrastructure",
+    "mechanical enforcement",
+    "hook-based governance",
+    "Spec-Driven Development (SDD)",
+    "autonomous task cycling",
+    "session persistence",
+    "context window management",
+    "MCP server design",
+    "multi-loop agent architecture",
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "SQL",
+    "Git",
+    "FastAPI",
+    "Playwright",
+    "Selenium",
+    "pytest",
+    "Cypress",
+    "Claude Code",
+    "domain-driven design",
+    "state machines",
+    "event-driven workflows",
+    "tiered index architecture",
+    "defense-in-depth enforcement"
+  ],
+  "target_roles": [
+    "AI Agent Platform Engineer",
+    "AI Infrastructure Engineer",
+    "AI Harness Engineer",
+    "Evaluation Infrastructure Engineer",
+    "Developer Tools / DX Engineer",
+    "AI Safety Infrastructure Engineer",
+    "AI Systems Engineer",
+    "Agent Framework Engineer"
+  ],
+  "experience_highlights": [
+    "Built Isagawa Kernel: open-source self-building governance system for autonomous AI agents",
+    "Designed Spec-Driven Development framework with installable domain specs",
+    "Shipped 4 products: Kernel, SDD Framework, QA Platform Selenium, QA Platform Playwright",
+    "Built spec factory meta-spec for autonomous spec production",
+    "37 published repos across 2 GitHub orgs",
+    "24 domain specs across QA, healthcare, DevOps, security, real estate",
+    "14 specs manufactured autonomously via spec factory",
+    "6 platforms shipped: Selenium, Playwright, Docker, DeepEval, SSH, Zentyent",
+    "20+ years QA leadership: Sony, Virgin Mobile, IBM, HMSA, Nakupuna, Helios Digital",
+    "Founded QA Center of Excellence achieving 4-5x test velocity improvement"
+  ],
+  "key_projects": [
+    {
+      "name": "Isagawa Kernel",
+      "description": "Self-building governance system for autonomous AI agents with mechanical enforcement, re-centering, and compounding learn loop",
+      "url": "https://github.com/isagawa-co/isagawa-kernel"
+    },
+    {
+      "name": "SDD Framework",
+      "description": "Spec-Driven Development - domain expertise as installable specs that stack on kernel governance",
+      "url": "https://github.com/orgs/isagawa-co/repositories"
+    },
+    {
+      "name": "QA Platform Selenium",
+      "description": "AI-governed test automation platform with 5-layer architecture",
+      "url": "https://github.com/isagawa-qa/platform-selenium"
+    },
+    {
+      "name": "Spec Factory",
+      "description": "Meta-spec that autonomously researches, builds, validates, and publishes domain specs",
+      "url": "https://github.com/orgs/isagawa-co/repositories"
+    }
+  ],
+  "search_keywords": [
+    "AI agent platform",
+    "agent infrastructure",
+    "agent harness",
+    "evaluation infrastructure",
+    "AI developer tools",
+    "AI safety infrastructure",
+    "agent framework",
+    "LLM infrastructure",
+    "AI systems engineer",
+    "agent orchestration",
+    "AI governance"
+  ]
+}

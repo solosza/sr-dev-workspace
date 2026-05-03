@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-04-26T21:00:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-04-26T12:54:28Z", "tool": "Bash", "entry": "Bash: truncate actions.jsonl"},
+    {"timestamp": "2026-04-26T12:55:57Z", "tool": "Write", "entry": "Write: linkedin.json"},
+    {"timestamp": "2026-04-26T12:56:04Z", "tool": "Bash", "entry": "Bash: python validation of linkedin.json"}
+  ]
+}

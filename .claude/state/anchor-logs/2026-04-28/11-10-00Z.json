@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-04-28T11:10:00Z",
+  "actions_count": 20,
+  "violations_found": 0,
+  "actions": [
+    {"tool": "Bash", "entry": "mkdir anchor-logs dir"},
+    {"tool": "Write", "entry": "anchor-logs/11-00-00Z.json"},
+    {"tool": "Write", "entry": ".gitignore for agent-attestation-spec"},
+    {"tool": "Write", "entry": "__init__.py for lib/"},
+    {"tool": "Write", "entry": "collect.py"},
+    {"tool": "Write", "entry": "schema.py"},
+    {"tool": "Write", "entry": "sign.py"},
+    {"tool": "Write", "entry": "rekor.py"},
+    {"tool": "Write", "entry": "intent.py"},
+    {"tool": "Write", "entry": "attest.py"},
+    {"tool": "Write", "entry": "SKILL.md"},
+    {"tool": "Write", "entry": "step-01-prerequisites.md"},
+    {"tool": "Write", "entry": "step-02-setup.md"},
+    {"tool": "Write", "entry": "step-03-configure.md"},
+    {"tool": "Write", "entry": "step-04-first-run.md"},
+    {"tool": "Write", "entry": "step-05-verify.md"},
+    {"tool": "Write", "entry": "README.md"},
+    {"tool": "Write", "entry": "architecture.md"},
+    {"tool": "Write", "entry": "sample-bundle.json"},
+    {"tool": "Write", "entry": "verification-walkthrough.md (blocked by hook)"}
+  ]
+}

@@ -48,7 +48,7 @@ Overwrite `.claude/settings.local.json` with:
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "Edit|Write",
+        "matcher": "Write|Edit|Bash",
         "hooks": [
           {"type": "command", "command": "python .claude/hooks/universal-gate-enforcer.py"}
         ]

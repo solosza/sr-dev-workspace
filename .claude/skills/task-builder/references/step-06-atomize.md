@@ -119,6 +119,8 @@ After atomizing all tasks, generate a gate contract for the project. This is the
 
 ## Granularity Rule (CRITICAL)
 
+→ [[references/granularity-reference.md]] for concrete before/after examples and the decision test.
+
 **One task = one action. No exceptions. No bundling.**
 
 - Each task file produces exactly ONE deliverable: one file written, one command run, one config changed

@@ -1,0 +1,96 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "379e3288156e1ab130b854b28108ae231dba7ea0c2f28be2366051c00a4ea19e",
+      "parameters": "ec2e10854e64221962dea1e3392c75cdea3f6ab81804fd3c90be7d8186869c2a",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-04-28T18:39:20.254840+00:00",
+          "raw_input_hash": "061085f974d259dd3ef509ffea8b0f186b98a340a1f4245fbcd5964bad5bca87",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "tasks/portfolio-live-feed/gate-contract.md",
+          "sha256": "6857667258ffd92f029caae30bee5cad63ea43586afb4f0bd29205de84295ed9"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/000-index.md",
+          "sha256": "51b14d5f97e71951bd092fe9de26b55b29bdac1976dbeedaf63aff39c5f75955"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/001-build-create-feature-branch.md",
+          "sha256": "1ef51f816889dfb482c61f0ee2c8ade0077480261bd5c7a9e05ff10018454341"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/002-build-write-feed-generator-script.md",
+          "sha256": "830577fa46a28d81e1397fc533d8ad2ae5e83ea91adaaadb83206f6a00f341bd"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/003-build-run-feed-generator.md",
+          "sha256": "06ce9d243eec93da5974983b68fc6660cb0cbdaf6c2751ddbafec2eb87cfb50e"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/004-build-write-feed-page-css.md",
+          "sha256": "26ea39e3cf1265a6064190e06085942b8a40d8ee99ab184e3164258d7b9a579c"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/005-build-update-nav-counter.md",
+          "sha256": "ade8d44317271651f06b20b5a82a0d7a0e56f262a8b6b177d3c32bd922f533c4"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/006-build-update-self-extension-stats.md",
+          "sha256": "b82c080be3d9e7aa2588fe7e503801d94d649e47654e360674bf387166623387"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/007-build-make-capabilities-clickable.md",
+          "sha256": "0e3654c13812a9d91861579539afe98963948a48a7ffbe4287e8bb853e01f141"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/008-build-add-feed-nav-link.md",
+          "sha256": "ac1414de2ab6fd15d4e58094beeee498ad991409e39d5421d0d50e210d6e75e1"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/009-test-verify-files-exist.md",
+          "sha256": "5aae6360259277be799e59ba0f530b51496d5dc3f24c6f7bf90bd61a77702a9b"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/010-test-verify-feed-page-renders.md",
+          "sha256": "d5047d65686aaf4b2cf9709d8f78ab78e5eaad1083cb3f21cb031ad61b3605e7"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/011-test-verify-nav-counter-displays.md",
+          "sha256": "321e8f7a8dcacc242f745b9e3c4d525101980599bdf032b45ef4ddd59107491c"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/012-test-verify-git-status-clean.md",
+          "sha256": "8339d5fde2bae827b8b5740d48e0c995f52401a3c43bcd6ef20ae1677130c0af"
+        },
+        {
+          "path": "tasks/portfolio-live-feed/gate-contract.md",
+          "sha256": "6857667258ffd92f029caae30bee5cad63ea43586afb4f0bd29205de84295ed9"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-04-28T20:49:17.866106+00:00",
+      "end": "2026-04-28T20:49:17.882059+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/075-market-build-portfolio-live-feed-update.md",
+      "task_folder": "tasks/portfolio-live-feed/",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1397962066",
+      "logIndex": "1397962066"
+    }
+  }
+}

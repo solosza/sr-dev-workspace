@@ -1,0 +1,19 @@
+{
+  "anchor_timestamp": "2026-04-30T21:40:00Z",
+  "actions_count": 40,
+  "violations_found": 0,
+  "actions": [
+    "Edit: index.html — dead links cleanup",
+    "Bash: git commit/push index.html",
+    "Edit: ssh-compliance.css — font variables clamp→rem",
+    "Bash: git commit ssh-compliance.css",
+    "Bash: ls *.html — discover actual pages",
+    "Edit: index.html — remove more dead links",
+    "Bash: git commit index.html",
+    "Edit: ssh-compliance.html — cache buster v4→v5",
+    "Bash: git commit/push ssh-compliance.html",
+    "Bash: gh api platform-ssh — repo structure discovery (12 calls)",
+    "Bash: gh api platform-docker — repo structure discovery (14 calls)",
+    "Bash: test/ls/find — check local platform-ssh existence (3 calls)"
+  ]
+}

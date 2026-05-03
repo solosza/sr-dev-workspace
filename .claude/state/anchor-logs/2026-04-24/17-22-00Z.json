@@ -1,0 +1,1 @@
+{"anchor_timestamp": "2026-04-24T17:22:00Z", "actions_count": 2, "violations_found": 0, "actions": [{"timestamp": "2026-04-24T17:18:35Z", "tool": "Bash", "entry": "Bash: ls anchor-logs dir"}, {"timestamp": "2026-04-24T17:21:51Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash"}]}

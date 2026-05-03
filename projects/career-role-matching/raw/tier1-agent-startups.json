@@ -1,0 +1,156 @@
+[
+  {
+    "url": "https://www.ycombinator.com/companies/rubric-ai",
+    "company": "Rubric AI",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Reasoning & verification infrastructure for AI agents. Post-training research at exabyte scale. Turns expert judgment into training signals for frontier models. One of 3 foundational LLM research companies in W26. No public job listings found — likely hiring via warm intros."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/salus",
+    "company": "Salus",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Guardrails to validate agent actions in real-time. API wraps around your agent, checks actions at runtime, blocks incorrect ones with immediate feedback. Agent infrastructure sub-cluster with Terminal Use, Tensol, Glue, Carrot Labs, Cascade. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/sentrial",
+    "company": "Sentrial",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Datadog for agent reliability. Monitors metrics, tracks success rates, measures ROI for AI agents. Monitoring and reliability sector of W26. Directly relevant to agent observability experience. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/moda",
+    "company": "Moda",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Monitoring & reliability layer for AI agents. Surfaces patterns across hallucinations, laziness, forgetfulness, tool call failures. Analytics on user frustration, NPS, retention, churn. Founded by Mohammad and Pranav (Shopify, Notion, Clio interns). Competes with LangSmith, Langfuse, Arize. No revenue signals yet. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/fission-ai",
+    "company": "OpenSpec (Fission AI)",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Open-source spec-driven framework for coding agents. 20K+ GitHub stars. Plans complex features by creating lightweight spec docs as durable context for coding agents. Solo founder (ex-Q-CTRL team lead, seed to $113M Series B). No revenue yet — team/enterprise product unbuilt. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/cofia",
+    "company": "Cofia",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "New York, NY",
+    "remote": null,
+    "tier": 2,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "AI automations that write themselves. Learns how you work and builds tailor-made automations without prompts, code, or workflow builders. Enterprise workflow tool. Co-founders: Paola Martinez (Stanford) and Moses Wayne, based in NYC. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/emdash",
+    "company": "Emdash",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA",
+    "remote": null,
+    "tier": 1,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Open-source Agentic Development Environment (ADE). Run multiple coding agents in parallel. Provider-agnostic desktop app. Founded by Arne and Raban (Stanford MS, MIT CSAIL, prior YC S24 company Soff, a16z Scout). Strong technical depth. Wellfound page exists but no specific listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/syntropy",
+    "company": "Syntropy",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 1,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Agentic coding for complex tasks. Next-generation coding agent application. Dev tools category in W26. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/terminal-use",
+    "company": "Terminal Use",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Infrastructure for background agents. Part of the agent infrastructure sub-cluster in W26. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/tensol",
+    "company": "Tensol",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "AI Employees for your company, built on OpenClaw. Multi-agent orchestration. Deploys autonomous agents for defined business functions with minimal human oversight. Part of agent infrastructure sub-cluster. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/carrot-labs",
+    "company": "Carrot Labs",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Continuous learning platform for AI agents. Enhances agent performance through continuous learning and evaluation services. Part of agent infrastructure sub-cluster. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/cascade",
+    "company": "Cascade",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Distills proprietary intelligence for safe autonomous systems. Builds guardrails and testing frameworks for trusting AI systems in production. Agent governance/security sector. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/ashr",
+    "company": "Ashr",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Automated multi-modal testing for agents. Simulates real user behavior inside production-like environments before shipping. Agent testing and evaluation infrastructure. No public job listings found."
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/agentic-fabriq",
+    "company": "Agentic Fabriq",
+    "title": "Founding Engineer (inferred — no public listing found)",
+    "location": "San Francisco, CA (assumed)",
+    "remote": null,
+    "tier": 2,
+    "equity_range": "Early-stage YC, likely 0.5-2.0%",
+    "yc_batch": "W26",
+    "notes": "Identity and access management layer for AI agents. Built by MIT researchers (Paulina and Matthew) who dropped out to build this. Agent identity/permissions infrastructure. No public job listings found."
+  }
+]

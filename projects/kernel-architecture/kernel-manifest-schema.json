@@ -1,0 +1,267 @@
+{
+  "_comment": "Isagawa Kernel Manifest — tracks kernel and domain artifact versions for drift detection and sync",
+  "_schema_version": "1.0.0",
+
+  "kernel_version": "1.0.0",
+  "kernel_version_timestamp": "2026-04-28T07:00:00Z",
+  "synced_from": "D:/my_ai_projects/project_test_repos/sr_dev_workspace",
+  "synced_timestamp": null,
+
+  "domain_name": null,
+  "domain_version": null,
+  "domain_version_timestamp": null,
+
+  "artifacts": {
+    "_comment": "Each entry: path relative to repo root, content SHA256 hash, category (kernel|domain), artifact type",
+
+    "commands": {
+      "_comment": "Kernel commands — synced from master, 15 files",
+      ".claude/commands/kernel/anchor.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/attest.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/audit-workflow.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/autonomous-cycle.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/backlog.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/complete.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/domain-setup.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/execute-pipeline.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/fix.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/learn.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/prod-test.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/reset.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/scan-bookmarks.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/session-start.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      },
+      ".claude/commands/kernel/task-builder.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "command"
+      }
+    },
+
+    "skills": {
+      "_comment": "Kernel skills — 7 folders, tracked by SKILL.md hash per folder",
+      ".claude/skills/audit-workflow/SKILL.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "skill"
+      },
+      ".claude/skills/autonomous-cycling/SKILL.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "skill"
+      },
+      ".claude/skills/execute-pipeline/SKILL.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "skill"
+      },
+      ".claude/skills/kernel-domain-setup/SKILL.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "skill"
+      },
+      ".claude/skills/prod-test/SKILL.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "skill"
+      },
+      ".claude/skills/task-builder/SKILL.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "skill"
+      },
+      ".claude/skills/website-cloner/SKILL.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "skill"
+      }
+    },
+
+    "hooks": {
+      "_comment": "Kernel hooks — 6 Python files",
+      ".claude/hooks/actions-log-appender.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "hook"
+      },
+      ".claude/hooks/agent-inline-execution-blocker.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "hook"
+      },
+      ".claude/hooks/auto-approve-claude-writes.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "hook"
+      },
+      ".claude/hooks/sr_dev-gate-enforcer.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "hook",
+        "_note": "Domain-specific name pattern: [domain]-gate-enforcer.py — hash tracks the template, not the domain name"
+      },
+      ".claude/hooks/test-failure-detector.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "hook"
+      },
+      ".claude/hooks/universal-gate-enforcer.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "hook"
+      }
+    },
+
+    "infrastructure": {
+      "_comment": "Supporting infrastructure files",
+      "CLAUDE.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "template",
+        "_note": "Template portion only — domain-specific sections excluded from hash"
+      },
+      "run-task.sh": {
+        "hash": null,
+        "category": "kernel",
+        "type": "script"
+      },
+      "run-task-batch.sh": {
+        "hash": null,
+        "category": "kernel",
+        "type": "script"
+      },
+      "lib/common.sh": {
+        "hash": null,
+        "category": "kernel",
+        "type": "library"
+      },
+      "lib/attestation/intent.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "library"
+      },
+      "lib/attestation/attest.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "library"
+      },
+      "lib/attestation/sign.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "library"
+      },
+      "lib/attestation/rekor.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "library"
+      },
+      "lib/attestation/collect.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "library"
+      },
+      "lib/attestation/schema.py": {
+        "hash": null,
+        "category": "kernel",
+        "type": "library"
+      }
+    },
+
+    "lessons": {
+      "_comment": "Kernel lessons — index file only, topic files are per-workspace",
+      ".claude/lessons/lessons.md": {
+        "hash": null,
+        "category": "kernel",
+        "type": "lessons",
+        "_note": "RULE ZERO section is kernel-universal; topic-specific lessons are workspace-specific"
+      }
+    },
+
+    "domain": {
+      "_comment": "Domain-specific artifacts — populated per repo, empty in master. These are NOT synced from master.",
+      "_example_protocol": {
+        "path": ".claude/protocols/[domain]-protocol.md",
+        "hash": null,
+        "category": "domain",
+        "type": "protocol"
+      },
+      "_example_domain_command": {
+        "path": ".claude/commands/[domain-command].md",
+        "hash": null,
+        "category": "domain",
+        "type": "command"
+      },
+      "_example_domain_skill": {
+        "path": ".claude/skills/[domain-skill]/SKILL.md",
+        "hash": null,
+        "category": "domain",
+        "type": "skill"
+      }
+    }
+  },
+
+  "metadata": {
+    "_comment": "Generation and comparison metadata",
+    "generated_by": "kernel-manifest-generator.py",
+    "generated_at": null,
+    "master_repo_path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace",
+    "master_version_at_generation": null,
+    "total_kernel_artifacts": 37,
+    "total_domain_artifacts": 0
+  }
+}

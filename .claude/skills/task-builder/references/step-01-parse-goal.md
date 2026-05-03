@@ -37,7 +37,33 @@ The agent reads the backlog item and extracts the `## Task Builder Input` sectio
    - Scope: BUILD, RESEARCH, TEST, or REFACTOR?
    - Constraints: any repos, dependencies, or human decisions mentioned?
 
-4. **For both types:**
+4. **Parse deliverable location (AUTO-RESOLVE — never ask the user):**
+
+   Read the `Location` field from Task Builder Input. Three types:
+
+   | Location Value | Type | Deliverable Root | First task creates... |
+   |---------------|------|-----------------|----------------------|
+   | `workspace` or `workspace:[path]` | In-place | Current working directory (optionally scoped to `[path]`) | Nothing — files go in existing dirs |
+   | `new-repo:[path]` | Standalone | `[path]` (absolute) | Directory at `[path]`, optionally `git init` |
+   | `subproject:[name]` | Workspace sub | `projects/[name]/` | `projects/[name]/` directory |
+
+   **If Location is missing — auto-resolve using these defaults:**
+
+   | Deliverable type | Auto-resolved location |
+   |-----------------|----------------------|
+   | New app, tool, pipeline, platform | `new-repo:D:\my_ai_projects\[project-name-kebab]` |
+   | New domain spec, spec testing, test repo | `new-repo:D:\my_ai_projects\project_test_repos\[project-name-kebab]` |
+   | Workspace feature, fix, enhancement | `workspace` |
+   | Research, notes, multi-file non-code | `subproject:[name]` |
+
+   **NEVER ask the user for paths.** Resolve autonomously using the table above.
+
+   **How location flows into tasks:**
+   - `new-repo` → task 001 MUST be "create directory + initialize" before any file writes
+   - `subproject` → task 001 MUST be "create projects/[name]/ directory" if it doesn't exist
+   - `workspace` → no setup task needed, files go directly into existing structure
+
+5. **For both types:**
    - Identify the project name — normalize to kebab-case for the folder name
    - Check for additional context:
      - Other backlog items that relate? (check `docs/backlog/`)
@@ -54,9 +80,11 @@ GOAL PARSED
 Project: [project-name]
 Source: [direct goal | backlog item NNN]
 Deliverable: [what will exist when done]
+Location: [workspace | new-repo:[path] | subproject:[name]]
+Deliverable root: [resolved absolute path where files will be created]
 Scope: [BUILD | RESEARCH | TEST | REFACTOR]
 Constraints: [any blockers or human decisions needed]
-Target: tasks/[project-name]/
+Tasks target: tasks/[project-name]/
 
 Proceeding to research.
 ```

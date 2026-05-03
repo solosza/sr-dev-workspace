@@ -4,7 +4,19 @@ Break the goal into 3-10 main tasks that represent major milestones.
 
 ## Process
 
-1. **Identify the major phases:**
+1. **Apply deliverable location (from step 1):**
+
+   The location type determines whether a setup task is needed and where all file paths point:
+
+   | Location | Task 001 | All subsequent file paths relative to... |
+   |----------|----------|------------------------------------------|
+   | `workspace` | No setup task — jump straight to work | Current working directory (or `workspace:[path]` subdir) |
+   | `new-repo:[path]` | **MANDATORY** `001-build-create-repo` — create dir, `git init`, write initial files (README, .gitignore) | `[path]/` |
+   | `subproject:[name]` | **MANDATORY** `001-build-create-project-dir` — create `projects/[name]/` if it doesn't exist | `projects/[name]/` |
+
+   **Every file path in every task must use the deliverable root.** If location is `new-repo:D:\my_ai_projects\fraud-detection-app`, then a task that creates `src/scanner.py` must specify `D:\my_ai_projects\fraud-detection-app\src\scanner.py`.
+
+2. **Identify the major phases:**
    - What are the distinct stages of this work?
    - Each phase becomes a main task
    - Order by dependency (what must come first?)
@@ -24,6 +36,8 @@ Break the goal into 3-10 main tasks that represent major milestones.
    - Small is GOOD — a task with 1 action is a valid, correct task
    - **NEVER merge tasks for being "too small"** — granularity is the goal
    - Each task = one deliverable action (one file, one command, one config change)
+
+   → [[references/granularity-reference.md]] for concrete before/after examples and the decision test.
 
 ## Phase Boundary Rule (MANDATORY for multi-concern specs)
 

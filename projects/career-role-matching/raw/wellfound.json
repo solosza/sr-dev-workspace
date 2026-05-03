@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://wellfound.com/jobs/3829989-founding-senior-applied-ai-engineer-agentic-systems",
+    "company": "PunttAI",
+    "title": "Founding Senior Applied AI Engineer (Agentic Systems)",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$180K-$250K (est.)",
+    "equity_range": "1.0%-2.0%",
+    "posted_date": "2026-04",
+    "notes": "Multi-agent LLM systems, RAG pipelines, fault-tolerant orchestration. 5-7+ yrs production systems + 1-2 yrs LLM. Direct match for agent runtime governance experience."
+  },
+  {
+    "url": "https://wellfound.com/jobs/3681101-founding-engineer",
+    "company": "The Sentience Company",
+    "title": "Founding Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "95th percentile cash (est. $200K-$280K)",
+    "equity_range": "significant (undisclosed)",
+    "posted_date": "2026-04",
+    "notes": "Memory + agent architecture, user simulation tech. $6M raised, top-tier VCs. 3-10 yrs shipping production software. In-person NYC 5 days/week."
+  },
+  {
+    "url": "https://wellfound.com/jobs/2996315-founding-engineer",
+    "company": "Besty AI",
+    "title": "Founding Engineer at AI Startup",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$150K-$200K (est.)",
+    "equity_range": "1.0%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "12-person startup, 5 engineers. AI brain for the $360B hotel/short-term-rental industry. Seed stage."
+  },
+  {
+    "url": "https://wellfound.com/jobs/3279816-founding-ai-engineer",
+    "company": "Casium",
+    "title": "Founding AI Engineer",
+    "location": "Seattle, WA",
+    "remote": false,
+    "tier": 1,
+    "salary_range": "$140K-$200K (est.)",
+    "equity_range": "1.5%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "Pre-seed legal tech AI startup, 1-10 employees. ML + AI focus. Unlimited PTO."
+  },
+  {
+    "url": "https://wellfound.com/jobs/3059023-founding-full-stack-ai-engineer",
+    "company": "The Outdoor Builders",
+    "title": "Founding Full Stack & AI Engineer",
+    "location": "San Francisco, CA",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$130K-$180K (est.)",
+    "equity_range": "1.0%-2.5% (est.)",
+    "posted_date": "2026-04",
+    "notes": "100+ models, 4 AI pipelines for contractor quoting platform. Product already progressed. Remote OK."
+  },
+  {
+    "url": "https://wellfound.com/jobs/3679566-full-stack-ai-dev-contract-to-founding-engineer",
+    "company": "1280 Labs",
+    "title": "Full-stack AI Dev (Contract to Founding Engineer)",
+    "location": "Remote (US/Canada)",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$60K-$96K ($5K-$8K/mo contract)",
+    "equity_range": "3.0%-5.0%",
+    "posted_date": "2026-04",
+    "notes": "Bootstrapped, 6-figure ARR. Document ingestion + retrieval AI platform. Contract-to-hire (2-4 week trial). Low cash, high equity."
+  },
+  {
+    "url": "https://wellfound.com/jobs/3876398-founding-engineer",
+    "company": "Stealth Startup",
+    "title": "Founding Engineer",
+    "location": "New York, NY",
+    "remote": false,
+    "tier": 2,
+    "salary_range": "$150K-$220K (est.)",
+    "equity_range": "1.0%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "Stealth-mode AI startup in NYC. Limited public details available."
+  },
+  {
+    "url": "https://wellfound.com/jobs/3794975-founding-engineer-product-minded",
+    "company": "Our Story Magic.ai",
+    "title": "Founding Engineer (Product-Minded)",
+    "location": "London (Remote)",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$100K-$160K (est.)",
+    "equity_range": "1.0%-3.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "Story generation AI platform. Mobile + backend. London-based but remote-friendly."
+  },
+  {
+    "url": "https://wellfound.com/jobs/4063456-founding-full-stack-engineer-ai-systems",
+    "company": "Brandora AI",
+    "title": "Founding Full-Stack Engineer (AI Systems)",
+    "location": "Gurgaon, India",
+    "remote": false,
+    "tier": 3,
+    "salary_range": "N/A (India market)",
+    "equity_range": "undisclosed",
+    "posted_date": "2026-04",
+    "notes": "D2C + performance marketing AI. India-based, likely below US salary targets."
+  },
+  {
+    "url": "https://wellfound.com/l/2AkcuQ",
+    "company": "Berry",
+    "title": "Founding Full Stack Engineer — AI, LLM",
+    "location": "Europe (Remote)",
+    "remote": true,
+    "tier": 2,
+    "salary_range": "$120K-$180K (est.)",
+    "equity_range": "1.0%-2.0% (est.)",
+    "posted_date": "2026-04",
+    "notes": "YC-backed. AI onboarding assistant for SaaS companies. No prior LLM experience required. Europe-based."
+  }
+]
