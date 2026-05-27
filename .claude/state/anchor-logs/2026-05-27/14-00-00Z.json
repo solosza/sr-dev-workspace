@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-05-27T14:00:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-26T23:17:49Z", "tool": "Bash", "entry": "Bash: python state update (log_path)"},
+    {"timestamp": "2026-05-26T23:17:52Z", "tool": "Bash", "entry": "Bash: python Path check"},
+    {"timestamp": "2026-05-26T23:18:11Z", "tool": "Bash", "entry": "Bash: sleep + python state update"},
+    {"timestamp": "2026-05-26T23:18:17Z", "tool": "Bash", "entry": "Bash: python state update (workflow)"},
+    {"timestamp": "2026-05-26T23:18:25Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash"},
+    {"timestamp": "2026-05-26T23:18:28Z", "tool": "Bash", "entry": "Bash: python sys.path kernel import"},
+    {"timestamp": "2026-05-26T23:18:29Z", "tool": "Bash", "entry": "Bash: python state update"},
+    {"timestamp": "2026-05-26T23:18:37Z", "tool": "Bash", "entry": "Bash: python state update"}
+  ]
+}

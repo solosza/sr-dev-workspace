@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-05-27T06:10:00Z",
+  "actions_count": 7,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-26T22:56:15Z", "tool": "Bash", "entry": "Bash: echo hook test - session_state write"},
+    {"timestamp": "2026-05-26T22:57:08Z", "tool": "Bash", "entry": "Bash: python3 state verification"},
+    {"timestamp": "2026-05-26T22:57:15Z", "tool": "Bash", "entry": "Bash: echo hook test - Write test.py"},
+    {"timestamp": "2026-05-26T22:58:05Z", "tool": "Bash", "entry": "Bash: echo hook test - Write src/app.py"},
+    {"timestamp": "2026-05-26T22:58:13Z", "tool": "Bash", "entry": "Bash: echo hook test - Write src/app.py"},
+    {"timestamp": "2026-05-26T22:58:15Z", "tool": "Bash", "entry": "Bash: python protocol hash computation"},
+    {"timestamp": "2026-05-26T22:58:32Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs date folder"}
+  ]
+}

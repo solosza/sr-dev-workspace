@@ -1,0 +1,22 @@
+{
+  "anchor_timestamp": "2026-05-27T12:00:00Z",
+  "actions_count": 16,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-26T23:11:41Z", "tool": "Bash", "entry": "python state management"},
+    {"timestamp": "2026-05-26T23:11:45Z", "tool": "Bash", "entry": "echo test for Write hook"},
+    {"timestamp": "2026-05-26T23:11:48Z", "tool": "Bash", "entry": "echo test for cd detection"},
+    {"timestamp": "2026-05-26T23:11:49Z", "tool": "Bash", "entry": "sleep + state reset"},
+    {"timestamp": "2026-05-26T23:11:50Z", "tool": "Bash", "entry": "wc -l hmsa hook file"},
+    {"timestamp": "2026-05-26T23:11:54Z", "tool": "Bash", "entry": "python state management"},
+    {"timestamp": "2026-05-26T23:11:57Z", "tool": "Bash", "entry": "python state management"},
+    {"timestamp": "2026-05-26T23:12:01Z", "tool": "Edit", "entry": "Edit: 015 task marked complete"},
+    {"timestamp": "2026-05-26T23:12:04Z", "tool": "Bash", "entry": "python state management"},
+    {"timestamp": "2026-05-26T23:12:39Z", "tool": "Bash", "entry": "python state management"},
+    {"timestamp": "2026-05-26T23:12:49Z", "tool": "Bash", "entry": "ls hmsa hooks/validators"},
+    {"timestamp": "2026-05-26T23:12:57Z", "tool": "Bash", "entry": "ls hmsa hooks dir"},
+    {"timestamp": "2026-05-26T23:13:00Z", "tool": "Edit", "entry": "Edit: 016 task marked complete"},
+    {"timestamp": "2026-05-26T23:13:25Z", "tool": "Bash", "entry": "protocol hash computation"},
+    {"timestamp": "2026-05-26T23:13:33Z", "tool": "Bash", "entry": "mkdir anchor-logs dir"}
+  ]
+}

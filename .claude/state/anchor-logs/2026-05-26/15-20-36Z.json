@@ -1,0 +1,50 @@
+{
+  "anchor_timestamp": "2026-05-26T15:20:36.877874Z",
+  "actions_count": 7,
+  "violations_found": 1,
+  "violation_detail": "cd in bash commands (NEVER USE cd rule)",
+  "actions": [
+    {
+      "timestamp": "2026-05-26T22:18:23Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -1 /d/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/universal-hook",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-26T22:18:26Z",
+      "tool": "Bash",
+      "entry": "Bash: cd /d \"D:\\my_ai_projects\\project_test_repos\\sr_dev_workspace\" && env -u CLAUDECO",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-26T22:18:30Z",
+      "tool": "Bash",
+      "entry": "Bash: cd /d/my_ai_projects/project_test_repos/sr_dev_workspace && env -u CLAUDECODE ba",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-26T22:18:35Z",
+      "tool": "Bash",
+      "entry": "Bash: sleep 3 && ps aux | grep -i \"run-task.sh\" | grep -v grep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-26T22:18:37Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la /d/my_ai_projects/project_test_repos/sr_dev_workspace/run-task.sh",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-26T22:18:45Z",
+      "tool": "Bash",
+      "entry": "Bash: cd /d/my_ai_projects/project_test_repos/sr_dev_workspace && env -u CLAUDECODE ba",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-26T22:19:34Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:\\\\my_ai_projects\\\\projec",
+      "session": "current"
+    }
+  ]
+}

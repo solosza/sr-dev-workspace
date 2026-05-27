@@ -1,0 +1,19 @@
+{
+  "anchor_timestamp": "2026-05-27T03:00:00Z",
+  "actions_count": 12,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-26T22:47:38Z", "tool": "Bash", "entry": "Bash: python hash computation (protocol)"},
+    {"timestamp": "2026-05-26T22:47:47Z", "tool": "Bash", "entry": "Bash: python hash computation (protocol)"},
+    {"timestamp": "2026-05-26T22:48:08Z", "tool": "Bash", "entry": "Bash: test EXTENSIBILITY.md exists"},
+    {"timestamp": "2026-05-26T22:48:12Z", "tool": "Bash", "entry": "Bash: ls validators dir"},
+    {"timestamp": "2026-05-26T22:48:16Z", "tool": "Write", "entry": "Write: 028-phase-6c-integration-l2-secret.md"},
+    {"timestamp": "2026-05-26T22:48:18Z", "tool": "Write", "entry": "Write: 029-phase-6d-integration-l2-wildcard.md"},
+    {"timestamp": "2026-05-26T22:48:20Z", "tool": "Write", "entry": "Write: 030-phase-6e-integration-l2-bash-cd.md"},
+    {"timestamp": "2026-05-26T22:48:22Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test import"},
+    {"timestamp": "2026-05-26T22:48:22Z", "tool": "Write", "entry": "Write: 031-phase-6f-integration-l2-valid-pass.md"},
+    {"timestamp": "2026-05-26T22:48:26Z", "tool": "Write", "entry": "Write: 032-phase-6g-integration-l3-isolation.md"},
+    {"timestamp": "2026-05-26T22:48:30Z", "tool": "Bash", "entry": "Bash: ls task files"},
+    {"timestamp": "2026-05-26T22:48:46Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"}
+  ]
+}

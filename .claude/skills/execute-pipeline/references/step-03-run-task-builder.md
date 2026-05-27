@@ -10,14 +10,14 @@ Invoke task-builder with flags to stop before execution. Plan review runs normal
    ```json
    {
      "pipeline_mode": {
-       "skip_plan_review": false,
+       "skip_plan_review": true,
        "no_execute": true
      }
    }
    ```
 
    These flags tell task-builder:
-   - `skip_plan_review` → when true, skip step 7 (plan review); when false, plan review runs normally
+   - `skip_plan_review` → `true` for execute-pipeline (fully autonomous, no pause points)
    - `no_execute` → stop after step 8 (write tasks), don't start cycling
 
 2. **Invoke `/kernel/task-builder` inline:**
@@ -38,21 +38,24 @@ Invoke task-builder with flags to stop before execution. Plan review runs normal
    - Write task files (step 8)
    - **Stop and return** (step 9 — flag check, sets `pipeline_state.task_folder` and `pipeline_state.task_count`)
 
-3. **Clear pipeline mode flags:**
+3. **Clear pipeline mode flags and proceed to step 4 (ATOMIC — MUST NOT STOP):**
 
-   After task-builder returns, merge into `session_state.json`:
+   **This transition is MECHANICAL and non-negotiable.** After task-builder returns:
+
+   a. Clear `pipeline_mode` to `null` in `session_state.json`
+   b. Verify handoff state (`pipeline_state.task_folder` and `pipeline_state.task_count`)
+   c. If either is missing, read the task folder directly and set them
+   d. **Immediately proceed to step 4** — do NOT report status, do NOT wait for user input, do NOT pause
+
    ```json
    {
      "pipeline_mode": null
    }
    ```
 
-4. **Verify handoff state:**
-   - Confirm `pipeline_state.task_folder` is set (task-builder's step 9 sets this)
-   - Confirm `pipeline_state.task_count` is set
-   - If either is missing, read the task folder directly and set them
+   **MUST NOT STOP between clearing pipeline_mode and executing step 4.** This is the most common failure point — the agent clears flags, reports "tasks created," and then stops instead of continuing. The output below and the step 4 invocation are ONE action, not two separate decisions.
 
-## Output
+## Output + Step 4 Invocation (ATOMIC)
 
 ```
 PIPELINE — TASKS CREATED
@@ -64,9 +67,12 @@ Tasks: [count]
 Proceeding to step 4 (execution).
 ```
 
+**Immediately after printing this output, read and execute step 4.** No pause. No user prompt. No "shall I proceed?" The pipeline is autonomous.
+
 ## Rules
 
 - Set flags BEFORE invoking task-builder, clear AFTER it returns
 - Task-builder runs the full skill except step 9 — don't skip any other steps
 - If task-builder fails (no tasks written), stop the pipeline and report the error
 - The flag mechanism is the ONLY modification to task-builder — all other behavior is unchanged
+- **NEVER stop between step 3 and step 4** — this transition is atomic and mechanical

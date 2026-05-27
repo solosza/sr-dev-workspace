@@ -79,7 +79,18 @@ Create the task folder, write all task files, the gate contract, and test fixtur
    - Write `_test/expected/{{GATE-ID}}-expected.json`
    - Use realistic data from step 2 research, not lorem ipsum
 
-5. **Write each task file:**
+5. **Set total_tasks from plan (BEFORE writing files):**
+
+   Before writing individual task files, set `total_tasks` in `[domain]_workflow.json` from the decomposition plan count. This ensures the count reflects the PLAN, not files-on-disk. If the agent exhausts context mid-write, the correct total is already recorded.
+
+   ```json
+   {
+     "total_tasks": N,
+     "task_folder": "tasks/[project-name]/"
+   }
+   ```
+
+6. **Write each task file:**
 
    Follow this template exactly:
 
@@ -133,8 +144,9 @@ Create the task folder, write all task files, the gate contract, and test fixtur
    - Acceptance Criteria = what must exist AFTER you finish (outputs)
    - Agent checks Phase Gate first. If any gate fails, stop and report.
 
-6. **Verify all files written:**
+7. **Verify all files written:**
    - Glob `tasks/[project-name]/*.md` — count matches expected total
+   - **Compare file count on disk to `total_tasks` in workflow state.** If they don't match, report the discrepancy — do not silently proceed. Missing files indicate context exhaustion or write failure.
    - Read 000-index.md — verify all tasks listed
    - Read gate-contract.md — verify all gates present
    - Check `_test/fixtures/` has one file per mock_data gate

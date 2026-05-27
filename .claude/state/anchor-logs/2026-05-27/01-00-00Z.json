@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-05-27T01:00:00Z",
+  "actions_count": 7,
+  "violations_found": 1,
+  "violation_notes": "cd usage in bash (line 6) - already captured in lessons",
+  "actions": [
+    {"timestamp": "2026-05-26T22:40:39Z", "tool": "Bash", "entry": "Bash: count actions in jsonl"},
+    {"timestamp": "2026-05-26T22:41:02Z", "tool": "Bash", "entry": "Bash: ls validators dir"},
+    {"timestamp": "2026-05-26T22:41:12Z", "tool": "Write", "entry": "Write: common.py"},
+    {"timestamp": "2026-05-26T22:41:20Z", "tool": "Bash", "entry": "Bash: check file exists"},
+    {"timestamp": "2026-05-26T22:41:38Z", "tool": "Bash", "entry": "Bash: cd + python import test (VIOLATION: cd)"},
+    {"timestamp": "2026-05-26T22:42:38Z", "tool": "Bash", "entry": "Bash: ls temp dir"},
+    {"timestamp": "2026-05-26T22:42:39Z", "tool": "Bash", "entry": "Bash: ls validators dir"}
+  ]
+}
