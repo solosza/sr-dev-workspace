@@ -36,6 +36,7 @@ CURRENT_TASK=""   # Global: current task name, set before each run_claude call
 # --- Resolve script directory and source shared lib ---
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 source "${SCRIPT_DIR}/lib/common.sh"
+source "${SCRIPT_DIR}/lib/model-router.sh"
 
 # --- Validate ---
 validate_deps
@@ -128,8 +129,9 @@ run_claude() {
   local mode="$1"       # "fresh" or "resume"
   local session_id="$2" # only used for resume
   local logfile="$3"
+  local model="${4:-claude-opus-4-6}"  # model tier from router
 
-  local cmd_args=("-p" "--dangerously-skip-permissions" "--output-format" "json")
+  local cmd_args=("-p" "--dangerously-skip-permissions" "--output-format" "json" "--model" "$model")
 
   if [ "$mode" = "resume" ] && [ -n "$session_id" ]; then
     cmd_args+=("--resume" "$session_id")
@@ -301,9 +303,17 @@ print(w.get('current_task', '') or 'unknown')
 " 2>/dev/null || echo "unknown")
   echo "[TASK] Attempting: $CURRENT_TASK"
 
+  # Route to appropriate model tier
+  TASK_FILE_PATH=""
+  if [ -n "$TASK_SUBFOLDER" ] && [ "$CURRENT_TASK" != "unknown" ]; then
+    TASK_FILE_PATH=$(ls "tasks/${TASK_SUBFOLDER}/"*"${CURRENT_TASK}"* 2>/dev/null | head -1)
+  fi
+  SELECTED_MODEL=$(route_model "${TASK_FILE_PATH:-}" "${SCRIPT_DIR}/lib/model-routing-config.json")
+  echo "[MODEL] Selected: $SELECTED_MODEL (task: $CURRENT_TASK)"
+
   # Fresh run
   LOGFILE="${LOG_DIR}/${LOG_PREFIX}iteration_${i}.log"
-  run_claude "fresh" "" "$LOGFILE"
+  run_claude "fresh" "" "$LOGFILE" "$SELECTED_MODEL"
 
   # --- Handle result ---
   if [ "$LAST_STATUS" = "all_done" ]; then
@@ -351,7 +361,7 @@ print(w.get('current_task', '') or 'unknown')
       echo "--- Resume attempt $r/$MAX_RESUME_RETRIES (session: $RESUME_SESSION_ID) ---"
 
       RESUME_LOGFILE="${LOG_DIR}/${LOG_PREFIX}iteration_${i}_resume_${r}.log"
-      run_claude "resume" "$RESUME_SESSION_ID" "$RESUME_LOGFILE"
+      run_claude "resume" "$RESUME_SESSION_ID" "$RESUME_LOGFILE" "$SELECTED_MODEL"
 
       if [ "$LAST_STATUS" = "all_done" ]; then
         COMPLETED=$((COMPLETED + 1))
@@ -382,6 +392,16 @@ print(w.get('current_task', '') or 'unknown')
     done
 
     if [ "$RESUME_SUCCESS" = false ]; then
+      # Try upgrading model tier before giving up
+      if [ "$SELECTED_MODEL" != "claude-opus-4-6" ]; then
+        UPGRADED_MODEL=$(upgrade_model "$SELECTED_MODEL")
+        if [ "$UPGRADED_MODEL" != "$SELECTED_MODEL" ]; then
+          echo "[UPGRADE] Retrying with $UPGRADED_MODEL (was $SELECTED_MODEL)"
+          SELECTED_MODEL="$UPGRADED_MODEL"
+          continue  # Re-enter the loop with upgraded model
+        fi
+      fi
+
       FAILED=$((FAILED + 1))
       CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
       echo "-> Task failed after $MAX_RESUME_RETRIES resume attempts. Skipping."
