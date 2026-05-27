@@ -1,0 +1,80 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "3a864813b624094251489e92a412757b4a1d1ee275952c321d23a3bd0319bb19",
+      "parameters": "b612d44899714403f01f56326d3bdea72392f9138dfdc33831b2404f7afde395",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-26T23:00:17.253933+00:00",
+          "raw_input_hash": "7de74d9ca6e128bfa4cd492c6bda682eb39a2e43e005632aaeef3101cf8bcd61",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\gate-contract.md",
+          "sha256": "92f2b4eca0fe6b3433ecbbd69ab2c51e1f7f47c676a75fb0b7d6cdb8073ac403"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\000-index.md",
+          "sha256": "98d6e7633d3a75906c11fb3b1fdc090fea369c1df822867dcd2c530e80232c18"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\001-fix-max-consecutive-fails.md",
+          "sha256": "43b984d85d0aa42bc0589e019112437ef8a8333e3e5671480ad731676db60edf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\002-fix-empty-output-backoff.md",
+          "sha256": "e773a8c182a181c329c8e8bfe178c209c7d7554529265f7e770385b3f4cbe008"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\003-fix-precheck-dedup.md",
+          "sha256": "173d62aed3f12d61fe5b931c416f355763c63f486ec8acc977a7003e6a7d5e12"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\004-fix-complete-dedup-append.md",
+          "sha256": "b99da39d3a20984d5bb4ad25941635e685bae9b25a6f0d604ffd8b2fd7bdb568"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\005-fix-step03-enforcement.md",
+          "sha256": "e5f089763d49e99f5757754115a2d7b288a569e85cc4459f5ff688e77c519353"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\006-fix-step04-guard.md",
+          "sha256": "3e8ceb974860b52c59b7d808c7a9a826895cb3b0de1d82e772fec6dcad203ff2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\007-fix-step08-total-tasks.md",
+          "sha256": "8dc971d99ab9479780843d1f8046bda56301266d9ea4160bf4c45a660cda3d54"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\008-verify-all-fixes.md",
+          "sha256": "2f464c78875c6bf276309b850856d491e51b903726642513e0e66b31475c683a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling\\gate-contract.md",
+          "sha256": "92f2b4eca0fe6b3433ecbbd69ab2c51e1f7f47c676a75fb0b7d6cdb8073ac403"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-27T10:33:23.240013+00:00",
+      "end": "2026-05-27T10:33:23.246984+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/090-kernel-fix-execute-pipeline-autonomous-cycling.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling",
+      "task_count": null,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1642238031",
+      "logIndex": "1642238031"
+    }
+  }
+}

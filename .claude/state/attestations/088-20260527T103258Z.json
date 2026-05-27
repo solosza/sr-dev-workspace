@@ -1,0 +1,116 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "bff7e61c46e0a39d4a32c9d6778d713f8ea19b72501dafa608b00073f6439105",
+      "parameters": "470e5562bc2b687a3d5189e92c6fa8c9db50c6fb9b0234958193ebbaf7b06000",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-26T22:01:48.637222+00:00",
+          "raw_input_hash": "caab86225870d50af753c2304cd352753706f255f3d20cef3b8e8d162adeaecc",
+          "backlog_hash_after": "d82566e757244c406b34917cbb6e4998c6c00069b43a40fb434cd9e3df534a10"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\gate-contract.md",
+          "sha256": "30ad494d0bbc1aec5a576c069a02801d1d878f53e614964d98615f68c6c24d29"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\000-index.md",
+          "sha256": "d99c91bb577d9b38cf518fbde951e33152d7dcb32facf3d8c91dbc888548c090"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\001-create-feature-branch.md",
+          "sha256": "43bad40410e7ae50c1727528f5c0d38ea3dc63434284872680ba7eca52acdf5b"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\002-copy-stig-rules.md",
+          "sha256": "a162b959f710341f1a59f8fea2e2fb70629d88f115c911e10fa5f44aa31ebc5f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\003-copy-cis-rules.md",
+          "sha256": "4118b5da518752f41e1f94ca3d9c93f6e298ac61e4ff482a7a262f87beb9c387"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\004-copy-nist-rules.md",
+          "sha256": "024e0a10c5c8e1246a9a16e2e5d524ba0944c31f88b9a6d62e76ecfe45d8ec3f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\005-copy-fips-rules.md",
+          "sha256": "d6fb19e35a0372abd446b4ed4c3b515e0591d20df9f156d0d8c16c778a91e31d"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\006-copy-pci-rules.md",
+          "sha256": "eaa323ab860eb8edba3b480a319785ba2c6fa5ec6274a2d181b337563bc2a449"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\007-copy-hipaa-rules.md",
+          "sha256": "6235cb2e87f4a041873f572cf94f097581900380edc9eeb56ecb2bbd9a44c9c1"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\008-copy-soc2-rules.md",
+          "sha256": "5f20f128c354d5a0d8ef602b62ecf99362470d19bba3f7801e97c977c2254bf1"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\009-copy-iso27001-rules.md",
+          "sha256": "2e45be28b7767f93b33634c478d53214acb70f2bbca9a7a2c44c6cb8de0be512"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\010-copy-compliance-validator.md",
+          "sha256": "c895448eab4cdf332d4add2f7ca0075915cc9cce19ee9e941e9228afebfe2061"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\011-copy-stig-validator.md",
+          "sha256": "c97a4f8fb77285e7a5212816f5ce1d96842a3487710dd1d3f2ff6e41f0f71268"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\012-copy-test-stig-validator.md",
+          "sha256": "025754be3c20e5611c8cebab6fecfde6f9cd3deff26054a0d8c796c966a7f1a6"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\013-update-ssh-batch-executor.md",
+          "sha256": "e45747667b8336b1db5d741d1d8ed5b44076b51e9b015d003707323b97f40ce0"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\014-update-host-configs.md",
+          "sha256": "0057b5a15825a666e8d98da8ea4a6cb2e7ed8cec3f6ad846be47be044f70768f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\015-update-workflow.md",
+          "sha256": "aa08ae73438b847855794828a8cef2587a14641961042ed0875ff075e7b940d4"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\016-validate-spec.md",
+          "sha256": "54a4262a66a15db80148e31a47018dee7e3fb23938ac0fe70df64dfbf9479459"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\017-commit-and-merge.md",
+          "sha256": "c8103a8c603ca843c01bec6f7ef051cdd61102559843e6c2553bb988ccf57dfc"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration\\gate-contract.md",
+          "sha256": "30ad494d0bbc1aec5a576c069a02801d1d878f53e614964d98615f68c6c24d29"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-27T10:32:58.529005+00:00",
+      "end": "2026-05-27T10:32:58.534833+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/088-domain-build-ssh-compliance-spec-migration.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ssh-compliance-spec-migration",
+      "task_count": null,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1642232521",
+      "logIndex": "1642232521"
+    }
+  }
+}

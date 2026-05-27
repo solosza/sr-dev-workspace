@@ -4,36 +4,30 @@
   "resumed_from": null,
   "context": {
     "current_task": null,
-    "task_folder": "tasks/multi-model-routing/",
-    "progress": "6/6 tasks complete",
-    "last_completed": "006-commit.md",
-    "next_step": "Commit and finalize pipeline 087.",
-    "notes": "Pipeline 087 complete. Router works, all gates pass, ready to commit."
+    "task_folder": null,
+    "progress": "5/5 tasks complete",
+    "last_completed": "005-test-verify-all-workspaces",
+    "next_step": "Run attestation for backlog 091, then move backlog to done",
+    "notes": "Pipeline 091 complete. All 4 workspaces synced. 11 stale task folders moved to completed/. Running attestation now."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" commit -m \"$(cat ",
-    "Bash: mv \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/087-kerne",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" add docs/backlog/",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" push origin main",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status -u"
+    "Bash: mv \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/091-kerne",
+    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/\"*.m",
+    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/attestat",
+    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
+    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
+    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
+    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status -u",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" diff --stat",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" log --oneline -3"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-05-27T02:50:00Z",
-  "pipeline_state": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/087-kernel-research-multi-model-routing.md",
-    "raw_input": "087",
-    "task_folder": "tasks/multi-model-routing/",
-    "task_count": 6,
-    "execution_exit_code": 0,
-    "completed_count": 6,
-    "skipped_count": 0,
-    "simple_inline": 6,
-    "complex_spawned": 0
-  },
+  "protocol_hash_timestamp": "2026-05-27T10:28:00Z",
+  "pipeline_state": null,
   "pipeline_mode": null
 }

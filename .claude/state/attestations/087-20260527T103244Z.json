@@ -1,0 +1,78 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "dd95a44fa261e4b22bb78bbd8f7ba2b8ec97138d29e9d95027b7e95f02600aea",
+      "parameters": "db01b58142ecb60a7c4d5dd0c386d970649088c497552ad6660e108480e71099",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-04T00:40:06.008619+00:00",
+          "raw_input_hash": "6efced97c4ac06015729620fb870275f70d277df9d7f6f901aacf4dc21ca2e7a",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-05-04T00:47:58.012946+00:00",
+          "raw_input_hash": "28053ac513a82b43cbbbfefbaa449b56b79d9fb5bbd6cfa8f2a5d825b6ead59c",
+          "backlog_hash_after": "dd95a44fa261e4b22bb78bbd8f7ba2b8ec97138d29e9d95027b7e95f02600aea"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\gate-contract.md",
+          "sha256": "87960cdaa2063a48d3f49b98df27cca7de1816d1038fa55f1f8cf2f9eb78bc96"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\000-index.md",
+          "sha256": "efe5ae5ecc2edf063f949c6b5cf17df10b82b2b968337fc580061b5dfaa11328"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\001-create-routing-config.md",
+          "sha256": "374657101ab0947c9c1fd01b1ecb4f6ca8008079312be0977c60625948d68969"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\002-create-model-router.md",
+          "sha256": "9763846cd6adab1b79861af84a927e6d69ad9544952c19cae2d040a9f914dee0"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\003-integrate-router-in-run-task.md",
+          "sha256": "03bac12ad8b19a613ff14c18c9aba88b0e19ba0585eb05a9434092e457233629"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\004-add-retry-upgrade.md",
+          "sha256": "ce805df7e60075a1be7bba4f58bb50d9ca78781a646726e0ef80a1144f8e38d4"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\005-validate-routing.md",
+          "sha256": "35c84d750b6e5f92c2c73ae7461187b83f8616e90cd74038f8cd98fabd99d477"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\006-commit.md",
+          "sha256": "1bbefcf503eb23807f5a579d83a310e73fbf46fa6940c4fcc235d91329ba0b15"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing\\gate-contract.md",
+          "sha256": "87960cdaa2063a48d3f49b98df27cca7de1816d1038fa55f1f8cf2f9eb78bc96"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-27T10:32:44.271819+00:00",
+      "end": "2026-05-27T10:32:44.274820+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/087-kernel-research-multi-model-routing.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/multi-model-routing",
+      "task_count": null,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1642229699",
+      "logIndex": "1642229699"
+    }
+  }
+}

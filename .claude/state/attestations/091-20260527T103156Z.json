@@ -1,0 +1,60 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "83c3b63cb1637e91945aab6632cd86c4f71e423284d8a287f2b612577e8823c1",
+      "parameters": "a165f3315f2b0b06b182141b20b322a314323c9ee72394a0ecb86b7510543ba5",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-27T10:15:12.086575+00:00",
+          "raw_input_hash": "5c5dc2ead6aa6d09306e1071c046494aae27cc855310763f6c806d9a61fdde0c",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/sync-model-router\\000-index.md",
+          "sha256": "e4c1ff3a01f8b6cdfe7c7c1a91a94de918d479747e52beb98fb4a7954e3fb91e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/sync-model-router\\001-build-sync-game-dev.md",
+          "sha256": "d6dbd8e64c4dc7667690d906f6e9845768c0adf0d9fe6ab3770380279e3364d4"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/sync-model-router\\002-build-sync-hmsa-healthcare-qa.md",
+          "sha256": "4fe854d1dcd7d81e20c5571cf33df8c4b9fbe9f067ad810f6ff1445ce9e93578"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/sync-model-router\\003-build-bootstrap-platform-ssh.md",
+          "sha256": "6138b6b2dcd1a9f68cc51357add0016187f1c3014829d377216c3583f33891b6"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/sync-model-router\\004-build-sync-domain-spec-factory.md",
+          "sha256": "dacf0312e2fa26dfc097ee6f0ed25b3ad2f03c8133c1d7dd0b0fcef035952261"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/sync-model-router\\005-test-verify-all-workspaces.md",
+          "sha256": "bebcc619b96568ce330b627afd02f2240fe4ec47d6c7b1991eaab88614e21f3e"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-27T10:31:56.266979+00:00",
+      "end": "2026-05-27T10:31:56.268984+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/091-kernel-build-sync-model-router-to-workspaces.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/sync-model-router",
+      "task_count": null,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1642219875",
+      "logIndex": "1642219875"
+    }
+  }
+}

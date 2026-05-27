@@ -1,0 +1,188 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "dc1799247dcb73138ddd5d96a0dd9ff0c976e0fb28f693ec884f061dd8b24191",
+      "parameters": "3818379a9c75566bb19ccd95d989da0886fed1121cfae8faaddd2553a41c3668"
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\gate-contract.md",
+          "sha256": "c4a0bf7f78fdb39532363b4bee457a64f22deff9bf5d795148ac97a53e83c12e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\000-index.md",
+          "sha256": "7f81965e9000905cdbd67d6affda0fbeaccbfd35b294e52c9f6f6699b7a3a9bf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\001-phase-0-create-feature-branch.md",
+          "sha256": "4316893fb56f0524cee062dc3421abbc0d134c45bd205962cb0d23eb5f941f4c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\002-phase-1a-create-lib-directory.md",
+          "sha256": "92f07d76837339c58d5e5191280889400dfccb3ea593fd531a1e04c830c77acf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\003-phase-1b-create-code-quality-validator.md",
+          "sha256": "5d471abe49710c0b6874012062fd51eba1c4d52b80caf41a87f527006d967b8c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\004-phase-1c-create-state-validation-validator.md",
+          "sha256": "8424f97080e36e79cd37fe7d1afe0475e7b94a649857198fc584fbb2bbc54ee5"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\005-phase-1d-create-bash-validation-validator.md",
+          "sha256": "aeaed048fa4bf22fcab0d49c535e6adcf46305cdc5c982ae07d0daa24c23a935"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\006-phase-1e-create-common-utilities.md",
+          "sha256": "72ca19ffe6e35dbb472830b34d6dc50e5efa650e4e1cb25be4ba509e4dd8f148"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\007-phase-1f-create-extensibility-guide.md",
+          "sha256": "c44d7652d4589217656a6bfea235948ab3ec42d10223c5260f06d86bd8c32076"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\008-phase-1g-test-validators-l1.md",
+          "sha256": "4bc124672e76b3b7fcfeb257dec758f6a3fe1e1e60e174802b225d72ab3f333c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\009-phase-2a-refactor-sr-dev-hook.md",
+          "sha256": "f4020708ab090731c1e01a13d276391984a0b81d935efba9154811a58a4c4a60"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\010-phase-2b-remove-sr-dev-validators-dir.md",
+          "sha256": "0edb7f5fd624189805800791531dc4f224d5ea64b23ba9bb781746f5cda5ed07"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\011-phase-2c-test-sr-dev-l1.md",
+          "sha256": "479f6d7c4bba00c973a864fc53e3a9a6f0cef0e65afabcb4c0a45c068bb8a945"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\012-phase-2d-test-sr-dev-l2.md",
+          "sha256": "54ad2ec45ab3d08853ba7bdd34e89babd71e2b94a30b3d6bb8f8ee6a2ac96d9c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\013-phase-2e-test-sr-dev-l3.md",
+          "sha256": "461a4d977e6dd4749aa415f7937288f8e6683dcce9d62b41ec0d01b5e1a4af23"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\014-phase-3a-discover-hmsa-hooks.md",
+          "sha256": "23aaf4f7218873002c40462ef4cfa382e087f61a2b98652e631b00342be3b0e0"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\015-phase-3b-refactor-hmsa-hook.md",
+          "sha256": "8a2e427668fec3342ec9001adfedcdfac554fd7fa5a072d85a8403fb8a613abf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\016-phase-3c-remove-hmsa-validators-dir.md",
+          "sha256": "f2e8dfa3135c067cdfc227f544b4e8cc982966e5c16b3e912a7407dcb10c93b2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\017-phase-3d-test-hmsa-l1l2l3.md",
+          "sha256": "b930a42068ea0fb5427bc20106ab902bcff1948e69f938631a62316e3b7a6e7c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\018-phase-4a-discover-gamedev-hooks.md",
+          "sha256": "aefaf5109a36b18427f9970a24d72d8c67720996d5e9e47b11c7815a2c5fc522"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\019-phase-4b-refactor-gamedev-hook.md",
+          "sha256": "14939d0172c735933af318c35f8bee02ff4a888d80b50c0ca92b5b6ad7b831e2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\020-phase-4c-remove-gamedev-validators-dir.md",
+          "sha256": "6d89629805e46eb782373ab2e7520781fbf908833c58b673a1a6d8be0e709a9a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\021-phase-4d-test-gamedev-l1l2l3.md",
+          "sha256": "243b6f5bdc594a8f05b5ab084dd9fa98b7e2ad1cd32bfdf55c0ce99bcecbf230"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\022-phase-5a-analyze-ssh-hook.md",
+          "sha256": "5e43870d9d46f1f26d8037b8e5f6865fe8798908a194fa49cd0b1e82265f5b06"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\023-phase-5b-refactor-ssh-hook.md",
+          "sha256": "6bfea5aa98d5af628d5d94f3eb3c0d3aeb4714c949c3d25181acb500d83a41e4"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\024-phase-5c-remove-ssh-validators-dir.md",
+          "sha256": "d918956d0941081df6db6a2c28ba596e6242bd083cc892944f83bde047b2d36f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\025-phase-5d-test-ssh-l1l2l3.md",
+          "sha256": "ba33e511d403a4bfafc4b0efd9be07830e0c3221510a0fb9b639205b844e416f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\026-phase-6a-integration-l1-sanity.md",
+          "sha256": "a014cfdca8af76cd9ac44a66a867328df69b844c0c59b6469b4f772362c9f9d1"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\027-phase-6b-integration-l2-consistency.md",
+          "sha256": "679dcc813846cbdabadcb2a0dfb5283e9709e05a8b2b2a025bc9f9e4246e31b3"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\027-phase-6b-integration-l2-debug.md",
+          "sha256": "105780e1532399e12bbd810806b7532680f31974bdd933d68a464aae6bfaabeb"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\028-phase-6c-integration-l2-secret.md",
+          "sha256": "fb8f6cfa845c25c2943a7303d811e40611567d6d13beb7c3e978db076f446c55"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\029-phase-6d-integration-l2-wildcard.md",
+          "sha256": "03dee57c010b9aa25944f4e579d8959db17ba1031aa0bd6b8c060a66b8693679"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\030-phase-6e-integration-l2-bash-cd.md",
+          "sha256": "3608f3a8bc89b47edbf55421a662ec0f5c32cb74a58c6effa574d46142a508f3"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\031-phase-6f-integration-l2-valid-pass.md",
+          "sha256": "1f56e59de45ba2c6542915c1c33411344f58cb047753350e94da9cda0a71bd69"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\032-phase-6g-integration-l3-isolation.md",
+          "sha256": "c0bb81d38d3defc67b28896c3f242c69fbb39f4f2aea22abc58090264e42a752"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\033-phase-6h-integration-l4-performance.md",
+          "sha256": "e177eddbc173b4aac71c52a1da6c14d1719c7b553183a19119ff6165ef2d530d"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\034-phase-6i-integration-l4-poc-new-workspace.md",
+          "sha256": "81073ee702d37dfb797cccc5455740365044c2ced4ece3353fcd2b27dc3fa239"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\035-phase-7-merge-feature-branch.md",
+          "sha256": "b172d0d772d51d9acfe659699f09892f2bcf52aa506bbe49bfc7050c0cd977c9"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\gate-contract.md",
+          "sha256": "c4a0bf7f78fdb39532363b4bee457a64f22deff9bf5d795148ac97a53e83c12e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system\\test_012_l2.py",
+          "sha256": "fd7a69576cad915a18e0b919c2a6e148ede182a9a3b5c59be427d31b76ba994c"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-27T10:33:10.783683+00:00",
+      "end": "2026-05-27T10:33:10.783683+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/089-domain-build-universal-hook-validator-system.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/universal-hook-validator-system",
+      "task_count": null,
+      "completed_count": 0,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1642235302",
+      "logIndex": "1642235302"
+    }
+  }
+}
