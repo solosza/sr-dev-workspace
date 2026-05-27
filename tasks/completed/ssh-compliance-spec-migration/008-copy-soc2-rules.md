@@ -1,0 +1,15 @@
+# Task 008: Copy soc2_rules.json
+
+**Type:** BUILD
+**Action:** Copy fixture from platform-ssh-test to platform-ssh
+
+## What
+
+```bash
+cp "D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh-test/framework/_reference/fixtures/soc2_rules.json" "D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh/framework/_reference/fixtures/soc2_rules.json"
+```
+
+## Acceptance Criteria
+
+- [ ] File exists at `platform-ssh/framework/_reference/fixtures/soc2_rules.json`
+- [ ] File is byte-identical to source: `cmp` exits 0
