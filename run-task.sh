@@ -26,10 +26,11 @@ BACKLOG_PATH="${4:-}"
 COMPLETED=0
 FAILED=0
 CONSECUTIVE_FAILS=0
-MAX_CONSECUTIVE_FAILS=2
+MAX_CONSECUTIVE_FAILS=4
 MAX_RESUME_RETRIES=2
 TASK_TIMEOUT=600  # 10 min per claude -p invocation (extraction tasks need more time)
 SLEEP_BETWEEN=2
+EMPTY_OUTPUT_BACKOFF=$SLEEP_BETWEEN  # Exponential backoff for empty outputs (cap 30s)
 CURRENT_TASK=""   # Global: current task name, set before each run_claude call
 
 # --- Resolve script directory and source shared lib ---
@@ -41,6 +42,26 @@ validate_deps
 REPO=$(cd "$REPO" && pwd)
 validate_repo "$REPO"
 resolve_paths "$REPO"
+
+# --- Lock file (prevent concurrent invocations on same task folder) ---
+LOCK_FILE="${REPO}/.claude/state/${TASK_SUBFOLDER:-default}_run-task.lock"
+if [ -f "$LOCK_FILE" ]; then
+  LOCK_PID=$(cat "$LOCK_FILE" 2>/dev/null)
+  if [ -n "$LOCK_PID" ] && kill -0 "$LOCK_PID" 2>/dev/null; then
+    echo "ERROR: Another run-task.sh is already running for this task folder (PID $LOCK_PID)"
+    echo "Lock file: $LOCK_FILE"
+    echo "To force: delete $LOCK_FILE and retry"
+    exit 1
+  else
+    echo "[WARN] Stale lock file found (PID $LOCK_PID not running). Removing."
+    rm -f "$LOCK_FILE"
+  fi
+fi
+echo $$ > "$LOCK_FILE"
+# Clean up lock on exit
+cleanup_lock() { rm -f "$LOCK_FILE"; }
+trap 'cleanup_lock; cleanup' SIGINT SIGTERM
+trap 'cleanup_lock' EXIT
 
 # --- Resolve task folder ---
 if [ -n "$TASK_SUBFOLDER" ]; then
@@ -236,8 +257,8 @@ wf = sf.parent / (d + '_workflow.json')
 if not wf.exists(): print('continue'); exit()
 w = json.loads(wf.read_text())
 total = w.get('total_tasks', 0)
-done = len(w.get('completed_tasks', []))
-skipped = len(w.get('skipped_tasks', []))
+done = len(set(w.get('completed_tasks', [])))
+skipped = len(set(w.get('skipped_tasks', [])))
 if total > 0 and (done + skipped) >= total:
     print('all_done')
 else:
@@ -299,13 +320,22 @@ print(w.get('current_task', '') or 'unknown')
   elif [ "$LAST_STATUS" = "task_done" ]; then
     COMPLETED=$((COMPLETED + 1))
     CONSECUTIVE_FAILS=0
+    EMPTY_OUTPUT_BACKOFF=$SLEEP_BETWEEN  # Reset backoff on success
     echo ""
     echo "[STATE after]"
     print_state
     echo "-> Task done. ($COMPLETED completed this run)"
 
   else
-    # No completion signal — attempt resume retries
+    # No completion signal — distinguish empty output (transient) vs content without signal
+    if [ -z "$LAST_RESULT" ]; then
+      # Empty output — transient failure (rate limit, slow startup, contention)
+      echo "-> Empty output (transient). Backing off ${EMPTY_OUTPUT_BACKOFF}s before retry..."
+      sleep "$EMPTY_OUTPUT_BACKOFF"
+      # Double backoff, cap at 30s
+      EMPTY_OUTPUT_BACKOFF=$((EMPTY_OUTPUT_BACKOFF * 2))
+      if [ "$EMPTY_OUTPUT_BACKOFF" -gt 30 ]; then EMPTY_OUTPUT_BACKOFF=30; fi
+    fi
     echo "-> No completion signal. Attempting resume..."
 
     RESUME_SESSION_ID="$LAST_SESSION_ID"

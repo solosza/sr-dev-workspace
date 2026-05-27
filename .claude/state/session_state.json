@@ -1,46 +1,22 @@
 {
   "session_started": true,
-  "timestamp": "2026-05-01T12:08:00Z",
-  "resumed_from": "pipeline_step5_validation",
-  "domain": "sr_dev",
-  "needs_restart": false,
-  "needs_learn": false,
-  "needs_learn_reason": null,
-  "last_learn_timestamp": "2026-05-01T10:00:00Z",
-  "pending_anchor_token": null,
-  "anchor_token_confirmed": true,
-  "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-05-01T12:06:00Z",
+  "timestamp": "2026-05-27T00:45:00Z",
+  "resumed_from": null,
   "context": {
     "current_task": null,
     "task_folder": null,
-    "progress": "Pipeline 074 complete",
-    "last_completed": "074-market-build-portfolio-vibe-coder-showcase",
-    "next_step": "User review of vibe-coder page, then merge feature branch",
-    "notes": "Pipeline 074 done. 12/12 tasks passed. Attestation deferred (user timeout). Feature branch feature/showcase-vibe-coder ready for review."
+    "progress": "8/8 tasks complete (0 skipped)",
+    "last_completed": "008-verify-all-fixes.md",
+    "next_step": "Committing pipeline 090 on feature branch.",
+    "notes": "Backlog 090 done. All fixes applied. Creating commit on feature/090-fix-execute-pipeline-cycling."
   },
-  "actions_log": [
-    "Bash: attestation attest.py \u2014 timed out (60s), deferred",
-    "Bash: python -m http.server 8888 --directory \"D:/my_ai_projects/isagawa-co.github.io\" ",
-    "Edit: vibe-coder.css",
-    "Edit: vibe-coder.css",
-    "Edit: vibe-coder.css",
-    "Bash: python -m http.server 8888 --directory \"D:/my_ai_projects/isagawa-co.github.io\" ",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status -s | head ",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" log --oneline -5",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status -s | wc -l",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" diff --stat HEAD "
-  ],
-  "last_attestation": {
-    "timestamp": "2026-05-01T11:00:05Z",
-    "backlog": "docs/backlog/done/073-market-build-portfolio-ui-testing-showcase.md",
-    "task_folder": "tasks/completed/portfolio-qa-showcase/",
-    "status": "success",
-    "rekor_url": "https://search.sigstore.dev/?logIndex=1417788423"
-  },
-  "pipeline_state": null,
-  "pipeline_mode": null,
+  "domain": "sr_dev",
   "one_shot": false,
-  "complete": true,
-  "complete_timestamp": "2026-05-01T12:08:00Z"
+  "actions_log": [],
+  "anchor_token_confirmed": true,
+  "pending_anchor_token": null,
+  "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
+  "protocol_hash_timestamp": "2026-05-27T00:50:00Z",
+  "pipeline_state": null,
+  "pipeline_mode": null
 }

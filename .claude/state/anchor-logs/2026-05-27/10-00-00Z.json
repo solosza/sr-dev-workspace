@@ -1,0 +1,37 @@
+{
+  "anchor_timestamp": "2026-05-27T10:00:00Z",
+  "actions_count": 16,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-05-26T23:04:06Z",
+      "tool": "Bash",
+      "entry": "hash computation"
+    },
+    {
+      "timestamp": "2026-05-26T23:04:59Z",
+      "tool": "Write",
+      "entry": "Write: test_sr_dev_l3.py"
+    },
+    {
+      "timestamp": "2026-05-26T23:05:15Z",
+      "tool": "Bash",
+      "entry": "test runs"
+    },
+    {
+      "timestamp": "2026-05-26T23:05:58Z",
+      "tool": "Bash",
+      "entry": "pytest test_sr_dev_l3.py"
+    },
+    {
+      "timestamp": "2026-05-26T23:06:07Z",
+      "tool": "Bash",
+      "entry": "state updates"
+    },
+    {
+      "timestamp": "2026-05-26T23:07:32Z",
+      "tool": "Bash",
+      "entry": "mkdir anchor-logs"
+    }
+  ]
+}

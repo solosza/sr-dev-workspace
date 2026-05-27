@@ -64,6 +64,7 @@ Final gate before marking work done.
 
    1. Add `current_task` to `completed_tasks` in `[domain]_workflow.json`
       - Use the **exact filename including `.md` extension**
+      - **Check that the task is not already present** in `completed_tasks` before appending. If already present, skip the append (do not create duplicates).
    2. Check if tasks remain:
       - Scan task folder (`task_folder` from workflow state, default `tasks/`) for files NOT in `completed_tasks` or `skipped_tasks`
       - Exclude index files (000-*.md)
@@ -77,11 +78,11 @@ Final gate before marking work done.
       - `context: { "last_completed": "[task name]" }`
 
       `[domain]_workflow.json`:
-      - `anchored: false`
-      - `actions_since_anchor: 0`
       - `current_task: null`
       - `attempts_on_current: 0`
-      - Preserve `completed_tasks`, `skipped_tasks`, `total_tasks`
+      - **Do NOT set `anchored: false`** — one-shot agents skip the anchored gate (hook line 220-221), so they don't need it reset. Setting it to false blocks the parent interactive session which shares this state file.
+      - **Do NOT reset `actions_since_anchor`** — let the counter accumulate across iterations; the hook skips the limit check for one-shot agents too.
+      - Preserve `completed_tasks`, `skipped_tasks`, `total_tasks`, `anchored`, `actions_since_anchor`
 
    4. Agent stops. No cycling, no next task pick.
 
@@ -90,6 +91,7 @@ Final gate before marking work done.
    Continuous loop through tasks. Used in interactive sessions and batch mode.
 
    1. Add `current_task` to `completed_tasks`
+      - **Check that the task is not already present** before appending. If already present, skip the append (do not create duplicates).
    2. Reset `attempts_on_current` to 0
    3. Scan task folder for next incomplete task:
       - List .md files in `task_folder` (from workflow state)
@@ -135,13 +137,21 @@ Final gate before marking work done.
 
    - MERGE into existing state, don't overwrite other keys
 
-6. **Update state:**
+6. **Update state (conditional):**
+
+   Only set `complete: true` when the workflow is actually finished:
+   - **Mode A (one-shot):** Set `complete: true` ONLY if outputting "ALL_TASKS_COMPLETE" (no tasks remain). If outputting "ONE_SHOT_COMPLETE" (tasks remain), do NOT set `complete: true`.
+   - **Mode B (cycling):** Set `complete: true` ONLY when `cycling_complete: true` (all tasks done/skipped).
+   - **Mode C (single):** Set `complete: true` (single task, no cycling context).
+
    ```json
    {
      "complete": true,
      "complete_timestamp": "..."
    }
    ```
+
+   **Why conditional:** Setting `complete: true` after every one-shot task signals "workflow done" to the parent session and other tooling, even though tasks may remain. This caused premature pipeline termination.
 
 7. **Report:**
    ```

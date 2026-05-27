@@ -2,6 +2,18 @@
 
 Execute tasks from the task folder using a classify-then-route pattern. Simple tasks run inline via autonomous-cycle. Complex tasks run isolated via run-task.sh.
 
+## Pre-Step Guard: Clear Stale pipeline_mode
+
+Before anything else, check if `pipeline_mode` is still set in `session_state.json`. If step 3 failed to clear it (agent drift, context compaction), clear it now:
+
+```json
+{
+  "pipeline_mode": null
+}
+```
+
+If `pipeline_mode` was non-null, log: `"[WARN] Stale pipeline_mode cleared at step 4 entry"`. This is a safety net — step 3 should have cleared it, but this prevents silent failure.
+
 ## Process
 
 1. **Read pipeline state:**

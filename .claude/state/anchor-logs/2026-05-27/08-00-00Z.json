@@ -1,0 +1,28 @@
+{
+  "anchor_timestamp": "2026-05-27T08:00:00Z",
+  "actions_count": 22,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-26T22:59:31Z", "tool": "Write", "entry": "Write: test_012_l2.py"},
+    {"timestamp": "2026-05-26T22:59:31Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+    {"timestamp": "2026-05-26T22:59:52Z", "tool": "Bash", "entry": "Bash: python test runner"},
+    {"timestamp": "2026-05-26T22:59:55Z", "tool": "Edit", "entry": "Edit: run-task.sh"},
+    {"timestamp": "2026-05-26T23:00:11Z", "tool": "Bash", "entry": "Bash: test -f task file check"},
+    {"timestamp": "2026-05-26T23:00:12Z", "tool": "Bash", "entry": "Bash: ls backlog"},
+    {"timestamp": "2026-05-26T23:00:12Z", "tool": "Bash", "entry": "Bash: test -f task file check"},
+    {"timestamp": "2026-05-26T23:00:17Z", "tool": "Bash", "entry": "Bash: python attestation"},
+    {"timestamp": "2026-05-26T23:00:23Z", "tool": "Bash", "entry": "Bash: ls tests/"},
+    {"timestamp": "2026-05-26T23:00:44Z", "tool": "Write", "entry": "Write: 090 backlog"},
+    {"timestamp": "2026-05-26T23:00:49Z", "tool": "Write", "entry": "Write: test_sr_dev_l2.py"},
+    {"timestamp": "2026-05-26T23:00:57Z", "tool": "Bash", "entry": "Bash: ls state"},
+    {"timestamp": "2026-05-26T23:00:58Z", "tool": "Bash", "entry": "Bash: python3 state update"},
+    {"timestamp": "2026-05-26T23:01:07Z", "tool": "Bash", "entry": "Bash: python test runner"},
+    {"timestamp": "2026-05-26T23:01:21Z", "tool": "Bash", "entry": "Bash: python3 state update"},
+    {"timestamp": "2026-05-26T23:01:40Z", "tool": "Bash", "entry": "Bash: python test runner"},
+    {"timestamp": "2026-05-26T23:01:47Z", "tool": "Bash", "entry": "Bash: python -u test runner"},
+    {"timestamp": "2026-05-26T23:02:02Z", "tool": "Bash", "entry": "Bash: python test runner"},
+    {"timestamp": "2026-05-26T23:02:04Z", "tool": "Bash", "entry": "Bash: test -f task file check"},
+    {"timestamp": "2026-05-26T23:02:27Z", "tool": "Bash", "entry": "Bash: python hashlib"},
+    {"timestamp": "2026-05-26T23:02:38Z", "tool": "Bash", "entry": "Bash: ls anchor-logs"}
+  ]
+}
