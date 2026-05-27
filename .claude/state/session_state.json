@@ -14,7 +14,10 @@
   "one_shot": false,
   "actions_log": [
     "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" commit -m \"$(cat ",
-    "Bash: mv \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/087-kerne"
+    "Bash: mv \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/087-kerne",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" add docs/backlog/",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" push origin main",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status -u"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
