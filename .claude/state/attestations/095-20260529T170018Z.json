@@ -1,0 +1,68 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "d5a768ae91878986294aeb7d6278c3a44f0ab95c7876ad4a1e0ca1539abde1a3",
+      "parameters": "dd16dc2c5c7d38e289cb3a5a16bf129c1e1698f3426052b62cdd79fb802d55e5",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-27T11:02:04.425457+00:00",
+          "raw_input_hash": "0caccc7bc2afff69f7d4e8da7cb6fcc0e773436e559052ed45b7588816d9b368",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\gate-contract.md",
+          "sha256": "835104ef78201cb48fccf3a9d4453e553b9cb6f39142c412d4284883dfbf4ac5"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\000-index.md",
+          "sha256": "4b9c40f7ed7be905824e0d5fea7f1b8ce2e236c9d29d4a7df1ff7ebea337e449"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\001-build-create-project-dir.md",
+          "sha256": "0b4f0f36509f1fb22e5250469153fc543de12f5e9bc1069bf753067c250696dc"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\002-research-seedance-and-ai-video.md",
+          "sha256": "abbf506cf07f4bb414c2e5d369a88d7dbb76a2a587f5a00a39c344058ac790fe"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\003-research-brand-market-and-economics.md",
+          "sha256": "2c97c10510e2288ea53ee8bb5ad1bc6176b9c19425f65f37a1deab1624c38dda"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\004-research-competition-and-platforms.md",
+          "sha256": "8fa9a4641e6f12f21de4685e4ac1bbbb23a8d99b1cdbcbecf2e8bb5cb604ee28"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\005-build-write-research-report.md",
+          "sha256": "7467d5659e916aea799caa0c88c44fbdd0adb8ccca29be2270253edf29af7c44"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research\\gate-contract.md",
+          "sha256": "835104ef78201cb48fccf3a9d4453e553b9cb6f39142c412d4284883dfbf4ac5"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-29T17:00:18.883647+00:00",
+      "end": "2026-05-29T17:00:18.902421+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/095-market-research-ai-ugc-content-pipeline.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ai-ugc-research",
+      "task_count": 7,
+      "completed_count": 7,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1671822264",
+      "logIndex": "1671822264"
+    }
+  }
+}

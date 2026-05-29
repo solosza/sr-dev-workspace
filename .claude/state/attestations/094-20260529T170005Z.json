@@ -1,0 +1,72 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "91ebb4e6a64bc9f5189b3305ad565f3d30a6bdd7914825852d5ad7af8f7e7bbf",
+      "parameters": "77ae1e78abab013566811617753777f6261fd2386b6b551e9acf8b5123e827d8",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-27T11:02:03.447955+00:00",
+          "raw_input_hash": "ed116223fd46268caaab0068b5ca8eb9732164209c2edf4eb35d28c337954dc4",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\gate-contract.md",
+          "sha256": "739387500c5d43a36bc1feae20fcfa05c61e2cb68dfa6c9a991a13e743dfb519"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\000-index.md",
+          "sha256": "4b364f8b35bfaf0f7bad898dd1cf0c1cb92ace8dbad3cfee2256bec9265f1717"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\001-build-create-project-dir.md",
+          "sha256": "a09346912f731846df2d375da55dc64f668199538cb641c2f205ee48cbbfb093"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\002-research-credit-products.md",
+          "sha256": "2eb2742624b2c66d0cff2d1b2640bd04a2e50ba7db2c501ed05575d32efaf5c7"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\003-research-credit-stacking-method.md",
+          "sha256": "6e3e2e6e5fad3f1be11cd95c81b3bc2a6a70375a4ba1cb7bbd6449f0a2dd231f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\004-research-risks-and-costs.md",
+          "sha256": "054fe452691b7fae3501a2b7da3d71e201012df3910972939f1071cb5ff22776"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\005-research-alternatives.md",
+          "sha256": "522c40201ed4b41358ec356118b5150097c53efb12042e55dde6c17e41214f15"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\006-build-write-research-report.md",
+          "sha256": "14966249a3e4e2299e879c31459b369a0a12d8aa059298fe8ed12d73709c5abc"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research\\gate-contract.md",
+          "sha256": "739387500c5d43a36bc1feae20fcfa05c61e2cb68dfa6c9a991a13e743dfb519"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-29T17:00:05.908701+00:00",
+      "end": "2026-05-29T17:00:05.911525+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/094-market-research-business-credit-stacking.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/business-credit-research",
+      "task_count": 7,
+      "completed_count": 7,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1671821434",
+      "logIndex": "1671821434"
+    }
+  }
+}

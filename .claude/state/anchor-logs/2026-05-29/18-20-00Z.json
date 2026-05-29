@@ -1,0 +1,24 @@
+{
+  "anchor_timestamp": "2026-05-29T18:20:00Z",
+  "actions_count": 17,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-29T16:52:02Z", "tool": "Bash", "entry": "Bash: py -c monitor poll workflow", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:07Z", "tool": "Bash", "entry": "Bash: py -c read workflow path", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:42Z", "tool": "Write", "entry": "Write: research-report.md", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:46Z", "tool": "Bash", "entry": "Bash: test -f research-report.md", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:47Z", "tool": "Bash", "entry": "Bash: grep -c sections in report", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:48Z", "tool": "Bash", "entry": "Bash: grep Executive Summary", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:49Z", "tool": "Bash", "entry": "Bash: grep Recommendation", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:51Z", "tool": "Bash", "entry": "Bash: grep D&D engine reference", "session": "current"},
+    {"timestamp": "2026-05-29T16:52:52Z", "tool": "Bash", "entry": "Bash: wc -w report word count", "session": "current"},
+    {"timestamp": "2026-05-29T16:53:07Z", "tool": "Bash", "entry": "Bash: test task folder exists", "session": "current"},
+    {"timestamp": "2026-05-29T16:53:07Z", "tool": "Bash", "entry": "Bash: ls task folder", "session": "current"},
+    {"timestamp": "2026-05-29T16:53:14Z", "tool": "Bash", "entry": "Bash: py -c poll workflow final", "session": "current"},
+    {"timestamp": "2026-05-29T16:53:14Z", "tool": "Bash", "entry": "Bash: test -f report final check", "session": "current"},
+    {"timestamp": "2026-05-29T16:53:16Z", "tool": "Bash", "entry": "Bash: grep recommendation keywords", "session": "current"},
+    {"timestamp": "2026-05-29T16:53:16Z", "tool": "Bash", "entry": "Bash: grep dungeon/grid keywords", "session": "current"},
+    {"timestamp": "2026-05-29T16:53:40Z", "tool": "Bash", "entry": "Bash: py -c poll workflow completion", "session": "current"},
+    {"timestamp": "2026-05-29T16:57:16Z", "tool": "Bash", "entry": "Bash: ls tasks/ listing", "session": "current"}
+  ]
+}

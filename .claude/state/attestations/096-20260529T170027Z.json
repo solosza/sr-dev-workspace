@@ -1,0 +1,68 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "b6f557a867506a2bb1f7bff7af61298fe4fdbe18bad88f2b40de980d08b6792a",
+      "parameters": "540b69d7df0833dab9ef10bf89fa9214ae018f80c609b2cb1724991b71eb1039",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-27T11:02:05.648689+00:00",
+          "raw_input_hash": "12f8f611c319cdb97db1f34655b00b9cf1ddb473c0087a23fe95273c8dd84c66",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\gate-contract.md",
+          "sha256": "2fdfc23f98f8898d04cf1d18fcf6f7d3df16f71539149406608beee191960cef"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\000-index.md",
+          "sha256": "c38b648aeadd12cbaa790883c9c3bc526a69f2deed60f1cbe178d70b9fbb0b11"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\001-build-create-project-dir.md",
+          "sha256": "427a901274fea576f5b93b86a73597d75d00479f8addfc2d3609cbadc78f9b46"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\002-research-geo-techniques.md",
+          "sha256": "d82d064f29ed42354d82203f36d47d0befece6976ee52a9b2f68095fb1ee8fde"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\003-research-market-and-pricing.md",
+          "sha256": "45748fa10bc685aec7847b5e18437df0032de9a47afe04ae167d8731024ecd0f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\004-research-hawaii-market.md",
+          "sha256": "bd1b24786feea9f08a57518f83e2a14974803e02a227c497756b6c089fc6d1d2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\005-build-write-research-report.md",
+          "sha256": "142ee2ba03f78debe8f1c08589b4fcc1e49d3c1c1d6e2af349a9f7b707e0f96b"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research\\gate-contract.md",
+          "sha256": "2fdfc23f98f8898d04cf1d18fcf6f7d3df16f71539149406608beee191960cef"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-29T17:00:27.265940+00:00",
+      "end": "2026-05-29T17:00:27.268940+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/096-market-research-geo-services-professional-firms.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/geo-services-research",
+      "task_count": 7,
+      "completed_count": 7,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1671822778",
+      "logIndex": "1671822778"
+    }
+  }
+}

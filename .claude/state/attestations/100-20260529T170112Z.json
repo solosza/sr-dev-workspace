@@ -1,0 +1,56 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "",
+      "parameters": "bb699979812bb199d9df1b251f41ab2b2ba592830f52c826b12d754e3f027eab",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-29T06:10:25.441960+00:00",
+          "raw_input_hash": "73443f08dedbd209407fc21334043b104b54a0e6657a74d1c2712bc184b45a77",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/portfolio-feed-duplicates\\gate-contract.md",
+          "sha256": "4d9d72684805a4a7ab135fa0ce84cc0561d031ccbd17ba74d4503c6701b72faf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/portfolio-feed-duplicates\\000-index.md",
+          "sha256": "632f8896e6e3219fbe672eebd8166e0991fdad77bf65698371268ea329e9252e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/portfolio-feed-duplicates\\001-build-group-feed-entries.md",
+          "sha256": "07757ca904a48d14373dad8fcec112b9226d2039d3ed20b019f58616dd3ccd40"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/portfolio-feed-duplicates\\002-test-verify-grouping.md",
+          "sha256": "83b11030710c38f09f62b0b5c35056cdccdf1fdcb01c656948d1d1e871cc8b18"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/portfolio-feed-duplicates\\gate-contract.md",
+          "sha256": "4d9d72684805a4a7ab135fa0ce84cc0561d031ccbd17ba74d4503c6701b72faf"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-29T17:01:12.786579+00:00",
+      "end": "2026-05-29T17:01:12.789617+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/100-market-fix-portfolio-feed-duplicates.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/portfolio-feed-duplicates",
+      "task_count": 7,
+      "completed_count": 7,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1671824471",
+      "logIndex": "1671824471"
+    }
+  }
+}

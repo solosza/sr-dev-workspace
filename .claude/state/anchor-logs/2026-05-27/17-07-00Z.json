@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-05-27T17:07:00Z",
+  "actions_count": 30,
+  "violations_found": 0,
+  "actions": [
+    "gh repo edit job-application-spec + domain-spec-factory descriptions",
+    "Rename vibe-coder-spec → vibe-coder-agent (repo + README)",
+    "Rebrand specs → agents across 4 site pages (index, vibe-coder, qa-platforms, ssh-compliance)",
+    "Add Problem section to ssh-compliance.html",
+    "Add More Products footer cross-links to all 4 product pages",
+    "Investigate platform-ssh repo for cleanup"
+  ]
+}

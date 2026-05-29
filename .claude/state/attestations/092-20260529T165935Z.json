@@ -1,0 +1,72 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "e94c0fbcb63fc4f519443325831d034c48fa888c8687e524f1e6f58ea378966f",
+      "parameters": "3e72d7832e440f5c1c09665ba5a9df094156656b8cae3847953a56e8da49911a",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-27T10:36:34.435980+00:00",
+          "raw_input_hash": "399f0047a9769f1c0cd0e0750226564545a4e83d6586c658de672cebbed0daff",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\gate-contract.md",
+          "sha256": "08ce8626b1050ad029c3e4770f51dde9963c60cdbea020421b461366c35a6d76"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\000-index.md",
+          "sha256": "89fde936463adbaf583c8efc85567cd4b0b59f04345fbb46665d3b5783191d2b"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\001-build-create-project-dir.md",
+          "sha256": "6fae6c1b3d3cb268b9f98f5acae1e4ce0a887861013a47f1b76be26ba0b2d239"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\002-research-legal-viability.md",
+          "sha256": "c7b12a8dc86abbc32d6c9c90e52398b89562dbb9cdc18b2af4f1545820995316"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\003-research-economic-viability.md",
+          "sha256": "2f2cc87e29dbaddb772b12161ff5765d788fa792e6fca6cbbf19f304453bbf34"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\004-research-practical-viability.md",
+          "sha256": "55c333cb2b06cc90537fcb6c69314f84122d351bb03c01663da6876bed7d4c51"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\005-research-sam-gov-api.md",
+          "sha256": "99a0c5f805c92064831b34c3e823d34435490c586a534e94094d7f01e913ed8d"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\006-build-write-research-report.md",
+          "sha256": "b9c194554507beb547770c65dedd1625f5a02a01523311344947ae6b1dbee0d0"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research\\gate-contract.md",
+          "sha256": "08ce8626b1050ad029c3e4770f51dde9963c60cdbea020421b461366c35a6d76"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-29T16:59:35.964281+00:00",
+      "end": "2026-05-29T16:59:35.970056+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/092-market-research-build-govcon-ai-app.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/govcon-research",
+      "task_count": 7,
+      "completed_count": 7,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1671820435",
+      "logIndex": "1671820435"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "8be0f0f525cae54f865b6c1d9d08b7d4e213aef270fcc6eb8c8bf31f3d0a8368",
+      "parameters": "b28a1cacc8c96cd4365468c69973179c5b6b1fe66bd8ab534841db32d4981386",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-27T11:02:02.220295+00:00",
+          "raw_input_hash": "df65ce9aabd1c515636a037ae10c6ed4531488adb74408884c3c6cba9f1f1b78",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\gate-contract.md",
+          "sha256": "3c86422c33aa1811e9efb708dcd2a5264457a591f79c250c29a6119f819035f4"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\000-index.md",
+          "sha256": "92981921d0c6d19696d9182ed71bab13ef5f37a22a61130651ea8e46ef84c8b9"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\001-build-create-project-dir.md",
+          "sha256": "f587f6c9c8b4b1d5d93eb15fbf64b9869cbd26f200879f05d13c18f761ddd93a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\002-research-llc-formation-options.md",
+          "sha256": "b5482f594de82f7e46f3f80fa8127f5ffd30b931f60369518470817f51e84940"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\003-research-multi-stream-structure.md",
+          "sha256": "1abb9e6c2936c16e8a889cc51f9dc9bf018747685dd5ac8b3c67e9d31d971201"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\004-research-tax-advantages.md",
+          "sha256": "628a73441ef85a13828b48fedcb53a1630b2477ead176888a71b4822ac618277"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\005-research-sam-gov-requirements.md",
+          "sha256": "30248a69bfd4a52da98c7fad1c5f30303f1698d1c54917412428e75f3c47aa30"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\006-research-ai-business-models.md",
+          "sha256": "9f4297218aeeacfaac39d0eef2cce661461bba59d63664f427c98c2d53c0f7aa"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\007-build-write-final-report.md",
+          "sha256": "35662ebedae2ff3aefd29e3168e28a66ca68ab208ddc7d25fb2dba5330b386be"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation\\gate-contract.md",
+          "sha256": "3c86422c33aa1811e9efb708dcd2a5264457a591f79c250c29a6119f819035f4"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-29T16:59:52.842302+00:00",
+      "end": "2026-05-29T16:59:52.842302+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "docs/backlog/done/093-market-research-ai-business-formation.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/ai-business-formation",
+      "task_count": 7,
+      "completed_count": 7,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1671820814",
+      "logIndex": "1671820814"
+    }
+  }
+}

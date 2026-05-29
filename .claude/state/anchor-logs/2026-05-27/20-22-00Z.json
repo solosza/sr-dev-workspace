@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-05-27T20:22:00Z",
+  "actions_count": 30,
+  "violations_found": 0,
+  "actions": [
+    "platform-ssh: git rm CONTRIBUTING.md, FRAMEWORK.md, step-*.md, _test/, references/",
+    "platform-ssh: rm untracked lib/, run-task.sh, run-task-batch.sh, .claude/hooks/",
+    "platform-ssh: Updated README — project structure, 6 validators, 9 fixtures, platforms table",
+    "platform-ssh: Committed and pushed cleanup",
+    "isagawa.co: Confirmed site changes already on main",
+    "vibe-coder: Renamed Pack → Agent (title, all refs, GitHub link), removed Claude API mention",
+    "vibe-coder: Added scroll reveal CSS + IntersectionObserver JS",
+    "vibe-coder: Started adding reveal classes to HTML (blocked at action 30)"
+  ]
+}

@@ -95,7 +95,7 @@ def run_attestation(
 
     # 3. Read workflow state for task counts
     workflow = _read_workflow_state(task_folder)
-    task_count = workflow.get("total_tasks", 0)
+    task_count = workflow.get("total_tasks") or 0
     completed_tasks = workflow.get("completed_tasks", [])
     skipped_tasks = workflow.get("skipped_tasks", [])
 

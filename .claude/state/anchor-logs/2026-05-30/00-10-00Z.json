@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-05-30T00:10:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-29T15:57:48Z", "tool": "Edit", "entry": "Edit: feed.html"},
+    {"timestamp": "2026-05-29T15:57:56Z", "tool": "Edit", "entry": "Edit: feed.css"},
+    {"timestamp": "2026-05-29T15:58:05Z", "tool": "Bash", "entry": "Bash: python validation script"},
+    {"timestamp": "2026-05-29T15:58:13Z", "tool": "Bash", "entry": "Bash: git add + commit feed.html feed.css"},
+    {"timestamp": "2026-05-29T15:58:18Z", "tool": "Bash", "entry": "Bash: git push"},
+    {"timestamp": "2026-05-29T15:58:21Z", "tool": "Bash", "entry": "Bash: git log --oneline -1"},
+    {"timestamp": "2026-05-29T15:59:55Z", "tool": "Bash", "entry": "Bash: compute protocol hash"},
+    {"timestamp": "2026-05-29T16:00:19Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"}
+  ]
+}

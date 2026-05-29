@@ -1,0 +1,8 @@
+{
+  "anchor_timestamp": "2026-05-30T00:30:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-29T16:02:44Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru", "session": "current"}
+  ]
+}
