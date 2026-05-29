@@ -1,0 +1,116 @@
+{
+  "anchor_timestamp": "2026-05-29T22:15:00Z",
+  "actions_count": 18,
+  "violations_found": 0,
+  "note": "Inter-anchor actions from pipeline 104 + concurrent pipeline 101 sessions. No violations.",
+  "actions": [
+    {
+      "timestamp": "2026-05-29T21:42:55Z",
+      "tool": "Write",
+      "entry": "Write: 003-market-fix-feed-js-guard.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:00Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" push -u origin feat/pipeline-105",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:00Z",
+      "tool": "Write",
+      "entry": "Write: 003-backfill-may27-bundles.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:07Z",
+      "tool": "Write",
+      "entry": "Write: 004-market-fix-generate-feed-markers.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:09Z",
+      "tool": "Write",
+      "entry": "Write: 004-test-attest-dry-run.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:12Z",
+      "tool": "Bash",
+      "entry": "Bash: gh pr create --repo isagawa-co/isagawa-co.github.io --base main --head feat/pipe",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:16Z",
+      "tool": "Write",
+      "entry": "Write: 005-commit-changes.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:20Z",
+      "tool": "Write",
+      "entry": "Write: 005-market-test-verify-no-js-fetch.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:31Z",
+      "tool": "Write",
+      "entry": "Write: 006-market-build-commit-push-pr.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:35Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/portfolio-feed-s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:35Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/fix-att",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:46Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" fetch origin && git -C \"D:/my_ai",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:49Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" checkout -b feat/feed-server-ren",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:43:53Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"h=open('D:/my_ai_projects/isagawa-co.github.io/feed.html').read(); pr",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:44:00Z",
+      "tool": "Write",
+      "entry": "Write: diagnosis.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:44:05Z",
+      "tool": "Edit",
+      "entry": "Edit: feed.html",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:44:06Z",
+      "tool": "Edit",
+      "entry": "Edit: attest.py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-05-29T21:44:36Z",
+      "tool": "Edit",
+      "entry": "Edit: feed.html",
+      "session": "current"
+    }
+  ]
+}

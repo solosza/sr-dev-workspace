@@ -1,53 +1,46 @@
 {
   "session_started": true,
-  "timestamp": "2026-05-30T01:03:00Z",
-  "resumed_from": "pipeline_105_task_005",
+  "timestamp": "2026-05-29T22:05:00Z",
+  "resumed_from": null,
   "context": {
     "current_task": null,
-    "task_folder": "tasks/portfolio-solo-velocity/",
-    "progress": "8/8 tasks complete (0 skipped)",
-    "last_completed": "008-market-build-git-commit-push.md",
-    "next_step": "cycling complete \u00e2\u20ac\u201d run-task.sh invocation will return ALL_TASKS_COMPLETE",
-    "notes": "Pipeline 105 complete. All 8 tasks done. story.html committed and pushed to isagawa-co.github.io (commit 142d778). Anchor triggered by 30-action counter; reviewed 29 actions, 0 violations."
+    "task_folder": "tasks/completed/fix-attestation-task-count/",
+    "progress": "5/5 tasks complete",
+    "last_completed": "005-commit-changes.md",
+    "next_step": "pipeline 104 complete",
+    "notes": "Pipeline 104 complete. Fixed attest.py task_count derivation. Backfilled May 27 bundles. Attested to Rekor. Feed updated with 87 entries."
   },
   "domain": "sr_dev",
-  "one_shot": true,
+  "one_shot": false,
   "actions_log": [
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" branch --show-current && git -C ",
+    "Bash: python -c \"h=open('D:/my_ai_projects/isagawa-co.github.io/feed.html').read(); as",
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" add feed.html generate-feed.py &",
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" push origin feat/feed-server-ren",
+    "Bash: gh pr create --repo isagawa-co/isagawa-co.github.io --base main --head feat/feed",
+    "Bash: gh pr merge 8 --repo isagawa-co/isagawa-co.github.io --merge --delete-branch 2>&",
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" fetch origin && git -C \"D:/my_ai",
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" log --oneline -1 && git -C \"D:/m",
     "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
-    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
-    "Bash: tail -f \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test",
-    "Bash: cat \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-rep",
-    "Bash: sleep 60 && cat \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-proj",
-    "Bash: kill %1 2>/dev/null; git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspa",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status --short 2>",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status --short 2>",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" add \\\n  .claude/s",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" commit -m \"$(cat "
+    "Bash: mv \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/101-marke"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-05-29T18:25:00Z",
+  "protocol_hash_timestamp": "2026-05-29T22:05:00Z",
   "anchor_ceremony": {
     "protocol_read": true,
-    "protocol_read_timestamp": "2026-05-29T18:25:00Z",
+    "protocol_read_timestamp": "2026-05-29T22:05:00Z",
     "lessons_read": true,
-    "lessons_read_timestamp": "2026-05-29T18:25:00Z",
+    "lessons_read_timestamp": "2026-05-29T22:05:00Z",
     "rules_applied": true,
     "work_reviewed": true,
-    "actions_reviewed_count": 29,
+    "actions_reviewed_count": 185,
     "violations_found": 0,
-    "next_action_stated": "re-run run-task.sh for pipeline 105 \u00e2\u20ac\u201d expect ALL_TASKS_COMPLETE",
+    "next_action_stated": "run task-builder for backlog 104",
     "ceremony_output_generated": true,
-    "timestamp": "2026-05-29T18:25:00Z"
+    "timestamp": "2026-05-29T22:05:00Z"
   },
-  "pipeline_state": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/105-market-build-portfolio-site-reframe.md",
-    "raw_input": "105",
-    "task_folder": "tasks/portfolio-solo-velocity/",
-    "task_count": 8,
-    "resume_step": null
-  },
+  "pipeline_state": null,
   "pipeline_mode": null
 }

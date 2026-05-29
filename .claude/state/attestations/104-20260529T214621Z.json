@@ -1,0 +1,68 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "894f30987016b94af4838d699fbd8f34c541e80713e3a748410cc80d37eb8df0",
+      "parameters": "bcc1986789b1faa9a4969c9acd77693cb19ddf14db172b8077525dad275b2255",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-29T17:21:09.036950+00:00",
+          "raw_input_hash": "5b7387831579896728d379e66665131dca4e2e17421f93c2a1e1fdf343e27aa7",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/gate-contract.md",
+          "sha256": "e7a0de450c4413aef7d6b58263c692fcf43d579c726400aa6e001459df19a908"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/000-index.md",
+          "sha256": "019985ae1f44cef231af39e2d6567d5412c8103cfdfc852d71ea077dddf42499"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/001-diagnose-write-findings.md",
+          "sha256": "a178279a52f62205c9bf2a4a0c9c97ce1755fae3172f85d8159ce37faa17b66c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/002-fix-attest-py-task-count.md",
+          "sha256": "2a6a64679e1aaed9eac775775d94bbfe38f5117ddba2ee07830100e4c4803ed3"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/003-backfill-may27-bundles.md",
+          "sha256": "dd072bd22aec14a45aa54da53741986af875df3a995e79d6b046b9d74586cd74"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/004-test-attest-dry-run.md",
+          "sha256": "723382f79996f33e0f0f0e724c06b96bff3e683ce54c18e403ad561c6d55316f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/005-commit-changes.md",
+          "sha256": "839a390eb1c62b2cd62d44fd22267ba40667f1ba44cc4442fde19dd4c380ccc0"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/gate-contract.md",
+          "sha256": "e7a0de450c4413aef7d6b58263c692fcf43d579c726400aa6e001459df19a908"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-05-29T21:46:21.489984+00:00",
+      "end": "2026-05-29T21:46:21.492487+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/104-market-fix-attestation-bundle-task-count.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/fix-attestation-task-count/",
+      "task_count": 5,
+      "completed_count": 4,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1672863220",
+      "logIndex": "1672863220"
+    }
+  }
+}
