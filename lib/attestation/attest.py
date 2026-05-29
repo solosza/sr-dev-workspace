@@ -46,6 +46,26 @@ def _resolve_output_paths(task_folder: str) -> list:
     return results
 
 
+def _count_tasks_in_folder(task_folder: str) -> int:
+    """Count task files in a task folder (NNN-*.md, excluding 000-index and gate-contract).
+
+    This is the authoritative source for task_count — it reads the task folder directly
+    rather than relying on workflow state, which may have been reset after pipeline completion.
+    """
+    import re
+    if not os.path.isdir(task_folder):
+        return 0
+    count = 0
+    for fname in os.listdir(task_folder):
+        if not fname.endswith(".md"):
+            continue
+        if "gate-contract" in fname:
+            continue
+        if re.match(r"^\d{3,}-", fname) and fname != "000-index.md":
+            count += 1
+    return count
+
+
 def _read_workflow_state(task_folder: str) -> dict:
     """Read workflow state to get task counts."""
     workspace = os.path.abspath(task_folder)
@@ -95,14 +115,22 @@ def run_attestation(
 
     # 3. Read workflow state for task counts
     workflow = _read_workflow_state(task_folder)
-    task_count = workflow.get("total_tasks") or 0
+
+    # Derive task_count from task folder file count (authoritative, timing-independent).
+    # Workflow state is a fallback only — it may be null/reset when attested after completion.
+    # Root cause of bug: Python dict.get("key", default) returns None for null values (not default).
+    task_count = _count_tasks_in_folder(task_folder)
+    if task_count == 0:
+        task_count = workflow.get("total_tasks") or 0
+
     completed_tasks = workflow.get("completed_tasks", [])
     skipped_tasks = workflow.get("skipped_tasks", [])
 
-    # Filter completed_tasks to only those belonging to this task folder
+    # Filter completed_tasks to only those belonging to this task folder.
+    # completed_tasks is a flat list across all projects — use file count as completed_count
+    # when workflow count is unreliable (zero or reset).
     folder_basename = os.path.basename(task_folder.rstrip("/\\"))
-    # completed_tasks is a flat list across all projects; count all for now
-    completed_count = len(completed_tasks)
+    completed_count = len(completed_tasks) if completed_tasks else task_count
     skipped_count = len(skipped_tasks)
 
     end_time = datetime.now(timezone.utc).isoformat()

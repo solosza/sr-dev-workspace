@@ -68,8 +68,8 @@
     "metadata": {
       "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/090-kernel-fix-execute-pipeline-autonomous-cycling.md",
       "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/fix-execute-pipeline-cycling",
-      "task_count": null,
-      "completed_count": 0,
+      "task_count": 8,
+      "completed_count": 8,
       "skipped_count": 0
     },
     "rekor": {
