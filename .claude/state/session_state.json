@@ -1,41 +1,41 @@
 {
   "session_started": true,
-  "timestamp": "2026-06-01T02:00:00Z",
+  "timestamp": "2026-06-01T03:00:00Z",
   "resumed_from": "context",
   "context": {
     "current_task": null,
     "task_folder": "tasks/job-application/",
     "progress": "6/6 tasks complete",
     "last_completed": "006-market-build-update-footers.md",
-    "next_step": "Edit story.html section 02 \u2014 Plain Language In, update chain-note and evidence card, then commit and push",
-    "notes": "Pipeline 110 done and live. AutoApply page deployed with terminal demo. Editing story.html section 02 to accurately reflect that input can be a sentence, paragraph, or pasted conversation depending on complexity."
+    "next_step": "Update qa-platforms.html Platform Database stack to pyodbc only (actual framework), then commit",
+    "notes": "Pipeline 110 done. story.html terminal fixed (static, grows per line, async/await). qa-platforms.html updated with Platform Database card. Stack currently says pyodbc/cx_Oracle/psycopg2 \u2014 user wants to verify against actual hmsa-healthcare-qa framework. Actual stack is just pyodbc (ODBC Driver 17 for SQL Server). Updating now."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" add \\\n  .claude/c",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" commit -m \"$(cat ",
-    "Bash: grep -n \"terminal\\|parallax\\|float\" \"D:/my_ai_projects/isagawa-co.github.io/styl",
-    "Bash: sed -n '712,830p' \"D:/my_ai_projects/isagawa-co.github.io/styles.css\"",
-    "Bash: grep -n \"demo-terminal\\|terminal__body\\|terminal__line\\|overflow\\|scroll\" \"D:/my",
-    "Edit: story.html",
-    "Edit: story.html",
-    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" add story.html && git -C \"D:/my_",
-    "Edit: story.html",
-    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" add story.html && git -C \"D:/my_"
+    "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/contracts/state-e",
+    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" && echo",
+    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/in",
+    "Write: 114-market-research-hoi-an-knockoff-shirts.md",
+    "Write: market-analysis.md",
+    "Write: sourcing-supplier-terms.md",
+    "Write: legal-compliance.md",
+    "Write: logistics-fulfillment.md",
+    "Write: pricing-strategy.md",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-06-01T02:00:00Z",
+  "protocol_hash_timestamp": "2026-06-01T03:00:00Z",
   "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-06-01T02:00:00Z",
-    "lessons_read_timestamp": "2026-06-01T02:00:00Z",
-    "actions_reviewed_count": 37,
+    "protocol_read_timestamp": "2026-06-01T03:00:00Z",
+    "lessons_read_timestamp": "2026-06-01T03:00:00Z",
+    "actions_reviewed_count": 32,
     "violations_found": 0,
-    "next_action_stated": "Edit story.html section 02 \u2014 title to Plain Language In, chain-note to reflect variable input length, evidence card copy update",
-    "rules_applied": "NEVER ASSUME: read story.html confirmed before editing; NEVER USE cd: use absolute paths; FULL ANCHOR: ceremony complete with all steps",
-    "ceremony_output_generated": "2026-06-01T02:00:00Z"
+    "next_action_stated": "Edit qa-platforms.html Platform Database stack line \u2014 pyodbc only, matching actual hmsa-healthcare-qa requirements.txt",
+    "rules_applied": "NEVER ASSUME: read actual framework files before updating page copy (done \u2014 sql_server_interface.py + requirements.txt confirmed pyodbc only); NEVER USE cd: absolute paths; FULL ANCHOR: complete",
+    "ceremony_output_generated": "2026-06-01T03:00:00Z"
   },
   "pipeline_state": {
     "input_mode": "existing_backlog",
