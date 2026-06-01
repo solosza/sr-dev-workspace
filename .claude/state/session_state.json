@@ -1,46 +1,45 @@
 {
   "session_started": true,
-  "timestamp": "2026-05-29T22:05:00Z",
-  "resumed_from": null,
+  "timestamp": "2026-06-01T02:00:00Z",
+  "resumed_from": "context",
   "context": {
     "current_task": null,
-    "task_folder": "tasks/completed/fix-attestation-task-count/",
-    "progress": "5/5 tasks complete",
-    "last_completed": "005-commit-changes.md",
-    "next_step": "pipeline 104 complete",
-    "notes": "Pipeline 104 complete. Fixed attest.py task_count derivation. Backfilled May 27 bundles. Attested to Rekor. Feed updated with 87 entries."
+    "task_folder": "tasks/job-application/",
+    "progress": "6/6 tasks complete",
+    "last_completed": "006-market-build-update-footers.md",
+    "next_step": "Edit story.html section 02 \u2014 Plain Language In, update chain-note and evidence card, then commit and push",
+    "notes": "Pipeline 110 done and live. AutoApply page deployed with terminal demo. Editing story.html section 02 to accurately reflect that input can be a sentence, paragraph, or pasted conversation depending on complexity."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" branch --show-current && git -C ",
-    "Bash: python -c \"h=open('D:/my_ai_projects/isagawa-co.github.io/feed.html').read(); as",
-    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" add feed.html generate-feed.py &",
-    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" push origin feat/feed-server-ren",
-    "Bash: gh pr create --repo isagawa-co/isagawa-co.github.io --base main --head feat/feed",
-    "Bash: gh pr merge 8 --repo isagawa-co/isagawa-co.github.io --merge --delete-branch 2>&",
-    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" fetch origin && git -C \"D:/my_ai",
-    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" log --oneline -1 && git -C \"D:/m",
-    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
-    "Bash: mv \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/101-marke"
+    "Edit: story.html",
+    "Edit: story.html",
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" add story.html && git -C \"D:/my_",
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" status",
+    "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" stash && git -C \"D:/my_ai_projec",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-05-29T22:05:00Z",
+  "protocol_hash_timestamp": "2026-06-01T02:00:00Z",
   "anchor_ceremony": {
-    "protocol_read": true,
-    "protocol_read_timestamp": "2026-05-29T22:05:00Z",
-    "lessons_read": true,
-    "lessons_read_timestamp": "2026-05-29T22:05:00Z",
-    "rules_applied": true,
-    "work_reviewed": true,
-    "actions_reviewed_count": 185,
+    "protocol_read_timestamp": "2026-06-01T02:00:00Z",
+    "lessons_read_timestamp": "2026-06-01T02:00:00Z",
+    "actions_reviewed_count": 37,
     "violations_found": 0,
-    "next_action_stated": "run task-builder for backlog 104",
-    "ceremony_output_generated": true,
-    "timestamp": "2026-05-29T22:05:00Z"
+    "next_action_stated": "Edit story.html section 02 \u2014 title to Plain Language In, chain-note to reflect variable input length, evidence card copy update",
+    "rules_applied": "NEVER ASSUME: read story.html confirmed before editing; NEVER USE cd: use absolute paths; FULL ANCHOR: ceremony complete with all steps",
+    "ceremony_output_generated": "2026-06-01T02:00:00Z"
   },
-  "pipeline_state": null,
+  "pipeline_state": {
+    "input_mode": "existing_backlog",
+    "backlog_path": "docs/backlog/110-market-build-job-application-product-page.md",
+    "raw_input": "110",
+    "task_folder": "tasks/job-application/",
+    "task_count": 6,
+    "resume_step": null
+  },
   "pipeline_mode": null
 }

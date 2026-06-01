@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-05-31T20:00:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-31T08:27:04Z", "tool": "Write", "entry": "Write: README.md"},
+    {"timestamp": "2026-05-31T08:27:08Z", "tool": "Bash", "entry": "Bash: test -f README.md"},
+    {"timestamp": "2026-05-31T08:27:13Z", "tool": "Bash", "entry": "Bash: grep -c Da Nang/Hoi An"},
+    {"timestamp": "2026-05-31T08:27:14Z", "tool": "Bash", "entry": "Bash: grep -c deliverable links"},
+    {"timestamp": "2026-05-31T08:27:28Z", "tool": "Bash", "entry": "Bash: test -f README.md"}
+  ]
+}

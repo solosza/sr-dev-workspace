@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-05-31T21:00:00Z",
+  "actions_count": 7,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-31T08:40:32Z", "tool": "Write", "entry": "Write: platform-decision.md"},
+    {"timestamp": "2026-05-31T08:40:36Z", "tool": "Bash", "entry": "Bash: test -f platform-decision.md"},
+    {"timestamp": "2026-05-31T08:40:38Z", "tool": "Bash", "entry": "Bash: grep Fee Comparison"},
+    {"timestamp": "2026-05-31T08:40:39Z", "tool": "Bash", "entry": "Bash: grep Production Partner"},
+    {"timestamp": "2026-05-31T08:40:40Z", "tool": "Bash", "entry": "Bash: grep Recommendation Etsy"},
+    {"timestamp": "2026-05-31T08:40:41Z", "tool": "Bash", "entry": "Bash: grep Running Both Simultaneously"},
+    {"timestamp": "2026-05-31T08:40:57Z", "tool": "Bash", "entry": "Bash: test -f platform-decision.md (final)"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "anchor_timestamp": "2026-06-01T00:10:00Z",
+  "actions_count": 10,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-05-31T23:13:45Z", "tool": "Edit", "entry": "Edit: index.html"},
+    {"timestamp": "2026-05-31T23:13:50Z", "tool": "Edit", "entry": "Edit: feed.html"},
+    {"timestamp": "2026-05-31T23:13:50Z", "tool": "Edit", "entry": "Edit: qa-platforms.html"},
+    {"timestamp": "2026-05-31T23:13:50Z", "tool": "Edit", "entry": "Edit: ssh-compliance.html"},
+    {"timestamp": "2026-05-31T23:13:51Z", "tool": "Edit", "entry": "Edit: vibe-coder.html"},
+    {"timestamp": "2026-05-31T23:13:51Z", "tool": "Edit", "entry": "Edit: story.html"},
+    {"timestamp": "2026-05-31T23:13:52Z", "tool": "Edit", "entry": "Edit: attestation.html"},
+    {"timestamp": "2026-05-31T23:14:07Z", "tool": "Bash", "entry": "Bash: verification loop for pill-nav"},
+    {"timestamp": "2026-05-31T23:14:31Z", "tool": "Bash", "entry": "Bash: grep verification for job-application.html"},
+    {"timestamp": "2026-06-01T00:10:01Z", "tool": "Bash", "entry": "Bash: compute protocol hash"}
+  ]
+}
