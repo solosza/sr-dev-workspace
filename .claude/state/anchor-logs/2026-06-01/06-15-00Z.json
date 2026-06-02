@@ -1,0 +1,18 @@
+{
+  "anchor_timestamp": "2026-06-01T06:15:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-01T05:28:57Z", "tool": "Bash", "entry": "Bash: test -d project dir"},
+    {"timestamp": "2026-06-01T05:31:47Z", "tool": "Write", "entry": "Write: sourcing-suppliers.md"},
+    {"timestamp": "2026-06-01T05:31:51Z", "tool": "Bash", "entry": "Bash: test -f sourcing-suppliers.md"},
+    {"timestamp": "2026-06-01T05:31:53Z", "tool": "Bash", "entry": "Bash: grep china/vietnam"},
+    {"timestamp": "2026-06-01T05:31:54Z", "tool": "Bash", "entry": "Bash: grep AAA"},
+    {"timestamp": "2026-06-01T05:31:58Z", "tool": "Bash", "entry": "Bash: grep supplier names"},
+    {"timestamp": "2026-06-01T05:31:59Z", "tool": "Bash", "entry": "Bash: grep sample"},
+    {"timestamp": "2026-06-01T05:32:00Z", "tool": "Bash", "entry": "Bash: grep quality/grade/tier"},
+    {"timestamp": "2026-06-01T05:32:15Z", "tool": "Bash", "entry": "Bash: test -f file"},
+    {"timestamp": "2026-06-01T05:32:16Z", "tool": "Bash", "entry": "Bash: grep quality/grade/tier"},
+    {"timestamp": "2026-06-01T06:15:00Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash"}
+  ]
+}

@@ -1,27 +1,14 @@
-{"timestamp": "2026-06-01T01:18:44Z", "tool": "Bash", "entry": "Bash: grep -n \"pyodbc\\|Stack.*Platform Database\\|cx_Oracle\" \"D:/my_ai_projects/isagawa", "session": "current"}
-{"timestamp": "2026-06-01T01:18:51Z", "tool": "Edit", "entry": "Edit: qa-platforms.html", "session": "current"}
-{"timestamp": "2026-06-01T01:18:56Z", "tool": "Bash", "entry": "Bash: git -C \"D:/my_ai_projects/isagawa-co.github.io\" add qa-platforms.html && git -C ", "session": "current"}
-{"timestamp": "2026-06-01T03:46:58Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test\"", "session": "current"}
-{"timestamp": "2026-06-01T03:47:01Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/contracts\" && echo", "session": "current"}
-{"timestamp": "2026-06-01T03:47:05Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/CLAUDE\" && cat \"D:", "session": "current"}
-{"timestamp": "2026-06-01T03:47:09Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/CLAUDE/game-archi", "session": "current"}
-{"timestamp": "2026-06-01T03:47:12Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/contracts/action-", "session": "current"}
-{"timestamp": "2026-06-01T04:13:37Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/tasks\" && echo \"--", "session": "current"}
-{"timestamp": "2026-06-01T04:13:40Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/docs/backlog\"", "session": "current"}
-{"timestamp": "2026-06-01T04:13:44Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/docs/backlog/034-", "session": "current"}
-{"timestamp": "2026-06-01T04:13:46Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/docs/backlog/035-", "session": "current"}
-{"timestamp": "2026-06-01T04:13:50Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/docs/backlog/037-", "session": "current"}
-{"timestamp": "2026-06-01T04:13:54Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/tasks/kernel-037-p", "session": "current"}
-{"timestamp": "2026-06-01T04:13:57Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/CLAUDE/game-archi", "session": "current"}
-{"timestamp": "2026-06-01T04:14:01Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/.claude/skills/co", "session": "current"}
-{"timestamp": "2026-06-01T04:14:44Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/docs/ai-games-arc", "session": "current"}
-{"timestamp": "2026-06-01T04:15:13Z", "tool": "Bash", "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/contracts/state-e", "session": "current"}
-{"timestamp": "2026-06-01T05:10:06Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" && echo", "session": "current"}
-{"timestamp": "2026-06-01T05:10:29Z", "tool": "Bash", "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/in", "session": "current"}
-{"timestamp": "2026-06-01T05:12:29Z", "tool": "Write", "entry": "Write: 114-market-research-hoi-an-knockoff-shirts.md", "session": "current"}
-{"timestamp": "2026-06-01T05:12:39Z", "tool": "Write", "entry": "Write: market-analysis.md", "session": "current"}
-{"timestamp": "2026-06-01T05:12:50Z", "tool": "Write", "entry": "Write: sourcing-supplier-terms.md", "session": "current"}
-{"timestamp": "2026-06-01T05:13:01Z", "tool": "Write", "entry": "Write: legal-compliance.md", "session": "current"}
-{"timestamp": "2026-06-01T05:13:12Z", "tool": "Write", "entry": "Write: logistics-fulfillment.md", "session": "current"}
-{"timestamp": "2026-06-01T05:13:21Z", "tool": "Write", "entry": "Write: pricing-strategy.md", "session": "current"}
-{"timestamp": "2026-06-01T05:13:27Z", "tool": "Bash", "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status", "session": "current"}
+{"timestamp": "2026-06-01T23:41:42Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru", "session": "current"}
+{"timestamp": "2026-06-01T23:41:46Z", "tool": "Bash", "entry": "Bash: ls /d/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/mcp-server-resear", "session": "current"}
+{"timestamp": "2026-06-01T23:41:50Z", "tool": "Bash", "entry": "Bash: ls /d/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/mcp-ser", "session": "current"}
+{"timestamp": "2026-06-01T23:41:52Z", "tool": "Bash", "entry": "Bash: cat /d/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/mcp-se", "session": "current"}
+{"timestamp": "2026-06-01T23:41:55Z", "tool": "Bash", "entry": "Bash: ls /d/my_ai_projects/project_test_repos/sr_dev_workspace/projects/mcp-server-res", "session": "current"}
+{"timestamp": "2026-06-01T23:41:58Z", "tool": "Bash", "entry": "Bash: cat /d/my_ai_projects/project_test_repos/sr_dev_workspace/projects/mcp-server-re", "session": "current"}
+{"timestamp": "2026-06-02T17:13:46Z", "tool": "Bash", "entry": "Bash: grep -n \"backlog\\|loop\\|cycle\\|queue\\|multiple\\|batch\" \"D:/my_ai_projects/projec", "session": "current"}
+{"timestamp": "2026-06-02T17:25:18Z", "tool": "Bash", "entry": "Bash: ls D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/ | so", "session": "current"}
+{"timestamp": "2026-06-02T17:25:25Z", "tool": "Bash", "entry": "Bash: python D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/int", "session": "current"}
+{"timestamp": "2026-06-02T17:25:43Z", "tool": "Write", "entry": "Write: 123-kernel-research-worktree-pipeline-isolation.md", "session": "current"}
+{"timestamp": "2026-06-02T21:30:14Z", "tool": "Bash", "entry": "Bash: python D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/int", "session": "current"}
+{"timestamp": "2026-06-02T21:30:32Z", "tool": "Write", "entry": "Write: 124-kernel-build-frontend-aesthetic-directive.md", "session": "current"}
+{"timestamp": "2026-06-02T23:01:21Z", "tool": "Bash", "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/sr_dev_workspace status", "session": "current"}
+{"timestamp": "2026-06-02T23:01:21Z", "tool": "Bash", "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/sr_dev_workspace log --oneline -3", "session": "current"}

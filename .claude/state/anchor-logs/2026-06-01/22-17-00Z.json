@@ -1,0 +1,20 @@
+{
+  "anchor_timestamp": "2026-06-01T22:17:00Z",
+  "actions_count": 14,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-01T21:30:18Z", "tool": "Bash", "entry": "Bash: python hash computation"},
+    {"timestamp": "2026-06-01T21:30:18Z", "tool": "Bash", "entry": "Bash: ls skill-seekers project dir"},
+    {"timestamp": "2026-06-01T21:30:21Z", "tool": "Bash", "entry": "Bash: python hash computation"},
+    {"timestamp": "2026-06-01T21:30:37Z", "tool": "Bash", "entry": "Bash: ls skill-security project dir"},
+    {"timestamp": "2026-06-01T21:30:38Z", "tool": "Bash", "entry": "Bash: ls superpowers tasks dir"},
+    {"timestamp": "2026-06-01T21:30:39Z", "tool": "Bash", "entry": "Bash: ls superpowers project dir"},
+    {"timestamp": "2026-06-01T21:30:51Z", "tool": "Bash", "entry": "Bash: python hash computation"},
+    {"timestamp": "2026-06-01T21:30:54Z", "tool": "Bash", "entry": "Bash: python hash computation"},
+    {"timestamp": "2026-06-01T21:30:57Z", "tool": "Bash", "entry": "Bash: python json state update"},
+    {"timestamp": "2026-06-01T21:31:03Z", "tool": "Bash", "entry": "Bash: ls frontend-design project dir"},
+    {"timestamp": "2026-06-01T21:31:12Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"},
+    {"timestamp": "2026-06-01T21:31:12Z", "tool": "Bash", "entry": "Bash: python hash computation"},
+    {"timestamp": "2026-06-01T21:31:14Z", "tool": "Bash", "entry": "Bash: test debugging project dir"}
+  ]
+}

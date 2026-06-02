@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-06-01T21:30:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-01T21:21:21Z", "tool": "Bash", "entry": "Bash: mkdir -p projects/claude-agents-research/"},
+    {"timestamp": "2026-06-01T21:21:24Z", "tool": "Bash", "entry": "Bash: test -d projects/claude-agents-research/"},
+    {"timestamp": "2026-06-01T21:22:45Z", "tool": "Bash", "entry": "Bash: mkdir -p tasks/superpower..."}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "anchor_timestamp": "2026-06-01T22:37:00Z",
+  "actions_count": 98,
+  "violations_found": 0,
+  "actions": "see actions.jsonl archive — 98 actions from multiple concurrent agents, all read-only exploration or file writes with absolute paths"
+}

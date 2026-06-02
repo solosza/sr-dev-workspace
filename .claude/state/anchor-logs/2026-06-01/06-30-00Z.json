@@ -1,0 +1,21 @@
+{
+  "anchor_timestamp": "2026-06-01T06:30:00Z",
+  "actions_count": 14,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-01T05:35:10Z", "tool": "Bash", "entry": "Bash: test -d project dir exists"},
+    {"timestamp": "2026-06-01T05:37:24Z", "tool": "Write", "entry": "Write: legal-compliance.md"},
+    {"timestamp": "2026-06-01T05:37:25Z", "tool": "Bash", "entry": "Bash: test -f legal-compliance.md exists"},
+    {"timestamp": "2026-06-01T05:37:26Z", "tool": "Bash", "entry": "Bash: grep Tier count"},
+    {"timestamp": "2026-06-01T05:37:28Z", "tool": "Bash", "entry": "Bash: grep platform names"},
+    {"timestamp": "2026-06-01T05:37:29Z", "tool": "Bash", "entry": "Bash: grep private label"},
+    {"timestamp": "2026-06-01T05:37:30Z", "tool": "Bash", "entry": "Bash: grep risk"},
+    {"timestamp": "2026-06-01T05:37:31Z", "tool": "Bash", "entry": "Bash: grep go/no-go"},
+    {"timestamp": "2026-06-01T05:37:50Z", "tool": "Bash", "entry": "Bash: test -f verification"},
+    {"timestamp": "2026-06-01T05:37:51Z", "tool": "Bash", "entry": "Bash: grep risk verification"},
+    {"timestamp": "2026-06-01T05:37:52Z", "tool": "Bash", "entry": "Bash: grep private label verification"},
+    {"timestamp": "2026-06-01T05:39:34Z", "tool": "Bash", "entry": "Bash: compute protocol hash"},
+    {"timestamp": "2026-06-01T05:39:48Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"},
+    {"timestamp": "2026-06-01T05:39:49Z", "tool": "Read", "entry": "Read: actions.jsonl for archive"}
+  ]
+}

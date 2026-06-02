@@ -1,49 +1,31 @@
 {
   "session_started": true,
-  "timestamp": "2026-06-01T03:00:00Z",
+  "timestamp": "2026-06-02T00:10:00Z",
   "resumed_from": "context",
   "context": {
     "current_task": null,
-    "task_folder": "tasks/job-application/",
-    "progress": "6/6 tasks complete",
-    "last_completed": "006-market-build-update-footers.md",
-    "next_step": "Update qa-platforms.html Platform Database stack to pyodbc only (actual framework), then commit",
-    "notes": "Pipeline 110 done. story.html terminal fixed (static, grows per line, async/await). qa-platforms.html updated with Platform Database card. Stack currently says pyodbc/cx_Oracle/psycopg2 \u2014 user wants to verify against actual hmsa-healthcare-qa framework. Actual stack is just pyodbc (ODBC Driver 17 for SQL Server). Updating now."
+    "task_folder": "tasks/mcp-server-research/",
+    "progress": "superpowers-research complete (6/6). mcp-server-research complete (4/4).",
+    "last_completed": "004-kernel-build-write-research-report.md",
+    "next_step": "no incomplete tasks remain in either pipeline",
+    "notes": "superpowers-research all 6 tasks done as of 2026-06-01T22:40:00Z. Research report at projects/superpowers-research/research-report.md. mcp-server-research all 4 tasks done. PID 1194 still running \u2014 likely finishing cleanup or lock release."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: cat \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/contracts/state-e",
-    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" && echo",
-    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/in",
-    "Write: 114-market-research-hoi-an-knockoff-shirts.md",
-    "Write: market-analysis.md",
-    "Write: sourcing-supplier-terms.md",
-    "Write: legal-compliance.md",
-    "Write: logistics-fulfillment.md",
-    "Write: pricing-strategy.md",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status"
+    "Bash: grep -n \"backlog\\|loop\\|cycle\\|queue\\|multiple\\|batch\" \"D:/my_ai_projects/projec",
+    "Bash: ls D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/ | so",
+    "Bash: python D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/int",
+    "Write: 123-kernel-research-worktree-pipeline-isolation.md",
+    "Bash: python D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/int",
+    "Write: 124-kernel-build-frontend-aesthetic-directive.md",
+    "Bash: git -C D:/my_ai_projects/project_test_repos/sr_dev_workspace status",
+    "Bash: git -C D:/my_ai_projects/project_test_repos/sr_dev_workspace log --oneline -3"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-06-01T03:00:00Z",
-  "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-06-01T03:00:00Z",
-    "lessons_read_timestamp": "2026-06-01T03:00:00Z",
-    "actions_reviewed_count": 32,
-    "violations_found": 0,
-    "next_action_stated": "Edit qa-platforms.html Platform Database stack line \u2014 pyodbc only, matching actual hmsa-healthcare-qa requirements.txt",
-    "rules_applied": "NEVER ASSUME: read actual framework files before updating page copy (done \u2014 sql_server_interface.py + requirements.txt confirmed pyodbc only); NEVER USE cd: absolute paths; FULL ANCHOR: complete",
-    "ceremony_output_generated": "2026-06-01T03:00:00Z"
-  },
-  "pipeline_state": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/110-market-build-job-application-product-page.md",
-    "raw_input": "110",
-    "task_folder": "tasks/job-application/",
-    "task_count": 6,
-    "resume_step": null
-  },
+  "protocol_hash_timestamp": "2026-06-02T00:10:00Z",
+  "pipeline_state": null,
   "pipeline_mode": null
 }

@@ -1,0 +1,649 @@
+{
+  "anchor_timestamp": "2026-06-01T22:35:00Z",
+  "actions_count": 107,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-06-01T21:34:22Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json, os\n\nbase='D:/my_ai_projects/project_test_repos/sr_dev_w",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:26Z",
+      "tool": "Write",
+      "entry": "Write: research-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:29Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/frontend",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:30Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"ADOPT\\|ADAPT\\|SKIP\\|recommend\" \"D:/my_ai_projects/project_test_repos/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:32Z",
+      "tool": "Bash",
+      "entry": "Bash: test $(wc -l < \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/f",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:39Z",
+      "tool": "Write",
+      "entry": "Write: mcp-frameworks-summary.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:40Z",
+      "tool": "Bash",
+      "entry": "Bash: wc -l \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/frontend-d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:42Z",
+      "tool": "Write",
+      "entry": "Write: skills-inventory.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:43Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/mcp-serv",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:43Z",
+      "tool": "Write",
+      "entry": "Write: kernel-integration-design.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:44Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"fastmcp\\|fast.mcp\\|SDK\\|framework\" \"D:/my_ai_projects/project_test_rep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:47Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/superpow",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:48Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/release-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:48Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -c \"##\\|^-\\s\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projec",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:49Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"/kernel/release\\|release.*command\\|changelog\\|tag\" \"D:/my_ai_projects/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:57Z",
+      "tool": "Write",
+      "entry": "Write: kernel-fix-comparison.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:59Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\n# Update workflow\nwpath = 'D:/my_ai_projects/project_tes",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:34:59Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\n# Update workflow state\nwf_path = 'D:/my_ai_projects/pro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:01Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwf='D:/my_ai_projects/project_test_repos/sr_dev_workspac",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:01Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/debuggin",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:02Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"scope\\|application\\|kernel\\|/kernel/fix\" \"D:/my_ai_projects/project_te",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:03Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:07Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/frontend-desig",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:10Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/\" 2>/dev/null &&",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:13Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" 2>/dev/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:13Z",
+      "tool": "Write",
+      "entry": "Write: research-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:17Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/run-task.sh\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:17Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:21Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/logs/\" 2>/dev/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:23Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/logs/\" 2>/dev/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:24Z",
+      "tool": "Write",
+      "entry": "Write: execute-pipeline-assessment.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:26Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/\" 2>/dev/null",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:29Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/common.sh\" | grep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:31Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\n\nwf_path = 'D:/my_ai_projects/project_test_repos/sr_dev_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:31Z",
+      "tool": "Bash",
+      "entry": "Bash: echo \"=== Check file exists ===\" && test -f \"D:/my_ai_projects/project_test_repo",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:31Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/\" | sort",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:33Z",
+      "tool": "Write",
+      "entry": "Write: static-analysis-design.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:35Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/\" | grep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:37Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/fronten",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:38Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/skill-se",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:39Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"destructive\\|rm -rf\\|force.push\\|credential\" \"D:/my_ai_projects/projec",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:43Z",
+      "tool": "Bash",
+      "entry": "Bash: test -d \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/skill-se",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:44Z",
+      "tool": "Bash",
+      "entry": "Bash: echo \"=== DOC-07: file exists ===\" && test -f \"D:/my_ai_projects/project_test_re",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:44Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/skill-se",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:45Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"hoi-an\\|govcon\\|business-credit\\|ugc\\|geo\" \"D:/my_ai_projects/project_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:45Z",
+      "tool": "Write",
+      "entry": "Write: standalone-product-assessment.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:46Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/skill-se",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:47Z",
+      "tool": "Write",
+      "entry": "Write: tdd-assessment.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:48Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"SKILL.md\\|skill.*format\\|invocation\" \"D:/my_ai_projects/project_test_r",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:49Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/skill-se",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:49Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/release-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:49Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"recommend\\|adopt\\|skip\\|build\" \"D:/my_ai_projects/project_test_repos/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:50Z",
+      "tool": "Bash",
+      "entry": "Bash: test $(wc -l < \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:50Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"Netlify\\|Vercel\\|GitHub Pages\\|competitive\\|market\" \"D:/my_ai_projects",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:51Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/superpow",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:52Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"kernel\\|test-task\\|run-task\" \"D:/my_ai_projects/project_test_repos/sr_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:56Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\n\nbase='D:/my_ai_projects/project_test_repos/sr_dev_works",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:35:56Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\np='D:/my_ai_projects/project_test_repos/sr_dev_workspace",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:05Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:10Z",
+      "tool": "Write",
+      "entry": "Write: capabilities-assessment.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:15Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/mcp-serv",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:15Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/\" && echo \"---\" ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:16Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"attest\\|attestation\\|pipeline\" \"D:/my_ai_projects/project_test_repos/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:17Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/projects/claude-agents",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:22Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/115-kern",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:25Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog\" -name ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:28Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/115",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:30Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/115-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:33Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/projects/claude-ag",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:43Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/projects/claude-agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:44Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwf_path = 'D:/my_ai_projects/project_test_repos/sr_dev_w",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:36:47Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"/d/my_ai_projects/project_test_repos/sr_dev_workspace/projects/claude-agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:06Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:10Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/skill-seekers-re",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:13Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\" -name \"*skill",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:16Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/skill-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:31Z",
+      "tool": "Write",
+      "entry": "Write: worktree-assessment.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:34Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/superpow",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:35Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"EnterWorktree\\|worktree\\|branch\" \"D:/my_ai_projects/project_test_repos",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:36Z",
+      "tool": "Write",
+      "entry": "Write: research-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:39Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/skill-se",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:41Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"recommend\\|build\\|skip\\|audit\" \"D:/my_ai_projects/project_test_repos/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:42Z",
+      "tool": "Bash",
+      "entry": "Bash: test $(wc -l < \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/s",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:44Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nwf_path = 'D:/my_ai_projects/project_test_repos/sr_dev_w",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:47Z",
+      "tool": "Write",
+      "entry": "Write: research-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:51Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/release-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:52Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"recommend\\|build\\|skip\\|integrate\" \"D:/my_ai_projects/project_test_rep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:53Z",
+      "tool": "Bash",
+      "entry": "Bash: test $(wc -l < \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/r",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:55Z",
+      "tool": "Write",
+      "entry": "Write: research-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:57Z",
+      "tool": "Write",
+      "entry": "Write: research-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:37:58Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\np='D:/my_ai_projects/project_test_repos/sr_dev_workspace",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:01Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\np='D:/my_ai_projects/project_test_repos/sr_dev_workspace",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:01Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/mcp-serv",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:02Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/debuggin",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:02Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"recommend\\|build\\|skip\\|prototype\" \"D:/my_ai_projects/project_test_rep",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:04Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"integration\\|/kernel/debug\\|/kernel/fix\\|@debugger\\|recommend\" \"D:/my_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:06Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/claude-agents",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:11Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:18Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/\" 2>&1",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:21Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/121-kern",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:24Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" 2>&1 | ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:26Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" 2>&1",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:44Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:50Z",
+      "tool": "Write",
+      "entry": "Write: code-review-assessment.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:53Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/superpow",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:58Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/mcp-serv",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-01T21:38:59Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -qi \"recommend\\|build\\|skip\\|prototype\" \"D:/my_ai_projects/project_test_rep",
+      "session": "current"
+    }
+  ]
+}
