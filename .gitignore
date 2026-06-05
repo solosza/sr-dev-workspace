@@ -35,3 +35,9 @@ nul
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Screenshots (Playwright/browser session artifacts)
+*.png
+*.jpg
+*.jpeg
+.playwright-mcp/
