@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-06-05T22:15:00Z",
+  "actions_count": 7,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-05T18:20:17Z", "tool": "Bash", "entry": "Bash: python data extraction script"},
+    {"timestamp": "2026-06-05T18:20:27Z", "tool": "Bash", "entry": "Bash: python JSON validation"},
+    {"timestamp": "2026-06-05T18:25:19Z", "tool": "Write", "entry": "Write: 2026-06-05-other-companies.md"},
+    {"timestamp": "2026-06-05T18:25:23Z", "tool": "Bash", "entry": "Bash: file existence check"},
+    {"timestamp": "2026-06-05T18:25:46Z", "tool": "Bash", "entry": "Bash: file existence check"},
+    {"timestamp": "2026-06-05T18:27:16Z", "tool": "Bash", "entry": "Bash: protocol hash computation"},
+    {"timestamp": "2026-06-05T18:27:55Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs directory"}
+  ]
+}

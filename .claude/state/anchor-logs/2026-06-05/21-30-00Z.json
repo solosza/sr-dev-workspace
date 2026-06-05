@@ -1,0 +1,18 @@
+{
+  "anchor_timestamp": "2026-06-05T21:30:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-05T18:13:19Z", "tool": "Bash", "entry": "Bash: truncate actions.jsonl"},
+    {"timestamp": "2026-06-05T18:13:20Z", "tool": "Bash", "entry": "Bash: cp run-task.sh to master"},
+    {"timestamp": "2026-06-05T18:13:25Z", "tool": "Bash", "entry": "Bash: cp protocol to master"},
+    {"timestamp": "2026-06-05T18:13:31Z", "tool": "Bash", "entry": "Bash: verify master repo"},
+    {"timestamp": "2026-06-05T18:13:37Z", "tool": "Bash", "entry": "Bash: init session_state in master"},
+    {"timestamp": "2026-06-05T18:13:43Z", "tool": "Bash", "entry": "Bash: init workflow_state in master"},
+    {"timestamp": "2026-06-05T18:13:48Z", "tool": "Bash", "entry": "Bash: validate master repo"},
+    {"timestamp": "2026-06-05T18:13:52Z", "tool": "Bash", "entry": "Bash: rm old test repo"},
+    {"timestamp": "2026-06-05T18:13:55Z", "tool": "Bash", "entry": "Bash: cp master to test repo"},
+    {"timestamp": "2026-06-05T18:13:59Z", "tool": "Bash", "entry": "Bash: verify test repo"},
+    {"timestamp": "2026-06-05T18:14:05Z", "tool": "Bash", "entry": "Bash: find gate-contract.md"}
+  ]
+}

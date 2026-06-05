@@ -1,31 +1,49 @@
 {
   "session_started": true,
-  "timestamp": "2026-06-02T00:10:00Z",
+  "timestamp": "2026-06-05T22:25:00Z",
   "resumed_from": "context",
   "context": {
     "current_task": null,
-    "task_folder": "tasks/mcp-server-research/",
-    "progress": "superpowers-research complete (6/6). mcp-server-research complete (4/4).",
-    "last_completed": "004-kernel-build-write-research-report.md",
-    "next_step": "no incomplete tasks remain in either pipeline",
-    "notes": "superpowers-research all 6 tasks done as of 2026-06-01T22:40:00Z. Research report at projects/superpowers-research/research-report.md. mcp-server-research all 4 tasks done. PID 1194 still running \u2014 likely finishing cleanup or lock release."
+    "task_folder": "tasks/ai-harness-job-search/",
+    "progress": "6/6 tasks complete",
+    "last_completed": "006-market-build-write-job-list.md",
+    "next_step": "Creating backlogs 125 (/kernel/review command) and 126 (TDD discipline) from research assessments",
+    "notes": "Resume (prose-only) written + PDF generated. profile.json created. Live /job-apply test running in background (agent a13d39113b3d2f116). Pipeline 029 complete. Research 116-122 all in done/. Now creating build backlogs from code-review-assessment and tdd-assessment."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: grep -n \"backlog\\|loop\\|cycle\\|queue\\|multiple\\|batch\" \"D:/my_ai_projects/projec",
-    "Bash: ls D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/ | so",
-    "Bash: python D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/int",
-    "Write: 123-kernel-research-worktree-pipeline-isolation.md",
-    "Bash: python D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/int",
-    "Write: 124-kernel-build-frontend-aesthetic-directive.md",
-    "Bash: git -C D:/my_ai_projects/project_test_repos/sr_dev_workspace status",
-    "Bash: git -C D:/my_ai_projects/project_test_repos/sr_dev_workspace log --oneline -3"
+    "Write: 125-kernel-build-review-command.md",
+    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/in",
+    "Write: 126-kernel-build-tdd-discipline.md",
+    "Bash: tail -50 \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-tes",
+    "Bash: ls -la \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" status",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" add \".claude/",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" add \"CLAUDE.m",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" push origin m"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-06-02T00:10:00Z",
-  "pipeline_state": null,
-  "pipeline_mode": null
+  "protocol_hash_timestamp": "2026-06-05T00:00:00Z",
+  "pipeline_state": {
+    "input_mode": "existing_backlog",
+    "backlog_path": "docs/backlog/029-market-research-ai-harness-engineering-jobs.md",
+    "task_folder": "tasks/ai-harness-job-search/",
+    "task_count": 6,
+    "resume_step": null,
+    "no_move_to_done": true
+  },
+  "pipeline_mode": null,
+  "anchor_ceremony": {
+    "protocol_read_timestamp": "2026-06-05T20:30:00Z",
+    "lessons_read_timestamp": "2026-06-05T20:30:00Z",
+    "actions_reviewed_count": 63,
+    "violations_found": 0,
+    "next_action_stated": "Create backlog 125 /kernel/review command via /kernel/backlog Skill tool",
+    "rules_applied": "always use kernel commands via Skill tool; never cd; never bundle; no agents except prod-test/run-task.sh",
+    "ceremony_output_generated": true
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-06-05T21:00:00Z",
+  "actions_count": 7,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-05T18:09:06Z", "tool": "Bash", "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/ai-harn", "session": "current"},
+    {"timestamp": "2026-06-05T18:10:06Z", "tool": "Write", "entry": "Write: 2026-06-05-anthropic-openai.md", "session": "current"},
+    {"timestamp": "2026-06-05T18:10:10Z", "tool": "Bash", "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/ai-harne", "session": "current"},
+    {"timestamp": "2026-06-05T18:10:14Z", "tool": "Bash", "entry": "Bash: grep -c \"^| [AO]\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/project", "session": "current"},
+    {"timestamp": "2026-06-05T18:10:16Z", "tool": "Bash", "entry": "Bash: grep -i \"QA\\|annotation\\|data annotation\" \"D:/my_ai_projects/project_test_repos/", "session": "current"},
+    {"timestamp": "2026-06-05T18:10:31Z", "tool": "Bash", "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/ai-harne", "session": "current"},
+    {"timestamp": "2026-06-05T18:10:37Z", "tool": "Bash", "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_", "session": "current"}
+  ]
+}
