@@ -1,33 +1,33 @@
 {
   "session_started": true,
-  "timestamp": "2026-06-05T22:25:00Z",
+  "timestamp": "2026-06-06T00:05:00Z",
   "resumed_from": "context",
   "context": {
-    "current_task": null,
-    "task_folder": "tasks/ai-harness-job-search/",
-    "progress": "6/6 tasks complete",
-    "last_completed": "006-market-build-write-job-list.md",
-    "next_step": "Creating backlogs 125 (/kernel/review command) and 126 (TDD discipline) from research assessments",
-    "notes": "Resume (prose-only) written + PDF generated. profile.json created. Live /job-apply test running in background (agent a13d39113b3d2f116). Pipeline 029 complete. Research 116-122 all in done/. Now creating build backlogs from code-review-assessment and tdd-assessment."
+    "current_task": "job-apply",
+    "task_folder": null,
+    "progress": "2 applications submitted (OpenAI Agent Infra, Google FDE IV). Anthropic Model Perf SWE form filled, paused at HITL \u2014 user asked to check for FDE/better-fit role instead.",
+    "last_completed": "Google FDE IV application submitted",
+    "next_step": "Check Anthropic for FDE role \u2014 found Forward Deployed Engineer Applied AI. Get URL and present to user to decide which Anthropic role to apply to.",
+    "notes": "Skipping all manager/EM roles per user. Anthropic FDE role found: Forward Deployed Engineer, Applied AI \u2014 SF/NYC/Boston/DC/Seattle. Also Applied AI Engineer, Enterprise Tech. Model Perf SWE form is still open, not submitted."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" add \\\n  \"docs/bac",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status --short | ",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" commit -m \"$(cat ",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" push origin main ",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" ls-files \"*.png\" ",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" rm --cached $(git",
-    "Bash: # Delete the actual PNG files from disk\nfind \"D:/my_ai_projects/project_test_rep",
-    "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.gitignore\" 2>/dev/nu",
-    "Edit: .gitignore",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" add .gitignore &&"
+    "Edit: log.json",
+    "Edit: log.json",
+    "Edit: log.json",
+    "Edit: log.json",
+    "Edit: log.json",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" status && git",
+    "Bash: ls \"D:/my_ai_projects/project_test_repos/job-application-spec/applications/\" && ",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status && git -C ",
+    "Bash: cat \"D:/my_ai_projects/project_test_repos/job-application-spec/.gitignore\" 2>/de",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" add applicati"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-06-05T00:00:00Z",
+  "protocol_hash_timestamp": "2026-06-06T00:05:00Z",
   "pipeline_state": {
     "input_mode": "existing_backlog",
     "backlog_path": "docs/backlog/029-market-research-ai-harness-engineering-jobs.md",
@@ -38,12 +38,12 @@
   },
   "pipeline_mode": null,
   "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-06-05T20:30:00Z",
-    "lessons_read_timestamp": "2026-06-05T20:30:00Z",
-    "actions_reviewed_count": 63,
+    "protocol_read_timestamp": "2026-06-06T00:05:00Z",
+    "lessons_read_timestamp": "2026-06-06T00:05:00Z",
+    "actions_reviewed_count": 30,
     "violations_found": 0,
-    "next_action_stated": "Create backlog 125 /kernel/review command via /kernel/backlog Skill tool",
-    "rules_applied": "always use kernel commands via Skill tool; never cd; never bundle; no agents except prod-test/run-task.sh",
+    "next_action_stated": "Get Anthropic FDE URL and present role options to user",
+    "rules_applied": "no cd in bash (using absolute paths throughout); never quick-anchor (full ceremony done); verify before acting (read files before editing)",
     "ceremony_output_generated": true
   }
 }
