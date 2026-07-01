@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-06-23T14:01:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-23T23:51:09Z", "tool": "Bash", "entry": "Bash: ls projects/claude-harness-marketplace-research/"},
+    {"timestamp": "2026-06-23T23:51:10Z", "tool": "Bash", "entry": "Bash: python json update"},
+    {"timestamp": "2026-06-23T23:51:11Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh"},
+    {"timestamp": "2026-06-23T23:51:16Z", "tool": "Bash", "entry": "Bash: ls run-task.sh"},
+    {"timestamp": "2026-06-23T23:51:25Z", "tool": "Bash", "entry": "Bash: test -f RESEARCH-REPORT.md"},
+    {"timestamp": "2026-06-23T23:51:29Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs"},
+    {"timestamp": "2026-06-23T23:51:31Z", "tool": "Bash", "entry": "Bash: ls projects/resume-loops-agent-systems/"},
+    {"timestamp": "2026-06-23T23:51:31Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+  ]
+}

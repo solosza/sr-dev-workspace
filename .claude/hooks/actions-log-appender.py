@@ -5,6 +5,10 @@ Actions Log Appender — PostToolUse hook that appends to actions.jsonl and sess
 Logs every Edit, Write, and Bash action so anchor Part B has data to review.
 Skips .claude/ Write/Edit paths (infrastructure writes don't count as reviewable work).
 
+Per-agent isolation: when agent_id is set in session_state, routes logs to
+agent-{id}-actions.jsonl instead of shared actions.jsonl. Parent state
+(session_state.json actions_log) is only updated for non-agent sessions.
+
 Primary log: .claude/state/actions.jsonl (append-only JSONL, 200-line retention cap)
 Backward-compatible summary: actions_log array in session_state.json (last 10 entries)
 """
@@ -46,8 +50,16 @@ def enforce_retention(log_file: Path, max_lines: int = 200):
         log_file.write_text('\n'.join(lines[-max_lines:]) + '\n', encoding='utf-8')
 
 
-def append_jsonl(entry: str, tool_name: str):
-    """Append a single JSON line to actions.jsonl."""
+def get_actions_log_path(state: dict) -> Path:
+    """Route actions to per-agent log if agent_id is set."""
+    agent_id = state.get('agent_id')
+    if agent_id:
+        return STATE_DIR / f'agent-{agent_id}-actions.jsonl'
+    return ACTIONS_LOG
+
+
+def append_jsonl(entry: str, tool_name: str, log_path: Path, agent_id: str = None):
+    """Append a single JSON line to the target actions log."""
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     record = {
         "timestamp": datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
@@ -55,9 +67,11 @@ def append_jsonl(entry: str, tool_name: str):
         "entry": entry,
         "session": "current"
     }
-    with open(ACTIONS_LOG, 'a', encoding='utf-8') as f:
+    if agent_id:
+        record["agent_id"] = agent_id
+    with open(log_path, 'a', encoding='utf-8') as f:
         f.write(json.dumps(record) + '\n')
-    enforce_retention(ACTIONS_LOG)
+    enforce_retention(log_path)
 
 
 def main():
@@ -91,17 +105,22 @@ def main():
     else:
         sys.exit(0)
 
-    # Append to actions.jsonl (primary log)
-    append_jsonl(entry, tool_name)
-
-    # Backward-compatible summary in session_state.json (last 10 entries)
+    # Read state to determine routing
     state = read_state()
-    if 'actions_log' not in state:
-        state['actions_log'] = []
-    state['actions_log'].append(entry)
-    # Keep only last 10 for backward compatibility
-    state['actions_log'] = state['actions_log'][-10:]
-    write_state(state)
+    agent_id = state.get('agent_id')
+    log_path = get_actions_log_path(state)
+
+    # Append to appropriate actions log (per-agent or shared)
+    append_jsonl(entry, tool_name, log_path, agent_id)
+
+    # Backward-compatible summary in session_state.json (parent only)
+    # When agent_id is set, skip session_state.json update to prevent contention
+    if not agent_id:
+        if 'actions_log' not in state:
+            state['actions_log'] = []
+        state['actions_log'].append(entry)
+        state['actions_log'] = state['actions_log'][-10:]
+        write_state(state)
 
     sys.exit(0)
 

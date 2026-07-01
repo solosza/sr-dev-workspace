@@ -1,0 +1,20 @@
+{
+  "anchor_timestamp": "2026-06-24T12:00:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "agent_logs": {
+    "reference-scanner": [
+      {"timestamp": "2026-06-24T07:19:43Z", "tool": "Bash", "entry": "Bash: ls isagawa-kernel"},
+      {"timestamp": "2026-06-24T07:19:46Z", "tool": "Bash", "entry": "Bash: ls framework/"},
+      {"timestamp": "2026-06-24T07:19:47Z", "tool": "Bash", "entry": "Bash: ls platform-deepeval framework/_reference/"},
+      {"timestamp": "2026-06-24T07:19:55Z", "tool": "Bash", "entry": "Bash: python shutil copy kernel"},
+      {"timestamp": "2026-06-24T07:19:58Z", "tool": "Bash", "entry": "Bash: mkdir -p framework/"},
+      {"timestamp": "2026-06-24T07:20:06Z", "tool": "Bash", "entry": "Bash: git init kernel-minimal"},
+      {"timestamp": "2026-06-24T07:20:13Z", "tool": "Bash", "entry": "Bash: mkdir -p projects/loop-composability"},
+      {"timestamp": "2026-06-24T07:20:14Z", "tool": "Bash", "entry": "Bash: test -d kernel-minimal/.git"},
+      {"timestamp": "2026-06-24T07:20:15Z", "tool": "Bash", "entry": "Bash: test -f kernel-minimal/CLAUDE.md"},
+      {"timestamp": "2026-06-24T07:20:16Z", "tool": "Bash", "entry": "Bash: test -d kernel-minimal/.claude"},
+      {"timestamp": "2026-06-24T07:20:22Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash"}
+    ]
+  }
+}

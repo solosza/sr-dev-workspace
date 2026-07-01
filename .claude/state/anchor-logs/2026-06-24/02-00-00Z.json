@@ -1,0 +1,30 @@
+{
+  "anchor_timestamp": "2026-06-24T02:00:00Z",
+  "actions_count": 24,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T01:20:44Z", "tool": "Write", "entry": "Write: field-classification.md"},
+    {"timestamp": "2026-06-24T01:21:26Z", "tool": "Write", "entry": "Write: strategy-evaluation.md"},
+    {"timestamp": "2026-06-24T01:22:03Z", "tool": "Write", "entry": "Write: recommendation.md"},
+    {"timestamp": "2026-06-24T01:32:24Z", "tool": "Write", "entry": "Write: 155-kernel-build-workflow-state-isolation.md"},
+    {"timestamp": "2026-06-24T04:37:52Z", "tool": "Bash", "entry": "Bash: mkdir tasks/workflow-state-isolation-build/"},
+    {"timestamp": "2026-06-24T04:38:02Z", "tool": "Write", "entry": "Write: 000-index.md"},
+    {"timestamp": "2026-06-24T04:38:06Z", "tool": "Write", "entry": "Write: gate-contract.md"},
+    {"timestamp": "2026-06-24T04:39:03Z", "tool": "Edit", "entry": "Edit: common.sh"},
+    {"timestamp": "2026-06-24T04:39:13Z", "tool": "Edit", "entry": "Edit: common.sh"},
+    {"timestamp": "2026-06-24T04:39:23Z", "tool": "Edit", "entry": "Edit: run-task.sh"},
+    {"timestamp": "2026-06-24T04:39:33Z", "tool": "Edit", "entry": "Edit: run-task.sh"},
+    {"timestamp": "2026-06-24T04:40:25Z", "tool": "Edit", "entry": "Edit: run-task.sh"},
+    {"timestamp": "2026-06-24T04:40:41Z", "tool": "Bash", "entry": "Bash: python state validation"},
+    {"timestamp": "2026-06-24T04:43:17Z", "tool": "Bash", "entry": "Bash: python completion check"},
+    {"timestamp": "2026-06-24T04:43:22Z", "tool": "Bash", "entry": "Bash: mv backlog 155 to done"},
+    {"timestamp": "2026-06-24T04:43:23Z", "tool": "Bash", "entry": "Bash: mv tasks to completed"},
+    {"timestamp": "2026-06-24T05:36:52Z", "tool": "Bash", "entry": "Bash: cp tasks for parallel agents"},
+    {"timestamp": "2026-06-24T05:36:52Z", "tool": "Bash", "entry": "Bash: cp governance-depth tasks"},
+    {"timestamp": "2026-06-24T05:36:53Z", "tool": "Bash", "entry": "Bash: cp human-check tasks"},
+    {"timestamp": "2026-06-24T05:36:58Z", "tool": "Bash", "entry": "Bash: ls agent state files"},
+    {"timestamp": "2026-06-24T05:37:02Z", "tool": "Bash", "entry": "Bash: rm stale agent state"},
+    {"timestamp": "2026-06-24T05:37:20Z", "tool": "Bash", "entry": "Bash: run-task.sh governance-depth"},
+    {"timestamp": "2026-06-24T05:38:39Z", "tool": "Bash", "entry": "Bash: run-task.sh human-check"}
+  ]
+}

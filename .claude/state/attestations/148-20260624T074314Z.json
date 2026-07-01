@@ -1,0 +1,60 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "35d26711fccb0b718657474ff4e5c29aa2d17c544827129de0b029bd9e767063",
+      "parameters": "40df5d76a9593b62bcb3fb69e2408f406a13b086ba460c0de90bd98bf6e02e1d"
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\gate-contract.md",
+          "sha256": "07fed791aa62825c4e7a8049c0c7e472703690ceaa0e6bd9a431a4facb502b41"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\000-index.md",
+          "sha256": "af0d93ed6fe148d065a3b1080bbaf4eea129fca932d4c8fc2ce9c37f4dab8ae2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\001-market-research-target-role-language.md",
+          "sha256": "c904e648327904bf5c45ad83f3c1cf50f4e2da58ac1b0fa5ad57ac4912cf7692"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\002-market-research-read-current-resume.md",
+          "sha256": "e467e1556205607a07b81898bae7a241751d47fd8baa9b017271eba0f52a3802"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\003-market-build-rewrite-resume-md.md",
+          "sha256": "045d2aa45de8178d2c51ac9e75cfd15732e2d010c7e183a350699a47e3bec17e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\004-market-build-generate-pdf.md",
+          "sha256": "7eaf27819ec56aa98edbc7b1323eb2b556bccecf1775b01d8dccb11e24c90301"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\005-market-test-verify-resume.md",
+          "sha256": "e509b3cc0b53502236e2dea05861c456c1f1fe12699f4818ce5bef4d60b4950a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems\\gate-contract.md",
+          "sha256": "07fed791aa62825c4e7a8049c0c7e472703690ceaa0e6bd9a431a4facb502b41"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:43:14.555924+00:00",
+      "end": "2026-06-24T07:43:14.557923+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\148-market-research-isagawa-site-pivot-loops.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\resume-loops-agent-systems",
+      "task_count": 5,
+      "completed_count": 5,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935721316",
+      "logIndex": "1935721316"
+    }
+  }
+}

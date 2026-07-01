@@ -1,0 +1,64 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "1f16c062179f769f056c09ff2e1ba55edf81f5e6056ec482444f89b991972a75",
+      "parameters": "783c0f3bc128c6360bb93dcae2e33ecab225af5d3095d6b4269e2e69d3d6a5df",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-01T18:36:50.005105+00:00",
+          "raw_input_hash": "ac8cd907efdfb8d92de24b7ab209eaaaef68a0f9f22da19af211edba28a328e4",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research\\gate-contract.md",
+          "sha256": "c542e34bfa5b569f80d414c320f70f7b54ea9f9c7faff7d31add25348308b9e2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research\\000-index.md",
+          "sha256": "3ed1e98e404e4b390a7c8fffa35ff9727ff189800279f68c55fc03b9ab2d8769"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research\\001-kernel-build-create-project-dir.md",
+          "sha256": "6603b50e0467ef5f8af5781625397ecb29f0e2a5ce12000544b2ac02d7c0c8ee"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research\\002-kernel-research-read-debugging-skill.md",
+          "sha256": "54948c0f0db15b5d8e449ddb50e19d51b4dc2ddf325adeaf7eeeedaa917f57fd"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research\\003-kernel-research-compare-to-kernel-fix.md",
+          "sha256": "e4100f6f59df109b820a5b44378d6186f9cacce2cb108a42192561fa8c44eb23"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research\\004-kernel-build-write-research-report.md",
+          "sha256": "12870e14973a8bb96da1072a8e44fd6bf10490aeebf9943d4fc785cbb9919abb"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research\\gate-contract.md",
+          "sha256": "c542e34bfa5b569f80d414c320f70f7b54ea9f9c7faff7d31add25348308b9e2"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:38:18.344481+00:00",
+      "end": "2026-06-24T07:38:18.348474+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\117-kernel-research-frontend-design-skill.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\debugging-skill-research",
+      "task_count": 4,
+      "completed_count": 4,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935701099",
+      "logIndex": "1935701099"
+    }
+  }
+}

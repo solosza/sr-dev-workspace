@@ -1,0 +1,70 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "568d234c6feb9cf64235ac4b779f2c56fd3b1382492d3cc180271b06d74e0d98",
+      "parameters": "a2a287f4a6284efb128b85c8946921459504a9f17e4db11429f87c99597d2af3",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-29T19:30:28.907312+00:00",
+          "raw_input_hash": "9317c135aa7d3024f4b89df50be2e6cf654037c1bc26cd3a4bc2a08cca8cdf79",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-05-29T19:32:10.334369+00:00",
+          "raw_input_hash": "f29e9a0ffa4bc256549f8195fcbaa0f75c21536f7ac20f9840f2d88782f6cbcd",
+          "backlog_hash_after": "568d234c6feb9cf64235ac4b779f2c56fd3b1382492d3cc180271b06d74e0d98"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency\\000-index.md",
+          "sha256": "70cd8e1f34e9e8854f44d3358d8383479cb4b53fc412adda9b8539aa39b911a9"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency\\001-build-extract-nav-spec.md",
+          "sha256": "c3cc478ccf656dbc22e0a68f58229afc65c1ce2018078f10acc17ac8e22c7932"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency\\002-build-add-nav-css.md",
+          "sha256": "953914c5d1bdeb736d8bb9f9e3117433684a8f1b6f61d5d8ca7a8189779c1893"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency\\003-build-update-index-nav.md",
+          "sha256": "fc2220d22d1def383641922efa90ae9df4cf935aefeda2406dcdb1801a4172e7"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency\\004-build-update-product-pages-nav.md",
+          "sha256": "8470617f7091c382f2b5e54ec7b7ec3aadb06e87cb485f7c59f274d3a71d924e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency\\005-test-verify-nav-consistency.md",
+          "sha256": "67a1025251176d5a0512c311f2eda4a02d3864723549d2ea1a963d9cb9c0dc08"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency\\006-build-commit-push.md",
+          "sha256": "450c0bf8d4fd6b198d1e91a8ae82fa993465e6dd51fd22846c227bc8ea5cf6e1"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:35:51.193701+00:00",
+      "end": "2026-06-24T07:35:51.196698+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\107-market-fix-nav-consistency.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consistency",
+      "task_count": 6,
+      "completed_count": 6,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935692016",
+      "logIndex": "1935692016"
+    }
+  }
+}

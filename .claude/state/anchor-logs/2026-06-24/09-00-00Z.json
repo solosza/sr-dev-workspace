@@ -1,0 +1,105 @@
+{
+  "anchor_timestamp": "2026-06-24T09:00:00Z",
+  "actions_count": 14,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-06-24T05:48:03Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\n\n# Read actions.jsonl\nwith open('D:/my_ai_projects/proje",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:48:09Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:48:11Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/commands/",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:48:21Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:48:41Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/commands/kerne",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:48:42Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/hooks/\"",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:49:19Z",
+      "tool": "Write",
+      "entry": "Write: kernel-core-vs-extension.md",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:49:27Z",
+      "tool": "Bash",
+      "entry": "Bash: echo \"=== File exists ===\" && test -f \"D:/my_ai_projects/project_test_repos/sr_d",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:49:41Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:49:49Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/kernel-core-",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:49:51Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-govern",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:50:10Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport os, json\n\n# Tasks in folder\ntask_dir = 'D:/my_ai_projects/pro",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:53:46Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    },
+    {
+      "timestamp": "2026-06-24T05:54:02Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+      "session": "current",
+      "agent_id": "governance-depth-research"
+    }
+  ]
+}

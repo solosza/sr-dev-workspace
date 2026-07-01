@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-06-24T22:10:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "agent_logs": {
+    "pulsia-design-patterns": [
+      {"timestamp": "2026-06-24T18:20:56Z", "tool": "Bash", "entry": "Bash: test setup"},
+      {"timestamp": "2026-06-24T18:21:16Z", "tool": "Bash", "entry": "Bash: file existence check"},
+      {"timestamp": "2026-06-24T18:21:27Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

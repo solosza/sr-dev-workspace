@@ -1,0 +1,24 @@
+{
+  "project": "architecture-diagrams",
+  "backlog": "136-market-build-architecture-diagrams",
+  "timestamp": "2026-06-17T22:35:00Z",
+  "total_gates": 14,
+  "passed": 14,
+  "failed": 0,
+  "gates": [
+    {"id": "BUILD-01", "check": "Diagrams directory exists", "result": "PASS"},
+    {"id": "BUILD-02", "check": "System architecture diagram exists", "result": "PASS"},
+    {"id": "BUILD-03", "check": "Enforcement loop diagram exists", "result": "PASS"},
+    {"id": "BUILD-04", "check": "Integration architecture diagram exists", "result": "PASS"},
+    {"id": "BUILD-05", "check": "Use case scenario diagram exists", "result": "PASS"},
+    {"id": "BUILD-06", "check": "README index exists", "result": "PASS"},
+    {"id": "FUNC-01", "check": "System architecture has mermaid block", "result": "PASS"},
+    {"id": "FUNC-02", "check": "Enforcement loop has mermaid block", "result": "PASS"},
+    {"id": "FUNC-03", "check": "Integration has mermaid block", "result": "PASS"},
+    {"id": "FUNC-04", "check": "Use case has mermaid block", "result": "PASS"},
+    {"id": "FUNC-05", "check": "System architecture shows Domain Spec", "result": "PASS"},
+    {"id": "FUNC-06", "check": "Enforcement loop shows Hook", "result": "PASS"},
+    {"id": "FUNC-07", "check": "Integration shows Playwright", "result": "PASS"},
+    {"id": "FUNC-08", "check": "README links all diagrams", "result": "PASS"}
+  ]
+}

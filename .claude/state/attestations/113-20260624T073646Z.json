@@ -1,0 +1,80 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "bb8d90f09482ca6e29c997c3fa09d785756bd7d2030e5e8ed40897bb2657c846",
+      "parameters": "14bf7e65ea6efedeb011edfff9547af646b1bf45031463423d4abb8dab47ec30",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-30T22:00:43.795873+00:00",
+          "raw_input_hash": "0be3da51674fe6708335363874a90789c4b8e22fd8de7e8ef0eb9ba243e20752",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\gate-contract.md",
+          "sha256": "72428773563094e22951f50aecd4eea71222ce208754a52671ee17a4a885c90e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\000-index.md",
+          "sha256": "55dac3e15e4ebbffe57083fcaf3067c399f6f8484705cd8a7674f2c2b9216e5f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\001-market-build-create-project-dir.md",
+          "sha256": "ef49977df41a8ecee9a735ed38b0d10e158b4697ae34516f576e8b04b8851f3a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\002-market-build-write-readme.md",
+          "sha256": "10d2002d583c7e7bf5330b2b1b0f68dfb3ad0ec202a8785bd8469390ef4f483b"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\003-market-research-competitor-analysis.md",
+          "sha256": "ae6216c0e6ef9fb7dd0031e264645d47785a112f4abe70ace9f3aaccf4e6ce46"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\004-market-research-supplier-terms.md",
+          "sha256": "78cc3f7bfc30ce76108c5eaf284eb18c5d47a99e4cdd526ae26ff4b942b9b20f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\005-market-research-platform-decision.md",
+          "sha256": "11da2696d534e2a4f8930bd8fc7533e8287ca1199111e7b96cac00083e3026ab"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\006-market-research-logistics-duties.md",
+          "sha256": "d3b0836248dcf9e488210add359fcc3acf8f541ceda0a2c5339462c6449c91dd"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\007-market-research-pricing-model.md",
+          "sha256": "4200886aecfe28397bb6712d1bc19541a3e80e19eab622fb9eec5f66f3d2a2e8"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\008-market-build-gtm-summary.md",
+          "sha256": "b378109c2f0061831246a3e0dfb64a493973f882a68ec54233ff2ddb6c22ad49"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather\\gate-contract.md",
+          "sha256": "72428773563094e22951f50aecd4eea71222ce208754a52671ee17a4a885c90e"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:36:46.279443+00:00",
+      "end": "2026-06-24T07:36:46.283443+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\113-market-research-hoi-an-leather-goods.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\hoi-an-leather",
+      "task_count": 8,
+      "completed_count": 8,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935695219",
+      "logIndex": "1935695219"
+    }
+  }
+}

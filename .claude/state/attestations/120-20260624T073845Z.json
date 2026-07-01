@@ -1,0 +1,114 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "358ab788ce00d435128e63a9258082d0b6a04bbcfaca18515276d1c06ec3d4c4",
+      "parameters": "c60a334aeebbdf5437dc2a7af22e2a0bfea466a50badb8e169a12ad1fc43c91f",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-01T18:44:09.609937+00:00",
+          "raw_input_hash": "2abe2c0146bede754ef9a2096637b0d24fb6846b72862cd44f5fb73de379a503",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-06-01T18:45:37.148633+00:00",
+          "raw_input_hash": "2abe2c0146bede754ef9a2096637b0d24fb6846b72862cd44f5fb73de379a503",
+          "backlog_hash_after": "358ab788ce00d435128e63a9258082d0b6a04bbcfaca18515276d1c06ec3d4c4"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\gate-contract.md",
+          "sha256": "b338430dd8a4eacf8f82538db0b7362a118dbf0d8a30d73a6a69d0be2c51b17c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\000-index.md",
+          "sha256": "45ec23fac4be16d162fe9d4826926d41256a2a9aa44f3b4952efe43bee1e738a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\001-build-add-ngo-grant-patterns.md",
+          "sha256": "dff05f398c4f249b2c27d497843f5d20b5fe76cdd7b115f9ac2ec5b838b8c471"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\002-build-add-healthcare-fraud-patterns.md",
+          "sha256": "d0e7efeaa5a20d10e07902e36f5d1c8821893b61eaa33755e3c27fa438bfb7bf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\003-build-add-government-finance-patterns.md",
+          "sha256": "51a9141b6c9b5ad63f8365ab4692a2ef9c64df846e574a65e309c35dc14e4647"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\004-build-add-political-corruption-patterns.md",
+          "sha256": "e07eb2cb1409965385729ec223fb4f29250d99fed76fdc3e660eba4cedbf36fb"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\005-build-write-ngo-checks.md",
+          "sha256": "110a270e0c35b6ae7de832e45c0a933b20c7f8190fcf5f3dd07d3dc0f8fe622b"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\006-build-write-healthcare-checks.md",
+          "sha256": "b210045ded642717f788390b3bf97278bb62b9a618919223e0d4325308737863"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\007-build-write-government-checks.md",
+          "sha256": "a8d85231a7f7e1b4dfb0da7e977385b83a9e9273a78c062baf7307a4399e19b1"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\008-build-write-political-checks.md",
+          "sha256": "85302228b5d5d0d56e25fdda3b02947d5aed9004db2d1dc90fa7d1662955e7d6"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\009-build-write-ngo-fixtures.md",
+          "sha256": "3c22f8240e8e6ed6fc68bbeea58ae4965301e1ee0240783e5efd18e297deadb5"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\010-build-write-healthcare-fixtures.md",
+          "sha256": "9b1eb39b287f95ff3368e766e2e76802a1b7c0db05be7d7733dc912f2d3fc8b6"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\011-build-write-government-fixtures.md",
+          "sha256": "651818c7dd1c106050be0fd0c1d730499103e59786217cb687bec63bdd018967"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\012-build-write-political-fixtures.md",
+          "sha256": "e417db43da02ecaf2069d689da55180b2cf53e00dbc70a3fb5dc1932c57e0316"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\013-test-l1-verify-pattern-files.md",
+          "sha256": "769acb4e317b0e075ae113a342efb6f01b7054186fe7d5d6151909281da6c4b2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\014-test-l2-import-and-parse.md",
+          "sha256": "7bd282fe5bf900e3911de91fede5a8082d6f30a5d3f756a7f34d1b49dce2e624"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\015-test-l3-run-fixtures-against-patterns.md",
+          "sha256": "e210bb6095ded12bb3a87f5751ab66c8d856a314cd3c7544f75a079cae7257ef"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns\\gate-contract.md",
+          "sha256": "b338430dd8a4eacf8f82538db0b7362a118dbf0d8a30d73a6a69d0be2c51b17c"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:38:45.142336+00:00",
+      "end": "2026-06-24T07:38:45.149290+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\120-kernel-research-skill-seekers-pattern.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\fraud-detector-patterns",
+      "task_count": 15,
+      "completed_count": 15,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935702862",
+      "logIndex": "1935702862"
+    }
+  }
+}

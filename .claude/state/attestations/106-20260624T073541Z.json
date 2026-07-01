@@ -1,0 +1,62 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "acd3fc43f26ce51a8a539e4810fcf1fb1254721f4ea4e69a85a888d2c2adde5e",
+      "parameters": "e3151b212d510bb2ab00ff03bee12866550af15013446b54a496003f10a36f83",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-29T19:30:28.812430+00:00",
+          "raw_input_hash": "77d3ad314d662595bbf8a87eacca50fcf25cd25f94729e615154886fd3a27131",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-05-29T19:32:10.256567+00:00",
+          "raw_input_hash": "19641b21728140de0603226f6711f5e2dc3deade1009eb3c0b63f7b363c07a66",
+          "backlog_hash_after": "acd3fc43f26ce51a8a539e4810fcf1fb1254721f4ea4e69a85a888d2c2adde5e"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consolidation-research\\000-index.md",
+          "sha256": "bc9d117e5e3b73fef7d9ff68ab14e19692ad236e0dbddd50559a888a15d845b5"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consolidation-research\\001-build-create-project-dir.md",
+          "sha256": "c671a3d5686ec8ae1ac75c23e534822b889c3284ac6171d103e16a2174d72789"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consolidation-research\\002-research-nav-overflow-patterns.md",
+          "sha256": "596ffd0863d1af0921b923785253ef572e4dbb8213ee61304eadc419970220df"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consolidation-research\\003-research-reference-site-navs.md",
+          "sha256": "a7d1bb11ce476dae3c3a287f1d03097fcb5841836a240ed16483dbf7022471d2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consolidation-research\\004-build-write-research-report.md",
+          "sha256": "aa607d8b5044c7810bc5261bedff6a2bc44d36611744edf9225ab3cf4d2b1d0c"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:35:41.229247+00:00",
+      "end": "2026-06-24T07:35:41.232244+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\106-market-research-nav-consolidation.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\nav-consolidation-research",
+      "task_count": 4,
+      "completed_count": 4,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935691696",
+      "logIndex": "1935691696"
+    }
+  }
+}

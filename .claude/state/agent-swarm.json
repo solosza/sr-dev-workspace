@@ -1,0 +1,47 @@
+{
+  "active_agents": [
+    {
+      "backlog": 128,
+      "spawned_at": "2026-06-15T01:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-06-15T01:45:00Z",
+      "deliverable": "Pulsia autonomous AI platform research"
+    },
+    {
+      "backlog": 131,
+      "spawned_at": "2026-06-15T01:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-06-15T02:30:00Z",
+      "progress": "7/7 tasks complete",
+      "last_completed": "007-market-compile-final-research-report.md",
+      "deliverable": "Claude Code Harness Distribution Strategy (8 docs)",
+      "documents": [
+        "01-platforms-inventory-and-comparison.md",
+        "02-marketplace-gaps-and-opportunities.md",
+        "03-distribution-roadmap.md",
+        "04-competitive-analysis.md",
+        "05-market-positioning.md",
+        "06-financial-projections.md",
+        "07-go-to-market-strategy.md",
+        "RESEARCH-REPORT.md"
+      ]
+    },
+    {
+      "backlog": 132,
+      "spawned_at": "2026-06-15T01:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-06-15T02:50:00Z",
+      "progress": "6/6 deliverables created",
+      "last_completed": "RESEARCH-REPORT.md",
+      "deliverable": "Claude Harness Marketplace Research (5 docs)",
+      "documents": [
+        "platforms.md",
+        "competitive-analysis.md",
+        "gaps-and-opportunities.md",
+        "distribution-strategy.md",
+        "RESEARCH-REPORT.md"
+      ],
+      "note": "Tasks completed, deliverables created. Backlog archival was incomplete - manually completed."
+    }
+  ]
+}

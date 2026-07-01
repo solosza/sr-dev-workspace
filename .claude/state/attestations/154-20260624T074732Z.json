@@ -1,0 +1,44 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "ef67f9d22e8082f2b152248a9f1bf5170626a0085ac754bbc620e58ee6291800",
+      "parameters": "e4b0c3f75a38cf9770b305d85ce52b0da1eb7c539b77d249469791f2380e12d9",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-24T06:36:26.845567+00:00",
+          "raw_input_hash": "2b0c451244d6e35f973d6aa748f925ade3cfcb013fcde300d8fde53c7f75adf6",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\workflow-state-isolation-build\\gate-contract.md",
+          "sha256": "2766851b113c6ba571c8b5d0909669183a7edf656fcb2be316ae7b06d36c0d28"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\workflow-state-isolation-build\\000-index.md",
+          "sha256": "18a20502160d66851db6243875bba47d6ab3d2e8ce186369071735957f2d0c11"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\workflow-state-isolation-build\\gate-contract.md",
+          "sha256": "2766851b113c6ba571c8b5d0909669183a7edf656fcb2be316ae7b06d36c0d28"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:47:32.437044+00:00",
+      "end": "2026-06-24T07:47:32.439048+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\154-kernel-research-workflow-state-isolation.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\workflow-state-isolation-build",
+      "task_count": 0,
+      "completed_count": 0,
+      "skipped_count": 0
+    }
+  }
+}

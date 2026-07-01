@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-06-24T14:00:00Z",
+  "actions_count": 20,
+  "violations_found": 0,
+  "agent_id": "reference-scanner",
+  "actions": [
+    {"timestamp": "2026-06-24T07:21:01Z", "tool": "Bash", "entry": "python sys.path insert scanner"},
+    {"timestamp": "2026-06-24T07:21:06Z", "tool": "Bash", "entry": "ls skills directories"},
+    {"timestamp": "2026-06-24T07:21:11Z", "tool": "Bash", "entry": "rm -rf delegation dirs"},
+    {"timestamp": "2026-06-24T07:21:15Z", "tool": "Bash", "entry": "test dirs removed"},
+    {"timestamp": "2026-06-24T07:21:29Z", "tool": "Write", "entry": "Write primitive-contracts.md"},
+    {"timestamp": "2026-06-24T07:21:30Z", "tool": "Bash", "entry": "rm -rf attestation dirs"},
+    {"timestamp": "2026-06-24T07:21:32Z", "tool": "Bash", "entry": "test file exists"},
+    {"timestamp": "2026-06-24T07:21:33Z", "tool": "Bash", "entry": "grep heading count"},
+    {"timestamp": "2026-06-24T07:21:34Z", "tool": "Bash", "entry": "test dirs removed"},
+    {"timestamp": "2026-06-24T07:21:38Z", "tool": "Bash", "entry": "ls lessons dir"},
+    {"timestamp": "2026-06-24T07:21:42Z", "tool": "Bash", "entry": "python glob lessons"},
+    {"timestamp": "2026-06-24T07:21:55Z", "tool": "Bash", "entry": "ls lessons count"},
+    {"timestamp": "2026-06-24T07:21:55Z", "tool": "Bash", "entry": "grep RULE ZERO"},
+    {"timestamp": "2026-06-24T07:23:50Z", "tool": "Bash", "entry": "mkdir anchor-logs"},
+    {"timestamp": "2026-06-24T07:23:59Z", "tool": "Write", "entry": "Write kernel-feature-freeze-policy.md"},
+    {"timestamp": "2026-06-24T07:24:04Z", "tool": "Bash", "entry": "test file exists"},
+    {"timestamp": "2026-06-24T07:24:04Z", "tool": "Bash", "entry": "grep extension commands"},
+    {"timestamp": "2026-06-24T07:24:13Z", "tool": "Bash", "entry": "grep -n extension commands"},
+    {"timestamp": "2026-06-24T07:24:20Z", "tool": "Write", "entry": "Write agent_output_capture.py"}
+  ]
+}

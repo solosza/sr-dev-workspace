@@ -1,0 +1,64 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "64ef5d300934c69271c027879bfb7d524b721d7ea22764b91e43cfff7c154fec",
+      "parameters": "90490cbe2c4b087dfdc8cc77e1e921d1d8c430f3c6c09485ce331d63cd60e8ef",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-05T20:29:02.243382+00:00",
+          "raw_input_hash": "ecc109f15b8071a34e2799bc3d9dc60bc5796b2aaedf518c38d31870f8a853a3",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command\\gate-contract.md",
+          "sha256": "88169d4746e092aca8157b9e83c5aa42dde83f5e9589b38f4f9a98c5bfbf8109"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command\\001-build-detection-engine.md",
+          "sha256": "089b7fa5d1c5c2c29cea6ef8f4135541ca599bbf23362da3fb430002f8d86593"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command\\002-build-skill-and-steps.md",
+          "sha256": "308459388112f33a11339e359fa3579a9d934e7afe00c3b447953f8c09b83a78"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command\\003-build-command-entry-point.md",
+          "sha256": "a1523fdd8249f0c145939b5041e3a07836eeec5a3c6d070941d946ce9356a7ee"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command\\004-test-detection-accuracy.md",
+          "sha256": "f3f54648b8a7300f339be7bb54807ced57de770e89ec9ca01cbb8af906b006d7"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command\\gate-contract.md",
+          "sha256": "88169d4746e092aca8157b9e83c5aa42dde83f5e9589b38f4f9a98c5bfbf8109"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command\\index.md",
+          "sha256": "820dd9238a77b2028d1d83575b8643fbc7f35acb1a57fd5be91aae4f50aec07f"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:39:34.582573+00:00",
+      "end": "2026-06-24T07:39:34.586529+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\125-kernel-build-review-command.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\human-check-command",
+      "task_count": 4,
+      "completed_count": 4,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935706363",
+      "logIndex": "1935706363"
+    }
+  }
+}

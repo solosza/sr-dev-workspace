@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-06-24T20:05:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T17:58:00Z", "tool": "Bash", "entry": "Bash: python -c hash computation", "session": "current", "agent_id": "deepeval-eval-command"}
+  ],
+  "agent_logs": {}
+}

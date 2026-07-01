@@ -1,0 +1,18 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/reference-scanner/",
+  "total_tasks": 5,
+  "current_task": null,
+  "completed_tasks": ["001-build-scanner-core.md", "002-build-pull-model.md", "003-build-state-schema.md", "004-build-command-integration.md", "005-test-scanner.md"],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "last_completed_context": "All 5 tasks complete. Scanner skill fully built and tested.",
+  "complete": true,
+  "complete_timestamp": "2026-06-24T16:10:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-06-24T16:00:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-06-24T16:10:00Z"
+}

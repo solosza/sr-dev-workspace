@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-06-24T19:10:00Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "agent_logs": {
+    "eval-platform-design": [
+      {"timestamp": "2026-06-24T10:52:13Z", "tool": "Bash", "entry": "Bash: ls projects/eval-platform-design/"},
+      {"timestamp": "2026-06-24T10:52:13Z", "tool": "Bash", "entry": "Bash: ls -la projects/eval-platform-design/"},
+      {"timestamp": "2026-06-24T10:52:19Z", "tool": "Bash", "entry": "Bash: for f in prerequisite-gate.md ... wc -l check"},
+      {"timestamp": "2026-06-24T10:52:35Z", "tool": "Bash", "entry": "Bash: test -f projects/eval-platform-design/ files"}
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-06-23T23:52:00Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-23T23:51:50Z", "tool": "Bash", "entry": "Bash: python session state merge"},
+    {"timestamp": "2026-06-23T23:51:51Z", "tool": "Bash", "entry": "Bash: mkdir resume-loops dir"},
+    {"timestamp": "2026-06-23T23:51:59Z", "tool": "Bash", "entry": "Bash: cat session_state.json merge"},
+    {"timestamp": "2026-06-23T23:52:04Z", "tool": "Bash", "entry": "Bash: cat sr_dev_workflow.json merge"}
+  ]
+}

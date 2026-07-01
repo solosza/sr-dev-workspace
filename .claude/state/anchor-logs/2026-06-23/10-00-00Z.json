@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-06-23T10:00:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-23T23:35:31Z", "tool": "Bash", "entry": "Bash: find sr_dev_workspace/.claude -type f"},
+    {"timestamp": "2026-06-23T23:35:32Z", "tool": "Bash", "entry": "Bash: find isagawa-kernel/.claude -type f"},
+    {"timestamp": "2026-06-23T23:35:32Z", "tool": "Bash", "entry": "Bash: find hmsa-healthcare-qa/.claude -type f"},
+    {"timestamp": "2026-06-23T23:36:13Z", "tool": "Bash", "entry": "Bash: ls projects/kernel-boundary"},
+    {"timestamp": "2026-06-23T23:36:17Z", "tool": "Bash", "entry": "Bash: mkdir -p projects/kernel-boundary"},
+    {"timestamp": "2026-06-23T23:37:31Z", "tool": "Write", "entry": "Write: three-way-diff.md"},
+    {"timestamp": "2026-06-23T23:37:36Z", "tool": "Bash", "entry": "Bash: test -f three-way-diff.md"},
+    {"timestamp": "2026-06-23T23:37:40Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"}
+  ]
+}

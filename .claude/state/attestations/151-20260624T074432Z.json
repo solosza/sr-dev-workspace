@@ -1,0 +1,56 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "db04b2e7fb68761caa87b819f02be3bea7f258300dba7f118c680cfba5ba4f89",
+      "parameters": "70e3eb40b9ff8d793656a170265835f3e611ae3216736620b984d00c5a89c9f0"
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\gate-contract.md",
+          "sha256": "a84fabe440697b6fa529b71402639f14f63718da30002833e4fc5d46f8a6ba00"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\001-research-loop-optimization.md",
+          "sha256": "70c003a4216b80652b8ab6916738e2d4fa92b0fb2233d7b425c1e62a1f45d2d5"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\002-research-enforcement-depth.md",
+          "sha256": "3885993f6c120061b6f87c57d2f3cfffcf9511e0fbc7cc145db0325480496283"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\003-research-domain-setup-and-lessons.md",
+          "sha256": "5c3f0126ed2b11669b5c56d3d8609ba37f7f92cb3c1a69ef82a8835efd7ebc19"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\004-research-external-governance-models.md",
+          "sha256": "a14fe67dfafbcc0a1bb78bbc12ed7ba359688dcfc2266cf0b97c3e313adcad0e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\005-build-recommendation-report.md",
+          "sha256": "b2c03f3b3096e6aa5a0c10f42ac63ed21f8753cd1e28acf65938e041138dccd7"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\gate-contract.md",
+          "sha256": "a84fabe440697b6fa529b71402639f14f63718da30002833e4fc5d46f8a6ba00"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research\\index.md",
+          "sha256": "a8a9b225dc575a1556f4c533bf7bd2a51701e00f8c38e0bc28bb730b2e617ab1"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:44:32.343727+00:00",
+      "end": "2026-06-24T07:44:32.347727+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\151-kernel-research-governance-depth-over-breadth.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\governance-depth-research",
+      "task_count": 5,
+      "completed_count": 5,
+      "skipped_count": 0
+    }
+  }
+}

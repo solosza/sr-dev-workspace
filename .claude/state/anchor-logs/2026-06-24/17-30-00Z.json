@@ -1,0 +1,21 @@
+{
+  "anchor_timestamp": "2026-06-24T17:30:00Z",
+  "actions_count": 15,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T10:43:00Z", "tool": "Bash", "entry": "Bash: cat /dev/null > actions.jsonl truncate"},
+    {"timestamp": "2026-06-24T10:43:18Z", "tool": "Bash", "entry": "Bash: test -f eval-platform-design"},
+    {"timestamp": "2026-06-24T10:43:42Z", "tool": "Bash", "entry": "Bash: ls eval/references"},
+    {"timestamp": "2026-06-24T10:45:36Z", "tool": "Bash", "entry": "Bash: ls eval/references"},
+    {"timestamp": "2026-06-24T10:45:39Z", "tool": "Bash", "entry": "Bash: mkdir -p step-06"},
+    {"timestamp": "2026-06-24T10:45:42Z", "tool": "Write", "entry": "Write: api-and-frontend.md"},
+    {"timestamp": "2026-06-24T10:45:47Z", "tool": "Bash", "entry": "Bash: grep FastAPI"},
+    {"timestamp": "2026-06-24T10:45:49Z", "tool": "Bash", "entry": "Bash: grep endpoints"},
+    {"timestamp": "2026-06-24T10:45:50Z", "tool": "Bash", "entry": "Bash: grep References"},
+    {"timestamp": "2026-06-24T10:45:52Z", "tool": "Bash", "entry": "Bash: grep Submission UI"},
+    {"timestamp": "2026-06-24T10:45:59Z", "tool": "Bash", "entry": "Bash: line count check"},
+    {"timestamp": "2026-06-24T10:46:18Z", "tool": "Bash", "entry": "Bash: test -f eval-platform-design"},
+    {"timestamp": "2026-06-24T10:46:18Z", "tool": "Bash", "entry": "Bash: grep FastAPI"},
+    {"timestamp": "2026-06-24T10:46:28Z", "tool": "Bash", "entry": "Bash: test -f eval skill"}
+  ]
+}

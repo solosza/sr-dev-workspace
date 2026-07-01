@@ -4,6 +4,24 @@ Final gate before marking work done.
 
 ## Instructions
 
+**Workflow State Routing (CRITICAL for parallel agents):**
+
+Before any workflow state read/write, check `agent_id` in `session_state.json`:
+- If `agent_id` is set: read/write per-agent fields from `.claude/state/agent-{agent_id}-workflow.json` (create if missing — see seeding below)
+- If `agent_id` is null: read/write `[domain]_workflow.json` (current behavior, unchanged)
+
+Every reference to `[domain]_workflow.json` below follows this routing. When this doc says "update workflow state", it means the routed file.
+
+**Seeding:** If `agent-{agent_id}-workflow.json` doesn't exist, create it with:
+```json
+{ "cycling": false, "cycling_complete": false, "task_folder": null, "total_tasks": null,
+  "current_task": null, "completed_tasks": [], "skipped_tasks": [], "attempts_on_current": 0,
+  "complete": false, "complete_timestamp": null, "anchored": true, "anchor_timestamp": null,
+  "actions_since_anchor": 0, "last_anchor_token_confirmed": null, "timestamp": null }
+```
+
+For global fields (`protocol_created`, `actions_limit`), always read from the shared `[domain]_workflow.json`.
+
 1. **Check state:**
 
    | Gate | Required |

@@ -95,13 +95,22 @@ After `/kernel/domain-setup` creates new hooks:
 ├── learn.md               ← Update protocol + hooks (after fix) - CLEARS BLOCK
 ├── fix.md                 ← Impact assessment before any fix (MANDATORY)
 ├── complete.md            ← Final gate (before done) + cycling continuation
+└── reset.md               ← Dev tool: fresh state for testing
+```
+
+### Extensions
+
+These are workspace extensions, not kernel core. They are installed per-workspace.
+
+```
+.claude/commands/kernel/
 ├── autonomous-cycle.md    ← Start cycling through tasks (user-invoked)
 ├── task-builder.md        ← Decompose goal into tasks + auto-execute (user-invoked)
 ├── execute-pipeline.md    ← Backlog → tasks → run-task.sh (fully autonomous)
 ├── backlog.md             ← Create backlog item in standard format (user-invoked)
 ├── audit-workflow.md      ← Scan for gaps + auto-fix (user-invoked)
 ├── prod-test.md           ← Production test a deliverable repo (modular, stackable)
-└── reset.md               ← Dev tool: fresh state for testing
+└── human-check.md         ← Scan text for AI tells (file or inline input)
 ```
 
 ## Smart Gates

@@ -1,0 +1,70 @@
+{
+  "anchor_timestamp": "2026-06-24T08:00:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-06-24T05:41:17Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\nlines = open('D:/my_ai_projects/project_test_repos/sr_de",
+      "session": "current"
+    }
+  ],
+  "agent_logs": {
+    "human-check-command": [
+      {
+        "timestamp": "2026-06-24T05:38:02Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -n \"resolve_paths\\|STATE_DIR\\|LOG_DIR\\|STATE_FILE\" \"D:/my_ai_projects/proje",
+        "session": "current",
+        "agent_id": "human-check-command"
+      },
+      {
+        "timestamp": "2026-06-24T05:38:12Z",
+        "tool": "Edit",
+        "entry": "Edit: run-task.sh",
+        "session": "current",
+        "agent_id": "human-check-command"
+      },
+      {
+        "timestamp": "2026-06-24T05:38:16Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -n \"STATE_DIR\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/run-t",
+        "session": "current",
+        "agent_id": "human-check-command"
+      }
+    ],
+    "kernel-minimalize": [
+      {
+        "timestamp": "2026-06-24T05:37:22Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+        "session": "current",
+        "agent_id": "kernel-minimalize"
+      },
+      {
+        "timestamp": "2026-06-24T05:38:41Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+        "session": "current",
+        "agent_id": "kernel-minimalize"
+      }
+    ],
+    "governance-depth-research": [
+      {
+        "timestamp": "2026-06-24T05:37:23Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+        "session": "current",
+        "agent_id": "governance-depth-research"
+      },
+      {
+        "timestamp": "2026-06-24T05:38:43Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+        "session": "current",
+        "agent_id": "governance-depth-research"
+      }
+    ]
+  }
+}

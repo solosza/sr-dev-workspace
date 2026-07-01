@@ -1,0 +1,22 @@
+{
+  "step": "06-run-and-score",
+  "success_criteria": [
+    "Scored report produced",
+    "All metrics have numeric scores (0-1)",
+    "Overall pass/fail determined",
+    "Score history updated in source repo"
+  ],
+  "expected_artifacts": [
+    "eval report (console output or file)",
+    "score-history.json entry in source repo's eval/results/"
+  ],
+  "soft_validation_rules": [
+    "Regression detected if score drops > 0.1",
+    "Failing metrics include triage recommendations",
+    "New components documented"
+  ],
+  "verification_commands": [
+    "test -f eval/results/score-history.json",
+    "python -c \"import json; json.load(open('eval/results/score-history.json'))\""
+  ]
+}

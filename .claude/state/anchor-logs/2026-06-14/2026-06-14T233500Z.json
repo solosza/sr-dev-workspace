@@ -1,0 +1,19 @@
+{
+  "anchor_timestamp": "2026-06-14T23:35:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-06-14T01:42:37Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-06-14T01:42:49Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \".claude/state/anchor-logs/2026-06-14\"",
+      "session": "current"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "anchor_timestamp": "2026-06-24T10:30:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T05:54:45Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash computation"},
+    {"timestamp": "2026-06-24T05:54:54Z", "tool": "Bash", "entry": "Bash: ls tasks/completed/governance-depth-research"},
+    {"timestamp": "2026-06-24T05:57:19Z", "tool": "Write", "entry": "Write: external-governance-models.md"},
+    {"timestamp": "2026-06-24T05:57:27Z", "tool": "Bash", "entry": "Bash: file exists verification"},
+    {"timestamp": "2026-06-24T05:57:41Z", "tool": "Bash", "entry": "Bash: file content verification"}
+  ],
+  "agent_logs": {
+    "governance-depth-research": [
+      {"timestamp": "2026-06-24T05:54:45Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash computation"},
+      {"timestamp": "2026-06-24T05:54:54Z", "tool": "Bash", "entry": "Bash: ls tasks/completed/governance-depth-research"},
+      {"timestamp": "2026-06-24T05:57:19Z", "tool": "Write", "entry": "Write: external-governance-models.md"},
+      {"timestamp": "2026-06-24T05:57:27Z", "tool": "Bash", "entry": "Bash: file exists verification"},
+      {"timestamp": "2026-06-24T05:57:41Z", "tool": "Bash", "entry": "Bash: file content verification"}
+    ]
+  }
+}

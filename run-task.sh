@@ -173,6 +173,15 @@ run_claude() {
       if [ "$elapsed" -ge "$TASK_TIMEOUT" ]; then
         echo "[TIMEOUT] Task '$CURRENT_TASK' — claude -p exceeded ${TASK_TIMEOUT}s (PID $claude_pid)"
         kill_process_tree "$claude_pid"
+        # Safety wait with timeout — don't block forever if kill failed
+        local wait_elapsed=0
+        while kill -0 "$claude_pid" 2>/dev/null && [ "$wait_elapsed" -lt 30 ]; do
+          sleep 2
+          wait_elapsed=$((wait_elapsed + 2))
+        done
+        if kill -0 "$claude_pid" 2>/dev/null; then
+          echo "[WARN] Process $claude_pid still alive after kill + 30s wait. Abandoning."
+        fi
         break
       fi
     done
@@ -237,6 +246,9 @@ echo "Task folder: $TASK_DIR"
 echo "Max iterations: $MAX_ITERATIONS"
 echo ""
 
+# --- Set agent ID before loop (used for workflow state isolation) ---
+AGENT_ID="${AGENT_ID:-${TASK_SUBFOLDER:-default}}"
+
 # --- Main loop ---
 # cd once before loop, not inside run_claude
 cd "$REPO"
@@ -247,6 +259,7 @@ for i in $(seq 1 "$MAX_ITERATIONS"); do
 
   # PRE-ITERATION EXIT GUARD: check workflow state before spawning another claude -p
   # This prevents the bug where ALL_TASKS_COMPLETE was returned but we still spawn the next iteration
+  # Uses AGENT_ID from shell (not session_state.json) to avoid cross-agent contamination
   if [ "$i" -gt 1 ]; then
     PRECHECK=$($PYTHON_CMD -c "
 import json, pathlib
@@ -255,7 +268,13 @@ if not sf.exists(): print('continue'); exit()
 s = json.loads(sf.read_text())
 d = s.get('domain', '')
 if not d: print('continue'); exit()
-wf = sf.parent / (d + '_workflow.json')
+agent_id = '$AGENT_ID'
+if agent_id and agent_id != 'default':
+    wf = sf.parent / f'agent-{agent_id}-workflow.json'
+    if not wf.exists():
+        wf = sf.parent / (d + '_workflow.json')
+else:
+    wf = sf.parent / (d + '_workflow.json')
 if not wf.exists(): print('continue'); exit()
 w = json.loads(wf.read_text())
 total = w.get('total_tasks', 0)
@@ -285,10 +304,33 @@ else:
   print_state
   echo ""
 
-  # Pre-init state (session_started + one_shot)
-  pre_init_state "session_started=True,one_shot=True"
+  # Pre-init state (session_started + one_shot + agent_id for state isolation)
+  pre_init_state "session_started=True,one_shot=True,agent_id=${AGENT_ID}"
 
-  # Identify current task from workflow state
+  # Seed per-agent workflow file if it doesn't exist (workflow state isolation)
+  if [ -n "$AGENT_ID" ] && [ "$AGENT_ID" != "default" ]; then
+    AGENT_WORKFLOW="${LOG_DIR}/agent-${AGENT_ID}-workflow.json"
+    if [ ! -f "$AGENT_WORKFLOW" ]; then
+      $PYTHON_CMD -c "
+import json, pathlib
+wf = pathlib.Path('$AGENT_WORKFLOW')
+wf.write_text(json.dumps({
+    'cycling': False, 'cycling_complete': False,
+    'task_folder': 'tasks/${TASK_SUBFOLDER}/' if '${TASK_SUBFOLDER}' else None,
+    'total_tasks': None, 'current_task': None,
+    'completed_tasks': [], 'skipped_tasks': [],
+    'attempts_on_current': 0,
+    'complete': False, 'complete_timestamp': None,
+    'anchored': True, 'anchor_timestamp': None,
+    'actions_since_anchor': 0, 'last_anchor_token_confirmed': None,
+    'timestamp': None
+}, indent=2))
+print('  [SEED] Created ' + wf.name)
+" 2>/dev/null
+    fi
+  fi
+
+  # Identify current task from workflow state (uses shell AGENT_ID, not session_state.json)
   CURRENT_TASK=$($PYTHON_CMD -c "
 import json, pathlib
 sf = pathlib.Path('$STATE_FILE')
@@ -296,7 +338,13 @@ if not sf.exists(): print('unknown'); exit()
 s = json.loads(sf.read_text())
 d = s.get('domain', '')
 if not d: print('unknown'); exit()
-wf = sf.parent / (d + '_workflow.json')
+agent_id = '$AGENT_ID'
+if agent_id and agent_id != 'default':
+    wf = sf.parent / f'agent-{agent_id}-workflow.json'
+    if not wf.exists():
+        wf = sf.parent / (d + '_workflow.json')
+else:
+    wf = sf.parent / (d + '_workflow.json')
 if not wf.exists(): print('unknown'); exit()
 w = json.loads(wf.read_text())
 print(w.get('current_task', '') or 'unknown')

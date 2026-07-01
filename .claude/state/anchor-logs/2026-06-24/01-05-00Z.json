@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-06-24T01:05:00Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T00:37:02Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh (pipeline spawn 1)"},
+    {"timestamp": "2026-06-24T00:37:04Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh (pipeline spawn 2)"},
+    {"timestamp": "2026-06-24T00:37:05Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh (pipeline spawn 3)"},
+    {"timestamp": "2026-06-24T00:37:24Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh (pipeline spawn 4)"}
+  ]
+}

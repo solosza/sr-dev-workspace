@@ -1,0 +1,68 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "388c1568c0fd1aa0870d0f38a1ba785402c6cffbd90589804ea55d9a0f5c8eec",
+      "parameters": "1acc44ee6b930e5eee62fdf9599fccb5a62a1b7c11ec207a5b067f85eed0323f",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-02T17:25:25.012454+00:00",
+          "raw_input_hash": "0a4ba320c8ede6019004129647760b8813752a2e95516f6ab0665519261d5ea6",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\gate-contract.md",
+          "sha256": "7b3a308041a44d833f1d2f5e3d2ab453c101ce45e25c95223b9b3829b76a6afc"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\000-index.md",
+          "sha256": "df506da7cee40e013a992dcc44f52045ec4cf57e9eeb3c145941cae3097a61fe"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\001-kernel-build-actions-log-routing.md",
+          "sha256": "8afec12dbe0f78fc9258c346d16b9ea1894e8d0f87c9efcd34d921ea5ea5927d"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\002-kernel-build-agent-state-write-guard.md",
+          "sha256": "eea40851ae5fc5edb4e3f2b92dde49da221283d3c280c1dce1a1a124385a5a51"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\003-kernel-build-run-task-agent-id.md",
+          "sha256": "6a961e48a639aedefbb95736ccc24ab5d23a5d32f842f71225d87484e1a441be"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\004-kernel-build-anchor-per-agent-cleanup.md",
+          "sha256": "d2f96467655607ca7d44bb3e452952c1cf6171b987eba68873f925f4cad556e1"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\005-kernel-test-state-isolation.md",
+          "sha256": "e2d1678b28bb69806d14b03eb58684c0b2bd9f528d648b92218df32f17aba679"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build\\gate-contract.md",
+          "sha256": "7b3a308041a44d833f1d2f5e3d2ab453c101ce45e25c95223b9b3829b76a6afc"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:39:12.508590+00:00",
+      "end": "2026-06-24T07:39:12.511590+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\123-kernel-research-worktree-pipeline-isolation.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\state-isolation-build",
+      "task_count": 5,
+      "completed_count": 5,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935704869",
+      "logIndex": "1935704869"
+    }
+  }
+}

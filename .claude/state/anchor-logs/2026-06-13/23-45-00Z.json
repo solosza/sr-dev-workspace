@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-06-13T23:45:00Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-13T23:20:15Z", "tool": "Write", "entry": "Write: 01-company-overview.md", "session": "current"},
+    {"timestamp": "2026-06-13T23:20:18Z", "tool": "Bash", "entry": "Bash: wc -w pulsia-research overview", "session": "current"},
+    {"timestamp": "2026-06-13T23:20:40Z", "tool": "Bash", "entry": "Bash: test -f pulsia-research overview", "session": "current"},
+    {"timestamp": "2026-06-13T23:22:05Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash", "session": "current"}
+  ]
+}

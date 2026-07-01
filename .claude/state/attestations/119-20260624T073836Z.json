@@ -1,0 +1,70 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "79a2ce44e5bab90bd3932d5e5bc4f65915f4bebd947d6e0f449fe551092c1e77",
+      "parameters": "be67e103cd884fdad469ce2dc00ba19554fecee9297ea74f93ec74e3e1dc9897",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-01T18:44:03.140097+00:00",
+          "raw_input_hash": "16827259757a8c868331e2bb1fb6c0118b60ece522a57e1af0dcf6c486835619",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-06-01T18:45:37.064390+00:00",
+          "raw_input_hash": "16827259757a8c868331e2bb1fb6c0118b60ece522a57e1af0dcf6c486835619",
+          "backlog_hash_after": "79a2ce44e5bab90bd3932d5e5bc4f65915f4bebd947d6e0f449fe551092c1e77"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research\\gate-contract.md",
+          "sha256": "6027bbbb4c8f11d7be5d74809afec812467d7d0c7cc6642c397798e6f5673767"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research\\000-index.md",
+          "sha256": "0ef05d100571fa3fde0be05acce55b6e43a371c6e4828067780e9e8231b566be"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research\\001-kernel-build-create-project-dir.md",
+          "sha256": "f29b636c128da4f7506d2662f2f347186223cee7d3682996bc1cd6b53ce9bc61"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research\\002-kernel-research-mcp-spec-and-frameworks.md",
+          "sha256": "68d4ac9d0e82dec0528786f75adb9ea404fb3ee4333566f6fa4fcfc5b5bb06f5"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research\\003-kernel-research-candidate-capabilities.md",
+          "sha256": "65cf67c8ed9f70324c2eb533f1b6bcd7a1e1dfbe6214a914489968b089a97b12"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research\\004-kernel-build-write-research-report.md",
+          "sha256": "31a518fb3021beedbbb72bd66a7c4d340d505c7726c2c9bc7476d5bfc443bfb1"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research\\gate-contract.md",
+          "sha256": "6027bbbb4c8f11d7be5d74809afec812467d7d0c7cc6642c397798e6f5673767"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:38:36.048694+00:00",
+      "end": "2026-06-24T07:38:36.051701+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\119-kernel-research-mcp-server-builder.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\mcp-server-research",
+      "task_count": 4,
+      "completed_count": 4,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935702407",
+      "logIndex": "1935702407"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "step": "03-copy-artifact",
+  "modes": {
+    "artifact": {
+      "success_criteria": [
+        "All SKILL.md file index entries exist in test repo",
+        "All step file references resolve",
+        "All contract JSONs parse as valid JSON",
+        "No broken wikilinks in copied markdown"
+      ],
+      "expected_artifacts": [
+        "target artifact's SKILL.md in test repo",
+        "all step files",
+        "all reference files",
+        "all contract files"
+      ],
+      "soft_validation_rules": [
+        "No references to source repo paths remain",
+        "Artifact is fully self-contained",
+        "All wikilink targets exist in the test repo",
+        "No dangling imports or missing dependencies"
+      ]
+    },
+    "harness": {
+      "success_criteria": [
+        "harness-under-test/ directory exists in test repo",
+        "CLAUDE.md copied to harness-under-test/",
+        "Commands directory non-empty in harness-under-test/",
+        "No .git/ directory leaked into harness-under-test/"
+      ],
+      "expected_artifacts": [
+        "harness-under-test/CLAUDE.md",
+        "harness-under-test/.claude/commands/kernel/",
+        "harness-under-test/.claude/hooks/ (if present in source)",
+        "harness-under-test/.claude/skills/ (if present in source)"
+      ],
+      "soft_validation_rules": [
+        "No .claude/state/ copied (runtime state excluded)",
+        "No eval/ directory copied (prior results excluded)",
+        "Source repo structure preserved under harness-under-test/"
+      ]
+    }
+  },
+  "verification_commands": [
+    "test -d harness-under-test/ || test -f .claude/skills/*/SKILL.md",
+    "test ! -d harness-under-test/.git 2>/dev/null || true"
+  ]
+}

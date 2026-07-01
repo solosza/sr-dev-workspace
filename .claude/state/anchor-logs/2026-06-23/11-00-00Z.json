@@ -1,0 +1,17 @@
+{
+  "anchor_timestamp": "2026-06-23T11:00:00Z",
+  "actions_count": 10,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-23T23:40:15Z", "tool": "Bash", "entry": "Bash: for f in files check existence"},
+    {"timestamp": "2026-06-23T23:40:26Z", "tool": "Bash", "entry": "Bash: test session-start.md exists"},
+    {"timestamp": "2026-06-23T23:40:27Z", "tool": "Bash", "entry": "Bash: test run-task.sh exists"},
+    {"timestamp": "2026-06-23T23:40:37Z", "tool": "Bash", "entry": "Bash: find common.sh in isagawa-kernel"},
+    {"timestamp": "2026-06-23T23:40:54Z", "tool": "Write", "entry": "Write: kernel-manifest.json"},
+    {"timestamp": "2026-06-23T23:41:03Z", "tool": "Bash", "entry": "Bash: python validate kernel-manifest.json"},
+    {"timestamp": "2026-06-23T23:41:17Z", "tool": "Bash", "entry": "Bash: test task done marker"},
+    {"timestamp": "2026-06-23T23:41:25Z", "tool": "Bash", "entry": "Bash: test kernel-manifest.json exists"},
+    {"timestamp": "2026-06-23T23:41:31Z", "tool": "Bash", "entry": "Bash: ls task files"},
+    {"timestamp": "2026-06-23T23:40:15Z", "tool": "Bash", "entry": "Bash: session-start state reads"}
+  ]
+}

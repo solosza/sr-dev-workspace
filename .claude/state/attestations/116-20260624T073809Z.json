@@ -1,0 +1,72 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "bb482f8db14e69a9626d9b159876caf7b068c355f8d5d48e5e7f2274daaefef4",
+      "parameters": "42d5cb32d00759e04fe58118eb0c2d17ee6b50ac5dc3399c535d0dbcd5dd3020",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-01T18:36:49.923310+00:00",
+          "raw_input_hash": "1bc78ea95d82ba942fc44b00828c3a51fe6d5433a1c123972e85984e5706cfde",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\gate-contract.md",
+          "sha256": "960e8ff8647da7798a45c13d35cb6aeadebc5984517867cd13dcbb9c963aac49"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\000-index.md",
+          "sha256": "46aba2b3506cf92a52e12f5bf6a79eec75d45f2fda1a6b340a2845acf71566ec"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\001-kernel-build-create-project-dir.md",
+          "sha256": "19fe9ba8d8dfd67755a36b8336e1ae5646eb1c185194f607dacfbe4b938dfc5f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\002-kernel-research-read-superpowers-readme.md",
+          "sha256": "1f8afa8878dab83df2230fefa48c11f9ec4ce5b36fff9b7edb56b63ffc0bcbd2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\003-kernel-research-assess-tdd-skill.md",
+          "sha256": "28d05c7b76d3b44c2e9bd0caf567ce24075783c70c68217513f54c5163daaefb"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\004-kernel-research-assess-worktree-skill.md",
+          "sha256": "4904803f0938419669c224790358d1577cb009f4a6b6c0ca2b6869a2b0c3a63a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\005-kernel-research-assess-code-review-skill.md",
+          "sha256": "28f5984c7aa3063a18449bd4106d6f5144b408f415a08770520fb0443064db5f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\006-kernel-build-write-research-report.md",
+          "sha256": "863abc0a9fb9338c679023e4a7001e1a0b23791587cfec8f7821586d0c90d1a0"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research\\gate-contract.md",
+          "sha256": "960e8ff8647da7798a45c13d35cb6aeadebc5984517867cd13dcbb9c963aac49"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:38:09.346238+00:00",
+      "end": "2026-06-24T07:38:09.350232+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\116-kernel-research-superpowers-integration.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/superpowers-research",
+      "task_count": 6,
+      "completed_count": 6,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935700366",
+      "logIndex": "1935700366"
+    }
+  }
+}

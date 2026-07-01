@@ -1,0 +1,16 @@
+{
+  "anchor_timestamp": "2026-06-24T17:10:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T07:34:33Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh"},
+    {"timestamp": "2026-06-24T07:36:04Z", "tool": "Bash", "entry": "Bash: python -c path check"},
+    {"timestamp": "2026-06-24T07:36:25Z", "tool": "Bash", "entry": "Bash: test -f prod-test reference check"}
+  ],
+  "agent_logs": {
+    "deepeval-l3-testing": [
+      {"timestamp": "2026-06-24T07:32:22Z", "tool": "Bash", "entry": "Bash: cat temp file"},
+      {"timestamp": "2026-06-24T07:32:24Z", "tool": "Bash", "entry": "Bash: python -c json update"}
+    ]
+  }
+}

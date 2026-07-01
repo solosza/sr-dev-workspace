@@ -1,0 +1,19 @@
+{
+  "anchor_timestamp": "2026-06-24T12:10:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "agent_logs": {
+    "deepeval-eval-command": [
+      {"timestamp": "2026-06-24T10:04:21Z", "tool": "Bash", "entry": "Bash: state file write"},
+      {"timestamp": "2026-06-24T10:04:23Z", "tool": "Bash", "entry": "Bash: sleep + monitor"},
+      {"timestamp": "2026-06-24T10:04:29Z", "tool": "Bash", "entry": "Bash: ps aux check run-task"},
+      {"timestamp": "2026-06-24T10:05:23Z", "tool": "Bash", "entry": "Bash: test file existence"},
+      {"timestamp": "2026-06-24T10:05:24Z", "tool": "Bash", "entry": "Bash: grep Step 1"},
+      {"timestamp": "2026-06-24T10:05:25Z", "tool": "Bash", "entry": "Bash: grep Step 6"},
+      {"timestamp": "2026-06-24T10:05:26Z", "tool": "Bash", "entry": "Bash: wc -l skill file"},
+      {"timestamp": "2026-06-24T10:05:41Z", "tool": "Bash", "entry": "Bash: sleep + monitor"},
+      {"timestamp": "2026-06-24T10:06:25Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE run-task.sh"},
+      {"timestamp": "2026-06-24T10:11:01Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

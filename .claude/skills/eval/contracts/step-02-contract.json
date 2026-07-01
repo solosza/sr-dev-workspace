@@ -1,0 +1,26 @@
+{
+  "step": "02-compile-harness",
+  "success_criteria": [
+    "Protocol file exists in test repo",
+    "Hooks wired in settings.local.json",
+    "State files initialized (session_state.json exists)",
+    "Domain-setup completed without error"
+  ],
+  "expected_artifacts": [
+    "protocol file",
+    "settings.local.json with hook entries",
+    "session_state.json"
+  ],
+  "soft_validation_rules": [
+    "All kernel commands accessible in .claude/commands/kernel/",
+    "DeepEval skill discoverable by domain-setup",
+    "Protocol references at least one domain-specific pattern",
+    "Hooks include universal-gate-enforcer and domain-gate-enforcer"
+  ],
+  "verification_commands": [
+    "test -f .claude/protocols/*-protocol.md",
+    "grep -q 'PreToolUse\\|PostToolUse' .claude/settings.local.json",
+    "test -f .claude/state/session_state.json",
+    "ls .claude/commands/kernel/*.md | wc -l"
+  ]
+}

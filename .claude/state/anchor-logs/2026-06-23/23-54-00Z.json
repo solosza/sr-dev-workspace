@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-06-23T23:54:00Z",
+  "actions_count": 6,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-23T23:53:34Z", "tool": "Bash", "entry": "Bash: python state update (session-start)"},
+    {"timestamp": "2026-06-23T23:53:44Z", "tool": "Bash", "entry": "Bash: ls tasks/resume-loops-agent-systems"},
+    {"timestamp": "2026-06-23T23:53:48Z", "tool": "Bash", "entry": "Bash: python session_state.json update"},
+    {"timestamp": "2026-06-23T23:53:49Z", "tool": "Bash", "entry": "Bash: python sr_dev_workflow.json update"},
+    {"timestamp": "2026-06-23T23:53:52Z", "tool": "Bash", "entry": "Bash: ls temp dir (hook check)"},
+    {"timestamp": "2026-06-23T23:53:52Z", "tool": "Bash", "entry": "Bash: test kernel-manifest.json exists"}
+  ]
+}

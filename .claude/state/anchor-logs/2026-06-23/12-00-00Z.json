@@ -1,0 +1,1 @@
+{"anchor_timestamp":"2026-06-23T12:00:00Z","actions_count":0,"violations_found":0,"actions":[],"agent_logs":{"kernel-minimalize":[{"timestamp":"2026-06-24T00:37:26Z","tool":"Bash","entry":"Bash: env -u CLAUDECODE bash run-task.sh spawn"}]}}

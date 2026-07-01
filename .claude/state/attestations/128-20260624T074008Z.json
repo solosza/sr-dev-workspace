@@ -1,0 +1,84 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "c9c3b7b8471696c67467a1103fa2e367fb93ef8e92f04bc2bd45d94f1ea43833",
+      "parameters": "aa7fd74a62695fb357c584b7bdf465aca796c91ce6c5632876ce53d07d2bc1be"
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\gate-contract.md",
+          "sha256": "2ac93a46ac79228d9f36ec1018142c192102efa718bc8ac27cfb5a7cfa5a3c05"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\000-index.md",
+          "sha256": "f679f7a1a5ac1c6dd700300b23f27aa0223f8158fce798fd26bb706789259e95"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\001-build-create-license.md",
+          "sha256": "309bfaae140401a3766b92f72da0fe8e2c7f96f824f7313c51189f59097107ee"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\002-build-add-readme-badges.md",
+          "sha256": "5ec339d294299a14cc647052c3ffee7db39427da2b634017c7658b41b4ff9977"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\003-build-add-readme-contact-cta.md",
+          "sha256": "f5fe1f1ebb7fb94edeeb4efe141c3d836396cc610300cb06d50ffa301b57044d"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\004-build-add-readme-example-output.md",
+          "sha256": "de1d2f562ceafbaf2ef3ec94e86e254406a2d6856e7c406ffcda5392f180ed89"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\005-build-push-platform-ssh.md",
+          "sha256": "2f9dab5a4505f81f9638c96445e19623466f255228d25c5d7c8453028628b381"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\006-build-add-landing-contact-cta.md",
+          "sha256": "f278a562b40919daa9065387fe6123e639326eba6621e011cc8fa98cb4e88d2c"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\007-build-add-landing-enterprise-section.md",
+          "sha256": "659834eb8231f4dc44534a36f348621a92f25be3e49c01008843ec96f3f904f4"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\008-build-add-landing-attestation-link.md",
+          "sha256": "75b6c9cdbd2a031d358a054705d27312bdc604da6da37b2933d4ebe158abb801"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\009-build-push-website.md",
+          "sha256": "170dec79cd131f412c26ba5c46eff701724739f30d80128dfd3330b41984f292"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\010-test-verify-github-repo.md",
+          "sha256": "d6f643b55260516561b34a8b9f041af4519abf257244627804f3af9905ee3981"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\011-test-verify-landing-page.md",
+          "sha256": "4dc8867d06d4cb6249a853ca1500da050244e9f194cf965fb68d822e6b9ddd4f"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready\\gate-contract.md",
+          "sha256": "2ac93a46ac79228d9f36ec1018142c192102efa718bc8ac27cfb5a7cfa5a3c05"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:40:08.158903+00:00",
+      "end": "2026-06-24T07:40:08.162903+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\128-market-research-pulsia-autonomous-ai-platform.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\platform-ssh-ciq-ready",
+      "task_count": 11,
+      "completed_count": 11,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935708078",
+      "logIndex": "1935708078"
+    }
+  }
+}

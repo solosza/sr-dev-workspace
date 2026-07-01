@@ -1,0 +1,27 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/kernel-minimalize-standalone/",
+  "total_tasks": 9,
+  "current_task": null,
+  "completed_tasks": [
+    "001-build-create-repo.md",
+    "002-build-strip-commands.md",
+    "003-build-strip-skills.md",
+    "004-build-strip-root-dirs.md",
+    "005-build-strip-lib.md",
+    "006-build-clean-lessons.md",
+    "007-build-update-claudemd.md",
+    "008-build-readme-and-freeze.md",
+    "009-test-validate-loop.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-06-24T11:10:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-06-24T11:00:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-06-24T11:10:00Z"
+}

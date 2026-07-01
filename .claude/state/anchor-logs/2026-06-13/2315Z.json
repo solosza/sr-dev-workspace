@@ -1,0 +1,67 @@
+{
+  "anchor_timestamp": "2026-06-13T23:15:00Z",
+  "actions_count": 12,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-06-13T22:13:25Z",
+      "tool": "Write",
+      "entry": "Write: test-before-spawn.txt"
+    },
+    {
+      "timestamp": "2026-06-13T22:13:32Z",
+      "tool": "Write",
+      "entry": "Write: test-after-spawn.txt"
+    },
+    {
+      "timestamp": "2026-06-13T22:13:37Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la test-*.txt"
+    },
+    {
+      "timestamp": "2026-06-13T23:03:14Z",
+      "tool": "Write",
+      "entry": "Write: HARNESS-DESIGN-PATTERN.md"
+    },
+    {
+      "timestamp": "2026-06-13T23:03:31Z",
+      "tool": "Write",
+      "entry": "Write: loop-types.md"
+    },
+    {
+      "timestamp": "2026-06-13T23:03:47Z",
+      "tool": "Write",
+      "entry": "Write: architecture-layers.md"
+    },
+    {
+      "timestamp": "2026-06-13T23:04:05Z",
+      "tool": "Write",
+      "entry": "Write: orchestration-flows.md"
+    },
+    {
+      "timestamp": "2026-06-13T23:04:16Z",
+      "tool": "Write",
+      "entry": "Write: examples.md"
+    },
+    {
+      "timestamp": "2026-06-13T23:04:30Z",
+      "tool": "Write",
+      "entry": "Write: composability.md"
+    },
+    {
+      "timestamp": "2026-06-13T23:04:46Z",
+      "tool": "Write",
+      "entry": "Write: key-insights.md"
+    },
+    {
+      "timestamp": "2026-06-13T23:09:27Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -1 D:\\\\my_ai_projects\\\\project_test_repos\\\\sr_dev_workspace\\\\docs\\\\backlog\\\\d"
+    },
+    {
+      "timestamp": "2026-06-13T23:09:30Z",
+      "tool": "Bash",
+      "entry": "Bash: find D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog -maxdept"
+    }
+  ]
+}

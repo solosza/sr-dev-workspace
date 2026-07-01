@@ -62,8 +62,21 @@ kill_process_tree() {
   if [ -z "$pid" ]; then return; fi
 
   if [ "$IS_WINDOWS" = true ]; then
-    # Windows: taskkill with /T kills entire process tree
-    taskkill //F //T //PID "$pid" &>/dev/null || true
+    # Git Bash $! returns MSYS2 PIDs, but taskkill needs Windows PIDs.
+    # First try kill (works with MSYS2 PIDs), then try taskkill with
+    # the Windows PID resolved via /proc/$pid/winpid if available.
+    local winpid=""
+    if [ -f "/proc/$pid/winpid" ]; then
+      winpid=$(cat "/proc/$pid/winpid" 2>/dev/null)
+    fi
+
+    # Kill via MSYS2 first (reliable for the direct process)
+    kill -9 "$pid" 2>/dev/null || true
+
+    # Kill Windows process tree if we resolved the winpid
+    if [ -n "$winpid" ]; then
+      taskkill //F //T //PID "$winpid" &>/dev/null || true
+    fi
   else
     # Unix: kill process group
     kill -- -"$pid" 2>/dev/null || kill "$pid" 2>/dev/null || true
@@ -90,6 +103,27 @@ f.write_text(json.dumps(s, indent=2))
   }
 }
 
+# --- Resolve workflow file (per-agent if agent_id set) ---
+resolve_workflow_file() {
+  $PYTHON_CMD -c "
+import json, pathlib
+sf = pathlib.Path('$STATE_FILE')
+if not sf.exists():
+    print(''); exit()
+s = json.loads(sf.read_text())
+d = s.get('domain', '')
+if not d:
+    print(''); exit()
+agent_id = s.get('agent_id')
+if agent_id:
+    af = sf.parent / f'agent-{agent_id}-workflow.json'
+    if af.exists():
+        print(str(af)); exit()
+wf = sf.parent / (d + '_workflow.json')
+print(str(wf))
+" 2>/dev/null
+}
+
 # --- Print current state ---
 print_state() {
   $PYTHON_CMD -c "
@@ -102,14 +136,23 @@ else:
     print('  session_started:', s.get('session_started'))
     print('  one_shot:', s.get('one_shot'))
     d = s.get('domain', '')
+    agent_id = s.get('agent_id')
     if d:
-        wf = sf.parent / (d + '_workflow.json')
+        if agent_id:
+            wf = sf.parent / f'agent-{agent_id}-workflow.json'
+            if not wf.exists():
+                wf = sf.parent / (d + '_workflow.json')
+        else:
+            wf = sf.parent / (d + '_workflow.json')
         if wf.exists():
             w = json.loads(wf.read_text())
             print('  anchored:', w.get('anchored'))
             print('  completed:', len(w.get('completed_tasks', [])))
             print('  skipped:', len(w.get('skipped_tasks', [])))
             print('  current:', w.get('current_task'))
+            if agent_id:
+                print('  agent_id:', agent_id)
+                print('  workflow_file:', wf.name)
 " || echo "  (state read failed)"
 }
 
@@ -172,7 +215,13 @@ s = json.loads(sf.read_text())
 domain = s.get('domain', '')
 if not domain:
     exit(0)
-wf = sf.parent / (domain + '_workflow.json')
+agent_id = s.get('agent_id')
+if agent_id:
+    wf = sf.parent / f'agent-{agent_id}-workflow.json'
+    if not wf.exists():
+        wf = sf.parent / (domain + '_workflow.json')
+else:
+    wf = sf.parent / (domain + '_workflow.json')
 if not wf.exists():
     exit(0)
 w = json.loads(wf.read_text())

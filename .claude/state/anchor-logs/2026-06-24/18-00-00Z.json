@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-06-24T18:00:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "agent_logs": {
+    "deepeval-l3-testing": [
+      {"timestamp": "2026-06-24T07:39:11Z", "tool": "Bash", "entry": "Bash: grep -l L3/deepeval in step files"},
+      {"timestamp": "2026-06-24T07:39:15Z", "tool": "Bash", "entry": "Bash: grep -c L1/L2 in step-06"},
+      {"timestamp": "2026-06-24T07:41:29Z", "tool": "Bash", "entry": "Bash: compute protocol hash"}
+    ]
+  }
+}

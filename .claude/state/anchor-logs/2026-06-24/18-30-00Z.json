@@ -1,0 +1,17 @@
+{
+  "anchor_timestamp": "2026-06-24T18:30:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "agent_logs": {
+    "eval-platform-design": [
+      {"timestamp": "2026-06-24T10:44:08Z", "tool": "Bash", "entry": "Bash: verification AC1 file exists"},
+      {"timestamp": "2026-06-24T10:44:09Z", "tool": "Bash", "entry": "Bash: verification AC2 ToolCorrectness"},
+      {"timestamp": "2026-06-24T10:44:10Z", "tool": "Bash", "entry": "Bash: verification AC3 GEval"},
+      {"timestamp": "2026-06-24T10:44:11Z", "tool": "Bash", "entry": "Bash: verification AC4 _reference"},
+      {"timestamp": "2026-06-24T10:44:12Z", "tool": "Bash", "entry": "Bash: verification AC5 line count"},
+      {"timestamp": "2026-06-24T10:44:19Z", "tool": "Bash", "entry": "Bash: BUILD-15 verification"},
+      {"timestamp": "2026-06-24T10:47:59Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs"},
+      {"timestamp": "2026-06-24T10:48:14Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

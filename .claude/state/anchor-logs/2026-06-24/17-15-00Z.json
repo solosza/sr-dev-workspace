@@ -1,0 +1,20 @@
+{
+  "anchor_timestamp": "2026-06-24T17:15:00Z",
+  "actions_count": 10,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T10:39:36Z", "tool": "Bash", "entry": "truncate actions.jsonl"},
+    {"timestamp": "2026-06-24T10:39:45Z", "tool": "Bash", "entry": "compute protocol hash"},
+    {"timestamp": "2026-06-24T10:39:47Z", "tool": "Bash", "entry": "mkdir eval skill dir"},
+    {"timestamp": "2026-06-24T10:40:09Z", "tool": "Bash", "entry": "ls anchor-logs dir"},
+    {"timestamp": "2026-06-24T10:40:25Z", "tool": "Bash", "entry": "AC1 file exists check"},
+    {"timestamp": "2026-06-24T10:40:26Z", "tool": "Bash", "entry": "AC2 grep SKILL.md"},
+    {"timestamp": "2026-06-24T10:40:27Z", "tool": "Bash", "entry": "AC3 grep reference"},
+    {"timestamp": "2026-06-24T10:40:27Z", "tool": "Bash", "entry": "AC4 under 200 lines"},
+    {"timestamp": "2026-06-24T10:40:42Z", "tool": "Bash", "entry": "BUILD-14 gate check"},
+    {"timestamp": "2026-06-24T10:42:17Z", "tool": "Bash", "entry": "compute protocol hash"}
+  ],
+  "agent_logs": {
+    "deepeval-eval-command": "archived (same 10 actions)"
+  }
+}

@@ -72,6 +72,16 @@ def get_domain_state_file(domain: str) -> Path:
     return STATE_DIR / f'{domain}_workflow.json'
 
 
+def get_workflow_state_file(domain: str, session_state: dict) -> Path:
+    """Route to per-agent workflow file when agent_id is set."""
+    agent_id = session_state.get('agent_id')
+    if agent_id:
+        agent_file = STATE_DIR / f'agent-{agent_id}-workflow.json'
+        if agent_file.exists():
+            return agent_file
+    return get_domain_state_file(domain)
+
+
 def read_state(state_file: Path) -> dict:
     if not state_file.exists():
         return {}
@@ -119,11 +129,16 @@ def check_and_increment_counter(session_state: dict, safe_bash: bool) -> int:
     if not domain:
         return 0
 
-    domain_state = read_state(get_domain_state_file(domain))
+    workflow_file = get_workflow_state_file(domain, session_state)
+    domain_state = read_state(workflow_file)
     if not domain_state:
         return 0
 
     actions_limit = domain_state.get('actions_limit', 10)
+    # For per-agent workflow files, fall back to shared file's actions_limit
+    if 'actions_limit' not in domain_state:
+        shared_state = read_state(get_domain_state_file(domain))
+        actions_limit = shared_state.get('actions_limit', 10)
     # actions_since_anchor is the primary trigger; actions.jsonl is the authoritative source
     actions_since = domain_state.get('actions_since_anchor', 0)
 
@@ -145,7 +160,7 @@ def check_and_increment_counter(session_state: dict, safe_bash: bool) -> int:
     # Increment AFTER check passes (action will proceed)
     actions_since += 1
     domain_state['actions_since_anchor'] = actions_since
-    write_state(get_domain_state_file(domain), domain_state)
+    write_state(workflow_file, domain_state)
 
     return actions_since
 
@@ -221,7 +236,7 @@ def main():
         if not is_one_shot:
             domain = session_state.get('domain')
             if domain:
-                domain_state = read_state(get_domain_state_file(domain))
+                domain_state = read_state(get_workflow_state_file(domain, session_state))
                 if not domain_state.get('anchored'):
                     smart_block(
                         missing="Protocol not anchored",
@@ -239,14 +254,13 @@ def main():
                     fix_description=f"Run FULL anchor. Read the token '{token}' from session_state.json and confirm it in your anchor output"
                 )
 
-        # Gate 6: Protocol hash valid? (skip for one-shot agents)
-        if not is_one_shot:
-            if not verify_protocol_hash(session_state):
-                smart_block(
-                    missing="Protocol file changed since last anchor (hash mismatch)",
-                    fix_command="/kernel/anchor",
-                    fix_description="Protocol was modified — re-anchor to re-read and update hash"
-                )
+        # REMOVED: Gate 6 (Protocol hash check during execution)
+        # Industry standard pattern (RAFT consensus):
+        # - Critical state (protocol) validated at ENTRY (session-start), not during execution
+        # - Allows concurrent agents to work independently without deadlock
+        # - Protocol consistency achieved via eventual consistency (agents read at start)
+        # See: Gossip protocols, LangGraph state management, RAFT consensus
+        # Protocol hash verification is now only done at /kernel/session-start
 
     # Gate 4 + AUTO-INCREMENT: check limit then increment (skip for one-shot agents)
     if not is_one_shot:

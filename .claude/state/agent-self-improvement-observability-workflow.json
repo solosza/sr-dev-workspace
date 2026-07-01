@@ -1,0 +1,19 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/self-improvement-observability/",
+  "total_tasks": null,
+  "current_task": null,
+  "completed_tasks": [
+    "020-test-end-to-end-pipeline.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-06-30T21:15:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-06-30T21:10:00Z",
+  "actions_since_anchor": 3,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-06-30T21:15:00Z"
+}

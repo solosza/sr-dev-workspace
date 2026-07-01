@@ -1,0 +1,78 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "8a96bb710c75c10487700b80282192e54d18cf64a5bb3623ec1a5437d82fcf29",
+      "parameters": "2074aec76b2893f64ec0d24012196035f01cf3aa8574b5345575f032cee03039",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-14T21:02:45.241852+00:00",
+          "raw_input_hash": "3d0ee22332833d470fd045c7dea43c90dfc6457d2c079ff8c011b38dca15139d",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-06-14T21:03:49.162362+00:00",
+          "raw_input_hash": "3d0ee22332833d470fd045c7dea43c90dfc6457d2c079ff8c011b38dca15139d",
+          "backlog_hash_after": "8a96bb710c75c10487700b80282192e54d18cf64a5bb3623ec1a5437d82fcf29"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\gate-contract.md",
+          "sha256": "a25533286409447f68a13469c03a433d467d0f19c212d934eb41e09db27e4d5e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\000-index.md",
+          "sha256": "53bca568c112546e646b3dcb3be08556a7c2b7c2d2571b47335c7b93e823214e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\001-market-create-project-dir.md",
+          "sha256": "e3b3a4b42185e67e235a4f44fc9becabb63e2a932fd9ef153f1b7e6c24ffaa11"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\002-market-document-platform-inventory.md",
+          "sha256": "e1140018462284e170762d6d8986888cf01a1162c87522379746a208001b0595"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\003-market-analyze-competitive-landscape.md",
+          "sha256": "66bf26727007204ceaf0ef0eb0dd6044cfea9216de9447c8b97f240ce267fa66"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\004-market-identify-gaps-opportunities.md",
+          "sha256": "2ae9796fc4cf01bd6faa074e51b71883575b74c3e9a1cf9bf593f9aeabf62b8a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\005-market-recommend-distribution-strategy.md",
+          "sha256": "3928f05bfc7e49792210192cf6a90a52292f8e9b3c0261d8e7555ed41c8e76bc"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\006-market-compile-research-report.md",
+          "sha256": "f1e19b89e31752b80c5692f1fbdb96fc7c5ccf1d5a9c07b2bb807d7035222eb2"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research\\gate-contract.md",
+          "sha256": "a25533286409447f68a13469c03a433d467d0f19c212d934eb41e09db27e4d5e"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:40:53.276117+00:00",
+      "end": "2026-06-24T07:40:53.280124+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\133-kernel-research-harness-design-pattern-optimization.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/claude-harness-marketplace-research",
+      "task_count": 6,
+      "completed_count": 6,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935712094",
+      "logIndex": "1935712094"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "436b0a369f1e708303acca644551c3384b32a70f82f855a289b5090649277bb4",
+      "parameters": "213ebd3717515771bd592a69121abcff77bd218e4b78a70edf1f6b795abe6c26",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-01T18:44:09.789237+00:00",
+          "raw_input_hash": "cfaac890460801e04649a5c30d175f3b983ccd2c8b13c6fc1da282fae966615e",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-06-01T18:45:37.353670+00:00",
+          "raw_input_hash": "cfaac890460801e04649a5c30d175f3b983ccd2c8b13c6fc1da282fae966615e",
+          "backlog_hash_after": "436b0a369f1e708303acca644551c3384b32a70f82f855a289b5090649277bb4"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\gate-contract.md",
+          "sha256": "98168fd4e403e5835099600171e9ad9225bda55f771eec973576a1f72403ead3"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\000-index.md",
+          "sha256": "2bbb98087c423884f3c417cb6522cd8392e3db1c36b09c5665cc8d0078b82e37"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\001-kernel-build-create-project-dir.md",
+          "sha256": "7b9f2f5581643b2e8ad416d6898fdc282770bac621dbf4ce42514f3d5870a0ca"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\002-kernel-research-assess-release-gap.md",
+          "sha256": "e5cdc6fd4648d313bafb55282a277a389dda3e2e870fab4f3e7646f88a278ea8"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\003-kernel-research-kernel-integration-design.md",
+          "sha256": "032cf39b51f266d2d6e0e00f439b8663f22b452da3814083ac97e00df16fb9d9"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\004-kernel-research-standalone-product-viability.md",
+          "sha256": "58a91b4c6cba2d627dd0d419d412eb75a6a649d491e4d22c9e6fd9697fa9c266"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\005-kernel-build-write-research-report.md",
+          "sha256": "990de386bdba2ccdd417b50c6ee40286810a62ba71f549dbd1461f600424190a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research\\gate-contract.md",
+          "sha256": "98168fd4e403e5835099600171e9ad9225bda55f771eec973576a1f72403ead3"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:39:03.661590+00:00",
+      "end": "2026-06-24T07:39:03.664590+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\122-kernel-research-release-manager.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\release-manager-research",
+      "task_count": 5,
+      "completed_count": 5,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935703731",
+      "logIndex": "1935703731"
+    }
+  }
+}

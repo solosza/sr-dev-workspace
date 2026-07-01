@@ -1,0 +1,58 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "18692834215d459fbd4ef1234bb161f5151018da3a2a27183c81cfed177dd902",
+      "parameters": "0b47c2b303aac2d4dc852e4664863ed0c5208b6489725430a3d58ffc38d5c9ca",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-05-29T19:31:26.844901+00:00",
+          "raw_input_hash": "f8bf6cdcb9776b8808e9ae1e2c6f1c20838556e2f6eb2d7ae2a14d68af3977f6",
+          "backlog_hash_after": ""
+        },
+        {
+          "rev": 2,
+          "timestamp": "2026-05-29T19:32:10.518793+00:00",
+          "raw_input_hash": "73b603a1b2c50f29e1a450e403ffef07f3e693ee8f140ff7c36e3e227ccf651a",
+          "backlog_hash_after": "18692834215d459fbd4ef1234bb161f5151018da3a2a27183c81cfed177dd902"
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\story-self-attestation\\000-index.md",
+          "sha256": "5c3a92afd9a59dcd0fc666ca445974a166fedfa87e0adf3333f805b335ee3d3e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\story-self-attestation\\001-build-fix-story-verify-links.md",
+          "sha256": "6d546944a73ec79c73032c85d066df593e60387e84561a0cbe3477ecbbe1b353"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\story-self-attestation\\002-test-verify-no-dead-hrefs.md",
+          "sha256": "dfb60d78011e1495d1081cbae7d369a81b1e83b7f911bf3ad051941d6d265b5a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\story-self-attestation\\003-build-commit-push.md",
+          "sha256": "16d67b9169546d680b412a78d11a805c0aae0a5f880ced7e5dd229d5b153ff5d"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:36:09.661982+00:00",
+      "end": "2026-06-24T07:36:09.664511+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\109-market-fix-story-self-attestation.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks\\story-self-attestation",
+      "task_count": 3,
+      "completed_count": 3,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935693029",
+      "logIndex": "1935693029"
+    }
+  }
+}

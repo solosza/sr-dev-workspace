@@ -1,49 +1,45 @@
 {
   "session_started": true,
-  "timestamp": "2026-06-06T00:05:00Z",
+  "timestamp": "2026-06-30T21:25:00Z",
   "resumed_from": "context",
   "context": {
-    "current_task": "job-apply",
+    "current_task": null,
     "task_folder": null,
-    "progress": "2 applications submitted (OpenAI Agent Infra, Google FDE IV). Anthropic Model Perf SWE form filled, paused at HITL \u2014 user asked to check for FDE/better-fit role instead.",
-    "last_completed": "Google FDE IV application submitted",
-    "next_step": "Check Anthropic for FDE role \u2014 found Forward Deployed Engineer Applied AI. Get URL and present to user to decide which Anthropic role to apply to.",
-    "notes": "Skipping all manager/EM roles per user. Anthropic FDE role found: Forward Deployed Engineer, Applied AI \u2014 SF/NYC/Boston/DC/Seattle. Also Applied AI Engineer, Enterprise Tech. Model Perf SWE form is still open, not submitted."
+    "progress": "Pipeline 170 complete. Attestation signing pending.",
+    "last_completed": "170-market-build-targeted-resume-pair",
+    "next_step": "Commit and attest all pending work",
+    "notes": "Resumes (v1 + v2 agent, QA) created and converted to PDF. User requested attestation signing for all pending work."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Edit: log.json",
-    "Edit: log.json",
-    "Edit: log.json",
-    "Edit: log.json",
-    "Edit: log.json",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" status && git",
-    "Bash: ls \"D:/my_ai_projects/project_test_repos/job-application-spec/applications/\" && ",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status && git -C ",
-    "Bash: cat \"D:/my_ai_projects/project_test_repos/job-application-spec/.gitignore\" 2>/de",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/job-application-spec\" add applicati"
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status --short | ",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status --short | ",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" log --oneline -5",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status --short | ",
+    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" status --short | "
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
+  "needs_learn": false,
+  "needs_learn_reason": null,
   "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-06-06T00:05:00Z",
-  "pipeline_state": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/029-market-research-ai-harness-engineering-jobs.md",
-    "task_folder": "tasks/ai-harness-job-search/",
-    "task_count": 6,
-    "resume_step": null,
-    "no_move_to_done": true
-  },
-  "pipeline_mode": null,
+  "protocol_hash_timestamp": "2026-07-01T06:58:00Z",
   "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-06-06T00:05:00Z",
-    "lessons_read_timestamp": "2026-06-06T00:05:00Z",
+    "protocol_read_timestamp": "2026-07-01T06:58:00Z",
+    "lessons_read_timestamp": "2026-07-01T06:58:00Z",
     "actions_reviewed_count": 30,
     "violations_found": 0,
-    "next_action_stated": "Get Anthropic FDE URL and present role options to user",
-    "rules_applied": "no cd in bash (using absolute paths throughout); never quick-anchor (full ceremony done); verify before acting (read files before editing)",
+    "next_action_stated": "Commit and attest all pending work",
+    "rules_applied": "NEVER ASSUME \u2014 verified all files. NEVER USE cd \u2014 absolute paths only. NEVER QUICK-ANCHOR \u2014 full ceremony done.",
+    "ceremony_completed": true,
     "ceremony_output_generated": true
-  }
+  },
+  "pipeline_state": {
+    "input_mode": "existing_backlog",
+    "backlog_path": "docs/backlog/170-market-build-targeted-resume-pair.md",
+    "raw_input": "170"
+  },
+  "pipeline_mode": null,
+  "agent_id": null
 }

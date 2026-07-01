@@ -1,0 +1,8 @@
+{
+  "anchor_timestamp": "2026-06-25T00:00:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T22:07:29Z", "tool": "Bash", "entry": "Bash: python -c hash computation", "session": "current"}
+  ]
+}

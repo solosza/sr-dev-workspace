@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-06-26T20:30:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-26T20:15:55Z", "tool": "Bash", "entry": "Bash: echo OPENAI_API_KEY check"},
+    {"timestamp": "2026-06-26T20:16:02Z", "tool": "Bash", "entry": "Bash: pip list | grep openai/deepeval"},
+    {"timestamp": "2026-06-26T20:17:11Z", "tool": "Bash", "entry": "Bash: pip install openai deepeval"}
+  ]
+}

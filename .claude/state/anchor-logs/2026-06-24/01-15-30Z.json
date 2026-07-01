@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-06-24T01:15:30Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T00:43:16Z", "tool": "Bash", "entry": "Bash: test -f projects/kernel-governance-depth-research/"},
+    {"timestamp": "2026-06-24T01:14:36Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh"}
+  ],
+  "agent_logs": {
+    "workflow-state-isolation-research": [
+      {"timestamp": "2026-06-24T01:15:19Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+      {"timestamp": "2026-06-24T01:15:28Z", "tool": "Bash", "entry": "Bash: mkdir -p anchor-logs/2026-06-24"}
+    ]
+  }
+}

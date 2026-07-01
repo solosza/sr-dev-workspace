@@ -1,0 +1,27 @@
+{
+  "step": "05-generate-tests",
+  "success_criteria": [
+    "conftest.py exists in test repo",
+    "At least one test file exists",
+    "Fixtures load without import error",
+    "At least one metric selected with threshold"
+  ],
+  "expected_artifacts": [
+    "conftest.py",
+    "test_*.py file(s)",
+    "metric instances",
+    "golden dataset fixtures (when contracts exist)"
+  ],
+  "soft_validation_rules": [
+    "Tests are parametrized",
+    "Thresholds match contract severity",
+    "Metrics match pipeline type",
+    "Golden dataset follows _reference/ fixture format"
+  ],
+  "verification_commands": [
+    "test -f tests/conftest.py",
+    "ls tests/test_*.py | wc -l",
+    "python -c \"import conftest\" 2>&1 || true",
+    "grep -r 'threshold' tests/test_*.py | head -5"
+  ]
+}

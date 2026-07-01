@@ -1,0 +1,60 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "53e749229d6709498f76c05154940a5a5c1a73c815e62349abb908c0c69e9120",
+      "parameters": "b916a94a5f37af55d3ce25f16e6a2b4b5166743ecee4725dae0c2546d954f2ef"
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\gate-contract.md",
+          "sha256": "eb9a1413c9d76279bd895e8d01144cb8ed6df102204c3ac9482aae25e0312941"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\000-index.md",
+          "sha256": "1aa58be01af696dfee6af15d26245f78f138a08d05b9e362e3eeb276cb21676e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\001-refactor-index-html-hero.md",
+          "sha256": "7f982e7cc608e4440cc7db778fa6a69975458bd86e15d6c3d861dc2bb3d7d036"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\002-refactor-index-html-growth.md",
+          "sha256": "c8c083e40cf4cfe014bf89fd1b4824394db7aa670ad0f486aa740340cddff174"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\003-refactor-index-html-self-extension.md",
+          "sha256": "278e60ae29750ffa7c53ef23a5776fb4004e8259c7c1e894139ce391067d35bf"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\004-refactor-kernel-html.md",
+          "sha256": "3c510dec7f74355ab5d964abed69ca17542eb5b239a64e1d056a09c486f14228"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\005-test-verify-changes.md",
+          "sha256": "e342b6f2293d2f6e33604d97646e8ad6faed1e3eebcb955c327a77c1b2001c86"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor\\gate-contract.md",
+          "sha256": "eb9a1413c9d76279bd895e8d01144cb8ed6df102204c3ac9482aae25e0312941"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:41:51.237544+00:00",
+      "end": "2026-06-24T07:41:51.240063+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\138-market-define-audience-messaging.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\isagawa-site-messaging-refactor",
+      "task_count": 5,
+      "completed_count": 5,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935715163",
+      "logIndex": "1935715163"
+    }
+  }
+}

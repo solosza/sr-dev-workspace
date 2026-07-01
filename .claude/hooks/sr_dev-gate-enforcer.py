@@ -37,12 +37,31 @@ def main():
 
         content = tool_input.get('content', '') or tool_input.get('new_string', '')
         if content:
-            violations = code_quality.check(file_path, content)
-            if violations:
-                common.smart_block(violations, "Code quality")
+            # Skip code quality checks for HTML files (naturally contain inline scripts)
+            if not file_path.endswith('.html'):
+                violations = code_quality.check(file_path, content)
+                if violations:
+                    common.smart_block(violations, "Code quality")
 
     elif tool_name == 'Bash':
         command = tool_input.get('command', '')
+
+        # Block direct intent.py calls — intent chain must use /kernel/backlog only
+        if 'intent.py record' in command or ('intent.py' in command and 'record' in command):
+            common.bash_block([
+                "BLOCKED: Direct intent.py call",
+                "",
+                "The intent chain is sacred — only /kernel/backlog should populate it.",
+                "This preserves the USER's actual words as the intent source.",
+                "",
+                "Instead of calling intent.py directly:",
+                "- Use /kernel/backlog to create backlog items",
+                "- The command will invoke intent.py with proper context",
+                "",
+                "If you need to record a lesson, use /kernel/learn.",
+                "If you need to create a task, use /kernel/task-builder or run-task.sh."
+            ])
+
         violations = bash_validation.check(command)
         if violations:
             common.bash_block(violations)

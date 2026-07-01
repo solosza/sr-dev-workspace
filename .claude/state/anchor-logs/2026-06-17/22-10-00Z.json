@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-06-17T22:10:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-06-17T22:18:05Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p .claude/state/anchor-logs/2026-06-17 && python3 << 'PYEOF'\nimport json\n",
+      "session": "current"
+    }
+  ]
+}

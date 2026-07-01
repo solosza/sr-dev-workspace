@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-06-24T18:10:00Z",
+  "agent_id": "eval-platform-design",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T10:36:42Z", "tool": "Bash", "entry": "AC verification for task 006"},
+    {"timestamp": "2026-06-24T10:36:46Z", "tool": "Bash", "entry": "Archive anchor log"},
+    {"timestamp": "2026-06-24T10:36:57Z", "tool": "Bash", "entry": "Skill existence verification"}
+  ]
+}

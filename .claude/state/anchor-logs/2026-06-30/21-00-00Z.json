@@ -1,0 +1,29 @@
+{
+  "anchor_timestamp": "2026-06-30T21:00:00Z",
+  "actions_count": 23,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-30T20:45:37Z", "tool": "Write", "entry": "Write: 015-build-learn-event-recording.md"},
+    {"timestamp": "2026-06-30T20:45:45Z", "tool": "Write", "entry": "Write: 016-build-eval-command.md"},
+    {"timestamp": "2026-06-30T20:45:53Z", "tool": "Write", "entry": "Write: 017-build-rollback-command.md"},
+    {"timestamp": "2026-06-30T20:45:59Z", "tool": "Write", "entry": "Write: 018-build-observatory-readme.md"},
+    {"timestamp": "2026-06-30T20:46:07Z", "tool": "Write", "entry": "Write: 019-test-tier3-observatory.md"},
+    {"timestamp": "2026-06-30T20:46:15Z", "tool": "Write", "entry": "Write: 020-test-end-to-end-pipeline.md"},
+    {"timestamp": "2026-06-30T20:46:50Z", "tool": "Bash", "entry": "Bash: mkdir observatory dirs"},
+    {"timestamp": "2026-06-30T20:46:53Z", "tool": "Bash", "entry": "Bash: git init observatory"},
+    {"timestamp": "2026-06-30T20:46:59Z", "tool": "Write", "entry": "Write: .gitignore"},
+    {"timestamp": "2026-06-30T20:47:11Z", "tool": "Write", "entry": "Write: metrics.jsonl.schema.json"},
+    {"timestamp": "2026-06-30T20:47:22Z", "tool": "Write", "entry": "Write: experiments.jsonl.schema.json"},
+    {"timestamp": "2026-06-30T20:47:31Z", "tool": "Write", "entry": "Write: learn-events.jsonl.schema.json"},
+    {"timestamp": "2026-06-30T20:48:12Z", "tool": "Bash", "entry": "Bash: cat code_quality.py"},
+    {"timestamp": "2026-06-30T20:48:42Z", "tool": "Write", "entry": "Write: aggregate.py"},
+    {"timestamp": "2026-06-30T20:48:47Z", "tool": "Bash", "entry": "Bash: python aggregate.py --help"},
+    {"timestamp": "2026-06-30T20:49:30Z", "tool": "Bash", "entry": "Bash: grep metrics.jsonl"},
+    {"timestamp": "2026-06-30T20:50:07Z", "tool": "Bash", "entry": "Bash: grep regression patterns"},
+    {"timestamp": "2026-06-30T20:50:32Z", "tool": "Write", "entry": "Write: evaluate_experiments.py"},
+    {"timestamp": "2026-06-30T20:50:37Z", "tool": "Bash", "entry": "Bash: python evaluate_experiments.py --help"},
+    {"timestamp": "2026-06-30T20:51:05Z", "tool": "Write", "entry": "Write: eval.md"},
+    {"timestamp": "2026-06-30T20:51:26Z", "tool": "Write", "entry": "Write: rollback.md"},
+    {"timestamp": "2026-06-30T20:51:47Z", "tool": "Write", "entry": "Write: README.md"}
+  ]
+}

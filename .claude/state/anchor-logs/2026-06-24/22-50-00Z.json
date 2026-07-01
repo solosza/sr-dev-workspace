@@ -1,0 +1,22 @@
+{
+  "anchor_timestamp": "2026-06-24T22:50:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-06-24T18:26:33Z", "tool": "Bash", "entry": "Bash: rm -f lock file"},
+    {"timestamp": "2026-06-24T18:26:48Z", "tool": "Bash", "entry": "Bash: sleep + cat background task check"}
+  ],
+  "agent_logs": {
+    "pulsia-design-patterns": [
+      {"timestamp": "2026-06-24T18:22:44Z", "tool": "Edit", "entry": "Edit: research-report.md"},
+      {"timestamp": "2026-06-24T18:22:46Z", "tool": "Bash", "entry": "Bash: ls state dir"},
+      {"timestamp": "2026-06-24T18:22:56Z", "tool": "Bash", "entry": "Bash: rm lock file"},
+      {"timestamp": "2026-06-24T18:25:07Z", "tool": "Edit", "entry": "Edit: research-report.md"},
+      {"timestamp": "2026-06-24T18:25:13Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+      {"timestamp": "2026-06-24T18:25:15Z", "tool": "Bash", "entry": "Bash: grep verification"},
+      {"timestamp": "2026-06-24T18:25:35Z", "tool": "Bash", "entry": "Bash: ls anchor-logs"},
+      {"timestamp": "2026-06-24T18:27:24Z", "tool": "Bash", "entry": "Bash: sleep + ls background check"},
+      {"timestamp": "2026-06-24T18:27:36Z", "tool": "Bash", "entry": "Bash: protocol hash"}
+    ]
+  }
+}

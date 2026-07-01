@@ -1,0 +1,72 @@
+{
+  "predicateType": "natural-language-session/v1",
+  "predicate": {
+    "invocation": {
+      "configSource": "b55469f46b723c62d508f7d5e598c97661c0e9b5226efa80314867529751535a",
+      "parameters": "6368dad69f8ea282cd1d8370a24b096ce591e33e667d93bf3fb62abcdf7adab5",
+      "intent_chain": [
+        {
+          "rev": 1,
+          "timestamp": "2026-06-01T18:28:14.653454+00:00",
+          "raw_input_hash": "01710d9eeaf6dfa49f3d8324097fbefdeaaaf24d0677a405a8518ebd62ce90fe",
+          "backlog_hash_after": ""
+        }
+      ]
+    },
+    "output": {
+      "artifacts": [
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\gate-contract.md",
+          "sha256": "792065e3d3901b2237db66bf988f24bb1fd7095d21fec6081efc1432f076489e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\000-index.md",
+          "sha256": "b628cf8fbf100cdd241dc454824521cba8fc9809ece9d25a94c901d1e03c98a8"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\001-kernel-build-create-project-dir.md",
+          "sha256": "05d712abe45b333df6b9a4c6eab77887bf7dd65160d9bd0355b0d8268b1adde9"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\002-kernel-research-read-agents-spec.md",
+          "sha256": "79dbd2e472c9cb2aace9178be1320be0f8633d352068a56d9295bd42d25d903a"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\003-kernel-research-kernel-integration.md",
+          "sha256": "7ed0e2efdd34f895dd9bd522a0e353a84ab8c4ab9bc60c461d8a06ed88a79e9e"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\004-kernel-research-execute-pipeline-integration.md",
+          "sha256": "8a4932cf11dc5e60e3431f688fd4b35c48c6c06afc354e32d99c35d301d860f8"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\005-kernel-build-resolve-design-decisions.md",
+          "sha256": "e20d013504b6b57a52500e52fca1c7cd231e513f348cfab9c3d7820c5e12fa91"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\006-kernel-build-write-research-report.md",
+          "sha256": "8160604dbebe5ee1da6be3218da01f57bde90653af0f57894eb8d144754cf605"
+        },
+        {
+          "path": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research\\gate-contract.md",
+          "sha256": "792065e3d3901b2237db66bf988f24bb1fd7095d21fec6081efc1432f076489e"
+        }
+      ]
+    },
+    "timestamp": {
+      "start": "2026-06-24T07:37:59.195722+00:00",
+      "end": "2026-06-24T07:37:59.198201+00:00"
+    },
+    "metadata": {
+      "pipeline_backlog": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done\\115-kernel-research-claude-agents-integration.md",
+      "task_folder": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed\\claude-agents-research",
+      "task_count": 6,
+      "completed_count": 6,
+      "skipped_count": 0
+    },
+    "rekor": {
+      "entryUrl": "https://search.sigstore.dev/?logIndex=1935699282",
+      "logIndex": "1935699282"
+    }
+  }
+}

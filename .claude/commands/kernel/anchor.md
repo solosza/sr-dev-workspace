@@ -4,6 +4,14 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
 
 ## Instructions
 
+**Workflow State Routing (CRITICAL for parallel agents):**
+
+Before any workflow state read/write, check `agent_id` in `session_state.json`:
+- If `agent_id` is set: read/write per-agent fields from `.claude/state/agent-{agent_id}-workflow.json`
+- If `agent_id` is null: read/write `[domain]_workflow.json` (current behavior, unchanged)
+
+Every reference to `[domain]_workflow.json` below follows this routing. Step 14 writes `anchored`, `anchor_timestamp`, `actions_since_anchor` to the routed file.
+
 ### Part A: Refresh Protocol
 
 **MANDATORY: Use the Read tool on EVERY file listed below. EVERY TIME. No exceptions.**
@@ -109,6 +117,11 @@ Re-center on protocol. Invoke at session start, every 10 actions, or when contex
       - Content: `{ "anchor_timestamp": "...", "actions_count": N, "violations_found": 0, "actions": [...] }`
       - Create date subfolder if it doesn't exist
     - truncate `actions.jsonl` to empty (write empty string)
+    - Also archive and truncate any per-agent log files (`agent-*-actions.jsonl`):
+      - Glob `.claude/state/agent-*-actions.jsonl`
+      - Include in archive JSON under `agent_logs` key: `{ "agent_id": [...actions...] }`
+      - Truncate each per-agent log to empty
+    - Optionally clear stale `agent-*-state.json` files from prior pipeline runs
     - Clear `actions_log` array in `session_state.json` to `[]` (backward-compatible summary)
     - The log resets each anchor — new actions get appended as they happen
 
