@@ -1,12 +1,10 @@
 {
   "template": "review-board",
-  "artifact": "unreviewed-queue (43 items, incl. 231/233)",
-  "status": "closed",
-  "server_task": "bca0hv8d2",
-  "watcher_task": "bz3gd313d",
-  "port": 63060,
-  "session_dir": ".claude/state/render-sessions/2026-07-15-review-board-v2/",
-  "annotations_file": ".claude/state/render-sessions/2026-07-15-review-board-v2/annotations.json",
-  "routed_count": 1,
-  "last_updated": "2026-07-15T23:05:00Z"
+  "artifact": "unreviewed-queue-58",
+  "status": "serving",
+  "server_pid": 32788,
+  "port": 52533,
+  "session_dir": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/render-sessions/2026-07-22-review-board",
+  "page": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/render-sessions/2026-07-22-review-board/page.html",
+  "annotations": "D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/render-sessions/2026-07-22-review-board/annotations.json"
 }

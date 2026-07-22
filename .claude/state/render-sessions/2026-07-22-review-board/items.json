@@ -1,0 +1,408 @@
+[
+ {
+  "number": "253",
+  "title": "Portfolio Site - Problem and Design Thesis",
+  "scope": "BUILD",
+  "priority": "medium",
+  "summary": "Build guide section 5: three concise problems (advisory prompts, fragile conversational state, self-reported completion), one systems-approach sentence, why specs alone are not enough."
+ },
+ {
+  "number": "252",
+  "title": "Portfolio Site - What I Built: Isagawa",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build guide section 4: concise Isagawa definition, high-level capabilities, conceptual input to governed workflow to validated output diagram, personal-ownership statement, and the 6-8 line sanitized illustrative spec snippet labeled as representative."
+ },
+ {
+  "number": "251",
+  "title": "Portfolio Site - Hero Section",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build the hero per guide section 3: name, role identity line, one-line value prop, personal-ownership statement of Isagawa, verified-stack badge row, Resume/GitHub/LinkedIn/Email buttons, one-line hiring target."
+ },
+ {
+  "number": "250",
+  "title": "Portfolio Site - Scaffold + GitHub Pages Deployment",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Create the portfolio site repo and deploy an accessible skeleton to GitHub Pages. Implements guide sections 1 (strategy constraints), 2 (one-page nav) and 14 (implementation notes): single static semantic-HTML page, anchor navigation for all seven nav items, neutral theme with on"
+ },
+ {
+  "number": "246",
+  "title": "Build: JIT Rule Injection \u2014 Phase 1",
+  "scope": "BUILD",
+  "priority": "medium",
+  "summary": "Implement phase 1 of the 239 YAH verdict: a PreToolUse hook that inspects the attempted action and injects ONLY the relevant rule snippet as non-blocking advisory context \u2014 the exact rule at the exact moment it can be violated, zero standing context bloat. Phase 1 ships the 2 hig"
+ },
+ {
+  "number": "245",
+  "title": "Build: Anchor Ceremony v2 \u2014 PreCompact Re-Anchor + Rolling Ledger",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Implement the 238+240 YAH verdicts as one combined anchor-ceremony update. (1) PreCompact hook: on the harness compaction event, set `anchored: false` in workflow state so the existing Gate 3 forces a full `/kernel/anchor` on the fresh context \u2014 sidesteps the SessionStart compact"
+ },
+ {
+  "number": "244",
+  "title": "Build: Per-Agent Session-State Isolation",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "One-shot agents spawned by run-task.sh read and write the shared `session_state.json`, so their session-start/exit writes clobber the parent orchestrator's state (`session_started: false`, `agent_id`, `one_shot` leakage). Implement env-var `agent_id` routing so every one-shot age"
+ },
+ {
+  "number": "243",
+  "title": "Research: Inter-Agent Shared Artifact Bus",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Define a strict workspace protocol for how sub-agents export deliverables: each agent writes a structured manifest (`projects/<task-name>/exports/manifest.json`) enumerating its outputs (paths, types, schemas, status), and downstream agents ingest the manifest in their first task"
+ },
+ {
+  "number": "242",
+  "title": "Research: Deliverable-Based Barrier Gates in run-task.sh",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Instead of (or in addition to) orchestrator wave sorting, enforce dependency barriers at the individual task level: gate contracts or task files declare file-existence prerequisites (`## Prerequisites \u2014 file_exists: projects/x/005-final-report.md`), and run-task.sh checks them be"
+ },
+ {
+  "number": "241",
+  "title": "Research: DAG Wave Execution Engine for Swarm Dispatch",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Extend `/spawn-agent-swarm` and `/kernel/execute-pipeline` to support dependency waves: backlog items declare prerequisites (`depends_on: [238]`), the orchestrator topologically sorts them into waves (Wave 0 = no deps; Wave N+1 dispatches only after all of Wave N exits COMPLETE),"
+ },
+ {
+  "number": "240",
+  "title": "Research: Rolling Summarization / Structured State Pinning",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Industry pattern: periodically summarize older turns into structural JSON (`Completed: [...]`, `Current file state: [...]`) while pinning system rules at the top, so conversational filler (failed attempts, terminal output) drops out but architectural constraints survive. The kern"
+ },
+ {
+  "number": "239",
+  "title": "Research: Just-In-Time Rule Injection at the Tool Boundary",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Instead of re-reading the full protocol/spec every N actions, the PreToolUse hook inspects the attempted action and injects ONLY the relevant rule at the moment of use \u2014 e.g., a write to `pages/login_page.py` gets the 5-line Layer 2 Page Object rule in the hook output. Zero conte"
+ },
+ {
+  "number": "238",
+  "title": "Research: PreCompact Hook Re-Anchoring (Event-Driven Instead of N-Action Timer)",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Instead of firing the anchor blindly every N actions, hook the runtime's context-compaction event: when Claude Code compresses history, a PreCompact hook ensures protocol contracts, gate states, and active task are explicitly re-injected into the compressed state, and/or forces `"
+ },
+ {
+  "number": "237",
+  "title": "Research: Ephemeral Sub-Agent Execution as Context-Decay Strategy",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Industry pattern (Devin / Anthropic orchestrator-worker): never let a session accumulate 50+ actions \u2014 spawn a fresh sub-agent per sub-task, terminate it, return a concise result to the orchestrator. Context length stays ~10-15 turns so attention decay never sets in. This is an a"
+ },
+ {
+  "number": "231",
+  "title": "Research: \"Kun\"'s Dev-Workflow Repos (visual editor + git worktrees + more)",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "A developer the user knows of as \"Kun\" publishes tools he uses for his own dev workflow. The user recalls two by fuzzy name: a visual editor possibly called \"lavish\" and a git-worktrees tool possibly called \"worktree.\" Find the actual person/handle and repos, confirm the real nam"
+ },
+ {
+  "number": "216",
+  "title": "_reference Data Objects [V3]",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build _reference/data_objects/ per the 2.1.3 design doc against the real Orderly schema: OrdersDataObject + pydantic row models + sql/ folder + variant\u2192identifier maps (ratified refinement)."
+ },
+ {
+  "number": "215",
+  "title": "SqlServerInterface [V3]",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build Layer 1 SqlServerInterface FROM SCRATCH on mssql-python per the 1.3 design doc. IP-critical: v2 OracleInterface had 80% similarity to the old concept \u2014 zero code reuse."
+ },
+ {
+  "number": "214",
+  "title": "Orderly Harness \u2014 DB Slice [V3 first]",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Swap Orderly persistence to SQL Server in Docker per harness-app.md V3: same schema, plus process_pending_orders stored procedure (SP-as-subject target). Verify Docker availability first; if unavailable, report BLOCKED and stop."
+ },
+ {
+  "number": "208",
+  "title": "_reference UI Test \u2014 V1 E2E Gate [V1 last]",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build the UI test exemplar per the 2.4.1 design doc and run it E2E against the live Orderly harness: full V1 stack (interface \u2192 pages/components \u2192 tasks \u2192 role \u2192 test) exercised for real. This test passing IS the V1 exit gate."
+ },
+ {
+  "number": "197",
+  "title": "On-Prem LLM Market Shift \u2014 Isagawa Pivot + Personal Skill Path",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Companies are increasingly worried that frontier model providers are absorbing their IP through API usage, and are looking for ways to use LLMs without sharing proprietary data \u2014 one prominent solution being owning GPUs and hosting local/on-prem LLMs. Research whether this shift "
+ },
+ {
+  "number": "196",
+  "title": "Refactor Eval Test Suite for Prod-Test \u2014 Real LLM Test Cases",
+  "scope": "REFACTOR",
+  "priority": "high",
+  "summary": "The current `test_eval_prod_test.py` uses a simplistic `mock_prod_test_agent` that returns identical generic output for every scenario, causing 9/15 GEval tests to fail (all 8 StepSequencing + GateCompliance). Replace the mock with real deepeval LLMTestCase patterns where `actual"
+ },
+ {
+  "number": "195",
+  "title": "Refactor prod-test Skill to Command-Skill-Pattern Compliance",
+  "scope": "REFACTOR",
+  "priority": "medium",
+  "summary": "The `.claude/skills/prod-test/` skill was built before the command-skill-pattern was formalized. It needs structural refactoring to match the canonical 6-layer architecture. No behavioral changes \u2014 same steps, same logic, same outcomes. Pure structural compliance refactor."
+ },
+ {
+  "number": "192",
+  "title": "Refactor SSH Platform to 5-Layer Compliance",
+  "scope": "REFACTOR",
+  "priority": "high",
+  "summary": "The SSH compliance platform (`platform-ssh`) was built before the 5-layer contract was codified. A `/check-5-layer` audit found zero compliant files. This backlog covers a full structural refactor: rewriting every layer to match the contract, refactoring ABC inheritance to compos"
+ },
+ {
+  "number": "191",
+  "title": "Fix Platform-DeepEval 5-Layer Contract Violations",
+  "scope": "REFACTOR",
+  "priority": "high",
+  "summary": "Gap check found 26 findings (16 errors, 10 warnings) across `platform-deepeval/framework/`. All 6 roles return dicts instead of `None`. All 9 tasks stuff results onto `test_case._eval_results` instead of letting metrics hold state. Security/behavior metrics have hardcoded Kernel-"
+ },
+ {
+  "number": "190",
+  "title": "Build /kernel/summarize Command \u2014 Dynamic Summarization Loop",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build a `/kernel/summarize` command that reads completed agent output (backlog + tasks + deliverables + agent state), diffs deliverables against backlog requirements, and produces a dynamic summary with decision flags. Works as both a standalone command and integrated into the ag"
+ },
+ {
+  "number": "189",
+  "title": "Curiosity Harness \u2014 Teaching Quality Questions in an AI World",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Aravind Srinivas (Perplexity CEO, Joe Rogan episode) argues the future belongs to the curious \u2014 own your AI locally, kill algorithmic feeds, guard your agency, become interesting to talk to. The thesis: when AI can answer anything, the scarce skill is knowing what to ask. Researc"
+ },
+ {
+  "number": "188",
+  "title": "LLM Market Shift Analysis \u2014 Frontier vs Chinese vs On-Prem",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Research whether enterprises are moving away from frontier LLMs (OpenAI, Anthropic, Google) toward Chinese LLMs (DeepSeek, Qwen) or on-prem/open-weight models (Llama, Mistral). Determine if code generation quality has reached parity, what's driving the shift (cost, latency, data "
+ },
+ {
+  "number": "187",
+  "title": "Universal Game Mod Installer Harness",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Research the feasibility and landscape of a universal game mod installer powered by Claude Code + Playwright MCP. Investigate existing mod managers (Vortex, MO2, Thunderstore, r2modman), assess whether a Claude Code harness adds value over existing tools, determine if a UI is nee"
+ },
+ {
+  "number": "186",
+  "title": "Research Multi-Persona Autonomous Company Architecture",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Research two architectural approaches for running an autonomous AI company using Isagawa kernel infrastructure, where each business function (Developer, QA, PM, Sales, Marketing) operates as a specialized persona with its own commands, skills, references, contracts, and hooks. Th"
+ },
+ {
+  "number": "185",
+  "title": "Build /kernel/review-queue Command",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build a `/kernel/review-queue` command backed by a `review-status.json` state file to track human review and acceptance of completed pipeline work. The system discovers unreviewed items by diffing `docs/backlog/done/` against review state, presents items in priority order, and su"
+ },
+ {
+  "number": "184",
+  "title": "Build Post-Merge Smoke Test",
+  "scope": "BUILD",
+  "priority": "medium",
+  "summary": "After a feature branch is accepted (via review-queue) and merged to main, automatically run a smoke test to verify main still works. This is the final gate in the SDLC: backlog \u2192 pipeline \u2192 feature branch \u2192 gap check \u2192 prod test \u2192 review \u2192 merge \u2192 smoke test."
+ },
+ {
+  "number": "183",
+  "title": "Build Worktree Branch Isolation for Execute-Pipeline",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Integrate git worktrees into execute-pipeline so each pipeline run creates a feature branch in an isolated worktree. Agents work in the worktree, not on main. After gap check + prod test + human review (via review-queue), the feature branch merges to main. This is the branch isol"
+ },
+ {
+  "number": "182",
+  "title": "Build Execute-Pipeline Command Routing",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Execute-pipeline currently always routes through task-builder for all backlogs. When a backlog's deliverable is a command or skill, it should route through `/design` \u2192 `/build-command` instead. This adds routing logic to execute-pipeline that detects the deliverable type and pick"
+ },
+ {
+  "number": "181",
+  "title": "Research Velocity Management and Review System",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Research how to manage the output of high-velocity autonomous agent work. The problem: execute-pipeline and agent swarms complete backlogs faster than the user can review, iterate, and accept the results. Work gets done but piles up \u2014 no review loop, no acceptance gate, no iterat"
+ },
+ {
+  "number": "180",
+  "title": "Build Generalized Loop Integration for D&D Game Engine",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build a generalized loop pattern (reusable across repos) and apply it to the dnd-game-engine-test repo. Every game loop (outer or inner) needs: SKILL.md with DDD structure, contracts as part of the loop (input/output/rules/integration), gate contracts for enforcement, and test fi"
+ },
+ {
+  "number": "177",
+  "title": "Fix Harness Eval 5-Layer Compliance",
+  "scope": "REFACTOR",
+  "priority": "high",
+  "summary": "The harness eval system delivered by backlog 162 (harness_metrics.py, architecture_notes.py) has 5-layer compliance violations. L2 metrics import directly from `deepeval` SDK instead of going through L1 DeepEvalInterface, and the L3 (EvalTask), L4 (EvalRole), and L5 (test file) l"
+ },
+ {
+  "number": "174",
+  "title": "Research Tiered Index Architecture Failure Threshold via A/B Experiment",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Design and run a large-corpus A/B test (60K+ tokens, 3 precision-recall task types, N=5 runs) to find the actual failure point where flat document structure degrades vs tiered indexing. Prior N=3 test at 12K tokens showed no significant difference \u2014 both variants scored 0.88-0.99"
+ },
+ {
+  "number": "173",
+  "title": "Refactor Harness Eval Tests to 5-Layer Eval Architecture",
+  "scope": "REFACTOR",
+  "priority": "high",
+  "summary": "The harness evaluation test suite (test_eval_harness.py) bypasses the 5-layer architecture the same way the A/B framework does. It creates GEval metrics inline with hardcoded criteria strings, calls assert_test() directly (skipping DeepEvalInterface retry/logging), and has no Met"
+ },
+ {
+  "number": "172",
+  "title": "Refactor A/B Testing Framework to 5-Layer Eval Architecture",
+  "scope": "REFACTOR",
+  "priority": "high",
+  "summary": "The A/B testing framework (pipeline 171) works end-to-end but bypasses all 5 layers of the eval architecture defined in platform-deepeval. It calls DeepEval SDK directly (skips L1), has no Metric Objects (skips L2), no EvalTasks (skips L3), no EvalRole orchestrator (skips L4), an"
+ },
+ {
+  "number": "171",
+  "title": "Build A/B Testing Framework for DeepEval Eval Platform",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build a generalized A/B testing component for the deepeval eval platform. Given any command or skill, the framework dynamically generates two variants \u2014 flat (monolithic) and tiered (indexed with checkpoints and contracts) \u2014 runs identical task prompts against both via `claude -p"
+ },
+ {
+  "number": "170",
+  "title": "Build: Targeted Resume Pair (AI Agent + AI QA)",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Research the current AI agent and AI QA job markets, analyze the user's skillset against market demand, determine the best positions to target, then produce two tailored resumes: one optimized for AI agent engineering roles and one for AI QA engineering roles. This replaces the e"
+ },
+ {
+  "number": "169",
+  "title": "Build: Kernel Self-Improvement Observability System",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build the kernel's self-improvement observability system using a 3-tier architecture. Tier 1 adds lightweight metric emission to isagawa-kernel core commands. Tier 2 wires platform-deepeval into the post-learn cycle as a regression gate. Tier 3 creates a new repo (kernel-observat"
+ },
+ {
+  "number": "168",
+  "title": "Research: Regression Testing for Protocol and Hook Changes",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Research how to wire the eval platform (platform-deepeval) into the kernel's learn/anchor cycle so that protocol and hook changes are automatically regression-tested before being adopted. Currently when /kernel/learn modifies a hook or protocol, the change ships without any autom"
+ },
+ {
+  "number": "167",
+  "title": "Research: Rollback Mechanism for Lessons and Protocol Changes",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Research how to add rollback capability to the kernel's learning system. Currently lessons are append-only \u2014 there's no mechanism to say \"lesson X was wrong, remove it and revert the associated hook/protocol change.\" When the user corrects a bad memory entry, it's done manually. "
+ },
+ {
+  "number": "166",
+  "title": "Research: Automatic Evaluation \u2014 Closing the Loop",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Research how to close the loop between evaluation and protocol improvement. After N pipelines, the system should auto-evaluate: \"Are failure rates declining? Are tasks completing faster? Are lessons repeating?\" The DeepEval eval platform (platform-deepeval) is a step toward this "
+ },
+ {
+  "number": "165",
+  "title": "Research: Experiment Tracking / A/B Comparison for Kernel Changes",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Research how to measure the impact of kernel changes (new lessons, hook updates, protocol modifications). Currently when a lesson changes a protocol or hook, there's no formal before vs after comparison. \"Did adding the cd blocker hook reduce cd violations to zero?\" \"Did the tier"
+ },
+ {
+  "number": "164",
+  "title": "Research: Kernel Metrics Database",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Research how to add quantitative performance tracking to the kernel. Currently the kernel has lessons (qualitative) but no metrics (quantitative). Need to design a metrics database that tracks task completion rate, failure rate, actions-per-task, time-to-complete, and lessons-per"
+ },
+ {
+  "number": "162",
+  "title": "Eval Platform Learning Loop \u2014 Move Harness Eval to platform-deepeval",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Move the harness eval system (harness_metrics.py, architecture_notes.py, criteria_changelog.md, test_eval_kernel_minimal.py) from the disposable eval-kernel-minimal-test repo into platform-deepeval as a permanent capability. Separate universal criteria from per-harness architectu"
+ },
+ {
+  "number": "161",
+  "title": "Research Unified File Linking Convention for Tiered Index Architecture",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "The tiered index architecture currently uses three different linking conventions across layers: skills use wikilinks (`\u2192 [[path]]`), indexes use code spans (`` `path` ``), and CLAUDE.md supports `@path` imports. This inconsistency means the agent gets mixed signals about how to n"
+ },
+ {
+  "number": "160",
+  "title": "Add Kernel Design Patterns to Pulsia Research",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Append the three core Isagawa kernel design patterns to the existing pulsia-research project folder. The pulsia research (backlog 128) already analyzed Pulsia's autonomous AI platform and proposed harness loop architectures. These design documents provide the formal specification"
+ },
+ {
+  "number": "159",
+  "title": "Multi-Vertical AI Testing Platform: Architecture Design",
+  "scope": "BUILD",
+  "priority": "medium",
+  "summary": "Design the architecture for a multi-vertical AI testing platform. Users submit LLM artifacts, bring their own API keys (BYOK), and get scored results. The platform uses disposable cloud containers, compiles agent harnesses per-run, and grows its intelligence library through dynam"
+ },
+ {
+  "number": "158",
+  "title": "Multi-Vertical AI Testing Platform: Feasibility Research",
+  "scope": "RESEARCH",
+  "priority": "high",
+  "summary": "Research the feasibility of a web platform where anyone can submit LLM artifacts for testing across multiple verticals. The core model: **BYOK + disposable containers + growing intelligence library + usage-driven flywheel.** Users bring their own API keys \u2014 we provide the testing"
+ },
+ {
+  "number": "157",
+  "title": "DeepEval Testing: Industry-Standard Eval for LLM Artifacts",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build a new kernel command (`/kernel/eval`) as its own command/skill following the 6-layer command-skill-pattern and tiered-index architecture. It has its own loop, composable (standalone or callable by another loop). Tests any LLM artifact \u2014 commands, harnesses, skills, agent wo"
+ },
+ {
+  "number": "154",
+  "title": "DeepEval L3 Testing: Industry-Standard Benchmarks for Kernel Commands",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Enhance `/kernel/prod-test` L3 to use platform-deepeval as the evaluation engine. When prod-test runs against a deliverable, L3 composes the deepeval spec into the test repo, translates contract JSONs to golden datasets, auto-generates an eval suite (Agent pipeline: ToolCorrectne"
+ },
+ {
+  "number": "152",
+  "title": "Build /kernel/human-check Command \u2014 AI Tell Detection",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "Build a `/kernel/human-check` command that scans any text file for AI writing patterns and flags them for removal. The command follows the canonical command-skill-pattern from hmsa-healthcare-qa. Everything the user publishes (resume, LinkedIn, site copy, emails, cover letters) m"
+ },
+ {
+  "number": "151",
+  "title": "Research: Improve Governance Depth Within Minimal Kernel",
+  "scope": "RESEARCH",
+  "priority": "medium",
+  "summary": "Given the feature freeze from backlog 150, the kernel's remaining surface area is small: the loop (session-start, anchor, work, learn, complete), enforcement hooks, domain-setup, and lessons. Instead of adding features, research how to make these governance primitives deeper, mor"
+ },
+ {
+  "number": "149",
+  "title": "Rewrite Resume Around Loops and Agent Systems",
+  "scope": "BUILD",
+  "priority": "high",
+  "summary": "The current resume (alain-ignacio-ai-agent-architect) didn't produce callbacks. Rewrite it to lead with loops and agent systems as the primary framing instead of \"AI Agent Architect\" and \"governed autonomous agents.\" The market is moving toward loop-based agent orchestration, mul"
+ },
+ {
+  "number": "147",
+  "title": "Define Kernel Boundary \u2014 Separate Core from Extensions",
+  "scope": "REFACTOR",
+  "priority": "high",
+  "summary": "The kernel repo (isagawa-kernel) was designed to be minimalistic \u2014 the loop (session-start \u2192 anchor \u2192 work \u2192 complete \u2192 learn) plus domain-setup. But workspace-specific tools (execute-pipeline, task-builder, prod-test, spawn-agent-swarm) have accumulated in the kernel namespace. "
+ }
+]
