@@ -58,9 +58,12 @@ Bash(
 - Empty subfolder `""` with concurrent spawns — lock contention
 - Passing full task folder path as first arg — run-task.sh expects repo root first
 
-## Execution
+## Execution — Wave-Scoped Dispatch
 
-1. **For each backlog number N in the list:**
+1. **Read the manifest** from `.claude/state/agent-swarm.json`
+2. **Get current wave:** Read `current_wave` field from manifest (0 for initial dispatch)
+3. **Filter agents to current wave only:** From the manifest's `active_agents`, dispatch ONLY agents where `wave_id == current_wave`
+4. **For each agent in the current wave:**
    - Resolve task subfolder name (e.g., `kernel-minimalize`, `governance-depth-research`)
    - Resolve backlog path (e.g., `docs/backlog/150-kernel-refactor-minimalize-kernel.md`)
    - Count tasks in folder to set MAX_ITERATIONS = task_count + 2
@@ -68,10 +71,11 @@ Bash(
    - Capture background task ID
    - Continue to next agent (no waiting)
 
-2. **Spawn ALL agents in a single message** — use parallel Bash tool calls, one per agent
+5. **Spawn ONLY the current wave's agents in a single message** — use parallel Bash tool calls, one per agent
 
-3. **After all spawned:**
-   - Report: "Spawned N agents in parallel" with task IDs
+6. **After all spawned:**
+   - Report: "Spawned N agents from wave {current_wave} in parallel" with task IDs and wave info
+   - Include message: "Barrier will dispatch wave {current_wave+1} when wave {current_wave} completes"
 
 ## Per-Agent State Isolation
 

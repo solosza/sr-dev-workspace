@@ -10,6 +10,22 @@ Create or update the shared agent manifest file that tracks all spawned agents.
 
 ```json
 {
+  "wave_plan": [
+    {
+      "wave_id": 0,
+      "backlog": 128,
+      "task_folder": "tasks/reference-tests-db/",
+      "tasks": [1, 2, 3]
+    },
+    {
+      "wave_id": 1,
+      "backlog": 128,
+      "task_folder": "tasks/reference-tests-db/",
+      "tasks": [4, 5]
+    }
+  ],
+  "current_wave": 0,
+  "waves_completed": [],
   "active_agents": [
     {
       "backlog": 128,
@@ -18,7 +34,8 @@ Create or update the shared agent manifest file that tracks all spawned agents.
       "progress": "0/8 tasks",
       "last_update": "2026-06-15T01:00:00Z",
       "last_completed": null,
-      "deliverable": "Pulsia autonomous AI platform research"
+      "deliverable": "Pulsia autonomous AI platform research",
+      "wave_id": 0
     }
   ]
 }
@@ -26,12 +43,18 @@ Create or update the shared agent manifest file that tracks all spawned agents.
 
 ## Processing
 
-1. **Read existing manifest** (if exists, preserve completed agents)
-2. **For each new backlog number:**
+1. **Read existing manifest** (if exists, preserve completed agents and wave plan)
+2. **Input wave plan:** Accept `wave_plan` from step-01 (output of topological sort with cycle detection)
+3. **Initialize wave tracking:**
+   - Set `current_wave` = 0 (start with first wave)
+   - Set `waves_completed` = [] (no waves completed yet)
+   - Store full `wave_plan` from step-01 input
+4. **For each agent in the current wave only:**
+   - Resolve backlog number from wave entry
    - Check if already in manifest
    - If yes (already running): skip with warning
-   - If no (new): add entry with status=`running`
-3. **Initialize new agent entry:**
+   - If no (new): add entry with status=`running` and `wave_id` from wave plan
+5. **Initialize new agent entry:**
    ```json
    {
      "backlog": N,
@@ -40,10 +63,11 @@ Create or update the shared agent manifest file that tracks all spawned agents.
      "progress": "0/? tasks",
      "last_update": "ISO_TIMESTAMP_NOW",
      "last_completed": null,
-     "deliverable": null
+     "deliverable": null,
+     "wave_id": 0
    }
    ```
-4. **Save manifest back** to `.claude/state/agent-swarm.json`
+6. **Save manifest back** to `.claude/state/agent-swarm.json` with wave_plan and current_wave fields
 
 ## Per-Agent State Files (CRITICAL)
 

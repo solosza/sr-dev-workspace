@@ -1,13 +1,19 @@
-# Step 4: Monitor Agents Continuously
+# Step 4: Wave Barrier Monitor (Notification-Driven + Polling Fallback)
 
-Start a continuous polling loop that monitors all agents and updates the manifest and per-agent state files in real-time.
+Start a continuous loop that monitors the current wave and transitions to the next wave when complete. Notification-driven (task-completion event), with polling as fallback.
 
-## Monitor Loop
+## Wave Barrier Mechanism
 
-**Timing:**
-- Poll interval: 10 seconds
-- Max iterations: 30 polls (5 minutes max runtime)
-- Early exit: When all agents complete OR no running agents detected for 2 polls
+**Primary Signal:** Task completion notification (push-based, harness-driven)
+**Fallback:** 10-second polling loops if notification unavailable
+
+**Per-Wave Timeout:** 30 minutes per wave (configurable in task index)
+
+**Loop behavior:**
+- For current wave: wait for all agents to reach terminal state (COMPLETE/FAILED/SKIPPED/TIMED_OUT)
+- Read per-agent state files to assess outcomes
+- Apply failure decision table (partial dispatch policy)
+- Dispatch next wave OR conclude pipeline if all waves done/blocked
 
 ## State File Architecture (CRITICAL FIX)
 
@@ -168,6 +174,44 @@ if agent.status == "running" and agent_state_file.exists():
         agent["error"] = "No state file updates (agent may have crashed)"
 ```
 
+## Failure Decision Table (Partial Dispatch Policy)
+
+After current wave completes, apply this table to determine which agents in the next wave can dispatch:
+
+| Current Wave Status | Next Wave Action |
+|---|---|
+| All COMPLETE | Dispatch all agents in next wave |
+| One/more FAILED | Block ONLY downstream dependents of failed agents; dispatch others |
+| One/more SKIPPED | Block ONLY downstream dependents of skipped agents; dispatch others |
+| One/more TIMED_OUT | Block ONLY downstream dependents of timed-out agents; dispatch others |
+
+**Dependency lookup:** For each agent in next wave, check its `depends_on` list. If ANY dependency is in the FAILED/SKIPPED/TIMED_OUT set, mark that agent BLOCKED and skip dispatch.
+
+**Cascade:** Blocking propagates forward — if agent D is blocked in wave N+1, any agent in wave N+2 that depends on D is also marked BLOCKED.
+
+**Orphaned wave detection:** If all agents in next wave are blocked, log "Wave N+1 entirely blocked — no tasks to dispatch" and proceed to next unblocked wave.
+
+## Wave Transition Logic
+
+1. **Current wave completes:** All agents reach terminal state
+2. **Read per-agent state files** for all agents in current wave
+3. **Classify outcomes:** COMPLETE/FAILED/SKIPPED/TIMED_OUT per agent
+4. **Update manifest:** Set current wave status to "complete", add to `waves_completed`
+5. **Evaluate next wave:** Apply failure decision table
+6. **Determine dispatched set:** Subset of next-wave agents that pass dependency checks
+7. **If dispatched set is empty:** Continue to next unblocked wave
+8. **If dispatched set is non-empty:** Increment `current_wave`, dispatch via step-03 again
+9. **If all waves processed:** Conclude pipeline with summary
+
+## Resume After Orchestrator Restart
+
+1. **Read manifest** — contains `wave_plan`, `current_wave`, `waves_completed`
+2. **Determine active wave state:**
+   - Read per-agent state files for all agents in `current_wave`
+   - Classify each: COMPLETE/FAILED/SKIPPED/TIMED_OUT/RUNNING
+3. **If all agents terminal:** Apply failure policy and dispatch next wave
+4. **If some agents still running:** Re-attach to notifications and continue monitoring
+
 ## Key Difference from Previous
 
 **OLD (broken):**
@@ -182,3 +226,9 @@ if agent.status == "running" and agent_state_file.exists():
 - Agent 132 updates `agent-132-state.json` only
 - Monitor sees both agents independently
 - No overwrites, no visibility loss
+
+**Wave Barrier (NEW):**
+- Monitor becomes orchestrator of wave transitions
+- Manifest tracks wave state (current_wave, waves_completed, wave_plan)
+- Failure decision table provides partial dispatch semantics
+- Resume from manifest restores full execution picture after restart

@@ -7,6 +7,9 @@
 
 Spawns multiple background agents in parallel, monitors their progress in real-time using isolated per-agent state files, and reports completion. Uses a shared agent manifest (`agent-swarm.json`) for aggregated view plus per-agent state files to prevent contention.
 
+**Wave-Based Execution (DAG Support):**
+If backlogs or their task folders declare dependencies (`depends_on`), the swarm automatically produces execution waves and coordinates dispatch via a notification-driven barrier. Partial dispatch on failure: only downstream dependents are blocked, independent agents proceed. See → `[[references/wave-engine]]`
+
 ## Usage
 
 ```
@@ -23,11 +26,11 @@ Spawns multiple background agents in parallel, monitors their progress in real-t
 
 | Step | Action | Reference |
 |------|--------|-----------|
-| 1 | Parse input (detect backlog numbers) | → `[[references/step-01-parse-input]]` |
-| 2 | Create manifest + per-agent state files | → `[[references/step-02-create-manifest]]` |
-| 3 | Spawn agents in parallel | → `[[references/step-03-spawn-agents]]` |
-| 4 | Monitor agents continuously (per-agent isolation) | → `[[references/step-04-monitor]]` |
-| 5 | Report final status | → `[[references/step-05-report]]` |
+| 1 | Parse input (detect backlog numbers, extract waves if dependencies declared) | → `[[references/step-01-parse-input]]` |
+| 2 | Create manifest + per-agent state files (with wave plan) | → `[[references/step-02-create-manifest]]` |
+| 3 | Spawn agents in current wave only | → `[[references/step-03-spawn-agents]]` |
+| 4 | Monitor wave completion, apply failure semantics, dispatch next wave | → `[[references/step-04-monitor]]` |
+| 5 | Report final status (all waves) | → `[[references/step-05-report]]` |
 
 ## Execution
 
