@@ -1,0 +1,72 @@
+{
+ "at": "2026-07-22T08:18:23.891729+00:00",
+ "routed": [
+  {
+   "target": "147",
+   "action": "reject",
+   "result": "rejected",
+   "followup": null
+  },
+  {
+   "target": "149",
+   "action": "reject",
+   "result": "rejected",
+   "followup": null
+  },
+  {
+   "target": "151",
+   "action": "iterate",
+   "result": "needs-iteration",
+   "followup": "263"
+  },
+  {
+   "target": "152",
+   "action": "reject",
+   "result": "rejected",
+   "followup": null
+  },
+  {
+   "target": "154",
+   "action": "iterate",
+   "result": "needs-iteration",
+   "followup": "264"
+  },
+  {
+   "target": "157",
+   "action": "reject",
+   "result": "rejected",
+   "followup": null
+  },
+  {
+   "target": "158",
+   "action": "defer",
+   "result": "deferred",
+   "followup": null
+  },
+  {
+   "target": "159",
+   "action": "defer",
+   "result": "deferred",
+   "followup": null
+  },
+  {
+   "target": "160",
+   "action": "defer",
+   "result": "deferred",
+   "followup": null
+  },
+  {
+   "target": "161",
+   "action": "iterate",
+   "result": "needs-iteration",
+   "followup": "265"
+  },
+  {
+   "target": "162",
+   "action": "iterate",
+   "result": "needs-iteration",
+   "followup": "266"
+  }
+ ],
+ "message": "11 actions routed: 4 rejected, 4 iteration follow-ups created (263-266), 3 deferred"
+}

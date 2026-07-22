@@ -1010,15 +1010,93 @@
       "timestamp": "2026-07-17T03:35:00Z",
       "merge_status": "HELD \u2014 compensating condition: merge after 208 (V1 E2E) runs green",
       "notes": "API test exemplar (test_order_management.py): AAA, dual assertion, asserted cleanup. Pipeline's 004 (live run) skipped on a claude-p runner hiccup (iteration_1.log 0 bytes \u2014 suite never executed by the agent); ORCHESTRATOR RAN IT: pytest exit 0, 1 passed, zero residue orders. V2 exit signal CONFIRMED. Branch build/213 (99e4796) parked per compensating condition \u2014 merges immediately after 208 green. Cosmetic: pytest.mark.api unregistered (registration belongs to 229's conftest work)."
+    },
+    "147": {
+      "status": "rejected",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "i believe this has already been completed",
+      "followup_backlog": null,
+      "source": "review-board 2026-07-22"
+    },
+    "149": {
+      "status": "rejected",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "no longer wanted",
+      "followup_backlog": null,
+      "source": "review-board 2026-07-22"
+    },
+    "151": {
+      "status": "needs-iteration",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "check if has been completed already",
+      "followup_backlog": "263",
+      "source": "review-board 2026-07-22"
+    },
+    "152": {
+      "status": "rejected",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "no longer needed",
+      "followup_backlog": null,
+      "source": "review-board 2026-07-22"
+    },
+    "154": {
+      "status": "needs-iteration",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "check if this is done already i believe so",
+      "followup_backlog": "264",
+      "source": "review-board 2026-07-22"
+    },
+    "157": {
+      "status": "rejected",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "this has been completed already",
+      "followup_backlog": null,
+      "source": "review-board 2026-07-22"
+    },
+    "158": {
+      "status": "deferred",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "",
+      "followup_backlog": null,
+      "source": "review-board 2026-07-22"
+    },
+    "159": {
+      "status": "deferred",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "",
+      "followup_backlog": null,
+      "source": "review-board 2026-07-22"
+    },
+    "160": {
+      "status": "deferred",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "",
+      "followup_backlog": null,
+      "source": "review-board 2026-07-22"
+    },
+    "161": {
+      "status": "needs-iteration",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "check if this is still necessary",
+      "followup_backlog": "265",
+      "source": "review-board 2026-07-22"
+    },
+    "162": {
+      "status": "needs-iteration",
+      "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
+      "notes": "i believe this is already done. double check it",
+      "followup_backlog": "266",
+      "source": "review-board 2026-07-22"
     }
   },
   "stats": {
-    "total_completed": 230,
-    "reviewed": 147,
-    "unreviewed": 37,
-    "accepted": 153,
-    "needs_iteration": 3,
-    "rejected": 1
+    "total_completed": 232,
+    "reviewed": 179,
+    "unreviewed": 53,
+    "accepted": 161,
+    "needs_iteration": 6,
+    "rejected": 5,
+    "deferred": 6
   },
   "208": {
     "status": "unreviewed",
