@@ -9,7 +9,7 @@ High — active revenue venture; facility administrators are asking for a busine
 ## Summary
 Decide **yay or nay** on building an AI-native compliance solution — Medicare Part B eligibility + charting/billing compliance checks — for therapy-technician workflows in skilled-nursing / facility settings, built on Isagawa. Then produce a business plan facility owners can act on. The pitch: the incumbent does charting, billing, AND compliance checks **manually**, human errors are frequent and corrected by hand; an Isagawa-governed harness would run the eligibility/compliance logic deterministically + AI-assisted, flagging edge cases for review instead of mis-billing.
 
-**FIRST, resolve a discrepancy (Task 001):** the user's message says "physical therapy (PT) technicians," but the attached source doc is **Medicare Part B eligibility for Respiratory Therapy (RT)** (nebulizer, spirometry, CPAP/BiPAP, pulse oximetry), which also matches the existing `projects/rt-automation/` venture. Confirm the actual therapy discipline (RT vs PT vs both) before scoping — the compliance rules and CPT sets differ.
+**USER CONFIRMED 2026-07-22: this is Respiratory Therapy (RT), not PT — the source doc and the existing rt-automation project are correct.** (Original note kept for record.) **Resolution (Task 001):** the user's message says "physical therapy (PT) technicians," but the attached source doc is **Medicare Part B eligibility for Respiratory Therapy (RT)** (nebulizer, spirometry, CPAP/BiPAP, pulse oximetry), which also matches the existing `projects/rt-automation/` venture. Confirm the actual therapy discipline (RT vs PT vs both) before scoping — the compliance rules and CPT sets differ.
 
 ## Design Documents
 
