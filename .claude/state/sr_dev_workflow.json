@@ -4,8 +4,8 @@
   "protocol_created": true,
   "commands_created": true,
   "hooks_created": true,
-  "anchor_timestamp": "2026-07-22T15:01:00Z",
-  "actions_since_anchor": 20,
+  "anchor_timestamp": "2026-07-22T18:28:00Z",
+  "actions_since_anchor": 9,
   "current_task": null,
   "attempts_on_current": 0,
   "cycling": false,
@@ -20,13 +20,11 @@
   "timestamp": "2026-07-14T18:45:00Z",
   "complete": true,
   "complete_timestamp": "2026-07-22T15:05:00Z",
-  "task_folder": "tasks/verify-162/",
-  "total_tasks": 1,
+  "task_folder": null,
+  "total_tasks": null,
   "anchored": true,
-  "last_anchor_token_confirmed": "2f0835be",
+  "last_anchor_token_confirmed": "fcbc4ba8",
   "pending_anchor_token": null,
-  "completed_tasks": [
-    "001-research-verify.md"
-  ],
+  "completed_tasks": [],
   "skipped_tasks": []
 }

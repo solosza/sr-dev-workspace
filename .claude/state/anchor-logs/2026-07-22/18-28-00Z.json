@@ -1,0 +1,295 @@
+{
+  "anchor_timestamp": "2026-07-22T18:28:00Z",
+  "actions_count": 48,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-22T08:22:44Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngrep -n \"6b\\.\" \"$MA",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:25:22Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nls \"$MAIN/projects/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:25:28Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== 161 ===\";",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:25:36Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:25:44Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nfor n in 263 264 26",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:32:30Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:32:35Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:32:44Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:33:10Z",
+      "tool": "Bash",
+      "entry": "Bash: for i in 1 2 3; do\nPYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:33:17Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:39:24Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" checkout b",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:39:28Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngrep -n \"class BatchVa",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:39:34Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nsed -n '1,45p' \"$H/fra",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:39:52Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nPYTHONIOENCODING=utf-8",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:40:02Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" add -A fra",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:40:37Z",
+      "tool": "Write",
+      "entry": "Write: gen_219_tasks.py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:40:49Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:41:35Z",
+      "tool": "Write",
+      "entry": "Write: gen_256_tasks.py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:41:45Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:48:31Z",
+      "tool": "Bash",
+      "entry": "Bash: date \"+now: %H:%M:%S\"\necho \"=== 219 (reference-tests-db) ===\"\nd=\"D:/my_ai_projec",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:48:47Z",
+      "tool": "Bash",
+      "entry": "Bash: d=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:48:58Z",
+      "tool": "Bash",
+      "entry": "Bash: d=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:49:14Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:49:31Z",
+      "tool": "Bash",
+      "entry": "Bash: d=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:49:44Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:49:53Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:50:05Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:50:34Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nss = pathlib.Path(\"D:/my_ai_projects/proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:51:27Z",
+      "tool": "Bash",
+      "entry": "Bash: wmic process where \"CommandLine like '%reference-tests-db%'\" get ProcessId,Comma",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:54:14Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" checkout b",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T08:54:22Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" checkout m",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T17:52:44Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== OPEN back",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T17:53:34Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== 262 commi",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:24:04Z",
+      "tool": "Bash",
+      "entry": "Bash: echo \"=== probe claude-opus-4-8 ===\"\ntimeout 60 env -u CLAUDECODE claude -p --mo",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:24:13Z",
+      "tool": "Edit",
+      "entry": "Edit: model-routing-config.json",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:24:28Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython -c \"import j",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:25:29Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:25:30Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/\" | head -30",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:25:37Z",
+      "tool": "Bash",
+      "entry": "Bash: echo \"--- worktree lib ---\"\nls -la \"D:/my_ai_projects/project_test_repos/sr_dev_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:25:40Z",
+      "tool": "Bash",
+      "entry": "Bash: SRC=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/age",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:25:46Z",
+      "tool": "Bash",
+      "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== bash -n sy",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:26:00Z",
+      "tool": "Bash",
+      "entry": "Bash: SCRATCH=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:26:05Z",
+      "tool": "Bash",
+      "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSCRATCH=\"C:/Users/so",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:26:11Z",
+      "tool": "Bash",
+      "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== backlog fi",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:26:15Z",
+      "tool": "Bash",
+      "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" mv doc",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:26:20Z",
+      "tool": "Bash",
+      "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== docs/backl",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:26:25Z",
+      "tool": "Bash",
+      "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" add ru",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T18:27:40Z",
+      "tool": "Bash",
+      "entry": "Bash: echo \"test\"",
+      "session": "current"
+    }
+  ]
+}

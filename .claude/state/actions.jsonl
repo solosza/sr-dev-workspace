@@ -1,18 +1,8 @@
-{"timestamp": "2026-07-22T08:22:44Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngrep -n \"6b\\.\" \"$MA", "session": "current"}
-{"timestamp": "2026-07-22T08:25:22Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nls \"$MAIN/projects/", "session": "current"}
-{"timestamp": "2026-07-22T08:25:28Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== 161 ===\";", "session": "current"}
-{"timestamp": "2026-07-22T08:25:36Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim", "session": "current"}
-{"timestamp": "2026-07-22T08:25:44Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nfor n in 263 264 26", "session": "current"}
-{"timestamp": "2026-07-22T08:32:30Z", "tool": "Bash", "entry": "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.", "session": "current"}
-{"timestamp": "2026-07-22T08:32:35Z", "tool": "Bash", "entry": "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.", "session": "current"}
-{"timestamp": "2026-07-22T08:32:44Z", "tool": "Bash", "entry": "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.", "session": "current"}
-{"timestamp": "2026-07-22T08:33:10Z", "tool": "Bash", "entry": "Bash: for i in 1 2 3; do\nPYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request", "session": "current"}
-{"timestamp": "2026-07-22T08:33:17Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d", "session": "current"}
-{"timestamp": "2026-07-22T08:39:24Z", "tool": "Bash", "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" checkout b", "session": "current"}
-{"timestamp": "2026-07-22T08:39:28Z", "tool": "Bash", "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngrep -n \"class BatchVa", "session": "current"}
-{"timestamp": "2026-07-22T08:39:34Z", "tool": "Bash", "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nsed -n '1,45p' \"$H/fra", "session": "current"}
-{"timestamp": "2026-07-22T08:39:52Z", "tool": "Bash", "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nPYTHONIOENCODING=utf-8", "session": "current"}
-{"timestamp": "2026-07-22T08:40:02Z", "tool": "Bash", "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" add -A fra", "session": "current"}
-{"timestamp": "2026-07-22T08:40:37Z", "tool": "Write", "entry": "Write: gen_219_tasks.py", "session": "current"}
-{"timestamp": "2026-07-22T08:40:49Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so", "session": "current"}
-{"timestamp": "2026-07-22T08:41:35Z", "tool": "Write", "entry": "Write: gen_256_tasks.py", "session": "current"}
+{"timestamp": "2026-07-22T18:28:51Z", "tool": "Bash", "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro", "session": "current"}
+{"timestamp": "2026-07-22T18:28:51Z", "tool": "Bash", "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_", "session": "current"}
+{"timestamp": "2026-07-22T18:29:04Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\n{ ls \"$MAIN/docs/ba", "session": "current"}
+{"timestamp": "2026-07-22T18:29:06Z", "tool": "Bash", "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" status", "session": "current"}
+{"timestamp": "2026-07-22T18:29:11Z", "tool": "Bash", "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" commit", "session": "current"}
+{"timestamp": "2026-07-22T18:29:11Z", "tool": "Bash", "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 267 \"research AD", "session": "current"}
+{"timestamp": "2026-07-22T18:29:15Z", "tool": "Bash", "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" log --", "session": "current"}
+{"timestamp": "2026-07-22T18:29:37Z", "tool": "Write", "entry": "Write: 267-property-research-adu-laws-vegas-honolulu.md", "session": "current"}
