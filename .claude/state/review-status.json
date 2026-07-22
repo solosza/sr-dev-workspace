@@ -1026,11 +1026,12 @@
       "source": "review-board 2026-07-22"
     },
     "151": {
-      "status": "needs-iteration",
+      "status": "accepted",
       "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
-      "notes": "check if has been completed already",
+      "notes": "check if has been completed already | verified via followup: DONE-CONFIRMED",
       "followup_backlog": "263",
-      "source": "review-board 2026-07-22"
+      "source": "review-board 2026-07-22",
+      "verified_at": "2026-07-22T08:25:36.353548+00:00"
     },
     "152": {
       "status": "rejected",
@@ -1040,11 +1041,12 @@
       "source": "review-board 2026-07-22"
     },
     "154": {
-      "status": "needs-iteration",
+      "status": "accepted",
       "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
-      "notes": "check if this is done already i believe so",
+      "notes": "check if this is done already i believe so | verified via followup: DONE-CONFIRMED",
       "followup_backlog": "264",
-      "source": "review-board 2026-07-22"
+      "source": "review-board 2026-07-22",
+      "verified_at": "2026-07-22T08:25:36.353548+00:00"
     },
     "157": {
       "status": "rejected",
@@ -1075,26 +1077,28 @@
       "source": "review-board 2026-07-22"
     },
     "161": {
-      "status": "needs-iteration",
+      "status": "accepted",
       "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
-      "notes": "check if this is still necessary",
+      "notes": "check if this is still necessary | verified via followup: DONE-CONFIRMED",
       "followup_backlog": "265",
-      "source": "review-board 2026-07-22"
+      "source": "review-board 2026-07-22",
+      "verified_at": "2026-07-22T08:25:36.353548+00:00"
     },
     "162": {
-      "status": "needs-iteration",
+      "status": "accepted",
       "reviewed_at": "2026-07-22T08:18:23.891729+00:00",
-      "notes": "i believe this is already done. double check it",
+      "notes": "i believe this is already done. double check it | verified via followup: DONE-CONFIRMED",
       "followup_backlog": "266",
-      "source": "review-board 2026-07-22"
+      "source": "review-board 2026-07-22",
+      "verified_at": "2026-07-22T08:25:36.353548+00:00"
     }
   },
   "stats": {
     "total_completed": 232,
     "reviewed": 179,
     "unreviewed": 53,
-    "accepted": 161,
-    "needs_iteration": 6,
+    "accepted": 165,
+    "needs_iteration": 2,
     "rejected": 5,
     "deferred": 6
   },
