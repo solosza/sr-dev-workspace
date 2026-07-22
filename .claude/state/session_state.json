@@ -13,16 +13,16 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSB=\"C:/Users/solos/",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
-    "Bash: docker version --format \"server: {{.Server.Version}}\" 2>&1 | head -3; docker ps ",
-    "Bash: ls \"C:/Program Files/Docker/Docker/Docker Desktop.exe\" 2>/dev/null && echo insta",
-    "Bash: for i in $(seq 1 24); do\n  if docker version --format \"{{.Server.Version}}\" 2>/d",
-    "Bash: P=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/hmsa-qa-platfo",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
     "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nmkdir -p \"$MAIN/tas",
     "Write: 000-index.md",
     "Write: gate-contract.md",
-    "Bash: python - <<'PYEOF'\nimport pathlib\nT = pathlib.Path(\"D:/my_ai_projects/project_te"
+    "Write: 001-build-write-rule-map.md",
+    "Write: 002-build-write-injector-hook.md",
+    "Write: 003-build-register-injector-settings.md",
+    "Write: 004-test-l1-files-registration-advisory.md",
+    "Write: 005-test-l2-injection-behavior.md",
+    "Write: 006-test-l3-live-injection.md"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -52,5 +52,13 @@
     "next_action_stated": "Check worktree git status + anchor.md line counts vs main + read iteration logs for tasks 005/006 to find where the routing section was lost",
     "rules_applied": "Lesson #39: gate finding (AC-05) blocks merge until orchestrator-fixed and re-validated; RULE ZERO: read the iteration logs before judging how the section vanished; fix on same branch (203 precedent)",
     "ceremony_output_generated": true
+  },
+  "pipeline_state_246": {
+    "input_mode": "existing_backlog",
+    "backlog_path": "docs/backlog/246-kernel-build-jit-injection-phase1.md",
+    "route": "default",
+    "task_folder": "tasks/jit-injection-phase1/",
+    "task_count": 6,
+    "parallel_with": "214 (harness-db-slice)"
   }
 }
