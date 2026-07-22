@@ -1,0 +1,289 @@
+{
+  "anchor_timestamp": "2026-07-22T06:15:00Z",
+  "actions_count": 47,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-22T05:29:46Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:29:55Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport json,sys\nbase='D:/my_ai_projects/proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:30:09Z",
+      "tool": "Bash",
+      "entry": "Bash: wmic process where \"name='bash.exe'\" get ProcessId,CommandLine 2>/dev/null | gre",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:30:22Z",
+      "tool": "Bash",
+      "entry": "Bash: wmic process where \"name='bash.exe'\" get ProcessId,CreationDate 2>/dev/null | so",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:30:50Z",
+      "tool": "Bash",
+      "entry": "Bash: \"/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/SQLCMD.EXE",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:31:08Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONIOENCODING=utf-8 python - <<'EOF'\nimport sys\nfrom sqlalchemy import create",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:31:51Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nDATABASE_URL=\"mssql+py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:32:15Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngrep -c \"ORDERLY_MSSQL",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:32:27Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:32:44Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:32:58Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:33:11Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:33:31Z",
+      "tool": "Write",
+      "entry": "Write: probe.txt",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:33:32Z",
+      "tool": "Bash",
+      "entry": "Bash: echo done",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:33:38Z",
+      "tool": "Bash",
+      "entry": "Bash: SB=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-repo",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:33:56Z",
+      "tool": "Bash",
+      "entry": "Bash: SB=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-repo",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:34:19Z",
+      "tool": "Bash",
+      "entry": "Bash: rm \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/probe.txt\"\nSB=\"C:/User",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:34:46Z",
+      "tool": "Bash",
+      "entry": "Bash: SB=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-repo",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:34:59Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -n -B2 -A8 \"S01\\|S12\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspac",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:35:17Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nWT=\"D:/my_ai_projec",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:35:26Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:35:47Z",
+      "tool": "Bash",
+      "entry": "Bash: pip install mssql-python 2>&1 | tail -1\npython -c \"import mssql_python, sys; sys",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:36:10Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:36:34Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:36:40Z",
+      "tool": "Write",
+      "entry": "Write: 001-build-create-feature-branch.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:36:48Z",
+      "tool": "Write",
+      "entry": "Write: 002-build-write-interface.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:36:52Z",
+      "tool": "Write",
+      "entry": "Write: 003-test-l1-structure-cleanroom.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:36:58Z",
+      "tool": "Write",
+      "entry": "Write: 004-test-l2-contract-semantics.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:37:05Z",
+      "tool": "Write",
+      "entry": "Write: 005-test-l3-live-orderly-db.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:37:13Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:04:51Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 250 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:04:52Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 251 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:04:54Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 252 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:04:55Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 253 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:00Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 254 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:02Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 255 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:03Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 256 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:05Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 257 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:13Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 258 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:15Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 259 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:17Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 260 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:05:18Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 261 \"break this ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:07:14Z",
+      "tool": "Write",
+      "entry": "Write: gen_portfolio_backlogs.py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:07:23Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nmkdir -p \"$MAIN/pro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:07:30Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" add ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:08:24Z",
+      "tool": "Write",
+      "entry": "Write: gen_250_tasks.py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T06:08:34Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so",
+      "session": "current"
+    }
+  ]
+}

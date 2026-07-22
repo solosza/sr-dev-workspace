@@ -1,14 +1,14 @@
 {
   "session_started": true,
-  "timestamp": "2026-07-22T05:30:00Z",
+  "timestamp": "2026-07-22T06:15:00Z",
   "resumed_from": "session-closed-recovery",
   "context": {
     "current_task": null,
-    "task_folder": "tasks/harness-db-slice/",
-    "progress": "BOTH parallel batches WEDGED \u2014 no claude -p processes exist, runners waiting on vanished children. Work largely done per iteration claims: 214 iter5 claims 009 GATE 13/13 green on native SQL Server (app-code diff = benign Starlette TemplateResponse signature migration); 246 at 5/6 with only L3 (006) unrun (iter8 0-byte). State bookkeeping broken: iteration results say COMPLETE but agent workflow files not updated. Orchestrator taking over per user directive (keep platform running).",
-    "last_completed": "Wedge diagnosis: 2 claude.exe procs are session-aged not batch-aged; both runner bash trees orphaned",
-    "next_step": "1) Read 214 iters 1-3 (confirm 005/007/008 claims). 2) Kill orphaned runner bash trees + stop background agents. 3) Orchestrator-validate 214 gates DB-05..09 LIVE (native instance, orderly_v3 only). 4) Run 246 JIT-06 L3 gate myself (claude -p scratch repo). 5) Merge both branches, reconcile gitignored files, archive backlogs. 6) Launch 215 (next DB-slice item). 7) File backlogs: runner-wedge defect, CDN-blob env, stale-base worktrees.",
-    "notes": "Runner-wedge defect (NEW, 3rd batch affected): claude -p children vanish (crash/kill) and run-task.sh waits forever; plus completions not recorded to agent workflow state (iteration says ONE_SHOT_COMPLETE but completed_tasks unchanged) \u2014 suspect the 214 first-batch timeout kill left bad state, and Windows PID handling in the timeout logic. Platform artifacts live on hmsa branch build/214 (uncommitted). 246 artifacts in its worktree (uncommitted). Native SQL Server 2019 Developer verified: MSSQLSERVER running, pyodbc + ODBC Driver 17 OK.",
+    "task_folder": "tasks/sql-server-interface/",
+    "progress": "215 batch COMPLETE 5/5 (L1 green, L2 8/8, L3 13/13 live vs orderly DB) \u2014 deliverables UNCOMMITTED on hmsa build/215 branch (interface + 2 test files untracked). Orchestrator validation in progress. 250 (portfolio scaffold) batch running in parallel with health monitor. Portfolio backlogs 250-261 created (12 items, intent chain recorded). 214 + 245 + 246 all merged and archived.",
+    "last_completed": "Portfolio backlog batch 250-261 + 250 pipeline launch",
+    "next_step": "1) Spot-validate 215 interface (no pyodbc/sqlalchemy, method surface, reraise pattern, lexicon) + re-run its L3 test live. 2) Commit on build/215, merge to platform main, archive backlog 215 on workspace main. 3) Launch 216 (reference-data-objects). 4) Await 250 completion -> validate -> live URL to user. 5) Still pending: backlogs for runner-wedge/CDN/stale-base defects; 208 env-blocked; restart advice when no batches running.",
+    "notes": "215 findings from batch: iteration 1 log 0-byte again (runner completion-signal loss recurrence, resumed OK); worktree was missing jit-rule-injector.py pre-reset (stale base again \u2014 STEP 0 pin fixed it). JIT injector phase-2 refinement candidates observed live: S01 fires on new-file Writes (file_not_read trivially true) and S01 cannot see Read-tool usage (actions log only records Write/Edit/Bash) \u2014 both advisory-only, note for 246 phase 2. DB validation constraint: only databases orderly + orderly_v3 are ours.",
     "ledger": [
       {
         "ts": "2026-07-22T02:58:00Z",
@@ -30,27 +30,36 @@
       {
         "ts": "2026-07-22T03:00:30Z",
         "kind": "constraint",
-        "summary": "Native SQL Server instance may hold real databases \u2014 pipeline may ONLY create/use/drop orderly_v3",
+        "summary": "Native SQL Server instance holds real databases (KCC) \u2014 pipelines may only touch orderly/orderly_v3",
         "refs": [
-          "tasks/harness-db-slice/008"
+          "tasks/harness-db-slice/008",
+          "tasks/sql-server-interface/005"
         ]
       },
       {
         "ts": "2026-07-22T05:28:00Z",
         "kind": "failure",
-        "summary": "run-task.sh batches wedge when claude -p children vanish (3rd occurrence) and inner completions are not recorded to agent workflow state \u2014 do not trust runner liveness or completed_tasks counts; verify via iteration logs + artifacts",
+        "summary": "run-task.sh batches lose completion signals (0-byte iteration logs, 4th occurrence in 215 iter1) and can die silently \u2014 verify via iteration logs + artifacts, never trust runner state alone",
         "refs": [
           "lesson pending",
           "backlog pending"
         ]
       },
       {
-        "ts": "2026-07-22T05:29:00Z",
+        "ts": "2026-07-22T06:05:00Z",
         "kind": "decision",
-        "summary": "Orchestrator takes over both wedged batches: validate claimed-done work directly against gate contracts instead of relaunching a 4th batch (user directive: keep platform running)",
+        "summary": "Portfolio guide split into 12 backlogs 250-261 (scaffold-first, review-sweep last); 250 launched in parallel with HMSA chain per user parallel directive; evidence metrics stay [INSERT] until user supplies verified numbers",
         "refs": [
-          "gate-contract DB-01..09",
-          "gate-contract JIT-01..06"
+          "docs/backlog/250-261",
+          "projects/portfolio-site/format-guide-v1.2.md"
+        ]
+      },
+      {
+        "ts": "2026-07-22T06:05:30Z",
+        "kind": "constraint",
+        "summary": "KERNEL_BACKLOG_INTENT=1 marker must PREFIX the whole Bash command (enforcer checks startswith) \u2014 one intent.py record per Bash call, never in a loop",
+        "refs": [
+          "backlog command step 3"
         ]
       }
     ]
@@ -58,43 +67,37 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 256 \"break this ",
-    "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 257 \"break this ",
-    "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 258 \"break this ",
-    "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 259 \"break this ",
-    "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 260 \"break this ",
-    "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 261 \"break this ",
-    "Write: gen_portfolio_backlogs.py",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nmkdir -p \"$MAIN/pro",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" add ",
-    "Write: gen_250_tasks.py"
+    "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nPYTHONIOENCODING=utf-8",
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" add framew",
+    "Write: gen_216_tasks.py"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "actions_since_anchor": 0,
   "protocol_hash": "453920fd59c26e32c5c4c0caa72d42b370cf59a07ac8973299992e8db3a40bd5",
-  "protocol_hash_timestamp": "2026-07-22T05:30:00Z",
+  "protocol_hash_timestamp": "2026-07-22T06:15:00Z",
   "compaction_anchor_reason": null,
   "needs_learn": false,
   "needs_learn_reason": null,
   "pipeline_state": {
     "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/215-qa-build-sql-server-interface.md",
+    "backlog_path": "docs/backlog/216-qa-build-reference-data-objects.md",
     "route": "default",
-    "task_folder": "tasks/sql-server-interface/",
-    "task_count": 5,
+    "task_folder": "tasks/reference-data-objects/",
+    "task_count": 7,
     "resume_step": null,
-    "prior_pipeline": "214 merged to platform main; 246 merged to workspace main"
+    "prior_pipeline": "215 merged to platform main (L3 re-run 13/13)"
   },
   "pipeline_mode": null,
   "agent_id": null,
   "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-07-22T05:29:00Z",
-    "lessons_read_timestamp": "2026-07-22T05:29:00Z",
-    "actions_reviewed_count": 47,
+    "protocol_read_timestamp": "2026-07-22T06:14:00Z",
+    "lessons_read_timestamp": "2026-07-22T06:14:00Z",
+    "actions_reviewed_count": 50,
     "violations_found": 0,
-    "next_action_stated": "Read 214 iterations 1-3 to confirm 005/007/008 completion claims, then kill orphaned runners and validate all gates live myself",
-    "rules_applied": "RULE ZERO: iteration logs + artifacts are the evidence, not runner state; lesson #39: GATE tasks (009, JIT-06) get orchestrator validation regardless of inner claims; ledger now records failures (CDN, runner-wedge) so they are not retried post-compaction",
+    "next_action_stated": "Spot-validate the 215 interface (imports, method surface, reraise, lexicon greps) then re-run its L3 test live before committing on build/215",
+    "rules_applied": "Lesson #39: L3 is a gate \u2014 orchestrator re-runs it live, not just reads the claim; RULE ZERO: read the interface before merging; ledger constraint: only orderly/orderly_v3 databases",
     "ceremony_output_generated": true
   },
   "pipeline_state_250": {
@@ -103,6 +106,6 @@
     "route": "default",
     "task_folder": "tasks/portfolio-scaffold/",
     "task_count": 6,
-    "parallel_with": "215 (sql-server-interface)"
+    "parallel_with": "215 validation (post-batch)"
   }
 }
