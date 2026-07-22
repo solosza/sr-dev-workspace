@@ -51,6 +51,8 @@ Every reference to `[domain]_workflow.json` below follows this routing. Step 14 
    - Read `.claude/state/session_state.json`
    - If `context` key exists, internalize prior decisions, direction changes, and task thread
    - This recovers context that may have been lost to context window compression
+   - If `context.ledger` exists, read every entry. `failure` entries are the highest-value signal after compaction — do NOT retry an approach a ledger failure entry records as already failed; `decision` entries carry rationale that must not be re-litigated; `constraint` entries remain binding.
+   - State in the anchor output (Part A summary) how many ledger entries were restored and whether any failure entry affects the stated next action.
 
 ### Part B: Review All Inter-Anchor Work
 
@@ -100,7 +102,10 @@ Every reference to `[domain]_workflow.json` below follows this routing. Step 14 
        "progress": "N/M tasks complete",
        "last_completed": "task filename or null",
        "next_step": "what to do next",
-       "notes": "key decisions, direction changes, constraints"
+       "notes": "key decisions, direction changes, constraints",
+       "ledger": [
+         { "ts": "ISO timestamp", "kind": "decision | failure | constraint", "summary": "one sentence", "refs": ["file or task"] }
+       ]
      }
    }
    ```
@@ -109,6 +114,12 @@ Every reference to `[domain]_workflow.json` below follows this routing. Step 14 
    - `notes` replaces the old free-text context — keep concise
    - If context is a string (legacy format), convert to: `{ "notes": "old string" }`
    - MERGE into existing state, don't overwrite other keys
+
+   **Ledger rules:**
+   - Append entries during Step 10 for the just-completed anchor cycle: decisions made (with the alternative rejected), FAILED attempts (what was tried, what happened, what was done instead), constraints discovered
+   - Rolling window: keep the most recent 5 entries per kind, at most 15 total — truncate oldest first
+   - Perfunctory entries ("task completed per spec") are a violation — if nothing notable happened, append nothing
+   - Design source: Candidate A in `projects/kernel-rolling-summarization-research/02-gap-analysis-and-design.md` (Candidate B rejected)
 
 11. **Archive and reset actions log:**
     - Read `.claude/state/actions.jsonl` (authoritative log)
@@ -153,9 +164,12 @@ Every reference to `[domain]_workflow.json` below follows this routing. Step 14 
       "anchor_token_confirmed": true,
       "pending_anchor_token": null,
       "protocol_hash": "<sha256 hex digest from Step 1>",
-      "protocol_hash_timestamp": "<ISO timestamp>"
+      "protocol_hash_timestamp": "<ISO timestamp>",
+      "compaction_anchor_reason": null
     }
     ```
+
+    Note: clear `compaction_anchor_reason` but leave `compaction_timestamp` as-is — diagnostics distinguish compaction-triggered from timer-triggered anchors; the PreCompact hook sets the reason.
 
     If resuming from restart, also set:
     ```json

@@ -28,7 +28,7 @@ Create `.claude/state/[domain]_workflow.json`:
   "protocol_path": ".claude/protocols/[domain]-protocol.md",
   "anchored": false,
   "actions_since_anchor": 0,
-  "actions_limit": 10,
+  "actions_limit": 50,
   "timestamp": "[ISO-8601]"
 }
 ```
@@ -119,4 +119,4 @@ Before proceeding to Step 10, verify ALL three files exist:
 | `resume_after_restart` | What to do after restart |
 | `anchored` | Protocol read this session |
 | `actions_since_anchor` | Counter (auto-incremented by hook) |
-| `actions_limit` | Threshold before re-anchor required |
+| `actions_limit` | Threshold before re-anchor required (50 is the hybrid-policy default: timer-based re-anchor at 50 actions, paired with the PreCompact event-driven re-anchor hook) |

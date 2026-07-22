@@ -1,54 +1,53 @@
 {
   "session_started": true,
-  "timestamp": "2026-07-22T01:03:00Z",
+  "timestamp": "2026-07-22T02:01:00Z",
   "resumed_from": "session-closed-recovery",
   "context": {
     "current_task": null,
-    "task_folder": "tasks/agent-state-isolation/",
-    "progress": "244 pipeline 13/13 tasks complete. Orchestrator validation: SI-01..SI-08 all PASS (static + behavioral + L3 evidence). Lesson #49 residue (utf-8-sig read paths) fixed on branch: state_io.read_json added, 3 hooks + common.sh reads utf-8-sig, self-test 10/10 + BOM regression through pre_init_state green. Branch committed a5c8f5b; main snapshot ab11575; merge in progress.",
-    "last_completed": "Merge conflict resolution: universal-gate-enforcer.py (routed target + workflow schema key), run-task.sh (per-agent pre-init after full seed, parent untouched per SI-08)",
-    "next_step": "1) Resolve lessons.md conflict (combine 06-08 + 06-14 recurrences), verify no markers, bash -n run-task.sh + py_compile enforcer, commit merge. 2) Post-merge verify: state_io self-test + SI greps in main. 3) Move backlog 244 -> done, tasks folder -> completed, commit. 4) Read backlogs 245, 246 -> launch 245 pipeline then 246 sequential. 5) Later: 236 research, env remediation, 208 merge held.",
-    "notes": "Defect finding for 244 report: first runner resume declared ALL_TASKS_COMPLETE early because worktree completed_tasks held 6 stale job-search entries (cross-pipeline pollution — the exact class 244 fixes); scrubbed and re-ran, tests 011-013 then green. L3 ran 1184s > 600s timeout, resume-retry captured completion. Merge resolution principle: scoped agents never write parent session_state.json (SI-08); pre-init routed to agent file AFTER full seed so seeded payload not thinned. Env signature unchanged: click-nav doc>=2 wedge cross-stack; 208 merge held."
+    "task_folder": "tasks/anchor-ceremony-v2/",
+    "progress": "245 batch COMPLETE 9/9, 0 skipped (inner L3 claims: real compaction fired hook, Gate 3 block observed, ledger survived). Orchestrator validation: AC-01,02,03,04,06,09 PASS; AC-05 sub-check FAILED — 244 routing section ('State File Routing (KERNEL_AGENT_ID)') MISSING from worktree anchor.md; branch has NO committed anchor.md changes (edits uncommitted in working dir). Env: wedge receded to ~doc4 absolute threshold; 208 stays ENV-BLOCKED.",
+    "last_completed": "245 gate validation first pass (7 of 8 checkable gates green, AC-05 red)",
+    "next_step": "1) Diagnose AC-05: worktree git status, anchor.md wc/diff vs main, iteration logs for tasks 005/006. 2) Restore routing section on branch, commit ALL 245 deliverables (currently uncommitted). 3) Re-validate, merge, reconcile settings.local.json + actions_limit 50 on MAIN. 4) Launch 214 (HMSA DB slice) + 246 in PARALLEL worktrees. 5) needs_restart after batches (PreCompact hook loads at startup; restart mid-batch kills runners).",
+    "notes": "Worktree: agent-af89ba412ddacf936. AC-05 evidence: grep KERNEL_AGENT_ID in worktree anchor.md = 0 hits, but ledger/kind/window/compaction greps all present — file was likely rewritten from a stale base by task 005 (its one-shot may have read main's PRE-244 anchor.md via a stale path, or rewrote wholesale). RULE ZERO: read iteration_5/6 logs before concluding. HMSA chain after merge: 214-229 sequential; 208 waits env fix. Orderly app on 8017; repro scripts in scratchpad probe3doc/."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Write: 003-build-raise-actions-limit-live.md",
-    "Write: 004-build-raise-actions-limit-seed.md",
-    "Write: 005-build-anchor-step10-ledger-schema.md",
-    "Write: 006-build-anchor-step5-ledger-readback.md",
-    "Write: 007-test-l1-files-and-registration.md",
-    "Write: 008-test-l2-hook-behavior.md",
-    "Write: 009-test-l3-live-compaction.md",
-    "Bash: python - <<'EOF'\nimport json, pathlib\nss = pathlib.Path(\"D:/my_ai_projects/proje",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" ls-f",
-    "Edit: 002-build-register-precompact-settings.md"
+    "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSB=\"C:/Users/solos/"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "actions_since_anchor": 0,
   "protocol_hash": "453920fd59c26e32c5c4c0caa72d42b370cf59a07ac8973299992e8db3a40bd5",
-  "protocol_hash_timestamp": "2026-07-22T01:03:00Z",
+  "protocol_hash_timestamp": "2026-07-22T01:37:00Z",
   "needs_learn": false,
   "needs_learn_reason": null,
   "pipeline_state": {
     "input_mode": "existing_backlog",
     "backlog_path": "docs/backlog/245-kernel-build-anchor-ceremony-v2.md",
-    "raw_input": "245",
     "route": "default",
     "task_folder": "tasks/anchor-ceremony-v2/",
     "task_count": 9,
-    "resume_step": null
+    "resume_step": null,
+    "worktree_mode": true,
+    "worktree_branch": "worktree-agent-af89ba412ddacf936",
+    "merge_status": "pending_review",
+    "execution": "batch complete 9/9; validation in progress, AC-05 red"
   },
   "pipeline_mode": null,
   "agent_id": null,
   "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-07-22T01:02:00Z",
-    "lessons_read_timestamp": "2026-07-22T01:02:00Z",
-    "actions_reviewed_count": 31,
+    "protocol_read_timestamp": "2026-07-22T02:00:00Z",
+    "lessons_read_timestamp": "2026-07-22T02:00:00Z",
+    "actions_reviewed_count": 29,
     "violations_found": 0,
-    "next_action_stated": "Resolve lessons.md merge conflict (combine both recurrence entries), verify zero conflict markers, syntax-check merged run-task.sh and enforcer, commit the merge",
-    "rules_applied": "Merge both lesson recurrences chronologically (no content loss); RULE ZERO: read the conflict hunks fully before resolving; 203 precedent: BOM fix on same branch before merge; SI-08 invariant drove run-task.sh resolution; hooks edited only to implement lesson #49's recorded gate within 244 scope (flagged in anchor output)",
+    "next_action_stated": "Check worktree git status + anchor.md line counts vs main + read iteration logs for tasks 005/006 to find where the routing section was lost",
+    "rules_applied": "Lesson #39: gate finding (AC-05) blocks merge until orchestrator-fixed and re-validated; RULE ZERO: read the iteration logs before judging how the section vanished; fix on same branch (203 precedent)",
     "ceremony_output_generated": true
   }
 }

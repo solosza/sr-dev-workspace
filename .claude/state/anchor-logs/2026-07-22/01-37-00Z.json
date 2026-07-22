@@ -1,0 +1,181 @@
+{
+  "anchor_timestamp": "2026-07-22T01:37:00Z",
+  "actions_count": 29,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-22T01:02:59Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib, hashlib\nbase = pathlib.Path(\"D:/my_ai_pro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:03:14Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport pathlib\np = pathlib.Path(\"D:/my_ai_projects/project_test",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:03:19Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nbash -n \"$MAIN/run-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:03:27Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"$MAIN/.clau",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:03:34Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nmkdir -p \"$MAIN/doc",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:03:58Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nss = pathlib.Path(\"D:/my_ai_projects/proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:04:08Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nss = pathlib.Path(\"D:/my_ai_projects/proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:04:39Z",
+      "tool": "Bash",
+      "entry": "Bash: B=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects\"\nls \"$B/kernel",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:04:49Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nls \"$MAIN/.claude/\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:05:43Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/anchor-cer",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:05:54Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:06:13Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:06:28Z",
+      "tool": "Write",
+      "entry": "Write: 001-build-write-precompact-hook.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:06:37Z",
+      "tool": "Write",
+      "entry": "Write: 002-build-register-precompact-settings.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:06:46Z",
+      "tool": "Write",
+      "entry": "Write: 003-build-raise-actions-limit-live.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:06:55Z",
+      "tool": "Write",
+      "entry": "Write: 004-build-raise-actions-limit-seed.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:07:08Z",
+      "tool": "Write",
+      "entry": "Write: 005-build-anchor-step10-ledger-schema.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:07:15Z",
+      "tool": "Write",
+      "entry": "Write: 006-build-anchor-step5-ledger-readback.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:07:24Z",
+      "tool": "Write",
+      "entry": "Write: 007-test-l1-files-and-registration.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:07:35Z",
+      "tool": "Write",
+      "entry": "Write: 008-test-l2-hook-behavior.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:07:51Z",
+      "tool": "Write",
+      "entry": "Write: 009-test-l3-live-compaction.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:08:03Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nss = pathlib.Path(\"D:/my_ai_projects/proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:08:32Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" ls-f",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:08:48Z",
+      "tool": "Edit",
+      "entry": "Edit: 002-build-register-precompact-settings.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:08:56Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" add ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:09:29Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nss = pathlib.Path(\"D:/my_ai_projects/proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:35:12Z",
+      "tool": "Bash",
+      "entry": "Bash: B=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog\"\necho \"===",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:35:13Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" 2>/dev/null; echo ---",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T01:35:56Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la --time-style=+\"%m-%d %H:%M\" \"D:/my_ai_projects/project_test_repos/sr_dev_",
+      "session": "current"
+    }
+  ]
+}
