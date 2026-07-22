@@ -67,14 +67,16 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nPYTHONIOENCODING=utf-8",
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" add framew",
     "Write: gen_216_tasks.py",
     "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so",
     "Bash: PYTHONIOENCODING=utf-8 python - <<'EOF'\nimport sys, urllib.request, re\nr = urlli",
     "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
-    "Write: gen_251_tasks.py"
+    "Write: gen_251_tasks.py",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so",
+    "Bash: PYTHONIOENCODING=utf-8 python - <<'EOF'\nimport sys, urllib.request, re\nhtml = ur",
+    "Write: gen_252_tasks.py"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -106,11 +108,11 @@
   },
   "pipeline_state_250": {
     "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/251-market-build-portfolio-hero.md",
+    "backlog_path": "docs/backlog/252-market-build-portfolio-isagawa-overview.md",
     "route": "default",
-    "task_folder": "tasks/portfolio-hero/",
-    "task_count": 5,
+    "task_folder": "tasks/portfolio-isagawa/",
+    "task_count": 3,
     "parallel_with": "216 (reference-data-objects)",
-    "prior": "250 live at https://solosza.github.io/ (validated 7/7)"
+    "prior": "251 hero live (validated 9/9)"
   }
 }
