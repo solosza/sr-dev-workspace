@@ -42,6 +42,11 @@ Process the user's selected quick action on the current review item. Includes me
    - If worktree branch exists: follow-up pipeline reuses the SAME worktree (extends branch)
    - Record `reuse_worktree: true` and existing branch name in follow-up backlog
    - Record the new backlog number as `followup_backlog`
+
+6b. **Batch execution routing (after all actions in this review session are processed):**
+   - If the session produced 2+ `iterate` follow-up backlogs → invoke `/spawn-agent-swarm [followup-numbers]` to build and run them in parallel (isolated per-agent state, no shared-file contention — this is the standing swarm path, not a one-off script)
+   - If exactly 1 follow-up → `/kernel/execute-pipeline [number]` as usual, no swarm overhead
+   - Never hand-roll parallel `run-task.sh` invocations outside `/spawn-agent-swarm` — the skill already provides the manifest + per-agent isolation + monitor this needs
 7. For `reject` action **with worktree branch**:
    a. Remove worktree: `git worktree remove [worktree_path]` (force if needed)
    b. Delete branch: `git branch -D [branch]` (force delete, work is being discarded)
