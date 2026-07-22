@@ -44,8 +44,17 @@ from pathlib import Path
 _HOOK_DIR = Path(__file__).resolve().parent          # .claude/hooks/
 _WORKSPACE_ROOT = _HOOK_DIR.parent.parent            # workspace root
 STATE_DIR = _WORKSPACE_ROOT / '.claude' / 'state'
-SESSION_STATE = STATE_DIR / 'session_state.json'
 ACTIONS_LOG = STATE_DIR / 'actions.jsonl'
+
+# Agent-scoped session state: use per-agent file when KERNEL_AGENT_ID is set
+_agent_id = os.environ.get('KERNEL_AGENT_ID')
+if _agent_id:
+    SESSION_STATE = STATE_DIR / f'agent-{_agent_id}-session-state.json'
+else:
+    SESSION_STATE = STATE_DIR / 'session_state.json'
+
+sys.path.insert(0, str(_HOOK_DIR))
+from state_io import atomic_write_json
 
 # Bash commands that are always allowed through gates (read-only / safe)
 # NOTE: These still increment the counter — they just don't get blocked.
@@ -86,17 +95,14 @@ def read_state(state_file: Path) -> dict:
     if not state_file.exists():
         return {}
     try:
-        return json.loads(state_file.read_text(encoding='utf-8'))
+        return json.loads(state_file.read_text(encoding='utf-8-sig'))
     except:
         return {}
 
 
-def write_state(state_file: Path, state: dict):
-    """Write state back to file."""
-    try:
-        state_file.write_text(json.dumps(state, indent=2), encoding='utf-8')
-    except:
-        pass  # Best effort - don't block on write failure
+def write_state(state_file: Path, state: dict, schema_key: str = "session_state"):
+    """Write state through atomic helper with schema validation."""
+    atomic_write_json(str(state_file), state, schema_key)
 
 
 def smart_block(missing: str, fix_command: str, fix_description: str):
@@ -149,7 +155,7 @@ def check_and_increment_counter(session_state: dict, safe_bash: bool) -> int:
         token = str(uuid.uuid4())[:8]
         session_state['pending_anchor_token'] = token
         session_state['anchor_token_confirmed'] = False
-        write_state(SESSION_STATE, session_state)
+        write_state(SESSION_STATE, session_state, "session_state")
 
         smart_block(
             missing=f"{actions_limit} actions since last anchor ({actions_since} actions). Token: {token}",
@@ -160,7 +166,7 @@ def check_and_increment_counter(session_state: dict, safe_bash: bool) -> int:
     # Increment AFTER check passes (action will proceed)
     actions_since += 1
     domain_state['actions_since_anchor'] = actions_since
-    write_state(workflow_file, domain_state)
+    write_state(workflow_file, domain_state, "workflow")
 
     return actions_since
 

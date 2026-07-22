@@ -9,6 +9,7 @@ This enforces the learn-after-fix loop in the kernel.
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 from datetime import datetime
@@ -18,8 +19,16 @@ from datetime import datetime
 _HOOK_DIR = Path(__file__).resolve().parent          # .claude/hooks/
 _WORKSPACE_ROOT = _HOOK_DIR.parent.parent            # workspace root
 STATE_DIR = _WORKSPACE_ROOT / '.claude' / 'state'
-SESSION_STATE = STATE_DIR / 'session_state.json'
 DEBUG_LOG = STATE_DIR / 'hook_debug.log'
+
+_agent_id = os.environ.get('KERNEL_AGENT_ID')
+if _agent_id:
+    SESSION_STATE = STATE_DIR / f'agent-{_agent_id}-session-state.json'
+else:
+    SESSION_STATE = STATE_DIR / 'session_state.json'
+
+sys.path.insert(0, str(_HOOK_DIR))
+from state_io import atomic_write_json
 
 
 def debug_log(message: str):
@@ -49,18 +58,18 @@ def read_state(state_file: Path) -> dict:
     if not state_file.exists():
         return {}
     try:
-        return json.loads(state_file.read_text(encoding='utf-8'))
+        return json.loads(state_file.read_text(encoding='utf-8-sig'))
     except:
         return {}
 
 
 def write_state(state_file: Path, state: dict):
-    """Write state back to file."""
+    """Write state back to file using atomic helper."""
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     try:
-        state_file.write_text(json.dumps(state, indent=2), encoding='utf-8')
-    except:
-        pass  # Best effort
+        atomic_write_json(str(state_file), state, "session_state")
+    except Exception:
+        pass
 
 
 def is_test_command(command: str) -> bool:

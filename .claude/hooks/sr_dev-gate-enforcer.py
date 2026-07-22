@@ -2,12 +2,34 @@
 """Sr Dev Gate Enforcer - thin orchestrator using shared validators."""
 
 import json
+import os
 import sys
 from pathlib import Path
 
-# Resolve isagawa-kernel path: hook is at workspace/.claude/hooks/this.py
-# parents[2] = workspace, parents[3] = project_test_repos, parents[4] = my_ai_projects
-kernel_path = str(Path(__file__).resolve().parents[4] / 'isagawa-kernel')
+_HOOK_DIR = Path(__file__).resolve().parent          # .claude/hooks/
+_WORKSPACE_ROOT = _HOOK_DIR.parent.parent            # workspace root
+STATE_DIR = _WORKSPACE_ROOT / '.claude' / 'state'
+
+_agent_id = os.environ.get('KERNEL_AGENT_ID')
+if _agent_id:
+    SESSION_STATE = STATE_DIR / f'agent-{_agent_id}-session-state.json'
+else:
+    SESSION_STATE = STATE_DIR / 'session_state.json'
+
+sys.path.insert(0, str(_HOOK_DIR))
+from state_io import atomic_write_json
+
+# Resolve isagawa-kernel path by walking up from hook file until we find the
+# directory containing isagawa-kernel (works in both main workspace and worktrees)
+_search = _HOOK_DIR
+while _search != _search.parent:
+    _candidate = _search.parent / 'isagawa-kernel'
+    if _candidate.is_dir():
+        kernel_path = str(_candidate)
+        break
+    _search = _search.parent
+else:
+    kernel_path = ''
 sys.path.insert(0, kernel_path)
 
 try:
@@ -30,8 +52,7 @@ def main():
         if common.should_skip(file_path):
             sys.exit(0)
 
-        session_state_path = Path('.claude/state/session_state.json')
-        violations = state_validation.check(str(session_state_path))
+        violations = state_validation.check(str(SESSION_STATE))
         if violations:
             common.state_block(violations)
 

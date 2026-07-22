@@ -113,6 +113,23 @@ When `resume_step` is set:
 2. Skip to the indicated step
 3. Continue from there
 
+## State File Routing (KERNEL_AGENT_ID)
+
+When `KERNEL_AGENT_ID` is set (exported by run-task.sh), all state file paths route to per-agent files:
+
+| State File | Without KERNEL_AGENT_ID | With KERNEL_AGENT_ID=`{id}` |
+|------------|------------------------|----------------------------|
+| Session state | `session_state.json` | `agent-{id}-session-state.json` |
+| Workflow state | `{domain}_workflow.json` | `agent-{id}-workflow.json` |
+| Actions log | `actions.jsonl` | `agent-{id}-actions.jsonl` |
+
+This applies to Steps 1, 5, and 6 above — every read/write of session state or workflow state must resolve the correct filename based on whether `KERNEL_AGENT_ID` is set.
+
+**One-shot agent write constraint:** One-shot agents (spawned by run-task.sh with `one_shot: true`) must NEVER write the parent `session_state.json`. They read and write only their routed `agent-{id}-session-state.json`. The parent file is reserved for the interactive session or orchestrator. Violating this causes state clobber — the agent's session-start/exit writes overwrite the parent's anchor state, `context`, and `pipeline_state`, requiring full recovery.
+
+See `.claude/references/agent-identity-model.md` for the full ID-kind taxonomy and filename derivation rules.
+
 ## State File Location
 
-`.claude/state/session_state.json`
+`.claude/state/session_state.json` (parent/default)
+`.claude/state/agent-{KERNEL_AGENT_ID}-session-state.json` (per-agent, when routed)
