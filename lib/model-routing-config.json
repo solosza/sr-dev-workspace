@@ -1,13 +1,13 @@
 {
-  "default_model": "claude-opus-4-6",
+  "default_model": "claude-opus-4-8",
   "tiers": {
     "opus": {
-      "model_id": "claude-opus-4-6",
+      "model_id": "claude-opus-4-8",
       "description": "Architecture, complex code, production precision, multi-file coordination",
       "keywords": ["architecture", "refactor", "security", "migration", "multi-file", "production", "critical"]
     },
     "sonnet": {
-      "model_id": "claude-sonnet-4-6",
+      "model_id": "claude-sonnet-5",
       "description": "Standard builds, test writing, research synthesis, moderate complexity",
       "keywords": ["implement", "write", "create", "update", "test", "research"]
     },
