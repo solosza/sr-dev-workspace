@@ -75,8 +75,6 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.",
-    "Bash: PYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request, re\nhtml = urllib.",
     "Bash: for i in 1 2 3; do\nPYTHONIOENCODING=utf-8 python -c \"\nimport sys, urllib.request",
     "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" checkout b",
@@ -84,7 +82,9 @@
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nsed -n '1,45p' \"$H/fra",
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nPYTHONIOENCODING=utf-8",
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" add -A fra",
-    "Write: gen_219_tasks.py"
+    "Write: gen_219_tasks.py",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so",
+    "Write: gen_256_tasks.py"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -116,12 +116,12 @@
   },
   "pipeline_state_250": {
     "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/255-market-build-portfolio-evidence.md",
+    "backlog_path": "docs/backlog/256-market-build-portfolio-case-study.md",
     "route": "default",
-    "task_folder": "tasks/portfolio-evidence/",
+    "task_folder": "tasks/portfolio-case-study/",
     "task_count": 4,
-    "parallel_with": "217 + 262",
-    "prior": "250-254 live and validated"
+    "parallel_with": "219 (reference-tests-db, V3 exit gate) + 262 (runtask-hardening)",
+    "prior": "250-255 live and validated"
   },
   "pipeline_state_262": {
     "input_mode": "existing_backlog",
