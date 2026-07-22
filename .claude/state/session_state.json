@@ -5,20 +5,24 @@
   "context": {
     "current_task": null,
     "task_folder": "tasks/anchor-ceremony-v2/",
-    "progress": "245 batch COMPLETE 9/9, 0 skipped (inner L3 claims: real compaction fired hook, Gate 3 block observed, ledger survived). Orchestrator validation: AC-01,02,03,04,06,09 PASS; AC-05 sub-check FAILED — 244 routing section ('State File Routing (KERNEL_AGENT_ID)') MISSING from worktree anchor.md; branch has NO committed anchor.md changes (edits uncommitted in working dir). Env: wedge receded to ~doc4 absolute threshold; 208 stays ENV-BLOCKED.",
+    "progress": "245 batch COMPLETE 9/9, 0 skipped (inner L3 claims: real compaction fired hook, Gate 3 block observed, ledger survived). Orchestrator validation: AC-01,02,03,04,06,09 PASS; AC-05 sub-check FAILED \u2014 244 routing section ('State File Routing (KERNEL_AGENT_ID)') MISSING from worktree anchor.md; branch has NO committed anchor.md changes (edits uncommitted in working dir). Env: wedge receded to ~doc4 absolute threshold; 208 stays ENV-BLOCKED.",
     "last_completed": "245 gate validation first pass (7 of 8 checkable gates green, AC-05 red)",
     "next_step": "1) Diagnose AC-05: worktree git status, anchor.md wc/diff vs main, iteration logs for tasks 005/006. 2) Restore routing section on branch, commit ALL 245 deliverables (currently uncommitted). 3) Re-validate, merge, reconcile settings.local.json + actions_limit 50 on MAIN. 4) Launch 214 (HMSA DB slice) + 246 in PARALLEL worktrees. 5) needs_restart after batches (PreCompact hook loads at startup; restart mid-batch kills runners).",
-    "notes": "Worktree: agent-af89ba412ddacf936. AC-05 evidence: grep KERNEL_AGENT_ID in worktree anchor.md = 0 hits, but ledger/kind/window/compaction greps all present — file was likely rewritten from a stale base by task 005 (its one-shot may have read main's PRE-244 anchor.md via a stale path, or rewrote wholesale). RULE ZERO: read iteration_5/6 logs before concluding. HMSA chain after merge: 214-229 sequential; 208 waits env fix. Orderly app on 8017; repro scripts in scratchpad probe3doc/."
+    "notes": "Worktree: agent-af89ba412ddacf936. AC-05 evidence: grep KERNEL_AGENT_ID in worktree anchor.md = 0 hits, but ledger/kind/window/compaction greps all present \u2014 file was likely rewritten from a stale base by task 005 (its one-shot may have read main's PRE-244 anchor.md via a stale path, or rewrote wholesale). RULE ZERO: read iteration_5/6 logs before concluding. HMSA chain after merge: 214-229 sequential; 208 waits env fix. Orderly app on 8017; repro scripts in scratchpad probe3doc/."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
-    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
-    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
-    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSB=\"C:/Users/solos/"
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSB=\"C:/Users/solos/",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
+    "Bash: docker version --format \"server: {{.Server.Version}}\" 2>&1 | head -3; docker ps ",
+    "Bash: ls \"C:/Program Files/Docker/Docker/Docker Desktop.exe\" 2>/dev/null && echo insta",
+    "Bash: for i in $(seq 1 24); do\n  if docker version --format \"{{.Server.Version}}\" 2>/d",
+    "Bash: P=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/hmsa-qa-platfo",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nmkdir -p \"$MAIN/tas",
+    "Write: 000-index.md",
+    "Write: gate-contract.md",
+    "Bash: python - <<'PYEOF'\nimport pathlib\nT = pathlib.Path(\"D:/my_ai_projects/project_te"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -29,15 +33,14 @@
   "needs_learn_reason": null,
   "pipeline_state": {
     "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/245-kernel-build-anchor-ceremony-v2.md",
+    "backlog_path": "docs/backlog/214-qa-build-harness-db-slice.md",
+    "raw_input": "214",
     "route": "default",
-    "task_folder": "tasks/anchor-ceremony-v2/",
+    "task_folder": "tasks/harness-db-slice/",
     "task_count": 9,
     "resume_step": null,
-    "worktree_mode": true,
-    "worktree_branch": "worktree-agent-af89ba412ddacf936",
-    "merge_status": "pending_review",
-    "execution": "batch complete 9/9; validation in progress, AC-05 red"
+    "parallel_with": "246 (jit-injection-phase1)",
+    "prior_pipeline": "245 merged to main, complete"
   },
   "pipeline_mode": null,
   "agent_id": null,
