@@ -73,19 +73,21 @@ kill_process_tree() {
 # --- Pre-initialize session state ---
 # Avoids deadlock where agent can't write session_started=true
 # because Claude Code's sensitive file guard blocks .claude/state/ writes
+# $1: key=value pairs  $2: optional explicit state file path (for per-agent routing)
 pre_init_state() {
   local key_values="$1"  # e.g. "session_started=True,one_shot=True"
+  local state_file="${2:-$STATE_FILE}"
   $PYTHON_CMD -c "
 import json, pathlib
-f = pathlib.Path('$STATE_FILE')
-s = json.loads(f.read_text()) if f.exists() else {}
+f = pathlib.Path('$state_file')
+s = json.loads(f.read_text(encoding='utf-8-sig')) if f.exists() else {}
 for kv in '$key_values'.split(','):
     k, v = kv.strip().split('=')
     s[k] = True if v == 'True' else (False if v == 'False' else v)
 f.parent.mkdir(parents=True, exist_ok=True)
 f.write_text(json.dumps(s, indent=2))
 " || {
-    echo "ERROR: Failed to pre-initialize state in $STATE_FILE"
+    echo "ERROR: Failed to pre-initialize state in $state_file"
     exit 1
   }
 }
@@ -98,14 +100,14 @@ sf = pathlib.Path('$STATE_FILE')
 if not sf.exists():
     print('  (no state file)')
 else:
-    s = json.loads(sf.read_text())
+    s = json.loads(sf.read_text(encoding='utf-8-sig'))
     print('  session_started:', s.get('session_started'))
     print('  one_shot:', s.get('one_shot'))
     d = s.get('domain', '')
     if d:
         wf = sf.parent / (d + '_workflow.json')
         if wf.exists():
-            w = json.loads(wf.read_text())
+            w = json.loads(wf.read_text(encoding='utf-8-sig'))
             print('  anchored:', w.get('anchored'))
             print('  completed:', len(w.get('completed_tasks', [])))
             print('  skipped:', len(w.get('skipped_tasks', [])))
@@ -168,14 +170,14 @@ import json, pathlib
 sf = pathlib.Path('$STATE_FILE')
 if not sf.exists():
     exit(0)
-s = json.loads(sf.read_text())
+s = json.loads(sf.read_text(encoding='utf-8-sig'))
 domain = s.get('domain', '')
 if not domain:
     exit(0)
 wf = sf.parent / (domain + '_workflow.json')
 if not wf.exists():
     exit(0)
-w = json.loads(wf.read_text())
+w = json.loads(wf.read_text(encoding='utf-8-sig'))
 task = w.get('current_task')
 if task and task not in w.get('skipped_tasks', []):
     if 'skipped_tasks' not in w:

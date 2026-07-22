@@ -148,12 +148,12 @@ run_claude() {
     claude_env_args+=("-u" "$var")
   done < <(env | grep -i '^CLAUDECODE' || true)
 
-  # Build the full command array
+  # Build the full command array (export KERNEL_AGENT_ID for state isolation)
   local full_cmd=()
   if [ ${#claude_env_args[@]} -gt 0 ]; then
-    full_cmd=(env "${claude_env_args[@]}" claude "${cmd_args[@]}" "$prompt")
+    full_cmd=(env "${claude_env_args[@]}" KERNEL_AGENT_ID="${TASK_SUBFOLDER}" claude "${cmd_args[@]}" "$prompt")
   else
-    full_cmd=(claude "${cmd_args[@]}" "$prompt")
+    full_cmd=(env KERNEL_AGENT_ID="${TASK_SUBFOLDER}" claude "${cmd_args[@]}" "$prompt")
   fi
 
   # File-based output capture: write directly to logfile, no $() substitution
@@ -286,7 +286,36 @@ else:
   echo ""
 
   # Pre-init state (session_started + one_shot)
-  pre_init_state "session_started=True,one_shot=True"
+  # Route to per-agent state file when TASK_SUBFOLDER is set (state isolation)
+  if [ -n "$TASK_SUBFOLDER" ]; then
+    AGENT_STATE_FILE="${LOG_DIR}/agent-${TASK_SUBFOLDER}-session-state.json"
+    pre_init_state "session_started=True,one_shot=True" "$AGENT_STATE_FILE"
+  else
+    pre_init_state "session_started=True,one_shot=True"
+  fi
+
+  # Seed per-agent workflow file if it doesn't exist (state isolation)
+  if [ -n "$TASK_SUBFOLDER" ]; then
+    AGENT_WORKFLOW="${LOG_DIR}/agent-${TASK_SUBFOLDER}-workflow.json"
+    if [ ! -f "$AGENT_WORKFLOW" ]; then
+      $PYTHON_CMD -c "
+import json, pathlib
+wf = pathlib.Path('$AGENT_WORKFLOW')
+wf.write_text(json.dumps({
+    'cycling': False, 'cycling_complete': False,
+    'task_folder': 'tasks/${TASK_SUBFOLDER}/',
+    'total_tasks': None, 'current_task': None,
+    'completed_tasks': [], 'skipped_tasks': [],
+    'attempts_on_current': 0,
+    'complete': False, 'complete_timestamp': None,
+    'anchored': True, 'anchor_timestamp': None,
+    'actions_since_anchor': 0, 'last_anchor_token_confirmed': None,
+    'timestamp': None
+}, indent=2))
+print('  [SEED] Created ' + wf.name)
+" 2>/dev/null
+    fi
+  fi
 
   # Identify current task from workflow state
   CURRENT_TASK=$($PYTHON_CMD -c "

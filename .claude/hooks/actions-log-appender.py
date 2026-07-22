@@ -10,6 +10,7 @@ Backward-compatible summary: actions_log array in session_state.json (last 10 en
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -17,15 +18,23 @@ from pathlib import Path
 _HOOK_DIR = Path(__file__).resolve().parent
 _WORKSPACE_ROOT = _HOOK_DIR.parent.parent
 STATE_DIR = _WORKSPACE_ROOT / '.claude' / 'state'
-SESSION_STATE = STATE_DIR / 'session_state.json'
 ACTIONS_LOG = STATE_DIR / 'actions.jsonl'
+
+_agent_id = os.environ.get('KERNEL_AGENT_ID')
+if _agent_id:
+    SESSION_STATE = STATE_DIR / f'agent-{_agent_id}-session-state.json'
+else:
+    SESSION_STATE = STATE_DIR / 'session_state.json'
+
+sys.path.insert(0, str(_HOOK_DIR))
+from state_io import atomic_write_json
 
 
 def read_state() -> dict:
     if not SESSION_STATE.exists():
         return {}
     try:
-        return json.loads(SESSION_STATE.read_text(encoding='utf-8'))
+        return json.loads(SESSION_STATE.read_text(encoding='utf-8-sig'))
     except Exception:
         return {}
 
@@ -33,7 +42,7 @@ def read_state() -> dict:
 def write_state(state: dict):
     try:
         STATE_DIR.mkdir(parents=True, exist_ok=True)
-        SESSION_STATE.write_text(json.dumps(state, indent=2), encoding='utf-8')
+        atomic_write_json(str(SESSION_STATE), state, "session_state")
     except Exception:
         pass
 

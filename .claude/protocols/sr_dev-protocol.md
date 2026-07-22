@@ -49,6 +49,7 @@ This workspace (`D:\my_ai_projects\project_test_repos\sr_dev_test`) is the dev w
 | Auto-Approve Hook | `.claude/hooks/auto-approve-claude-writes.py` |
 | Actions Log Appender | `.claude/hooks/actions-log-appender.py` |
 | Test Failure Detector | `.claude/hooks/test-failure-detector.py` |
+| Agent Identity Model | `.claude/references/agent-identity-model.md` |
 
 ### Lessons Learned
 → `.claude/lessons/lessons.md`
