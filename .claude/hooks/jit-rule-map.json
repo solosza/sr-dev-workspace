@@ -1,0 +1,26 @@
+{
+  "$schema": "rule-map-v1",
+  "rules": [
+    {
+      "id": "S01-verify-before-write",
+      "tool": "Write|Edit",
+      "trigger": {
+        "type": "session_state",
+        "condition": "file_not_read_this_session"
+      },
+      "snippet": "RULE ZERO: You haven't Read this file in this session. Read it first to verify current contents before writing.",
+      "priority": 1,
+      "category": "safety"
+    },
+    {
+      "id": "S12-no-unnecessary-agents",
+      "tool": "Agent",
+      "trigger": {
+        "type": "always"
+      },
+      "snippet": "RULE: Only spawn agents for prod-test or run-task.sh. If you can do this work yourself (read, search, analyze), do it yourself.",
+      "priority": 1,
+      "category": "safety"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "anchor_timestamp": "2026-07-22T05:30:00Z",
+  "actions_count": 47,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-22T02:01:10Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:01:34Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:02:16Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:02:29Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:02:42Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:03:05Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSB=\"C:/Users/solos/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:03:20Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:03:37Z",
+      "tool": "Bash",
+      "entry": "Bash: docker version --format \"server: {{.Server.Version}}\" 2>&1 | head -3; docker ps ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:03:50Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"C:/Program Files/Docker/Docker/Docker Desktop.exe\" 2>/dev/null && echo insta",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:04:00Z",
+      "tool": "Bash",
+      "entry": "Bash: for i in $(seq 1 24); do\n  if docker version --format \"{{.Server.Version}}\" 2>/d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:04:07Z",
+      "tool": "Bash",
+      "entry": "Bash: P=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/hmsa-qa-platfo",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:04:29Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nmkdir -p \"$MAIN/tas",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:04:42Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:05:03Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:05:46Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'PYEOF'\nimport pathlib\nT = pathlib.Path(\"D:/my_ai_projects/project_te",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:06:01Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:06:44Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nmkdir -p \"$MAIN/tas",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:07:54Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:07Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:14Z",
+      "tool": "Write",
+      "entry": "Write: 001-build-write-rule-map.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:18Z",
+      "tool": "Write",
+      "entry": "Write: 002-build-write-injector-hook.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:22Z",
+      "tool": "Write",
+      "entry": "Write: 003-build-register-injector-settings.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:26Z",
+      "tool": "Write",
+      "entry": "Write: 004-test-l1-files-registration-advisory.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:30Z",
+      "tool": "Write",
+      "entry": "Write: 005-test-l2-injection-behavior.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:38Z",
+      "tool": "Write",
+      "entry": "Write: 006-test-l3-live-injection.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:08:46Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython - <<'EOF'\nim",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:09:56Z",
+      "tool": "Bash",
+      "entry": "Bash: for wt in agent-a637756e23866798b agent-aebea906db56e78a7; do\n  d=\"D:/my_ai_proj",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:57:33Z",
+      "tool": "Bash",
+      "entry": "Bash: for wt in agent-a637756e23866798b:harness-db-slice agent-aebea906db56e78a7:jit-i",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:57:54Z",
+      "tool": "Bash",
+      "entry": "Bash: d=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:58:16Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport urllib.request, sys\ntry:\n    r = urllib.request.urlopen('http",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:58:43Z",
+      "tool": "Bash",
+      "entry": "Bash: nslookup mcr.microsoft.com 2>&1 | tail -4; python -c \"\nimport socket, ssl, sys\nf",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:58:56Z",
+      "tool": "Bash",
+      "entry": "Bash: docker pull mcr.microsoft.com/mssql/server:2022-latest 2>&1 | tail -5",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:59:18Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport socket, ssl, sys\ntry:\n    s = socket.create_connection(('west",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T02:59:44Z",
+      "tool": "Bash",
+      "entry": "Bash: sqllocaldb info 2>&1 | head -5; echo ---; where sqlcmd 2>nul; ls \"C:/Program Fil",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:00:13Z",
+      "tool": "Bash",
+      "entry": "Bash: pip install pyodbc 2>&1 | tail -2; python -c \"import pyodbc, sys; sys.stdout.wri",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:00:33Z",
+      "tool": "Bash",
+      "entry": "Bash: d=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:00:56Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" diff main ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:01:18Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ncat \"$H/harness/orderl",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:01:47Z",
+      "tool": "Bash",
+      "entry": "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ndocker compose -f \"$H/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:02:31Z",
+      "tool": "Write",
+      "entry": "Write: 005-build-update-db-config.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:02:38Z",
+      "tool": "Write",
+      "entry": "Write: 008-test-l2-container-schema-sp.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:02:44Z",
+      "tool": "Write",
+      "entry": "Write: 009-test-l3-app-on-sqlserver.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:02:49Z",
+      "tool": "Bash",
+      "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" add ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T03:04:24Z",
+      "tool": "Bash",
+      "entry": "Bash: d=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agent",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:26:58Z",
+      "tool": "Bash",
+      "entry": "Bash: for pair in a6a13404a71cefe54:harness-db-slice aebea906db56e78a7:jit-injection-p",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:27:21Z",
+      "tool": "Bash",
+      "entry": "Bash: tasklist //FI \"IMAGENAME eq claude.exe\" 2>/dev/null | tail -3; wmic process wher",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T05:27:52Z",
+      "tool": "Bash",
+      "entry": "Bash: d=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agent",
+      "session": "current"
+    }
+  ]
+}
