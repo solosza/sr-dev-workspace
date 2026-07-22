@@ -1,6 +1,6 @@
 # RT Compliance Business Plan — Pre-Submission Validation Gate
 
-**Backlog:** 274 | **Status:** DRAFT — in progress (tasks 002-004 build this document; task 005 gates it)
+**Backlog:** 274 | **Status:** Phase-1 plan complete (gate BP-05 passed) + Phase 2+ roadmap added
 **Grounded in:** `compliance-research/domain-and-compliance.md`, `compliance-research/isagawa-feasibility.md`, `compliance-research/market-and-switching.md`, `compliance-research/go-no-go.md` (backlog 269), plus `research-notes.md` (task 001, this backlog).
 
 ---
@@ -9,7 +9,7 @@
 
 This product is a **pre-submission compliance / validation gate**. It reads the RT's existing PCC charting and the CPT code about to be billed, runs eligibility and documentation checks against that existing work, and flags or blocks unsupported claims before they reach a payer — with a full audit ledger recording why every verdict was reached.
 
-**It never auto-charts. It never auto-bills. It never automates patient filtering.** It does not perform the clinical work, select patients, write the chart, or submit the claim. A human — the RT, and where the check is judgment-based, a mandatory human countersign — remains the actor for every one of those steps. This boundary is not a feature; it is the liability firewall the rest of this plan is built on (see Risk & Compliance Posture below), and it is carried through every section of this document, not stated once and forgotten.
+**In Phase 1 it never auto-charts, never auto-bills, and never automates patient filtering** — it adds exactly one step, a check, between finished charting and claim submission. Broader workflow automation (charting-assist, patient-filtering) is a deliberate **Phase 2+ roadmap** item — the original and still-intended long-term direction, kept explicitly on the roadmap (see Roadmap), not Phase 1. Two invariants hold in **every** phase and are the liability firewall the rest of this plan is built on: **billing *submission* is never automated**, and **no automated step ever acts on a clinical or billing decision without a human sign-off — human-in-the-loop is mandatory wherever a decision applies.** Every automated step, in any phase, only ever *proposes*; a human *approves*. This is carried through every section of this document, not stated once and forgotten.
 
 ---
 
@@ -39,7 +39,7 @@ The product is a **pre-submission validate-and-flag gate** that sits between the
 3. **Flags or blocks** any claim that fails a check — never silently denies, never silently approves. A block means "do not submit this claim without resolving the flag," not "this patient cannot receive care."
 4. **Writes an audit-ledger entry** for every verdict — which checks passed, which failed, the judgment rationale where applicable, and the human countersign — so "why was CPT X billed for patient Y on date Z" has a queryable answer for the first time (`isagawa-feasibility.md` §5).
 
-**Restating the scope boundary in-place, because it is the design, not a caveat on the design:** the gate validates over the RT's existing charting and the RT's proposed CPT code. It does not chart, it does not select which patients to see, and it does not submit claims. The RT keeps doing the clinical work and keeps doing the charting; this system adds one new step — a check — between "charting is done" and "claim goes out." That is the entire product surface. Nothing about "automating billing" or "automating charting" is in scope, now or as a stated future phase, because the vendor-side liability case below depends on that boundary holding.
+**Restating the scope boundary in-place, because it is the design, not a caveat on the design:** the gate validates over the RT's existing charting and the RT's proposed CPT code. It does not chart, it does not select which patients to see, and it does not submit claims. The RT keeps doing the clinical work and keeps doing the charting; this system adds one new step — a check — between "charting is done" and "claim goes out." That is the entire product surface. Automating billing *submission* is never in scope in any phase — that line is permanent, because the vendor-side liability case below depends on it. Automating the *drafting* of charting or the *surfacing* of the patient list is out of scope for Phase 1 but is on the Phase 2+ roadmap (see Roadmap); there too, every automated step only ever *proposes* and a human approves. What never happens, in any phase, is an automated step acting on a clinical or billing decision without a human sign-off.
 
 The architecture maps directly onto Isagawa's existing 3-layer pattern, with one addition (`isagawa-feasibility.md` §1):
 
@@ -97,6 +97,26 @@ Three models were evaluated (`research-notes.md` §2):
 **Proof point:** RT-performed validation of the judgment layer's rubric outputs against the RT's own clinical judgment (the accuracy-baseline precondition named in Proof/Accuracy Model above) doubles as the GTM proof artifact — "here is where the system agreed with your own RT's judgment, and here is where it correctly deferred to human review" is a concrete, facility-specific demonstration, not a generic accuracy claim.
 
 **Positioning — liability/audit-defensibility, not automation speed.** This is the central differentiation decision, and it is deliberate: PointClickCare's own Billing Advisor (part of Advisor Suite) is already available today, at zero incremental cost, to every SNF already on the PCC EHR (`research-notes.md` §3), and PCC's own press-release language frames it as **revenue-forward** — finding missed/under-billed charges — not compliance-forward (`research-notes.md` §3). Competing on automation speed or "catches more charges" against a free, EHR-native incumbent is a losing position. This product instead leads with what Billing Advisor does not claim: a structural, audit-ready, never-auto-bill compliance gate whose entire value proposition is liability reduction and audit-defensibility for claims *already* being billed — a narrower, RT-specific judgment wedge (`go-no-go.md`), not a general "AI-native billing platform" claim.
+
+---
+
+## Roadmap — Phased Direction (Phase 1 now, Phase 2+ future)
+
+The compliance/validation gate above is **Phase 1** — deliberately the entire near-term product and pitch, and the wedge that gets in the door. It is not the ceiling. The original and still-intended long-term direction is a broader RT workflow platform, sequenced *after* the gate earns trust and the Phase-1 preconditions (BAA, PCC API access) clear. It is kept explicitly on the roadmap so it is not lost — but it is strictly **secondary**, and it is governed by two invariants that never relax in any phase.
+
+**Two invariants that hold in every phase:**
+
+- **Human-in-the-loop is mandatory wherever a human decision applies.** Every automated step *proposes*; a human *approves*. This is enforced structurally by the kernel (gated outputs + human-review checkpoints), not left to policy. No step that makes a clinical or billing decision ever acts without a human sign-off.
+- **Billing *submission* is never automated — permanently.** The system may assemble and prepare a claim; a human always approves before it reaches a payer. This is the FCA firewall from the Risk section below, and it is a property of every phase, not a Phase-1 limitation.
+
+**Phased sequence (each phase ships only after the prior earns trust; each is HITL-gated):**
+
+1. **Phase 1 — Compliance / validation gate (now).** Validate-and-flag over existing charting + proposed CPT; a human adjudicates every judgment flag. *(This document.)*
+2. **Phase 2 — Patient-filtering assist.** The system *proposes* the qualifying-patient census list from the EMR; the RT reviews and confirms who to see. Automates the *surfacing*, never the clinical decision to treat.
+3. **Phase 3 — Charting assist.** The system *drafts* the structured clinical assessment from vitals/orders/prior notes for the RT to review, edit, and **sign**. No chart is ever finalized under the RT's name without the RT's explicit sign-off — the draft is a starting point, not a submission.
+4. **Phase 4 — Billing preparation.** The system *assembles* the CPT-coded claim from signed charting for a human to **approve before submission**. This is claim *preparation*, not *submission* — the never-auto-submit invariant above applies here in full.
+
+Each later phase reuses the same 3-layer + judgment-layer + audit-ledger architecture and the same human-review gate; the platform grows by adding assist steps *in front of* the gate, never by removing the human from a decision. For an owner, this is the difference between adopting a one-feature tool and adopting the entry point to a governed RT workflow platform — without, at any phase, taking on auto-billing liability.
 
 ---
 
