@@ -1,0 +1,18 @@
+{"timestamp": "2026-07-22T08:21:47Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/\" | ", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:06Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/\" | grep -i \"", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:07Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/\" | grep -i \"gove", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:08Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/\" 2>/dev/null", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:14Z", "tool": "Bash", "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-go", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:16Z", "tool": "Bash", "entry": "Bash: grep -ril \"governance\\|governance.depth\\|governance-depth\\|151\" \"D:/my_ai_projec", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:24Z", "tool": "Bash", "entry": "Bash: grep -l \"151\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlo", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:40Z", "tool": "Bash", "entry": "Bash: grep -ril \"governance.depth\\|auto.approve.*scope\\|structured.*anchor\\|unsafe.*re", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:51Z", "tool": "Bash", "entry": "Bash: grep -n \"hooks.*py\\|settings.*json\\|abstain\" \"D:/my_ai_projects/project_test_rep", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:52Z", "tool": "Bash", "entry": "Bash: grep -n \"description\\|desc\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspa", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:53Z", "tool": "Bash", "entry": "Bash: grep -n \"redirection\\|>>\\\\|unsafe\" \"D:/my_ai_projects/project_test_repos/sr_dev_", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:22:54Z", "tool": "Bash", "entry": "Bash: grep -n \"table\\|structured\\|Evidence\" \"D:/my_ai_projects/project_test_repos/sr_d", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:23:00Z", "tool": "Bash", "entry": "Bash: grep -n \"specificity\\|concrete verb\\|checkable\" \"D:/my_ai_projects/project_test_", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:23:02Z", "tool": "Bash", "entry": "Bash: grep -n \"cross.reference\\|requirement.*deliverable\" \"D:/my_ai_projects/project_t", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:23:03Z", "tool": "Bash", "entry": "Bash: grep -n \"ledger\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:23:33Z", "tool": "Bash", "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/review-follow", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:24:09Z", "tool": "Write", "entry": "Write: 151-verdict.md", "session": "current", "agent_id": "verify-151"}
+{"timestamp": "2026-07-22T08:24:49Z", "tool": "Bash", "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/review-f", "session": "current", "agent_id": "verify-151"}

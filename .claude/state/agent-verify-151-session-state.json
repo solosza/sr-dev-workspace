@@ -1,0 +1,11 @@
+{
+  "session_started": true,
+  "one_shot": true,
+  "domain": "sr_dev",
+  "actions_log": [],
+  "anchor_token_confirmed": true,
+  "pending_anchor_token": null,
+  "timestamp": null,
+  "context": null,
+  "agent_id": "verify-151"
+}
