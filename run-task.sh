@@ -29,6 +29,10 @@ CONSECUTIVE_FAILS=0
 MAX_CONSECUTIVE_FAILS=4
 MAX_RESUME_RETRIES=2
 TASK_TIMEOUT=600  # 10 min per claude -p invocation (extraction tasks need more time)
+# Stall threshold: worst-case single iteration is fresh + empty-retry + 2 resume
+# retries = 4x TASK_TIMEOUT. Default leaves headroom above that so a legitimate
+# max-retry iteration never false-positives as a stall. Override via env. (RH-02)
+STALL_THRESHOLD_SECONDS="${STALL_THRESHOLD_SECONDS:-$((TASK_TIMEOUT * 5))}"
 SLEEP_BETWEEN=2
 EMPTY_OUTPUT_BACKOFF=$SLEEP_BETWEEN  # Exponential backoff for empty outputs (cap 30s)
 CURRENT_TASK=""   # Global: current task name, set before each run_claude call
@@ -179,7 +183,13 @@ run_claude() {
 
   if [ "$IS_WINDOWS" = true ]; then
     # Windows: run in background, poll for completion, kill tree on timeout
-    "${full_cmd[@]}" > "$logfile" 2>&1 &
+    # stdin explicitly closed (RH-04): claude -p, when stdin is not a TTY,
+    # waits up to 3s probing for piped input before proceeding (confirmed via
+    # claude.exe string: "no stdin data received in 3s ... redirect stdin
+    # explicitly: < /dev/null"). Without this, every invocation inherits the
+    # runner's stdin and pays that stall for nothing since a prompt is always
+    # passed as a CLI arg here, never via stdin.
+    "${full_cmd[@]}" < /dev/null > "$logfile" 2>&1 &
     local claude_pid=$!
     CLAUDE_PID=$claude_pid  # expose for cleanup trap
     local elapsed=0
@@ -206,7 +216,8 @@ run_claude() {
     CLAUDE_PID=""  # clear after completion
   else
     # Unix: timeout works correctly, use it directly
-    timeout "$TASK_TIMEOUT" "${full_cmd[@]}" > "$logfile" 2>&1 || true
+    # stdin explicitly closed (RH-04): see Windows branch comment above.
+    timeout "$TASK_TIMEOUT" "${full_cmd[@]}" < /dev/null > "$logfile" 2>&1 || true
   fi
 
   # Verify logfile has content
@@ -253,6 +264,28 @@ move_to_done() {
   fi
 }
 
+# --- Helper: commit-on-complete gate (RH-03) ---
+# Call immediately before every ALL_TASKS_COMPLETE banner. Scoped to the
+# deliverable (repo tree minus .claude/state runtime noise — heartbeat/lock/
+# actions-log churn every iteration, never the actual deliverable) so
+# complete never leaves an uncommitted deliverable on the branch.
+commit_on_complete() {
+  local dirty
+  dirty=$(git -C "$REPO" status --porcelain -- . ':!.claude/state')
+  if [ -z "$dirty" ]; then
+    return 0
+  fi
+  echo "[COMMIT] Dirty deliverable tree detected at complete. Committing..."
+  if git -C "$REPO" add -- . ':!.claude/state' && \
+     git -C "$REPO" commit -m "chore: commit deliverable on task completion (${TASK_SUBFOLDER:-default})" >/dev/null 2>&1; then
+    echo "[COMMIT] Deliverable committed."
+  else
+    echo "ERROR: Deliverable tree is dirty and commit failed. Uncommitted files:"
+    echo "$dirty"
+    exit 1
+  fi
+}
+
 # --- Banner ---
 echo "============================================"
 echo "  Isagawa Kernel - One-Shot Task Runner"
@@ -276,6 +309,19 @@ cd "$REPO"
 for i in $(seq 1 "$MAX_ITERATIONS"); do
   echo ""
   echo "=== Iteration $i/$MAX_ITERATIONS ==="
+
+  # Stall check (RH-02): inspect the PREVIOUS heartbeat's age (this iteration
+  # hasn't written a fresh one yet) before overwriting it. Catches a runner
+  # that stalled without a clean exit (missed its own trap) on a prior pass.
+  if ! check_stall "$HEARTBEAT_FILE" "$STALL_THRESHOLD_SECONDS" "$AGENT_ID"; then
+    echo ""
+    echo "============================================"
+    echo "  STALLED: heartbeat exceeded ${STALL_THRESHOLD_SECONDS}s with work remaining"
+    echo "  Completed: $COMPLETED"
+    echo "  Check logs: ${LOG_DIR}/${LOG_PREFIX:-}iteration_*.log"
+    echo "============================================"
+    exit 1
+  fi
 
   # Write heartbeat (RH-03): python json.dump, UTF-8 no BOM (lesson #49)
   $PYTHON_CMD -c "
@@ -316,6 +362,7 @@ else:
     if [ "$PRECHECK" = "all_done" ]; then
       echo "-> Pre-check: all tasks already complete/skipped in workflow state."
       move_to_done
+      commit_on_complete
       echo ""
       echo "============================================"
       echo "  ALL TASKS COMPLETE (detected at iteration start)"
@@ -477,6 +524,7 @@ else:
   if [ "$LAST_STATUS" = "all_done" ]; then
     COMPLETED=$((COMPLETED + 1))
     move_to_done
+    commit_on_complete
     echo ""
     echo "============================================"
     echo "  ALL TASKS COMPLETE"
@@ -493,6 +541,7 @@ else:
     COMPLETED=$((COMPLETED + 1))
     CONSECUTIVE_FAILS=0
     EMPTY_OUTPUT_BACKOFF=$SLEEP_BETWEEN  # Reset backoff on success
+    verify_completion_write "$CURRENT_TASK" "$AGENT_ID"
     echo ""
     echo "[STATE after]"
     print_state
@@ -528,6 +577,7 @@ else:
       if [ "$LAST_STATUS" = "all_done" ]; then
         COMPLETED=$((COMPLETED + 1))
         move_to_done
+        commit_on_complete
         echo ""
         echo "============================================"
         echo "  ALL TASKS COMPLETE (after resume)"
@@ -540,6 +590,7 @@ else:
         COMPLETED=$((COMPLETED + 1))
         CONSECUTIVE_FAILS=0
         RESUME_SUCCESS=true
+        verify_completion_write "$CURRENT_TASK" "$AGENT_ID"
         echo ""
         echo "[STATE after]"
         print_state
