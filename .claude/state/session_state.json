@@ -13,7 +13,7 @@
       {
         "ts": "2026-07-22T02:58:00Z",
         "kind": "failure",
-        "summary": "Docker registry blob downloads machine-blocked: MCR AND Docker Hub CDN EOF mid-transfer, TLS handshakes fine — do not retry pulls, it is not transient",
+        "summary": "Docker registry blob downloads machine-blocked: MCR AND Docker Hub CDN EOF mid-transfer, TLS handshakes fine \u2014 do not retry pulls, it is not transient",
         "refs": [
           "tasks/harness-db-slice/008",
           "backlog 224"
@@ -22,7 +22,7 @@
       {
         "ts": "2026-07-22T03:00:30Z",
         "kind": "constraint",
-        "summary": "Native SQL Server instance holds real databases (KCC) — pipelines may only touch orderly/orderly_v3",
+        "summary": "Native SQL Server instance holds real databases (KCC) \u2014 pipelines may only touch orderly/orderly_v3",
         "refs": [
           "tasks/harness-db-slice/008",
           "tasks/sql-server-interface/005"
@@ -31,7 +31,7 @@
       {
         "ts": "2026-07-22T05:28:00Z",
         "kind": "failure",
-        "summary": "run-task.sh batches lose completion signals (0-byte iteration logs) and can die silently — verify via iteration logs + artifacts, never trust runner state alone; fix pipeline 262 in flight",
+        "summary": "run-task.sh batches lose completion signals (0-byte iteration logs) and can die silently \u2014 verify via iteration logs + artifacts, never trust runner state alone; fix pipeline 262 in flight",
         "refs": [
           "docs/backlog/262-kernel-fix-runtask-hardening.md"
         ]
@@ -48,7 +48,7 @@
       {
         "ts": "2026-07-22T06:05:30Z",
         "kind": "constraint",
-        "summary": "KERNEL_BACKLOG_INTENT=1 marker must PREFIX the whole Bash command — one intent.py record per Bash call, never in a loop",
+        "summary": "KERNEL_BACKLOG_INTENT=1 marker must PREFIX the whole Bash command \u2014 one intent.py record per Bash call, never in a loop",
         "refs": [
           "backlog command step 3"
         ]
@@ -65,7 +65,7 @@
       {
         "ts": "2026-07-22T07:50:00Z",
         "kind": "decision",
-        "summary": "GitHub Pages CDN caches aggressively — orchestrator live checks use cache-busting (query param or size/sha comparison) before declaring content missing (253 false FAIL precedent)",
+        "summary": "GitHub Pages CDN caches aggressively \u2014 orchestrator live checks use cache-busting (query param or size/sha comparison) before declaring content missing (253 false FAIL precedent)",
         "refs": [
           "tasks/portfolio-architecture/gate-contract.md PA-04"
         ]
@@ -75,14 +75,16 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
-    "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\n{ ls \"$MAIN/docs/ba",
-    "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" status",
     "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" commit",
     "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 267 \"research AD",
     "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" log --",
-    "Write: 267-property-research-adu-laws-vegas-honolulu.md"
+    "Write: 267-property-research-adu-laws-vegas-honolulu.md",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" add ",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== 256 task ",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== 220 SOAP ",
+    "Write: gen_220_tasks.py",
+    "Write: gen_247_tasks.py",
+    "Write: gen_267_tasks.py"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -128,5 +130,18 @@
     "task_folder": "tasks/runtask-hardening/",
     "task_count": 6,
     "parallel_with": "217 (reference-tasks-db) + 254 (portfolio-architecture)"
+  },
+  "parallel_launch_2026-07-22": {
+    "set": [
+      "220",
+      "247",
+      "256",
+      "267"
+    ],
+    "held": [
+      "236 (reboot-gated)",
+      "248/249 (run-task/enforcement churn)"
+    ],
+    "runner": "262-hardened, router opus-4-8/sonnet-5"
   }
 }

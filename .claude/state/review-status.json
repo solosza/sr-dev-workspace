@@ -1091,13 +1091,19 @@
       "followup_backlog": "266",
       "source": "review-board 2026-07-22",
       "verified_at": "2026-07-22T08:25:36.353548+00:00"
+    },
+    "244": {
+      "status": "accepted",
+      "reviewed_at": "2026-07-22T18:35:58.363717+00:00",
+      "notes": "merged 0e49aa3 + battle-tested all night (per-agent isolation enabled every parallel batch); accepted to unblock 247",
+      "source": "orchestrator"
     }
   },
   "stats": {
     "total_completed": 232,
-    "reviewed": 179,
+    "reviewed": 180,
     "unreviewed": 53,
-    "accepted": 165,
+    "accepted": 166,
     "needs_iteration": 2,
     "rejected": 5,
     "deferred": 6
