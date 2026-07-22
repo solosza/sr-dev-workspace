@@ -24,3 +24,6 @@
 {"ts": "2026-07-22T07:58:15.323562+00:00", "rule_ids": ["S01-verify-before-write"], "tool": "Write"}
 {"ts": "2026-07-22T07:59:26.598711+00:00", "rule_ids": ["S01-verify-before-write"], "tool": "Write"}
 {"ts": "2026-07-22T08:00:42.440117+00:00", "rule_ids": ["S01-verify-before-write"], "tool": "Write"}
+{"ts": "2026-07-22T08:01:04.511388+00:00", "rule_ids": ["S12-no-unnecessary-agents"], "tool": "Agent"}
+{"ts": "2026-07-22T08:02:34.046042+00:00", "rule_ids": ["S01-verify-before-write"], "tool": "Edit"}
+{"ts": "2026-07-22T08:04:36.481162+00:00", "rule_ids": ["S01-verify-before-write"], "tool": "Write"}

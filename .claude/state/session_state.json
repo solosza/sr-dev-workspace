@@ -75,14 +75,16 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nsed -n '12,42p' \"$M",
-    "Write: build_review_items.py",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nsed -n '43,70p' \"$M",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nsed -n '115,130p' \"",
     "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSD=\"$MAIN/.claude/s",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nSD=\"$MAIN/.claude/s",
-    "Bash: SD=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/render-s",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
-    "Write: gen_255_tasks.py"
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" checkout b",
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nls \"$H/framework/_refe",
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nls \"$H/framework/_refe",
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nls \"$H/framework/_refe",
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nPYTHONIOENCODING=utf-8",
+    "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" add -A fra",
+    "Write: gen_218_tasks.py"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -94,12 +96,12 @@
   "needs_learn_reason": null,
   "pipeline_state": {
     "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/217-qa-build-reference-tasks-db.md",
+    "backlog_path": "docs/backlog/218-qa-build-reference-roles-system.md",
     "route": "default",
-    "task_folder": "tasks/reference-tasks-db/",
+    "task_folder": "tasks/reference-roles-system/",
     "task_count": 5,
     "resume_step": null,
-    "prior_pipeline": "216 merged to platform main (DO-07 orchestrator L3 9/9)"
+    "prior_pipeline": "217 merged to platform main (orchestrator L3 re-run 5/5)"
   },
   "pipeline_mode": null,
   "agent_id": null,

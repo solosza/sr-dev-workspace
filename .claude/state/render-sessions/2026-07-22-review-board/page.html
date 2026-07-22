@@ -56,6 +56,15 @@ h1 { font-size: 1.5rem; margin-bottom: 1rem; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
 .status-label { font-weight: 600; }
 .status-time { color: var(--muted); }
+.legend { background: var(--banner-bg); border: 1px solid var(--card-border); border-radius: .5rem; padding: .75rem 1rem; margin-bottom: 1rem; font-size: .85rem; }
+.legend summary { cursor: pointer; font-weight: 600; color: var(--fg); }
+.legend dl { margin-top: .6rem; display: grid; grid-template-columns: auto 1fr; gap: .35rem .75rem; }
+.legend dt { font-weight: 700; white-space: nowrap; }
+.legend dd { color: var(--muted); }
+.legend-accept { color: var(--success); }
+.legend-iterate { color: var(--accent); }
+.legend-reject { color: var(--danger); }
+.legend-skip, .legend-defer { color: var(--chip-fg); }
 .dry-run-bar { background: var(--banner-bg); border: 2px dashed var(--card-border); border-radius: .375rem; padding: .5rem 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: .75rem; font-size: .85rem; }
 .dry-run-bar label { cursor: pointer; display: flex; align-items: center; gap: .5rem; font-weight: 600; }
 .dry-run-bar .hint { color: var(--muted); }
@@ -77,6 +86,21 @@ h1 { font-size: 1.5rem; margin-bottom: 1rem; }
   <span class="status-time" id="status-time"></span>
 </div>
 <h1>Review Board</h1>
+<details class="legend" open>
+  <summary>Action legend</summary>
+  <dl>
+    <dt class="legend-accept">Accept</dt>
+    <dd>Work is good — marks it reviewed/accepted. If it has an unmerged feature branch, the session merges it to main (after a conflict dry-run).</dd>
+    <dt class="legend-iterate">Iterate</dt>
+    <dd>Right direction, needs changes — your notes go <em>verbatim</em> into a follow-up backlog (via /kernel/backlog) linked to this item, which re-enters the build loop. Notes required.</dd>
+    <dt class="legend-reject">Reject</dt>
+    <dd>Wrong or unwanted — marks it rejected with your reason; any associated worktree branch is discarded. Reason required.</dd>
+    <dt class="legend-skip">Skip</dt>
+    <dd>Decide later — no state change at all; the item stays in the unreviewed queue and will surface again.</dd>
+    <dt class="legend-defer">Defer</dt>
+    <dd>Consciously postpone — marked deferred and pushed to the end of the queue so it stops surfacing at the top.</dd>
+  </dl>
+</details>
 <div class="dry-run-bar">
   <label><input type="checkbox" id="dry-run-toggle"> Dry run</label>
   <span class="hint">&mdash; nothing will be routed</span>
