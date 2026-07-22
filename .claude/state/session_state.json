@@ -5,15 +5,15 @@
   "context": {
     "current_task": null,
     "task_folder": "tasks/harness-db-slice/",
-    "progress": "BOTH parallel batches WEDGED — no claude -p processes exist, runners waiting on vanished children. Work largely done per iteration claims: 214 iter5 claims 009 GATE 13/13 green on native SQL Server (app-code diff = benign Starlette TemplateResponse signature migration); 246 at 5/6 with only L3 (006) unrun (iter8 0-byte). State bookkeeping broken: iteration results say COMPLETE but agent workflow files not updated. Orchestrator taking over per user directive (keep platform running).",
+    "progress": "BOTH parallel batches WEDGED \u2014 no claude -p processes exist, runners waiting on vanished children. Work largely done per iteration claims: 214 iter5 claims 009 GATE 13/13 green on native SQL Server (app-code diff = benign Starlette TemplateResponse signature migration); 246 at 5/6 with only L3 (006) unrun (iter8 0-byte). State bookkeeping broken: iteration results say COMPLETE but agent workflow files not updated. Orchestrator taking over per user directive (keep platform running).",
     "last_completed": "Wedge diagnosis: 2 claude.exe procs are session-aged not batch-aged; both runner bash trees orphaned",
     "next_step": "1) Read 214 iters 1-3 (confirm 005/007/008 claims). 2) Kill orphaned runner bash trees + stop background agents. 3) Orchestrator-validate 214 gates DB-05..09 LIVE (native instance, orderly_v3 only). 4) Run 246 JIT-06 L3 gate myself (claude -p scratch repo). 5) Merge both branches, reconcile gitignored files, archive backlogs. 6) Launch 215 (next DB-slice item). 7) File backlogs: runner-wedge defect, CDN-blob env, stale-base worktrees.",
-    "notes": "Runner-wedge defect (NEW, 3rd batch affected): claude -p children vanish (crash/kill) and run-task.sh waits forever; plus completions not recorded to agent workflow state (iteration says ONE_SHOT_COMPLETE but completed_tasks unchanged) — suspect the 214 first-batch timeout kill left bad state, and Windows PID handling in the timeout logic. Platform artifacts live on hmsa branch build/214 (uncommitted). 246 artifacts in its worktree (uncommitted). Native SQL Server 2019 Developer verified: MSSQLSERVER running, pyodbc + ODBC Driver 17 OK.",
+    "notes": "Runner-wedge defect (NEW, 3rd batch affected): claude -p children vanish (crash/kill) and run-task.sh waits forever; plus completions not recorded to agent workflow state (iteration says ONE_SHOT_COMPLETE but completed_tasks unchanged) \u2014 suspect the 214 first-batch timeout kill left bad state, and Windows PID handling in the timeout logic. Platform artifacts live on hmsa branch build/214 (uncommitted). 246 artifacts in its worktree (uncommitted). Native SQL Server 2019 Developer verified: MSSQLSERVER running, pyodbc + ODBC Driver 17 OK.",
     "ledger": [
       {
         "ts": "2026-07-22T02:58:00Z",
         "kind": "failure",
-        "summary": "Docker registry blob downloads machine-blocked: MCR AND Docker Hub CDN EOF mid-transfer, TLS handshakes fine — do not retry pulls, it is not transient",
+        "summary": "Docker registry blob downloads machine-blocked: MCR AND Docker Hub CDN EOF mid-transfer, TLS handshakes fine \u2014 do not retry pulls, it is not transient",
         "refs": [
           "tasks/harness-db-slice/008",
           "backlog 224"
@@ -30,7 +30,7 @@
       {
         "ts": "2026-07-22T03:00:30Z",
         "kind": "constraint",
-        "summary": "Native SQL Server instance may hold real databases — pipeline may ONLY create/use/drop orderly_v3",
+        "summary": "Native SQL Server instance may hold real databases \u2014 pipeline may ONLY create/use/drop orderly_v3",
         "refs": [
           "tasks/harness-db-slice/008"
         ]
@@ -38,7 +38,7 @@
       {
         "ts": "2026-07-22T05:28:00Z",
         "kind": "failure",
-        "summary": "run-task.sh batches wedge when claude -p children vanish (3rd occurrence) and inner completions are not recorded to agent workflow state — do not trust runner liveness or completed_tasks counts; verify via iteration logs + artifacts",
+        "summary": "run-task.sh batches wedge when claude -p children vanish (3rd occurrence) and inner completions are not recorded to agent workflow state \u2014 do not trust runner liveness or completed_tasks counts; verify via iteration logs + artifacts",
         "refs": [
           "lesson pending",
           "backlog pending"
@@ -58,16 +58,16 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
-    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
-    "Write: probe.txt",
-    "Bash: echo done",
-    "Bash: SB=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-repo",
-    "Bash: SB=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-repo",
-    "Bash: rm \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/probe.txt\"\nSB=\"C:/User",
-    "Bash: SB=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-repo",
-    "Bash: grep -n -B2 -A8 \"S01\\|S12\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspac",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nWT=\"D:/my_ai_projec"
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\nWT=\"D:/my_ai_projec",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" mv d",
+    "Bash: pip install mssql-python 2>&1 | tail -1\npython -c \"import mssql_python, sys; sys",
+    "Write: 000-index.md",
+    "Write: gate-contract.md",
+    "Write: 001-build-create-feature-branch.md",
+    "Write: 002-build-write-interface.md",
+    "Write: 003-test-l1-structure-cleanroom.md",
+    "Write: 004-test-l2-contract-semantics.md",
+    "Write: 005-test-l3-live-orderly-db.md"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -79,15 +79,12 @@
   "needs_learn_reason": null,
   "pipeline_state": {
     "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/214-qa-build-harness-db-slice.md",
-    "raw_input": "214",
+    "backlog_path": "docs/backlog/215-qa-build-sql-server-interface.md",
     "route": "default",
-    "task_folder": "tasks/harness-db-slice/",
-    "task_count": 9,
+    "task_folder": "tasks/sql-server-interface/",
+    "task_count": 5,
     "resume_step": null,
-    "parallel_with": "246 (jit-injection-phase1)",
-    "prior_pipeline": "245 merged to main, complete",
-    "execution": "runner wedged; orchestrator validation in progress"
+    "prior_pipeline": "214 merged to platform main; 246 merged to workspace main"
   },
   "pipeline_mode": null,
   "agent_id": null,
@@ -99,14 +96,5 @@
     "next_action_stated": "Read 214 iterations 1-3 to confirm 005/007/008 completion claims, then kill orphaned runners and validate all gates live myself",
     "rules_applied": "RULE ZERO: iteration logs + artifacts are the evidence, not runner state; lesson #39: GATE tasks (009, JIT-06) get orchestrator validation regardless of inner claims; ledger now records failures (CDN, runner-wedge) so they are not retried post-compaction",
     "ceremony_output_generated": true
-  },
-  "pipeline_state_246": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/246-kernel-build-jit-injection-phase1.md",
-    "route": "default",
-    "task_folder": "tasks/jit-injection-phase1/",
-    "task_count": 6,
-    "parallel_with": "214 (harness-db-slice)",
-    "execution": "runner wedged at L3; orchestrator to run JIT-06"
   }
 }
