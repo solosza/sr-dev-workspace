@@ -1,0 +1,24 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/on-prem-llm-pivot-research/",
+  "total_tasks": 5,
+  "current_task": null,
+  "completed_tasks": [
+    "001-research-validate-onprem-trend.md",
+    "002-research-map-solution-landscape.md",
+    "003-research-isagawa-pivot-analysis.md",
+    "004-research-personal-skill-path.md",
+    "005-research-synthesize-report.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-13T21:25:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-14T19:40:00Z",
+  "actions_since_anchor": 5,
+  "last_anchor_token_confirmed": "afc8815d",
+  "pending_anchor_token": null,
+  "timestamp": "2026-07-14T19:40:00Z"
+}

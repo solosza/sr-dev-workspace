@@ -1,0 +1,33 @@
+{
+  "anchor_timestamp": "2026-07-14T13:00:00Z",
+  "actions_count": 27,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-15T00:10:09Z", "tool": "Bash", "entry": "Bash: git branch check"},
+    {"timestamp": "2026-07-15T00:10:44Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:10:49Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:10:54Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:10:59Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:04Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:08Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:12Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:16Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:22Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:29Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:33Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:37Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:42Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:46Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:50Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:55Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:11:59Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:12:03Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:12:12Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:13:24Z", "tool": "Bash", "entry": "Bash: grep verify screenshot removal"},
+    {"timestamp": "2026-07-15T00:13:50Z", "tool": "Edit", "entry": "Edit: browser_interface.py"},
+    {"timestamp": "2026-07-15T00:13:54Z", "tool": "Bash", "entry": "Bash: grep verify screenshot removal"},
+    {"timestamp": "2026-07-15T00:14:04Z", "tool": "Bash", "entry": "Bash: ls task files"},
+    {"timestamp": "2026-07-15T00:15:50Z", "tool": "Bash", "entry": "Bash: compute protocol hash"},
+    {"timestamp": "2026-07-15T00:16:10Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"}
+  ]
+}

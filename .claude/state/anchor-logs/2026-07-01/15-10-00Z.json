@@ -1,0 +1,26 @@
+{
+  "anchor_timestamp": "2026-07-01T15:10:00Z",
+  "actions_count": 18,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "eval-ab-testing-framework": [
+      {"timestamp": "2026-07-01T09:06:00Z", "tool": "Bash", "entry": "Bash: python -c import hashlib; print protocol hash"},
+      {"timestamp": "2026-07-01T09:06:30Z", "tool": "Bash", "entry": "Bash: sleep 300 background monitor"},
+      {"timestamp": "2026-07-01T09:07:27Z", "tool": "Bash", "entry": "Bash: test -f step file exists"},
+      {"timestamp": "2026-07-01T09:07:28Z", "tool": "Bash", "entry": "Bash: grep variant_generator.py reference"},
+      {"timestamp": "2026-07-01T09:07:29Z", "tool": "Bash", "entry": "Bash: wc -l step file line count"},
+      {"timestamp": "2026-07-01T09:07:50Z", "tool": "Bash", "entry": "Bash: test -f task file exists"},
+      {"timestamp": "2026-07-01T09:09:42Z", "tool": "Bash", "entry": "Bash: protocol hash compute"},
+      {"timestamp": "2026-07-01T09:10:27Z", "tool": "Bash", "entry": "Bash: wc -l step file"},
+      {"timestamp": "2026-07-01T09:11:45Z", "tool": "Bash", "entry": "Bash: sleep 300 monitor"},
+      {"timestamp": "2026-07-01T09:12:03Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+      {"timestamp": "2026-07-01T09:14:04Z", "tool": "Bash", "entry": "Bash: wc -l"},
+      {"timestamp": "2026-07-01T09:16:42Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+      {"timestamp": "2026-07-01T09:16:56Z", "tool": "Bash", "entry": "Bash: sleep 300 monitor"},
+      {"timestamp": "2026-07-01T09:18:15Z", "tool": "Bash", "entry": "Bash: test -f task file"},
+      {"timestamp": "2026-07-01T09:20:01Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+      {"timestamp": "2026-07-01T09:20:12Z", "tool": "Bash", "entry": "Bash: ls anchor-logs"}
+    ]
+  }
+}

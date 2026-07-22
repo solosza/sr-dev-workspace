@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-07-14T23:30:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-14T22:29:41Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash computation", "session": "current", "agent_id": "retry-utility"}
+  ],
+  "agent_logs": {
+    "retry-utility": [
+      {"timestamp": "2026-07-14T22:29:41Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash computation"}
+    ]
+  }
+}

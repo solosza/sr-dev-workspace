@@ -1,0 +1,187 @@
+{
+  "anchor_timestamp": "2026-07-22T00:27:00Z",
+  "actions_count": 30,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-21T23:21:01Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib, time, subprocess, sys, urllib.request\nbas",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:22:12Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport urllib.request, time, http.cookiejar\n\ncj = http.cookieja",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:23:24Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport urllib.request, time\nt0 = time.time()\ntry:\n    r = urlli",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:24:38Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport subprocess, json, pathlib, time\nsubprocess.run([\"taskkil",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:24:58Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/age",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:49:06Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:49:27Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:50:05Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.c",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:50:30Z",
+      "tool": "Bash",
+      "entry": "Bash: tail -30 \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-tes",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:50:46Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:51:04Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nstate = pathlib.Path(\"D:/my_ai_projects/pr",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:51:12Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.c",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T23:51:52Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib, sys, time\nbase = pathlib.Path(\"D:/my_ai_p",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:17:18Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/\" 2>",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:17:26Z",
+      "tool": "Bash",
+      "entry": "Bash: for wt in agent-a7560104f65d9033f agent-abfbe941 agent-ada9b04dbe2276d91; do\n  d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:17:28Z",
+      "tool": "Bash",
+      "entry": "Bash: ps aux 2>/dev/null | grep -iE \"run-task|claude\" | grep -v grep | head -10; echo ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:17:36Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:17:46Z",
+      "tool": "Bash",
+      "entry": "Bash: date \"+%Y-%m-%d %H:%M\"; echo ---; wmic process where \"name='bash.exe'\" get Proce",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:17:59Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:18:07Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/scripts/\" 2>/d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:18:15Z",
+      "tool": "Bash",
+      "entry": "Bash: head -60 \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktree",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:18:27Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:18:39Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:18:55Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:19:09Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-re",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:19:10Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:19:23Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:19:27Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:19:50Z",
+      "tool": "Bash",
+      "entry": "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-22T00:19:56Z",
+      "tool": "Bash",
+      "entry": "Bash: LOG=\"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-rep",
+      "session": "current"
+    }
+  ]
+}

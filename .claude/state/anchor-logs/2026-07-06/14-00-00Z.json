@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-07-06T14:00:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T07:02:09Z", "tool": "Bash", "entry": "Bash: python -c protocol hash computation"},
+    {"timestamp": "2026-07-06T07:02:18Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"}
+  ]
+}

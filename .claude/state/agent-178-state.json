@@ -1,0 +1,12 @@
+{
+  "backlog": 178,
+  "spawned_at": "2026-07-06T19:00:00Z",
+  "status": "complete",
+  "progress": "1/1 tasks",
+  "total_tasks": 1,
+  "completed_tasks": ["001-execute-pipeline.md"],
+  "last_update": "2026-07-06T19:20:00Z",
+  "completed_at": "2026-07-06T19:20:00Z",
+  "task_folder": "tasks/completed/ssh-critical-architecture/",
+  "deliverable": "SSH Platform 5-Layer Critical Architecture — task folder archived to tasks/completed/"
+}

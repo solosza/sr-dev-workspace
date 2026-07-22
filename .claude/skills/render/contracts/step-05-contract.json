@@ -1,0 +1,20 @@
+{
+  "contract_metadata": {
+    "contract_id": "render:step-05:output",
+    "version": "1.0",
+    "artifact_type": "routing-log",
+    "artifact_filename": "routing-log.json",
+    "canonical_reference": { "path": ".claude/docs/design/render/references/annotation-contract.md", "hash": null },
+    "dependencies": ["step-04"],
+    "validation_metadata": { "validation_count": 0, "last_validated_at": null, "staleness_threshold_hours": 24 }
+  },
+  "validations": [
+    { "id": "schema-valid", "description": "Every routed annotation has target(str), action(in template action map), raw_words(str|null), at(ISO)", "check": "json_schema" },
+    { "id": "raw-words-verbatim", "description": "For iterate/reject routings, the kernel command argument contains raw_words unedited (substring match against annotations.json)", "check": "cross_file_match" },
+    { "id": "kernel-command-routing", "description": "Every state-changing routing names a kernel command invocation in the log — no direct state-file writes attributed to the render layer", "check": "log_inspection" },
+    { "id": "destructive-confirmed", "description": "Entries with destructive actions carry confirmed_at from the chat re-confirm", "check": "json_fields" },
+    { "id": "unknown-skipped", "description": "Unknown actions appear in the log as skipped with reason, never routed", "check": "log_inspection" }
+  ],
+  "mechanical_validations": [],
+  "overrides": []
+}

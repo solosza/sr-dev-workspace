@@ -1,0 +1,28 @@
+{
+  "anchor_timestamp": "2026-07-16T21:20:00Z",
+  "actions_count": 17,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-16T21:15:31Z", "tool": "Bash", "entry": "Bash: python state check"},
+    {"timestamp": "2026-07-16T21:16:10Z", "tool": "Bash", "entry": "Bash: git checkout build/211"},
+    {"timestamp": "2026-07-16T21:16:29Z", "tool": "Bash", "entry": "Bash: git checkout main"},
+    {"timestamp": "2026-07-16T21:16:36Z", "tool": "Bash", "entry": "Bash: ls backlog grep 211"},
+    {"timestamp": "2026-07-16T21:16:54Z", "tool": "Edit", "entry": "Edit: 211-qa-build-reference-api-objects.md"},
+    {"timestamp": "2026-07-16T21:17:01Z", "tool": "Bash", "entry": "Bash: intent.py record"},
+    {"timestamp": "2026-07-16T21:17:13Z", "tool": "Write", "entry": "Write: 000-index.md"},
+    {"timestamp": "2026-07-16T21:17:24Z", "tool": "Write", "entry": "Write: gate-contract.md"},
+    {"timestamp": "2026-07-16T21:17:38Z", "tool": "Write", "entry": "Write: 001-build-create-feature-branch.md"},
+    {"timestamp": "2026-07-16T21:17:44Z", "tool": "Write", "entry": "Write: 002-build-pydantic-models.md"},
+    {"timestamp": "2026-07-16T21:17:51Z", "tool": "Write", "entry": "Write: 003-build-orders-api-object.md"},
+    {"timestamp": "2026-07-16T21:17:56Z", "tool": "Write", "entry": "Write: 004-build-soap-object-exemplar.md"},
+    {"timestamp": "2026-07-16T21:18:06Z", "tool": "Write", "entry": "Write: 005-test-contract-semantics-ast.md"},
+    {"timestamp": "2026-07-16T21:18:11Z", "tool": "Write", "entry": "Write: 006-test-l2-l3-live.md"},
+    {"timestamp": "2026-07-16T21:18:15Z", "tool": "Write", "entry": "Write: 007-build-commit-branch.md"},
+    {"timestamp": "2026-07-16T21:18:28Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE run-task.sh"}
+  ],
+  "agent_logs": {
+    "reference-api-objects": [
+      {"timestamp": "2026-07-16T21:19:30Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

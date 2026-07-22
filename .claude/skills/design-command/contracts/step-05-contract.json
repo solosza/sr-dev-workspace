@@ -1,0 +1,71 @@
+{
+  "contract_metadata": {
+    "contract_id": "design-command:step-05:output",
+    "version": "1.0",
+    "artifact_type": "markdown",
+    "artifact_filename": "index.md",
+    "canonical_reference": {
+      "path": ".claude/docs/design/build-command/references/input-contract.md",
+      "hash": null
+    },
+    "dependencies": [],
+    "validation_metadata": {
+      "validation_count": 0,
+      "last_validated_at": null,
+      "staleness_threshold_hours": 24
+    }
+  },
+  "validations": [
+    {
+      "id": "req-identity",
+      "description": "Skill Identity section present with 1+ sentence",
+      "check": "section_exists",
+      "target": "Skill Identity",
+      "minimum_depth": "1 sentence"
+    },
+    {
+      "id": "req-philosophy",
+      "description": "Philosophy section present with 3+ principles",
+      "check": "section_exists",
+      "target": "Philosophy",
+      "minimum_depth": "3 numbered principles"
+    },
+    {
+      "id": "req-vocabulary",
+      "description": "Vocabulary section present with 3+ terms",
+      "check": "section_exists",
+      "target": "Vocabulary",
+      "minimum_depth": "3 terms in table"
+    },
+    {
+      "id": "req-critical-rules",
+      "description": "Critical Rules section present with 2+ rules",
+      "check": "section_exists",
+      "target": "Critical Rules",
+      "minimum_depth": "2 numbered rules"
+    },
+    {
+      "id": "req-workflow",
+      "description": "Workflow Summary with 2+ steps and 4 columns",
+      "check": "section_exists",
+      "target": "Workflow Summary",
+      "minimum_depth": "2 steps with Step/Responsibility/Output/HITL"
+    },
+    {
+      "id": "req-step-specs",
+      "description": "Step specs with Purpose + Procedure per step",
+      "check": "payload_exists",
+      "target": "references/workflow.md",
+      "minimum_depth": "Purpose + Procedure per step"
+    },
+    {
+      "id": "req-file-structure",
+      "description": "Complete file structure showing skills/ tree",
+      "check": "section_exists",
+      "target": "Complete File Structure",
+      "minimum_depth": "shows .claude/skills/ directory tree"
+    }
+  ],
+  "mechanical_validations": [],
+  "overrides": []
+}

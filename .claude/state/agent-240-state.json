@@ -1,0 +1,12 @@
+{
+  "backlog": 240,
+  "backlog_path": "docs/backlog/240-kernel-research-rolling-summarization.md",
+  "spawned_at": "2026-07-21T19:05:00Z",
+  "status": "complete",
+  "progress": "5/5 tasks",
+  "task_folder": "tasks/kernel-rolling-summarization-research/",
+  "total_tasks": 5,
+  "completed_tasks": [],
+  "deliverable": "projects/kernel-rolling-summarization-research/ (4 docs, verdict YAH conditional)",
+  "log_file": null
+}

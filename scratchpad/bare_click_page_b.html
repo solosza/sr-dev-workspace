@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Page B</title></head>
+<body>
+<h1 id="title">Page B (post-navigation)</h1>
+<button id="test-btn" onclick="document.getElementById('result').textContent='CLICKED '+Date.now()">Click Me</button>
+<div id="result">not clicked</div>
+<a href="/page_a.html" id="nav-link">Back to Page A</a>
+<script>
+document.addEventListener('click', function(e) {
+    console.log('CLICK_EVENT:', e.target.id || e.target.tagName, e.clientX, e.clientY, Date.now());
+}, true);
+</script>
+</body>
+</html>

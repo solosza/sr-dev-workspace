@@ -1,0 +1,18 @@
+{
+  "status": "idle",
+  "dry_run_ack": [],
+  "confirms": [
+    {
+      "target": "147",
+      "action": "iterate",
+      "question": "Your note reads like a test ('test this is a test') but dry-run was OFF. Create a REAL follow-up backlog from these words? (Tip: the Dry run toggle top-left makes test clicks safe.)"
+    }
+  ],
+  "results": [
+    {
+      "target": "146",
+      "outcome": "deferred \u2014 pushed to queue end"
+    }
+  ],
+  "at": "2026-07-15T22:50:00Z"
+}

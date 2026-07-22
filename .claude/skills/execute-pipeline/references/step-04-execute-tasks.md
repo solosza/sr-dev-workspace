@@ -140,6 +140,64 @@ If classification determines ALL tasks are complex, skip the inline phase. Spawn
 | Timeout | Read partial results, proceed to step 5 |
 | Simple task fails inline | Fix, retry once. If still fails, re-classify as complex for run-task.sh |
 
+## Worktree Isolation Mode
+
+For BUILD scope backlogs, execute-pipeline can optionally run tasks in an isolated git worktree. This prevents untested work from landing directly on main.
+
+### When to Use Worktree Mode
+
+| Scope | Worktree? | Reason |
+|-------|-----------|--------|
+| BUILD | Yes (default) | Code changes should be isolated until reviewed |
+| RESEARCH | No | Research output doesn't need branch isolation |
+| REFACTOR | Yes | Code changes need isolation |
+
+### How It Works
+
+1. **Detection:** Read the backlog's scope field. If BUILD or REFACTOR, enable worktree mode.
+
+2. **Agent spawning with isolation:** When spawning the background Agent for complex tasks, add `isolation: "worktree"`:
+
+   ```
+   Agent(
+     description: "Execute [subfolder] complex tasks via run-task.sh",
+     prompt: "Run the following bash command and return the full output:
+       env -u CLAUDECODE bash \"[repo_path]/run-task.sh\" \"[repo_path]\" [remaining_count + 2] [subfolder] [backlog_path]
+       Wait for completion and return the full output including the final status banner.",
+     run_in_background: true,
+     isolation: "worktree"
+   )
+   ```
+
+3. **Result handling:** When the agent completes:
+   - If no changes were made → worktree auto-cleaned, proceed normally
+   - If changes were made → worktree path and branch name returned in result
+   - Record the branch name in `pipeline_state.worktree_branch` for merge gate
+
+4. **Merge gate:** The feature branch is NOT auto-merged. It enters the review queue:
+   - `/kernel/review-queue` shows the branch for review
+   - `accept` action merges the feature branch into main
+   - `reject` action removes the worktree and branch
+
+### State Isolation
+
+Worktrees provide natural state isolation — each worktree has its own `.claude/state/` directory. No state contention between the worktree agent and the main session. See `projects/worktree-research/02-state-isolation-design.md`.
+
+### Pipeline State Extension
+
+When worktree mode is active, `pipeline_state` includes:
+
+```json
+{
+  "pipeline_state": {
+    "worktree_mode": true,
+    "worktree_branch": "worktree/pipeline-183-worktree-branch-isolation",
+    "worktree_path": ".claude/worktrees/pipeline-183",
+    "merge_status": "pending_review"
+  }
+}
+```
+
 ## Rules
 
 - NEVER use `cd` — run-task.sh takes the repo path as first argument
@@ -149,3 +207,4 @@ If classification determines ALL tasks are complex, skip the inline phase. Spawn
 - Default to complex when uncertain — the cost of unnecessary isolation is low, the cost of a crashed inline task is high
 - Sub-agents spawned by run-task.sh are kernel-governed (session-start, anchor, complete)
 - Always pass `backlog_path` as 4th arg to run-task.sh for automatic move-to-done
+- For BUILD/REFACTOR scope, use `isolation: "worktree"` when spawning agents — never merge directly to main

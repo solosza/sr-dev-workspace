@@ -1,0 +1,11 @@
+{
+  "backlog": 162,
+  "spawned_at": "2026-07-05T22:20:00Z",
+  "status": "running",
+  "progress": "0/8 tasks",
+  "task_folder": "tasks/eval-platform-learning-loop/",
+  "total_tasks": 8,
+  "completed_tasks": [],
+  "deliverable": "Eval platform learning loop",
+  "log_file": "/tmp/execute-pipeline-162.log"
+}

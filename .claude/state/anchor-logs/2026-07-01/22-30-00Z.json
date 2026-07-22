@@ -1,0 +1,20 @@
+{
+  "anchor_timestamp": "2026-07-01T22:30:00Z",
+  "actions_count": 0,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "ab-testing-5-layer-conformance": [
+      {"timestamp": "2026-07-01T20:21:06Z", "tool": "Bash", "entry": "Bash: ls roles/ directory"},
+      {"timestamp": "2026-07-01T20:21:12Z", "tool": "Bash", "entry": "Bash: sleep + cat state check"},
+      {"timestamp": "2026-07-01T20:21:14Z", "tool": "Bash", "entry": "Bash: mkdir roles/"},
+      {"timestamp": "2026-07-01T20:21:17Z", "tool": "Write", "entry": "Write: __init__.py"},
+      {"timestamp": "2026-07-01T20:21:26Z", "tool": "Write", "entry": "Write: ab_evaluator.py"},
+      {"timestamp": "2026-07-01T20:21:37Z", "tool": "Bash", "entry": "Bash: python import verification"},
+      {"timestamp": "2026-07-01T20:21:50Z", "tool": "Bash", "entry": "Bash: test file existence"},
+      {"timestamp": "2026-07-01T20:23:08Z", "tool": "Bash", "entry": "Bash: ls task folder"},
+      {"timestamp": "2026-07-01T20:23:13Z", "tool": "Bash", "entry": "Bash: ls metrics/ab_metrics.py"},
+      {"timestamp": "2026-07-01T20:23:35Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "domain": "sr_dev",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-09T19:30:00Z",
+  "actions_since_anchor": 0,
+  "actions_limit": 30
+}

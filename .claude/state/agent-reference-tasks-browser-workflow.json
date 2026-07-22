@@ -1,0 +1,24 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/reference-tasks-browser/",
+  "total_tasks": 6,
+  "current_task": null,
+  "completed_tasks": [
+    "001-build-create-feature-branch.md",
+    "002-build-order-workup-tasks.md",
+    "003-test-contract-semantics-ast.md",
+    "004-test-sequence-spy.md",
+    "005-test-live-env-gated.md",
+    "006-build-commit-branch.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-15T06:15:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-15T06:10:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": "c9458350",
+  "timestamp": "2026-07-15T06:15:00Z"
+}

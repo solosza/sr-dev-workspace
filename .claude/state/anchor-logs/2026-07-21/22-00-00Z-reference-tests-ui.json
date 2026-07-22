@@ -1,0 +1,120 @@
+{
+  "anchor_timestamp": "2026-07-22T00:00:00Z",
+  "actions_count": 16,
+  "violations_found": 0,
+  "agent_id": "reference-tests-ui",
+  "actions": [
+    {
+      "timestamp": "2026-07-21T22:20:38Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport os, json\nos.makedirs('.claude/state/anchor-logs/2026-07-21', ",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:20Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --show-cur",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:21Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --list \"bu",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:25Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" ls-tree -r --name",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:29Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" diff --name-only ",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:33Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log --oneline -5",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:38Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" diff main..build/",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:45Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --short",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:21:54Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -R \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework/_referenc",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:23:59Z",
+      "tool": "Write",
+      "entry": "Write: check_semantics_003.py",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:24:05Z",
+      "tool": "Bash",
+      "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/reference-te",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:24:08Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -riE \"hmsa|healthcare|claim|patient|member|subscriber|eligib|EOB|remittance",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:24:12Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -iw \"provider\" \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/frame",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:24:35Z",
+      "tool": "Bash",
+      "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/reference-te",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:24:43Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/reference-tests-",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    },
+    {
+      "timestamp": "2026-07-21T22:26:22Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p",
+      "session": "current",
+      "agent_id": "reference-tests-ui"
+    }
+  ]
+}

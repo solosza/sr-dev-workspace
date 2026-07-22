@@ -8,7 +8,7 @@ Dynamically build a pytest-based deepeval test suite based on the artifact analy
 |-------|--------|---------|
 | `mode` | Output of Step 0 | `artifact` or `harness` |
 | `target` | Output of Step 0 | `check-data` (artifact mode) or `null` (harness mode) |
-| `test-repo` | Output of Step 1 | `D:\...\eval-check-data-test` |
+| `test-repo` | Output of Step 1 | `D:\...\evals\eval-check-data` |
 | Component decision log | Output of Step 4 | REUSED/CREATED/SKIPPED components |
 | Pipeline type | Step 4 checkpoint | Agent / RAG / Hybrid / Harness |
 | Contract rules | Step 4 directed reading | List of `soft_validation_rules` (artifact mode only) |

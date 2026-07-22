@@ -1,0 +1,30 @@
+{
+  "anchor_timestamp": "2026-07-06T23:50:00Z",
+  "actions_count": 23,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T20:11:43Z", "tool": "Bash", "entry": "Bash: ls evals/eval-ab-check-data-engine/60k/"},
+    {"timestamp": "2026-07-06T20:11:43Z", "tool": "Bash", "entry": "Bash: ls evals/eval-ab-check-data-engine/"},
+    {"timestamp": "2026-07-06T20:11:55Z", "tool": "Bash", "entry": "Bash: ls evals/eval-ab-check-data-engine/60k/res"},
+    {"timestamp": "2026-07-06T20:12:36Z", "tool": "Bash", "entry": "Bash: ls evals/eval-ab-check-data-engine/results"},
+    {"timestamp": "2026-07-06T20:14:49Z", "tool": "Write", "entry": "Write: generate_report_llm_judge.py"},
+    {"timestamp": "2026-07-06T20:14:59Z", "tool": "Bash", "entry": "Bash: python json load check"},
+    {"timestamp": "2026-07-06T20:15:04Z", "tool": "Edit", "entry": "Edit: generate_report_llm_judge.py"},
+    {"timestamp": "2026-07-06T20:15:09Z", "tool": "Bash", "entry": "Bash: python generate_report_llm_judge.py"},
+    {"timestamp": "2026-07-06T20:15:10Z", "tool": "Write", "entry": "Write: 000-index.md"},
+    {"timestamp": "2026-07-06T20:15:15Z", "tool": "Write", "entry": "Write: 001-gap-check-harness-eval.md"},
+    {"timestamp": "2026-07-06T20:15:15Z", "tool": "Bash", "entry": "Bash: ls -la evals/eval-ab-check-data-engine/60k"},
+    {"timestamp": "2026-07-06T20:15:17Z", "tool": "Write", "entry": "Write: 002-prod-test-platform-deepeval.md"},
+    {"timestamp": "2026-07-06T20:15:19Z", "tool": "Write", "entry": "Write: gate-contract.md"},
+    {"timestamp": "2026-07-06T20:15:26Z", "tool": "Edit", "entry": "Edit: final-report.md"},
+    {"timestamp": "2026-07-06T20:15:35Z", "tool": "Edit", "entry": "Edit: final-report.md"},
+    {"timestamp": "2026-07-06T20:15:44Z", "tool": "Edit", "entry": "Edit: final-report.md"},
+    {"timestamp": "2026-07-06T20:15:52Z", "tool": "Edit", "entry": "Edit: final-report.md"},
+    {"timestamp": "2026-07-06T20:16:09Z", "tool": "Edit", "entry": "Edit: final-report.md"},
+    {"timestamp": "2026-07-06T20:16:25Z", "tool": "Bash", "entry": "Bash: python verification script"},
+    {"timestamp": "2026-07-06T20:16:55Z", "tool": "Bash", "entry": "Bash: test -f verification"},
+    {"timestamp": "2026-07-06T20:17:30Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh"},
+    {"timestamp": "2026-07-06T20:18:56Z", "tool": "Bash", "entry": "Bash: ls anchor-logs"},
+    {"timestamp": "2026-07-06T20:19:00Z", "tool": "Bash", "entry": "Bash: python hashlib (blocked)"}
+  ]
+}

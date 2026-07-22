@@ -1,0 +1,31 @@
+{
+  "anchor_timestamp": "2026-07-07T12:40:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-07T08:23:08Z", "tool": "Write", "entry": "Write: security_metrics.py"},
+    {"timestamp": "2026-07-07T08:23:29Z", "tool": "Write", "entry": "Write: behavior_metrics.py"},
+    {"timestamp": "2026-07-07T08:23:42Z", "tool": "Write", "entry": "Write: compliance_metrics.py"},
+    {"timestamp": "2026-07-07T08:23:53Z", "tool": "Write", "entry": "Write: tool_boundary_metrics.py"},
+    {"timestamp": "2026-07-07T08:24:09Z", "tool": "Write", "entry": "Write: data_leakage_metrics.py"},
+    {"timestamp": "2026-07-07T08:24:39Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test security_metrics"},
+    {"timestamp": "2026-07-07T08:24:53Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test behavior_metrics"},
+    {"timestamp": "2026-07-07T08:25:06Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test compliance_metrics"},
+    {"timestamp": "2026-07-07T08:25:44Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test tool_boundary/data_leakage"},
+    {"timestamp": "2026-07-07T08:26:58Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+  ],
+  "agent_logs": {
+    "deepeval-5-layer-contract-violations": [
+      {"timestamp": "2026-07-07T08:23:08Z", "tool": "Write", "entry": "Write: security_metrics.py"},
+      {"timestamp": "2026-07-07T08:23:29Z", "tool": "Write", "entry": "Write: behavior_metrics.py"},
+      {"timestamp": "2026-07-07T08:23:42Z", "tool": "Write", "entry": "Write: compliance_metrics.py"},
+      {"timestamp": "2026-07-07T08:23:53Z", "tool": "Write", "entry": "Write: tool_boundary_metrics.py"},
+      {"timestamp": "2026-07-07T08:24:09Z", "tool": "Write", "entry": "Write: data_leakage_metrics.py"},
+      {"timestamp": "2026-07-07T08:24:39Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test security_metrics"},
+      {"timestamp": "2026-07-07T08:24:53Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test behavior_metrics"},
+      {"timestamp": "2026-07-07T08:25:06Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test compliance_metrics"},
+      {"timestamp": "2026-07-07T08:25:44Z", "tool": "Bash", "entry": "Bash: PYTHONPATH test tool_boundary/data_leakage"},
+      {"timestamp": "2026-07-07T08:26:58Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

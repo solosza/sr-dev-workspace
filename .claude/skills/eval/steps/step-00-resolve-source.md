@@ -18,7 +18,17 @@ Count the arguments:
 |-----------|---------------|------|
 | 1 arg | Arg is the source (path or URL) | **Harness mode** — `target = null` |
 | 2 args | First arg = target name, second arg = source | **Artifact mode** — `target = first arg` |
+| 3 args, first is `--ab` | Second = target, third = source | **A/B mode** — `target = second arg, source = third arg` |
 | 0 args | Missing input | **ABORT** with: `EVAL ABORT: No source provided. Usage: /kernel/eval <source> or /kernel/eval <target> <source>` |
+
+**A/B mode detection** (check before standard mode resolution):
+
+```
+if first_arg == "--ab":
+    mode = "ab"
+    target = second_arg
+    source = third_arg
+```
 
 ### Phase 2: Resolve Source
 
@@ -55,16 +65,21 @@ git clone --depth 1 "https://github.com/isagawa-co/isagawa-kernel" "D:\my_ai_pro
 
 | Mode | Test Repo Name |
 |------|---------------|
-| **Artifact** | `eval-[target]-test` |
-| **Harness** | `eval-[repo-name]-test` |
+| **Artifact** | `eval-[target]` |
+| **Harness** | `eval-[repo-name]` |
 
 Where `[repo-name]` is the directory name of the resolved source path (e.g., `kernel-minimal` from `D:\...\kernel-minimal`).
+
+All eval repos live under the `evals/` subdirectory:
+```
+D:\my_ai_projects\project_test_repos\evals\eval-[name]\
+```
 
 ## Verification
 
 | ID | Check | Method | Pass |
 |----|-------|--------|------|
-| G0.1 | Mode detected | `mode` is `artifact` or `harness` | Set |
+| G0.1 | Mode detected | `mode` is `artifact`, `harness`, or `ab` | Set |
 | G0.2 | Source resolved | Local directory exists at resolved path | `test -d` passes |
 | G0.3 | Test repo name resolved | Non-empty string | Set |
 
@@ -81,7 +96,7 @@ All checks must pass before transitioning to Step 1.
 
 ## Output
 
-- `mode`: `artifact` or `harness`
+- `mode`: `artifact`, `harness`, or `ab`
 - `target`: artifact name or `null`
 - `source_path`: resolved local directory path
 - `original_source`: original input (URL or path — preserved for reporting)

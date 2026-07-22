@@ -6,7 +6,7 @@ Transform the empty test repo into a live, governed agent harness. This is compi
 
 | Field | Source | Example |
 |-------|--------|---------|
-| `test-repo` | Output of Step 1 | `D:\my_ai_projects\project_test_repos\eval-check-data-test` |
+| `test-repo` | Output of Step 1 | `D:\my_ai_projects\project_test_repos\evals\eval-check-data` |
 | `source_path` | Output of Step 0 | `D:\my_ai_projects\project_test_repos\hmsa-healthcare-qa` |
 | `mode` | Output of Step 0 | `artifact` or `harness` |
 

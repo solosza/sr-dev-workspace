@@ -126,15 +126,15 @@ Proceeding with background spawn, but note this may cause issues.
 
 ---
 
-## Step 3: Invoke Agent Tool
+## Step 3: Invoke Bash Tool (Background)
 
-### Error 3A: Agent tool not available
+### Error 3A: Bash tool not available
 
-**Cause:** Agent tool unavailable or system issue
+**Cause:** Bash tool unavailable or system issue
 
 **Detection:**
 ```
-Agent tool call fails
+Bash tool call fails
 Response is error message, not task info
 ```
 
@@ -142,7 +142,7 @@ Response is error message, not task info
 ```
 ERROR: Failed to spawn background agent
 
-The Agent tool is unavailable. This may be:
+The Bash tool is unavailable. This may be:
 1. Temporary system issue → Try again in a moment
 2. Rate limiting → Wait a few seconds and retry
 3. Configuration problem → Contact admin
@@ -152,19 +152,19 @@ Technical error: [show actual error]
 
 **Action:** Fail immediately. Suggest retry or contact admin.
 
-### Error 3B: Prompt too long
+### Error 3B: Command too long
 
 **Cause:** Task description is extremely detailed (> 10,000 characters)
 
 **Detection:**
 ```
-prompt_length > system_limit
-Agent tool returns "prompt too long" error
+command_length > system_limit
+Bash tool returns error
 ```
 
 **Recovery:**
 ```
-ERROR: Task description is too long for Agent tool
+ERROR: Command is too long for Bash tool
 
 Your description: [length] characters (limit: 10000)
 
@@ -182,7 +182,7 @@ Example: Instead of pasting 5KB of code, say:
 
 ### Error 3C: Malformed response
 
-**Cause:** Agent tool response doesn't contain task ID
+**Cause:** Bash tool response doesn't contain task ID
 
 **Detection:**
 ```
@@ -193,7 +193,7 @@ Response unparseable
 
 **Recovery:**
 ```
-ERROR: Agent tool returned unexpected response
+ERROR: Bash tool returned unexpected response
 
 Response was: [show raw response]
 
@@ -216,16 +216,16 @@ Cannot proceed without task ID.
 
 **Detection:**
 ```
-Agent response received
+Bash response received
 task_id extraction fails
 No valid ID in response
 ```
 
 **Recovery:**
 ```
-ERROR: Could not extract task ID from Agent response
+ERROR: Could not extract task ID from Bash response
 
-Agent response: [show response]
+Bash response: [show response]
 
 This is a system issue. Suggestions:
 1. Try again — may be transient
@@ -245,8 +245,8 @@ This is a system issue. Suggestions:
 |-------|--------|--------------|
 | Empty description | No — ask user | N/A |
 | Too short description | No — ask user | N/A |
-| Agent tool unavailable | Yes | 3 |
-| Prompt too long | No — ask user | N/A |
+| Bash tool unavailable | Yes | 3 |
+| Command too long | No — ask user | N/A |
 | Malformed response | Yes | 2 |
 | Task ID missing | Yes | 2 |
 
@@ -307,9 +307,9 @@ Which step failed?
 │  └─ Warn but proceed (soft gate)
 │     OR ask user to restructure
 │
-├─ Step 3 (Invoke Agent)
-│  ├─ Agent unavailable? → Retry 3x with backoff
-│  ├─ Prompt too long? → Ask user to shorten
+├─ Step 3 (Invoke Bash)
+│  ├─ Bash unavailable? → Retry 3x with backoff
+│  ├─ Command too long? → Ask user to shorten
 │  ├─ Response malformed? → Retry 2x
 │  └─ Other error? → Fail with details
 │

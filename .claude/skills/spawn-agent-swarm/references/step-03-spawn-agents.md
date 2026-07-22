@@ -4,44 +4,67 @@ Spawn one background agent per backlog number. All agents spawn immediately and 
 
 ## Prerequisites
 
-Before spawning, each backlog must already have its task folder built (by execute-pipeline or task-builder). The swarm spawns `run-task.sh` against existing task folders — it does not build tasks.
+Each backlog must have a task folder before spawning. If the folder doesn't exist, build it inline:
 
-## Pattern
+1. **Check:** Does `tasks/[subfolder]/` exist with `.md` task files?
+2. **If YES:** Proceed to spawn
+3. **If NO:** Run execute-pipeline steps 1-3 inline (backlog → task-builder → write task files). This creates the task folder WITHOUT executing tasks. Then proceed to spawn.
 
-For each backlog number, use the **Bash tool with `run_in_background: true`**:
+**CRITICAL:** The swarm NEVER uses raw `claude -p` to bypass this. Every agent goes through `run-task.sh` for state isolation. Execute-pipeline is the inner loop that converts backlogs into task folders.
 
-```bash
-env -u CLAUDECODE bash run-task.sh [REPO_ROOT] [MAX_ITERATIONS] [TASK_SUBFOLDER]
+## Pattern — Scope-Routed Isolation
+
+Each backlog is routed by scope to the correct isolation mechanism:
+
+| Scope | Tool | Why |
+|-------|------|-----|
+| BUILD / REFACTOR | `Agent(isolation: "worktree", run_in_background: true)` | Code changes isolated until merge |
+| RESEARCH / TEST | `Bash(run_in_background: true)` with unique subfolder | No code to merge, just needs lock isolation |
+
+### BUILD / REFACTOR — Worktree Mode
+
+```
+Agent(
+  description: "Pipeline: [backlog title]",
+  prompt: "Run: env -u CLAUDECODE bash \"[repo]/run-task.sh\" \"[repo]\" [N] \"[subfolder]\" \"[backlog]\"
+           Return full output including final status banner.",
+  isolation: "worktree",
+  run_in_background: true
+)
 ```
 
-**Example:**
+On completion: feature branch enters `/kernel/review-queue` for merge.
+
+### RESEARCH / TEST — Subfolder Mode
+
 ```bash
-env -u CLAUDECODE bash "D:/my_ai_projects/project_test_repos/sr_dev_workspace/run-task.sh" "D:/my_ai_projects/project_test_repos/sr_dev_workspace" 6 "kernel-minimalize"
+Bash(
+  command: 'env -u CLAUDECODE bash "[repo]/run-task.sh" "[repo]" [N] "[subfolder]" "[backlog]"',
+  run_in_background: true
+)
 ```
 
-**Arguments:**
+**CRITICAL: Always use unique subfolder per backlog.** Never pass empty `""` — causes lock contention.
+
+### Arguments
+
 - `REPO_ROOT` — absolute path to the workspace (must contain CLAUDE.md)
 - `MAX_ITERATIONS` — task count + 2 buffer (e.g., 4 tasks → 6 iterations)
-- `TASK_SUBFOLDER` — folder name under `tasks/` (NOT the full path)
-
-**Why this pattern:**
-- `env -u CLAUDECODE` — unsets blocking env var so nested `claude -p` works
-- `run-task.sh` — proven task execution with session resume, state isolation, and kernel governance
-- `run_in_background: true` on Bash tool — returns immediately with a background task ID
-- Each agent gets `agent_id` derived from TASK_SUBFOLDER (per-agent state isolation from backlog 153)
-- Actions log routes to `agent-{subfolder}-actions.jsonl` instead of shared `actions.jsonl`
+- `TASK_SUBFOLDER` — folder name under `tasks/` (NOT the full path, ALWAYS unique per backlog)
+- `BACKLOG_PATH` — relative path to the backlog `.md` file (enables automatic move-to-done)
 
 **WRONG patterns (do NOT use):**
-- `claude -p "Execute /kernel/execute-pipeline..."` — bypasses run-task.sh, no state isolation
-- `Agent(prompt: "env -u CLAUDECODE bash -c '...'"` — unnecessary Agent wrapper
+- `claude -p "[any task]"` — bypasses run-task.sh, no state isolation
+- Empty subfolder `""` with concurrent spawns — lock contention
 - Passing full task folder path as first arg — run-task.sh expects repo root first
 
 ## Execution
 
 1. **For each backlog number N in the list:**
    - Resolve task subfolder name (e.g., `kernel-minimalize`, `governance-depth-research`)
+   - Resolve backlog path (e.g., `docs/backlog/150-kernel-refactor-minimalize-kernel.md`)
    - Count tasks in folder to set MAX_ITERATIONS = task_count + 2
-   - Invoke Bash tool with `run_in_background: true`
+   - Invoke Bash tool with `run_in_background: true`, passing backlog path as 4th arg
    - Capture background task ID
    - Continue to next agent (no waiting)
 

@@ -1,0 +1,2543 @@
+- generic [ref=e2]:
+  - heading "0 notifications" [level=2] [ref=e409]
+  - dialog "Edit intro" [ref=e410]:
+    - button "Dismiss" [ref=e411] [cursor=pointer]:
+      - img [ref=e413]
+    - generic [ref=e415]:
+      - banner [ref=e416]:
+        - heading "Edit intro" [level=2] [ref=e417]
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - generic [ref=e422]:
+            - generic [ref=e425]:
+              - generic [ref=e426]:
+                - img [ref=e427]
+                - paragraph [ref=e430]: Enhance your profile with Premium
+              - paragraph [ref=e431]: Feature profile sections higher, add a custom button, get AI writing assistance and much more.
+              - generic [ref=e432]:
+                - figure [ref=e433]
+                - figure [ref=e434]
+                - figure [ref=e435]
+                - paragraph [ref=e436]: Baljinder (Bali) and millions of other members use Premium
+              - link "Reactivate Premium" [ref=e437] [cursor=pointer]:
+                - /url: https://www.linkedin.com/premium/products/?upsellOrderOrigin=Tracking%3Av1%3Apremium_profile_top_card_custom_enhance_free_upsell%3AProfile%3AIn-Product&utype=profile_cust_custom_button&referenceId=lLnIdmCARUiuNwWjW%2BfL6Q%3D%3D&isSS=false&upsellSlotId=PREMIUM_PROFILE_TOP_CARD_CUSTOM_ENHANCE
+                - generic [ref=e439]: Reactivate Premium
+              - paragraph [ref=e440]: Cancel anytime. No hidden fees.
+            - button "Hide Premium upsell" [ref=e441] [cursor=pointer]:
+              - img [ref=e443]
+          - paragraph [ref=e446]: "* Indicates required"
+          - generic [ref=e447]:
+            - paragraph [ref=e448]: Basic info
+            - generic [ref=e450]:
+              - generic [ref=e452]: First name*
+              - textbox "First name*" [ref=e454]: Alain
+              - paragraph [ref=e457]:
+                - text: 5/50
+                - generic [ref=e458]: 5 of 50 characters
+          - generic [ref=e460]:
+            - generic [ref=e462]: Last name*
+            - textbox "Last name*" [ref=e464]: Ignacio
+            - paragraph [ref=e467]:
+              - text: 7/50
+              - generic [ref=e468]: 7 of 50 characters
+          - generic [ref=e471]:
+            - generic [ref=e473]: Additional name
+            - textbox "Additional name" [ref=e475]
+            - paragraph [ref=e478]:
+              - text: 0/50
+              - generic [ref=e479]: 0 of 50 characters
+          - generic [ref=e480]:
+            - paragraph [ref=e481]: Name pronunciation
+            - generic [ref=e482]:
+              - img [ref=e483]
+              - paragraph [ref=e485]: This can only be added using our mobile app
+          - generic [ref=e486]:
+            - generic [ref=e487]:
+              - generic [ref=e489]: Pronouns
+              - generic [ref=e490]:
+                - combobox "Month" [ref=e491] [cursor=pointer]:
+                  - option "Please select" [selected]
+                  - option "He/Him"
+                  - option "She/Her"
+                  - option "They/Them"
+                  - option "Custom"
+                - img
+              - paragraph [ref=e493]: Let others know how to refer to you.
+            - paragraph [ref=e494]:
+              - text: Learn more about
+              - link "gender pronouns" [ref=e495] [cursor=pointer]:
+                - /url: https://www.linkedin.com/help/linkedin/answer/129291/
+                - strong [ref=e496]: gender pronouns
+              - text: .
+          - generic [ref=e497]:
+            - paragraph [ref=e498]: Headline*
+            - generic [ref=e500]:
+              - textbox [active] [ref=e503]:
+                - paragraph [ref=e504]: Founder, Isagawa | Spec-driven loop engineering for AI agents | Open-source kernel for governed agent harnesses | isagawa.co
+              - generic [ref=e505]:
+                - img [ref=e506]
+                - button "Get AI suggestions" [ref=e509] [cursor=pointer]:
+                  - paragraph [ref=e510]: Get AI suggestions
+                - paragraph [ref=e511]: with Premium
+            - paragraph [ref=e3277]: 124/220
+          - generic [ref=e517]:
+            - paragraph [ref=e518]: Current position
+            - generic [ref=e521]:
+              - generic [ref=e523]: Position*
+              - generic [ref=e524]:
+                - combobox "Position*" [ref=e525] [cursor=pointer]:
+                  - option "Please select" [disabled]
+                  - option "Founder" [selected]
+                  - option "Senior Quality Assurance Engineer"
+                - img
+            - link "Add new position" [ref=e527] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/position/new/?profileFormEntryPoint=IntroForm
+              - generic [ref=e528]:
+                - img [ref=e529]
+                - generic [ref=e531]: Add new position
+            - checkbox "Show current company in my intro" [ref=e532] [cursor=pointer]:
+              - generic [ref=e533]:
+                - generic [ref=e534]:
+                  - checkbox
+                - paragraph [ref=e537]: Show current company in my intro
+            - generic [ref=e538]:
+              - generic [ref=e539]:
+                - status [ref=e540]
+                - generic [ref=e541]:
+                  - generic [ref=e543]: Industry*
+                  - generic [ref=e544]:
+                    - img [ref=e546]
+                    - textbox "Industry*" [ref=e548]: Software Development
+              - paragraph [ref=e549]:
+                - text: Learn more about
+                - link "industry options" [ref=e550] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/answer/a720019/
+                  - strong [ref=e551]: industry options
+                - text: .
+          - generic [ref=e552]:
+            - paragraph [ref=e553]: Education
+            - link "Add new education" [ref=e555] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/education/new/
+              - generic [ref=e556]:
+                - img [ref=e557]
+                - generic [ref=e559]: Add new education
+          - generic [ref=e560]:
+            - paragraph [ref=e561]: Location
+            - generic [ref=e562]:
+              - status [ref=e563]
+              - generic [ref=e564]:
+                - generic [ref=e566]: Country/Region*
+                - generic [ref=e567]:
+                  - img [ref=e569]
+                  - textbox "Country/Region*" [ref=e571]: United States
+          - generic [ref=e572]:
+            - generic [ref=e574]:
+              - generic [ref=e576]: Postal code
+              - textbox "Postal code" [ref=e578]
+              - paragraph [ref=e581]:
+                - text: 0/10
+                - generic [ref=e582]: 0 of 10 characters
+            - progressbar "In progress" [ref=e587]
+          - generic [ref=e588]:
+            - paragraph [ref=e589]: Contact info
+            - paragraph [ref=e590]: Add or edit your profile URL, email, and more
+            - link "Edit contact info" [ref=e592] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/contact-info/new/
+              - generic [ref=e594]: Edit contact info
+        - button "Save" [ref=e596] [cursor=pointer]:
+          - generic [ref=e598]: Save
+  - generic [ref=e599]:
+    - generic:
+      - generic "Skip navigation menu":
+        - generic [ref=e600]:
+          - button "Skip to search" [ref=e601] [cursor=pointer]:
+            - generic [ref=e603]: Skip to search
+          - button "Skip to main content" [ref=e604] [cursor=pointer]:
+            - generic [ref=e606]: Skip to main content
+          - button "Skip to primary content" [ref=e607] [cursor=pointer]:
+            - generic [ref=e609]: Skip to primary content
+          - button "Skip to aside" [ref=e610] [cursor=pointer]:
+            - generic [ref=e612]: Skip to aside
+          - button "Skip to footer" [ref=e613] [cursor=pointer]:
+            - generic [ref=e615]: Skip to footer
+          - button "Close jump menu" [ref=e617] [cursor=pointer]:
+            - img [ref=e619]
+    - generic [ref=e621]:
+      - banner [ref=e623]:
+        - generic [ref=e626]:
+          - button "LinkedIn" [ref=e627] [cursor=pointer]:
+            - img "LinkedIn" [ref=e628]
+          - generic [ref=e630]:
+            - status [ref=e631]
+            - search [ref=e632]:
+              - generic [ref=e633]:
+                - img [ref=e635]
+                - textbox "I'm looking for…" [ref=e637]
+          - generic [ref=e639]:
+            - navigation [ref=e643]:
+              - list [ref=e644]:
+                - listitem [ref=e645]:
+                  - button "Home, 1 new notification" [ref=e646] [cursor=pointer]:
+                    - img [ref=e648]
+                    - generic [ref=e652]: Home
+                - listitem [ref=e653]:
+                  - link "My Network, 0 new notifications" [ref=e654] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/mynetwork
+                    - img [ref=e656]
+                    - generic [ref=e659]: My Network
+                - listitem [ref=e660]:
+                  - link "Jobs, 0 new notifications" [ref=e661] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/
+                    - img [ref=e663]
+                    - generic [ref=e666]: Jobs
+                - listitem [ref=e667]:
+                  - link "Messaging, 0 new notifications" [ref=e668] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/
+                    - img [ref=e670]
+                    - generic [ref=e673]: Messaging
+                - listitem [ref=e674]:
+                  - link "Notifications, 11 new notifications" [ref=e675] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/
+                    - generic [ref=e676]:
+                      - img [ref=e677]
+                      - generic [ref=e679]: "11"
+                    - generic [ref=e681]: Notifications
+                - listitem [ref=e682]:
+                  - button "Me" [ref=e683] [cursor=pointer]:
+                    - figure [ref=e685]
+                    - generic [ref=e687]:
+                      - text: Me
+                      - img [ref=e688]
+            - generic [ref=e691]:
+              - navigation [ref=e692]:
+                - list [ref=e693]:
+                  - listitem [ref=e694]:
+                    - button "For Business" [ref=e695] [cursor=pointer]:
+                      - img [ref=e697]
+                      - generic [ref=e700]:
+                        - text: For Business
+                        - img [ref=e701]
+              - link "Get 50% Off Sales Nav" [ref=e705] [cursor=pointer]:
+                - /url: https://www.linkedin.com/premium/redeem/?_ed=CwEAAAFyYb66UAQiKvLejf0aKxNzmjJ3ryfkxyqehLZPKD7vWLOgM5wR4lxRr-QUIgT_FeKS2NQ&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=3c2c0TSsReCZZRKK8TNZwA%3D%3D&customKey=wb_s&redeemTypeV2=DISCOUNT
+                - paragraph [ref=e707]:
+                  - link "Get 50% Off Sales Nav" [ref=e709]:
+                    - /url: https://www.linkedin.com/premium/redeem/?_ed=CwEAAAFyYb66UAQiKvLejf0aKxNzmjJ3ryfkxyqehLZPKD7vWLOgM5wR4lxRr-QUIgT_FeKS2NQ&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=3c2c0TSsReCZZRKK8TNZwA%3D%3D&customKey=wb_s&redeemTypeV2=DISCOUNT
+      - generic [ref=e711]:
+        - toolbar [ref=e712]:
+          - generic [ref=e716]:
+            - link "Alain Ignacio" [ref=e717] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+              - generic "Alain Ignacio" [ref=e718]:
+                - figure [ref=e719]
+                - generic [ref=e720]:
+                  - paragraph [ref=e721]: Alain Ignacio
+                  - paragraph [ref=e723]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+            - generic [ref=e724]:
+              - button "More" [ref=e726] [cursor=pointer]:
+                - img [ref=e728]
+              - button "Enhance profile" [ref=e731] [cursor=pointer]:
+                - generic [ref=e733]: Enhance profile
+              - link "Add section" [ref=e735] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                - generic [ref=e737]: Add section
+              - button "Open to" [ref=e739] [cursor=pointer]:
+                - generic [ref=e741]: Open to
+        - main [ref=e742]:
+          - generic [ref=e744]:
+            - region "Primary content" [ref=e745]:
+              - generic [ref=e747]:
+                - generic [ref=e752]:
+                  - generic [ref=e753]:
+                    - generic [ref=e754]:
+                      - button [ref=e756] [cursor=pointer]:
+                        - figure [ref=e757]:
+                          - img "Cover photo" [ref=e758]
+                      - button "Add background image" [ref=e767] [cursor=pointer]:
+                        - img [ref=e769]
+                    - link "Profile photo" [ref=e771] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                      - generic "Profile photo" [ref=e772]:
+                        - figure [ref=e773]
+                    - link "Edit profile" [ref=e775] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro/
+                      - img [ref=e777]
+                  - generic [ref=e779]:
+                    - generic [ref=e782]:
+                      - link "Alain Ignacio View Alain’s verifications" [ref=e786] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                        - generic [ref=e788]:
+                          - heading "Alain Ignacio" [level=2] [ref=e789]
+                          - img "View Alain’s verifications" [ref=e790]
+                      - paragraph [ref=e792]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                      - generic [ref=e793]:
+                        - paragraph [ref=e794]: United States
+                        - paragraph [ref=e795]: ·
+                        - paragraph [ref=e796]:
+                          - link "Contact info" [ref=e797] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/overlay/contact-info/
+                    - link "234 connections" [ref=e799] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/mynetwork/invite-connect/connections/
+                      - paragraph [ref=e800]: 234 connections
+                    - generic [ref=e804]:
+                      - button "Open to" [ref=e806] [cursor=pointer]:
+                        - generic [ref=e808]: Open to
+                      - link "Add section" [ref=e810] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                        - generic [ref=e812]: Add section
+                      - button "Enhance profile" [ref=e814] [cursor=pointer]:
+                        - generic [ref=e816]: Enhance profile
+                      - button "More" [ref=e818] [cursor=pointer]:
+                        - img [ref=e820]
+                  - generic [ref=e824]:
+                    - list [ref=e826]:
+                      - listitem [ref=e827]:
+                        - generic [ref=e828]:
+                          - link "Share that you’re hiring and attract qualified candidates. Get started" [ref=e829] [cursor=pointer]:
+                            - /url: /in/alain-ignacio-54b9823/opportunities/hiring-opportunities/onboarding/
+                            - generic [ref=e830]:
+                              - paragraph [ref=e831]:
+                                - strong [ref=e832]: Share that you’re hiring
+                                - text: and attract qualified candidates.
+                              - paragraph [ref=e834]: Get started
+                          - button "Close" [ref=e835] [cursor=pointer]:
+                            - img [ref=e837]
+                      - listitem [ref=e839]:
+                        - generic [ref=e841]:
+                          - link "Showcase your services as a section on your profile so your business can be easily discovered. Add services" [ref=e842] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/opportunities/services/education/
+                            - generic [ref=e843]:
+                              - paragraph [ref=e844]:
+                                - strong [ref=e845]: Showcase your services
+                                - text: as a section on your profile so your business can be easily discovered.
+                              - paragraph [ref=e847]: Add services
+                          - button "Close" [ref=e848] [cursor=pointer]:
+                            - img [ref=e850]
+                      - listitem [ref=e852]:
+                        - generic [ref=e854]:
+                          - link "Tell non-profits you are interested in getting involved with your time and skills Get started" [ref=e855] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/opportunities/volunteering/education/
+                            - generic [ref=e856]:
+                              - paragraph [ref=e857]:
+                                - strong [ref=e858]: Tell non-profits
+                                - text: you are interested in getting involved with your time and skills
+                              - paragraph [ref=e860]: Get started
+                          - button "Close" [ref=e861] [cursor=pointer]:
+                            - img [ref=e863]
+                    - button "Next" [ref=e865] [cursor=pointer]:
+                      - img [ref=e867]
+                - generic [ref=e871]:
+                  - generic [ref=e875]:
+                    - generic [ref=e877]:
+                      - heading "Suggested for you" [level=2] [ref=e878]
+                      - generic [ref=e879]:
+                        - img [ref=e880]
+                        - paragraph [ref=e882]: Private to you
+                    - generic [ref=e887]:
+                      - generic [ref=e888]:
+                        - img [ref=e889]
+                        - paragraph [ref=e897]: Highlight your skills from Isagawa Co.
+                      - paragraph [ref=e898]: Make it easier for recruiters to find you by showing where and how you used your skills.
+                      - link "Edit experience" [ref=e899] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/details/experience/edit/forms/2837358306/
+                        - generic [ref=e901]: Edit experience
+                  - generic [ref=e904]:
+                    - generic [ref=e906]:
+                      - heading "Analytics" [level=2] [ref=e907]
+                      - generic [ref=e908]:
+                        - img [ref=e909]
+                        - paragraph [ref=e911]: Private to you
+                    - generic [ref=e912]:
+                      - generic [ref=e915]:
+                        - link "14 profile views Discover who’s viewed your profile." [ref=e916] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/analytics/profile-views/
+                          - generic [ref=e917]:
+                            - img [ref=e918]
+                            - generic [ref=e920]:
+                              - paragraph [ref=e921]: 14 profile views
+                              - paragraph [ref=e922]: Discover who’s viewed your profile.
+                        - link "22 post impressions Check out who’s engaging with your posts. Past 7 days" [ref=e923] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/analytics/creator/content/?timeRange=past_7_days&dimension=INDUSTRY&metricType=IMPRESSIONS
+                          - generic [ref=e924]:
+                            - img [ref=e925]
+                            - generic [ref=e927]:
+                              - paragraph [ref=e928]: 22 post impressions
+                              - paragraph [ref=e929]: Check out who’s engaging with your posts.
+                              - paragraph [ref=e930]: Past 7 days
+                        - link "5 search appearances See how often you appear in search results." [ref=e931] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/analytics/search-appearances/
+                          - generic [ref=e932]:
+                            - img [ref=e933]
+                            - generic [ref=e935]:
+                              - paragraph [ref=e936]: 5 search appearances
+                              - paragraph [ref=e937]: See how often you appear in search results.
+                      - link "Show all analytics" [ref=e939] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/dashboard/
+                        - generic [ref=e940]:
+                          - img [ref=e941]
+                          - generic [ref=e943]: Show all
+                  - generic [ref=e948]:
+                    - generic [ref=e949]:
+                      - heading "About" [level=2] [ref=e950]
+                      - link "Edit about" [ref=e952] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/summary/new/
+                        - img [ref=e954]
+                    - paragraph [ref=e957]:
+                      - generic [ref=e958]:
+                        - text: Spec-driven loop engineering for AI agents.
+                        - text: I'm the founder of Isagawa and author of the Isagawa Kernel, an open-source framework that turns repeatable workflows into governed agent harnesses. The kernel enforces execution. A domain-spec factory builds vertical packs. A backlog pipeline turns intent into validated work.
+                        - text: Not configuration. Not templates. Specification-driven agent harnesses that learn from failures.
+                        - text: The kernel is domain-agnostic. Drop in a spec for any vertical and the agent builds governance tailored to that work. I've shipped this across QA automation, healthcare compliance, and infrastructure platforms.
+                        - text: My background is quality enforcement across healthcare, finance, telecom, and government.
+                        - text: Open source. MIT license. VS Code + Claude Code + Python. No database. No Docker. No cloud infrastructure.
+                        - text: Built by the system it describes. An attested artifact.
+                        - text: github.com/isagawa-co/isagawa-kernel
+                        - text: isagawa.co
+                        - text: alain@isagawa.co
+                        - button:
+                          - generic [ref=e960] [cursor=pointer]: … more
+                  - generic [ref=e965]:
+                    - generic [ref=e966]:
+                      - heading "Featured" [level=2] [ref=e967]
+                      - generic [ref=e968]:
+                        - button "Featured overflow menu" [ref=e970] [cursor=pointer]:
+                          - img [ref=e972]
+                        - link "View featured detail screen" [ref=e974] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/details/featured/
+                          - img [ref=e976]
+                    - generic [ref=e979]:
+                      - list [ref=e981]:
+                        - listitem [ref=e982]:
+                          - listitem [ref=e983]:
+                            - 'link "Link GitHub - isagawa-co/isagawa-kernel: The self-improving harness for AI coding agents. Drop-in enforcement that the agent builds, follows, and improves — mechanically. GitHub The self-improving harness for AI coding agents." [ref=e986] [cursor=pointer]':
+                              - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fgithub%2Ecom%2Fisagawa-co%2Fisagawa-kernel&urlhash=8DpH&mt=Du4THQKSqjg9c57cMXGUe66rvEzZg26AE-ee1pb-84YKvHvwdN1WPogpXQ1oHwqmo7zmK74NHmri9pHbpZKqheERxA&isSdui=true
+                              - generic [ref=e987]:
+                                - button "Link" [ref=e988]
+                                - generic [ref=e989]:
+                                  - img [ref=e991]
+                                  - generic [ref=e998]:
+                                    - paragraph [ref=e1000]: "GitHub - isagawa-co/isagawa-kernel: The self-improving harness for AI coding agents. Drop-in enforcement that the agent builds, follows, and improves — mechanically."
+                                    - paragraph [ref=e1001]: GitHub
+                                    - paragraph [ref=e1003]: The self-improving harness for AI coding agents.
+                        - listitem [ref=e1004]:
+                          - listitem [ref=e1005]:
+                            - link "Link Isagawa - Agent Harness Factory https://isagawa.co An agent harness factory. Built by the system it describes." [ref=e1008] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fisagawa%2Eco&urlhash=LxvI&mt=tlPh-0hh6nfdPaYeL1Eh0ksx-dFLa_8qdt5nuBGk5Zq7I01p-QUDva5k4Oq90JWWfXJOMNltuEpa1uDH3ZSfFiVJYw&isSdui=true
+                              - generic [ref=e1009]:
+                                - button "Link" [ref=e1010]
+                                - generic [ref=e1011]:
+                                  - img [ref=e1013]
+                                  - generic [ref=e1020]:
+                                    - paragraph [ref=e1022]: Isagawa - Agent Harness Factory
+                                    - paragraph [ref=e1023]: https://isagawa.co
+                                    - paragraph [ref=e1025]: An agent harness factory. Built by the system it describes.
+                        - listitem [ref=e1026]:
+                          - listitem [ref=e1027]:
+                            - link "Link Isagawa | Kernel https://isagawa.co/kernel.html A self-building agent harness with hook-enforced governance." [ref=e1030] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fisagawa%2Eco%2Fkernel%2Ehtml&urlhash=152k&mt=lIFp0WsvjHHNbukhqwiGRczmh_D8AJu1dqhV6QdZnk8MAPozNdkFy4iFbxRGS_oIoaQF9F1Zfah7WIWPFTJJ8MvCtw&isSdui=true
+                              - generic [ref=e1031]:
+                                - button "Link" [ref=e1032]
+                                - generic [ref=e1033]:
+                                  - img [ref=e1035]
+                                  - generic [ref=e1042]:
+                                    - paragraph [ref=e1044]: Isagawa | Kernel
+                                    - paragraph [ref=e1045]: https://isagawa.co/kernel.html
+                                    - paragraph [ref=e1047]: A self-building agent harness with hook-enforced governance.
+                        - listitem [ref=e1048]:
+                          - listitem [ref=e1049]:
+                            - link [ref=e1052] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432952866669146114/
+                              - generic [ref=e1053]:
+                                - button "Post" [ref=e1054]
+                                - generic [ref=e1055]:
+                                  - paragraph [ref=e1057]:
+                                    - generic [ref=e1058]:
+                                      - text: I was demoing my QA platform to a colleague. The test script the agent built for the demo found a real bug, live, during the demo.
+                                      - text: "Here's what happened:"
+                                      - text: I pointed my AI test automation system at a client's production app,
+                                      - link "zentyant.app" [ref=e1059]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fzentyant%2Eapp&urlhash=z-IF&mt=XcsmXDJGNX3c7Kpwdw1q75CNI9YsWV8CZpCLrQjBEwkZfy2s_EQGKYWYCjRWXEiw67JV-shU65WZOu20e2SImX05IQ&isSdui=true
+                                      - text: ", and told it to generate a test for their Scheduled Tasks workflow. 20 minutes later I had a fully automated test script: login, navigate, create a scheduled task, verify success."
+                                      - text: I ran it during the demo. It failed. The app's server returned HTTP 400, their cron parser was broken. Every schedule preset, every manual cron input, all blocked. The platform caught it, took a screenshot automatically, and I had a full bug report with video evidence ready to send.
+                                      - text: I sent the report to the dev team. 21 minutes later they pushed a fix and asked me to retest. I reran the exact same test the demo built.
+                                      - text: Passed. 18.42 seconds. All steps green, login, navigation, task creation, success toast, schedule visible in the list.
+                                      - text: "The timeline:"
+                                      - text: "- 20 minutes: AI built the test script"
+                                      - text: "- 21 minutes: dev team fixed the bug"
+                                      - text: "- 18 seconds: retest confirmed the fix"
+                                      - text: 41 minutes from test creation to confirmed fix. On a real production app, with a real bug the team didn't know existed.
+                                      - text: That's the full QA cycle, build, find, report, fix, verify, all in under an hour. The test script that found the bug is the same one that confirmed the fix.
+                                      - text: "Side note: the attached video is the actual defect, 18 seconds of the bug happening live during the demo. This is what the dev team received along with the bug report."
+                                      - text: Open source. MIT license.
+                                      - link "https://lnkd.in/g-SEKDfm" [ref=e1060]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg-SEKDfm&urlhash=znCW&mt=sH6plcTTfl__3ijAF-FMrkAVqc3K73f68Rup1eOftLJZf4W-qk-Quo-Te9MwKIMX98ilM8ojpZKUgTIUxvM_s2kyyA&isSdui=true
+                                      - link "https://lnkd.in/gyJSQJib" [ref=e1061]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgyJSQJib&urlhash=Sg7E&mt=xcpkC6Cf5vDm2xppbVdc_jF4geu8iJARUbIWNCReUNNVFApBLXgaQSA69yJeGUl8KuOCt4hyozsoADs2588P3cLsaA&isSdui=true
+                                      - link "#TestAutomation" [ref=e1062]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23testautomation
+                                      - link "#QA" [ref=e1063]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23qa
+                                      - link "#AI" [ref=e1064]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai
+                                      - link "#OpenSource" [ref=e1065]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource
+                                      - link "#BugHunting" [ref=e1066]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23bughunting
+                                      - link "#ClaudeCode" [ref=e1067]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode
+                                  - generic [ref=e1068]:
+                                    - figure [ref=e1069]
+                                    - img [ref=e1071]
+                                - generic [ref=e1073]:
+                                  - img [ref=e1074]
+                                  - img [ref=e1079]
+                                  - img [ref=e1093]
+                                  - paragraph [ref=e1099]:
+                                    - generic [ref=e1100]: 56 reactions · 8 comments
+                                    - text: 56 · 8 comments
+                      - button "Next" [ref=e1101] [cursor=pointer]:
+                        - img [ref=e1103]
+                - generic [ref=e1110]:
+                  - generic [ref=e1111]:
+                    - generic [ref=e1112]:
+                      - heading "Activity" [level=2] [ref=e1113]
+                      - link "410 followers" [ref=e1115] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/feed/followers/
+                        - paragraph [ref=e1116]: 410 followers
+                    - generic [ref=e1117]:
+                      - link "Create a post" [ref=e1118] [cursor=pointer]:
+                        - /url: /preload/sharebox/
+                        - generic [ref=e1120]: Create a post
+                      - link "Edit default activity" [ref=e1121] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/content-collections-star-pill/new/
+                        - img [ref=e1123]
+                  - generic [ref=e1125]:
+                    - radio "Posts" [checked] [ref=e1126] [cursor=pointer]:
+                      - generic [ref=e1127]:
+                        - checkbox "Posts" [checked]
+                        - generic [ref=e1128]: Posts
+                    - radio "Comments" [ref=e1129] [cursor=pointer]:
+                      - generic [ref=e1130]:
+                        - checkbox "Comments"
+                        - generic [ref=e1131]: Comments
+                    - radio "Videos" [ref=e1132] [cursor=pointer]:
+                      - generic [ref=e1133]:
+                        - checkbox "Videos"
+                        - generic [ref=e1134]: Videos
+                    - radio "Images" [ref=e1135] [cursor=pointer]:
+                      - generic [ref=e1136]:
+                        - checkbox "Images"
+                        - generic [ref=e1137]: Images
+                  - generic [ref=e1139]:
+                    - generic [ref=e1145]:
+                      - list [ref=e1146]:
+                        - list [ref=e1147]:
+                          - listitem [ref=e1148]:
+                            - listitem [ref=e1150]:
+                              - generic [ref=e1151]:
+                                - generic [ref=e1152]:
+                                  - link [ref=e1153] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e1154]:
+                                      - img "View Alain Ignacio’s profile" [ref=e1155]
+                                  - generic [ref=e1157]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e1160] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e1162]:
+                                        - paragraph [ref=e1165]: Alain Ignacio
+                                        - paragraph [ref=e1167]:
+                                          - generic [ref=e1168]:
+                                            - img [ref=e1170]
+                                            - text: • You
+                                    - paragraph [ref=e1173]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e1175]:
+                                      - generic [ref=e1176]:
+                                        - text: 2mo •
+                                        - 'img "Visibility: Global" [ref=e1177]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e1179] [cursor=pointer]:
+                                    - img [ref=e1181]
+                                - link [ref=e1183] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7442792966139604992/
+                                  - paragraph [ref=e1184]:
+                                    - generic [ref=e1185]:
+                                      - text: Every AI agent loop hits the same wall.
+                                      - text: The agent works great for the first 10 actions. By action 50, it's skipping steps. By action 100, it's forgotten the architecture rules you gave it at the start.
+                                      - text: Longer sessions don't fix this. Smarter prompts don't fix this.
+                                      - text: Shorter sessions fix this.
+                                      - link "run-task.sh" [ref=e1187]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=http%3A%2F%2Frun-task%2Esh&urlhash=mYnP&mt=HX5SqVCTBb9VsOUuZmtYf3TzKI4t-eaOKeGysC-CgyLOK55eJOoR4cv8lda9kIyEfhufAABCFD6BItf5HLhNqX7XlfC6BpatSyj4xwBW-PAxwCg7tzv_YjH5&isSdui=true
+                                        - strong [ref=e1189]: run-task.sh
+                                      - text: spawns one Claude Code agent per task. Fresh context every time. The script handles retry, resume, and progress tracking. That agent just reads the task file and does the work.
+                                      - text: But fresh context alone isn't enough. The agent still needs to follow the rules.
+                                      - text: "Inside each session, the Isagawa Kernel enforces:"
+                                      - text: "- Protocol re-read every 10 actions"
+                                      - text: "- Hook gates on every write"
+                                      - text: "- Mandatory lessons after every failure"
+                                      - text: "- No exit trapping — agents complete naturally"
+                                      - text: When something breaks, the fix becomes a permanent lesson. Not a comment in a file, but a rule the agent reads on every future session start. The system gets smarter every time it fails.
+                                      - text: "This week: 23 automated gates against a live Docker target. Structural checks, import validation, production tests against real SSH connections. All spawned agents, all sequential, zero manual intervention."
+                                      - text: Ships with the full kernel, self-configures to your repo on first run.
+                                      - link "https://lnkd.in/gpj_68in" [ref=e1190]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fgpj_68in&urlhash=p0I5&mt=wlQx4oeJ9bjTKktP9JSdevFBFlacItm3Mus6YrBwppr8yuPLw-Pp6z3o4ySHNLy0Xf3KmYGE8nzpxSsM2pwaY-YfO1YDi4qCdWwjH1Z8xikZQN_IHr5Cww14&isSdui=true
+                                        - strong [ref=e1192]: https://lnkd.in/gpj_68in
+                                      - link "#ClaudeCode" [ref=e1193]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1195]: "#ClaudeCode"
+                                      - link "#AIAgents" [ref=e1196]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23aiagents&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1198]: "#AIAgents"
+                                      - link "#Anthropic" [ref=e1199]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23anthropic&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1201]: "#Anthropic"
+                                      - link "#DevTools" [ref=e1202]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23devtools&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1204]: "#DevTools"
+                                      - link "#OpenSource" [ref=e1205]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1207]: "#OpenSource"
+                                      - link "#AIEngineering" [ref=e1208]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23aiengineering&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1210]: "#AIEngineering"
+                                      - link "#Automation" [ref=e1211]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23automation&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1213]: "#Automation"
+                                      - link "#SoftwareEngineering" [ref=e1214]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23softwareengineering&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1216]: "#SoftwareEngineering"
+                                      - link "#BuildInPublic" [ref=e1217]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23buildinpublic&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1219]: "#BuildInPublic"
+                                      - button:
+                                        - generic [ref=e1221]: … more
+                                - 'link "GitHub - isagawa-co/run-task: One-shot and batch task runners for the Isagawa Kernel. Spawns claude -p agents per task with retry, resume, and state tracking. github.com" [ref=e1222] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fgithub%2Ecom%2Fisagawa-co%2Frun-task&urlhash=JWCE&mt=ug0tN9i2sgeI-UMT-Mduq5Q04MfaR0ZffGpJRmAiRfa9XkFhvsqLqF8ZLWk88c5GZzialKsTYAteHzNOJkrukpJ4xDFFbQTF9CPgkcvCnw-LIZCYEA1qVM9i&isSdui=true
+                                  - generic [ref=e1224]:
+                                    - paragraph [ref=e1226]:
+                                      - generic [ref=e1227]:
+                                        - generic [ref=e1228]: "GitHub - isagawa-co/run-task: One-shot and batch task runners for the Isagawa Kernel. Spawns claude -p agents per task with retry, resume, and state tracking."
+                                        - text: "GitHub - isagawa-co/run-task: One-shot and batch task runners for the Isagawa Kernel. Spawns claude -p agents per task with retry, resume, and state tracking."
+                                    - paragraph [ref=e1230]: github.com
+                              - generic [ref=e1231]:
+                                - link "Srivishnu Ayyagari and 3 others reacted" [ref=e1233] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                  - generic [ref=e1234]:
+                                    - img [ref=e1235]
+                                    - img [ref=e1241]
+                                    - paragraph [ref=e1250]:
+                                      - generic [ref=e1251]:
+                                        - generic [ref=e1252]: Srivishnu Ayyagari and 3 others reacted
+                                        - generic [ref=e1253]: Srivishnu Ayyagari and 3 others
+                                - generic [ref=e1254]:
+                                  - generic [ref=e1255]:
+                                    - 'button "Reaction button state: no reaction" [ref=e1258] [cursor=pointer]':
+                                      - generic [ref=e1259]:
+                                        - img [ref=e1260]
+                                        - generic [ref=e1262]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e1264] [cursor=pointer]
+                                  - link "Comment" [ref=e1266] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7442792966139604992/
+                                    - generic [ref=e1267]:
+                                      - img [ref=e1268]
+                                      - generic [ref=e1270]: Comment
+                                  - button "Repost" [ref=e1271] [cursor=pointer]:
+                                    - generic [ref=e1272]:
+                                      - img [ref=e1273]
+                                      - generic [ref=e1275]: Repost
+                                  - link "Send" [ref=e1276] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1277]:
+                                      - img [ref=e1278]
+                                      - generic [ref=e1280]: Send
+                                - link "View analytics" [ref=e1281] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7442792966139604992/
+                                  - generic "View analytics" [ref=e1282]:
+                                    - generic "Content analytics" [ref=e1283]:
+                                      - img "Analytics Icon" [ref=e1284]
+                                      - paragraph [ref=e1286]: 265 impressions
+                                    - paragraph [ref=e1287]:
+                                      - generic [ref=e1288]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e1289]:
+                            - listitem [ref=e1291]:
+                              - generic [ref=e1292]:
+                                - generic [ref=e1293]:
+                                  - link [ref=e1294] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e1295]:
+                                      - img "View Alain Ignacio’s profile" [ref=e1296]
+                                  - generic [ref=e1298]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e1301] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e1303]:
+                                        - paragraph [ref=e1306]: Alain Ignacio
+                                        - paragraph [ref=e1308]:
+                                          - generic [ref=e1309]:
+                                            - img [ref=e1311]
+                                            - text: • You
+                                    - paragraph [ref=e1314]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e1316]:
+                                      - generic [ref=e1317]:
+                                        - text: 3mo • Edited •
+                                        - 'img "Visibility: Global" [ref=e1318]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e1320] [cursor=pointer]:
+                                    - img [ref=e1322]
+                                - link [ref=e1324] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7439967952973697024/
+                                  - paragraph [ref=e1325]:
+                                    - generic [ref=e1326]:
+                                      - text: I dropped a spec into a repo with my kernel installed. 8 minutes later, my agent had built a complete LLM testing framework. 33 tasks, 122 files, zero hand holding.
+                                      - text: Here's what happened. I've been building QA platforms, Selenium for web apps, Playwright for modern browsers and API testing, Docker for container security. Same kernel manages the agent across all of them. I wanted to see if it could handle testing AI itself.
+                                      - text: I wrote a domain spec for DeepEval, an LLM evaluation library. Same 5-layer architecture as my other platforms, just swap the transport. BrowserInterface becomes DeepEvalInterface. Page Objects become Metric Objects. Evaluating LLM output is just another form of QA, asserting expected behavior against actual results, metrics instead of selectors.
+                                      - text: That's UI testing, API testing, container security, and now LLM evaluation all using the same framework. The Playwright platform already handles both UI and API in one spec. This is a full modern QA stack, not a single-layer tool.
+                                      - text: During domain setup, the agent scanned the spec, built its own protocol, enforcement rules then started cycling through 33 tasks autonomously. No approvals between tasks. No human reviewing each step
+                                      - text: Then something happened on task 33.
+                                      - text: The test suite failed. A method converting metric names to constants, ContextualRelevancyMetric -> CONTEXTUAL_RELEVANCY was producing CONTEXTUALRELEVANCY. It was missing underscores. The kernel blocked the agent. Can't continue until you record what went wrong.
+                                      - text: The agent diagnosed the bug, fixed it, retried, then recorded the lesson. 16 tests. All passed. That lesson is now permanent.
+                                      - text: After the autonomous build, I pointed it at a real OpenAI API for live LLM-as judge evaluation. 15 tests across 5 metrics, 5 golden test cases each. All passing. Scores are 1.00 because the mock pipeline echoes retrieval context. The point is the framework works end-to-end with real LLM-as-judge scoring.
+                                      - text: "The numbers:"
+                                      - text: "- 8 minutes 32 seconds, start to finish"
+                                      - text: "- 33 tasks completed autonomously"
+                                      - text: "- 122 files created"
+                                      - text: "- 1 real bug caught, fixed, and learned from mid-cycle"
+                                      - text: "- 16 pytest tests passing"
+                                      - text: Four QA platforms. Four domains. One kernel.
+                                      - text: "- Selenium: Web app testing"
+                                      - text: "- Playwright: UI + API testing"
+                                      - text: "- Docker: Container security compliance"
+                                      - text: "- DeepEval: LLM evaluation/testing"
+                                      - text: Same loop every time. Drop in a spec. Agent builds the framework. Kernel enforces quality and all failures become lessons.
+                                      - text: This is Spec-Driven Development. You teach it the domain. It handles the rest.
+                                      - text: "The kernel is open source:"
+                                      - link "https://lnkd.in/g5HZ2wrW" [ref=e1327]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg5HZ2wrW&urlhash=mLoD&mt=FiuKORhzMfMYMkDs15fc17tHzX7HDUBzZsa4_2qjYwKHEAJqCQceDZAGj_PHVr4Mp5GztsZSWiQ_OtcbLoDUfjZc4qZDsvT6O76KjqJ0UgDbSRJRudo958hz&isSdui=true
+                                        - strong [ref=e1329]: https://lnkd.in/g5HZ2wrW
+                                      - text: "QA platforms:"
+                                      - link "https://lnkd.in/gbjDkdby" [ref=e1330]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgbjDkdby&urlhash=gz5l&mt=Gi6-2ubI1T_JCWTTEeQk6pAPql9iqUaXkhqvezrrRbRTmc47hhJtfnpE7Yc796uTZOVNTwOaphbcDE82JmBUqnDE6A34-0X4LME7NR-sBYmhVkP8MgrCV_vF&isSdui=true
+                                        - strong [ref=e1332]: https://lnkd.in/gbjDkdby
+                                      - text: Screenshot is the live LLM-as-judge results. They were real OpenAI API calls and real scores.
+                                      - link "#SpecDrivenDevelopment" [ref=e1333]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23specdrivendevelopment&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1335]: "#SpecDrivenDevelopment"
+                                      - link "#AI" [ref=e1336]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1338]: "#AI"
+                                      - link "#QA" [ref=e1339]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23qa&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1341]: "#QA"
+                                      - link "#LLMEvaluation" [ref=e1342]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23llmevaluation&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1344]: "#LLMEvaluation"
+                                      - link "#DeepEval" [ref=e1345]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23deepeval&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1347]: "#DeepEval"
+                                      - link "#OpenSource" [ref=e1348]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1350]: "#OpenSource"
+                                      - link "#ClaudeCode" [ref=e1351]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1353]: "#ClaudeCode"
+                                      - link "#BuildInPublic" [ref=e1354]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23buildinpublic&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1356]: "#BuildInPublic"
+                                      - button:
+                                        - generic [ref=e1358]: … more
+                                - link [ref=e1360] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7439967952973697024/
+                                  - figure [ref=e1361]:
+                                    - img "View image" [ref=e1362]
+                              - generic [ref=e1363]:
+                                - generic [ref=e1364]:
+                                  - link "14 reactions" [ref=e1365] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1366]:
+                                      - img [ref=e1367]
+                                      - img [ref=e1373]
+                                      - paragraph [ref=e1382]:
+                                        - generic [ref=e1383]:
+                                          - generic [ref=e1384]: 14 reactions
+                                          - text: "14"
+                                  - generic [ref=e1385]:
+                                    - link "1 comment" [ref=e1386] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/feed/update/urn:li:activity:7439967952973697024/
+                                      - paragraph [ref=e1387]:
+                                        - generic [ref=e1388]: 1 comment
+                                        - generic [ref=e1389]: 1 comment
+                                    - paragraph [ref=e1390]: •
+                                    - link "1 repost" [ref=e1391] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                      - paragraph [ref=e1392]:
+                                        - generic [ref=e1393]: 1 repost
+                                        - generic [ref=e1394]: 1 repost
+                                - generic [ref=e1395]:
+                                  - generic [ref=e1396]:
+                                    - 'button "Reaction button state: no reaction" [ref=e1399] [cursor=pointer]':
+                                      - generic [ref=e1400]:
+                                        - img [ref=e1401]
+                                        - generic [ref=e1403]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e1405] [cursor=pointer]
+                                  - link "Comment" [ref=e1407] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7439967952973697024/
+                                    - generic [ref=e1408]:
+                                      - img [ref=e1409]
+                                      - generic [ref=e1411]: Comment
+                                  - button "Repost" [ref=e1412] [cursor=pointer]:
+                                    - generic [ref=e1413]:
+                                      - img [ref=e1414]
+                                      - generic [ref=e1416]: Repost
+                                  - link "Send" [ref=e1417] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1418]:
+                                      - img [ref=e1419]
+                                      - generic [ref=e1421]: Send
+                                - link "View analytics" [ref=e1422] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7439967952973697024/
+                                  - generic "View analytics" [ref=e1423]:
+                                    - generic "Content analytics" [ref=e1424]:
+                                      - img "Analytics Icon" [ref=e1425]
+                                      - paragraph [ref=e1427]: 3,528 impressions
+                                    - paragraph [ref=e1428]:
+                                      - generic [ref=e1429]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e1430]:
+                            - listitem [ref=e1432]:
+                              - generic [ref=e1433]:
+                                - generic [ref=e1434]:
+                                  - link [ref=e1435] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e1436]:
+                                      - img "View Alain Ignacio’s profile" [ref=e1437]
+                                  - generic [ref=e1439]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e1442] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e1444]:
+                                        - paragraph [ref=e1447]: Alain Ignacio
+                                        - paragraph [ref=e1449]:
+                                          - generic [ref=e1450]:
+                                            - img [ref=e1452]
+                                            - text: • You
+                                    - paragraph [ref=e1455]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e1457]:
+                                      - generic [ref=e1458]:
+                                        - text: 3mo •
+                                        - 'img "Visibility: Global" [ref=e1459]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e1461] [cursor=pointer]:
+                                    - img [ref=e1463]
+                                - link [ref=e1465] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7438755286053453825/
+                                  - paragraph [ref=e1466]:
+                                    - generic [ref=e1467]:
+                                      - text: I wrote a game design doc in plain English and told my AI agent to build it.
+                                      - text: Here's what happened.
+                                      - text: I fed the design doc into my spec factory. It read the doc, extracted the
+                                      - text: requirements, and produced a full domain spec, architecture patterns, gate contracts, validation criteria. Then I stacked it with my kernel (the governance layer that mechanically enforces rules through hooks, not suggestions). Ran domain setup. The agent bootstrapped its own governed workspace.
+                                      - text: Then I told it to break the spec into phases and tasks.
+                                      - text: It generated 71 atomic tasks. Each one with dependencies, requirements mapped to REQ IDs, expected output files, a validation command, and a completion signal. I didn't write any of them.
+                                      - text: I kicked off the autonomous cycle, invoked the /remote-control command, checked my claude phone app for the remote connection and went to the casino(haha).
+                                      - text: The agent picks up a task, starts a fresh session, reads the protocol, builds the code, runs the tests, and if it passes the gate, commits and moves to the next task. If it fails, it fixes its own code, records what it learned, and retries. No human in between.
+                                      - text: By hour two, it had completed 59 of 71 tasks. I stopped it because I hit my session limit, not because it broke.
+                                      - text: "What it built:"
+                                      - text: "- A terminal football game powered by 25 years of real NFL play-by-play data"
+                                      - text: "- 15 Python modules across a 3-tier architecture"
+                                      - text: "- AI offensive and defensive coordinators that adapt based on game state"
+                                      - text: "- Full game simulation with quarters, overtime, timeouts, two-minute"
+                                      - text: warnings
+                                      - text: "- Deterministic replay, same seed, same game, every time"
+                                      - text: "- 50+ passing tests including a gold master simulation"
+                                      - text: "- 89 requirements mapped to test coverage"
+                                      - text: "- README and architecture docs"
+                                      - text: The kernel caught a real bug autonomously. The overtime handler had no
+                                      - text: termination condition for quarter 5+. Games looped forever. The gold master
+                                      - text: test caught it, the agent diagnosed it, wrote a 3-line fix, re-ran the tests, and
+                                      - text: "recorded the lesson: \"Every state machine branch must handle ALL reachable"
+                                      - text: states." That lesson compounded into future tasks.
+                                      - text: 4 lessons learned across 59 tasks. Zero protocol violations. The gate enforcer
+                                      - text: blocked the agent when it hit the action limits. Then it re-anchored and continued cleanly.
+                                      - text: "Previous post showed 5 QA tasks on a live app. This time: 71 tasks, a full"
+                                      - text: application, built from a design doc the agent decomposed itself.
+                                      - text: The agent didn't just execute tasks. It generated them, governed itself, caught its own bugs, and got smarter as it went.
+                                      - text: Game's still in iteration but the foundation is all there. I'll share the repo when it's ready.
+                                      - text: You can get this autonomous task loop here.
+                                      - text: Open source. MIT license.
+                                      - link "https://lnkd.in/g5HZ2wrW" [ref=e1469]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg5HZ2wrW&urlhash=mLoD&mt=l-sfK2lW1Hgffsw53eQK5WSQYD_1zc8gQneyRxugZEpoGTWxIF5XHWooRVUQpzOmcMem1g-O1Xb9dTTcrJ1tzbPBPI9tNcnTT5c8PbyYVKFknaOFq7kG9WKk&isSdui=true
+                                        - strong [ref=e1471]: https://lnkd.in/g5HZ2wrW
+                                      - text: Video is a little snippet of the iteration run.
+                                      - link "#AI" [ref=e1472]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1474]: "#AI"
+                                      - link "#ClaudeCode" [ref=e1475]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1477]: "#ClaudeCode"
+                                      - link "#AutonomousAgents" [ref=e1478]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23autonomousagents&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1480]: "#AutonomousAgents"
+                                      - link "#SDD" [ref=e1481]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23sdd&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1483]: "#SDD"
+                                      - link "#OpenSource" [ref=e1484]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1486]: "#OpenSource"
+                                      - link "#SpecDrivenDevelopment" [ref=e1487]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23specdrivendevelopment&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1489]: "#SpecDrivenDevelopment"
+                                      - link "#AI" [ref=e1490]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1492]: "#AI"
+                                      - link "#BuildInPublic" [ref=e1493]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23buildinpublic&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1495]: "#BuildInPublic"
+                                      - button:
+                                        - generic [ref=e1497]: … more
+                                - generic [ref=e1498]:
+                                  - region "Video Player" [ref=e1500]:
+                                    - application [ref=e1502]
+                                    - text:             
+                                  - link "Play video" [ref=e1505] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7438755286053453825/
+                                    - img [ref=e1507]
+                              - generic [ref=e1509]:
+                                - generic [ref=e1510]:
+                                  - link "9 reactions" [ref=e1511] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1512]:
+                                      - img [ref=e1513]
+                                      - paragraph [ref=e1520]:
+                                        - generic [ref=e1521]:
+                                          - generic [ref=e1522]: 9 reactions
+                                          - text: "9"
+                                  - link "2 comments" [ref=e1524] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7438755286053453825/
+                                    - paragraph [ref=e1525]:
+                                      - generic [ref=e1526]: 2 comments
+                                      - generic [ref=e1527]: 2 comments
+                                - generic [ref=e1528]:
+                                  - generic [ref=e1529]:
+                                    - 'button "Reaction button state: no reaction" [ref=e1532] [cursor=pointer]':
+                                      - generic [ref=e1533]:
+                                        - img [ref=e1534]
+                                        - generic [ref=e1536]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e1538] [cursor=pointer]
+                                  - link "Comment" [ref=e1540] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7438755286053453825/
+                                    - generic [ref=e1541]:
+                                      - img [ref=e1542]
+                                      - generic [ref=e1544]: Comment
+                                  - button "Repost" [ref=e1545] [cursor=pointer]:
+                                    - generic [ref=e1546]:
+                                      - img [ref=e1547]
+                                      - generic [ref=e1549]: Repost
+                                  - link "Send" [ref=e1550] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1551]:
+                                      - img [ref=e1552]
+                                      - generic [ref=e1554]: Send
+                                - link "View analytics" [ref=e1555] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7438755286053453825/
+                                  - generic "View analytics" [ref=e1556]:
+                                    - generic "Content analytics" [ref=e1557]:
+                                      - img "Analytics Icon" [ref=e1558]
+                                      - paragraph [ref=e1560]: 720 impressions
+                                    - paragraph [ref=e1561]:
+                                      - generic [ref=e1562]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e1563]:
+                            - listitem [ref=e1565]:
+                              - generic [ref=e1566]:
+                                - generic [ref=e1567]:
+                                  - link [ref=e1568] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e1569]:
+                                      - img "View Alain Ignacio’s profile" [ref=e1570]
+                                  - generic [ref=e1572]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e1575] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e1577]:
+                                        - paragraph [ref=e1580]: Alain Ignacio
+                                        - paragraph [ref=e1582]:
+                                          - generic [ref=e1583]:
+                                            - img [ref=e1585]
+                                            - text: • You
+                                    - paragraph [ref=e1588]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e1590]:
+                                      - generic [ref=e1591]:
+                                        - text: 3mo • Edited •
+                                        - 'img "Visibility: Global" [ref=e1592]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e1594] [cursor=pointer]:
+                                    - img [ref=e1596]
+                                - link [ref=e1598] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7438355692622671872/
+                                  - paragraph [ref=e1599]:
+                                    - generic [ref=e1600]:
+                                      - text: I dropped a skill folder into a repo and told my AI agent to set itself up. It ran an 11-step self-build sequence. It scanned the codebase, read every reference file, extracted the architectural patterns, and then started building.
+                                      - text: "Here's what it created:"
+                                      - text: "- A protocol file: an index of every rule it would follow, pointing to the actual source files. Not a monolithic doc. An index."
+                                      - text: "- 2 Python enforcement hooks: one that blocks the agent before every write if it hasn't followed the rules. One that detects test failures and requires the agent to record what it learned from the fix before moving on."
+                                      - text: "- 8 domain-specific commands: workflows, checkpoints, failure protocols, duplicate scanners. All wired to the domain the spec described."
+                                      - text: "- State tracking: a lightweight JSON file that tracks whether it's anchored, how many actions since last check-in, whether it owes a lesson."
+                                      - text: Then it told me to restart.
+                                      - text: Because the hooks it wrote for itself only load at startup. It knew that. I didn't tell it.
+                                      - text: When I restarted, the enforcement was live. Every 10 actions, blocked. Must re-read its own protocol. Test fails, blocked. Skips the pre-construction checklist, blocked. Must scan for duplicates and read its own lessons first.
+                                      - text: The spec I dropped in was a QA test automation skill, 16 files describing a 5-step workflow, gate contracts, checkpoints, and a 5-layer architecture. The agent turned that into a self-enforcing system. Protocol, hooks, commands, lessons, state. All wired together.
+                                      - text: "That's two pieces:"
+                                      - text: "The kernel (constant). Manages the agent. Runs the self-build sequence. Enforces the loop: start session, anchor, work, learn, complete. Doesn't know anything about testing."
+                                      - text: The spec (variable). Describes the domain. QA automation, Docker compliance, API validation, whatever the agent needs to be good at.
+                                      - text: Drop a different spec in, the agent builds different enforcement. Same 11 step sequence, completely different output. I've done this with Playwright, Docker and Selenium specs, each time the agent reads the new domain and builds rules tailored to that specific work.
+                                      - text: The kernel provides the discipline. The spec provides the knowledge. The agent builds the bridge between them and then enforces it on itself.
+                                      - text: All three QA platform repos were built exactly this way. Clone any of them, run /domain-setup, and watch the agent build its own enforcement from the spec inside. Same 11-step sequence. Same self-build. You can see every file it creates.
+                                      - text: "Playwright/TypeScript:"
+                                      - link "https://lnkd.in/gyJSQJib" [ref=e1602]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgyJSQJib&urlhash=Sg7E&mt=KHFyb0S6KEncIbsJzYcGtHZq5qCAR411X8JdTuGqXy61r9jyOteXQMC7wjPQtjBJkU00XGO-_vOn6CzcIIcqB_ufloPVGLmpWqEwobLDJqRqWDRbrl0Kgv4A&isSdui=true
+                                        - strong [ref=e1604]: https://lnkd.in/gyJSQJib
+                                      - text: "Selenium/Python:"
+                                      - link "https://lnkd.in/gCsB87dN" [ref=e1605]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgCsB87dN&urlhash=Ud5s&mt=SyRtF8ApZWYRNDJKAWTpAXh3TZ3BRe4yvks2M5dSOI-3I73lxG6XvS9RMGZrzT5hRu46QRSk2bVGN_kkaNGHP6nVZj9_BFNCykC7YFVmYyQeoK2bwnVQSdU-&isSdui=true
+                                        - strong [ref=e1607]: https://lnkd.in/gCsB87dN
+                                      - text: "Docker/Python:"
+                                      - link "https://lnkd.in/gbxUc_xQ" [ref=e1608]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgbxUc_xQ&urlhash=dW2H&mt=HgLYBDym_5v2E79Ln00_Teq4oytoXnUAZkzPUIQ6pm7ro-f82fo5muBUB4myORE114QrVqWgYu_yYF_ZH0LYopuJg83dOXh7SPZebfJLde7uAsOWl2q9hyKo&isSdui=true
+                                        - strong [ref=e1610]: https://lnkd.in/gbxUc_xQ
+                                      - text: "Kernel:"
+                                      - link "https://lnkd.in/g5HZ2wrW" [ref=e1611]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg5HZ2wrW&urlhash=mLoD&mt=QZz-81DmXftB9dhwwYsYZbblS8lWJXWtI_XeKsINR_hHxjtpvWGS3631v5e4yMo5tJbEkmyBXjMHja4SUAfVugbQbzytYPfjRECV7plUYkrfIjhi2EP5DB_U&isSdui=true
+                                        - strong [ref=e1613]: https://lnkd.in/g5HZ2wrW
+                                      - link "#SpecDrivenDevelopment" [ref=e1614]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23specdrivendevelopment&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1616]: "#SpecDrivenDevelopment"
+                                      - link "#AI" [ref=e1617]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1619]: "#AI"
+                                      - link "#BuildInPublic" [ref=e1620]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23buildinpublic&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1622]: "#BuildInPublic"
+                                      - link "#ClaudeCode" [ref=e1623]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1625]: "#ClaudeCode"
+                                      - link "#OpenSource" [ref=e1626]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1628]: "#OpenSource"
+                                      - button:
+                                        - generic [ref=e1630]: … more
+                                - 'link "GitHub - isagawa-co/isagawa-kernel: Self-building, self-improving, safety-first governance for AI agents. Open-source SDD with mechanical enforcement. github.com" [ref=e1631] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fgithub%2Ecom%2Fisagawa-co%2Fisagawa-kernel&urlhash=8DpH&mt=NDUJogU2mxBd0Il6o-7-7aRo6e_78GQB7ypQ-n3rWgg0OIuCEssy7Q5cicCW5clMbxKYtLGhsQNm5D8UamYO0bIc9-V2DrYuP1w-hy4GD5Wp1qtnCU65uISd&isSdui=true
+                                  - generic [ref=e1632]:
+                                    - figure [ref=e1633]
+                                    - generic [ref=e1634]:
+                                      - paragraph [ref=e1636]:
+                                        - generic [ref=e1637]:
+                                          - generic [ref=e1638]: "GitHub - isagawa-co/isagawa-kernel: Self-building, self-improving, safety-first governance for AI agents. Open-source SDD with mechanical enforcement."
+                                          - text: "GitHub - isagawa-co/isagawa-kernel: Self-building, self-improving, safety-first governance for AI agents. Open-source SDD with mechanical enforcement."
+                                      - paragraph [ref=e1640]: github.com
+                              - generic [ref=e1641]:
+                                - generic [ref=e1642]:
+                                  - link "Aisen Lopez Ramos and 24 others reacted" [ref=e1643] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1644]:
+                                      - img [ref=e1645]
+                                      - img [ref=e1651]
+                                      - paragraph [ref=e1660]:
+                                        - generic [ref=e1661]:
+                                          - generic [ref=e1662]: Aisen Lopez Ramos and 24 others reacted
+                                          - generic [ref=e1663]: Aisen Lopez Ramos and 24 others
+                                  - link "1 repost" [ref=e1665] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - paragraph [ref=e1666]:
+                                      - generic [ref=e1667]: 1 repost
+                                      - generic [ref=e1668]: 1 repost
+                                - generic [ref=e1669]:
+                                  - generic [ref=e1670]:
+                                    - 'button "Reaction button state: no reaction" [ref=e1673] [cursor=pointer]':
+                                      - generic [ref=e1674]:
+                                        - img [ref=e1675]
+                                        - generic [ref=e1677]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e1679] [cursor=pointer]
+                                  - link "Comment" [ref=e1681] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7438355692622671872/
+                                    - generic [ref=e1682]:
+                                      - img [ref=e1683]
+                                      - generic [ref=e1685]: Comment
+                                  - button "Repost" [ref=e1686] [cursor=pointer]:
+                                    - generic [ref=e1687]:
+                                      - img [ref=e1688]
+                                      - generic [ref=e1690]: Repost
+                                  - link "Send" [ref=e1691] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1692]:
+                                      - img [ref=e1693]
+                                      - generic [ref=e1695]: Send
+                                - link "View analytics" [ref=e1696] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7438355692622671872/
+                                  - generic "View analytics" [ref=e1697]:
+                                    - generic "Content analytics" [ref=e1698]:
+                                      - img "Analytics Icon" [ref=e1699]
+                                      - paragraph [ref=e1701]: 4,518 impressions
+                                    - paragraph [ref=e1702]:
+                                      - generic [ref=e1703]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e1704]:
+                            - listitem [ref=e1706]:
+                              - generic [ref=e1707]:
+                                - generic [ref=e1708]:
+                                  - link [ref=e1709] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e1710]:
+                                      - img "View Alain Ignacio’s profile" [ref=e1711]
+                                  - generic [ref=e1713]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e1716] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e1718]:
+                                        - paragraph [ref=e1721]: Alain Ignacio
+                                        - paragraph [ref=e1723]:
+                                          - generic [ref=e1724]:
+                                            - img [ref=e1726]
+                                            - text: • You
+                                    - paragraph [ref=e1729]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e1731]:
+                                      - generic [ref=e1732]:
+                                        - text: 3mo •
+                                        - 'img "Visibility: Global" [ref=e1733]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e1735] [cursor=pointer]:
+                                    - img [ref=e1737]
+                                - link [ref=e1739] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7435563283522310144/
+                                  - paragraph [ref=e1740]:
+                                    - generic [ref=e1741]:
+                                      - text: I pointed my QA platform at a Docker image instead of a web app. 7 security tests passed in 18 seconds.
+                                      - text: Here's what happened.
+                                      - text: My platform was built for browser testing, Selenium, Playwright, web apps. The same architecture across both, designed to be interface-agnostic. I wanted to prove it.
+                                      - text: I wrote a spec for Docker image testing. It teaches the agent what to build and how. Same 5 layers, swap the interface. BrowserInterface becomes ImageInterface. Page Objects become Image Objects. The kernel enforces discipline while the agent builds.
+                                      - text: I dropped the spec into my agent. It built what the spec taught, the ImageInterface, Image Objects, and Roles. Then I gave it 4 tasks. It autonomously cycled through each one, building the tests, running them, fixing failures, and moving to the next. No human intervention.
+                                      - text: "Then the test ran. I made sure that Docker Desktop wasn't running also. The framework auto-launched Docker Desktop, waited 8 seconds, pulled rockylinux:9, started a container and ran 7 security hardening checks:"
+                                      - text: "- Prohibited services (avahi-daemon, cups, rpcbind, nfs-server, vsftpd). None were running"
+                                      - text: "- Prohibited ports (FTP, Telnet, SMTP, NFS). None listening"
+                                      - text: "- UID 0 audit. Only root"
+                                      - text: "- Login shell audit. Only authorized users"
+                                      - text: "- File permissions. /etc/shadow, /etc/gshadow locked to 0640"
+                                      - text: "- File ownership. All sensitive files root:root"
+                                      - text: 7/7 tests passed in 18.36 seconds. The Container was removed on teardown and an HTML evidence report generated.
+                                      - text: These map to real compliance frameworks. CIS benchmarks, DISA-STIG. If you're shipping container images to production, these are the baselines you validate before release.
+                                      - text: Three frameworks. Three interfaces. One architecture.
+                                      - text: The kernel that manages the agent is open source.
+                                      - link "https://lnkd.in/g5HZ2wrW" [ref=e1743]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg5HZ2wrW&urlhash=mLoD&mt=VjAlH1QDD-Vfmq72Ii2tz4UiryaozlSzSQ-iK1W4PeAzYd4PP3cfdjIZDAQAaetaViVHBwkkmRss33SQ42CY0caxSicXb7_3cfmYSP-U9Og8NkkRDPM1fmw-&isSdui=true
+                                        - strong [ref=e1745]: https://lnkd.in/g5HZ2wrW
+                                      - text: Want image testing for your container pipeline? DM me or email
+                                      - link "alain@isagawa.co" [ref=e1746]:
+                                        - /url: mailto:alain@isagawa.co
+                                        - strong [ref=e1748]: alain@isagawa.co
+                                      - text: .
+                                      - text: snippet of the report.
+                                      - text: "------------------------------ Captured log call -------------------------------"
+                                      - text: 16:12:57 INFO [test_rocky_security_validation]
+                                      - text: Service avahi-daemon
+                                      - text: running=False PASS
+                                      - text: 16:12:57 INFO [test_rocky_security_validation]
+                                      - text: Service cups
+                                      - text: running=False PASS
+                                      - text: 16:12:58 INFO [test_rocky_security_validation]
+                                      - text: Service rpcbind
+                                      - text: running=False PASS
+                                      - text: 16:12:58 INFO [test_rocky_security_validation]
+                                      - text: Service nfs-server
+                                      - text: running=False PASS
+                                      - text: 16:12:58 INFO [test_rocky_security_validation]
+                                      - text: Service vsftpd
+                                      - text: running=False PASS
+                                      - link "#TestAutomation" [ref=e1749]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23testautomation&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1751]: "#TestAutomation"
+                                      - link "#QA" [ref=e1752]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23qa&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1754]: "#QA"
+                                      - link "#Docker" [ref=e1755]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23docker&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1757]: "#Docker"
+                                      - link "#Security" [ref=e1758]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23security&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1760]: "#Security"
+                                      - link "#CIS" [ref=e1761]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23cis&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1763]: "#CIS"
+                                      - link "#OpenSource" [ref=e1764]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1766]: "#OpenSource"
+                                      - link "#ClaudeCode" [ref=e1767]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1769]: "#ClaudeCode"
+                                      - button:
+                                        - generic [ref=e1771]: … more
+                                - generic [ref=e1772]:
+                                  - region "Video Player" [ref=e1774]:
+                                    - application [ref=e1776]
+                                    - text:             
+                                  - link "Play video" [ref=e1779] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7435563283522310144/
+                                    - img [ref=e1781]
+                              - generic [ref=e1783]:
+                                - generic [ref=e1784]:
+                                  - link "8 reactions" [ref=e1785] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1786]:
+                                      - img [ref=e1787]
+                                      - paragraph [ref=e1794]:
+                                        - generic [ref=e1795]:
+                                          - generic [ref=e1796]: 8 reactions
+                                          - text: "8"
+                                  - link "1 repost" [ref=e1798] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - paragraph [ref=e1799]:
+                                      - generic [ref=e1800]: 1 repost
+                                      - generic [ref=e1801]: 1 repost
+                                - generic [ref=e1802]:
+                                  - generic [ref=e1803]:
+                                    - 'button "Reaction button state: no reaction" [ref=e1806] [cursor=pointer]':
+                                      - generic [ref=e1807]:
+                                        - img [ref=e1808]
+                                        - generic [ref=e1810]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e1812] [cursor=pointer]
+                                  - link "Comment" [ref=e1814] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7435563283522310144/
+                                    - generic [ref=e1815]:
+                                      - img [ref=e1816]
+                                      - generic [ref=e1818]: Comment
+                                  - button "Repost" [ref=e1819] [cursor=pointer]:
+                                    - generic [ref=e1820]:
+                                      - img [ref=e1821]
+                                      - generic [ref=e1823]: Repost
+                                  - link "Send" [ref=e1824] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1825]:
+                                      - img [ref=e1826]
+                                      - generic [ref=e1828]: Send
+                                - link "View analytics" [ref=e1829] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7435563283522310144/
+                                  - generic "View analytics" [ref=e1830]:
+                                    - generic "Content analytics" [ref=e1831]:
+                                      - img "Analytics Icon" [ref=e1832]
+                                      - paragraph [ref=e1834]: 1,030 impressions
+                                    - paragraph [ref=e1835]:
+                                      - generic [ref=e1836]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e1837]:
+                            - listitem [ref=e1839]:
+                              - generic [ref=e1840]:
+                                - generic [ref=e1841]:
+                                  - link [ref=e1842] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e1843]:
+                                      - img "View Alain Ignacio’s profile" [ref=e1844]
+                                  - generic [ref=e1846]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e1849] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e1851]:
+                                        - paragraph [ref=e1854]: Alain Ignacio
+                                        - paragraph [ref=e1856]:
+                                          - generic [ref=e1857]:
+                                            - img [ref=e1859]
+                                            - text: • You
+                                    - paragraph [ref=e1862]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e1864]:
+                                      - generic [ref=e1865]:
+                                        - text: 3mo •
+                                        - 'img "Visibility: Global" [ref=e1866]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e1868] [cursor=pointer]:
+                                    - img [ref=e1870]
+                                - link [ref=e1872] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434775540865056768/
+                                  - paragraph [ref=e1873]:
+                                    - generic [ref=e1874]:
+                                      - text: I gave my AI agent 5 QA test tasks on a live production app and walked away.
+                                      - text: No supervision. No approvals. Just the agent, the tasks, and a live app.
+                                      - text: Here's what happened.
+                                      - text: I built an autonomous cycling loop into my kernel. The agent picks up a task, builds the code, runs the test, fixes its own failures, records what it learned, and moves to the next task. No human in between.
+                                      - text: I set up a clean Playwright/TypeScript platform, no previous test scripts, no prior lessons. Just the framework, my kernel, and 5 tasks queued up. The agent logged into
+                                      - link "zentyent.app" [ref=e1876]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fzentyent%2Eapp&urlhash=U3fo&mt=89kvbPjSpCKBOJirdACt5djFKz1CKLbvnejCIZiGhSDNq-MhfO8KHl9-FSc_TepeB3zPlK-ioTMnnnGf72istvZkLPjkWvnIMZtfFpra2xTuB_MdOui6jgUH&isSdui=true
+                                        - strong [ref=e1878]: zentyent.app
+                                      - text: ", discovered page elements through the browser's accessibility tree, and started building. 13 files total, following the same 5-layer architecture my framework enforces."
+                                      - text: Task 1 passed after one fix. A marketing page had duplicate "Schedule a Live Demo" links and the agent had to figure out which one to click.
+                                      - text: Task 2 was rough. The agent failed 3 times. Wrong selectors, a toast notification it couldn't find, strict mode violations from duplicate elements. Each time it fixed the issue and tried again. By the third fix, the test passed.
+                                      - text: Tasks 3, 4, and 5, all passed on the first run. No failures. No retries. The agent learned enough from its earlier mistakes to get them right the first time.
+                                      - text: "The results:"
+                                      - text: "- 5 test tasks completed, 0 skipped"
+                                      - text: "- 13 files generated (6 page objects, 2 task modules, 2 roles, 5 tests)"
+                                      - text: "- Login flows, modals, dropdowns, toast notifications, cross-domain popups, all handled"
+                                      - text: "- Tasks 3-5: first-run passes"
+                                      - text: "- Human intervention: ZERO"
+                                      - text: I scored the output 4/5 on maintainability. Architecture is clean, coding patterns followed. The 1 point deduction, we didn't have the methods the agent needed, like handling multiple matching elements. The fix was simple. Just wrap those patterns into reusable methods once, and every future test can use them going forward.
+                                      - text: The agent picked its own selectors and got there faster by finding what works for this app through experience rather than following abstract best practices.
+                                      - text: Previous posts showed human-in-the-loop. This run, the human wasn't in the loop. 5 tasks, start to finish, alone.
+                                      - text: "Next step: point it at something that breaks. I want to see how the autonomous agent handles failure when nobody's there to help."
+                                      - text: The autonomous cycling loop isn't in the repo yet. I'm still testing. I've built this modularly, so it it will plug right into the kernel when it's ready.
+                                      - text: Open source. MIT license.
+                                      - link "https://lnkd.in/g5HZ2wrW" [ref=e1879]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg5HZ2wrW&urlhash=mLoD&mt=NsS_GLkUtEj-xwpVOhGuiky9QWYub6wk5gPcXVHZgZ3crFDA_ONlWqwv32CqmiqsSBLF2ZPwlif263WtGKamaNjb8UGDX09J2H31xBBSe6SToRVPAA7Snotl&isSdui=true
+                                        - strong [ref=e1881]: https://lnkd.in/g5HZ2wrW
+                                      - link "https://lnkd.in/gyJSQJib" [ref=e1882]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgyJSQJib&urlhash=Sg7E&mt=YkB7J7lXXA29bjygWC0n50UlFhSzAeJFyvTP7KY1227nRKwVpiJGAyinlk6Jf-6cKWq0jipHgMg996HVDbuA_hId8IQCxAdQSQBiikkBUjFbRLGqpluCPfj7&isSdui=true
+                                        - strong [ref=e1884]: https://lnkd.in/gyJSQJib
+                                      - text: Pic is of one of the tasks that the agent executed autonomously.
+                                      - link "#TestAutomation" [ref=e1885]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23testautomation&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1887]: "#TestAutomation"
+                                      - link "#QA" [ref=e1888]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23qa&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1890]: "#QA"
+                                      - link "#AI" [ref=e1891]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1893]: "#AI"
+                                      - link "#Autonomy" [ref=e1894]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23autonomy&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1896]: "#Autonomy"
+                                      - link "#OpenSource" [ref=e1897]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1899]: "#OpenSource"
+                                      - link "#ClaudeCode" [ref=e1900]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e1902]: "#ClaudeCode"
+                                      - button:
+                                        - generic [ref=e1904]: … more
+                                - link [ref=e1906] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434775540865056768/
+                                  - figure [ref=e1907]:
+                                    - img "View image" [ref=e1908]
+                              - generic [ref=e1909]:
+                                - generic [ref=e1910]:
+                                  - link "107 reactions" [ref=e1911] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1912]:
+                                      - img [ref=e1913]
+                                      - img [ref=e1919]
+                                      - img [ref=e1927]
+                                      - paragraph [ref=e1934]:
+                                        - generic [ref=e1935]:
+                                          - generic [ref=e1936]: 107 reactions
+                                          - text: "107"
+                                  - generic [ref=e1937]:
+                                    - link "17 comments" [ref=e1938] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434775540865056768/
+                                      - paragraph [ref=e1939]:
+                                        - generic [ref=e1940]: 17 comments
+                                        - generic [ref=e1941]: 17 comments
+                                    - paragraph [ref=e1942]: •
+                                    - link "4 reposts" [ref=e1943] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                      - paragraph [ref=e1944]:
+                                        - generic [ref=e1945]: 4 reposts
+                                        - generic [ref=e1946]: 4 reposts
+                                - generic [ref=e1947]:
+                                  - generic [ref=e1948]:
+                                    - 'button "Reaction button state: no reaction" [ref=e1951] [cursor=pointer]':
+                                      - generic [ref=e1952]:
+                                        - img [ref=e1953]
+                                        - generic [ref=e1955]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e1957] [cursor=pointer]
+                                  - link "Comment" [ref=e1959] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434775540865056768/
+                                    - generic [ref=e1960]:
+                                      - img [ref=e1961]
+                                      - generic [ref=e1963]: Comment
+                                  - button "Repost" [ref=e1964] [cursor=pointer]:
+                                    - generic [ref=e1965]:
+                                      - img [ref=e1966]
+                                      - generic [ref=e1968]: Repost
+                                  - link "Send" [ref=e1969] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e1970]:
+                                      - img [ref=e1971]
+                                      - generic [ref=e1973]: Send
+                                - link "View analytics" [ref=e1974] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7434775540865056768/
+                                  - generic "View analytics" [ref=e1975]:
+                                    - generic "Content analytics" [ref=e1976]:
+                                      - img "Analytics Icon" [ref=e1977]
+                                      - paragraph [ref=e1979]: 13,833 impressions
+                                    - paragraph [ref=e1980]:
+                                      - generic [ref=e1981]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e1982]:
+                            - listitem [ref=e1984]:
+                              - generic [ref=e1985]:
+                                - generic [ref=e1986]:
+                                  - generic [ref=e1987]:
+                                    - link [ref=e1988] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - figure [ref=e1989]:
+                                        - img "View Alain Ignacio’s profile" [ref=e1990]
+                                    - paragraph [ref=e1992]:
+                                      - generic [ref=e1993]:
+                                        - link "Alain Ignacio" [ref=e1994] [cursor=pointer]:
+                                          - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                          - strong [ref=e1995]: Alain Ignacio
+                                        - text: reposted this
+                                  - button "Open control menu for post by Brian Dawson" [ref=e1996] [cursor=pointer]:
+                                    - img [ref=e1998]
+                                - generic [ref=e2000]:
+                                  - link [ref=e2001] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/bvdawson/
+                                    - figure [ref=e2002]:
+                                      - img "View Brian Dawson’s profile" [ref=e2003]
+                                  - generic [ref=e2005]:
+                                    - link "Brian Dawson Premium Profile 1st" [ref=e2008] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/bvdawson/
+                                      - generic "Brian Dawson Premium Profile 1st" [ref=e2010]:
+                                        - paragraph [ref=e2013]: Brian Dawson
+                                        - paragraph [ref=e2015]:
+                                          - generic [ref=e2016]:
+                                            - img [ref=e2018]
+                                            - text: • 1st
+                                    - paragraph [ref=e2021]: Technology | Strategy | Marketing | BizDev | DevOps | Open Source | Blockchain | Gaming | Advisor/Leader | Apple, Playstation, Linux Foundation, Ripple
+                                    - paragraph [ref=e2023]:
+                                      - generic [ref=e2024]:
+                                        - text: 3mo •
+                                        - 'img "Visibility: Global" [ref=e2025]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/bvdawson/
+                                - link "Always great chatting with you Alan Shimel" [ref=e2027] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434394689983860737/
+                                  - paragraph [ref=e2028]:
+                                    - generic [ref=e2029]:
+                                      - text: Always great chatting with you
+                                      - link "Alan Shimel" [ref=e2030]:
+                                        - /url: https://www.linkedin.com/in/alanshimel/
+                                        - strong [ref=e2032]: Alan Shimel
+                                - generic [ref=e2033]:
+                                  - generic [ref=e2034]:
+                                    - link [ref=e2035] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/company/techstrong-tv/posts/
+                                      - figure [ref=e2036]:
+                                        - 'img "View company: Techstrong TV" [ref=e2037]'
+                                    - generic [ref=e2039]:
+                                      - link "Techstrong TV" [ref=e2042] [cursor=pointer]:
+                                        - /url: https://www.linkedin.com/company/techstrong-tv/posts/
+                                        - generic "Techstrong TV" [ref=e2044]:
+                                          - paragraph [ref=e2047]: Techstrong TV
+                                      - paragraph [ref=e2049]:
+                                        - generic [ref=e2050]:
+                                          - text: 3mo • Edited •
+                                          - 'img "Visibility: Global" [ref=e2051]'
+                                      - link:
+                                        - /url: https://www.linkedin.com/company/techstrong-tv/posts/
+                                  - 'link "Open-source Linux is evolving to meet modern security and compliance demands. Brian Dawson of CIQ explains how enterprise Linux is adapting to support AI-era workloads, why proactive security strategies are essential, and how Rocky Linux delivers the stability and compliance enterprises require. The discussion also highlights CIQ’s role in building scalable, high-performance infrastructure for the next generation of compute. ▶️ Watch the full conversation: https://buff.ly/dlhtjNt #Linux #OpenSource #Cybersecurity #Compliance #AIInfrastructure" [ref=e2053] [cursor=pointer]':
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7434280942145359873/
+                                    - paragraph [ref=e2054]:
+                                      - generic [ref=e2055]:
+                                        - text: Open-source Linux is evolving to meet modern security and compliance demands.
+                                        - link "Brian Dawson" [ref=e2057]:
+                                          - /url: https://www.linkedin.com/in/bvdawson/
+                                          - strong [ref=e2059]: Brian Dawson
+                                        - text: of
+                                        - link "CIQ" [ref=e2060]:
+                                          - /url: https://www.linkedin.com/company/ctrliq/
+                                          - strong [ref=e2062]: CIQ
+                                        - text: explains how enterprise Linux is adapting to support AI-era workloads, why proactive security strategies are essential, and how Rocky Linux delivers the stability and compliance enterprises require.
+                                        - text: The discussion also highlights
+                                        - link "CIQ" [ref=e2063]:
+                                          - /url: https://www.linkedin.com/company/ctrliq/
+                                          - strong [ref=e2065]: CIQ
+                                        - text: ’s role in building scalable, high-performance infrastructure for the next generation of compute.
+                                        - text: "▶️ Watch the full conversation:"
+                                        - link "https://buff.ly/dlhtjNt" [ref=e2066]:
+                                          - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fbuff%2Ely%2FdlhtjNt&urlhash=qccH&mt=jpK_TSRSM5JSspGZX_Aaav0pGc7OlODPzimv_msz4izIhrTLPv34ec5jEp-V8zqkw3tVzpWOmHpg890zoPHE3zgg4SdQqdfQe3WxiZ9bl4kyU7tbPlPuZMs&isSdui=true
+                                          - strong [ref=e2068]: https://buff.ly/dlhtjNt
+                                        - link "#Linux" [ref=e2069]:
+                                          - /url: https://www.linkedin.com/search/results/all/?keywords=%23linux&origin=HASH_TAG_FROM_FEED
+                                          - strong [ref=e2071]: "#Linux"
+                                        - link "#OpenSource" [ref=e2072]:
+                                          - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                          - strong [ref=e2074]: "#OpenSource"
+                                        - link "#Cybersecurity" [ref=e2075]:
+                                          - /url: https://www.linkedin.com/search/results/all/?keywords=%23cybersecurity&origin=HASH_TAG_FROM_FEED
+                                          - strong [ref=e2077]: "#Cybersecurity"
+                                        - link "#Compliance" [ref=e2078]:
+                                          - /url: https://www.linkedin.com/search/results/all/?keywords=%23compliance&origin=HASH_TAG_FROM_FEED
+                                          - strong [ref=e2080]: "#Compliance"
+                                        - link "#AIInfrastructure" [ref=e2081]:
+                                          - /url: https://www.linkedin.com/search/results/all/?keywords=%23aiinfrastructure&origin=HASH_TAG_FROM_FEED
+                                          - strong [ref=e2083]: "#AIInfrastructure"
+                                        - button:
+                                          - generic [ref=e2085]: … more
+                                  - generic [ref=e2086]:
+                                    - region "Video Player" [ref=e2088]:
+                                      - application [ref=e2090]
+                                      - text:             
+                                    - link "Play video" [ref=e2093] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7434280942145359873/
+                                      - img [ref=e2095]
+                              - generic [ref=e2097]:
+                                - generic [ref=e2098]:
+                                  - link "50 reactions" [ref=e2099] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2100]:
+                                      - img [ref=e2101]
+                                      - img [ref=e2107]
+                                      - img [ref=e2121]
+                                      - paragraph [ref=e2130]:
+                                        - generic [ref=e2131]:
+                                          - generic [ref=e2132]: 50 reactions
+                                          - text: "50"
+                                  - link "3 reposts" [ref=e2134] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - paragraph [ref=e2135]:
+                                      - generic [ref=e2136]: 3 reposts
+                                      - generic [ref=e2137]: 3 reposts
+                                - generic [ref=e2138]:
+                                  - generic [ref=e2139]:
+                                    - 'button "Reaction button state: Like" [ref=e2142] [cursor=pointer]':
+                                      - generic [ref=e2143]:
+                                        - img [ref=e2144]
+                                        - generic [ref=e2149]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e2151] [cursor=pointer]
+                                  - link "Comment" [ref=e2153] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434394689983860737/
+                                    - generic [ref=e2154]:
+                                      - img [ref=e2155]
+                                      - generic [ref=e2157]: Comment
+                                  - button "Repost" [ref=e2158] [cursor=pointer]:
+                                    - generic [ref=e2159]:
+                                      - img [ref=e2160]
+                                      - generic [ref=e2162]: Repost
+                                  - link "Send" [ref=e2163] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2164]:
+                                      - img [ref=e2165]
+                                      - generic [ref=e2167]: Send
+                          - listitem [ref=e2168]:
+                            - listitem [ref=e2170]:
+                              - generic [ref=e2171]:
+                                - generic [ref=e2172]:
+                                  - link [ref=e2173] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e2174]:
+                                      - img "View Alain Ignacio’s profile" [ref=e2175]
+                                  - generic [ref=e2177]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e2180] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e2182]:
+                                        - paragraph [ref=e2185]: Alain Ignacio
+                                        - paragraph [ref=e2187]:
+                                          - generic [ref=e2188]:
+                                            - img [ref=e2190]
+                                            - text: • You
+                                    - paragraph [ref=e2193]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e2195]:
+                                      - generic [ref=e2196]:
+                                        - text: 3mo •
+                                        - 'img "Visibility: Global" [ref=e2197]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e2199] [cursor=pointer]:
+                                    - img [ref=e2201]
+                                - link [ref=e2203] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434309823447482368/
+                                  - paragraph [ref=e2204]:
+                                    - generic [ref=e2205]:
+                                      - text: I automated 19 tests on a client's production app. Script generation alone, about 8 hours.
+                                      - text: Here's what happened.
+                                      - text: A client's production app had no automated tests. I pointed my AI test automation platform at it and started building. One domain at a time, 20 minutes per test on average.
+                                      - text: "The first few tests were rough. The agent hardcoded XPath selectors, wrong element types, encountered three failures in a row from the same mistake. But, the system caught all three, collapsed them into one permanent lesson: use element-agnostic selectors. The agent never made that mistake again."
+                                      - text: By the third domain, the agent was writing tests that passed on the first try. Every past failure was already being avoided, toast notifications that disappear before you can assert them, dynamic dropdowns that go stale between clicks, text matching patterns that break on nested elements. Twelve lessons total, each one permanent.
+                                      - text: "The result:"
+                                      - text: "- 19 automated tests across 5 business domains"
+                                      - text: "- 8 hours total for script generation alone"
+                                      - text: "- 25 minutes average per test"
+                                      - text: "- 12 permanent lessons the AI learned from its own failures"
+                                      - text: "- 10 seconds average per test run"
+                                      - text: Goal Management, Task Management, Employee Management, Scheduled Tasks, Lead Capture. Each domain has its own role, task modules, and page objects. Each test within a domain shares common domain modules, if applicable. And all domains share the same login module and the same enforced architecture. Change the login flow once, every domain picks it up. That's maintainability built into the structure, which allows this platform to scale at enterprise levels.
+                                      - text: This isn't the entire app. It's a fraction of it. And every new test the agent writes, is faster than the last because the lessons stack. The 19th test benefits from every mistake the 1st test made.
+                                      - text: "An automation engineer writing these from scratch would take weeks. An agent without enforcement would produce inconsistent, unmaintainable code every time. An agent with enforcement: 8 hours codegen, consistent architecture, and it gets faster with every test."
+                                      - text: The framework is open source with reference implementations included. Point it at your own app and start building.
+                                      - link "https://lnkd.in/g-SEKDfm" [ref=e2206]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg-SEKDfm&urlhash=znCW&mt=a_b0oymlGIvcqkr3V1NYDfJ8GHYI_KXjwZETXWoU2AZ0wFknETlamIikWQsc7OaxViftdOjnssGcckKWKqVE9sMFlgewqEZXR764sWRKpKBmQ610rIKp4qjg&isSdui=true
+                                        - strong [ref=e2208]: https://lnkd.in/g-SEKDfm
+                                      - link "https://lnkd.in/gyJSQJib" [ref=e2209]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgyJSQJib&urlhash=Sg7E&mt=eJnSlhzLAUJaP2FWfAT6LBsOkCSEuvbIOICvo6GtlNC6LJDVfnsVlmO_38YFJ4x4upBqVp5b5Su0RFV63fg6KOEVNJSRK-IuPcFGXV1xtaTUYBNcabnLEdel&isSdui=true
+                                        - strong [ref=e2211]: https://lnkd.in/gyJSQJib
+                                      - text: "I also set up full QA infrastructure for teams: framework, config, credential management, training, etc."
+                                      - text: DM me or email
+                                      - link "alain@isagawa.co" [ref=e2212]:
+                                        - /url: mailto:alain@isagawa.co
+                                        - strong [ref=e2214]: alain@isagawa.co
+                                      - text: .
+                                      - link "#TestAutomation" [ref=e2215]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23testautomation&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2217]: "#TestAutomation"
+                                      - link "#QA" [ref=e2218]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23qa&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2220]: "#QA"
+                                      - link "#AI" [ref=e2221]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2223]: "#AI"
+                                      - link "#OpenSource" [ref=e2224]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2226]: "#OpenSource"
+                                      - link "#ClaudeCode" [ref=e2227]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2229]: "#ClaudeCode"
+                                      - button:
+                                        - generic [ref=e2231]: … more
+                              - generic [ref=e2232]:
+                                - generic [ref=e2233]:
+                                  - link "32 reactions" [ref=e2234] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2235]:
+                                      - img [ref=e2236]
+                                      - img [ref=e2242]
+                                      - img [ref=e2256]
+                                      - paragraph [ref=e2263]:
+                                        - generic [ref=e2264]:
+                                          - generic [ref=e2265]: 32 reactions
+                                          - text: "32"
+                                  - link "12 comments" [ref=e2267] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434309823447482368/
+                                    - paragraph [ref=e2268]:
+                                      - generic [ref=e2269]: 12 comments
+                                      - generic [ref=e2270]: 12 comments
+                                - generic [ref=e2271]:
+                                  - generic [ref=e2272]:
+                                    - 'button "Reaction button state: no reaction" [ref=e2275] [cursor=pointer]':
+                                      - generic [ref=e2276]:
+                                        - img [ref=e2277]
+                                        - generic [ref=e2279]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e2281] [cursor=pointer]
+                                  - link "Comment" [ref=e2283] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7434309823447482368/
+                                    - generic [ref=e2284]:
+                                      - img [ref=e2285]
+                                      - generic [ref=e2287]: Comment
+                                  - button "Repost" [ref=e2288] [cursor=pointer]:
+                                    - generic [ref=e2289]:
+                                      - img [ref=e2290]
+                                      - generic [ref=e2292]: Repost
+                                  - link "Send" [ref=e2293] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2294]:
+                                      - img [ref=e2295]
+                                      - generic [ref=e2297]: Send
+                                - link "View analytics" [ref=e2298] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7434309823447482368/
+                                  - generic "View analytics" [ref=e2299]:
+                                    - generic "Content analytics" [ref=e2300]:
+                                      - img "Analytics Icon" [ref=e2301]
+                                      - paragraph [ref=e2303]: 6,700 impressions
+                                    - paragraph [ref=e2304]:
+                                      - generic [ref=e2305]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e2306]:
+                            - listitem [ref=e2308]:
+                              - generic [ref=e2309]:
+                                - generic [ref=e2310]:
+                                  - link [ref=e2311] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e2312]:
+                                      - img "View Alain Ignacio’s profile" [ref=e2313]
+                                  - generic [ref=e2315]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e2318] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e2320]:
+                                        - paragraph [ref=e2323]: Alain Ignacio
+                                        - paragraph [ref=e2325]:
+                                          - generic [ref=e2326]:
+                                            - img [ref=e2328]
+                                            - text: • You
+                                    - paragraph [ref=e2331]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e2333]:
+                                      - generic [ref=e2334]:
+                                        - text: 3mo • Edited •
+                                        - 'img "Visibility: Global" [ref=e2335]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e2337] [cursor=pointer]:
+                                    - img [ref=e2339]
+                                - link [ref=e2341] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432984049796734976/
+                                  - paragraph [ref=e2342]:
+                                    - generic [ref=e2343]:
+                                      - text: All I provided was "I want to build a webhook that connects Gumroad to GitHub."
+                                      - text: That's it, I didn't know the stack, I didn't know the architecture. I barely had the full idea fleshed out.
+                                      - text: The agent didn't guess, it asked the right questions and recommended a stack for each decision. This is because the spec told it to. One product or many? Should refunds revoke access? Where does it run? How do you collect the buyer's GitHub username? Each question came with a recommendation and a clear explanation of the tradeoffs.
+                                      - text: By the end of the conversation, we'd gone from a vague idea to a full picture
+                                      - text: "- buyer purchases on Gumroad"
+                                      - text: "- gets collaborator access to my private repo"
+                                      - text: "- multiple products mapped to different repos"
+                                      - text: "- refunds revoke access"
+                                      - text: "- Node.js serverless on Vercel"
+                                      - text: "- Stateless. no database needed"
+                                      - text: "- GitHub tracks access, Gumroad tracks purchases."
+                                      - text: I didn't come in knowing any of that. The spec-driven discovery phase pulled it out of me through the right questions and the right recommendations in the right order. Full architecture, prioritized roadmap, and every decision documented before a single line of code was written.
+                                      - text: "Two things made this work:"
+                                      - text: "- Isagawa Kernel (open source now): manages the agent. Enforces the spec and blocks the agent from skipping steps. It also keeps human in the loop"
+                                      - text: "- Vibe Coder Spec (coming soon): drives the entire workflow. Discovery, stack decisions, architecture, roadmap, scaffold. You describe what you want in plain English. The spec tells the agent how to turn that into a working project."
+                                      - text: Together, the kernel enforces the spec and the spec drives the agent. That's spec-driven development.
+                                      - text: "Kernel:"
+                                      - link "https://lnkd.in/g5HZ2wrW" [ref=e2345]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg5HZ2wrW&urlhash=mLoD&mt=_995VIJ7KbQgN2xSROMTy2zNEVSh-punCKfmsX0Qhg7E-g_kxlQ7kpO1zXm78OLC5ZLSs60z1X8N6YHWI9uMupm0LGrUE_AfwNjrVo9iSfHJ6YTXzNx4X5e9&isSdui=true
+                                        - strong [ref=e2347]: https://lnkd.in/g5HZ2wrW
+                                      - text: The video is the full discovery phase at 3x speed.
+                                      - link "#SpecDrivenDevelopment" [ref=e2348]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23specdrivendevelopment&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2350]: "#SpecDrivenDevelopment"
+                                      - link "#AI" [ref=e2351]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2353]: "#AI"
+                                      - link "#BuildInPublic" [ref=e2354]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23buildinpublic&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2356]: "#BuildInPublic"
+                                      - link "#ClaudeCode" [ref=e2357]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2359]: "#ClaudeCode"
+                                      - link "#OpenSource" [ref=e2360]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2362]: "#OpenSource"
+                                      - button:
+                                        - generic [ref=e2364]: … more
+                                - generic [ref=e2365]:
+                                  - region "Video Player" [ref=e2367]:
+                                    - application [ref=e2369]
+                                    - text:             
+                                  - link "Play video" [ref=e2372] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432984049796734976/
+                                    - img [ref=e2374]
+                              - generic [ref=e2376]:
+                                - generic [ref=e2377]:
+                                  - link "6 reactions" [ref=e2378] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2379]:
+                                      - img [ref=e2380]
+                                      - paragraph [ref=e2387]:
+                                        - generic [ref=e2388]:
+                                          - generic [ref=e2389]: 6 reactions
+                                          - text: "6"
+                                  - link "4 comments" [ref=e2391] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432984049796734976/
+                                    - paragraph [ref=e2392]:
+                                      - generic [ref=e2393]: 4 comments
+                                      - generic [ref=e2394]: 4 comments
+                                - generic [ref=e2395]:
+                                  - generic [ref=e2396]:
+                                    - 'button "Reaction button state: no reaction" [ref=e2399] [cursor=pointer]':
+                                      - generic [ref=e2400]:
+                                        - img [ref=e2401]
+                                        - generic [ref=e2403]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e2405] [cursor=pointer]
+                                  - link "Comment" [ref=e2407] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432984049796734976/
+                                    - generic [ref=e2408]:
+                                      - img [ref=e2409]
+                                      - generic [ref=e2411]: Comment
+                                  - button "Repost" [ref=e2412] [cursor=pointer]:
+                                    - generic [ref=e2413]:
+                                      - img [ref=e2414]
+                                      - generic [ref=e2416]: Repost
+                                  - link "Send" [ref=e2417] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2418]:
+                                      - img [ref=e2419]
+                                      - generic [ref=e2421]: Send
+                                - link "View analytics" [ref=e2422] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7432984049796734976/
+                                  - generic "View analytics" [ref=e2423]:
+                                    - generic "Content analytics" [ref=e2424]:
+                                      - img "Analytics Icon" [ref=e2425]
+                                      - paragraph [ref=e2427]: 510 impressions
+                                    - paragraph [ref=e2428]:
+                                      - generic [ref=e2429]: View analytics
+                                      - text: View analytics
+                          - listitem [ref=e2430]:
+                            - listitem [ref=e2432]:
+                              - generic [ref=e2433]:
+                                - generic [ref=e2434]:
+                                  - link [ref=e2435] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                    - figure [ref=e2436]:
+                                      - img "View Alain Ignacio’s profile" [ref=e2437]
+                                  - generic [ref=e2439]:
+                                    - link "Alain Ignacio Verified Profile You" [ref=e2442] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                      - generic "Alain Ignacio Verified Profile You" [ref=e2444]:
+                                        - paragraph [ref=e2447]: Alain Ignacio
+                                        - paragraph [ref=e2449]:
+                                          - generic [ref=e2450]:
+                                            - img [ref=e2452]
+                                            - text: • You
+                                    - paragraph [ref=e2455]: AI Agent Architect | Founder, Isagawa | Open-source kernel for governed autonomous agents | Quality enforcement → agent governance | isagawa.co
+                                    - paragraph [ref=e2457]:
+                                      - generic [ref=e2458]:
+                                        - text: 3mo •
+                                        - 'img "Visibility: Global" [ref=e2459]'
+                                    - link:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/
+                                  - button "Open control menu for post by Alain Ignacio" [ref=e2461] [cursor=pointer]:
+                                    - img [ref=e2463]
+                                - link [ref=e2465] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432952866669146114/
+                                  - paragraph [ref=e2466]:
+                                    - generic [ref=e2467]:
+                                      - text: I was demoing my QA platform to a colleague. The test script the agent built for the demo found a real bug, live, during the demo.
+                                      - text: "Here's what happened:"
+                                      - text: I pointed my AI test automation system at a client's production app,
+                                      - link "zentyant.app" [ref=e2469]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fzentyant%2Eapp&urlhash=z-IF&mt=XdBzRRFfnpecVDAc5WDRs1xoolR2OSlVTRMRijni3XNmikxsWLrqJ5whsrafFy2NN2i5lCpqkazzfjIsCBlL4JwCAL4zaEgWtNogeCkVgxNMISm-bctLwVjA&isSdui=true
+                                        - strong [ref=e2471]: zentyant.app
+                                      - text: ", and told it to generate a test for their Scheduled Tasks workflow. 20 minutes later I had a fully automated test script: login, navigate, create a scheduled task, verify success."
+                                      - text: I ran it during the demo. It failed. The app's server returned HTTP 400, their cron parser was broken. Every schedule preset, every manual cron input, all blocked. The platform caught it, took a screenshot automatically, and I had a full bug report with video evidence ready to send.
+                                      - text: I sent the report to the dev team. 21 minutes later they pushed a fix and asked me to retest. I reran the exact same test the demo built.
+                                      - text: Passed. 18.42 seconds. All steps green, login, navigation, task creation, success toast, schedule visible in the list.
+                                      - text: "The timeline:"
+                                      - text: "- 20 minutes: AI built the test script"
+                                      - text: "- 21 minutes: dev team fixed the bug"
+                                      - text: "- 18 seconds: retest confirmed the fix"
+                                      - text: 41 minutes from test creation to confirmed fix. On a real production app, with a real bug the team didn't know existed.
+                                      - text: That's the full QA cycle, build, find, report, fix, verify, all in under an hour. The test script that found the bug is the same one that confirmed the fix.
+                                      - text: "Side note: the attached video is the actual defect, 18 seconds of the bug happening live during the demo. This is what the dev team received along with the bug report."
+                                      - text: Open source. MIT license.
+                                      - link "https://lnkd.in/g-SEKDfm" [ref=e2472]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg-SEKDfm&urlhash=znCW&mt=QGaaJuW1hbYdmypItRXtgkiDLysCvpri_ZCDA6W9G9rP9UhdSRra5p73Pq2iJ97Gxjj5V81mA8lG754fSxAWnX-XK6AG-QYn30ukIr4mXHtSi4CP-4ghqGW4&isSdui=true
+                                        - strong [ref=e2474]: https://lnkd.in/g-SEKDfm
+                                      - link "https://lnkd.in/gyJSQJib" [ref=e2475]:
+                                        - /url: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgyJSQJib&urlhash=Sg7E&mt=_lDAkppSmglFc3BMbESzk9JKgQ8dMS16dwsE1rgOOG4BwvJZJCPVjsF7DLBCa2jgDwcnTHcCwR1XjzU0qLtg-W9EvW68zS836WrTJgmdzbKvYXpbEN7kjAx8&isSdui=true
+                                        - strong [ref=e2477]: https://lnkd.in/gyJSQJib
+                                      - link "#TestAutomation" [ref=e2478]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23testautomation&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2480]: "#TestAutomation"
+                                      - link "#QA" [ref=e2481]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23qa&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2483]: "#QA"
+                                      - link "#AI" [ref=e2484]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2486]: "#AI"
+                                      - link "#OpenSource" [ref=e2487]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23opensource&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2489]: "#OpenSource"
+                                      - link "#BugHunting" [ref=e2490]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23bughunting&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2492]: "#BugHunting"
+                                      - link "#ClaudeCode" [ref=e2493]:
+                                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                                        - strong [ref=e2495]: "#ClaudeCode"
+                                      - button:
+                                        - generic [ref=e2497]: … more
+                                - generic [ref=e2498]:
+                                  - region "Video Player" [ref=e2500]:
+                                    - application [ref=e2502]
+                                    - text:             
+                                  - link "Play video" [ref=e2505] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432952866669146114/
+                                    - img [ref=e2507]
+                              - generic [ref=e2509]:
+                                - generic [ref=e2510]:
+                                  - link "56 reactions" [ref=e2511] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2512]:
+                                      - img [ref=e2513]
+                                      - img [ref=e2519]
+                                      - img [ref=e2533]
+                                      - paragraph [ref=e2540]:
+                                        - generic [ref=e2541]:
+                                          - generic [ref=e2542]: 56 reactions
+                                          - text: "56"
+                                  - generic [ref=e2543]:
+                                    - link "8 comments" [ref=e2544] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432952866669146114/
+                                      - paragraph [ref=e2545]:
+                                        - generic [ref=e2546]: 8 comments
+                                        - generic [ref=e2547]: 8 comments
+                                    - paragraph [ref=e2548]: •
+                                    - link "5 reposts" [ref=e2549] [cursor=pointer]:
+                                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                      - paragraph [ref=e2550]:
+                                        - generic [ref=e2551]: 5 reposts
+                                        - generic [ref=e2552]: 5 reposts
+                                - generic [ref=e2553]:
+                                  - generic [ref=e2554]:
+                                    - 'button "Reaction button state: no reaction" [ref=e2557] [cursor=pointer]':
+                                      - generic [ref=e2558]:
+                                        - img [ref=e2559]
+                                        - generic [ref=e2561]: Like
+                                    - button "Open reactions menu":
+                                      - img [ref=e2563] [cursor=pointer]
+                                  - link "Comment" [ref=e2565] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/feed/update/urn:li:activity:7432952866669146114/
+                                    - generic [ref=e2566]:
+                                      - img [ref=e2567]
+                                      - generic [ref=e2569]: Comment
+                                  - button "Repost" [ref=e2570] [cursor=pointer]:
+                                    - generic [ref=e2571]:
+                                      - img [ref=e2572]
+                                      - generic [ref=e2574]: Repost
+                                  - link "Send" [ref=e2575] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                                    - generic [ref=e2576]:
+                                      - img [ref=e2577]
+                                      - generic [ref=e2579]: Send
+                                - link "View analytics" [ref=e2580] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/analytics/post-summary/urn:li:activity:7432952866669146114/
+                                  - generic "View analytics" [ref=e2581]:
+                                    - generic "Content analytics" [ref=e2582]:
+                                      - img "Analytics Icon" [ref=e2583]
+                                      - paragraph [ref=e2585]: 10,697 impressions
+                                    - paragraph [ref=e2586]:
+                                      - generic [ref=e2587]: View analytics
+                                      - text: View analytics
+                      - button "Next" [ref=e2588] [cursor=pointer]:
+                        - img [ref=e2590]
+                    - link "Show all posts" [ref=e2593] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/recent-activity/all/
+                      - generic [ref=e2594]:
+                        - img [ref=e2595]
+                        - generic [ref=e2597]: Show all posts
+                - generic [ref=e2600]:
+                  - generic [ref=e2605]:
+                    - generic [ref=e2606]:
+                      - heading "Experience" [level=2] [ref=e2607]
+                      - generic [ref=e2608]:
+                        - button "Add experience" [ref=e2609] [cursor=pointer]:
+                          - img [ref=e2611]
+                        - link "Edit experience" [ref=e2613] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/details/experience/
+                          - img [ref=e2615]
+                    - generic [ref=e2617]:
+                      - generic [ref=e2622]:
+                        - figure [ref=e2623]:
+                          - img "Isagawa Co. logo" [ref=e2624]
+                        - generic [ref=e2630]:
+                          - link "Founder Isagawa Co. Jan 2026 - Present · 6 mos" [ref=e2631] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/position/2837358306/
+                            - generic [ref=e2632]:
+                              - generic [ref=e2634]:
+                                - paragraph [ref=e2635]: Founder
+                                - paragraph [ref=e2636]: Isagawa Co.
+                              - paragraph [ref=e2637]: Jan 2026 - Present · 6 mos
+                          - paragraph [ref=e2639]:
+                            - generic [ref=e2640]:
+                              - text: Isagawa is an agent harness factory.
+                              - text: "The Isagawa Kernel built every other harness Isagawa ships:"
+                              - text: "- platform-playwright, platform-selenium, platform-docker, platform-ssh (kernel-governed QA harnesses)"
+                              - text: "- vibe-coder-agent (AI app builder)"
+                              - text: "- job-application-spec (autonomous job applications)"
+                              - text: "- Plus 15+ domain specs for compliance, healthcare, DevOps, security"
+                              - text: isagawa.co | github.com/isagawa-co/isagawa-kernel
+                              - button:
+                                - generic [ref=e2643] [cursor=pointer]: … more
+                      - generic [ref=e2648]:
+                        - figure [ref=e2649]:
+                          - img "Helios Digital logo" [ref=e2650]
+                        - link "Senior Quality Assurance Engineer Helios Digital · Full-time May 2025 - Present · 1 yr 2 mos" [ref=e2657] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/position/2764173868/
+                          - generic [ref=e2658]:
+                            - generic [ref=e2660]:
+                              - paragraph [ref=e2661]: Senior Quality Assurance Engineer
+                              - paragraph [ref=e2662]: Helios Digital · Full-time
+                            - paragraph [ref=e2663]: May 2025 - Present · 1 yr 2 mos
+                      - generic [ref=e2668]:
+                        - link [ref=e2669] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/5301913/
+                          - figure [ref=e2670]:
+                            - img "Nakupuna Companies logo" [ref=e2671]
+                        - link "Lead Automation Engineer Nakupuna Companies · Full-time Nov 2022 - May 2025 · 2 yrs 7 mos" [ref=e2673] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/position/2509178331/
+                          - generic [ref=e2674]:
+                            - generic [ref=e2676]:
+                              - paragraph [ref=e2677]: Lead Automation Engineer
+                              - paragraph [ref=e2678]: Nakupuna Companies · Full-time
+                            - paragraph [ref=e2679]: Nov 2022 - May 2025 · 2 yrs 7 mos
+                      - generic [ref=e2684]:
+                        - figure [ref=e2685]:
+                          - img "HMSA logo" [ref=e2686]
+                        - link "Test Manager HMSA May 2013 - Oct 2022 · 9 yrs 6 mos" [ref=e2693] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/position/415778358/
+                          - generic [ref=e2694]:
+                            - generic [ref=e2696]:
+                              - paragraph [ref=e2697]: Test Manager
+                              - paragraph [ref=e2698]: HMSA
+                            - paragraph [ref=e2699]: May 2013 - Oct 2022 · 9 yrs 6 mos
+                      - generic [ref=e2704]:
+                        - link [ref=e2705] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/1009/
+                          - figure [ref=e2706]:
+                            - img "IBM Global Services logo" [ref=e2707]
+                        - link "IT Specialist IBM Global Services Jul 2008 - May 2013 · 4 yrs 11 mos" [ref=e2709] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/position/15538964/
+                          - generic [ref=e2710]:
+                            - generic [ref=e2712]:
+                              - paragraph [ref=e2713]: IT Specialist
+                              - paragraph [ref=e2714]: IBM Global Services
+                            - paragraph [ref=e2715]: Jul 2008 - May 2013 · 4 yrs 11 mos
+                    - link "Show all experiences" [ref=e2717] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/details/experience/
+                      - generic [ref=e2718]:
+                        - img [ref=e2719]
+                        - generic [ref=e2721]: Show all
+                  - generic [ref=e2728]:
+                    - generic [ref=e2729]:
+                      - heading "Education" [level=2] [ref=e2730]
+                      - button "Dismiss education null state card" [ref=e2732] [cursor=pointer]:
+                        - img [ref=e2734]
+                    - generic [ref=e2736]:
+                      - paragraph [ref=e2737]: Show your qualifications and be up to 2X more likely to receive a recruiter InMail.
+                      - generic [ref=e2738]:
+                        - img [ref=e2740]
+                        - generic [ref=e2742]:
+                          - paragraph [ref=e2743]: School
+                          - paragraph [ref=e2744]: Degree, Field of Study
+                          - paragraph [ref=e2745]: 2023 - Present · 2 yrs
+                      - link "Add education" [ref=e2746] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/forms/education/new/
+                        - generic [ref=e2748]: Add education
+                  - generic [ref=e2755]:
+                    - generic [ref=e2756]:
+                      - heading "Connected apps" [level=2] [ref=e2757]
+                      - button "Dismiss connected apps null state card" [ref=e2759] [cursor=pointer]:
+                        - img [ref=e2761]
+                    - generic [ref=e2763]:
+                      - paragraph [ref=e2764]: Add the products you use to stand out and get more profile views.
+                      - generic [ref=e2765]:
+                        - generic [ref=e2766]:
+                          - figure [ref=e2768]
+                          - paragraph [ref=e2770]: Gamma
+                        - generic [ref=e2771]:
+                          - figure [ref=e2773]
+                          - paragraph [ref=e2775]: IntelliJ IDEA
+                        - generic [ref=e2776]:
+                          - figure [ref=e2778]
+                          - paragraph [ref=e2780]: HubSpot
+                        - generic [ref=e2781]:
+                          - figure [ref=e2783]
+                          - paragraph [ref=e2785]: Replit
+                      - link "Add connected apps" [ref=e2786] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/details/add-connected-account/
+                        - generic [ref=e2788]: Add connected apps
+                - generic [ref=e2797]:
+                  - heading "Interests" [level=2] [ref=e2799]
+                  - generic [ref=e2800]:
+                    - generic [ref=e2801]:
+                      - radio "Companies" [checked] [ref=e2802] [cursor=pointer]:
+                        - generic [ref=e2803]:
+                          - checkbox "Companies" [checked]
+                          - generic [ref=e2804]: Companies
+                      - radio "Groups" [ref=e2805] [cursor=pointer]:
+                        - generic [ref=e2806]:
+                          - checkbox "Groups"
+                          - generic [ref=e2807]: Groups
+                      - radio "Newsletters" [ref=e2808] [cursor=pointer]:
+                        - generic [ref=e2809]:
+                          - checkbox "Newsletters"
+                          - generic [ref=e2810]: Newsletters
+                    - generic [ref=e2812]:
+                      - generic [ref=e2815]:
+                        - generic [ref=e2817]:
+                          - link "TestRelic AI, Company 408 followers" [ref=e2818] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/testrelic-ai/
+                            - generic [ref=e2819]:
+                              - figure [ref=e2820]
+                              - generic [ref=e2821]:
+                                - paragraph [ref=e2824]:
+                                  - generic [ref=e2825]:
+                                    - generic [ref=e2826]: TestRelic AI, Company
+                                    - text: TestRelic AI
+                                - paragraph [ref=e2827]: 408 followers
+                          - button "Following, click to unfollow TestRelic AI" [ref=e2832] [cursor=pointer]:
+                            - generic [ref=e2833]:
+                              - img [ref=e2834]
+                              - generic [ref=e2837]: Following
+                        - generic [ref=e2839]:
+                          - link "Anthropic, Company 3,879,890 followers" [ref=e2840] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/anthropicresearch/
+                            - generic [ref=e2841]:
+                              - figure [ref=e2842]
+                              - generic [ref=e2843]:
+                                - paragraph [ref=e2846]:
+                                  - generic [ref=e2847]:
+                                    - generic [ref=e2848]: Anthropic, Company
+                                    - text: Anthropic
+                                - paragraph [ref=e2849]: 3,879,890 followers
+                          - button "Following, click to unfollow Anthropic" [ref=e2854] [cursor=pointer]:
+                            - generic [ref=e2855]:
+                              - img [ref=e2856]
+                              - generic [ref=e2859]: Following
+                      - link "Show all interests" [ref=e2861] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/details/interests/?initialTabId=interest_companies
+                        - generic [ref=e2862]:
+                          - img [ref=e2863]
+                          - generic [ref=e2865]: Show all
+            - complementary "Aside" [ref=e2866]:
+              - generic [ref=e2867]:
+                - generic [ref=e2868]:
+                  - generic [ref=e2872]:
+                    - generic [ref=e2873]:
+                      - heading "Profile language" [level=2] [ref=e2874]
+                      - link "Edit profile language" [ref=e2876] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/secondary-language/
+                        - img [ref=e2878]
+                    - paragraph [ref=e2881]: English
+                    - generic [ref=e2882]:
+                      - heading "Public profile & URL" [level=2] [ref=e2883]
+                      - link "Edit Public profile & URL" [ref=e2885] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile
+                        - img [ref=e2887]
+                    - paragraph [ref=e2890]: www.linkedin.com/in/alain-ignacio-54b9823
+                  - iframe [ref=e2893]:
+                    - generic [ref=f119e2]:
+                      - generic [ref=f119e3]: Ad
+                      - img "overflow-web-small" [ref=f119e6] [cursor=pointer]
+                      - link "LinkedIn" [ref=f119e10] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fbusiness.linkedin.com%2Ftalent-solutions%2Fcx%2F23%2F05%2Fcontact-us-quality%3Fsrc%3Dli-dynamic%26veh%3DDAxAudienceSeniorityxENGxBLTPxALEADSx733xUncoverHiddenTalentxWomanMagnifyingGlassxCTAGetStartedxWVx202408xNAMER%26trk%3DDAxAudienceSeniorityxENGxBLTPxALEADSx733xUncoverHiddenTalentxWomanMagnifyingGlassxCTAGetStartedxWVx202408xNAMER%26mcid%3D7226192911070031872%26li_fat_id%3D38de66d2-a70b-4d39-a0bc-7cf964bd3dd6&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGe9c58zl3NIRrSE_v8Wv6ZimiS5VaYVbXs7lOlX0JGFvCzpw9oSGNXNLQTD3r-Z1O9vIy7_A_-xwAM4_XgkqaNrsPfNZ44P87zAI5uPF8YUdbMrJoGFAtLZ9XXfHUjFXd0e_E9fCi-lu1LFl2rBEb5ucpkOarCOzAx37c6sn26U44yQt8hYv3jrTUeu4k8d-JSxueDk59WtvC5KcKVwSpSYcz0sbI0U7aUPk9PQdnf4tpnfmFHxQsN8Ju4PsWOVCrUCqb1Ix0GRaMcYVd-L1XxrSwvnr4o2Sx1lw5Nshuvgo99CGnWxVrXXpfQcMmRWOKflvC71VUvNo1xv8VO6yflkCx9xw4oVpxTscf1PwgJesc5-GbIzwoNp4JnEpkpFCCbYuyei2qXGt577aslAemMndS7b0U1lSx2Lb2sP9kmjWhfM7x5L0BaJ0Aove1N9HMzxhAaN5v86zc8Fh2PBX76wl_xu65pH7QopdEg0NI0fcIANR30zZ3i0xX6BLe6kApThla5p0SbEk1y5UctFkydK6mgturEcLmyeEBeuo1MsGBIcJwyWlZpgpUbI-g-c16oxV_wsgbM6WXEpBJvAcJnDieUe25nRNWWjZvxHAmf1Q_y4z2x1a54s1asUQ_025z4rFd4RUbdVnug5jBF6IelbZAer7vjE00_-5PQR0uTOum2NisHxa1PKqItWePkhtxy_W2pZdMQUpWEjceTwl2zkKh8vgDuglU7JtZSj-81raZPW3N0_x1pt-jkrkQrqpUotI1VUyWRNeI2pVtRMKK1rwryj6wCujbHew3MtBVsTcwv--bngrJFrVFWsE_75Z9O7VDaW_PXC9YqiAbumMznRqFGo_LE_A0XGzI2nygth6pk4r8uPsD9XTTi0YF2NXaktFLEw9i0vYHkLD9A50KrI8SfY5R-8fqIrEvK-Q6St0p8jSUAlsCCX4TCO6C_YfHAEDIIQxGhV24i7MkJTXKb8bTMNi4ezYBq0I2iPwQSfQ_VqL0XoosAtcDo4zPqyPnru-_b4B6chT_XEvLgcWQMEFOxsmYhgGQ2RuQ7l3IZeP9GtTSVt6f5S7o1WMJ4Ev-SjHJPEYc_qocdpjqEokQeIb-x0kS0Q0qSrEikl8Ht1N7fY32Exqgo09XVvm5VgiCtf7p6pKBuCfISjJhOraOk4NyHYPL0V5wH0uy-mcWjSX2qZh6KZB9b%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%22%2C%22trackingId%22%3A%22b147b843-a9f9-42bc-803f-1281bd024d60%22%7D%2C%22time%22%3A1782240410789%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_self_edit_top_card%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A5882335167944173384
+                      - generic [ref=f119e11]:
+                        - heading "Find qualified candidates for hard-to-fill roles on LinkedIn." [level=2] [ref=f119e14]
+                        - generic [ref=f119e16]:
+                          - img "Alain" [ref=f119e17]
+                          - generic [ref=f119e18]:
+                            - link "LinkedIn" [ref=f119e19] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fbusiness.linkedin.com%2Ftalent-solutions%2Fcx%2F23%2F05%2Fcontact-us-quality%3Fsrc%3Dli-dynamic%26veh%3DDAxAudienceSeniorityxENGxBLTPxALEADSx733xUncoverHiddenTalentxWomanMagnifyingGlassxCTAGetStartedxWVx202408xNAMER%26trk%3DDAxAudienceSeniorityxENGxBLTPxALEADSx733xUncoverHiddenTalentxWomanMagnifyingGlassxCTAGetStartedxWVx202408xNAMER%26mcid%3D7226192911070031872%26li_fat_id%3D38de66d2-a70b-4d39-a0bc-7cf964bd3dd6&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGe9c58zl3NIRrSE_v8Wv6ZimiS5VaYVbXs7lOlX0JGFvCzpw9oSGNXNLQTD3r-Z1O9vIy7_A_-xwAM4_XgkqaNrsPfNZ44P87zAI5uPF8YUdbMrJoGFAtLZ9XXfHUjFXd0e_E9fCi-lu1LFl2rBEb5ucpkOarCOzAx37c6sn26U44yQt8hYv3jrTUeu4k8d-JSxueDk59WtvC5KcKVwSpSYcz0sbI0U7aUPk9PQdnf4tpnfmFHxQsN8Ju4PsWOVCrUCqb1Ix0GRaMcYVd-L1XxrSwvnr4o2Sx1lw5Nshuvgo99CGnWxVrXXpfQcMmRWOKflvC71VUvNo1xv8VO6yflkCx9xw4oVpxTscf1PwgJesc5-GbIzwoNp4JnEpkpFCCbYuyei2qXGt577aslAemMndS7b0U1lSx2Lb2sP9kmjWhfM7x5L0BaJ0Aove1N9HMzxhAaN5v86zc8Fh2PBX76wl_xu65pH7QopdEg0NI0fcIANR30zZ3i0xX6BLe6kApThla5p0SbEk1y5UctFkydK6mgturEcLmyeEBeuo1MsGBIcJwyWlZpgpUbI-g-c16oxV_wsgbM6WXEpBJvAcJnDieUe25nRNWWjZvxHAmf1Q_y4z2x1a54s1asUQ_025z4rFd4RUbdVnug5jBF6IelbZAer7vjE00_-5PQR0uTOum2NisHxa1PKqItWePkhtxy_W2pZdMQUpWEjceTwl2zkKh8vgDuglU7JtZSj-81raZPW3N0_x1pt-jkrkQrqpUotI1VUyWRNeI2pVtRMKK1rwryj6wCujbHew3MtBVsTcwv--bngrJFrVFWsE_75Z9O7VDaW_PXC9YqiAbumMznRqFGo_LE_A0XGzI2nygth6pk4r8uPsD9XTTi0YF2NXaktFLEw9i0vYHkLD9A50KrI8SfY5R-8fqIrEvK-Q6St0p8jSUAlsCCX4TCO6C_YfHAEDIIQxGhV24i7MkJTXKb8bTMNi4ezYBq0I2iPwQSfQ_VqL0XoosAtcDo4zPqyPnru-_b4B6chT_XEvLgcWQMEFOxsmYhgGQ2RuQ7l3IZeP9GtTSVt6f5S7o1WMJ4Ev-SjHJPEYc_qocdpjqEokQeIb-x0kS0Q0qSrEikl8Ht1N7fY32Exqgo09XVvm5VgiCtf7p6pKBuCfISjJhOraOk4NyHYPL0V5wH0uy-mcWjSX2qZh6KZB9b%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%22%2C%22trackingId%22%3A%22b147b843-a9f9-42bc-803f-1281bd024d60%22%7D%2C%22time%22%3A1782240410789%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_self_edit_top_card%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A5882335167944173384
+                              - img "LinkedIn" [ref=f119e20]
+                            - tooltip "LinkedIn" [ref=f119e21]
+                        - generic [ref=f119e22]:
+                          - heading "Alain, uncover hidden talent." [level=2] [ref=f119e25]
+                          - link "Get started" [ref=f119e27] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fbusiness.linkedin.com%2Ftalent-solutions%2Fcx%2F23%2F05%2Fcontact-us-quality%3Fsrc%3Dli-dynamic%26veh%3DDAxAudienceSeniorityxENGxBLTPxALEADSx733xUncoverHiddenTalentxWomanMagnifyingGlassxCTAGetStartedxWVx202408xNAMER%26trk%3DDAxAudienceSeniorityxENGxBLTPxALEADSx733xUncoverHiddenTalentxWomanMagnifyingGlassxCTAGetStartedxWVx202408xNAMER%26mcid%3D7226192911070031872%26li_fat_id%3D38de66d2-a70b-4d39-a0bc-7cf964bd3dd6&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGe9c58zl3NIRrSE_v8Wv6ZimiS5VaYVbXs7lOlX0JGFvCzpw9oSGNXNLQTD3r-Z1O9vIy7_A_-xwAM4_XgkqaNrsPfNZ44P87zAI5uPF8YUdbMrJoGFAtLZ9XXfHUjFXd0e_E9fCi-lu1LFl2rBEb5ucpkOarCOzAx37c6sn26U44yQt8hYv3jrTUeu4k8d-JSxueDk59WtvC5KcKVwSpSYcz0sbI0U7aUPk9PQdnf4tpnfmFHxQsN8Ju4PsWOVCrUCqb1Ix0GRaMcYVd-L1XxrSwvnr4o2Sx1lw5Nshuvgo99CGnWxVrXXpfQcMmRWOKflvC71VUvNo1xv8VO6yflkCx9xw4oVpxTscf1PwgJesc5-GbIzwoNp4JnEpkpFCCbYuyei2qXGt577aslAemMndS7b0U1lSx2Lb2sP9kmjWhfM7x5L0BaJ0Aove1N9HMzxhAaN5v86zc8Fh2PBX76wl_xu65pH7QopdEg0NI0fcIANR30zZ3i0xX6BLe6kApThla5p0SbEk1y5UctFkydK6mgturEcLmyeEBeuo1MsGBIcJwyWlZpgpUbI-g-c16oxV_wsgbM6WXEpBJvAcJnDieUe25nRNWWjZvxHAmf1Q_y4z2x1a54s1asUQ_025z4rFd4RUbdVnug5jBF6IelbZAer7vjE00_-5PQR0uTOum2NisHxa1PKqItWePkhtxy_W2pZdMQUpWEjceTwl2zkKh8vgDuglU7JtZSj-81raZPW3N0_x1pt-jkrkQrqpUotI1VUyWRNeI2pVtRMKK1rwryj6wCujbHew3MtBVsTcwv--bngrJFrVFWsE_75Z9O7VDaW_PXC9YqiAbumMznRqFGo_LE_A0XGzI2nygth6pk4r8uPsD9XTTi0YF2NXaktFLEw9i0vYHkLD9A50KrI8SfY5R-8fqIrEvK-Q6St0p8jSUAlsCCX4TCO6C_YfHAEDIIQxGhV24i7MkJTXKb8bTMNi4ezYBq0I2iPwQSfQ_VqL0XoosAtcDo4zPqyPnru-_b4B6chT_XEvLgcWQMEFOxsmYhgGQ2RuQ7l3IZeP9GtTSVt6f5S7o1WMJ4Ev-SjHJPEYc_qocdpjqEokQeIb-x0kS0Q0qSrEikl8Ht1N7fY32Exqgo09XVvm5VgiCtf7p6pKBuCfISjJhOraOk4NyHYPL0V5wH0uy-mcWjSX2qZh6KZB9b%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%22%2C%22trackingId%22%3A%22b147b843-a9f9-42bc-803f-1281bd024d60%22%7D%2C%22time%22%3A1782240410789%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_self_edit_top_card%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A5882335167944173384
+                  - generic [ref=e2898]:
+                    - generic [ref=e2900]:
+                      - heading "Who your viewers also viewed" [level=3] [ref=e2902]
+                      - paragraph [ref=e2903]: Private to you
+                    - generic [ref=e2905]:
+                      - button "Someone at George Mason University View" [ref=e2906] [cursor=pointer]:
+                        - generic [ref=e2907]:
+                          - figure [ref=e2908]
+                          - generic [ref=e2909]:
+                            - paragraph [ref=e2912]: Someone at George Mason University
+                            - button "View" [ref=e2913]:
+                              - generic [ref=e2915]: View
+                      - button "Software Developer at Luxury Presence View" [ref=e2916] [cursor=pointer]:
+                        - generic [ref=e2917]:
+                          - figure [ref=e2918]
+                          - generic [ref=e2919]:
+                            - paragraph [ref=e2922]: Software Developer at Luxury Presence
+                            - button "View" [ref=e2923]:
+                              - generic [ref=e2925]: View
+                      - button "Someone at vidIQ View" [ref=e2926] [cursor=pointer]:
+                        - generic [ref=e2927]:
+                          - figure [ref=e2928]
+                          - generic [ref=e2929]:
+                            - paragraph [ref=e2932]: Someone at vidIQ
+                            - button "View" [ref=e2933]:
+                              - generic [ref=e2935]: View
+                      - button "Consultant in the IT System Testing and Evaluation industry View" [ref=e2936] [cursor=pointer]:
+                        - generic [ref=e2937]:
+                          - figure [ref=e2938]
+                          - generic [ref=e2939]:
+                            - paragraph [ref=e2942]: Consultant in the IT System Testing and Evaluation industry
+                            - button "View" [ref=e2943]:
+                              - generic [ref=e2945]: View
+                  - generic [ref=e2950]:
+                    - generic [ref=e2952]:
+                      - heading "People you may know" [level=2] [ref=e2953]
+                      - paragraph [ref=e2954]: From your industry
+                    - generic [ref=e2956]:
+                      - generic [ref=e2958]:
+                        - link "Bree Duros Premium · 2nd Sr. Technical Recruiter" [ref=e2960] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/bhduros/
+                          - generic [ref=e2961]:
+                            - figure [ref=e2962]
+                            - generic [ref=e2963]:
+                              - generic [ref=e2964]:
+                                - paragraph [ref=e2966]:
+                                  - link "Bree Duros Premium" [ref=e2968]:
+                                    - /url: https://www.linkedin.com/in/bhduros/
+                                    - text: Bree Duros
+                                    - img "Premium" [ref=e2969]:
+                                      - img [ref=e2970]
+                                - paragraph [ref=e2972]: · 2nd
+                              - paragraph [ref=e2974]: Sr. Technical Recruiter
+                        - button "Invite Bree Duros to connect" [ref=e2979] [cursor=pointer]:
+                          - generic [ref=e2980]:
+                            - img [ref=e2981]
+                            - generic [ref=e2984]: Connect
+                      - generic [ref=e2986]:
+                        - link "Kurt Leopoldino · 2nd Senior Solutions Architect at Salesforce" [ref=e2988] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/kurt-leopoldino-920364b2/
+                          - generic [ref=e2989]:
+                            - figure [ref=e2990]
+                            - generic [ref=e2991]:
+                              - generic [ref=e2992]:
+                                - paragraph [ref=e2994]:
+                                  - link "Kurt Leopoldino" [ref=e2996]:
+                                    - /url: https://www.linkedin.com/in/kurt-leopoldino-920364b2/
+                                - paragraph [ref=e2997]: · 2nd
+                              - paragraph [ref=e2999]: Senior Solutions Architect at Salesforce
+                        - button "Invite Kurt Leopoldino to connect" [ref=e3004] [cursor=pointer]:
+                          - generic [ref=e3005]:
+                            - img [ref=e3006]
+                            - generic [ref=e3009]: Connect
+                      - generic [ref=e3011]:
+                        - link "Bobby Masak Verified · 2nd  Hardware Technologies Recruiting" [ref=e3013] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/bobjob/
+                          - generic [ref=e3014]:
+                            - figure [ref=e3015]
+                            - generic [ref=e3016]:
+                              - generic [ref=e3017]:
+                                - paragraph [ref=e3019]:
+                                  - link "Bobby Masak Verified" [ref=e3021]:
+                                    - /url: https://www.linkedin.com/in/bobjob/
+                                    - text: Bobby Masak
+                                    - img "Verified" [ref=e3022]:
+                                      - img [ref=e3023]
+                                - paragraph [ref=e3025]: · 2nd
+                              - paragraph [ref=e3027]:  Hardware Technologies Recruiting
+                        - button "Invite Bobby Masak to connect" [ref=e3032] [cursor=pointer]:
+                          - generic [ref=e3033]:
+                            - img [ref=e3034]
+                            - generic [ref=e3037]: Connect
+                      - generic [ref=e3039]:
+                        - link "Nathan Worland Verified · 2nd Software QA Test Lead / Tester | Agile/Manual Testing | ISTQB Certified | Automation in Progress (Selenium + Python) Supply Chain Logistics Professional | DOD & Private Sector" [ref=e3041] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/nathan-worland-70405a89/
+                          - generic [ref=e3042]:
+                            - figure [ref=e3043]:
+                              - img [ref=e3044]
+                            - generic [ref=e3050]:
+                              - generic [ref=e3051]:
+                                - paragraph [ref=e3053]:
+                                  - link "Nathan Worland Verified" [ref=e3055]:
+                                    - /url: https://www.linkedin.com/in/nathan-worland-70405a89/
+                                    - text: Nathan Worland
+                                    - img "Verified" [ref=e3056]:
+                                      - img [ref=e3057]
+                                - paragraph [ref=e3059]: · 2nd
+                              - paragraph [ref=e3061]: Software QA Test Lead / Tester | Agile/Manual Testing | ISTQB Certified | Automation in Progress (Selenium + Python) Supply Chain Logistics Professional | DOD & Private Sector
+                        - button "Invite Nathan Worland to connect" [ref=e3066] [cursor=pointer]:
+                          - generic [ref=e3067]:
+                            - img [ref=e3068]
+                            - generic [ref=e3071]: Connect
+                      - generic [ref=e3073]:
+                        - link "Michael Okinaga Verified · 2nd Senior Consultant at Lululemon" [ref=e3075] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/okinaga/
+                          - generic [ref=e3076]:
+                            - figure [ref=e3077]
+                            - generic [ref=e3078]:
+                              - generic [ref=e3079]:
+                                - paragraph [ref=e3081]:
+                                  - link "Michael Okinaga Verified" [ref=e3083]:
+                                    - /url: https://www.linkedin.com/in/okinaga/
+                                    - text: Michael Okinaga
+                                    - img "Verified" [ref=e3084]:
+                                      - img [ref=e3085]
+                                - paragraph [ref=e3087]: · 2nd
+                              - paragraph [ref=e3089]: Senior Consultant at Lululemon
+                        - button "Invite Michael Okinaga to connect" [ref=e3094] [cursor=pointer]:
+                          - generic [ref=e3095]:
+                            - img [ref=e3096]
+                            - generic [ref=e3099]: Connect
+                    - link "Show all people you may know" [ref=e3101] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                      - generic [ref=e3102]:
+                        - img [ref=e3103]
+                        - generic [ref=e3105]: Show all
+                  - generic [ref=e3110]:
+                    - generic [ref=e3112]:
+                      - heading "You might like" [level=2] [ref=e3113]
+                      - paragraph [ref=e3114]: Pages for you
+                    - generic [ref=e3116]:
+                      - link "Scale AI Software Development 369,433 followers Sandeep & 9 other connections follow this page Follow Scale AI" [ref=e3119] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/scaleai/
+                        - generic [ref=e3120]:
+                          - figure [ref=e3121]
+                          - generic [ref=e3122]:
+                            - paragraph [ref=e3125]: Scale AI
+                            - paragraph [ref=e3127]: Software Development
+                            - paragraph [ref=e3128]: 369,433 followers
+                            - link "Sandeep & 9 other connections follow this page" [ref=e3129]:
+                              - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                              - generic [ref=e3130]:
+                                - figure [ref=e3131]
+                                - paragraph [ref=e3133]:
+                                  - link "Sandeep & 9 other connections follow this page" [ref=e3135]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                            - button "Follow Scale AI" [ref=e3138]:
+                              - generic [ref=e3139]:
+                                - img [ref=e3140]
+                                - generic [ref=e3142]: Follow
+                      - link "Perplexity Software Development 1,667,438 followers Baljinder (Bali) & 19 other connections follow this page Follow Perplexity" [ref=e3145] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/perplexity-ai/
+                        - generic [ref=e3146]:
+                          - figure [ref=e3147]
+                          - generic [ref=e3148]:
+                            - paragraph [ref=e3151]: Perplexity
+                            - paragraph [ref=e3153]: Software Development
+                            - paragraph [ref=e3154]: 1,667,438 followers
+                            - link "Baljinder (Bali) & 19 other connections follow this page" [ref=e3155]:
+                              - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                              - generic [ref=e3156]:
+                                - figure [ref=e3157]
+                                - paragraph [ref=e3159]:
+                                  - link "Baljinder (Bali) & 19 other connections follow this page" [ref=e3161]:
+                                    - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                            - button "Follow Perplexity" [ref=e3164]:
+                              - generic [ref=e3165]:
+                                - img [ref=e3166]
+                                - generic [ref=e3168]: Follow
+                    - link "Show all pages you might like" [ref=e3170] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/alain-ignacio-54b9823/edit/intro
+                      - generic [ref=e3171]:
+                        - img [ref=e3172]
+                        - generic [ref=e3174]: Show all
+                - iframe [ref=e3179]:
+                  - generic [ref=f120e3]:
+                    - banner [ref=f120e4]:
+                      - generic [ref=f120e5]:
+                        - link "Promoted" [ref=f120e6] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/ads/start?src=en-all-ad-li-ads_by_li&trk=ads_by_li&utm_medium=ad&utm_source=li&utm_campaign=ads_by_li
+                        - button [ref=f120e7] [cursor=pointer]:
+                          - img [ref=f120e8]
+                    - generic [ref=f120e13]:
+                      - link "Ad Image 254,014,276 Easy no-code automation Efficient teams use Zapier to make time for work that matters. Try it free. Jeff Jeff & 4 other connections also follow Zapier" [ref=f120e14] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.zapier.com%2F%3Futm_source%3Dlinkedin%26utm_medium%3Dpaid%26utm_campaign%3Dli-us-nua-evr-prospecting_job_functions_horizontal_text_conversion-ads%26utm_id%3D616688226%26hsa_acc%3D503593393%26hsa_cam%3D616688226%26hsa_grp%3D202459076%26hsa_ad%3D254014276%26hsa_net%3Dlinkedin%26hsa_ver%3D3%26li_fat_id%3D38de66d2-a70b-4d39-a0bc-7cf964bd3dd6%26utm_campaign%3Dli-us-nua-evr-prospecting_job_functions_horizontal_text_conversion-ads%26utm_medium%3Dpaid%26utm_ads_campaign_id%3D202459076%26utm_source%3Dlinkedin%26utm_ads_ad_id%3D254014276%26utm_ads_adset_id%3D616688226&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGe9c599q10Vssl-6wJRuEzJFUX9IKMB-kNoznIL8bicRYfs3Bw_Ib15HaJOmJwY4hIBwC0rg5O7WcYV5uvSxZowMwIluNmVHxIAGeJxavT26HqKpLnINSnRnm-57y0ZLCn3Z-9P1Jej8Nm7l8mxNCivg6Aha9Wxara5Z7OTI9rYFdL62wrf4Ea9OzdexNW6-KptDDc3of_c9_0cszXIpZkQli83gxKj9UgK4t3rh0r3lJuh3CfBxwl8pCCzb215TQyyzvT7TWapyUcBl8jiJ1ij4xVBhCtRZ3P8e39LKiuWi7afgVnHxahuioeqOLPWK5u1Nt5QADA1L7h_ZrvlpW3UjByeQ1pQKYZxLIRz6ivhdxc0FpF_Q096CmhW3369tWL4rpYZAQYsdMWk5UbLOQsyze7KFqJH-V6COHX14ETxPXjnTyCZmsDINW03LSpI9YgQKiCniSMjk9VOijNsaS1TNjYy_6Cg-Jg2LUWTLxLbqiFH8-Nf1AI1l4SpretrQYPi0Ek7DXMZb6CsbmW8-9OlODD2EVUdNDzWyP1osWj9EWl_aUMQ0_TlaoOogmqgCoeUY_YJsppZyzZjOhgBumWugPSFGHN119daXYUVNFEWL5eDSO4mdLwA9iBIdOb4ZX7n6KP_XegGUr8SuZDXJSkeSYGZCD5YX6wmK930DNtfHjfXu2fWAppuJ-dRFjcsx-eW3GeiEZsFBUzVxDygd5JpStWdD7_WJ4lrGdhmSXRGhJq6iYWJWhn1_zPO2RXpvmm4-4K4RmrdKlH8eefnmn11ok3m4BPmpKjranaQ5FzNv6eo_k4sDXboMRvCiBNGkiaqz4dFmqZ98x909QZJbwSrBaQHq2ELOPuKihKoSZANQDb0rLBLwqqD-65hxCzc-j69Hpb6JbTjJFQYqTWXyrnNDMtavOZu2XAR7ZQHasRHkYO3XY4EZf-tq8vQrRAPWH0VvbmMzUyevdPJ_WiHRhnwMpEcaaKVK8WuE_X5cG2Dnj56QZ73lvNDcpnvNkp0CP5MY8%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%22%2C%22trackingId%22%3A%225388cab4-793f-48fe-a17a-d45acbda47d5%22%7D%2C%22time%22%3A1782240411126%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_self_edit_top_card%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A5882335167944173384
+                        - img "Ad Image 254,014,276" [ref=f120e16]
+                        - generic [ref=f120e17]:
+                          - heading "Easy no-code automation" [level=4] [ref=f120e18]
+                          - paragraph [ref=f120e19]: Efficient teams use Zapier to make time for work that matters. Try it free.
+                          - generic [ref=f120e20]:
+                            - img "Jeff" [ref=f120e22]
+                            - paragraph [ref=f120e23]: Jeff & 4 other connections also follow Zapier
+                      - link "Ad Image 1,164,283,873 Amex® Business Gold Card Your offer could be As High As 200K Membership Rewards® points. Terms apply Tahki Tahki & 1 other connection also follow American Express Business" [ref=f120e24] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.americanexpress.com%2Fus%2Fcredit-cards%2Fbusiness%2Fbusiness-credit-cards%2Famerican-express-business-gold-card-amex%2F44286%2F%3Feep%3D44286%26li_fat_id%3D38de66d2-a70b-4d39-a0bc-7cf964bd3dd6%26utm_medium%3Dpaid-social%26utm_id%3D461793694%26utm_source%3Dlinkedin&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGe9c599xxxlSqj3vVzfopq3_THtVKeOyWGzPLjOqJMJXM8aDTqnS6aa6suS_yX14E9mT2JIbLx9lBjSOyTs4uwtbD-hHsD2sCILHMVMzcHP9w8LhIbhH9u3kRpBjzxROaOba_721QLQimYOv57lKMmR1ui3OrsCwqxRBlgeHLCc7JbJQnIcsPJMp6v20fWhuarMBZCj8dJL2k8jeKUpmuhg01k0AJ0cUtkOmg2umrtFmw7Qyeey_EqQwhd2xiO9BlkkmsNyrFbWOq_gsnINpWdG4R44EB8bzDPAh5iADvZ3oaLQ-F9zwt-U2BmB5hW81zg09I0DykDSLiQfW1DURDhxbeABIlJyHqMmxuRHHMJl3Qy_dMhPcxVmqlt4tpidVcSBZFWiTYUpGRYVmHa8i_1TzEcf_JIRlELz-2pOu0uCrKtej-SanGxNxvENVyDqV2Y-rwOlPPLjIUdTc1nUKzU4COCEhDohk3RbL0QadD4-vZlAdFJsMUHJAr1SNO5q5akXL25RgNunOIzxVcOJvEt0Ph-4hGKrTRlzLo7aiUeE84bvKLFp_dS0ZLOHEFP-90A02foooC7KWrovZ442AKEVFO4yTzbVgq5r1HGasHi47a3r2kv64RXnRt2HQFuG-Pbk_qLSYMJmxwerwd--Z4Jfs5zgagqGaFi-WZgztZ087a0dxs4EAehP-PE5kM0jVKP8sZUtlZ630VBZOtvJ53bAZM9RlqzPBscvd2AN0cFW7UDONF9kk-lK4hcuoOgMbtNuyd0xhc5gUE-aUwovg5WZcywcPlF8SV0D_1set33kIN2FCEVGsRws1EREGU3lnIs0deqcmw8Tb2yOHxqRQ14lR9LVKE3X5XQA7fIfflQQ9NqcQZBi0wZU2-Qc3jHQvmCtXf9oPo_AaYjeBAcctml44zTCQ55y-t_BiOdIxTd5FSb_9z8GhXwRO-ggNMp7TAvQXXWne3vG-Xg15DIWOxkAv5pT1SD7LUZ-sGVGwfwmeDKsBtvde7fRChsS_XAvJ_6bVbjI0U%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%22%2C%22trackingId%22%3A%22074f0242-c9e5-4a6e-9512-b042bf1b16f9%22%7D%2C%22time%22%3A1782240411127%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_self_edit_top_card%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A5882335167944173384
+                        - img "Ad Image 1,164,283,873" [ref=f120e26]
+                        - generic [ref=f120e27]:
+                          - heading "Amex® Business Gold Card" [level=4] [ref=f120e28]
+                          - paragraph [ref=f120e29]: Your offer could be As High As 200K Membership Rewards® points. Terms apply
+                          - generic [ref=f120e30]:
+                            - img "Tahki" [ref=f120e32]
+                            - paragraph [ref=f120e33]: Tahki & 1 other connection also follow American Express Business
+            - generic "Footer" [ref=e3180]:
+              - generic [ref=e3183]:
+                - generic [ref=e3184]:
+                  - navigation [ref=e3185]:
+                    - link "About" [ref=e3186] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                      - paragraph [ref=e3187]: About
+                    - link "Accessibility" [ref=e3188] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility/
+                      - paragraph [ref=e3189]: Accessibility
+                    - link "Talent Solutions" [ref=e3190] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/talent-solutions?trk=flagship_nav&veh=li-footer-lts-control&src=li-footer
+                      - paragraph [ref=e3191]: Talent Solutions
+                    - link "Community Guidelines" [ref=e3192] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/legal/professional-community-policies/
+                      - paragraph [ref=e3193]: Community Guidelines
+                    - link "Careers" [ref=e3194] [cursor=pointer]:
+                      - /url: https://careers.linkedin.com/
+                      - paragraph [ref=e3195]: Careers
+                    - link "Marketing Solutions" [ref=e3196] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/advertise?trk=n_nav_lms_f&src=li-footer
+                      - paragraph [ref=e3197]: Marketing Solutions
+                    - button "Privacy & Terms" [ref=e3198] [cursor=pointer]:
+                      - generic [ref=e3199]:
+                        - paragraph [ref=e3200]: Privacy & Terms
+                        - img [ref=e3201]
+                    - link "Ad Choices" [ref=e3203] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931/
+                      - paragraph [ref=e3204]: Ad Choices
+                    - link "Advertising" [ref=e3205] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/ad/start/?trk=n_nav_ads_rr
+                      - paragraph [ref=e3206]: Advertising
+                    - link "Sales Solutions" [ref=e3207] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/sales-solutions?trk=flagship_nav&veh=li-footer-lss-control&src=li-footer
+                      - paragraph [ref=e3208]: Sales Solutions
+                    - link "Mobile" [ref=e3209] [cursor=pointer]:
+                      - /url: https://mobile.linkedin.com/
+                      - paragraph [ref=e3210]: Mobile
+                    - link "Small Business" [ref=e3211] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/grow?src=li-footer
+                      - paragraph [ref=e3212]: Small Business
+                    - link "Safety Center" [ref=e3213] [cursor=pointer]:
+                      - /url: https://safety.linkedin.com/
+                      - paragraph [ref=e3214]: Safety Center
+                  - paragraph [ref=e3216]: LinkedIn Corporation © 2026
+                - generic [ref=e3217]:
+                  - list [ref=e3218]:
+                    - listitem [ref=e3219]:
+                      - generic [ref=e3220]:
+                        - img [ref=e3221]
+                        - generic [ref=e3223]:
+                          - link "Questions?" [ref=e3224] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/help/linkedin/
+                            - paragraph [ref=e3225]: Questions?
+                          - paragraph [ref=e3226]: Visit our Help Center.
+                    - listitem [ref=e3227]:
+                      - generic [ref=e3228]:
+                        - img [ref=e3229]
+                        - generic [ref=e3231]:
+                          - link "Manage your account and privacy" [ref=e3232] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/mypreferences/d/
+                            - paragraph [ref=e3233]: Manage your account and privacy
+                          - paragraph [ref=e3234]: Go to your Settings.
+                    - listitem [ref=e3235]:
+                      - generic [ref=e3236]:
+                        - img [ref=e3237]
+                        - generic [ref=e3239]:
+                          - link "Recommendation transparency" [ref=e3240] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/help/linkedin/answer/a1339724/
+                            - paragraph [ref=e3241]: Recommendation transparency
+                          - paragraph [ref=e3242]: Learn more about Recommended Content.
+                  - generic [ref=e3244]:
+                    - paragraph [ref=e3246]: Select language
+                    - generic [ref=e3247]:
+                      - combobox "Select language" [ref=e3248] [cursor=pointer]:
+                        - option "العربية (Arabic)"
+                        - option "বাংলা (Bangla)"
+                        - option "Čeština (Czech)"
+                        - option "Dansk (Danish)"
+                        - option "Deutsch (German)"
+                        - option "Ελληνικά (Greek)"
+                        - option "English (English)" [selected]
+                        - option "Español (Spanish)"
+                        - option "فارسی (Persian)"
+                        - option "Suomi (Finnish)"
+                        - option "Français (French)"
+                        - option "हिंदी (Hindi)"
+                        - option "Magyar (Hungarian)"
+                        - option "Bahasa Indonesia (Indonesian)"
+                        - option "Italiano (Italian)"
+                        - option "עברית (Hebrew)"
+                        - option "日本語 (Japanese)"
+                        - option "한국어 (Korean)"
+                        - option "मराठी (Marathi)"
+                        - option "Bahasa Malaysia (Malay)"
+                        - option "Nederlands (Dutch)"
+                        - option "Norsk (Norwegian)"
+                        - option "ਪੰਜਾਬੀ (Punjabi)"
+                        - option "Polski (Polish)"
+                        - option "Português (Portuguese)"
+                        - option "Română (Romanian)"
+                        - option "Русский (Russian)"
+                        - option "Svenska (Swedish)"
+                        - option "తెలుగు (Telugu)"
+                        - option "ภาษาไทย (Thai)"
+                        - option "Tagalog (Tagalog)"
+                        - option "Türkçe (Turkish)"
+                        - option "Українська (Ukrainian)"
+                        - option "Tiếng Việt (Vietnamese)"
+                        - option "简体中文 (Chinese (Simplified))"
+                        - option "正體中文 (Chinese (Traditional))"
+                      - img
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - complementary:
+            - generic [ref=e3250]:
+              - generic [ref=e3252] [cursor=pointer]:
+                - generic [ref=e3253]:
+                  - img "Alain Ignacio" [ref=e3254]
+                  - generic [ref=e3256]: Status is online
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e3257]:
+                  - generic [ref=e3258]:
+                    - generic [ref=e3259]: Messaging
+                    - generic [ref=e3260]: You are on the messaging overlay. Press enter to open the list of conversations.
+              - generic [ref=e3261]:
+                - button "Open messenger dropdown menu" [ref=e3263] [cursor=pointer]:
+                  - img "Open messenger dropdown menu" [ref=e3264]
+                - button "Compose message" [ref=e3267] [cursor=pointer]:
+                  - img [ref=e3268]
+                  - generic [ref=e3270]: Compose message
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e3271] [cursor=pointer]:
+                  - img [ref=e3272]
+                  - generic [ref=e3274]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - iframe [ref=e3275]:
+    - generic [active] [ref=f121e1]:
+      - generic:
+        - region "Toast message":
+          - heading "0 notifications total" [level=2] [ref=f121e3]
+          - alert
+      - region [ref=f121e4]
+      - generic [ref=f121e5]:
+        - generic [ref=f121e7]:
+          - button "Skip to search" [ref=f121e8] [cursor=pointer]:
+            - generic [ref=f121e9]: Skip to search
+          - button "Skip to main content" [ref=f121e10] [cursor=pointer]:
+            - generic [ref=f121e11]: Skip to main content
+          - button "Keyboard shortcuts" [ref=f121e12] [cursor=pointer]:
+            - generic [ref=f121e13]: Keyboard shortcuts
+          - button "Close jump menu" [ref=f121e14] [cursor=pointer]:
+            - img [ref=f121e15]
+            - generic [ref=f121e17]: Close jump menu
+        - banner "Global Navigation" [ref=f121e18]:
+          - generic [ref=f121e19]:
+            - link "LinkedIn" [ref=f121e20] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/
+              - img "LinkedIn" [ref=f121e23]:
+                - img [ref=f121e24]
+            - generic [ref=f121e28]:
+              - combobox "I’m looking for..." [ref=f121e29]
+              - generic:
+                - img
+            - navigation "Primary Navigation" [ref=f121e30]:
+              - list [ref=f121e31]:
+                - listitem [ref=f121e32]:
+                  - link "new feed updates notifications Home" [ref=f121e33] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/feed/
+                    - generic [ref=f121e34]:
+                      - generic [ref=f121e37]: new feed updates notifications
+                      - img [ref=f121e41]
+                    - generic "Home" [ref=f121e43]
+                - listitem [ref=f121e44]:
+                  - link "My Network" [ref=f121e45] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/mynetwork/?
+                    - img [ref=f121e49]
+                    - generic "My Network" [ref=f121e51]
+                - listitem [ref=f121e52]:
+                  - link "Jobs" [ref=f121e53] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/?
+                    - img [ref=f121e57]
+                    - generic "Jobs" [ref=f121e59]
+                - listitem [ref=f121e60]:
+                  - link "Messaging" [ref=f121e61] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/?
+                    - img [ref=f121e65]
+                    - generic "Messaging" [ref=f121e67]
+                - listitem [ref=f121e68]:
+                  - link "11 new notifications Notifications" [ref=f121e69] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/?
+                    - generic [ref=f121e70]:
+                      - generic [ref=f121e71]:
+                        - generic [ref=f121e72]: "11"
+                        - generic [ref=f121e73]: 11 new notifications
+                      - img [ref=f121e77]
+                    - generic "Notifications" [ref=f121e79]
+                - listitem [ref=f121e80]:
+                  - button "Alain Ignacio Me" [ref=f121e82] [cursor=pointer]:
+                    - img "Alain Ignacio" [ref=f121e83]
+                    - generic [ref=f121e84]:
+                      - text: Me
+                      - img [ref=f121e85]
+                - listitem [ref=f121e87]:
+                  - button "For Business" [ref=f121e89] [cursor=pointer]:
+                    - img [ref=f121e93]
+                    - generic "For Business" [ref=f121e95]:
+                      - text: For Business
+                      - img [ref=f121e96]
+                - listitem [ref=f121e98]:
+                  - link "Get 50% Off Sales Nav" [ref=f121e100] [cursor=pointer]:
+                    - /url: http://www.linkedin.com/premium/redeem/?_ed=CwEAAAFyYb66UAQiKvLejf0aKxNzmjJ3ryfkxyqehLZPKD7vWLOgM5wR4lxRr-QUIgT_FeKS2NQ&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=W0IRWgJeRx6Grol3mZqwig%3D%3D&customKey=wb_s&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falain-ignacio-54b9823%2Fedit%2Fintro
+                    - generic [ref=f121e101]:
+                      - img [ref=f121e102]
+                      - generic [ref=f121e104]: Get 50% Off Sales Nav

@@ -1,0 +1,24 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/llm-market-shift-research/",
+  "total_tasks": 6,
+  "current_task": null,
+  "completed_tasks": [
+    "001-research-enterprise-adoption-trends.md",
+    "002-research-code-gen-parity.md",
+    "003-research-onprem-momentum.md",
+    "004-research-cost-sovereignty-drivers.md",
+    "005-research-isagawa-strategy.md",
+    "006-compile-final-report.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-06T18:30:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-06T18:00:00Z",
+  "actions_since_anchor": 1,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-06T18:30:00Z"
+}

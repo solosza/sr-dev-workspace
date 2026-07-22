@@ -1,0 +1,181 @@
+{
+  "anchor_timestamp": "2026-07-14T20:35:00Z",
+  "actions_count": 29,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-15T05:33:48Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:33:57Z",
+      "tool": "Bash",
+      "entry": "Bash: python -m uvicorn harness.orderly.main:app --port 8017 --app-dir \"D:/my_ai_proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:34:59Z",
+      "tool": "Bash",
+      "entry": "Bash: ORDERLY_DATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hmsa-qa-pla",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:35:17Z",
+      "tool": "Bash",
+      "entry": "Bash: DATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hmsa-qa-platform/ha",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:37:13Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, sys, pathlib\nsys.path.insert(0, \"D:/my_ai_projects",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:37:20Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"D:/my_ai_projects/project_test_repos/isagawa-qa-platform\" -name \"*.py\" -no",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:37:28Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/\" | head -30 && ls \"D:/my_ai_projects/\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:37:34Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"D:/my_ai_projects/project_test_repos/platform-selenium\" -name \"*.py\" -not ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:43:56Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -l -i playwright \"D:/my_ai_projects/project_test_repos/platform-selenium/.c",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:44:05Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -rn -i \"playwright\" \"D:/my_ai_projects/project_test_repos/platform-selenium",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:44:15Z",
+      "tool": "Bash",
+      "entry": "Bash: sed -n 40,80p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/les",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:44:40Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/.gitignore\" && git -C",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:44:47Z",
+      "tool": "Write",
+      "entry": "Write: .mcp.json",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:44:56Z",
+      "tool": "Bash",
+      "entry": "Bash: head -40 \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/README.md\"",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:45:08Z",
+      "tool": "Edit",
+      "entry": "Edit: README.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:45:16Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import json; [json.load(open(p)) for p in ['D:/my_ai_projects/project",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:45:27Z",
+      "tool": "Bash",
+      "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" add -A && git -C ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:48:13Z",
+      "tool": "Edit",
+      "entry": "Edit: 206-qa-build-reference-tasks-browser.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:48:29Z",
+      "tool": "Edit",
+      "entry": "Edit: 206-qa-build-reference-tasks-browser.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:48:39Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python \"D:/my_ai_projects/project_test_repos/sr_dev_work",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:49:01Z",
+      "tool": "Edit",
+      "entry": "Edit: 207-qa-build-reference-roles-ui.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:49:05Z",
+      "tool": "Edit",
+      "entry": "Edit: 207-qa-build-reference-roles-ui.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:49:16Z",
+      "tool": "Edit",
+      "entry": "Edit: 208-qa-build-reference-tests-ui.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:49:34Z",
+      "tool": "Edit",
+      "entry": "Edit: 229-qa-build-fixture-wiring.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:49:43Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python \"D:/my_ai_projects/project_test_repos/sr_dev_work",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:50:44Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework/_reference/p",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:50:44Z",
+      "tool": "Bash",
+      "entry": "Bash: head -80 \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/hmsa-qa",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:51:27Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-15T05:51:42Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    }
+  ]
+}

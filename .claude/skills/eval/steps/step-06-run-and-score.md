@@ -8,7 +8,7 @@ Execute the deepeval test suite generated in Step 5, produce a scored report, up
 |-------|--------|---------|
 | `mode` | Output of Step 0 | `artifact` or `harness` |
 | `target` | Output of Step 0 | `check-data` or `null` (harness mode) |
-| `test-repo` | Output of Step 1 | `D:\...\eval-check-data-test` |
+| `test-repo` | Output of Step 1 | `D:\...\evals\eval-check-data` |
 | `source_path` | Output of Step 0 | `D:\...\hmsa-healthcare-qa` |
 | `original_source` | Output of Step 0 | Original URL or path (for reporting) |
 | Test suite | Output of Step 5 | `tests/test_eval_<target>.py` or `tests/test_eval_harness.py` |

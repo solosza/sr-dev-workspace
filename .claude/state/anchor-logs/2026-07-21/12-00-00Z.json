@@ -1,0 +1,107 @@
+{
+  "anchor_timestamp": "2026-07-21T12:00:00Z",
+  "actions_count": 14,
+  "violations_found": 0,
+  "agent_logs": {
+    "reference-tests-ui": [
+      {
+        "timestamp": "2026-07-21T22:10:41Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport pathlib, json, os\nbase = pathlib.Path('D:/my_ai_projects/proj",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:11:45Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --list \"bu",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:11:46Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" rev-parse --abbre",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:12:09Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log --oneline -20",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:12:16Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" ls-tree -r --name",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:12:38Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" ls-tree -r --name",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:12:43Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" ls-tree -r --name",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:17:03Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework/_reference/t",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:17:21Z",
+        "tool": "Write",
+        "entry": "Write: conftest.py",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:17:36Z",
+        "tool": "Write",
+        "entry": "Write: test_order_workup.py",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:17:47Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework\" pyt",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:17:47Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -iE \"hmsa|healthcare|claim|patient|member|subscriber|eligib|EOB|remittance|",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:17:54Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -iw \"provider\" \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/frame",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:20:01Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      }
+    ]
+  }
+}

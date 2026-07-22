@@ -9,7 +9,7 @@ Check platform-deepeval `_reference/` for existing components that can be reused
 | `mode` | Output of Step 0 | `artifact` or `harness` |
 | `target` | Output of Step 0 | `check-data` (artifact mode) or `null` (harness mode) |
 | `source_path` | Output of Step 0 | `D:\my_ai_projects\project_test_repos\hmsa-healthcare-qa` |
-| `test-repo` | Output of Step 1 | `D:\my_ai_projects\project_test_repos\eval-check-data-test` |
+| `test-repo` | Output of Step 1 | `D:\my_ai_projects\project_test_repos\evals\eval-check-data` |
 
 ## Pre-Generation Checkpoint (Directed Reading)
 

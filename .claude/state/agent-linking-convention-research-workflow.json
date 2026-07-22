@@ -1,0 +1,23 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/linking-convention-research/",
+  "total_tasks": 5,
+  "current_task": null,
+  "completed_tasks": [
+    "001-research-test-at-imports.md",
+    "002-research-test-wikilinks-vs-codespans.md",
+    "003-research-analyze-current-usage.md",
+    "004-build-write-design-decision.md",
+    "005-build-write-migration-checklist.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-06T06:52:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-06T06:45:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-06T06:52:00Z"
+}

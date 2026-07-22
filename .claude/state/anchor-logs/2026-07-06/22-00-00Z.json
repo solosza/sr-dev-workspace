@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-07-06T22:00:00Z",
+  "actions_count": 6,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T09:03:30Z", "tool": "Bash", "entry": "Bash: python state update"},
+    {"timestamp": "2026-07-06T09:04:18Z", "tool": "Bash", "entry": "Bash: ls platform-ssh/"},
+    {"timestamp": "2026-07-06T09:04:18Z", "tool": "Bash", "entry": "Bash: ls platform-ssh/framework/"},
+    {"timestamp": "2026-07-06T09:04:22Z", "tool": "Bash", "entry": "Bash: ls -R platform-ssh/framework/_reference/"},
+    {"timestamp": "2026-07-06T09:04:22Z", "tool": "Bash", "entry": "Bash: ls platform-ssh/framework/resources/"},
+    {"timestamp": "2026-07-06T09:04:22Z", "tool": "Bash", "entry": "Bash: session state write"}
+  ]
+}

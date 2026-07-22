@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-07-01T23:00:00Z",
+  "actions_count": 0,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "ab-testing-5-layer-conformance": [
+      {"timestamp": "2026-07-01T20:25:41Z", "tool": "Write", "entry": "Write: scorer.py"},
+      {"timestamp": "2026-07-01T20:25:53Z", "tool": "Bash", "entry": "Bash: python import test"},
+      {"timestamp": "2026-07-01T20:26:18Z", "tool": "Bash", "entry": "Bash: test file existence"},
+      {"timestamp": "2026-07-01T20:26:22Z", "tool": "Bash", "entry": "Bash: sleep + background check"},
+      {"timestamp": "2026-07-01T20:28:17Z", "tool": "Bash", "entry": "Bash: compute protocol hash"}
+    ]
+  }
+}

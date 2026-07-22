@@ -1,0 +1,40 @@
+{
+  "anchor_timestamp": "2026-07-14T23:15:00Z",
+  "actions_count": 30,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-14T22:50:45Z", "tool": "Bash", "entry": "Bash: ls harness/orderly/"},
+    {"timestamp": "2026-07-14T22:50:49Z", "tool": "Bash", "entry": "Bash: ls harness/"},
+    {"timestamp": "2026-07-14T22:50:53Z", "tool": "Bash", "entry": "Bash: mkdir -p harness/orderly"},
+    {"timestamp": "2026-07-14T22:51:03Z", "tool": "Write", "entry": "Write: db.py"},
+    {"timestamp": "2026-07-14T22:51:10Z", "tool": "Bash", "entry": "Bash: ast parse db.py"},
+    {"timestamp": "2026-07-14T22:51:21Z", "tool": "Bash", "entry": "Bash: py_compile db.py"},
+    {"timestamp": "2026-07-14T22:52:57Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+    {"timestamp": "2026-07-14T22:54:04Z", "tool": "Bash", "entry": "Bash: ls project_test_repos/"},
+    {"timestamp": "2026-07-14T22:54:08Z", "tool": "Bash", "entry": "Bash: git branch --show-current"},
+    {"timestamp": "2026-07-14T22:54:15Z", "tool": "Bash", "entry": "Bash: ls harness/orderly/"},
+    {"timestamp": "2026-07-14T22:55:10Z", "tool": "Edit", "entry": "Edit: db.py"},
+    {"timestamp": "2026-07-14T22:55:27Z", "tool": "Write", "entry": "Write: seed.py"},
+    {"timestamp": "2026-07-14T22:58:25Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+    {"timestamp": "2026-07-14T22:59:07Z", "tool": "Bash", "entry": "Bash: git branch --list"},
+    {"timestamp": "2026-07-14T22:59:11Z", "tool": "Bash", "entry": "Bash: git ls-tree"},
+    {"timestamp": "2026-07-14T22:59:15Z", "tool": "Bash", "entry": "Bash: git log --oneline -10"},
+    {"timestamp": "2026-07-14T22:59:21Z", "tool": "Bash", "entry": "Bash: git status --short"},
+    {"timestamp": "2026-07-14T22:59:28Z", "tool": "Bash", "entry": "Bash: find harness -type f"},
+    {"timestamp": "2026-07-14T23:00:00Z", "tool": "Bash", "entry": "Bash: ls orderly/__init__"},
+    {"timestamp": "2026-07-14T23:00:04Z", "tool": "Bash", "entry": "Bash: ls harness/__init__.py"},
+    {"timestamp": "2026-07-14T23:00:09Z", "tool": "Write", "entry": "Write: __init__.py (harness)"},
+    {"timestamp": "2026-07-14T23:00:10Z", "tool": "Write", "entry": "Write: __init__.py (orderly)"},
+    {"timestamp": "2026-07-14T23:00:21Z", "tool": "Write", "entry": "Write: main.py"},
+    {"timestamp": "2026-07-14T23:00:33Z", "tool": "Bash", "entry": "Bash: pip install fastapi starlette sqlalchemy jinja2"},
+    {"timestamp": "2026-07-14T23:00:43Z", "tool": "Bash", "entry": "Bash: pip install itsdangerous"},
+    {"timestamp": "2026-07-14T23:00:48Z", "tool": "Bash", "entry": "Bash: python import test"},
+    {"timestamp": "2026-07-14T23:00:54Z", "tool": "Bash", "entry": "Bash: python import test 2"},
+    {"timestamp": "2026-07-14T23:01:16Z", "tool": "Bash", "entry": "Bash: test -f main.py"},
+    {"timestamp": "2026-07-14T23:01:19Z", "tool": "Bash", "entry": "Bash: python full app import test"},
+    {"timestamp": "2026-07-14T23:02:55Z", "tool": "Bash", "entry": "Bash: protocol hash"}
+  ],
+  "agent_logs": {
+    "harness-ui-slice": "archived"
+  }
+}

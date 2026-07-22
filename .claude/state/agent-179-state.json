@@ -1,0 +1,12 @@
+{
+  "backlog": 179,
+  "spawned_at": "2026-07-06T19:00:00Z",
+  "status": "complete",
+  "progress": "1/1 tasks",
+  "total_tasks": 1,
+  "completed_tasks": ["001-execute-pipeline.md"],
+  "last_update": "2026-07-06T19:15:00Z",
+  "completed_at": "2026-07-06T19:15:00Z",
+  "task_folder": "tasks/completed/ssh-structural-conformance/",
+  "deliverable": "SSH Platform 5-Layer Structural Conformance — task folder archived to tasks/completed/"
+}

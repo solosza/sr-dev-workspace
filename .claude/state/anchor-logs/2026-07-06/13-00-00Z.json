@@ -1,0 +1,22 @@
+{
+  "anchor_timestamp": "2026-07-06T13:00:00Z",
+  "actions_count": 14,
+  "violations_found": 0,
+  "agent_logs": {
+    "ssh-5-layer-audit": [
+      {"timestamp": "2026-07-06T06:25:34Z", "tool": "Bash", "entry": "mkdir -p anchor-logs dir"},
+      {"timestamp": "2026-07-06T06:25:34Z", "tool": "Bash", "entry": "python hashlib protocol hash"},
+      {"timestamp": "2026-07-06T06:27:04Z", "tool": "Bash", "entry": "python hashlib protocol hash"},
+      {"timestamp": "2026-07-06T06:27:28Z", "tool": "Bash", "entry": "python protocol file"},
+      {"timestamp": "2026-07-06T06:29:27Z", "tool": "Bash", "entry": "python corpus analysis"},
+      {"timestamp": "2026-07-06T06:29:31Z", "tool": "Bash", "entry": "env -u CLAUDECODE claude -p research"},
+      {"timestamp": "2026-07-06T06:32:57Z", "tool": "Write", "entry": "Write: current-usage-analysis.md"},
+      {"timestamp": "2026-07-06T06:35:51Z", "tool": "Bash", "entry": "python hashlib protocol hash"},
+      {"timestamp": "2026-07-06T06:35:57Z", "tool": "Bash", "entry": "python hashlib protocol hash"},
+      {"timestamp": "2026-07-06T06:36:03Z", "tool": "Bash", "entry": "mkdir -p anchor-logs dir"},
+      {"timestamp": "2026-07-06T06:36:08Z", "tool": "Bash", "entry": "mkdir -p anchor-logs dir"},
+      {"timestamp": "2026-07-06T06:36:29Z", "tool": "Bash", "entry": "ls ssh-5-layer-audit tasks"},
+      {"timestamp": "2026-07-06T06:36:34Z", "tool": "Write", "entry": "Write: research-report.md"}
+    ]
+  }
+}

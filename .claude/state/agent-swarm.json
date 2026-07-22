@@ -12,36 +12,180 @@
       "spawned_at": "2026-06-15T01:00:00Z",
       "status": "complete",
       "completed_at": "2026-06-15T02:30:00Z",
-      "progress": "7/7 tasks complete",
-      "last_completed": "007-market-compile-final-research-report.md",
-      "deliverable": "Claude Code Harness Distribution Strategy (8 docs)",
-      "documents": [
-        "01-platforms-inventory-and-comparison.md",
-        "02-marketplace-gaps-and-opportunities.md",
-        "03-distribution-roadmap.md",
-        "04-competitive-analysis.md",
-        "05-market-positioning.md",
-        "06-financial-projections.md",
-        "07-go-to-market-strategy.md",
-        "RESEARCH-REPORT.md"
-      ]
+      "deliverable": "Claude Code Harness Distribution Strategy (8 docs)"
     },
     {
       "backlog": 132,
       "spawned_at": "2026-06-15T01:00:00Z",
       "status": "complete",
       "completed_at": "2026-06-15T02:50:00Z",
-      "progress": "6/6 deliverables created",
-      "last_completed": "RESEARCH-REPORT.md",
-      "deliverable": "Claude Harness Marketplace Research (5 docs)",
-      "documents": [
-        "platforms.md",
-        "competitive-analysis.md",
-        "gaps-and-opportunities.md",
-        "distribution-strategy.md",
-        "RESEARCH-REPORT.md"
-      ],
-      "note": "Tasks completed, deliverables created. Backlog archival was incomplete - manually completed."
+      "deliverable": "Claude Harness Marketplace Research (5 docs)"
+    },
+    {
+      "backlog": 161,
+      "spawned_at": "2026-07-05T22:20:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-06T06:52:00Z",
+      "deliverable": "Unified file linking convention research"
+    },
+    {
+      "backlog": 162,
+      "spawned_at": "2026-07-05T22:20:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-06T06:22:00Z",
+      "deliverable": "Eval platform learning loop"
+    },
+    {
+      "backlog": 176,
+      "spawned_at": "2026-07-06T07:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-06T10:00:00Z",
+      "deliverable": "DeepEval security & behavioral compliance testing"
+    },
+    {
+      "backlog": 177,
+      "spawned_at": "2026-07-06T07:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-06T10:00:00Z",
+      "deliverable": "Harness eval 5-layer compliance fix"
+    },
+    {
+      "backlog": 178,
+      "spawned_at": "2026-07-06T19:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-06T19:20:00Z",
+      "deliverable": "SSH Platform 5-Layer Critical Architecture fixes"
+    },
+    {
+      "backlog": 179,
+      "spawned_at": "2026-07-06T19:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-06T19:15:00Z",
+      "deliverable": "SSH Platform 5-Layer Structural Conformance fixes"
+    },
+    {
+      "backlog": 180,
+      "spawned_at": "2026-07-07T06:30:00Z",
+      "status": "running",
+      "progress": "0/13 tasks",
+      "last_update": "2026-07-07T06:30:00Z",
+      "deliverable": "D&D Game Loop Integration (retry)"
+    },
+    {
+      "backlog": 181,
+      "spawned_at": "2026-07-06T19:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-06T19:10:00Z",
+      "deliverable": "Velocity management research report"
+    },
+    {
+      "backlog": 184,
+      "spawned_at": "2026-07-07T06:30:00Z",
+      "status": "running",
+      "progress": "0/? tasks",
+      "last_update": "2026-07-07T06:30:00Z",
+      "deliverable": "Post-merge smoke test"
+    },
+    {
+      "backlog": 186,
+      "spawned_at": "2026-07-07T02:10:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-07T05:00:00Z",
+      "deliverable": "Multi-persona architecture research \u2014 Approach B recommended"
+    },
+    {
+      "backlog": 187,
+      "spawned_at": "2026-07-07T02:10:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-07T04:45:00Z",
+      "deliverable": "Universal mod installer feasibility \u2014 conditional GO"
+    },
+    {
+      "backlog": 188,
+      "spawned_at": "2026-07-07T06:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-07T06:25:00Z",
+      "deliverable": "LLM market shift analysis \u2014 frontier vs Chinese vs on-prem"
+    },
+    {
+      "backlog": 189,
+      "spawned_at": "2026-07-07T06:00:00Z",
+      "status": "complete",
+      "completed_at": "2026-07-07T06:20:00Z",
+      "deliverable": "Curiosity harness \u2014 quality questions research"
+    },
+    {
+      "backlog": 237,
+      "spawned_at": "2026-07-21T19:05:00Z",
+      "status": "complete",
+      "progress": "5/5 tasks",
+      "last_update": "2026-07-21T19:22:19Z",
+      "last_completed": null,
+      "deliverable": "Ephemeral sub-agent execution research (verdict: YAH)",
+      "completed_at": "2026-07-21T19:22:19Z"
+    },
+    {
+      "backlog": 238,
+      "spawned_at": "2026-07-21T19:05:00Z",
+      "status": "complete",
+      "progress": "5/5 tasks",
+      "last_update": "2026-07-21T19:28:53Z",
+      "last_completed": null,
+      "deliverable": "PreCompact re-anchor hook research (verdict: YAH, hybrid policy C)",
+      "completed_at": "2026-07-21T19:28:53Z"
+    },
+    {
+      "backlog": 239,
+      "spawned_at": "2026-07-21T19:05:00Z",
+      "status": "complete",
+      "progress": "5/5 tasks",
+      "last_update": "2026-07-21T19:20:12Z",
+      "last_completed": null,
+      "deliverable": "JIT rule injection research (verdict: YAH)",
+      "completed_at": "2026-07-21T19:20:12Z"
+    },
+    {
+      "backlog": 240,
+      "spawned_at": "2026-07-21T19:05:00Z",
+      "status": "complete",
+      "progress": "5/5 tasks",
+      "last_update": "2026-07-21T19:25:31Z",
+      "last_completed": null,
+      "deliverable": "Rolling summarization research + portfolio ranking (verdict: YAH conditional)",
+      "completed_at": "2026-07-21T19:25:31Z"
+    },
+    {
+      "backlog": 241,
+      "spawned_at": "2026-07-21T19:44:50Z",
+      "status": "complete",
+      "progress": "5/5 tasks",
+      "last_update": "2026-07-21T19:55:16Z",
+      "last_completed": null,
+      "deliverable": "DAG wave execution research (verdict: YAH)",
+      "wave": 0,
+      "completed_at": "2026-07-21T19:55:16Z"
+    },
+    {
+      "backlog": 242,
+      "spawned_at": "2026-07-21T19:44:50Z",
+      "status": "complete",
+      "progress": "5/5 tasks",
+      "last_update": "2026-07-21T19:55:16Z",
+      "last_completed": null,
+      "deliverable": "Barrier gate prerequisites research (verdict in report)",
+      "wave": 0,
+      "completed_at": "2026-07-21T19:55:16Z"
+    },
+    {
+      "backlog": 243,
+      "spawned_at": "2026-07-21T19:55:27Z",
+      "status": "complete",
+      "progress": "5/5 tasks",
+      "last_update": "2026-07-21T20:06:00Z",
+      "last_completed": null,
+      "deliverable": "Artifact bus research + combined 241/242/243 recommendation (verdict: NAY, deferred)",
+      "wave": 1,
+      "completed_at": "2026-07-21T20:06:00Z"
     }
   ]
 }

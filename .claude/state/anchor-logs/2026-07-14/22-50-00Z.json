@@ -1,0 +1,18 @@
+{
+  "anchor_timestamp": "2026-07-14T22:50:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-14T22:46:35Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+    {"timestamp": "2026-07-14T22:47:23Z", "tool": "Bash", "entry": "Bash: git branch --show-current (hmsa-qa-platform)"},
+    {"timestamp": "2026-07-14T22:47:27Z", "tool": "Bash", "entry": "Bash: git branch --list build/202 (hmsa-qa-platform)"},
+    {"timestamp": "2026-07-14T22:47:32Z", "tool": "Bash", "entry": "Bash: git checkout -b build/202-qa-build-harness-ui-slice (hmsa-qa-platform)"},
+    {"timestamp": "2026-07-14T22:47:35Z", "tool": "Bash", "entry": "Bash: git branch --show-current verify (hmsa-qa-platform)"},
+    {"timestamp": "2026-07-14T22:49:18Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash (anchor)"},
+    {"timestamp": "2026-07-14T22:49:47Z", "tool": "Bash", "entry": "Bash: git branch --show-current (anchor verify)"},
+    {"timestamp": "2026-07-14T22:49:58Z", "tool": "Bash", "entry": "Bash: makedirs anchor-logs/2026-07-14"}
+  ],
+  "agent_logs": {
+    "harness-ui-slice": 8
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/retry-utility/",
+  "total_tasks": 5,
+  "current_task": null,
+  "completed_tasks": [
+    "001-build-create-feature-branch.md",
+    "002-build-write-retry-py.md",
+    "003-test-transient-retry-succeeds.md",
+    "004-test-exhaustion-reraises.md",
+    "005-build-commit-branch.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-14T23:35:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-14T23:50:00Z",
+  "actions_since_anchor": 11,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-14T23:50:00Z"
+}

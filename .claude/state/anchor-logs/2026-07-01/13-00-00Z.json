@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-07-01T13:00:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "agent_logs": {
+    "eval-ab-testing-framework": [
+      {"timestamp": "2026-07-01T08:58:37Z", "tool": "Write", "entry": "Write: experiment_config.py"},
+      {"timestamp": "2026-07-01T08:58:50Z", "tool": "Bash", "entry": "Bash: sleep 180 monitoring"},
+      {"timestamp": "2026-07-01T08:59:05Z", "tool": "Bash", "entry": "Bash: python import verification"},
+      {"timestamp": "2026-07-01T09:00:59Z", "tool": "Bash", "entry": "Bash: sleep 120 monitoring"},
+      {"timestamp": "2026-07-01T09:02:16Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

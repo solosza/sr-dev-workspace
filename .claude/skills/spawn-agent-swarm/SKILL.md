@@ -34,14 +34,25 @@ Spawns multiple background agents in parallel, monitors their progress in real-t
 1. **Parse input** to extract backlog numbers
 2. **Create manifest** in `.claude/state/agent-swarm.json` (shared, aggregated view)
 3. **Create per-agent state files** in `.claude/state/agent-{N}-state.json` (isolated per agent)
-4. **Spawn all agents** via `Bash(run_in_background: true)` with `env -u CLAUDECODE bash run-task.sh [repo] [iterations] [subfolder]` — all in parallel, returns immediately
-5. **Start continuous monitor** that polls per-agent state files every 10 seconds
-6. **Report results** when all agents complete or timeout reached
+4. **For each backlog, ensure task folder exists:**
+   - Check if `tasks/[subfolder]/` already exists with task files
+   - **If YES:** proceed directly to spawn (step 5)
+   - **If NO:** run execute-pipeline inline (steps 1-3 only: backlog → task-builder → write tasks). This builds the task folder WITHOUT executing tasks. Then proceed to spawn.
+5. **Spawn all agents** — scope-routed: BUILD/REFACTOR via `Agent(isolation: "worktree")`, RESEARCH/TEST via `Bash(run_in_background: true)` with unique subfolder per backlog — all in parallel, returns immediately
+6. **Start continuous monitor** that polls per-agent state files every 10 seconds
+7. **Report results** when all agents complete or timeout reached
 
-**run-task.sh invocation:** `run-task.sh [REPO_ROOT] [MAX_ITERATIONS] [TASK_SUBFOLDER]`
+**Execute-pipeline as inner loop (CRITICAL):**
+- The swarm NEVER spawns raw `claude -p` for any reason
+- Every agent MUST go through `run-task.sh` for state isolation
+- If a backlog has no task folder, the swarm builds it first via execute-pipeline steps 1-3 (task-builder), then spawns `run-task.sh` against the built folder
+- This is what makes the swarm composable: backlog number in → isolated agent out
+
+**run-task.sh invocation:** `run-task.sh [REPO_ROOT] [MAX_ITERATIONS] [TASK_SUBFOLDER] [BACKLOG_PATH]`
 - First arg = repo root (must have CLAUDE.md), NOT the task folder path
 - Second arg = task count + 2 buffer
 - Third arg = subfolder name under `tasks/` (just the name)
+- Fourth arg = backlog file path (e.g., `docs/backlog/128-market-research-pulsia.md`) — enables automatic move-to-done on completion
 
 ## Key Principles
 
@@ -86,6 +97,7 @@ Files: `.claude/state/agent-{N}-state.json` (one per agent)
 ```json
 {
   "backlog": 128,
+  "backlog_path": "docs/backlog/128-market-research-pulsia.md",
   "spawned_at": "2026-06-15T01:00:00Z",
   "status": "running | complete | failed",
   "progress": "N/M tasks",

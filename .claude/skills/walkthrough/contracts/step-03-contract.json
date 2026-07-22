@@ -1,0 +1,23 @@
+{
+  "contract_metadata": {
+    "contract_id": "walkthrough-step-03-decompose",
+    "version": "1.0",
+    "artifact_type": "section-map-and-state-init"
+  },
+  "canonical_reference": {
+    "path": ".claude/docs/design/walkthrough/references/decomposition-strategies.md",
+    "note": "Worked conftest example is the canonical section map"
+  },
+  "validations": [
+    "Section map is dependency-ordered (no section requires a later one)",
+    "Each section is one-sitting sized (split too-big, merge trivial)",
+    "Section names use domain vocabulary, meaningful standalone in the ledger",
+    "User explicitly approved the map before the loop started"
+  ],
+  "mechanical_validations": [
+    {"check": "file_exists", "target": ".claude/state/walkthrough-state.json"},
+    {"check": "json_field_nonempty", "target": "sections"},
+    {"check": "json_field_equals", "target": "cursor", "value": 0},
+    {"check": "json_field_nonempty", "target": "sources_read"}
+  ]
+}

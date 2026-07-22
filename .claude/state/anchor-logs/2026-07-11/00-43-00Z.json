@@ -1,0 +1,6 @@
+{
+  "anchor_timestamp": "2026-07-11T00:43:00Z",
+  "actions_count": 30,
+  "violations_found": 0,
+  "actions": "worktree cleanup (5), prod-test steps 4-8 on platform-ssh (22), eval step 0-1 setup (3)"
+}

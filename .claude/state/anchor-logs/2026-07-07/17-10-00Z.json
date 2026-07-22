@@ -1,0 +1,23 @@
+{
+  "anchor_timestamp": "2026-07-07T17:10:00Z",
+  "actions_count": 33,
+  "violations_found": 1,
+  "actions": [
+    "Bash: sha256sum protocol",
+    "Write: test_command_sequence.py (x2)",
+    "Write: test_protocol_adherence.py (x2)",
+    "Write: test_state_management.py (x2)",
+    "Write: test_cycling_behavior.py (x2)",
+    "Write: test_tool_boundaries.py (x2)",
+    "Write: test_data_leakage.py (x2)",
+    "Edit: security_evaluator.py",
+    "Edit: compliance_evaluator.py",
+    "Edit: agent_evaluator.py",
+    "Write: test_prompt_injection.py (x2)",
+    "Write: test_hook_bypass.py (x2)",
+    "Write: security_evaluator.py",
+    "Write: compliance_evaluator.py",
+    "Bash: find/ls platform-selenium and platform-deepeval"
+  ],
+  "violation_details": "Tests skip Role layer - call Tasks directly or do raw assertions without 5-layer stack"
+}

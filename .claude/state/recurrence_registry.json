@@ -29,5 +29,59 @@
     "first_seen": "2026-05-01T03:01:38.884516",
     "last_seen": "2026-05-01T03:01:38.884516",
     "issue_summary": "anchor bypass during batch operations"
+  },
+  "e88d320d317fd29b": {
+    "count": 1,
+    "first_seen": "2026-07-14T17:26:46.133472",
+    "last_seen": "2026-07-14T17:26:46.133472",
+    "issue_summary": "Gate contracts missed contract error semantics (203 BrowserInterface)"
+  },
+  "87d01898ba4315eb": {
+    "count": 1,
+    "first_seen": "2026-07-14T18:02:24.715397",
+    "last_seen": "2026-07-14T18:02:24.715397",
+    "issue_summary": "Semantics-gate test script false-positives caused gate skip (204 pages)"
+  },
+  "efc9414e6a5169b2": {
+    "count": 1,
+    "first_seen": "2026-07-14T18:36:37.476995",
+    "last_seen": "2026-07-14T18:36:37.476995",
+    "issue_summary": "Validation script assumed redirect target (RULE ZERO recurrence)"
+  },
+  "27b043e33b411dac": {
+    "count": 1,
+    "first_seen": "2026-07-14T18:50:24.908537",
+    "last_seen": "2026-07-14T18:50:24.908537",
+    "issue_summary": "Machine-wide Chrome input loss after first navigation (ENV, not code)"
+  },
+  "038d88939620797f": {
+    "count": 1,
+    "first_seen": "2026-07-14T22:37:13.312748",
+    "last_seen": "2026-07-14T22:37:13.312748",
+    "issue_summary": "Playwright MCP unaffected by the selenium input regression (scope correction)"
+  },
+  "82086da23462cf0b": {
+    "count": 1,
+    "first_seen": "2026-07-15T00:23:17.792133",
+    "last_seen": "2026-07-15T00:23:17.792133",
+    "issue_summary": "Semantics-gate test script false-positives caused gate skip (204 pages)"
+  },
+  "5cddbdcff82563fb": {
+    "count": 1,
+    "first_seen": "2026-07-16T14:33:23.060658",
+    "last_seen": "2026-07-16T14:33:23.060658",
+    "issue_summary": "Healthcare vocab shipped via stale design-doc example (211 SOAP exemplar)"
+  },
+  "541d0cc27247a7e9": {
+    "count": 1,
+    "first_seen": "2026-07-21T16:16:11.471444",
+    "last_seen": "2026-07-21T16:16:11.471444",
+    "issue_summary": "208 UT-04 skipped with 0-byte log; orchestrator gate run found genuine RED"
+  },
+  "6c110082956b4856": {
+    "count": 1,
+    "first_seen": "2026-07-21T16:51:52.460146",
+    "last_seen": "2026-07-21T16:51:52.460146",
+    "issue_summary": "UTF-8 BOM in state JSONs killed run-task.sh resume"
   }
 }

@@ -7,6 +7,7 @@ Test any LLM artifact or harness using DeepEval. Accepts local paths or GitHub U
 ```
 /kernel/eval <source>                    # harness mode — eval entire repo
 /kernel/eval <target> <source>           # artifact mode — eval one artifact
+/kernel/eval --ab <artifact> <source>    # A/B mode — compare flat vs tiered
 ```
 
 ### Parameters
@@ -37,6 +38,12 @@ Test any LLM artifact or harness using DeepEval. Accepts local paths or GitHub U
 
 # Eval specific artifact from GitHub (artifact mode)
 /kernel/eval domain-setup https://github.com/isagawa-co/isagawa-kernel
+
+# A/B test a skill
+/kernel/eval --ab check-data-engine D:\my_ai_projects\project_test_repos\hmsa-healthcare-qa
+
+# A/B test a command
+/kernel/eval --ab anchor D:\my_ai_projects\project_test_repos\isagawa-kernel
 ```
 
 ## Instructions
@@ -67,6 +74,7 @@ Read and follow: `.claude/skills/eval/SKILL.md`
 - **Dynamic components** — agent checks _reference/ patterns before creating new metrics/tests
 - **Composable** — standalone or callable by another loop
 - **Framework grows** — new components follow _reference/ patterns, eventually merge to master
+- **A/B mode** — compares flat (monolithic) vs tiered (indexed) variants of the same artifact. Runs N iterations, scores both, reports statistical comparison.
 - **Auto-execute** — don't ask, just run
 
 ### Composability

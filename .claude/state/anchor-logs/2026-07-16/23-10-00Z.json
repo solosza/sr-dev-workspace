@@ -1,0 +1,33 @@
+{
+  "anchor_timestamp": "2026-07-16T23:10:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-16T20:58:02Z", "tool": "Bash", "entry": "Bash: git branch --show-cur"},
+    {"timestamp": "2026-07-16T20:58:18Z", "tool": "Bash", "entry": "Bash: ls hmsa-qa-platform/"},
+    {"timestamp": "2026-07-16T20:58:22Z", "tool": "Bash", "entry": "Bash: ls hmsa-qa-platform/harness/"},
+    {"timestamp": "2026-07-16T20:58:26Z", "tool": "Bash", "entry": "Bash: ls hmsa-qa-platform/harness/orderly/"},
+    {"timestamp": "2026-07-16T20:59:01Z", "tool": "Bash", "entry": "Bash: ls tasks/api-interface/scripts/"},
+    {"timestamp": "2026-07-16T20:59:36Z", "tool": "Write", "entry": "Write: test_l2_primitives.py"},
+    {"timestamp": "2026-07-16T21:03:01Z", "tool": "Write", "entry": "Write: test_l2_primitives.py"},
+    {"timestamp": "2026-07-16T21:03:44Z", "tool": "Edit", "entry": "Edit: test_l2_primitives.py"},
+    {"timestamp": "2026-07-16T21:04:21Z", "tool": "Edit", "entry": "Edit: test_l2_primitives.py"},
+    {"timestamp": "2026-07-16T21:04:32Z", "tool": "Bash", "entry": "Bash: PYTHONUTF8=1 python test_l2_primitives.py"},
+    {"timestamp": "2026-07-16T21:04:50Z", "tool": "Bash", "entry": "Bash: test -f test_l2_primitives.py"}
+  ],
+  "agent_logs": {
+    "api-interface": [
+      {"timestamp": "2026-07-16T20:58:02Z", "tool": "Bash", "entry": "Bash: git branch --show-cur"},
+      {"timestamp": "2026-07-16T20:58:18Z", "tool": "Bash", "entry": "Bash: ls hmsa-qa-platform/"},
+      {"timestamp": "2026-07-16T20:58:22Z", "tool": "Bash", "entry": "Bash: ls hmsa-qa-platform/harness/"},
+      {"timestamp": "2026-07-16T20:58:26Z", "tool": "Bash", "entry": "Bash: ls hmsa-qa-platform/harness/orderly/"},
+      {"timestamp": "2026-07-16T20:59:01Z", "tool": "Bash", "entry": "Bash: ls tasks/api-interface/scripts/"},
+      {"timestamp": "2026-07-16T20:59:36Z", "tool": "Write", "entry": "Write: test_l2_primitives.py"},
+      {"timestamp": "2026-07-16T21:03:01Z", "tool": "Write", "entry": "Write: test_l2_primitives.py"},
+      {"timestamp": "2026-07-16T21:03:44Z", "tool": "Edit", "entry": "Edit: test_l2_primitives.py"},
+      {"timestamp": "2026-07-16T21:04:21Z", "tool": "Edit", "entry": "Edit: test_l2_primitives.py"},
+      {"timestamp": "2026-07-16T21:04:32Z", "tool": "Bash", "entry": "Bash: PYTHONUTF8=1 python test_l2_primitives.py"},
+      {"timestamp": "2026-07-16T21:04:50Z", "tool": "Bash", "entry": "Bash: test -f test_l2_primitives.py"}
+    ]
+  }
+}

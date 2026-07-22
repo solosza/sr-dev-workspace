@@ -1,0 +1,20 @@
+[
+  {
+    "target": "145",
+    "action": "reject",
+    "raw_words": "this is a test",
+    "result": "DECLINED \u2014 self-described test; superseded by user's later iterate on same target"
+  },
+  {
+    "target": "146",
+    "action": "iterate",
+    "raw_words": "this is another test",
+    "result": "DECLINED \u2014 self-described test; not routed (would have minted a junk backlog into the append-only intent chain)"
+  },
+  {
+    "target": "145",
+    "action": "iterate",
+    "raw_words": "not sure we need this anymore",
+    "result": "ROUTED \u2014 /kernel/backlog -> 234 (intent rev 1, raw_words verbatim, parent-linked); review-status: 145 -> needs-iteration"
+  }
+]

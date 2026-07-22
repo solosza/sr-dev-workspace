@@ -1,0 +1,1033 @@
+{
+  "reviewed": {
+    "002": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "009": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "037": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "038": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "040": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "042": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "049": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "050": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "051": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "052": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "090": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel fix \u2014 batch accepted"
+    },
+    "099": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "market fix \u2014 batch accepted"
+    },
+    "100": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "market fix \u2014 batch accepted"
+    },
+    "101": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "market fix \u2014 batch accepted"
+    },
+    "104": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "market fix \u2014 batch accepted"
+    },
+    "107": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "market fix \u2014 batch accepted"
+    },
+    "108": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "market fix \u2014 batch accepted"
+    },
+    "109": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "market fix \u2014 batch accepted"
+    },
+    "019": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "023": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "032": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "046": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "048": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "057": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "061": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "091": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "124": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "125": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "126": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "127": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "143": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "144": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "150": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "153": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted (both 153s)"
+    },
+    "155": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "156": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:20:00Z",
+      "notes": "kernel infra \u2014 batch accepted"
+    },
+    "017": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "personal/misc \u2014 batch accepted"
+    },
+    "033": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "personal/misc \u2014 batch accepted"
+    },
+    "113": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "personal/misc \u2014 batch accepted"
+    },
+    "114": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "personal/misc \u2014 batch accepted"
+    },
+    "163": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "personal/misc \u2014 batch accepted"
+    },
+    "005": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market product \u2014 batch accepted"
+    },
+    "025": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market product \u2014 batch accepted"
+    },
+    "034": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market product \u2014 batch accepted"
+    },
+    "059": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market product \u2014 batch accepted"
+    },
+    "097": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market product \u2014 batch accepted"
+    },
+    "098": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market product \u2014 batch accepted"
+    },
+    "110": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market product \u2014 batch accepted"
+    },
+    "129": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "130": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "131": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "132": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "135": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "136": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "137": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "138": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "139": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "140": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "142": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "148": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "market strategy \u2014 batch accepted"
+    },
+    "001": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:22:00Z",
+      "notes": "kernel research \u2014 batch accepted"
+    },
+    "003": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "004": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "006": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "007": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "008": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "010": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "011": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "012": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "015": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "016": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "018": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "020": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "024": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "026": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "027": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "028": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "030": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "031": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "035": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "036": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "039": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "041": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "043": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "044": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "045": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "047": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "053": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "054": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "055": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "056": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "058": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "060": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "062": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "063": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "064": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "065": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "066": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "067": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "068": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "069": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "070": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "071": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "072": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "073": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "074": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "075": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "076": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "077": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "078": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "079": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "080": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "081": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "082": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "083": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "084": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "085": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "086": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "087": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "088": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "089": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "092": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "093": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "094": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "095": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "096": {
+      "status": "accepted",
+      "action": "batch-accept",
+      "timestamp": "2026-07-07T00:25:00Z",
+      "notes": "under-100 sweep"
+    },
+    "102": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:28:00Z",
+      "notes": "reviewed \u2014 accepted"
+    },
+    "105": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:29:00Z",
+      "notes": "reviewed \u2014 accepted"
+    },
+    "106": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:30:00Z",
+      "notes": "reviewed \u2014 accepted"
+    },
+    "111": {
+      "status": "deferred",
+      "action": "defer",
+      "timestamp": "2026-07-07T00:31:00Z",
+      "notes": "deferred for later review"
+    },
+    "112": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:32:00Z",
+      "notes": "reviewed \u2014 accepted"
+    },
+    "115": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:34:00Z",
+      "notes": "not needed \u2014 kernel already handles agents better via run-task.sh"
+    },
+    "116": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:36:00Z",
+      "notes": "all actionable findings became backlogs 125/126/183"
+    },
+    "117": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:37:00Z",
+      "notes": "led to backlog 124 (aesthetic directive) + website cloner covers the rest"
+    },
+    "118": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:39:00Z",
+      "notes": "research done \u2014 not building /kernel/debug, fix+learn cycle sufficient"
+    },
+    "119": {
+      "status": "deferred",
+      "action": "defer",
+      "timestamp": "2026-07-07T00:43:00Z",
+      "notes": "MCP as distribution channel \u2014 productization angle added to research report. Defer until distribution strategy clarified."
+    },
+    "120": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:45:00Z",
+      "notes": "research done \u2014 not building skill-seekers, manual linking sufficient"
+    },
+    "121": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:46:00Z",
+      "notes": "not needed \u2014 no third-party skills installed, all skills self-authored"
+    },
+    "122": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:47:00Z",
+      "notes": "reviewed \u2014 accepted"
+    },
+    "123": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:48:00Z",
+      "notes": "superseded by backlog 183 (worktree branch isolation build)"
+    },
+    "128": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T00:50:00Z",
+      "notes": "Pulsia research \u2014 spawned backlog 186 (multi-persona architecture research)"
+    },
+    "133": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T08:02:00Z",
+      "notes": "Restored \u2014 harness design pattern optimization research accepted"
+    },
+    "134": {
+      "status": "rejected",
+      "action": "reject",
+      "timestamp": "2026-07-07T08:10:00Z",
+      "notes": "Wrong framing \u2014 benchmarking against Cursor/IDE wrappers doesn't serve Isagawa strategy. Behavioral testing via DeepEval platform (backlog 176) is the right path."
+    },
+    "176": {
+      "status": "iterate",
+      "action": "iterate",
+      "timestamp": "2026-07-07T08:20:00Z",
+      "notes": "Research methodology sound (GEval, DeepTeam, OWASP ASI 2026 golden refs). BUILD approach wrong \u2014 30 static Kernel-specific tasks should become dynamic generation within eval workflow. Security/behavior tests must be generic (read any harness protocol), standalone suites that compose freely via Layer 2 mix-and-match. Golden refs: OWASP+DeepTeam for security, protocol rules for behavior. Follow-up backlog needed."
+    },
+    "175": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T14:05:00Z",
+      "notes": "SSH 5-layer audit complete \u2014 21 violations found, compliance report produced. All remediated by 178+179."
+    },
+    "178": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T14:05:00Z",
+      "notes": "SSH critical architecture fix \u2014 10 HIGH violations resolved. L2 metrics layer created, L3/L4 refactored to proper layering."
+    },
+    "179": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-07T14:05:00Z",
+      "notes": "SSH structural conformance fix \u2014 11 MEDIUM/LOW violations resolved. Post-remediation gap check: 21\u21920 violations, all 5 layers compliant."
+    },
+    "198": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-14T21:00:00Z",
+      "notes": "Wave 0 target-repo git baseline \u2014 orchestrator-validated GIT-01..04 (commit 5f50730); user directive 'after the backlog run execute pipeline' = proceed authority. Unlocks V-BASE."
+    },
+    "199": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-14T23:30:00Z",
+      "notes": "trace.py \u2014 orchestrator ran TRC-01..06 independently incl. live decorator execution; merged 2396719 (branch 42516b9 preserved in history). Chain proceed-authority."
+    },
+    "200": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "notes": "retry.py \u2014 orchestrator executed all three behaviors live (transient=3 calls, exhaustion re-raise, undeclared propagates call 1); merged 2283d00. Chain proceed-authority."
+    },
+    "201": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-15T00:25:00Z",
+      "notes": "contract deliverable \u2014 byte-identical verified by orchestrator (sha 447e0b8110f1); merged ed97b77. V-BASE COMPLETE."
+    },
+    "202": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-15T01:40:00Z",
+      "notes": "Orderly UI slice (776 lines) \u2014 orchestrator verified HUI-01..07 incl. LIVE BOOT: app started, clerk login succeeded, /customers + /orders rendered with markers; testid audit rerun clean; zero healthcare vocab in source. Merged c02d36d."
+    },
+    "230": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-15T01:40:00Z",
+      "notes": "Orchestrator/subagent research \u2014 OSR-01..06 pass (29 sources). VERDICT: AMEND 2026-04-04 lesson. Lesson amendment awaiting explicit user approval (protected file)."
+    },
+    "203": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-15T03:30:00Z",
+      "notes": "BrowserInterface \u2014 merge blocked by orchestrator (2 contract violations found post-gates), fix pipeline on branch, re-verified live incl. propagation, merged 4f055f4. Lesson #38."
+    },
+    "204": {
+      "status": "accepted",
+      "action": "accept",
+      "timestamp": "2026-07-15T04:40:00Z",
+      "notes": "_reference pages \u2014 pipeline's semantics gate SKIPPED (test-script false positives on compliant code); orchestrator validated AST-based (all pass incl. dynamic testids vs Jinja + return-self by execution), merged 0b04a83. Lesson #39."
+    },
+    "205": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-14T19:25:00Z",
+      "notes": "Shared components (modal lead + grid flagship). CMP-01..07 verified: AST semantics 14/14 (lesson #39 method), live grid suite 5/5 + modal is_open both states via injected configs against Orderly. Pipeline's 006 skip was GENUINE env constraint \u2014 machine-wide post-navigation input loss (lesson #41), reproduced framework-free. Residue: click_confirm/click_cancel live delivery ENV-BLOCKED (L1 click live-verified in 203 pre-regression). Merged d306d06. CHAIN PAUSED before 206 \u2014 UI live gates need env fix (reboot suggested)."
+    },
+    "206": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-14T21:40:00Z",
+      "notes": "Browser tasks exemplar, COPY-FIRST from platform-selenium adapted to contract v2.3 (@trace not @autologger, page DI not BrowserInterface, login removed to L4). Orchestrator gates: AST 13/13 (lesson #39 method), import resolution vs real pages, sequence-spy 8/8 by execution, live read-path (capture_order_id via full task->page->interface stack against seeded Orderly). Click-path residue ENV-BLOCKED (lesson #41 selenium regression) \u2014 deferred to 208 E2E per lesson #42 gate. Merged 9ce512f. Cleanup note: pipeline left a stray uvicorn on 8017 (killed)."
+    },
+    "207": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-15T08:45:00Z",
+      "notes": "UI roles: CommonTasks (L3 auth, logout-if-needed session switch) + OrderClerk/OrderManager personas, copy-first from platform-selenium employee_manager with all era-drift patterns replaced (page DI, no internal construction, @trace, identity dict). Orchestrator gates: AST 22/22 (after fixing MY script's decorator false-positive \u2014 lesson #43), LoginPage method resolution (pipeline added 5 lines to login_page.py for is_logged_in/logout/nav \u2014 verified present + used), sequence-spy 8/8 (self-auth FIRST, identity flows, CANCELLED semantics), live wiring verified; click-path ENV-BLOCKED (probe still red) \u2014 full-stack proof deferred to 208. Merged 19f1686. V1 BUILDS COMPLETE \u2014 208 E2E is the exit gate."
+    },
+    "232": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-15T14:40:00Z",
+      "notes": "Render runtime: render_server.py (AST-verified single-output-path {tmp, os.replace->annotations.json}, stdlib-only) + review-board template. Orchestrator LIVE gate via Playwright MCP against the real page: clicked Accept on card 197, Iterate with typed notes on 188, Send \u2014 annotations.json received both entries, frozen schema, raw_words byte-verbatim (em-dash intact). Pipeline's own E2E: 42 real items, watcher wake 0.03s, review-status hash unchanged. Lavish read: KEEP-SHIM with cited source evidence (HTTP-poll vs file-watch transport, chrome-wrapping mismatch; revisit at ~5 templates). NOTE: validation annotations were TEST data \u2014 deliberately NOT routed (197/188 remain unreviewed). Iteration candidates: drop unnecessary CORS headers; favicon 404 cosmetic. /kernel/render review-board is now OPERATIONAL \u2014 human demo pending user."
+    },
+    "145": {
+      "status": "needs-iteration",
+      "action": "iterate",
+      "timestamp": "2026-07-15T21:12:30Z",
+      "followup_backlog": "234",
+      "notes": "Routed from review-board render session. User raw_words (verbatim): 'not sure we need this anymore'. Follow-up 234 = relevance reassessment (KEEP vs SUPERSEDED verdict). Earlier reject annotation on this target ('this is a test') superseded by this entry \u2014 logged declined-as-test."
+    },
+    "233": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-15T22:40:00Z",
+      "notes": "Render v2 reply channel. Pipeline 7/7 (both circles E2E green, live v1 session untouched). Orchestrator: independent AST \u2014 write surface UNCHANGED {tmp, os.replace->annotations.json}, /status read-only, stdlib-only. LIVE full circle via Playwright MCP: dry-run toggle -> accept on 146 queued test:true -> Send -> annotations.json flagged -> session wrote dry_run_ack -> page showed 'acknowledged (dry run \u2014 not routed)' within one poll cycle. Validation traces archived as validation-*.json in session dir; board regenerated clean for the user. v2 session live on port 63060."
+    },
+    "146": {
+      "status": "deferred",
+      "action": "defer",
+      "timestamp": "2026-07-15T22:50:00Z",
+      "notes": "Routed from review-board v2 render session. Deferred \u2014 pushed to queue end."
+    },
+    "209": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-16T21:35:00Z",
+      "notes": "Orderly API slice: /api/customers + /api/orders CRUD + /process. 12 orchestrator live checks green: shapes exact-field, VALID_TRANSITIONS dict matches data-model exactly, terminal states 400 not 500, filter, delete-404, UI unaffected. FLAG for 210: POST endpoints are slash-canonical (/api/customers/) \u2014 bare path 307s; requests-based RestInterface handles it, but 210's api-objects should bind canonical paths explicitly. V2 opened early per user auth (intent rev 3); compensating condition: 208 green before 213 accepted. Merged."
+    },
+    "235": {
+      "status": "needs-iteration",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-16T22:30:00Z",
+      "followup_backlog": "236",
+      "notes": "Strong on evidence: NO REBOOT since 07-12 (pending reboot confirmed, KB5101650 staged), CDP-identical pre/post nav (fault below protocol), attestation clean, probe tool well-built. GAP found by orchestrator post-checks: probe delivers 8/8 on its bare pages while the Orderly repro is DEAD in the same minutes \u2014 the fault is PAGE/FLOW-DEPENDENT and the probe doesn't reproduce it (false-negative sentinel). New data: full-viewport fixed overlay hypothesis REFUTED (4/4 delivered with overlay); remaining discriminators: driver.get vs link-click navigation, login POST-redirect chain, uvicorn vs http.server. Task 002 skip was claude-p timeout, notes salvaged. Follow-up 236: probe fidelity + discriminator hunt. Primary fix (reboot) stands with evidence."
+    },
+    "210": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-17T00:15:00Z",
+      "notes": "ApiInterface L1: requests.Session DI + config + logger, five verbs -> ApiResponse(status/headers/body/response_time), auth helpers, assert_status utilities. Orchestrator gates 10/10: AST except-reraise on all 5 handlers, stdlib+requests only, zero domain vocab, live verbs vs Orderly API, 4xx returned not raised (HTTP answers are answers), negative path logged-then-propagated. Lesson #38's interface gates working as designed \u2014 compliant from birth. Merged."
+    },
+    "211": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-17T02:05:00Z",
+      "notes": "api_objects: pydantic models (field-exact vs Orderly), OrdersApiObject (DI, slash-canonical, fluent last_response \u2014 6 live checks green), SOAP exemplar. GATE CATCH: exemplar shipped as MemberServiceObject \u2014 healthcare vocab from a STALE DESIGN DOC example (pre-Orderly-rename); pipeline followed the doc faithfully. Fixed at both levels: doc renamed (CustomerServiceObject, harness V4 ops), fix pipeline 2a0c4fd renamed shipped file on-branch, extended-lexicon grep CLEAN, V4 deferral intact. Lesson #45: extended vocab lexicon + doc-sweep for remaining contracts. Merged."
+    },
+    "212": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-17T02:45:00Z",
+      "notes": "REST tasks: OrderManagementTasks \u2014 typed returns (models up), OrderOperationError domain exception (status-check pattern, no try/except needed \u2014 is_last_status_ok + raise), ensure_order_absent idempotent (double-call live-proven, no raise on gone). Orchestrator 7/7 incl. extended lexicon (lesson #45 applied doc-first this cycle \u2014 no leaks). Merged. V2 layer 3 done; 213 exit gate next (merge HELD until 208 per compensating condition)."
+    },
+    "213": {
+      "status": "accepted",
+      "action": "orchestrator-verification",
+      "timestamp": "2026-07-17T03:35:00Z",
+      "merge_status": "HELD \u2014 compensating condition: merge after 208 (V1 E2E) runs green",
+      "notes": "API test exemplar (test_order_management.py): AAA, dual assertion, asserted cleanup. Pipeline's 004 (live run) skipped on a claude-p runner hiccup (iteration_1.log 0 bytes \u2014 suite never executed by the agent); ORCHESTRATOR RAN IT: pytest exit 0, 1 passed, zero residue orders. V2 exit signal CONFIRMED. Branch build/213 (99e4796) parked per compensating condition \u2014 merges immediately after 208 green. Cosmetic: pytest.mark.api unregistered (registration belongs to 229's conftest work)."
+    }
+  },
+  "stats": {
+    "total_completed": 230,
+    "reviewed": 147,
+    "unreviewed": 37,
+    "accepted": 153,
+    "needs_iteration": 3,
+    "rejected": 1
+  },
+  "208": {
+    "status": "unreviewed",
+    "worktree_branch": "build/208-qa-build-reference-tests-ui",
+    "worktree_path": ".claude/worktrees/agent-ada9b04dbe2276d91",
+    "merge_status": "held_env_blocked",
+    "scope": "BUILD",
+    "spawned_at": "2026-07-21T22:05:21Z",
+    "note": "UT-04 orchestrator-validated RED then reclassified ENV-BLOCKED: click-initiated navigation from document>=2 wedges CROSS-STACK (selenium + Playwright Chromium) on real app pages; direct navigation (goto/get) works; bare 2-document probe blind to it. Chain paused per lesson #42. Code itself unproven-live but structurally green (UT-01..03, 05).",
+    "orchestrator_worktree_branch": "worktree-agent-ada9b04dbe2276d91"
+  }
+}

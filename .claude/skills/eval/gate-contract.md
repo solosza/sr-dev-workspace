@@ -14,8 +14,8 @@ Quality gates for the eval command's own behavior. These validate the eval loop 
 
 | ID | Check | Method | Pass Criteria | Fail Action |
 |----|-------|--------|---------------|-------------|
-| G1.1 | Test repo directory exists | `test -d eval-[target]-test/` | Directory present | Create directory, retry |
-| G1.2 | Git initialized | `test -d eval-[target]-test/.git` | `.git/` exists | `git init`, retry |
+| G1.1 | Test repo directory exists | `test -d evals/eval-[name]/` | Directory present | Create directory, retry |
+| G1.2 | Git initialized | `test -d evals/eval-[name]/.git` | `.git/` exists | `git init`, retry |
 
 ## Step 2: Compile Harness
 
@@ -76,6 +76,27 @@ Quality gates for the eval command's own behavior. These validate the eval loop 
 | G6.3 | Score history updated | `test -f eval/results/score-history.json` in source repo | File present, latest entry matches current run | Append current scores to history |
 
 → Contract: `contracts/step-06-contract.json`
+
+## Step AB-1: Generate Variants
+
+| ID | Check | Method | Pass Criteria | Fail Action |
+|----|-------|--------|---------------|-------------|
+| GAB1.1 | Flat variant exists | `test -f flat/artifact-flat.md` | File present | Re-run generator |
+| GAB1.2 | Tiered variant exists | `test -d tiered/` | Directory present with files | Re-copy from source |
+
+## Step AB-3: Run Iterations
+
+| ID | Check | Method | Pass Criteria | Fail Action |
+|----|-------|--------|---------------|-------------|
+| GAB3.1 | All output files exist | Check N*2 files (N iterations x 2 variants) | All present | Re-run failed iterations |
+| GAB3.2 | No empty outputs | `wc -l` > 0 for each output file | Non-empty | Re-run empty outputs |
+
+## Step AB-5: Compare Report
+
+| ID | Check | Method | Pass Criteria | Fail Action |
+|----|-------|--------|---------------|-------------|
+| GAB5.1 | Report exists | `test -f ab-report.md` | File present | Re-generate report |
+| GAB5.2 | Verdict valid | Value is one of: `flat_wins`, `tiered_wins`, `no_difference` | Valid verdict | Re-compute from scores |
 
 ## Gate Enforcement
 

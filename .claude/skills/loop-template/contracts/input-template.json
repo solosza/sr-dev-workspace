@@ -1,0 +1,31 @@
+{
+  "$schema": "input-contract-v1",
+  "$comment": "[DOMAIN-SPECIFIC] Replace all [DOMAIN-SPECIFIC] placeholders with domain values",
+
+  "loop_name": "[DOMAIN-SPECIFIC: loop name, e.g. ability-saves]",
+
+  "receives": {
+    "$comment": "[DOMAIN-SPECIFIC] Define typed fields this loop receives from its caller",
+    "example_field": {
+      "type": "string",
+      "description": "[DOMAIN-SPECIFIC: what this field represents]"
+    }
+  },
+
+  "required_context": [
+    "[DOMAIN-SPECIFIC: prerequisite state key 1]",
+    "[DOMAIN-SPECIFIC: prerequisite state key 2]"
+  ],
+
+  "validation": {
+    "$comment": "[DOMAIN-SPECIFIC] Input validation rules applied during DECLARE phase",
+    "required_fields": ["[DOMAIN-SPECIFIC: list of mandatory fields]"],
+    "type_checks": {
+      "[DOMAIN-SPECIFIC: field_name]": "[DOMAIN-SPECIFIC: expected type]"
+    },
+    "constraints": {
+      "$comment": "[DOMAIN-SPECIFIC] Domain-specific constraints (ranges, enums, etc.)",
+      "[DOMAIN-SPECIFIC: constraint_name]": "[DOMAIN-SPECIFIC: constraint rule]"
+    }
+  }
+}

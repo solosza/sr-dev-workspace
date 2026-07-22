@@ -1,0 +1,4 @@
+Test file 2 — created WHILE background agent is running
+Timestamp: 2026-06-13T22:03:00Z
+Status: If this file exists, user CAN continue working while spawn-subagent runs
+Expected: This write should succeed WITHOUT waiting for the spawned agent to complete

@@ -1,0 +1,15 @@
+{
+  "anchor_timestamp": "2026-07-01T12:00:00Z",
+  "actions_count": 6,
+  "violations_found": 0,
+  "agent_logs": {
+    "eval-ab-testing-framework": [
+      {"timestamp": "2026-07-01T08:51:50Z", "tool": "Bash", "entry": "mkdir anchor-logs dir"},
+      {"timestamp": "2026-07-01T08:53:12Z", "tool": "Write", "entry": "Write: reporter.py"},
+      {"timestamp": "2026-07-01T08:53:33Z", "tool": "Bash", "entry": "Sleep + monitor"},
+      {"timestamp": "2026-07-01T08:53:45Z", "tool": "Bash", "entry": "Python import check for reporter"},
+      {"timestamp": "2026-07-01T08:55:40Z", "tool": "Bash", "entry": "Sleep + monitor"},
+      {"timestamp": "2026-07-01T08:56:19Z", "tool": "Bash", "entry": "Protocol hash computation"}
+    ]
+  }
+}

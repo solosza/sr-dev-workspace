@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-07-06T13:40:00Z",
+  "actions_count": 7,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T07:02:37Z", "tool": "Bash", "entry": "Bash: ls platform-deepeval _reference/"},
+    {"timestamp": "2026-07-06T07:02:37Z", "tool": "Bash", "entry": "Bash: git branch --show-current"},
+    {"timestamp": "2026-07-06T07:02:41Z", "tool": "Bash", "entry": "Bash: git branch -a | head"},
+    {"timestamp": "2026-07-06T07:02:43Z", "tool": "Bash", "entry": "Bash: ls platform-deepeval _reference/"},
+    {"timestamp": "2026-07-06T07:02:47Z", "tool": "Bash", "entry": "Bash: git checkout feature branch"},
+    {"timestamp": "2026-07-06T07:02:51Z", "tool": "Bash", "entry": "Bash: ls platform-deepeval _reference/"},
+    {"timestamp": "2026-07-06T07:03:00Z", "tool": "Bash", "entry": "Bash: mkdir -p anchor-logs/2026-07-06"}
+  ]
+}

@@ -58,6 +58,7 @@ Initial content:
 ```json
 {
   "backlog": N,
+  "backlog_path": "docs/backlog/NNN-tag-verb-object.md",
   "spawned_at": "ISO_TIMESTAMP_NOW",
   "status": "running",
   "progress": "0/? tasks",

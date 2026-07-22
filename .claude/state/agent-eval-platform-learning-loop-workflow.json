@@ -1,0 +1,26 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/eval-platform-learning-loop/",
+  "total_tasks": 8,
+  "current_task": null,
+  "completed_tasks": [
+    "001-build-create-metrics-dir.md",
+    "002-build-write-harness-metrics.md",
+    "003-build-write-architecture-notes.md",
+    "004-build-write-criteria-changelog.md",
+    "005-build-write-conftest.md",
+    "006-build-write-test-file.md",
+    "007-test-import-validation.md",
+    "008-test-full-eval-suite.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-05T12:15:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-05T12:00:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-05T12:15:00Z"
+}

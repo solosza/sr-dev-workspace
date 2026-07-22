@@ -1,0 +1,10 @@
+{
+  "backlog": 175,
+  "spawned_at": "2026-07-06T06:38:00Z",
+  "status": "running",
+  "progress": "0/9 tasks",
+  "task_folder": "tasks/ssh-5-layer-audit/",
+  "total_tasks": 9,
+  "completed_tasks": [],
+  "deliverable": "SSH platform 5-layer compliance audit report"
+}

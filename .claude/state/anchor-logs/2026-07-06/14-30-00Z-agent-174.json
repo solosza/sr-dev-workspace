@@ -1,0 +1,19 @@
+{
+  "anchor_timestamp": "2026-07-06T14:30:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "agent_id": "tiered-index-threshold-research",
+  "actions": [
+    {"timestamp": "2026-07-06T07:00:34Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE claude -p sequential runs"},
+    {"timestamp": "2026-07-06T07:00:38Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE claude -p precision runs"},
+    {"timestamp": "2026-07-06T07:00:41Z", "tool": "Bash", "entry": "Bash: ls tasks/ssh-5-layer-audit"},
+    {"timestamp": "2026-07-06T07:00:49Z", "tool": "Bash", "entry": "Bash: test -f prompt files"},
+    {"timestamp": "2026-07-06T07:00:50Z", "tool": "Bash", "entry": "Bash: test -f prompt files"},
+    {"timestamp": "2026-07-06T07:00:54Z", "tool": "Bash", "entry": "Bash: mkdir -p results dir"},
+    {"timestamp": "2026-07-06T07:04:30Z", "tool": "Bash", "entry": "Bash: ls deepeval tasks"},
+    {"timestamp": "2026-07-06T07:09:29Z", "tool": "Write", "entry": "Write: golden_security_injection.json"},
+    {"timestamp": "2026-07-06T07:09:38Z", "tool": "Bash", "entry": "Bash: test -f ssh-5-layer task"},
+    {"timestamp": "2026-07-06T07:09:46Z", "tool": "Bash", "entry": "Bash: mkdir -p projects/tiered-index-threshold-research"},
+    {"timestamp": "2026-07-06T07:09:46Z", "tool": "Bash", "entry": "Bash: test -d projects/tiered-index-threshold-research"}
+  ]
+}

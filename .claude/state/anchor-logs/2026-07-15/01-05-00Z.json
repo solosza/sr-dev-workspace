@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-07-15T01:05:00Z",
+  "actions_count": 0,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "orchestrator-subagent-research": [
+      {"timestamp": "2026-07-14T23:10:01Z", "tool": "Bash", "entry": "Bash: protocol hash computation"},
+      {"timestamp": "2026-07-14T23:10:23Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs dir"},
+      {"timestamp": "2026-07-14T23:11:04Z", "tool": "Bash", "entry": "Bash: protocol hash computation"}
+    ]
+  }
+}

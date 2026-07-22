@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-07-16T12:00:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-16T21:41:09Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash", "session": "current", "agent_id": "reference-tasks-rest-api"}
+  ],
+  "agent_logs": {}
+}

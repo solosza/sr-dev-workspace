@@ -1,0 +1,33 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/harness-ui-slice/",
+  "total_tasks": 14,
+  "current_task": null,
+  "completed_tasks": [
+    "001-build-create-feature-branch.md",
+    "002-build-db-layer.md",
+    "003-build-seed-script.md",
+    "004-build-app-entry-login.md",
+    "005-build-login-template.md",
+    "006-build-customer-routes.md",
+    "007-build-customer-template.md",
+    "008-build-order-routes.md",
+    "009-build-orders-template.md",
+    "010-build-order-detail-template.md",
+    "011-test-smoke-boot.md",
+    "012-test-testid-audit.md",
+    "013-test-seed-determinism.md",
+    "014-build-commit-branch.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-15T00:05:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-15T01:30:00Z",
+  "actions_since_anchor": 11,
+  "last_anchor_token_confirmed": "8569a885",
+  "pending_anchor_token": null,
+  "timestamp": "2026-07-15T01:30:00Z"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "rules-contract-v1",
+  "$comment": "[DOMAIN-SPECIFIC] Replace all [DOMAIN-SPECIFIC] placeholders with domain values",
+
+  "loop_name": "[DOMAIN-SPECIFIC: loop name, e.g. ability-saves]",
+
+  "mechanics": [
+    {
+      "name": "[DOMAIN-SPECIFIC: rule name, e.g. dc-calculation]",
+      "source": "[DOMAIN-SPECIFIC: rule source, e.g. PHB p.174]",
+      "when": "[DOMAIN-SPECIFIC: condition that triggers this rule]",
+      "then": "[DOMAIN-SPECIFIC: deterministic outcome when condition is met]"
+    }
+  ],
+
+  "constraints": {
+    "$comment": "[DOMAIN-SPECIFIC] What this loop must NOT do — boundaries and prohibitions",
+    "must_not": [
+      "[DOMAIN-SPECIFIC: constraint 1, e.g. must not modify HP directly]",
+      "[DOMAIN-SPECIFIC: constraint 2, e.g. must not skip saving throw]"
+    ]
+  },
+
+  "randomization": {
+    "$comment": "[DOMAIN-SPECIFIC] Dice/RNG rules if applicable, omit section if deterministic",
+    "dice": "[DOMAIN-SPECIFIC: dice expression, e.g. 1d20]",
+    "modifiers": [
+      "[DOMAIN-SPECIFIC: modifier source, e.g. ability_modifier]"
+    ],
+    "advantage_disadvantage": "[DOMAIN-SPECIFIC: conditions for advantage/disadvantage, or null]"
+  }
+}

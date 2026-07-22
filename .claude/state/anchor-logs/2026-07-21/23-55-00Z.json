@@ -1,0 +1,236 @@
+{
+  "anchor_timestamp": "2026-07-21T22:02:57Z",
+  "actions_count": 30,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "kernel-artifact-bus-research": [
+      {
+        "timestamp": "2026-07-21T19:56:58Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T19:57:13Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import os; os.makedirs('D:/my_ai_projects/project_test_repos/sr_dev_w",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T19:58:16Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-artifa",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T19:58:20Z",
+        "tool": "Bash",
+        "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:00:01Z",
+        "tool": "Write",
+        "entry": "Write: 01-manifest-schema.md",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:00:07Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -w \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-art",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:01:25Z",
+        "tool": "Write",
+        "entry": "Write: 02-consumer-and-overlap.md",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:01:30Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -w \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-art",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:02:49Z",
+        "tool": "Write",
+        "entry": "Write: 03-combined-recommendation.md",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:02:56Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -w \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-art",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:04:11Z",
+        "tool": "Write",
+        "entry": "Write: research-report.md",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:04:17Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -w \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-art",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:04:18Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -c \"NAY\\|YAH\\|Verdict\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspa",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:04:59Z",
+        "tool": "Bash",
+        "entry": "Bash: test -d \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-a",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:00Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-a",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:01Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -w \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-art",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:02Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-a",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:03Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -w \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-art",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:04Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-a",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:05Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -w \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-art",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:06Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/kernel-a",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:07Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -qE \"YAH|NAY|Verdict\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspac",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:05:47Z",
+        "tool": "Bash",
+        "entry": "Bash: tail -15 \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-tes",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T20:06:00Z",
+        "tool": "Bash",
+        "entry": "Bash: python - <<'EOF'\nimport json, pathlib, time\nstate = pathlib.Path(\"D:/my_ai_proje",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T21:53:22Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/selenium-clic",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T21:53:32Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tools/\" 2>/dev/null | ",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T21:53:39Z",
+        "tool": "Bash",
+        "entry": "Bash: for p in \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tools/selenium-c",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T21:54:50Z",
+        "tool": "Bash",
+        "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tools/selenium-cli",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T21:55:15Z",
+        "tool": "Bash",
+        "entry": "Bash: python - <<'EOF'\nimport json, pathlib, time\nstate = pathlib.Path(\"D:/my_ai_proje",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T21:59:55Z",
+        "tool": "Bash",
+        "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/208-qa-b",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T22:00:19Z",
+        "tool": "Bash",
+        "entry": "Bash: echo \"===== 199-201 status =====\"\nls \"D:/my_ai_projects/project_test_repos/sr_de",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      },
+      {
+        "timestamp": "2026-07-21T22:00:25Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/refere",
+        "session": "current",
+        "agent_id": "kernel-artifact-bus-research"
+      }
+    ]
+  },
+  "token": "ae787319",
+  "note": "Counter anchor. Wave-1 243 + probe PASS 16/16 + 208 precondition checks; reviewed from conversation record"
+}

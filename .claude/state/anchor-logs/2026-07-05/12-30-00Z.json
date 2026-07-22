@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-07-05T12:30:00Z",
+  "actions_count": 4,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T06:30:44Z", "tool": "Bash", "entry": "Bash: grep code spans by layer"},
+    {"timestamp": "2026-07-06T06:30:49Z", "tool": "Bash", "entry": "Bash: grep @-imports by layer"},
+    {"timestamp": "2026-07-06T06:31:01Z", "tool": "Bash", "entry": "Bash: grep HMSA wikilinks by layer"},
+    {"timestamp": "2026-07-06T06:31:06Z", "tool": "Bash", "entry": "Bash: grep HMSA code spans by layer"}
+  ]
+}

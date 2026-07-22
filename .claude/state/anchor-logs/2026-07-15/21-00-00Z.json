@@ -1,0 +1,20 @@
+{
+  "anchor_timestamp": "2026-07-15T21:00:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-15T05:53:19Z", "tool": "Bash", "entry": "Bash: python state update script"},
+    {"timestamp": "2026-07-15T05:53:32Z", "tool": "Write", "entry": "Write: 001-build-create-feature-branch.md"},
+    {"timestamp": "2026-07-15T05:53:41Z", "tool": "Write", "entry": "Write: 002-build-order-workup-tasks.md"},
+    {"timestamp": "2026-07-15T05:53:54Z", "tool": "Write", "entry": "Write: 003-test-contract-semantics-ast.md"},
+    {"timestamp": "2026-07-15T05:54:03Z", "tool": "Write", "entry": "Write: 004-test-sequence-spy.md"},
+    {"timestamp": "2026-07-15T05:54:19Z", "tool": "Write", "entry": "Write: 005-test-live-env-gated.md"},
+    {"timestamp": "2026-07-15T05:54:23Z", "tool": "Write", "entry": "Write: 006-build-commit-branch.md"},
+    {"timestamp": "2026-07-15T05:54:40Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE run-task.sh spawn"}
+  ],
+  "agent_logs": {
+    "reference-tasks-browser": [
+      {"timestamp": "2026-07-15T05:55:51Z", "tool": "Bash", "entry": "Bash: python protocol hash computation"}
+    ]
+  }
+}

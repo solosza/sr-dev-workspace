@@ -1,0 +1,31 @@
+# Build Prompt: Flat + Cross-Reference
+
+## Context
+Combine the flat corpus with the cross-reference task prompt.
+
+## Type
+BUILD
+
+## Execution
+inline
+
+## Dependencies
+- 003-build-assemble-flat-corpus
+- 008-build-write-crossref-task
+
+## Phase Gate
+- [ ] `D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/corpus-flat.md` exists
+- [ ] `D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/task-crossref.md` exists
+
+## Requirements
+- Concatenate: corpus-flat.md + "\n\n---\n\n# YOUR TASK\n\n" + task-crossref.md
+- Write to `D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/prompt-flat-crossref.md`
+
+## Acceptance Criteria
+- [ ] `prompt-flat-crossref.md` exists at the specified path
+
+## Gates Satisfied
+- BUILD-10 (partial — 5 of 6 prompts)
+
+## Completion Signal
+When ALL acceptance criteria are met, invoke `/kernel/complete`.

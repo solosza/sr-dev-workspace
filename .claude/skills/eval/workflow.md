@@ -20,7 +20,7 @@ State machine, loop behavior, error handling, and resume support for `/kernel/ev
 
 | Pattern | Type | Action |
 |---------|------|--------|
-| Starts with `http://` or `https://` | GitHub URL | Clone to `eval-[repo-name]-clone\`, use clone path |
+| Starts with `http://` or `https://` | GitHub URL | Clone to `eval-[repo-name]-clone/`, use clone path |
 | Contains `github.com` | GitHub URL | Same as above |
 | Everything else | Local path | Use directly |
 
@@ -32,7 +32,7 @@ The resolved local path and detected mode are passed to all subsequent steps.
 |-------|-----------------|----------------|
 | `init` | Command invoked | Input parsed, source resolved, mode detected |
 | `resolving_source` | Input parsed | Source is a local directory (cloned if URL) |
-| `creating_repo` | Source resolved | Test repo created at `eval-[name]-test/`, git initialized |
+| `creating_repo` | Source resolved | Test repo created at `evals/eval-[name]/`, git initialized |
 | `compiling_harness` | Test repo exists | Kernel + platform-deepeval copied, domain-setup complete |
 | `copying_artifact` | Harness compiled | Target artifact (or whole repo) isolated in test repo |
 | `checking_components` | Artifact copied | `_reference/` scanned, missing components created |
@@ -113,3 +113,39 @@ After Step 6, scores are persisted:
 - Test repo: `eval/results/report.json` (full scored report)
 - Source repo: `eval/results/score-history.json` (append-only score log)
 - Regression detection: score drop > 0.1 between consecutive runs triggers a warning
+
+## A/B Mode State Machine
+
+When `mode=ab` is detected (two source args provided), the eval enters A/B comparison mode instead of the standard single-source flow.
+
+| State | Entry Condition | Exit Condition |
+|-------|-----------------|----------------|
+| `ab_generating_variants` | Source resolved, mode=ab | Flat + tiered variants created |
+| `ab_building_prompt` | Variants exist | Task prompt ready |
+| `ab_running` | Prompt ready | N iterations complete |
+| `ab_scoring` | All outputs captured | All runs scored |
+| `ab_reporting` | Scores computed | Report generated, verdict determined |
+
+### A/B Loop Behavior
+
+5-step sequential execution (Step AB-1 through AB-5). Each step must complete before the next begins.
+
+| Step | Action | State | Reference |
+|------|--------|-------|-----------|
+| AB-1 | Generate variants | `ab_generating_variants` | → `steps/step-ab-1-generate-variants.md` |
+| AB-2 | Build prompt | `ab_building_prompt` | → `steps/step-ab-2-build-prompt.md` |
+| AB-3 | Run iterations | `ab_running` | → `steps/step-ab-3-run-iterations.md` |
+| AB-4 | Score outputs | `ab_scoring` | → `steps/step-ab-4-score-outputs.md` |
+| AB-5 | Compare and report | `ab_reporting` | → `steps/step-ab-5-compare-report.md` |
+
+### A/B Error Handling
+
+| Step | Failure Mode | Action |
+|------|--------------|--------|
+| AB-1 | Variant generation fails | Check source paths exist. If flattening fails, log error, set `failed` with `resume_step: ab-1`. |
+| AB-2 | Prompt build fails | Re-read variants, verify structure. If template missing, create default. Retry once. |
+| AB-3 | Iteration fails mid-run | Save partial results. Log which iteration failed. Set `failed` with `resume_step: ab-3`. |
+| AB-4 | Scoring fails | Check API key (LLM-as-judge). Retry once. If infrastructure issue, set `failed` with `resume_step: ab-4`. |
+| AB-5 | Report generation fails | Re-read scores, verify data completeness. If scores missing, back up to AB-4. |
+
+On any A/B failure: invoke `/kernel/learn` to record what went wrong before stopping.

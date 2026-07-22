@@ -1,0 +1,64 @@
+{
+  "contract_metadata": {
+    "contract_id": "build-command:step-1:design-doc-validation",
+    "version": "1.0",
+    "artifact_type": "markdown",
+    "artifact_filename": "design-doc-index.md",
+    "canonical_reference": {
+      "path": ".claude/docs/design/build-command/references/input-contract.md",
+      "hash": null
+    },
+    "dependencies": [],
+    "validation_metadata": {
+      "validation_count": 0,
+      "last_validated_at": null,
+      "staleness_threshold_hours": 24
+    }
+  },
+  "validations": [
+    {
+      "id": "REQ-01",
+      "description": "Skill Identity section present",
+      "check": "grep -q 'Skill Identity\\|## Identity\\|You are a' [design-doc-path]",
+      "severity": "required"
+    },
+    {
+      "id": "REQ-02",
+      "description": "Philosophy section present with 3+ principles",
+      "check": "grep -q '## Philosophy\\|Philosophy' [design-doc-path]",
+      "severity": "required"
+    },
+    {
+      "id": "REQ-03",
+      "description": "Vocabulary section present with 3+ terms",
+      "check": "grep -q '## Vocabulary\\|Vocabulary' [design-doc-path]",
+      "severity": "required"
+    },
+    {
+      "id": "REQ-04",
+      "description": "Critical Rules section present with 2+ rules",
+      "check": "grep -q '## Critical Rules\\|Critical Rules' [design-doc-path]",
+      "severity": "required"
+    },
+    {
+      "id": "REQ-05",
+      "description": "Workflow Summary present with step table",
+      "check": "grep -q '## Workflow Summary\\|Workflow Summary\\|| Step |' [design-doc-path]",
+      "severity": "required"
+    },
+    {
+      "id": "REQ-06",
+      "description": "Step File Specs present (per-step specs)",
+      "check": "grep -q '## Step [0-9]\\|Step [0-9]:' [design-doc-payloads]",
+      "severity": "required"
+    },
+    {
+      "id": "REQ-07",
+      "description": "Complete File Structure present",
+      "check": "grep -q '## Complete File Structure\\|File Structure' [design-doc-path]",
+      "severity": "required"
+    }
+  ],
+  "mechanical_validations": [],
+  "overrides": []
+}

@@ -1,0 +1,199 @@
+{
+  "anchor_timestamp": "2026-07-13T20:15:00Z",
+  "actions_count": 27,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "eval-prod-test-real-llm-tests": [
+      {
+        "timestamp": "2026-07-13T06:22:48Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport json, os, glob\nstate = 'D:/my_ai_projects/project_test_repos/",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T06:24:01Z",
+        "tool": "Edit",
+        "entry": "Edit: 5-layer-contract.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T06:24:11Z",
+        "tool": "Edit",
+        "entry": "Edit: 5-layer-contract.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T06:24:15Z",
+        "tool": "Edit",
+        "entry": "Edit: 5-layer-contract.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T06:24:25Z",
+        "tool": "Edit",
+        "entry": "Edit: 5-layer-contract.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T06:24:34Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -n \"^### Conftest Architecture\\|^### Environment & Config Management\\|^### ",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T07:20:30Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/hmsa-healthcare-qa/tests/\" 2>/dev/null;",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T07:21:48Z",
+        "tool": "Write",
+        "entry": "Write: fixture-wiring.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T07:22:30Z",
+        "tool": "Bash",
+        "entry": "Bash: rm \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/hmsa-qa-platf",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T07:23:15Z",
+        "tool": "Bash",
+        "entry": "Bash: find \"D:/backup-from-c/OneDrive/Documents/isagawa_framework/v2_04112025\" -name \"",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:13:07Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/docs/design/\" ",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:13:23Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/docs/design/re",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:19:26Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -c \"\" \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/docs/d",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:26:42Z",
+        "tool": "Bash",
+        "entry": "Bash: for f in \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/docs/des",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:28:12Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:33:50Z",
+        "tool": "Write",
+        "entry": "Write: fix_refs.py",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:34:02Z",
+        "tool": "Bash",
+        "entry": "Bash: python \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:34:15Z",
+        "tool": "Bash",
+        "entry": "Bash: cd_base=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"; for f in \"$cd_b",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:34:36Z",
+        "tool": "Bash",
+        "entry": "Bash: rm \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/build-co",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:34:46Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T08:39:46Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/wal",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T19:50:10Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" | grep ",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T19:55:24Z",
+        "tool": "Bash",
+        "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python \"D:/my_ai_projects/project_test_repos/sr_dev_work",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T19:55:49Z",
+        "tool": "Write",
+        "entry": "Write: 197-market-research-on-prem-llm-pivot.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T19:57:34Z",
+        "tool": "Write",
+        "entry": "Write: 000-index.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T19:57:49Z",
+        "tool": "Write",
+        "entry": "Write: gate-contract.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      },
+      {
+        "timestamp": "2026-07-13T19:57:58Z",
+        "tool": "Write",
+        "entry": "Write: 001-research-validate-onprem-trend.md",
+        "session": "current",
+        "agent_id": "eval-prod-test-real-llm-tests"
+      }
+    ]
+  }
+}

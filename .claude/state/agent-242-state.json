@@ -1,0 +1,12 @@
+{
+  "backlog": 242,
+  "backlog_path": "docs/backlog/242-kernel-research-barrier-gate-prereqs.md",
+  "spawned_at": "2026-07-21T19:44:50Z",
+  "status": "complete",
+  "progress": "5/5 tasks",
+  "task_folder": "tasks/kernel-barrier-gate-research/",
+  "total_tasks": 5,
+  "completed_tasks": [],
+  "deliverable": "projects/kernel-barrier-gate-research/ (4 docs)",
+  "log_file": null
+}

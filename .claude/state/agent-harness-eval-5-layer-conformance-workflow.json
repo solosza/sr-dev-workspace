@@ -1,0 +1,24 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/harness-eval-5-layer-conformance/",
+  "total_tasks": 6,
+  "current_task": null,
+  "completed_tasks": [
+    "001-build-harness-metrics-class.md",
+    "002-build-run-harness-eval-task.md",
+    "003-build-harness-evaluator-role.md",
+    "004-refactor-test-eval-harness.md",
+    "005-wire-architecture-notes.md",
+    "006-test-l1-verify-structure.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-02T03:18:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-02T03:15:00Z",
+  "actions_since_anchor": 30,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-02T03:18:00Z"
+}

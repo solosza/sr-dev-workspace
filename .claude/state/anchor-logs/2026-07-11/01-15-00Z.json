@@ -1,0 +1,6 @@
+{
+  "anchor_timestamp": "2026-07-11T01:15:00Z",
+  "actions_count": 25,
+  "violations_found": 0,
+  "actions": "eval steps 2-6: domain-setup in eval repo, artifact copy (prod-test cmd+skill), component check (_reference scan, golden fixture), test generation (conftest+7 GEval tests), deepeval run (6 PASS, 9 FAIL)"
+}

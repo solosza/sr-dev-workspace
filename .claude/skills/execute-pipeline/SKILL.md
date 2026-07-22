@@ -20,14 +20,27 @@ Takes a user goal (natural language or existing backlog item) and runs the full 
 - Backlog file path → skips backlog creation, goes straight to decompose and execute
 - Number shorthand (e.g., `031`) → resolves to `docs/backlog/031-*.md`
 
+## Routing
+
+After parsing input and resolving the backlog (Steps 1-2), execute-pipeline detects the deliverable type and routes to the correct inner loop:
+
+| Deliverable Type | Route | Inner Loop |
+|-----------------|-------|------------|
+| Command or skill | Command route | `/design` → `/build-command` → Step 5 |
+| Code, files, research, refactor | Default route | task-builder → Step 4 → Step 5 |
+
+Detection happens in Step 2b. See `references/step-02b-detect-route.md` for signals and logic.
+
 ## Steps
 
 | Step | Action | Reference |
 |------|--------|-----------|
 | 1 | Parse input (detect mode) | → `references/step-01-parse-input.md` |
 | 2 | Create backlog item (skip if existing) | → `references/step-02-create-backlog.md` |
-| 3 | Run task-builder (with flags) | → `references/step-03-run-task-builder.md` |
-| 4 | Execute tasks via run-task.sh | → `references/step-04-execute-tasks.md` |
+| 2b | Detect route (command vs default) | → `references/step-02b-detect-route.md` |
+| 3 | Run task-builder (default route only) | → `references/step-03-run-task-builder.md` |
+| 3c | Run /design + /build-command (command route only) | → `references/step-03c-run-command-build.md` |
+| 4 | Execute tasks (default route only) | → `references/step-04-execute-tasks.md` |
 | 5 | Validate + report | → `references/step-05-validate-report.md` |
 
 ## Execution
@@ -59,6 +72,7 @@ State is tracked in `pipeline_state` within `session_state.json`:
   "pipeline_state": {
     "input_mode": "existing_backlog | natural_language",
     "backlog_path": "docs/backlog/NNN-*.md",
+    "route": "default | command",
     "task_folder": "tasks/[project-name]/",
     "task_count": N,
     "resume_step": null
@@ -66,11 +80,22 @@ State is tracked in `pipeline_state` within `session_state.json`:
 }
 ```
 
+## Worktree Isolation Mode
+
+For BUILD and REFACTOR scope backlogs, execute-pipeline can run tasks in an isolated git worktree. This prevents untested work from landing on main.
+
+- **Detection:** Reads backlog scope. BUILD/REFACTOR → worktree mode. RESEARCH → direct mode.
+- **Mechanism:** Uses `Agent(isolation: "worktree")` when spawning task execution agents.
+- **Merge gate:** Feature branch enters review queue. `/kernel/review-queue accept` merges to main.
+- **Details:** → `references/step-04-execute-tasks.md` (Worktree Isolation Mode section)
+- **Design:** → `projects/worktree-research/` (full research + design docs)
+
 ## Outcome
 
 After completion:
 - Backlog item exists (created or pre-existing)
 - Task folder with numbered tasks + gate contract
-- All tasks executed via run-task.sh
+- All tasks executed via run-task.sh (in worktree for BUILD scope)
 - Validation report produced
 - Pipeline state cleared from session_state.json
+- If worktree mode: feature branch ready for review via `/kernel/review-queue`

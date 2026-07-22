@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-07-01T16:00:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-01T09:21:42Z", "tool": "Bash", "entry": "Bash: test -f eval skill file"},
+    {"timestamp": "2026-07-01T09:21:43Z", "tool": "Bash", "entry": "Bash: grep -c reporter.py"},
+    {"timestamp": "2026-07-01T09:21:44Z", "tool": "Bash", "entry": "Bash: wc -l eval skill file"},
+    {"timestamp": "2026-07-01T09:22:03Z", "tool": "Bash", "entry": "Bash: test -f task file"},
+    {"timestamp": "2026-07-01T09:22:17Z", "tool": "Bash", "entry": "Bash: sleep 300 monitoring"},
+    {"timestamp": "2026-07-01T09:22:28Z", "tool": "Bash", "entry": "Bash: ls eval steps"},
+    {"timestamp": "2026-07-01T09:24:23Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash"}
+  ]
+}

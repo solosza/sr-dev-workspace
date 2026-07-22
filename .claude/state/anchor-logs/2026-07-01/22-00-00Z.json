@@ -1,0 +1,16 @@
+{
+  "anchor_timestamp": "2026-07-01T22:00:00Z",
+  "actions_count": 6,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "ab-testing-5-layer-conformance": [
+      {"timestamp": "2026-07-01T20:17:20Z", "tool": "Bash", "entry": "Bash: ls framework/tasks/"},
+      {"timestamp": "2026-07-01T20:17:29Z", "tool": "Bash", "entry": "Bash: mkdir -p framework/tasks"},
+      {"timestamp": "2026-07-01T20:17:33Z", "tool": "Write", "entry": "Write: __init__.py"},
+      {"timestamp": "2026-07-01T20:17:37Z", "tool": "Write", "entry": "Write: run_ab_eval.py"},
+      {"timestamp": "2026-07-01T20:17:48Z", "tool": "Bash", "entry": "Bash: python import verification"},
+      {"timestamp": "2026-07-01T20:18:05Z", "tool": "Bash", "entry": "Bash: test -f task file check"}
+    ]
+  }
+}

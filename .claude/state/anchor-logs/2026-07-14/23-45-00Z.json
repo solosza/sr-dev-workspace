@@ -1,0 +1,33 @@
+{
+  "anchor_timestamp": "2026-07-14T23:45:00Z",
+  "actions_count": 0,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "harness-ui-slice": [
+      {"timestamp": "2026-07-14T23:04:22Z", "tool": "Bash", "entry": "Bash: mkdir -p orderly dir"},
+      {"timestamp": "2026-07-14T23:04:32Z", "tool": "Write", "entry": "Write: base.html"},
+      {"timestamp": "2026-07-14T23:04:37Z", "tool": "Write", "entry": "Write: login.html"},
+      {"timestamp": "2026-07-14T23:04:43Z", "tool": "Bash", "entry": "Bash: test -f template"},
+      {"timestamp": "2026-07-14T23:04:52Z", "tool": "Bash", "entry": "Bash: python regex check"},
+      {"timestamp": "2026-07-14T23:04:59Z", "tool": "Bash", "entry": "Bash: python import check"},
+      {"timestamp": "2026-07-14T23:05:27Z", "tool": "Bash", "entry": "Bash: python template glob check"},
+      {"timestamp": "2026-07-14T23:06:42Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+      {"timestamp": "2026-07-14T23:07:02Z", "tool": "Bash", "entry": "Bash: ls backlog dir"},
+      {"timestamp": "2026-07-14T23:07:10Z", "tool": "Bash", "entry": "Bash: KERNEL_BACKLOG_INTENT python"},
+      {"timestamp": "2026-07-14T23:07:28Z", "tool": "Write", "entry": "Write: routes_customers.py"},
+      {"timestamp": "2026-07-14T23:07:33Z", "tool": "Bash", "entry": "Bash: importlib check"},
+      {"timestamp": "2026-07-14T23:07:37Z", "tool": "Write", "entry": "Write: backlog 230"},
+      {"timestamp": "2026-07-14T23:07:41Z", "tool": "Bash", "entry": "Bash: AST parse main.py"},
+      {"timestamp": "2026-07-14T23:07:46Z", "tool": "Edit", "entry": "Edit: backlog 230"},
+      {"timestamp": "2026-07-14T23:09:16Z", "tool": "Write", "entry": "Write: 000-index.md"},
+      {"timestamp": "2026-07-14T23:09:21Z", "tool": "Write", "entry": "Write: gate-contract.md"},
+      {"timestamp": "2026-07-14T23:09:36Z", "tool": "Write", "entry": "Write: task 001"},
+      {"timestamp": "2026-07-14T23:09:44Z", "tool": "Write", "entry": "Write: task 002"},
+      {"timestamp": "2026-07-14T23:09:47Z", "tool": "Write", "entry": "Write: task 003"},
+      {"timestamp": "2026-07-14T23:09:52Z", "tool": "Write", "entry": "Write: task 004"},
+      {"timestamp": "2026-07-14T23:10:00Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh"}
+    ]
+  },
+  "note": "Pre-anchor stale entries from prior cycle, archived during fresh anchor"
+}

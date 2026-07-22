@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-07-21T23:30:00Z",
+  "actions_count": 3,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-21T19:55:17Z", "tool": "Bash", "entry": "Bash: python state management script"},
+    {"timestamp": "2026-07-21T19:55:27Z", "tool": "Bash", "entry": "Bash: python state management script"},
+    {"timestamp": "2026-07-21T19:55:32Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh"}
+  ]
+}

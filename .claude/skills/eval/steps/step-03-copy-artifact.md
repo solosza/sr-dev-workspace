@@ -9,7 +9,7 @@ Copy the target into the test repo. In **artifact mode**, copy the target artifa
 | `mode` | Output of Step 0 | `artifact` or `harness` |
 | `target` | Output of Step 0 | `check-data` or `null` |
 | `source_path` | Output of Step 0 | `D:\my_ai_projects\project_test_repos\kernel-minimal` |
-| `test-repo` | Output of Step 1 | `D:\my_ai_projects\project_test_repos\eval-kernel-minimal-test` |
+| `test-repo` | Output of Step 1 | `D:\my_ai_projects\project_test_repos\evals\eval-kernel-minimal` |
 
 ## Pre-Copy Checkpoint
 

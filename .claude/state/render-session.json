@@ -1,0 +1,12 @@
+{
+  "template": "review-board",
+  "artifact": "unreviewed-queue (43 items, incl. 231/233)",
+  "status": "closed",
+  "server_task": "bca0hv8d2",
+  "watcher_task": "bz3gd313d",
+  "port": 63060,
+  "session_dir": ".claude/state/render-sessions/2026-07-15-review-board-v2/",
+  "annotations_file": ".claude/state/render-sessions/2026-07-15-review-board-v2/annotations.json",
+  "routed_count": 1,
+  "last_updated": "2026-07-15T23:05:00Z"
+}

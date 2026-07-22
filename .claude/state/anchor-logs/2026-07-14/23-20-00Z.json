@@ -1,0 +1,334 @@
+{
+  "anchor_timestamp": "2026-07-14T23:20:00Z",
+  "actions_count": 46,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "target-repo-git-baseline": [
+      {
+        "timestamp": "2026-07-14T19:43:22Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport hashlib, io, json, os, glob\nws = 'D:/my_ai_projects/project_t",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T19:43:36Z",
+        "tool": "Bash",
+        "entry": "Bash: t=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"; echo \"GIT-01: $(git -",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:02:14Z",
+        "tool": "Bash",
+        "entry": "Bash: deleted=0; for f in \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:02:25Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" | grep ",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:02:46Z",
+        "tool": "Write",
+        "entry": "Write: data-model.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:02:57Z",
+        "tool": "Write",
+        "entry": "Write: harness-app.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:03:09Z",
+        "tool": "Edit",
+        "entry": "Edit: data-model.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:04:35Z",
+        "tool": "Write",
+        "entry": "Write: gen_backlogs_v2.py",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:05:23Z",
+        "tool": "Bash",
+        "entry": "Bash: python \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:05:37Z",
+        "tool": "Bash",
+        "entry": "Bash: KERNEL_BACKLOG_INTENT=1 bash -c 'ws=\"D:/my_ai_projects/project_test_repos/sr_dev",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:05:50Z",
+        "tool": "Write",
+        "entry": "Write: retrace_readme.py",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:05:57Z",
+        "tool": "Bash",
+        "entry": "Bash: python \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:06:14Z",
+        "tool": "Edit",
+        "entry": "Edit: README.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:06:41Z",
+        "tool": "Edit",
+        "entry": "Edit: README.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:07:28Z",
+        "tool": "Write",
+        "entry": "Write: 000-index.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:07:34Z",
+        "tool": "Write",
+        "entry": "Write: gate-contract.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:07:46Z",
+        "tool": "Write",
+        "entry": "Write: 001-build-create-feature-branch.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:07:52Z",
+        "tool": "Write",
+        "entry": "Write: 002-build-write-trace-py.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:07:57Z",
+        "tool": "Write",
+        "entry": "Write: 003-test-import-and-wrap.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:08:01Z",
+        "tool": "Write",
+        "entry": "Write: 004-test-trace-output-format.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:08:05Z",
+        "tool": "Write",
+        "entry": "Write: 005-build-commit-branch.md",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      },
+      {
+        "timestamp": "2026-07-14T22:08:28Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+        "session": "current",
+        "agent_id": "target-repo-git-baseline"
+      }
+    ],
+    "trace-utility": [
+      {
+        "timestamp": "2026-07-14T22:17:45Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework/resourc",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:17:51Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --show-cur",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:17:52Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/\" 2>/dev/null || echo ",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:17:58Z",
+        "tool": "Bash",
+        "entry": "Bash: ls -R \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework/\" 2>/dev/",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:18:12Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework\" pyt",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:18:40Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework\" pyt",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:20:07Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:20:57Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --show-cur",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:21:10Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport sys, logging\n\nsys.path.insert(0, 'D:/my_ai_projects/project_t",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:22:02Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport sys, logging\n\nsys.path.insert(0, 'D:/my_ai_projects/project_t",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:23:16Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:23:42Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --show-cur",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:23:42Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --porcelai",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:23:49Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --porcelai",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:16Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport sys\nsys.path.insert(0, 'D:/my_ai_projects/project_test_repos/",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:20Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport sys, logging\nsys.path.insert(0, 'D:/my_ai_projects/project_te",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:24Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" add -A",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:28Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --porcelai",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:34Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" commit -m \"build(",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:39Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --porcelai",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:40Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log main --onelin",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:24:40Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log build/199-qa-",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:25:03Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --porcelai",
+        "session": "current",
+        "agent_id": "trace-utility"
+      },
+      {
+        "timestamp": "2026-07-14T22:25:03Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log --oneline -1 ",
+        "session": "current",
+        "agent_id": "trace-utility"
+      }
+    ]
+  }
+}

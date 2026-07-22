@@ -1,0 +1,248 @@
+{
+  "anchor_timestamp": "2026-07-06T17:00:00Z",
+  "actions_count": 34,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "tiered-index-threshold-research": [
+      {
+        "timestamp": "2026-07-06T07:00:34Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE claude -p \"You are in D:/my_ai_projects/project_test_repos/sr_",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:00:38Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE claude -p \"You are in D:/my_ai_projects/project_test_repos/sr_",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:00:41Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-5-layer-audi",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:00:49Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:00:50Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:00:54Z",
+        "tool": "Bash",
+        "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/6",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:04:30Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/deepeval-securit",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:09:29Z",
+        "tool": "Write",
+        "entry": "Write: golden_security_injection.json",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:09:38Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/ssh-5-layer",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:09:46Z",
+        "tool": "Bash",
+        "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/tiered-",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:20:43Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:20:58Z",
+        "tool": "Bash",
+        "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:21:04Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport json, os\n# Read main actions log\nwith open('D:/my_ai_projects",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:21:54Z",
+        "tool": "Bash",
+        "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:21:55Z",
+        "tool": "Bash",
+        "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:22:02Z",
+        "tool": "Bash",
+        "entry": "Bash: for f in \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/6",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:22:32Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/res",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:22:54Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"from openai import OpenAI; OpenAI().models.list(); print('OPENAI_API_",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:22:54Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/\" |",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:23:20Z",
+        "tool": "Bash",
+        "entry": "Bash: wc -c \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:23:30Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/\" |",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:23:51Z",
+        "tool": "Write",
+        "entry": "Write: run_scoring.py",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:30:39Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:31:12Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k/res",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:31:41Z",
+        "tool": "Bash",
+        "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:33:00Z",
+        "tool": "Write",
+        "entry": "Write: heuristic_scorer.py",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:33:03Z",
+        "tool": "Bash",
+        "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:33:55Z",
+        "tool": "Write",
+        "entry": "Write: generate_report.py",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:33:59Z",
+        "tool": "Bash",
+        "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60k",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:34:19Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:34:20Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:34:33Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/evals/eval-ab-check-data-engine/60",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:36:14Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      },
+      {
+        "timestamp": "2026-07-06T07:36:27Z",
+        "tool": "Bash",
+        "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+        "session": "current",
+        "agent_id": "tiered-index-threshold-research"
+      }
+    ]
+  }
+}

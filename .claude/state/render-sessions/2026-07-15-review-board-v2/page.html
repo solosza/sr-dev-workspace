@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review Board</title>
+<style>
+:root {
+  --bg: #fff; --fg: #1a1a1a; --card-bg: #f8f9fa; --card-border: #dee2e6;
+  --chip-bg: #e9ecef; --chip-fg: #495057; --accent: #228be6; --danger: #e03131;
+  --success: #2f9e44; --muted: #868e96; --notes-bg: #fff; --banner-bg: #f1f3f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1b1e; --fg: #c1c2c5; --card-bg: #25262b; --card-border: #373a40;
+    --chip-bg: #2c2e33; --chip-fg: #909296; --accent: #4dabf7; --danger: #ff6b6b;
+    --success: #51cf66; --muted: #5c5f66; --notes-bg: #2c2e33; --banner-bg: #25262b;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--fg); padding: 1rem; max-width: 56rem; margin: 0 auto; }
+.banner { background: var(--banner-bg); border: 1px solid var(--card-border); border-radius: .5rem; padding: .75rem 1rem; margin-bottom: 1.5rem; font-size: .85rem; color: var(--muted); word-break: break-all; }
+.banner strong { color: var(--fg); }
+h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+.card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: .5rem; padding: 1rem; margin-bottom: 1rem; transition: opacity .2s; }
+.card.acted { opacity: .45; }
+.card-header { display: flex; align-items: baseline; gap: .5rem; margin-bottom: .5rem; }
+.card-number { font-weight: 700; color: var(--accent); font-size: .9rem; }
+.card-title { font-size: 1.05rem; font-weight: 600; }
+.chips { display: flex; gap: .4rem; margin-bottom: .5rem; flex-wrap: wrap; }
+.chip { font-size: .75rem; padding: .15rem .5rem; border-radius: 1rem; background: var(--chip-bg); color: var(--chip-fg); }
+.chip-priority-high { background: var(--danger); color: #fff; }
+.card-summary { font-size: .9rem; line-height: 1.5; margin-bottom: .75rem; color: var(--fg); }
+.notes-row { margin-bottom: .75rem; }
+.notes-row label { display: block; font-size: .8rem; color: var(--muted); margin-bottom: .25rem; }
+.notes-row textarea { width: 100%; border: 1px solid var(--card-border); border-radius: .375rem; padding: .5rem; font-size: .85rem; background: var(--notes-bg); color: var(--fg); resize: vertical; }
+.actions { display: flex; gap: .4rem; flex-wrap: wrap; }
+.btn { border: none; padding: .4rem .85rem; border-radius: .375rem; font-size: .8rem; font-weight: 600; cursor: pointer; transition: filter .15s; }
+.btn:hover { filter: brightness(1.1); }
+.btn:disabled { opacity: .4; cursor: default; filter: none; }
+.btn-accept { background: var(--success); color: #fff; }
+.btn-iterate { background: var(--accent); color: #fff; }
+.btn-reject { background: var(--danger); color: #fff; }
+.btn-skip { background: var(--chip-bg); color: var(--chip-fg); }
+.btn-defer { background: var(--chip-bg); color: var(--chip-fg); }
+.send-bar { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--card-border); padding: .75rem 0; display: flex; align-items: center; gap: 1rem; }
+.send-bar .count { font-size: .85rem; color: var(--muted); }
+#send-btn { background: var(--accent); color: #fff; border: none; padding: .5rem 1.25rem; border-radius: .375rem; font-size: .9rem; font-weight: 600; cursor: pointer; }
+#send-btn:disabled { opacity: .5; cursor: default; }
+#status { font-size: .85rem; color: var(--muted); }
+.status-strip { background: var(--banner-bg); border: 1px solid var(--card-border); border-radius: .375rem; padding: .5rem 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: .75rem; font-size: .85rem; }
+.status-dot { display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; }
+.status-dot-idle { background: var(--muted); }
+.status-dot-processing { background: var(--accent); animation: pulse 1.2s infinite; }
+.status-dot-closed { background: var(--danger); }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+.status-label { font-weight: 600; }
+.status-time { color: var(--muted); }
+.dry-run-bar { background: var(--banner-bg); border: 2px dashed var(--card-border); border-radius: .375rem; padding: .5rem 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: .75rem; font-size: .85rem; }
+.dry-run-bar label { cursor: pointer; display: flex; align-items: center; gap: .5rem; font-weight: 600; }
+.dry-run-bar .hint { color: var(--muted); }
+.confirm-bar { background: var(--banner-bg); border: 1px solid var(--accent); border-radius: .375rem; padding: .5rem .75rem; margin: .5rem 0; display: flex; align-items: center; gap: .75rem; font-size: .85rem; flex-wrap: wrap; }
+.confirm-bar .confirm-q { flex: 1; min-width: 10rem; }
+.card-result { margin-top: .5rem; padding: .5rem .75rem; border-radius: .375rem; font-size: .85rem; font-weight: 600; }
+.card-result-accepted { background: var(--success); color: #fff; }
+.card-result-outcome { background: var(--accent); color: #fff; }
+.card-result-rejected { background: var(--danger); color: #fff; }
+.card-result-dryrun { background: var(--chip-bg); color: var(--chip-fg); border: 1px dashed var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="banner"><strong>Session:</strong> D:\my_ai_projects\project_test_repos\sr_dev_workspace\.claude\state\render-sessions\2026-07-15-review-board-v2</div>
+<div class="status-strip" id="status-strip">
+  <span class="status-dot status-dot-idle" id="status-dot"></span>
+  <span class="status-label" id="status-label">idle</span>
+  <span class="status-time" id="status-time"></span>
+</div>
+<h1>Review Board</h1>
+<div class="dry-run-bar">
+  <label><input type="checkbox" id="dry-run-toggle"> Dry run</label>
+  <span class="hint">&mdash; nothing will be routed</span>
+</div>
+
+<div class="card" data-number="146" id="card-146">
+  <div class="card-header">
+    <span class="card-number">#146</span>
+    <h3 class="card-title">Research State Isolation &amp; CI Solutions</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research concrete solutions for two production readiness critiques: (1) state isolation to prevent shared-mutable-state bugs during parallel agent execution, and (2) CI/automated testing to provide independent verificati</p>
+  <div class="notes-row" id="notes-row-146" style="display:none">
+    <label for="notes-146">Notes:</label>
+    <textarea id="notes-146" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('146','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('146','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('146','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('146','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('146','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="147" id="card-147">
+  <div class="card-header">
+    <span class="card-number">#147</span>
+    <h3 class="card-title">Define Kernel Boundary — Separate Core from Extensions</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">The kernel repo (isagawa-kernel) was designed to be minimalistic — the loop (session-start → anchor → work → complete → learn) plus domain-setup. But workspace-specific tools (execute-pipeline, task-builder, prod-test, s</p>
+  <div class="notes-row" id="notes-row-147" style="display:none">
+    <label for="notes-147">Notes:</label>
+    <textarea id="notes-147" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('147','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('147','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('147','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('147','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('147','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="149" id="card-149">
+  <div class="card-header">
+    <span class="card-number">#149</span>
+    <h3 class="card-title">Rewrite Resume Around Loops and Agent Systems</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">The current resume (alain-ignacio-ai-agent-architect) didn&#x27;t produce callbacks. Rewrite it to lead with loops and agent systems as the primary framing instead of &quot;AI Agent Architect&quot; and &quot;governed autonomous agents.&quot; The</p>
+  <div class="notes-row" id="notes-row-149" style="display:none">
+    <label for="notes-149">Notes:</label>
+    <textarea id="notes-149" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('149','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('149','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('149','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('149','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('149','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="151" id="card-151">
+  <div class="card-header">
+    <span class="card-number">#151</span>
+    <h3 class="card-title">Research: Improve Governance Depth Within Minimal Kernel</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">Given the feature freeze from backlog 150, the kernel&#x27;s remaining surface area is small: the loop (session-start, anchor, work, learn, complete), enforcement hooks, domain-setup, and lessons. Instead of adding features, </p>
+  <div class="notes-row" id="notes-row-151" style="display:none">
+    <label for="notes-151">Notes:</label>
+    <textarea id="notes-151" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('151','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('151','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('151','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('151','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('151','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="152" id="card-152">
+  <div class="card-header">
+    <span class="card-number">#152</span>
+    <h3 class="card-title">Build /kernel/human-check Command — AI Tell Detection</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Build a `/kernel/human-check` command that scans any text file for AI writing patterns and flags them for removal. The command follows the canonical command-skill-pattern from hmsa-healthcare-qa. Everything the user publ</p>
+  <div class="notes-row" id="notes-row-152" style="display:none">
+    <label for="notes-152">Notes:</label>
+    <textarea id="notes-152" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('152','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('152','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('152','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('152','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('152','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="154" id="card-154">
+  <div class="card-header">
+    <span class="card-number">#154</span>
+    <h3 class="card-title">DeepEval L3 Testing: Industry-Standard Benchmarks for Kernel Commands</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Enhance `/kernel/prod-test` L3 to use platform-deepeval as the evaluation engine. When prod-test runs against a deliverable, L3 composes the deepeval spec into the test repo, translates contract JSONs to golden datasets,</p>
+  <div class="notes-row" id="notes-row-154" style="display:none">
+    <label for="notes-154">Notes:</label>
+    <textarea id="notes-154" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('154','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('154','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('154','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('154','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('154','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="154" id="card-154">
+  <div class="card-header">
+    <span class="card-number">#154</span>
+    <h3 class="card-title">Research: Workflow State Isolation for Parallel Agents</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Backlog 153 fixed actions log contention (per-agent `agent-{id}-actions.jsonl`) but `sr_dev_workflow.json` remains shared mutable state. When multiple run-task.sh agents write concurrently, fields like `completed_tasks`,</p>
+  <div class="notes-row" id="notes-row-154" style="display:none">
+    <label for="notes-154">Notes:</label>
+    <textarea id="notes-154" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('154','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('154','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('154','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('154','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('154','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="157" id="card-157">
+  <div class="card-header">
+    <span class="card-number">#157</span>
+    <h3 class="card-title">DeepEval Testing: Industry-Standard Eval for LLM Artifacts</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Build a new kernel command (`/kernel/eval`) as its own command/skill following the 6-layer command-skill-pattern and tiered-index architecture. It has its own loop, composable (standalone or callable by another loop). Te</p>
+  <div class="notes-row" id="notes-row-157" style="display:none">
+    <label for="notes-157">Notes:</label>
+    <textarea id="notes-157" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('157','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('157','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('157','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('157','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('157','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="158" id="card-158">
+  <div class="card-header">
+    <span class="card-number">#158</span>
+    <h3 class="card-title">Multi-Vertical AI Testing Platform: Feasibility Research</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research the feasibility of a web platform where anyone can submit LLM artifacts for testing across multiple verticals. The core model: **BYOK + disposable containers + growing intelligence library + usage-driven flywhee</p>
+  <div class="notes-row" id="notes-row-158" style="display:none">
+    <label for="notes-158">Notes:</label>
+    <textarea id="notes-158" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('158','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('158','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('158','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('158','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('158','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="159" id="card-159">
+  <div class="card-header">
+    <span class="card-number">#159</span>
+    <h3 class="card-title">Multi-Vertical AI Testing Platform: Architecture Design</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">Design the architecture for a multi-vertical AI testing platform. Users submit LLM artifacts, bring their own API keys (BYOK), and get scored results. The platform uses disposable cloud containers, compiles agent harness</p>
+  <div class="notes-row" id="notes-row-159" style="display:none">
+    <label for="notes-159">Notes:</label>
+    <textarea id="notes-159" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('159','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('159','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('159','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('159','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('159','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="160" id="card-160">
+  <div class="card-header">
+    <span class="card-number">#160</span>
+    <h3 class="card-title">Add Kernel Design Patterns to Pulsia Research</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">Append the three core Isagawa kernel design patterns to the existing pulsia-research project folder. The pulsia research (backlog 128) already analyzed Pulsia&#x27;s autonomous AI platform and proposed harness loop architectu</p>
+  <div class="notes-row" id="notes-row-160" style="display:none">
+    <label for="notes-160">Notes:</label>
+    <textarea id="notes-160" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('160','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('160','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('160','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('160','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('160','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="161" id="card-161">
+  <div class="card-header">
+    <span class="card-number">#161</span>
+    <h3 class="card-title">Research Unified File Linking Convention for Tiered Index Architecture</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">The tiered index architecture currently uses three different linking conventions across layers: skills use wikilinks (`→ [[path]]`), indexes use code spans (`` `path` ``), and CLAUDE.md supports `@path` imports. This inc</p>
+  <div class="notes-row" id="notes-row-161" style="display:none">
+    <label for="notes-161">Notes:</label>
+    <textarea id="notes-161" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('161','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('161','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('161','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('161','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('161','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="162" id="card-162">
+  <div class="card-header">
+    <span class="card-number">#162</span>
+    <h3 class="card-title">Eval Platform Learning Loop — Move Harness Eval to platform-deepeval</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Move the harness eval system (harness_metrics.py, architecture_notes.py, criteria_changelog.md, test_eval_kernel_minimal.py) from the disposable eval-kernel-minimal-test repo into platform-deepeval as a permanent capabil</p>
+  <div class="notes-row" id="notes-row-162" style="display:none">
+    <label for="notes-162">Notes:</label>
+    <textarea id="notes-162" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('162','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('162','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('162','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('162','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('162','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="164" id="card-164">
+  <div class="card-header">
+    <span class="card-number">#164</span>
+    <h3 class="card-title">Research: Kernel Metrics Database</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research how to add quantitative performance tracking to the kernel. Currently the kernel has lessons (qualitative) but no metrics (quantitative). Need to design a metrics database that tracks task completion rate, failu</p>
+  <div class="notes-row" id="notes-row-164" style="display:none">
+    <label for="notes-164">Notes:</label>
+    <textarea id="notes-164" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('164','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('164','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('164','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('164','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('164','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="165" id="card-165">
+  <div class="card-header">
+    <span class="card-number">#165</span>
+    <h3 class="card-title">Research: Experiment Tracking / A/B Comparison for Kernel Changes</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research how to measure the impact of kernel changes (new lessons, hook updates, protocol modifications). Currently when a lesson changes a protocol or hook, there&#x27;s no formal before vs after comparison. &quot;Did adding the </p>
+  <div class="notes-row" id="notes-row-165" style="display:none">
+    <label for="notes-165">Notes:</label>
+    <textarea id="notes-165" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('165','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('165','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('165','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('165','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('165','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="166" id="card-166">
+  <div class="card-header">
+    <span class="card-number">#166</span>
+    <h3 class="card-title">Research: Automatic Evaluation — Closing the Loop</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research how to close the loop between evaluation and protocol improvement. After N pipelines, the system should auto-evaluate: &quot;Are failure rates declining? Are tasks completing faster? Are lessons repeating?&quot; The DeepE</p>
+  <div class="notes-row" id="notes-row-166" style="display:none">
+    <label for="notes-166">Notes:</label>
+    <textarea id="notes-166" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('166','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('166','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('166','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('166','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('166','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="167" id="card-167">
+  <div class="card-header">
+    <span class="card-number">#167</span>
+    <h3 class="card-title">Research: Rollback Mechanism for Lessons and Protocol Changes</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">Research how to add rollback capability to the kernel&#x27;s learning system. Currently lessons are append-only — there&#x27;s no mechanism to say &quot;lesson X was wrong, remove it and revert the associated hook/protocol change.&quot; Whe</p>
+  <div class="notes-row" id="notes-row-167" style="display:none">
+    <label for="notes-167">Notes:</label>
+    <textarea id="notes-167" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('167','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('167','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('167','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('167','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('167','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="168" id="card-168">
+  <div class="card-header">
+    <span class="card-number">#168</span>
+    <h3 class="card-title">Research: Regression Testing for Protocol and Hook Changes</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research how to wire the eval platform (platform-deepeval) into the kernel&#x27;s learn/anchor cycle so that protocol and hook changes are automatically regression-tested before being adopted. Currently when /kernel/learn mod</p>
+  <div class="notes-row" id="notes-row-168" style="display:none">
+    <label for="notes-168">Notes:</label>
+    <textarea id="notes-168" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('168','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('168','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('168','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('168','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('168','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="169" id="card-169">
+  <div class="card-header">
+    <span class="card-number">#169</span>
+    <h3 class="card-title">Build: Kernel Self-Improvement Observability System</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Build the kernel&#x27;s self-improvement observability system using a 3-tier architecture. Tier 1 adds lightweight metric emission to isagawa-kernel core commands. Tier 2 wires platform-deepeval into the post-learn cycle as a</p>
+  <div class="notes-row" id="notes-row-169" style="display:none">
+    <label for="notes-169">Notes:</label>
+    <textarea id="notes-169" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('169','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('169','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('169','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('169','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('169','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="170" id="card-170">
+  <div class="card-header">
+    <span class="card-number">#170</span>
+    <h3 class="card-title">Build: Targeted Resume Pair (AI Agent + AI QA)</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research the current AI agent and AI QA job markets, analyze the user&#x27;s skillset against market demand, determine the best positions to target, then produce two tailored resumes: one optimized for AI agent engineering ro</p>
+  <div class="notes-row" id="notes-row-170" style="display:none">
+    <label for="notes-170">Notes:</label>
+    <textarea id="notes-170" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('170','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('170','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('170','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('170','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('170','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="171" id="card-171">
+  <div class="card-header">
+    <span class="card-number">#171</span>
+    <h3 class="card-title">Build A/B Testing Framework for DeepEval Eval Platform</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Build a generalized A/B testing component for the deepeval eval platform. Given any command or skill, the framework dynamically generates two variants — flat (monolithic) and tiered (indexed with checkpoints and contract</p>
+  <div class="notes-row" id="notes-row-171" style="display:none">
+    <label for="notes-171">Notes:</label>
+    <textarea id="notes-171" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('171','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('171','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('171','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('171','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('171','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="172" id="card-172">
+  <div class="card-header">
+    <span class="card-number">#172</span>
+    <h3 class="card-title">Refactor A/B Testing Framework to 5-Layer Eval Architecture</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">The A/B testing framework (pipeline 171) works end-to-end but bypasses all 5 layers of the eval architecture defined in platform-deepeval. It calls DeepEval SDK directly (skips L1), has no Metric Objects (skips L2), no E</p>
+  <div class="notes-row" id="notes-row-172" style="display:none">
+    <label for="notes-172">Notes:</label>
+    <textarea id="notes-172" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('172','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('172','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('172','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('172','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('172','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="173" id="card-173">
+  <div class="card-header">
+    <span class="card-number">#173</span>
+    <h3 class="card-title">Refactor Harness Eval Tests to 5-Layer Eval Architecture</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">The harness evaluation test suite (test_eval_harness.py) bypasses the 5-layer architecture the same way the A/B framework does. It creates GEval metrics inline with hardcoded criteria strings, calls assert_test() directl</p>
+  <div class="notes-row" id="notes-row-173" style="display:none">
+    <label for="notes-173">Notes:</label>
+    <textarea id="notes-173" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('173','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('173','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('173','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('173','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('173','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="174" id="card-174">
+  <div class="card-header">
+    <span class="card-number">#174</span>
+    <h3 class="card-title">Research Tiered Index Architecture Failure Threshold via A/B Experiment</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Design and run a large-corpus A/B test (60K+ tokens, 3 precision-recall task types, N=5 runs) to find the actual failure point where flat document structure degrades vs tiered indexing. Prior N=3 test at 12K tokens showe</p>
+  <div class="notes-row" id="notes-row-174" style="display:none">
+    <label for="notes-174">Notes:</label>
+    <textarea id="notes-174" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('174','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('174','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('174','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('174','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('174','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="177" id="card-177">
+  <div class="card-header">
+    <span class="card-number">#177</span>
+    <h3 class="card-title">Fix Harness Eval 5-Layer Compliance</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">The harness eval system delivered by backlog 162 (harness_metrics.py, architecture_notes.py) has 5-layer compliance violations. L2 metrics import directly from `deepeval` SDK instead of going through L1 DeepEvalInterface</p>
+  <div class="notes-row" id="notes-row-177" style="display:none">
+    <label for="notes-177">Notes:</label>
+    <textarea id="notes-177" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('177','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('177','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('177','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('177','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('177','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="180" id="card-180">
+  <div class="card-header">
+    <span class="card-number">#180</span>
+    <h3 class="card-title">Build Generalized Loop Integration for D&amp;D Game Engine</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Build a generalized loop pattern (reusable across repos) and apply it to the dnd-game-engine-test repo. Every game loop (outer or inner) needs: SKILL.md with DDD structure, contracts as part of the loop (input/output/rul</p>
+  <div class="notes-row" id="notes-row-180" style="display:none">
+    <label for="notes-180">Notes:</label>
+    <textarea id="notes-180" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('180','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('180','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('180','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('180','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('180','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="181" id="card-181">
+  <div class="card-header">
+    <span class="card-number">#181</span>
+    <h3 class="card-title">Research Velocity Management and Review System</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research how to manage the output of high-velocity autonomous agent work. The problem: execute-pipeline and agent swarms complete backlogs faster than the user can review, iterate, and accept the results. Work gets done </p>
+  <div class="notes-row" id="notes-row-181" style="display:none">
+    <label for="notes-181">Notes:</label>
+    <textarea id="notes-181" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('181','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('181','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('181','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('181','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('181','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="182" id="card-182">
+  <div class="card-header">
+    <span class="card-number">#182</span>
+    <h3 class="card-title">Build Execute-Pipeline Command Routing</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Execute-pipeline currently always routes through task-builder for all backlogs. When a backlog&#x27;s deliverable is a command or skill, it should route through `/design` → `/build-command` instead. This adds routing logic to</p>
+  <div class="notes-row" id="notes-row-182" style="display:none">
+    <label for="notes-182">Notes:</label>
+    <textarea id="notes-182" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('182','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('182','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('182','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('182','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('182','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="183" id="card-183">
+  <div class="card-header">
+    <span class="card-number">#183</span>
+    <h3 class="card-title">Build Worktree Branch Isolation for Execute-Pipeline</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Integrate git worktrees into execute-pipeline so each pipeline run creates a feature branch in an isolated worktree. Agents work in the worktree, not on main. After gap check + prod test + human review (via review-queue)</p>
+  <div class="notes-row" id="notes-row-183" style="display:none">
+    <label for="notes-183">Notes:</label>
+    <textarea id="notes-183" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('183','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('183','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('183','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('183','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('183','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="184" id="card-184">
+  <div class="card-header">
+    <span class="card-number">#184</span>
+    <h3 class="card-title">Build Post-Merge Smoke Test</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">After a feature branch is accepted (via review-queue) and merged to main, automatically run a smoke test to verify main still works. This is the final gate in the SDLC: backlog → pipeline → feature branch → gap check → p</p>
+  <div class="notes-row" id="notes-row-184" style="display:none">
+    <label for="notes-184">Notes:</label>
+    <textarea id="notes-184" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('184','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('184','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('184','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('184','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('184','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="185" id="card-185">
+  <div class="card-header">
+    <span class="card-number">#185</span>
+    <h3 class="card-title">Build /kernel/review-queue Command</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Build a `/kernel/review-queue` command backed by a `review-status.json` state file to track human review and acceptance of completed pipeline work. The system discovers unreviewed items by diffing `docs/backlog/done/` ag</p>
+  <div class="notes-row" id="notes-row-185" style="display:none">
+    <label for="notes-185">Notes:</label>
+    <textarea id="notes-185" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('185','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('185','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('185','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('185','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('185','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="186" id="card-186">
+  <div class="card-header">
+    <span class="card-number">#186</span>
+    <h3 class="card-title">Research Multi-Persona Autonomous Company Architecture</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Research two architectural approaches for running an autonomous AI company using Isagawa kernel infrastructure, where each business function (Developer, QA, PM, Sales, Marketing) operates as a specialized persona with it</p>
+  <div class="notes-row" id="notes-row-186" style="display:none">
+    <label for="notes-186">Notes:</label>
+    <textarea id="notes-186" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('186','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('186','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('186','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('186','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('186','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="187" id="card-187">
+  <div class="card-header">
+    <span class="card-number">#187</span>
+    <h3 class="card-title">Universal Game Mod Installer Harness</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">Research the feasibility and landscape of a universal game mod installer powered by Claude Code + Playwright MCP. Investigate existing mod managers (Vortex, MO2, Thunderstore, r2modman), assess whether a Claude Code harn</p>
+  <div class="notes-row" id="notes-row-187" style="display:none">
+    <label for="notes-187">Notes:</label>
+    <textarea id="notes-187" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('187','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('187','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('187','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('187','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('187','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="188" id="card-188">
+  <div class="card-header">
+    <span class="card-number">#188</span>
+    <h3 class="card-title">LLM Market Shift Analysis — Frontier vs Chinese vs On-Prem</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">Research whether enterprises are moving away from frontier LLMs (OpenAI, Anthropic, Google) toward Chinese LLMs (DeepSeek, Qwen) or on-prem/open-weight models (Llama, Mistral). Determine if code generation quality has re</p>
+  <div class="notes-row" id="notes-row-188" style="display:none">
+    <label for="notes-188">Notes:</label>
+    <textarea id="notes-188" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('188','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('188','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('188','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('188','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('188','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="189" id="card-189">
+  <div class="card-header">
+    <span class="card-number">#189</span>
+    <h3 class="card-title">Curiosity Harness — Teaching Quality Questions in an AI World</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">Aravind Srinivas (Perplexity CEO, Joe Rogan episode) argues the future belongs to the curious — own your AI locally, kill algorithmic feeds, guard your agency, become interesting to talk to. The thesis: when AI can answe</p>
+  <div class="notes-row" id="notes-row-189" style="display:none">
+    <label for="notes-189">Notes:</label>
+    <textarea id="notes-189" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('189','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('189','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('189','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('189','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('189','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="190" id="card-190">
+  <div class="card-header">
+    <span class="card-number">#190</span>
+    <h3 class="card-title">Build /kernel/summarize Command — Dynamic Summarization Loop</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Build a `/kernel/summarize` command that reads completed agent output (backlog + tasks + deliverables + agent state), diffs deliverables against backlog requirements, and produces a dynamic summary with decision flags. W</p>
+  <div class="notes-row" id="notes-row-190" style="display:none">
+    <label for="notes-190">Notes:</label>
+    <textarea id="notes-190" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('190','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('190','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('190','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('190','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('190','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="191" id="card-191">
+  <div class="card-header">
+    <span class="card-number">#191</span>
+    <h3 class="card-title">Fix Platform-DeepEval 5-Layer Contract Violations</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Gap check found 26 findings (16 errors, 10 warnings) across `platform-deepeval/framework/`. All 6 roles return dicts instead of `None`. All 9 tasks stuff results onto `test_case._eval_results` instead of letting metrics </p>
+  <div class="notes-row" id="notes-row-191" style="display:none">
+    <label for="notes-191">Notes:</label>
+    <textarea id="notes-191" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('191','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('191','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('191','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('191','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('191','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="192" id="card-192">
+  <div class="card-header">
+    <span class="card-number">#192</span>
+    <h3 class="card-title">Refactor SSH Platform to 5-Layer Compliance</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">The SSH compliance platform (`platform-ssh`) was built before the 5-layer contract was codified. A `/check-5-layer` audit found zero compliant files. This backlog covers a full structural refactor: rewriting every layer </p>
+  <div class="notes-row" id="notes-row-192" style="display:none">
+    <label for="notes-192">Notes:</label>
+    <textarea id="notes-192" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('192','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('192','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('192','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('192','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('192','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="195" id="card-195">
+  <div class="card-header">
+    <span class="card-number">#195</span>
+    <h3 class="card-title">Refactor prod-test Skill to Command-Skill-Pattern Compliance</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">The `.claude/skills/prod-test/` skill was built before the command-skill-pattern was formalized. It needs structural refactoring to match the canonical 6-layer architecture. No behavioral changes — same steps, same logic</p>
+  <div class="notes-row" id="notes-row-195" style="display:none">
+    <label for="notes-195">Notes:</label>
+    <textarea id="notes-195" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('195','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('195','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('195','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('195','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('195','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="196" id="card-196">
+  <div class="card-header">
+    <span class="card-number">#196</span>
+    <h3 class="card-title">Refactor Eval Test Suite for Prod-Test — Real LLM Test Cases</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">REFACTOR</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">The current `test_eval_prod_test.py` uses a simplistic `mock_prod_test_agent` that returns identical generic output for every scenario, causing 9/15 GEval tests to fail (all 8 StepSequencing + GateCompliance). Replace th</p>
+  <div class="notes-row" id="notes-row-196" style="display:none">
+    <label for="notes-196">Notes:</label>
+    <textarea id="notes-196" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('196','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('196','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('196','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('196','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('196','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="197" id="card-197">
+  <div class="card-header">
+    <span class="card-number">#197</span>
+    <h3 class="card-title">On-Prem LLM Market Shift — Isagawa Pivot + Personal Skill Path</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">Companies are increasingly worried that frontier model providers are absorbing their IP through API usage, and are looking for ways to use LLMs without sharing proprietary data — one prominent solution being owning GPUs </p>
+  <div class="notes-row" id="notes-row-197" style="display:none">
+    <label for="notes-197">Notes:</label>
+    <textarea id="notes-197" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('197','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('197','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('197','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('197','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('197','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="231" id="card-231">
+  <div class="card-header">
+    <span class="card-number">#231</span>
+    <h3 class="card-title">Research: &quot;Kun&quot;&#x27;s Dev-Workflow Repos (visual editor + git worktrees + more)</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">RESEARCH</span>
+    <span class="chip chip-priority chip-priority-Medium">Medium</span>
+  </div>
+  <p class="card-summary">A developer the user knows of as &quot;Kun&quot; publishes tools he uses for his own dev workflow. The user recalls two by fuzzy name: a visual editor possibly called &quot;lavish&quot; and a git-worktrees tool possibly called &quot;worktree.&quot; F</p>
+  <div class="notes-row" id="notes-row-231" style="display:none">
+    <label for="notes-231">Notes:</label>
+    <textarea id="notes-231" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('231','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('231','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('231','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('231','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('231','defer')">Defer</button>
+  </div>
+</div>
+<div class="card" data-number="233" id="card-233">
+  <div class="card-header">
+    <span class="card-number">#233</span>
+    <h3 class="card-title">Build Render v2 Reply Channel — The Full Circle</h3>
+  </div>
+  <div class="chips">
+    <span class="chip chip-scope">BUILD</span>
+    <span class="chip chip-priority chip-priority-High">High</span>
+  </div>
+  <p class="card-summary">v1 proved page → session (annotations → watcher → routing). v2 adds session → page: the session writes `session-reply.json`; the server serves it read-only at `GET /status`; the page polls (~2s) and updates in place — in</p>
+  <div class="notes-row" id="notes-row-233" style="display:none">
+    <label for="notes-233">Notes:</label>
+    <textarea id="notes-233" rows="2" placeholder="Your words (verbatim into kernel)"></textarea>
+  </div>
+  <div class="actions">
+    <button class="btn btn-accept" onclick="act('233','accept')">Accept</button>
+    <button class="btn btn-iterate" onclick="act('233','iterate')">Iterate</button>
+    <button class="btn btn-reject" onclick="act('233','reject')">Reject</button>
+    <button class="btn btn-skip" onclick="act('233','skip')">Skip</button>
+    <button class="btn btn-defer" onclick="act('233','defer')">Defer</button>
+  </div>
+</div>
+
+<div class="send-bar">
+  <button id="send-btn" onclick="sendAll()" disabled>Send to session</button>
+  <span class="count" id="queue-count">0 queued</span>
+  <span id="status"></span>
+</div>
+
+<script>
+var queue = {};
+
+function act(number, action) {
+  var needsNotes = (action === 'iterate' || action === 'reject');
+  var notesRow = document.getElementById('notes-row-' + number);
+  var textarea = document.getElementById('notes-' + number);
+
+  if (needsNotes && notesRow.style.display === 'none') {
+    notesRow.style.display = 'block';
+    textarea.focus();
+    return;
+  }
+
+  var rawWords = textarea ? textarea.value.trim() || null : null;
+
+  queue[number] = {
+    target: String(number),
+    action: action,
+    raw_words: rawWords,
+    at: new Date().toISOString()
+  };
+  if (document.getElementById('dry-run-toggle').checked) queue[number].test = true;
+
+  var card = document.getElementById('card-' + number);
+  card.classList.add('acted');
+  var btns = card.querySelectorAll('.btn');
+  for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+  if (notesRow) notesRow.style.display = 'none';
+
+  updateCount();
+}
+
+function updateCount() {
+  var n = Object.keys(queue).length;
+  document.getElementById('queue-count').textContent = n + ' queued';
+  document.getElementById('send-btn').disabled = (n === 0);
+}
+
+async function sendAll() {
+  var btn = document.getElementById('send-btn');
+  var status = document.getElementById('status');
+  btn.disabled = true;
+  var keys = Object.keys(queue);
+  var sent = 0;
+  var errors = 0;
+
+  for (var i = 0; i < keys.length; i++) {
+    var annotation = queue[keys[i]];
+    try {
+      var resp = await fetch('/annotate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(annotation)
+      });
+      if (resp.ok) { sent++; }
+      else { errors++; }
+    } catch (e) {
+      errors++;
+    }
+  }
+
+  queue = {};
+  updateCount();
+  var msg = sent + ' sent';
+  if (errors > 0) msg += ', ' + errors + ' failed';
+  status.textContent = msg;
+}
+
+async function pollStatus() {
+  var data;
+  try {
+    var resp = await fetch('/status');
+    if (!resp.ok) throw new Error();
+    data = await resp.json();
+    if (!data || typeof data !== 'object') throw new Error();
+  } catch (e) {
+    data = { status: 'idle' };
+  }
+  renderReply(data);
+}
+
+function renderReply(reply) {
+  var dot = document.getElementById('status-dot');
+  var lbl = document.getElementById('status-label');
+  var timeEl = document.getElementById('status-time');
+  var s = reply.status || 'idle';
+  dot.className = 'status-dot status-dot-' + s;
+  lbl.textContent = s;
+  if (reply.at) {
+    try { timeEl.textContent = new Date(reply.at).toLocaleTimeString(); }
+    catch(e) { timeEl.textContent = ''; }
+  } else { timeEl.textContent = ''; }
+
+  var results = reply.results || [];
+  var resultTargets = {};
+  for (var i = 0; i < results.length; i++) {
+    resultTargets[results[i].target] = true;
+    renderResult(results[i]);
+  }
+
+  var confirms = reply.confirms || [];
+  var activeTargets = {};
+  for (var i = 0; i < confirms.length; i++) {
+    if (!resultTargets[confirms[i].target]) {
+      activeTargets[confirms[i].target] = true;
+      renderConfirmBar(confirms[i]);
+    }
+  }
+  var allBars = document.querySelectorAll('.confirm-bar');
+  for (var i = 0; i < allBars.length; i++) {
+    var t = allBars[i].getAttribute('data-target');
+    if (!activeTargets[t]) allBars[i].remove();
+  }
+
+  var acks = reply.dry_run_ack || [];
+  for (var i = 0; i < acks.length; i++) {
+    renderDryRunAck(acks[i]);
+  }
+}
+
+function renderConfirmBar(cfm) {
+  var target = cfm.target;
+  if (document.getElementById('confirm-' + target)) return;
+  var card = document.getElementById('card-' + target);
+  if (!card) return;
+  var bar = document.createElement('div');
+  bar.className = 'confirm-bar';
+  bar.id = 'confirm-' + target;
+  bar.setAttribute('data-target', target);
+  var q = document.createElement('span');
+  q.className = 'confirm-q';
+  q.textContent = cfm.question || '';
+  bar.appendChild(q);
+  var yesBtn = document.createElement('button');
+  yesBtn.className = 'btn btn-accept';
+  yesBtn.textContent = 'Confirm';
+  yesBtn.addEventListener('click', function() { answerConfirm(target, 'confirm'); });
+  bar.appendChild(yesBtn);
+  var noBtn = document.createElement('button');
+  noBtn.className = 'btn btn-skip';
+  noBtn.textContent = 'Cancel';
+  noBtn.addEventListener('click', function() { answerConfirm(target, 'cancel'); });
+  bar.appendChild(noBtn);
+  var actions = card.querySelector('.actions');
+  if (actions) card.insertBefore(bar, actions);
+  else card.appendChild(bar);
+}
+
+async function answerConfirm(target, action) {
+  var bar = document.getElementById('confirm-' + target);
+  if (bar) {
+    var btns = bar.querySelectorAll('.btn');
+    for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+  }
+  try {
+    await fetch('/annotate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ target: target, action: action, raw_words: null, at: new Date().toISOString() })
+    });
+  } catch (e) {}
+}
+
+function renderResult(result) {
+  var target = result.target;
+  if (document.getElementById('result-' + target)) return;
+  var card = document.getElementById('card-' + target);
+  if (!card) return;
+  var actions = card.querySelector('.actions');
+  if (actions) actions.remove();
+  var notesRow = document.getElementById('notes-row-' + target);
+  if (notesRow) notesRow.remove();
+  var cbar = document.getElementById('confirm-' + target);
+  if (cbar) cbar.remove();
+  var outcome = result.outcome || '';
+  var div = document.createElement('div');
+  div.id = 'result-' + target;
+  var cls = 'card-result ';
+  if (outcome === 'accepted') {
+    cls += 'card-result-accepted';
+    div.textContent = '✓ accepted';
+  } else if (outcome.indexOf('rejected') === 0) {
+    cls += 'card-result-rejected';
+    div.textContent = '✗ ' + outcome;
+  } else {
+    cls += 'card-result-outcome';
+    div.textContent = '→ ' + outcome;
+  }
+  div.className = cls;
+  card.appendChild(div);
+  card.classList.add('acted');
+}
+
+function renderDryRunAck(target) {
+  if (document.getElementById('dryack-' + target)) return;
+  var card = document.getElementById('card-' + target);
+  if (!card) return;
+  var div = document.createElement('div');
+  div.id = 'dryack-' + target;
+  div.className = 'card-result card-result-dryrun';
+  div.textContent = 'acknowledged (dry run — not routed)';
+  card.appendChild(div);
+  card.classList.add('acted');
+}
+
+pollStatus();
+setInterval(pollStatus, 2000);
+</script>
+
+</body>
+</html>

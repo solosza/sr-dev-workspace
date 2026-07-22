@@ -6,7 +6,7 @@
 **Purpose:** Spawn an autonomous agent to execute a task in the background without blocking the user
 **Input:** Task description (string)
 **Output:** Task ID + non-blocking control return
-**Platform:** Bash subprocess with `env -u CLAUDECODE claude -p`
+**Platform:** Bash subprocess with `env -u CLAUDECODE bash run-task.sh` (via execute-pipeline)
 **Blocking:** No — returns immediately, user can continue working
 
 ---
@@ -55,7 +55,7 @@ With `env -u CLAUDECODE`:
 | `SKILL.md` | This file. Skill identity, philosophy, overview |
 | `references/step-01-parse-description.md` | Parse and validate the task description |
 | `references/step-02-validate-background-safe.md` | Ensure task is appropriate for background execution |
-| `references/step-03-invoke-agent.md` | Invoke bash subprocess with env -u CLAUDECODE |
+| `references/step-03-invoke-agent.md` | Scope-routed isolation: worktree (BUILD) or subfolder (RESEARCH) |
 | `references/step-04-return-task-id.md` | Capture task ID and return immediately (non-blocking) |
 | `references/error-handling.md` | Error cases and recovery strategies |
 
@@ -63,15 +63,16 @@ With `env -u CLAUDECODE`:
 
 ## Overview
 
-This skill transforms `/spawn-subagent [description]` into a background Bash subprocess running `env -u CLAUDECODE bash run-task.sh` (for task folders) or `env -u CLAUDECODE claude -p` (for ad-hoc tasks).
+This skill transforms `/spawn-subagent [description]` into a background agent via execute-pipeline. All spawns go through: backlog → task-builder → run-task.sh. No raw `claude -p` — every agent gets state isolation.
 
 **Steps:**
 1. Parse the task description provided by user
 2. Validate it's suitable for background execution (not requiring immediate results)
-3. Invoke Bash tool with `run_in_background: true` and `env -u CLAUDECODE`
-4. Capture the background task ID from the Bash response
-5. Return task ID to user immediately (non-blocking)
-6. User gets notified on completion, or checks with `TaskOutput(task_id, block: false)`
+3. Route by scope: BUILD/REFACTOR → `Agent(isolation: "worktree")`, RESEARCH/TEST → `Bash`
+4. Capture the background task ID from the response
+5. If worktree mode: register feature branch in review-status.json
+6. Return task ID to user immediately (non-blocking)
+7. User gets notified on completion, or checks with `TaskOutput(task_id, block: false)`
 
 ---
 
@@ -121,20 +122,24 @@ Background agent is running — you can continue working.
 ```
 User: /spawn-subagent [description]
   ↓
-Agent: Parse description (resolve task subfolder if applicable)
+Agent: Parse description → create backlog → build tasks
   ↓
-Agent: Validate background-safe
+Agent: Read backlog scope
   ↓
-Agent: Bash(run_in_background: true):
-       env -u CLAUDECODE bash run-task.sh [repo] [iterations] [subfolder]
+BUILD/REFACTOR?                    RESEARCH/TEST?
+  ↓                                  ↓
+Agent(isolation: "worktree",       Bash(run_in_background: true):
+  run_in_background: true)           env -u CLAUDECODE bash run-task.sh
+  ↓                                  [unique subfolder per backlog]
+Worktree + feature branch            ↓
+  ↓                                Subfolder isolation (unique lock)
+Register in review-status.json       ↓
+  ↓                                Return task ID
+Return task ID                       ↓
+  ↓                                User continues working
+User continues working
   ↓
-Agent: Capture background task ID from Bash response
-  ↓
-Agent: Return task ID immediately (non-blocking)
-  ↓
-User: Can immediately start new work
-  ↓
-[Background agent runs in parallel with per-agent state isolation]
+On completion: /kernel/review-queue accept → merge to main
 ```
 
 ---
@@ -205,40 +210,32 @@ The skill MUST return control immediately after invoking the bash subprocess.
 
 ---
 
-## Working Implementation Pattern
+## Working Implementation Pattern — Scope-Routed Isolation
 
-**For task-folder execution (primary):**
-```bash
-Bash(
-  command: 'env -u CLAUDECODE bash "D:/path/run-task.sh" "D:/path/repo" [iterations] "[subfolder]"',
-  run_in_background: true
-)
-```
+Spawns are routed by backlog scope to the correct isolation mechanism.
 
-**For ad-hoc tasks (no task folder):**
-```bash
-Bash(
-  command: 'env -u CLAUDECODE claude -p "[task description]" --cwd "D:/path/repo"',
-  run_in_background: true
-)
-```
+→ See `references/step-03-invoke-agent.md` for full implementation details.
 
-**Why this pattern:**
-- `Bash` tool with `run_in_background: true` — returns background task ID instantly
+### Scope Routing Table
+
+| Scope | Isolation | Tool | Merge Gate |
+|-------|-----------|------|------------|
+| BUILD | Worktree | `Agent(isolation: "worktree")` | Yes — `/kernel/review-queue accept` merges |
+| REFACTOR | Worktree | `Agent(isolation: "worktree")` | Yes — `/kernel/review-queue accept` merges |
+| RESEARCH | Subfolder | `Bash(run_in_background: true)` | No — output lands directly |
+| TEST | Subfolder | `Bash(run_in_background: true)` | No — reports only |
+
+### Common Requirements
+
+- All spawns go through `run-task.sh` — kernel governance, session resume, per-agent state isolation
 - `env -u CLAUDECODE` — unsets blocking env var for nested claude invocation
-- `run-task.sh` — kernel governance, session resume, per-agent state isolation
-- Each agent gets `agent_id` from subfolder name (backlog 153)
-- Actions route to isolated `agent-{id}-actions.jsonl`, no shared state contention
-
-**run-task.sh arguments:** `[REPO_ROOT] [MAX_ITERATIONS] [TASK_SUBFOLDER]`
-- First arg = repo root with CLAUDE.md (NOT the task folder path)
-- Second arg = task count + 2 buffer
-- Third arg = subfolder name under `tasks/` (just the name, not full path)
+- **Always use unique subfolder per backlog** — NEVER pass empty `""` for concurrent spawns
 
 **WRONG patterns (do NOT use):**
-- `Agent(prompt: "env -u CLAUDECODE bash -c '...'")` — unnecessary Agent wrapper
-- Passing task folder as first arg to run-task.sh — causes "Not a kernel repo" error
+- `claude -p "[task description]"` — bypasses run-task.sh, no state isolation
+- Empty subfolder `""` with concurrent spawns — lock contention
+- Passing task folder as first arg — causes "Not a kernel repo" error
 
 ---
 
-**Key principle:** Non-blocking background execution with independent environment (env -u CLAUDECODE) and per-agent state isolation enables true parallel work.
+**Key principle:** Scope determines isolation. BUILD/REFACTOR get worktree + merge gate. RESEARCH/TEST get unique subfolder. Every spawn goes through run-task.sh.

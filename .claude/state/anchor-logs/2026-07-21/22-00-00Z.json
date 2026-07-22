@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-07-21T22:00:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-21T19:08:54Z", "tool": "Bash", "entry": "Bash: mkdir -p anchor-logs dir"},
+    {"timestamp": "2026-07-21T19:11:39Z", "tool": "Bash", "entry": "Bash: claude hooks list"}
+  ]
+}

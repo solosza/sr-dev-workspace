@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-07-07T00:10:00Z",
+  "actions_count": 20,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T20:20:00Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+    {"timestamp": "2026-07-06T20:20:24Z", "tool": "Bash", "entry": "Bash: ls -la tasks/tiered-index"},
+    {"timestamp": "2026-07-06T20:20:31Z", "tool": "Bash", "entry": "Bash: mkdir -p tasks/tiered-ind"},
+    {"timestamp": "2026-07-06T20:20:31Z", "tool": "Bash", "entry": "Bash: ls -R platform-deepeval/framework/"},
+    {"timestamp": "2026-07-06T20:20:40Z", "tool": "Bash", "entry": "Bash: find platform-deepeval *.json"},
+    {"timestamp": "2026-07-06T20:20:41Z", "tool": "Bash", "entry": "Bash: find platform-deepeval -type d *ex"},
+    {"timestamp": "2026-07-06T20:20:45Z", "tool": "Bash", "entry": "Bash: ls -la platform-deepeval/framework/ab_test"},
+    {"timestamp": "2026-07-06T20:20:46Z", "tool": "Bash", "entry": "Bash: find platform-deepeval *.json"},
+    {"timestamp": "2026-07-06T20:20:53Z", "tool": "Bash", "entry": "Bash: find platform-deepeval *.json 2>/dev/null"},
+    {"timestamp": "2026-07-06T20:21:17Z", "tool": "Bash", "entry": "Bash: find project_test_repos *threshold*.json"},
+    {"timestamp": "2026-07-06T20:21:17Z", "tool": "Bash", "entry": "Bash: find project_test_repos *60k*"},
+    {"timestamp": "2026-07-06T20:21:18Z", "tool": "Bash", "entry": "Bash: ls projects/harness-eval-"},
+    {"timestamp": "2026-07-06T20:21:22Z", "tool": "Bash", "entry": "Bash: mkdir -p projects/harness"},
+    {"timestamp": "2026-07-06T20:21:22Z", "tool": "Bash", "entry": "Bash: ls evals/eval-ab-check-data-engine/60k/"},
+    {"timestamp": "2026-07-06T20:21:27Z", "tool": "Bash", "entry": "Bash: ls evals/eval-ab-check-data-engine/60k/res"},
+    {"timestamp": "2026-07-06T20:21:38Z", "tool": "Write", "entry": "Write: gap-check-results.md"},
+    {"timestamp": "2026-07-06T20:21:45Z", "tool": "Bash", "entry": "Bash: test -f projects/harness-eval-verify/gap-check-results.md"},
+    {"timestamp": "2026-07-06T20:21:49Z", "tool": "Bash", "entry": "Bash: rm -rf tasks/tiered-index"},
+    {"timestamp": "2026-07-06T20:22:20Z", "tool": "Bash", "entry": "Bash: test -f projects/harness-eval-verify/gap-check-results.md"},
+    {"timestamp": "2026-07-06T20:22:20Z", "tool": "Bash", "entry": "Bash: test -f gap-check-results.md"}
+  ]
+}

@@ -9,7 +9,7 @@ Create the disposable test repo for this eval run. The repo is recreated each ru
 | `mode` | Output of Step 0 | `artifact` or `harness` |
 | `target` | Output of Step 0 | `check-data` (artifact mode) or `null` (harness mode) |
 | `source_path` | Output of Step 0 | `D:\my_ai_projects\project_test_repos\kernel-minimal` |
-| `test_repo_name` | Output of Step 0 | `eval-check-data-test` or `eval-kernel-minimal-test` |
+| `test_repo_name` | Output of Step 0 | `eval-check-data` or `eval-kernel-minimal` |
 
 ## Pre-Creation Checkpoint
 
@@ -38,33 +38,35 @@ Step 0 already verified source exists. Additional checks per mode:
 
 1. **Resolve test repo path:**
    ```
-   D:\my_ai_projects\project_test_repos\<test_repo_name>\
+   D:\my_ai_projects\project_test_repos\evals\<test_repo_name>\
    ```
-   Uses the `test_repo_name` resolved in Step 0 (`eval-[target]-test` or `eval-[repo-name]-test`).
+   Uses the `test_repo_name` resolved in Step 0 (`eval-[target]` or `eval-[repo-name]`).
+   All eval repos live under the `evals/` subdirectory.
 
 2. **Cleanup prior run (if exists):**
    ```bash
-   if test -d "D:\my_ai_projects\project_test_repos\eval-<target>-test"; then
-     rm -rf "D:\my_ai_projects\project_test_repos\eval-<target>-test"
+   TR="D:/my_ai_projects/project_test_repos/evals/eval-<name>"
+   if test -d "$TR"; then
+     rm -rf "$TR"
    fi
    ```
 
 3. **Create directory:**
    ```bash
-   mkdir -p "D:\my_ai_projects\project_test_repos\eval-<target>-test"
+   mkdir -p "$TR"
    ```
 
 4. **Initialize git:**
    ```bash
-   git init "D:\my_ai_projects\project_test_repos\eval-<target>-test"
+   git init "$TR"
    ```
 
 ## Verification
 
 | ID | Check | Command | Pass |
 |----|-------|---------|------|
-| G1.1 | Directory exists | `test -d eval-<target>-test/` | Present |
-| G1.2 | Git initialized | `test -d eval-<target>-test/.git` | `.git/` exists |
+| G1.1 | Directory exists | `test -d evals/eval-<name>/` | Present |
+| G1.2 | Git initialized | `test -d evals/eval-<name>/.git` | `.git/` exists |
 
 Both checks must pass before transitioning to Step 2.
 
@@ -79,5 +81,5 @@ Both checks must pass before transitioning to Step 2.
 
 ## Output
 
-- Empty git-initialized directory at `D:\my_ai_projects\project_test_repos\eval-<target>-test\`
+- Empty git-initialized directory at `D:\my_ai_projects\project_test_repos\evals\eval-<name>\`
 - State transition: `init` → `creating_repo` → ready for Step 2

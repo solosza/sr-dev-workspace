@@ -1,0 +1,16 @@
+{
+  "anchor_timestamp": "2026-07-11T00:30:00Z",
+  "actions_count": 9,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-11T00:22:30Z", "tool": "Bash", "entry": "Bash: ls tasks/"},
+    {"timestamp": "2026-07-11T00:22:34Z", "tool": "Bash", "entry": "Bash: mkdir tasks/prod-test-command-skill-pattern"},
+    {"timestamp": "2026-07-11T00:22:45Z", "tool": "Write", "entry": "Write: 000-index.md"},
+    {"timestamp": "2026-07-11T00:22:54Z", "tool": "Write", "entry": "Write: gate-contract.md"},
+    {"timestamp": "2026-07-11T00:23:06Z", "tool": "Bash", "entry": "Bash: mkdir steps/"},
+    {"timestamp": "2026-07-11T00:23:16Z", "tool": "Bash", "entry": "Bash: mv 8 step files references/ -> steps/"},
+    {"timestamp": "2026-07-11T00:23:20Z", "tool": "Bash", "entry": "Bash: verify moves"},
+    {"timestamp": "2026-07-11T00:26:10Z", "tool": "Edit", "entry": "Edit: CLAUDE.md step table"},
+    {"timestamp": "2026-07-11T00:26:26Z", "tool": "Bash", "entry": "Bash: verify structure"}
+  ]
+}

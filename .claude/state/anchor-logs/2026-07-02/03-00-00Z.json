@@ -1,0 +1,32 @@
+{
+  "anchor_timestamp": "2026-07-02T03:00:00Z",
+  "actions_count": 24,
+  "violations_found": 0,
+  "agent_logs": {
+    "harness-eval-5-layer-conformance": [
+      {"timestamp": "2026-07-01T20:55:58Z", "tool": "Bash", "entry": "Bash: ls eval-platform-selenium/"},
+      {"timestamp": "2026-07-01T20:56:00Z", "tool": "Bash", "entry": "Bash: sleep 180 && cat state"},
+      {"timestamp": "2026-07-01T20:56:01Z", "tool": "Bash", "entry": "Bash: ls framework/"},
+      {"timestamp": "2026-07-01T20:56:05Z", "tool": "Bash", "entry": "Bash: ls framework/ subdirs"},
+      {"timestamp": "2026-07-01T20:56:15Z", "tool": "Bash", "entry": "Bash: ls framework/ more"},
+      {"timestamp": "2026-07-01T20:56:33Z", "tool": "Bash", "entry": "Bash: ls config files"},
+      {"timestamp": "2026-07-01T20:56:37Z", "tool": "Bash", "entry": "Bash: test -f conftest"},
+      {"timestamp": "2026-07-01T20:57:13Z", "tool": "Write", "entry": "Write: __init__.py"},
+      {"timestamp": "2026-07-01T20:57:17Z", "tool": "Bash", "entry": "Bash: cp harness_metrics.py"},
+      {"timestamp": "2026-07-01T20:57:59Z", "tool": "Write", "entry": "Write: test_eval_harness.py"},
+      {"timestamp": "2026-07-01T20:58:05Z", "tool": "Bash", "entry": "Bash: grep no deepeval import"},
+      {"timestamp": "2026-07-01T20:58:07Z", "tool": "Bash", "entry": "Bash: grep no inline criteria"},
+      {"timestamp": "2026-07-01T20:58:08Z", "tool": "Bash", "entry": "Bash: grep HarnessMetrics count"},
+      {"timestamp": "2026-07-01T20:58:12Z", "tool": "Bash", "entry": "Bash: grep deepeval imports"},
+      {"timestamp": "2026-07-01T20:58:52Z", "tool": "Edit", "entry": "Edit: test_eval_harness.py"},
+      {"timestamp": "2026-07-01T20:58:56Z", "tool": "Bash", "entry": "Bash: grep deepeval check"},
+      {"timestamp": "2026-07-01T20:58:58Z", "tool": "Bash", "entry": "Bash: grep AAA pattern count"},
+      {"timestamp": "2026-07-01T20:59:00Z", "tool": "Bash", "entry": "Bash: grep structural tests"},
+      {"timestamp": "2026-07-01T20:59:06Z", "tool": "Bash", "entry": "Bash: pytest collect-only"},
+      {"timestamp": "2026-07-01T20:59:14Z", "tool": "Bash", "entry": "Bash: pytest collect-only fixed"},
+      {"timestamp": "2026-07-01T20:59:16Z", "tool": "Bash", "entry": "Bash: sleep monitor"},
+      {"timestamp": "2026-07-01T21:00:55Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+      {"timestamp": "2026-07-01T21:01:10Z", "tool": "Bash", "entry": "Bash: mkdir anchor-logs"}
+    ]
+  }
+}

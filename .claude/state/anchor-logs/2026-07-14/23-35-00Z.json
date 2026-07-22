@@ -1,0 +1,20 @@
+{
+  "anchor_timestamp": "2026-07-14T23:35:00Z",
+  "actions_count": 12,
+  "violations_found": 0,
+  "agent_logs": {
+    "harness-ui-slice": [
+      {"timestamp": "2026-07-14T23:25:30Z", "tool": "Bash", "entry": "Bash: ls orderly/ dir"},
+      {"timestamp": "2026-07-14T23:25:37Z", "tool": "Bash", "entry": "Bash: ls orderly/templates/ dir"},
+      {"timestamp": "2026-07-14T23:26:10Z", "tool": "Write", "entry": "Write: order_detail.html"},
+      {"timestamp": "2026-07-14T23:26:24Z", "tool": "Bash", "entry": "Bash: ls orchestrator dir"},
+      {"timestamp": "2026-07-14T23:26:38Z", "tool": "Edit", "entry": "Edit: routes_orders.py"},
+      {"timestamp": "2026-07-14T23:26:43Z", "tool": "Edit", "entry": "Edit: routes_orders.py"},
+      {"timestamp": "2026-07-14T23:26:50Z", "tool": "Bash", "entry": "Bash: python verify data-testids"},
+      {"timestamp": "2026-07-14T23:27:22Z", "tool": "Bash", "entry": "Bash: python file existence check"},
+      {"timestamp": "2026-07-14T23:28:15Z", "tool": "Write", "entry": "Write: 03-recommendation-matrix.md"},
+      {"timestamp": "2026-07-14T23:28:21Z", "tool": "Bash", "entry": "Bash: python file exists check"},
+      {"timestamp": "2026-07-14T23:28:22Z", "tool": "Bash", "entry": "Bash: python regex check"}
+    ]
+  }
+}

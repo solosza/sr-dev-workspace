@@ -1,0 +1,13 @@
+{
+  "anchor_timestamp": "2026-07-14T23:55:00Z",
+  "actions_count": 1,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-14T23:32:50Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash computation", "session": "current", "agent_id": "harness-ui-slice"}
+  ],
+  "agent_logs": {
+    "harness-ui-slice": [
+      {"timestamp": "2026-07-14T23:32:50Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash computation"}
+    ]
+  }
+}

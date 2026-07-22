@@ -1,0 +1,273 @@
+{
+  "anchor_timestamp": "2026-07-22T00:00:00Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-21T22:02:57Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib, time\nstate = pathlib.Path(\"D:/my_ai_proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:03:10Z",
+      "tool": "Edit",
+      "entry": "Edit: tests-ui.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:03:18Z",
+      "tool": "Edit",
+      "entry": "Edit: tests-ui.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:03:28Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/refer",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:03:46Z",
+      "tool": "Write",
+      "entry": "Write: 000-index.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:03:54Z",
+      "tool": "Write",
+      "entry": "Write: 001-build-create-feature-branch.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:04:04Z",
+      "tool": "Write",
+      "entry": "Write: 002-build-ui-test-exemplar.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:04:12Z",
+      "tool": "Write",
+      "entry": "Write: 003-test-contract-semantics-ast.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:04:20Z",
+      "tool": "Write",
+      "entry": "Write: 004-test-run-suite-live.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:04:24Z",
+      "tool": "Write",
+      "entry": "Write: 005-build-commit-branch.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T22:04:31Z",
+      "tool": "Write",
+      "entry": "Write: gate-contract.md",
+      "session": "current"
+    }
+  ],
+  "agent_logs": {
+    "ab-testing-5-layer-conformance": [],
+    "api-interface": [],
+    "api-objects-vocab-fix": [],
+    "browser-interface": [],
+    "browser-interface-fix": [],
+    "contract-deliverable": [],
+    "curiosity-harness-research": [],
+    "deepeval-5-layer-contract-violations": [],
+    "deepeval-eval-command": [],
+    "deepeval-l3-testing": [],
+    "default": [],
+    "dnd-game-loop-integration": [],
+    "eval-ab-testing-framework": [],
+    "eval-platform-design": [],
+    "eval-platform-learning-loop": [],
+    "eval-prod-test-real-llm-tests": [],
+    "eval-web-app-research": [],
+    "execute-pipeline-command-routing": [],
+    "governance-depth-research": [],
+    "harness-api-slice": [],
+    "harness-eval-5-layer-conformance": [],
+    "harness-eval-verify": [],
+    "harness-ui-slice": [],
+    "human-check-command": [],
+    "kernel-artifact-bus-research": [],
+    "kernel-dag-wave-research": [],
+    "kernel-ephemeral-subagents-research": [],
+    "kernel-jit-rule-injection-research": [],
+    "kernel-minimalize": [],
+    "kernel-minimalize-standalone": [],
+    "kernel-precompact-reanchor-research": [],
+    "kernel-rolling-summarization-research": [],
+    "kun-dev-workflow-research": [],
+    "linking-convention-research": [],
+    "llm-market-shift-research": [],
+    "loop-composability-research": [],
+    "multi-persona-architecture": [],
+    "on-prem-llm-pivot-research": [],
+    "orchestrator-subresearch": [],
+    "playwright-5-layer-compliance": [],
+    "post-merge-smoke-test": [],
+    "prod-test-refactor": [],
+    "pulsia-design-patterns": [],
+    "qa-fix-harness-eval-5-layer-compliance": [],
+    "reference-api-objects": [],
+    "reference-components": [],
+    "reference-pages": [],
+    "reference-roles-ui": [],
+    "reference-scanner": [],
+    "reference-tasks-browser": [],
+    "reference-tasks-rest-api": [],
+    "reference-tests-api": [],
+    "reference-tests-ui": [
+      {
+        "timestamp": "2026-07-21T22:05:21Z",
+        "tool": "Bash",
+        "entry": "Bash: python - <<'EOF'\nimport json, pathlib, time\nstate = pathlib.Path(\"D:/my_ai_proje",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:05:43Z",
+        "tool": "Bash",
+        "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nstate = pathlib.Path(\"D:/my_ai_projects/pr",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:05:52Z",
+        "tool": "Bash",
+        "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 244 \"use spawn s",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:05:57Z",
+        "tool": "Bash",
+        "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 245 \"use spawn s",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:02Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform branch --list \"buil",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:02Z",
+        "tool": "Bash",
+        "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 246 \"use spawn s",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:07Z",
+        "tool": "Bash",
+        "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 247 \"use spawn s",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:07Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform checkout -b build/2",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:13Z",
+        "tool": "Bash",
+        "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 248 \"use spawn s",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:13Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform branch --show-curre",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:31Z",
+        "tool": "Write",
+        "entry": "Write: 244-kernel-build-agent-state-isolation.md",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:34Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform branch --show-curre",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:35Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform rev-parse main | gr",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:06:49Z",
+        "tool": "Write",
+        "entry": "Write: 245-kernel-build-anchor-ceremony-v2.md",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:07:05Z",
+        "tool": "Write",
+        "entry": "Write: 246-kernel-build-jit-injection-phase1.md",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:07:22Z",
+        "tool": "Write",
+        "entry": "Write: 247-kernel-build-dag-wave-engine.md",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:07:39Z",
+        "tool": "Write",
+        "entry": "Write: 248-kernel-build-barrier-gates.md",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:09:55Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      }
+    ],
+    "render-reply-channel": [],
+    "render-runtime": [],
+    "retry-utility": [],
+    "selenium-click-fault": [],
+    "self-improvement-observability": [],
+    "ssh-5-layer-audit": [],
+    "ssh-critical-architecture": [],
+    "ssh-platform-5-layer-refactor": [],
+    "ssh-post-remediation-verify": [],
+    "ssh-structural-conformance": [],
+    "summarize-command": [],
+    "target-repo-git-baseline": [],
+    "tiered-index-llm-judge-rescore": [],
+    "tiered-index-threshold-research": [],
+    "trace-utility": [],
+    "universal-mod-installer-research": [],
+    "velocity-management-research": [],
+    "worktree-branch-isolation": []
+  }
+}

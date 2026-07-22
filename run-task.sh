@@ -64,6 +64,22 @@ cleanup_lock() { rm -f "$LOCK_FILE"; }
 trap 'cleanup_lock; cleanup' SIGINT SIGTERM
 trap 'cleanup_lock' EXIT
 
+# --- Detect worktree mode ---
+# If running inside a git worktree (created by Agent isolation: "worktree"),
+# detect it and log for traceability. No behavioral changes needed —
+# run-task.sh already uses $REPO as the base path, which points to the
+# worktree directory when spawned with isolation: "worktree".
+IS_WORKTREE=false
+WORKTREE_BRANCH=""
+if git -C "$REPO" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  GIT_COMMON_DIR=$(git -C "$REPO" rev-parse --git-common-dir 2>/dev/null || echo "")
+  GIT_DIR=$(git -C "$REPO" rev-parse --git-dir 2>/dev/null || echo "")
+  if [ -n "$GIT_COMMON_DIR" ] && [ -n "$GIT_DIR" ] && [ "$GIT_COMMON_DIR" != "$GIT_DIR" ]; then
+    IS_WORKTREE=true
+    WORKTREE_BRANCH=$(git -C "$REPO" branch --show-current 2>/dev/null || echo "unknown")
+  fi
+fi
+
 # --- Resolve task folder ---
 if [ -n "$TASK_SUBFOLDER" ]; then
   TASK_DIR="tasks/${TASK_SUBFOLDER}/"
@@ -244,6 +260,9 @@ echo "============================================"
 echo "Repo: $REPO"
 echo "Task folder: $TASK_DIR"
 echo "Max iterations: $MAX_ITERATIONS"
+if [ "$IS_WORKTREE" = true ]; then
+  echo "Worktree: YES (branch: $WORKTREE_BRANCH)"
+fi
 echo ""
 
 # --- Set agent ID before loop (used for workflow state isolation) ---
@@ -294,6 +313,10 @@ else:
       echo "  ALL TASKS COMPLETE (detected at iteration start)"
       echo "  Tasks completed this run: $COMPLETED"
       echo "  Total iterations: $((i - 1))"
+      if [ "$IS_WORKTREE" = true ]; then
+        echo "  Worktree branch: $WORKTREE_BRANCH"
+        echo "  Merge: git merge $WORKTREE_BRANCH"
+      fi
       echo "============================================"
       exit 0
     fi
@@ -326,6 +349,30 @@ wf.write_text(json.dumps({
     'timestamp': None
 }, indent=2))
 print('  [SEED] Created ' + wf.name)
+" 2>/dev/null
+    fi
+
+    # Seed per-agent session-state file if it doesn't exist (session state isolation)
+    AGENT_SESSION_STATE="${LOG_DIR}/agent-${AGENT_ID}-session-state.json"
+    if [ ! -f "$AGENT_SESSION_STATE" ]; then
+      $PYTHON_CMD -c "
+import json, pathlib
+sf = pathlib.Path('$STATE_FILE')
+domain = ''
+if sf.exists():
+    domain = json.loads(sf.read_text()).get('domain', '')
+ss = pathlib.Path('$AGENT_SESSION_STATE')
+ss.write_text(json.dumps({
+    'session_started': True,
+    'one_shot': True,
+    'domain': domain,
+    'actions_log': [],
+    'anchor_token_confirmed': True,
+    'pending_anchor_token': None,
+    'timestamp': None,
+    'context': None
+}, indent=2))
+print('  [SEED] Created ' + ss.name)
 " 2>/dev/null
     fi
   fi
@@ -372,6 +419,10 @@ print(w.get('current_task', '') or 'unknown')
     echo "  ALL TASKS COMPLETE"
     echo "  Tasks completed this run: $COMPLETED"
     echo "  Total iterations: $i"
+    if [ "$IS_WORKTREE" = true ]; then
+      echo "  Worktree branch: $WORKTREE_BRANCH"
+      echo "  Merge: git merge $WORKTREE_BRANCH"
+    fi
     echo "============================================"
     exit 0
 

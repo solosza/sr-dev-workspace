@@ -1,0 +1,263 @@
+{
+  "anchor_timestamp": "2026-07-01T20:50:05Z",
+  "actions_count": 18,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-01T20:47:17Z",
+      "tool": "Write",
+      "entry": "Write: run_harness_eval.py",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:47:18Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/metrics/ab_",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:47:21Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/tasks/",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:47:25Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:47:25Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:47:25Z",
+      "tool": "Bash",
+      "entry": "Bash: ! grep -q \"from framework\\.\" \"D:/my_ai_projects/project_test_repos/platform-deep",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:47:30Z",
+      "tool": "Bash",
+      "entry": "Bash: ! grep -qE \"from (roles|tasks|interfaces)\\.\" \"D:/my_ai_projects/project_test_rep",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:48:28Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/tests/\" 2>/",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:48:33Z",
+      "tool": "Bash",
+      "entry": "Bash: sleep 120 && cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:48:46Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:48:54Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:49:12Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/metric",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:49:15Z",
+      "tool": "Bash",
+      "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:49:22Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -q \"from deepeval\" \"D:/my_ai_projects/project_test_repos/platform-deepeval/",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:49:23Z",
+      "tool": "Bash",
+      "entry": "Bash: grep -q \"from.*roles\" \"D:/my_ai_projects/project_test_repos/platform-deepeval/fr",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:49:34Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:49:45Z",
+      "tool": "Bash",
+      "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/a",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    },
+    {
+      "timestamp": "2026-07-01T20:49:58Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+      "session": "current",
+      "agent_id": "harness-eval-5-layer-conformance"
+    }
+  ],
+  "agent_logs": {
+    "harness-eval-5-layer-conformance": [
+      {
+        "timestamp": "2026-07-01T20:47:17Z",
+        "tool": "Write",
+        "entry": "Write: run_harness_eval.py",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:47:18Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/metrics/ab_",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:47:21Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/tasks/",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:47:25Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:47:25Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:47:25Z",
+        "tool": "Bash",
+        "entry": "Bash: ! grep -q \"from framework\\.\" \"D:/my_ai_projects/project_test_repos/platform-deep",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:47:30Z",
+        "tool": "Bash",
+        "entry": "Bash: ! grep -qE \"from (roles|tasks|interfaces)\\.\" \"D:/my_ai_projects/project_test_rep",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:48:28Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/tests/\" 2>/",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:48:33Z",
+        "tool": "Bash",
+        "entry": "Bash: sleep 120 && cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:48:46Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:48:54Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:49:12Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/platform-deepeval/framework/metric",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:49:15Z",
+        "tool": "Bash",
+        "entry": "Bash: PYTHONPATH=\"D:/my_ai_projects/project_test_repos/platform-deepeval/framework\" py",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:49:22Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -q \"from deepeval\" \"D:/my_ai_projects/project_test_repos/platform-deepeval/",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:49:23Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -q \"from.*roles\" \"D:/my_ai_projects/project_test_repos/platform-deepeval/fr",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:49:34Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:49:45Z",
+        "tool": "Bash",
+        "entry": "Bash: test -f \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/a",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      },
+      {
+        "timestamp": "2026-07-01T20:49:58Z",
+        "tool": "Bash",
+        "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+        "session": "current",
+        "agent_id": "harness-eval-5-layer-conformance"
+      }
+    ]
+  }
+}

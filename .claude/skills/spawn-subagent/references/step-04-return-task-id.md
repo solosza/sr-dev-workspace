@@ -2,13 +2,13 @@
 
 ## Purpose
 
-Capture the task ID from the Agent response and return it to the user immediately, without waiting for the background task to complete.
+Capture the task ID from the Bash tool response and return it to the user immediately, without waiting for the background task to complete.
 
 ## Capture Task ID
 
-From the Agent tool invocation (Step 3), extract the task ID from the response.
+From the Bash tool invocation (Step 3, `run_in_background: true`), extract the task ID from the response.
 
-**Agent tool response format:**
+**Bash tool background response format:**
 
 ```
 Async agent launched successfully.
@@ -82,7 +82,7 @@ All background agents are running in parallel — you can continue working.
 **MANDATORY:** Return control immediately after capturing task ID.
 
 **This MUST happen:**
-1. Agent tool is invoked (Step 3)
+1. Bash tool is invoked with `run_in_background: true` (Step 3)
 2. Response received with task ID
 3. Message formatted and returned to user
 4. **Control returns to user immediately** ← CRITICAL
@@ -151,25 +151,25 @@ Real-time output shows what the agent is doing:
 ```
 ERROR: Failed to spawn background agent
 
-Agent response missing task ID.
+Bash tool response missing task ID.
 Response: [show the actual response]
 
 This is a system issue. Possible fixes:
-1. Try again — the Agent tool may be temporarily unavailable
+1. Try again — the Bash tool may be temporarily unavailable
 2. Check system logs for errors
 3. Contact admin if this persists
 ```
 
-**If Agent tool itself failed:**
+**If Bash tool itself failed:**
 
 ```
 ERROR: Background agent spawn failed
 
-Agent tool returned error: [error message]
+Bash tool returned error: [error message]
 
 Possible causes:
-1. Agent tool unavailable
-2. Invalid bash command format
+1. Bash tool unavailable
+2. Invalid command format
 3. System resource limits
 
 Try again or use sequential execution instead of spawn-subagent.
@@ -178,9 +178,8 @@ Try again or use sequential execution instead of spawn-subagent.
 ## Implementation Requirements
 
 **Code must:**
-- ✓ Invoke Agent tool with run_in_background=True
-- ✓ Wrap bash command in prompt
-- ✓ Use env -u CLAUDECODE in the bash command
+- ✓ Invoke Bash tool with run_in_background=true
+- ✓ Use env -u CLAUDECODE in the command
 - ✓ Extract task_id from response
 - ✓ Format clear message for user
 - ✓ Include task_id and log file path in message
@@ -192,7 +191,7 @@ Try again or use sequential execution instead of spawn-subagent.
 - ✗ Implement monitoring/polling
 - ✗ Block user input
 - ✗ Ask for confirmation
-- ✗ Modify the Agent response
+- ✗ Modify the Bash response
 
 ## Summary
 
@@ -201,7 +200,7 @@ This step completes the spawn-subagent flow:
 1. User calls `/spawn-subagent [description]`
 2. Description parsed (Step 1)
 3. Validated for background safety (Step 2)
-4. Agent tool invoked with bash command in prompt (Step 3)
+4. Bash tool invoked with run_in_background: true (Step 3)
 5. Task ID captured and returned to user (Step 4) ← **You are here**
 6. **User continues working immediately**
 7. Background agent runs to completion

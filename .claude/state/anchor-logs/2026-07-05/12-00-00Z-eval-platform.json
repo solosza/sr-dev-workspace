@@ -1,0 +1,7 @@
+{
+  "anchor_timestamp": "2026-07-05T12:00:00Z",
+  "actions_count": 24,
+  "violations_found": 0,
+  "agent_id": "eval-platform-learning-loop",
+  "actions": "archived from agent-eval-platform-learning-loop-actions.jsonl"
+}

@@ -1,0 +1,37 @@
+{
+  "anchor_timestamp": "2026-07-16T21:52:00Z",
+  "actions_count": 29,
+  "violations_found": 0,
+  "agent_logs": {
+    "reference-tasks-rest-api": [
+      {"timestamp": "2026-07-16T21:42:12Z", "tool": "Bash", "entry": "git log --oneline -3"},
+      {"timestamp": "2026-07-16T21:42:16Z", "tool": "Bash", "entry": "git branch --list"},
+      {"timestamp": "2026-07-16T21:42:23Z", "tool": "Bash", "entry": "git checkout -b build/212"},
+      {"timestamp": "2026-07-16T21:42:26Z", "tool": "Bash", "entry": "git branch --show-current"},
+      {"timestamp": "2026-07-16T21:42:44Z", "tool": "Bash", "entry": "git log --oneline -1"},
+      {"timestamp": "2026-07-16T21:42:44Z", "tool": "Bash", "entry": "git log --oneline -1 (dup)"},
+      {"timestamp": "2026-07-16T21:43:31Z", "tool": "Bash", "entry": "test -f _reference file"},
+      {"timestamp": "2026-07-16T21:43:38Z", "tool": "Bash", "entry": "test -f _reference file"},
+      {"timestamp": "2026-07-16T21:43:48Z", "tool": "Bash", "entry": "test -f resources file"},
+      {"timestamp": "2026-07-16T21:44:10Z", "tool": "Write", "entry": "Write: order_management_tasks.py"},
+      {"timestamp": "2026-07-16T21:44:18Z", "tool": "Edit", "entry": "Edit: __init__.py"},
+      {"timestamp": "2026-07-16T21:44:23Z", "tool": "Bash", "entry": "Vocab lexicon grep on new file"},
+      {"timestamp": "2026-07-16T21:45:31Z", "tool": "Write", "entry": "Write: test_212_contract_semantics.py"},
+      {"timestamp": "2026-07-16T21:45:44Z", "tool": "Edit", "entry": "Edit: test_212_contract_semantics.py"},
+      {"timestamp": "2026-07-16T21:45:48Z", "tool": "Bash", "entry": "Run contract semantics test"},
+      {"timestamp": "2026-07-16T21:46:52Z", "tool": "Write", "entry": "Write: test_212_sequence_spy.py"},
+      {"timestamp": "2026-07-16T21:47:08Z", "tool": "Edit", "entry": "Edit: test_212_sequence_spy.py"},
+      {"timestamp": "2026-07-16T21:47:13Z", "tool": "Bash", "entry": "Run sequence spy test"},
+      {"timestamp": "2026-07-16T21:47:44Z", "tool": "Bash", "entry": "curl health check on Orderly"},
+      {"timestamp": "2026-07-16T21:48:15Z", "tool": "Write", "entry": "Write: test_212_l3_live.py"},
+      {"timestamp": "2026-07-16T21:48:29Z", "tool": "Bash", "entry": "curl POST status change test"},
+      {"timestamp": "2026-07-16T21:48:42Z", "tool": "Edit", "entry": "Edit: test_212_l3_live.py"},
+      {"timestamp": "2026-07-16T21:48:55Z", "tool": "Edit", "entry": "Edit: test_212_l3_live.py"},
+      {"timestamp": "2026-07-16T21:49:13Z", "tool": "Edit", "entry": "Edit: test_212_l3_live.py"},
+      {"timestamp": "2026-07-16T21:49:23Z", "tool": "Bash", "entry": "Run L3 live test"},
+      {"timestamp": "2026-07-16T21:50:06Z", "tool": "Bash", "entry": "Final vocab lexicon grep"},
+      {"timestamp": "2026-07-16T21:51:44Z", "tool": "Bash", "entry": "Compute protocol hash"},
+      {"timestamp": "2026-07-16T21:52:04Z", "tool": "Bash", "entry": "mkdir anchor-logs dir"}
+    ]
+  }
+}

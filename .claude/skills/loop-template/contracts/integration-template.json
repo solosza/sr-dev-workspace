@@ -1,0 +1,45 @@
+{
+  "$schema": "integration-contract-v1",
+  "$comment": "[DOMAIN-SPECIFIC] Replace all [DOMAIN-SPECIFIC] placeholders with domain values",
+
+  "loop_name": "[DOMAIN-SPECIFIC: loop name, e.g. combat-loop]",
+
+  "invoked_by": [
+    {
+      "loop": "[DOMAIN-SPECIFIC: caller loop name, e.g. orchestration-loop]",
+      "when": "[DOMAIN-SPECIFIC: condition under which caller invokes this loop]"
+    }
+  ],
+
+  "receives": {
+    "$comment": "[DOMAIN-SPECIFIC] Define typed fields this loop receives from its caller",
+    "example_field": {
+      "type": "object",
+      "description": "[DOMAIN-SPECIFIC: what this field represents]"
+    }
+  },
+
+  "returns": {
+    "$comment": "[DOMAIN-SPECIFIC] Define typed fields this loop returns to its caller",
+    "result_code": {
+      "type": "string",
+      "description": "[DOMAIN-SPECIFIC: outcome code, e.g. victory|defeat|success|failure]"
+    },
+    "updates": {
+      "type": "object",
+      "description": "[DOMAIN-SPECIFIC: field changes per update contract]"
+    },
+    "narration": {
+      "type": "string",
+      "description": "[DOMAIN-SPECIFIC: player/user-facing result text]"
+    }
+  },
+
+  "downstream_invocations": [
+    {
+      "loop": "[DOMAIN-SPECIFIC: downstream loop name, e.g. ability-saves]",
+      "when": "[DOMAIN-SPECIFIC: condition triggering downstream invocation]",
+      "mandatory": true
+    }
+  ]
+}

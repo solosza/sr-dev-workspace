@@ -1,0 +1,10 @@
+{
+  "anchor_timestamp": "2026-07-21T20:10:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "agent_id": "kernel-ephemeral-subagents-research",
+  "actions": [
+    {"timestamp": "2026-07-21T19:08:21Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+    {"timestamp": "2026-07-21T19:08:23Z", "tool": "Bash", "entry": "Bash: ls validators dir"}
+  ]
+}

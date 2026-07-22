@@ -1,0 +1,31 @@
+{
+  "anchor_timestamp": "2026-07-09T22:10:00Z",
+  "actions_count": 10,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-09T10:33:28Z", "tool": "Write", "entry": "Write: ssh_batch_executor.py"},
+    {"timestamp": "2026-07-09T10:33:49Z", "tool": "Bash", "entry": "Bash: import check"},
+    {"timestamp": "2026-07-09T10:35:04Z", "tool": "Bash", "entry": "Bash: ls tasks"},
+    {"timestamp": "2026-07-09T10:35:35Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+    {"timestamp": "2026-07-09T10:37:01Z", "tool": "Write", "entry": "Write: conftest.py"},
+    {"timestamp": "2026-07-09T10:37:06Z", "tool": "Bash", "entry": "Bash: AST parse check"},
+    {"timestamp": "2026-07-09T10:37:11Z", "tool": "Bash", "entry": "Bash: AST fixture check"},
+    {"timestamp": "2026-07-09T10:38:03Z", "tool": "Edit", "entry": "Edit: conftest.py"},
+    {"timestamp": "2026-07-09T10:38:08Z", "tool": "Bash", "entry": "Bash: grep verify"},
+    {"timestamp": "2026-07-09T10:39:34Z", "tool": "Bash", "entry": "Bash: protocol hash"}
+  ],
+  "agent_logs": {
+    "ssh-platform-5-layer-refactor": [
+      {"timestamp": "2026-07-09T10:33:28Z", "tool": "Write", "entry": "Write: ssh_batch_executor.py"},
+      {"timestamp": "2026-07-09T10:33:49Z", "tool": "Bash", "entry": "Bash: import check"},
+      {"timestamp": "2026-07-09T10:35:04Z", "tool": "Bash", "entry": "Bash: ls tasks"},
+      {"timestamp": "2026-07-09T10:35:35Z", "tool": "Bash", "entry": "Bash: protocol hash"},
+      {"timestamp": "2026-07-09T10:37:01Z", "tool": "Write", "entry": "Write: conftest.py"},
+      {"timestamp": "2026-07-09T10:37:06Z", "tool": "Bash", "entry": "Bash: AST parse check"},
+      {"timestamp": "2026-07-09T10:37:11Z", "tool": "Bash", "entry": "Bash: AST fixture check"},
+      {"timestamp": "2026-07-09T10:38:03Z", "tool": "Edit", "entry": "Edit: conftest.py"},
+      {"timestamp": "2026-07-09T10:38:08Z", "tool": "Bash", "entry": "Bash: grep verify"},
+      {"timestamp": "2026-07-09T10:39:34Z", "tool": "Bash", "entry": "Bash: protocol hash"}
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "contract_metadata": {
+    "contract_id": "render:step-03:output",
+    "version": "1.0",
+    "artifact_type": "state+process",
+    "artifact_filename": "render-session.json",
+    "canonical_reference": { "path": ".claude/docs/design/render/references/workflow.md", "hash": null },
+    "dependencies": ["step-02"],
+    "validation_metadata": { "validation_count": 0, "last_validated_at": null, "staleness_threshold_hours": 24 }
+  },
+  "validations": [
+    { "id": "server-alive", "description": "GET http://127.0.0.1:[port]/ returns 200 with page.html content", "check": "run_code" },
+    { "id": "localhost-only", "description": "Server bound to 127.0.0.1, never 0.0.0.0", "check": "run_code" },
+    { "id": "state-written", "description": "render-session.json has server_pid, port, session_dir, annotations_file, status=serving", "check": "json_fields" },
+    { "id": "single-output-path", "description": "render_server.py writes ONLY [session_dir]/annotations.json — code inspection: exactly one open-for-write target", "check": "ast_inspection" }
+  ],
+  "mechanical_validations": [],
+  "overrides": []
+}

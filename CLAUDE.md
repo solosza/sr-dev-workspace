@@ -220,15 +220,18 @@ Takes a deliverable repo, assembles a master with kernel, runs domain-setup, cop
 
 | File | Purpose |
 |------|---------|
-| `SKILL.md` | Identity, step table, composability |
-| `references/step-01-parse.md` | Parse input, discover repo structure |
-| `references/step-02-master.md` | Assemble master repo (code + kernel + scripts) |
-| `references/step-03-validate.md` | Run domain-setup, verify protocol + hooks |
-| `references/step-04-copy.md` | Copy master → disposable test repo |
-| `references/step-05-infra.md` | Set up test target (Docker, mock, or none) |
-| `references/step-06-inner-tasks.md` | Write L1/L2/L3 test tasks in test repo |
-| `references/step-07-execute.md` | Run inner test batch via run-task.sh |
-| `references/step-08-report.md` | Collect report, cleanup infra |
+| `SKILL.md` | Identity, philosophy, vocabulary, workflow summary, file index |
+| `workflow.md` | State machine, loop behavior, error handling, resume |
+| `gate-contract.md` | Per-step acceptance criteria and verification |
+| `steps/step-01-parse.md` | Parse input, discover repo structure |
+| `steps/step-02-master.md` | Assemble master repo (code + kernel + scripts) |
+| `steps/step-03-validate.md` | Run domain-setup, verify protocol + hooks |
+| `steps/step-04-copy.md` | Copy master → disposable test repo |
+| `steps/step-05-infra.md` | Set up test target (Docker, mock, or none) |
+| `steps/step-06-inner-tasks.md` | Write L1/L2/L3 test tasks in test repo |
+| `steps/step-07-execute.md` | Run inner test batch via run-task.sh |
+| `steps/step-08-report.md` | Collect report, cleanup infra |
+| `references/INDEX.md` | Index of all reference payloads |
 
 **Usage:** `/kernel/prod-test C:/path/to/deliverable-repo`
 

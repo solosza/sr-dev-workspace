@@ -1,0 +1,30 @@
+{
+  "$schema": "output-contract-v1",
+  "$comment": "[DOMAIN-SPECIFIC] Replace all [DOMAIN-SPECIFIC] placeholders with domain values",
+
+  "loop_name": "[DOMAIN-SPECIFIC: loop name, e.g. ability-saves]",
+
+  "returns": {
+    "$comment": "[DOMAIN-SPECIFIC] Define typed fields this loop returns to its caller",
+    "example_field": {
+      "type": "string",
+      "description": "[DOMAIN-SPECIFIC: what this field represents]"
+    }
+  },
+
+  "result_codes": [
+    "[DOMAIN-SPECIFIC: valid result string, e.g. success]",
+    "[DOMAIN-SPECIFIC: valid result string, e.g. failure]",
+    "[DOMAIN-SPECIFIC: valid result string, e.g. partial]"
+  ],
+
+  "state_updates": {
+    "$comment": "[DOMAIN-SPECIFIC] Describe what state fields change after this loop completes",
+    "[DOMAIN-SPECIFIC: state_field_name]": {
+      "type": "[DOMAIN-SPECIFIC: expected type]",
+      "description": "[DOMAIN-SPECIFIC: how this field changes]"
+    }
+  },
+
+  "narration_required": true
+}

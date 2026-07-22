@@ -1,0 +1,25 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/curiosity-harness-research/",
+  "total_tasks": 7,
+  "current_task": null,
+  "completed_tasks": [
+    "001-research-gather-aravind-context.md",
+    "002-research-evaluate-five-claims.md",
+    "003-research-map-isagawa-alignment.md",
+    "004-research-curiosity-harness-product.md",
+    "005-research-local-ai-positioning.md",
+    "006-build-write-research-report.md",
+    "007-test-verify-gate-contract.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-07T01:30:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-07T01:05:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-07T01:30:00Z"
+}

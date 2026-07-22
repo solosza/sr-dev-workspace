@@ -1,0 +1,13 @@
+{
+  "backlog": 180,
+  "spawned_at": "2026-07-06T19:00:00Z",
+  "status": "failed",
+  "progress": "2/8 tasks",
+  "total_tasks": 8,
+  "completed_tasks": ["002-build-create-loop-template-dir.md", "003-build-write-loop-template-skill.md"],
+  "last_update": "2026-07-06T22:05:00Z",
+  "completed_at": null,
+  "task_folder": "tasks/dnd-game-loop-integration/",
+  "deliverable": "D&D Game Loop Integration — PARTIAL: 2/8 tasks done, hit iteration limit (3 iterations for 8+ tasks)",
+  "failure_reason": "run-task.sh iteration limit (3) too low for 8-task pipeline"
+}

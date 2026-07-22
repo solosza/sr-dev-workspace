@@ -1,0 +1,270 @@
+{
+  "anchor_timestamp": "2026-07-21T23:07:02Z",
+  "actions_count": 11,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "reference-tests-ui": [
+      {
+        "timestamp": "2026-07-21T22:27:46Z",
+        "tool": "Bash",
+        "entry": "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tools/selenium-cli",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:27:52Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import fastapi; import sqlalchemy; import uvicorn; print(f'fastapi={f",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:28:05Z",
+        "tool": "Bash",
+        "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework/_referen",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:28:28Z",
+        "tool": "Bash",
+        "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/harness/orderly/\"",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:28:54Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/framework/resources/ut",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:29:04Z",
+        "tool": "Bash",
+        "entry": "Bash: DATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hmsa-qa-platform/ha",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:29:13Z",
+        "tool": "Bash",
+        "entry": "Bash: DATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hmsa-qa-platform/ha",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:30:24Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/harness/orderly/templa",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:31:49Z",
+        "tool": "Bash",
+        "entry": "Bash: curl -s http://localhost:8017/orders -H \"Cookie: session=eyJzZXNzaW9uIjogIntcInV",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:31:52Z",
+        "tool": "Bash",
+        "entry": "Bash: curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8017/login 2>/dev/null |",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:32:38Z",
+        "tool": "Bash",
+        "entry": "Bash: curl -v -s http://localhost:8017/login -c /tmp/orderly-cookies.txt -o /dev/null ",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:32:43Z",
+        "tool": "Bash",
+        "entry": "Bash: curl -s -X POST http://localhost:8017/login -d \"username=clerk&password=clerk123",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:32:49Z",
+        "tool": "Bash",
+        "entry": "Bash: curl -s -X POST http://localhost:8017/login -d \"username=clerk&password=clerk123",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:33:12Z",
+        "tool": "Bash",
+        "entry": "Bash: pkill -f \"uvicorn harness.orderly.main:app\" 2>/dev/null; sleep 1; echo \"killed\"",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:33:22Z",
+        "tool": "Bash",
+        "entry": "Bash: DATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hmsa-qa-platform/ha",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:33:49Z",
+        "tool": "Bash",
+        "entry": "Bash: sleep 3\nDATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hmsa-qa-pla",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:34:05Z",
+        "tool": "Bash",
+        "entry": "Bash: # Login (capture session cookie)\ncurl -s -X POST http://localhost:8017/login -d ",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:34:41Z",
+        "tool": "Bash",
+        "entry": "Bash: # Re-seed first\nDATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hms",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:35:10Z",
+        "tool": "Bash",
+        "entry": "Bash: DATABASE_URL=\"sqlite:///D:/my_ai_projects/project_test_repos/hmsa-qa-platform/ha",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:38:19Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:39:27Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform branch --show-curre",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:39:27Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform status",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:39:33Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform status --porcelain",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:39:38Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform ls-files --others -",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:39:41Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform log --oneline -5",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:39:54Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform log --oneline main ",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:39:59Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform add framework/_refe",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:40:03Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform diff --cached --sta",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:40:09Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform commit -m \"build(20",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:40:13Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform status --porcelain",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:40:13Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform log --oneline main ",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:40:34Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform log --oneline -1 bu",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:40:35Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform status --porcelain",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T22:40:36Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C D:/my_ai_projects/project_test_repos/hmsa-qa-platform log --oneline main ",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T23:04:32Z",
+        "tool": "Bash",
+        "entry": "Bash: echo \"===== hmsa branches =====\"\ngit -C \"D:/my_ai_projects/project_test_repos/hm",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T23:04:47Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      },
+      {
+        "timestamp": "2026-07-21T23:05:27Z",
+        "tool": "Bash",
+        "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/agent-r",
+        "session": "current",
+        "agent_id": "reference-tests-ui"
+      }
+    ]
+  },
+  "note": "Recovery anchor after 208 inner pipeline (5th contention event). 208: 4/5 complete, 004 skipped \u2014 orchestrator gate validation owed (lesson #39)."
+}

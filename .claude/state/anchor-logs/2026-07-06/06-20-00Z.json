@@ -1,0 +1,17 @@
+{
+  "anchor_timestamp": "2026-07-06T06:20:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T06:16:02Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+    {"timestamp": "2026-07-06T06:16:18Z", "tool": "Bash", "entry": "Bash: mkdir -p tasks/linking-convention-research"},
+    {"timestamp": "2026-07-06T06:16:26Z", "tool": "Write", "entry": "Write: 000-index.md"},
+    {"timestamp": "2026-07-06T06:16:31Z", "tool": "Write", "entry": "Write: gate-contract.md"},
+    {"timestamp": "2026-07-06T06:16:38Z", "tool": "Write", "entry": "Write: 001-research-test-at-imports.md"},
+    {"timestamp": "2026-07-06T06:16:45Z", "tool": "Write", "entry": "Write: 002-research-test-wikilinks-vs-codespans.md"},
+    {"timestamp": "2026-07-06T06:16:50Z", "tool": "Write", "entry": "Write: 003-research-analyze-current-usage.md"}
+  ],
+  "agent_logs": {
+    "eval-platform-learning-loop": []
+  }
+}

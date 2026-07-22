@@ -1,0 +1,358 @@
+{
+  "anchor_timestamp": "2026-07-15T01:30:00Z",
+  "actions_count": 49,
+  "violations_found": 0,
+  "notes": "concurrent-run attribution noise observed (agent_id stomping) \u2014 cosmetic, outputs correct",
+  "actions": [],
+  "agent_logs": {
+    "contract-deliverable": [
+      {
+        "timestamp": "2026-07-14T22:43:04Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport hashlib, io, json, os, glob\nws = 'D:/my_ai_projects/project_t",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:43:17Z",
+        "tool": "Bash",
+        "entry": "Bash: t=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"; ws=\"D:/my_ai_projects",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:43:48Z",
+        "tool": "Write",
+        "entry": "Write: 000-index.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:43:56Z",
+        "tool": "Write",
+        "entry": "Write: gate-contract.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:08Z",
+        "tool": "Write",
+        "entry": "Write: 001-build-create-feature-branch.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:13Z",
+        "tool": "Write",
+        "entry": "Write: 002-build-db-layer.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:17Z",
+        "tool": "Write",
+        "entry": "Write: 003-build-seed-script.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:23Z",
+        "tool": "Write",
+        "entry": "Write: 004-build-app-entry-login.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:27Z",
+        "tool": "Write",
+        "entry": "Write: 005-build-login-template.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:37Z",
+        "tool": "Write",
+        "entry": "Write: 006-build-customer-routes.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:40Z",
+        "tool": "Write",
+        "entry": "Write: 007-build-customer-template.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:44Z",
+        "tool": "Write",
+        "entry": "Write: 008-build-order-routes.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:49Z",
+        "tool": "Write",
+        "entry": "Write: 009-build-orders-template.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:44:53Z",
+        "tool": "Write",
+        "entry": "Write: 010-build-order-detail-template.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:45:07Z",
+        "tool": "Write",
+        "entry": "Write: 011-test-smoke-boot.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:45:12Z",
+        "tool": "Write",
+        "entry": "Write: 012-test-testid-audit.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:45:15Z",
+        "tool": "Write",
+        "entry": "Write: 013-test-seed-determinism.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:45:19Z",
+        "tool": "Write",
+        "entry": "Write: 014-build-commit-branch.md",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      },
+      {
+        "timestamp": "2026-07-14T22:45:41Z",
+        "tool": "Bash",
+        "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+        "session": "current",
+        "agent_id": "contract-deliverable"
+      }
+    ],
+    "harness-ui-slice": [
+      {
+        "timestamp": "2026-07-14T23:34:02Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --show-cur",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:34:15Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log --oneline -10",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:34:15Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" diff --name-only ",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:34:22Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log --oneline mai",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:34:28Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --short",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:34:35Z",
+        "tool": "Bash",
+        "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/harness/\"",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:34:39Z",
+        "tool": "Bash",
+        "entry": "Bash: find \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform/harness/\" -type f | ",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:35:02Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport re, sys, os, glob\n\ntemplate_dir = 'D:/my_ai_projects/project_",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:35:04Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -riE \"hmsa|claim|member|patient|provider|healthcare\" \"D:/my_ai_projects/pro",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:35:09Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -riE --include=\"*.py\" --include=\"*.html\" --include=\"*.css\" --include=\"*.js\"",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:36:31Z",
+        "tool": "Bash",
+        "entry": "Bash: python -c \"\nimport sys, os, tempfile, sqlite3\n\nsys.path.insert(0, 'D:/my_ai_proj",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:36:33Z",
+        "tool": "Write",
+        "entry": "Write: research-report.md",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:36:38Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -ciE \"amend|keep|revise\" \"D:/my_ai_projects/project_test_repos/sr_dev_works",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:36:44Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/orchestrator-",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:04Z",
+        "tool": "Bash",
+        "entry": "Bash: grep -ciE \"amend|keep|revise\" \"D:/my_ai_projects/project_test_repos/sr_dev_works",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:10Z",
+        "tool": "Edit",
+        "entry": "Edit: .gitignore",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:13Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/orchestrator-sub",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:14Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --short",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:18Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" add -A",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:23Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --short",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:29Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" commit -m \"build(",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:33Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" branch --show-cur",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:34Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" status --porcelai",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:35Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" log --oneline mai",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:35Z",
+        "tool": "Bash",
+        "entry": "Bash: git -C \"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\" ls-files \"*.db\"",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:37:52Z",
+        "tool": "Bash",
+        "entry": "Bash: p=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/orchestrator-s",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:38:45Z",
+        "tool": "Bash",
+        "entry": "Bash: t=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"; echo \"=== HUI-01/07 g",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      },
+      {
+        "timestamp": "2026-07-14T23:39:01Z",
+        "tool": "Bash",
+        "entry": "Bash: t=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"; echo \"=== HUI-06 sour",
+        "session": "current",
+        "agent_id": "harness-ui-slice"
+      }
+    ],
+    "orchestrator-subagent-research": [
+      {
+        "timestamp": "2026-07-14T23:31:03Z",
+        "tool": "Bash",
+        "entry": "Bash: printf '' > \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state",
+        "session": "current",
+        "agent_id": "orchestrator-subagent-research"
+      },
+      {
+        "timestamp": "2026-07-14T23:31:35Z",
+        "tool": "Bash",
+        "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/orchestrator-",
+        "session": "current",
+        "agent_id": "orchestrator-subagent-research"
+      }
+    ]
+  }
+}

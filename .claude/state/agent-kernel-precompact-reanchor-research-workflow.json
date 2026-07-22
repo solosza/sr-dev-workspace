@@ -1,0 +1,19 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/kernel-precompact-reanchor-research/",
+  "total_tasks": null,
+  "current_task": null,
+  "completed_tasks": [
+    "005-build-write-research-report.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-21T22:30:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-21T22:25:00Z",
+  "actions_since_anchor": 1,
+  "last_anchor_token_confirmed": null,
+  "timestamp": null
+}

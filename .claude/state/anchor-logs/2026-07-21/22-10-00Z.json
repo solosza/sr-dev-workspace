@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-07-21T22:10:00Z",
+  "actions_count": 0,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "kernel-ephemeral-subagents-research": [
+      {"timestamp": "2026-07-21T19:12:31Z", "tool": "Bash", "entry": "Bash: for f in bdst2v5rc..."},
+      {"timestamp": "2026-07-21T19:12:43Z", "tool": "Bash", "entry": "Bash: cp settings.local"},
+      {"timestamp": "2026-07-21T19:13:02Z", "tool": "Bash", "entry": "Bash: cp settings.local"},
+      {"timestamp": "2026-07-21T19:13:06Z", "tool": "Bash", "entry": "Bash: rm settings.local"},
+      {"timestamp": "2026-07-21T19:13:13Z", "tool": "Write", "entry": "Write: 01-current-ephemeral-surface.md"},
+      {"timestamp": "2026-07-21T19:13:22Z", "tool": "Write", "entry": "Write: 01-compaction-survival-audit.md"},
+      {"timestamp": "2026-07-21T19:13:27Z", "tool": "Bash", "entry": "Bash: wc -w"},
+      {"timestamp": "2026-07-21T19:14:55Z", "tool": "Write", "entry": "Write: 03-rule-map-design.md"},
+      {"timestamp": "2026-07-21T19:15:10Z", "tool": "Write", "entry": "Write: 02-gap-analysis-and-design.md"},
+      {"timestamp": "2026-07-21T19:15:16Z", "tool": "Bash", "entry": "Bash: wc -w"},
+      {"timestamp": "2026-07-21T19:15:19Z", "tool": "Write", "entry": "Write: 02-compaction-survival-and-design.md"},
+      {"timestamp": "2026-07-21T19:15:22Z", "tool": "Write", "entry": "Write: 03-integration-design.md"},
+      {"timestamp": "2026-07-21T19:15:23Z", "tool": "Bash", "entry": "Bash: for d in..."},
+      {"timestamp": "2026-07-21T19:15:23Z", "tool": "Bash", "entry": "Bash: wc -w"},
+      {"timestamp": "2026-07-21T19:15:35Z", "tool": "Bash", "entry": "Bash: for n in 237 238 239..."},
+      {"timestamp": "2026-07-21T19:15:54Z", "tool": "Write", "entry": "Write: research-report.md"},
+      {"timestamp": "2026-07-21T19:18:03Z", "tool": "Bash", "entry": "Bash: python hash"}
+    ]
+  }
+}

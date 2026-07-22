@@ -46,8 +46,13 @@ def main():
     elif tool_name == 'Bash':
         command = tool_input.get('command', '')
 
-        # Block direct intent.py calls — intent chain must use /kernel/backlog only
-        if 'intent.py record' in command or ('intent.py' in command and 'record' in command):
+        # Block direct intent.py calls — intent chain must use /kernel/backlog only.
+        # Sanctioned path: /kernel/backlog step 3 prefixes the call with its marker
+        # (documented ONLY in .claude/commands/kernel/backlog.md, not here — so agents
+        # that merely read this block message cannot copy it).
+        is_sanctioned_backlog_call = command.strip().startswith('KERNEL_BACKLOG_INTENT=1 ')
+        if not is_sanctioned_backlog_call and (
+                'intent.py record' in command or ('intent.py' in command and 'record' in command)):
             common.bash_block([
                 "BLOCKED: Direct intent.py call",
                 "",

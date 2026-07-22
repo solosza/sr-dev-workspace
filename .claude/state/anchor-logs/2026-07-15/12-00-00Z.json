@@ -1,0 +1,20 @@
+{
+  "anchor_timestamp": "2026-07-15T12:00:00Z",
+  "actions_count": 12,
+  "violations_found": 0,
+  "agent_logs": {
+    "render-runtime": [
+      {"timestamp": "2026-07-15T09:29:14Z", "tool": "Bash", "entry": "Bash: ls render dir"},
+      {"timestamp": "2026-07-15T09:29:27Z", "tool": "Bash", "entry": "Bash: mkdir -p render templates dir"},
+      {"timestamp": "2026-07-15T09:29:51Z", "tool": "Bash", "entry": "Bash: python AST parse check"},
+      {"timestamp": "2026-07-15T09:30:06Z", "tool": "Bash", "entry": "Bash: python AST analysis"},
+      {"timestamp": "2026-07-15T09:32:20Z", "tool": "Bash", "entry": "Bash: python hashlib protocol hash"},
+      {"timestamp": "2026-07-15T09:33:47Z", "tool": "Bash", "entry": "Bash: ls render templates"},
+      {"timestamp": "2026-07-15T09:33:51Z", "tool": "Bash", "entry": "Bash: mkdir -p render templates review-board"},
+      {"timestamp": "2026-07-15T09:34:23Z", "tool": "Bash", "entry": "Bash: wc -l template.md"},
+      {"timestamp": "2026-07-15T09:34:46Z", "tool": "Bash", "entry": "Bash: grep action map keywords"},
+      {"timestamp": "2026-07-15T09:34:47Z", "tool": "Bash", "entry": "Bash: grep reject destructive flag"},
+      {"timestamp": "2026-07-15T09:34:48Z", "tool": "Bash", "entry": "Bash: grep data source references"}
+    ]
+  }
+}

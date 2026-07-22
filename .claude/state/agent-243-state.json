@@ -1,0 +1,12 @@
+{
+  "backlog": 243,
+  "backlog_path": "docs/backlog/243-kernel-research-artifact-bus.md",
+  "spawned_at": "2026-07-21T19:55:27Z",
+  "status": "complete",
+  "progress": "5/5 tasks",
+  "task_folder": "tasks/kernel-artifact-bus-research/",
+  "total_tasks": 5,
+  "completed_tasks": [],
+  "deliverable": "projects/kernel-artifact-bus-research/ (4 docs, verdict NAY)",
+  "log_file": null
+}

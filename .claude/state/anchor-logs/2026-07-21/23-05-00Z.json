@@ -1,0 +1,85 @@
+{
+  "anchor_timestamp": "2026-07-21T23:05:00Z",
+  "actions_count": 13,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-21T19:28:53Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, hashlib, pathlib, time\n\nbase = pathlib.Path(\"D:/my",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:30:33Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog\" \"D:/my_a",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:30:41Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 241 \"one for eac",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:30:46Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 242 \"one for eac",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:30:51Z",
+      "tool": "Bash",
+      "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 243 \"one for eac",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:31:09Z",
+      "tool": "Write",
+      "entry": "Write: 241-kernel-research-dag-wave-execution.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:31:28Z",
+      "tool": "Write",
+      "entry": "Write: 242-kernel-research-barrier-gate-prereqs.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:31:48Z",
+      "tool": "Write",
+      "entry": "Write: 243-kernel-research-artifact-bus.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:43:37Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:44:34Z",
+      "tool": "Write",
+      "entry": "Write: build_task_folders_241_243.py",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:44:39Z",
+      "tool": "Bash",
+      "entry": "Bash: python \"C:/Users/solos/AppData/Local/Temp/claude/D--my-ai-projects-project-test-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:44:50Z",
+      "tool": "Bash",
+      "entry": "Bash: python - <<'EOF'\nimport json, pathlib, time\nstate = pathlib.Path(\"D:/my_ai_proje",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-21T19:44:55Z",
+      "tool": "Bash",
+      "entry": "Bash: env -u CLAUDECODE bash \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/ru",
+      "session": "current"
+    }
+  ]
+}

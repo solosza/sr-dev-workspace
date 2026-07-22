@@ -25,8 +25,9 @@ Create a new backlog item in the standard format.
 3. **Record intent:**
    - After determining the backlog number, record the intent for the chain:
      ```bash
-     python lib/attestation/intent.py record NNN "the raw argument text" docs/backlog/NNN-tag-verb-object.md
+     KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record NNN "the raw argument text" docs/backlog/NNN-tag-verb-object.md
      ```
+   - The `KERNEL_BACKLOG_INTENT=1` prefix is the sanctioned-path marker the gate enforcer checks (hook blocks all unmarked intent.py calls). It is documented ONLY here — this command is the sole legitimate caller; never use the marker outside /kernel/backlog.
    - For **new items** (file doesn't exist yet): run this BEFORE writing the file. `record_intent` handles missing `backlog_path` by hashing an empty string for `backlog_hash_after`.
    - For **updates to existing items**: run this AFTER the file is written so `backlog_hash_after` captures the updated content.
    - The intent log is append-only. Each invocation of /kernel/backlog adds one entry.

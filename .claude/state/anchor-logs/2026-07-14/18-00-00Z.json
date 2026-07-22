@@ -1,0 +1,42 @@
+{
+  "anchor_timestamp": "2026-07-14T18:00:00Z",
+  "actions_count": 33,
+  "violations_found": 0,
+  "agent_logs": {
+    "reference-components": [
+      {"timestamp": "2026-07-15T01:05:30Z", "tool": "Bash", "entry": "protocol hash computation"},
+      {"timestamp": "2026-07-15T01:06:21Z", "tool": "Bash", "entry": "git branch check"},
+      {"timestamp": "2026-07-15T01:06:26Z", "tool": "Bash", "entry": "git checkout -b build branch"},
+      {"timestamp": "2026-07-15T01:06:29Z", "tool": "Bash", "entry": "git branch verify"},
+      {"timestamp": "2026-07-15T01:07:01Z", "tool": "Bash", "entry": "git ls-files reference components"},
+      {"timestamp": "2026-07-15T01:07:06Z", "tool": "Bash", "entry": "git show HEAD framework file"},
+      {"timestamp": "2026-07-15T01:07:13Z", "tool": "Bash", "entry": "git ls-tree reference dir"},
+      {"timestamp": "2026-07-15T01:07:18Z", "tool": "Bash", "entry": "mkdir reference components dir"},
+      {"timestamp": "2026-07-15T01:07:22Z", "tool": "Write", "entry": "Write __init__.py"},
+      {"timestamp": "2026-07-15T01:07:37Z", "tool": "Write", "entry": "Write modal_component.py"},
+      {"timestamp": "2026-07-15T01:08:11Z", "tool": "Write", "entry": "Write grid_component.py"},
+      {"timestamp": "2026-07-15T01:08:52Z", "tool": "Bash", "entry": "git show orderly harness config"},
+      {"timestamp": "2026-07-15T01:09:05Z", "tool": "Bash", "entry": "git show orders_page ref"},
+      {"timestamp": "2026-07-15T01:09:10Z", "tool": "Bash", "entry": "ls reference pages dir"},
+      {"timestamp": "2026-07-15T01:09:21Z", "tool": "Edit", "entry": "Edit orders_page.py locator reconciliation"},
+      {"timestamp": "2026-07-15T01:09:31Z", "tool": "Edit", "entry": "Edit orders_page.py config injection"},
+      {"timestamp": "2026-07-15T01:09:57Z", "tool": "Bash", "entry": "python import validation test"},
+      {"timestamp": "2026-07-15T01:10:51Z", "tool": "Edit", "entry": "Edit grid_component.py method fix"},
+      {"timestamp": "2026-07-15T01:10:56Z", "tool": "Edit", "entry": "Edit grid_component.py accessor fix"},
+      {"timestamp": "2026-07-15T01:11:00Z", "tool": "Edit", "entry": "Edit grid_component.py return self fix"},
+      {"timestamp": "2026-07-15T01:11:28Z", "tool": "Bash", "entry": "AST contract semantics test"},
+      {"timestamp": "2026-07-15T01:11:49Z", "tool": "Bash", "entry": "git log branch history"},
+      {"timestamp": "2026-07-15T01:11:57Z", "tool": "Bash", "entry": "git ls-tree orderly harness"},
+      {"timestamp": "2026-07-15T01:12:03Z", "tool": "Bash", "entry": "ls orderly dir"},
+      {"timestamp": "2026-07-15T01:12:10Z", "tool": "Bash", "entry": "git show conftest"},
+      {"timestamp": "2026-07-15T01:12:14Z", "tool": "Bash", "entry": "git show base_page"},
+      {"timestamp": "2026-07-15T01:12:19Z", "tool": "Bash", "entry": "git show orderly config"},
+      {"timestamp": "2026-07-15T01:12:26Z", "tool": "Bash", "entry": "git show interface"},
+      {"timestamp": "2026-07-15T01:13:44Z", "tool": "Bash", "entry": "DATABASE_URL seed orderly db"},
+      {"timestamp": "2026-07-15T01:13:55Z", "tool": "Bash", "entry": "DATABASE_URL orderly start attempt"},
+      {"timestamp": "2026-07-15T01:15:44Z", "tool": "Bash", "entry": "protocol hash recompute"},
+      {"timestamp": "2026-07-15T01:16:35Z", "tool": "Bash", "entry": "mkdir anchor log dir"},
+      {"timestamp": "2026-07-15T01:16:40Z", "tool": "Bash", "entry": "protocol hash verification"}
+    ]
+  }
+}

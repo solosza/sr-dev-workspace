@@ -1,6 +1,14 @@
-# Step 3: Run Task-Builder
+# Step 3: Run Task-Builder (Default Route Only)
 
 Invoke task-builder with flags to stop before execution. Plan review runs normally.
+
+**Skip if `pipeline_state.route` is `command`.** Command route uses step 3c instead.
+
+## Skip Check
+
+1. Read `pipeline_state.route` from `session_state.json`
+2. If `command` → skip this step, proceed to step 3c (`references/step-03c-run-command-build.md`)
+3. If `default` → continue below
 
 ## Process
 

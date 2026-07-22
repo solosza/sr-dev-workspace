@@ -1,0 +1,20 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/ssh-post-remediation-verify/",
+  "total_tasks": 2,
+  "current_task": null,
+  "completed_tasks": [
+    "001-gap-check-platform-ssh.md",
+    "002-prod-test-platform-ssh.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-07T02:15:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-07T02:05:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-07T02:15:00Z"
+}

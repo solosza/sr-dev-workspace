@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-07-01T23:10:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-01T20:29:30Z", "tool": "Bash", "entry": "Bash: test -f ab_testing metrics"},
+    {"timestamp": "2026-07-01T20:29:31Z", "tool": "Bash", "entry": "Bash: test -f ab_testing tasks"},
+    {"timestamp": "2026-07-01T20:29:32Z", "tool": "Bash", "entry": "Bash: test -f ab_testing roles"},
+    {"timestamp": "2026-07-01T20:29:59Z", "tool": "Edit", "entry": "Edit: __init__.py"},
+    {"timestamp": "2026-07-01T20:30:07Z", "tool": "Bash", "entry": "Bash: python import verify"},
+    {"timestamp": "2026-07-01T20:30:17Z", "tool": "Bash", "entry": "Bash: python import verify 2"},
+    {"timestamp": "2026-07-01T20:31:32Z", "tool": "Bash", "entry": "Bash: sleep + cat state"},
+    {"timestamp": "2026-07-01T20:32:21Z", "tool": "Bash", "entry": "Bash: protocol hash"}
+  ],
+  "agent_logs": {
+    "ab-testing-5-layer-conformance": [
+      {"timestamp": "2026-07-01T20:29:30Z", "tool": "Bash", "entry": "Bash: test -f ab_testing metrics"},
+      {"timestamp": "2026-07-01T20:29:31Z", "tool": "Bash", "entry": "Bash: test -f ab_testing tasks"},
+      {"timestamp": "2026-07-01T20:29:32Z", "tool": "Bash", "entry": "Bash: test -f ab_testing roles"},
+      {"timestamp": "2026-07-01T20:29:59Z", "tool": "Edit", "entry": "Edit: __init__.py"},
+      {"timestamp": "2026-07-01T20:30:07Z", "tool": "Bash", "entry": "Bash: python import verify"},
+      {"timestamp": "2026-07-01T20:30:17Z", "tool": "Bash", "entry": "Bash: python import verify 2"},
+      {"timestamp": "2026-07-01T20:31:32Z", "tool": "Bash", "entry": "Bash: sleep + cat state"},
+      {"timestamp": "2026-07-01T20:32:21Z", "tool": "Bash", "entry": "Bash: protocol hash"}
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/ssh-structural-conformance/",
+  "total_tasks": null,
+  "current_task": null,
+  "completed_tasks": [],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": false,
+  "complete_timestamp": null,
+  "anchored": true,
+  "anchor_timestamp": null,
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": null,
+  "timestamp": null
+}

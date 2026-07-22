@@ -1,0 +1,22 @@
+{
+  "contract_metadata": {
+    "contract_id": "walkthrough-step-06-record",
+    "version": "1.0",
+    "artifact_type": "loop-iteration-record"
+  },
+  "canonical_reference": {
+    "path": ".claude/docs/design/walkthrough/references/ledger-spec.md",
+    "note": "Entry schema and append-before-advance invariant"
+  },
+  "validations": [
+    "Exactly one section rendered this turn (format-contract hard rule 1)",
+    "All required format parts present for current depth (7 plain / 3 terse)",
+    "Grounding part cites files actually present in sources_read",
+    "Explanation ended with a settle prompt",
+    "Ledger entry 'settled' field is self-contained full sentences"
+  ],
+  "mechanical_validations": [
+    {"check": "json_field_length_equals", "target": "ledger", "value": "cursor",
+     "note": "ledger length == cursor after each Record — append-before-advance invariant"}
+  ]
+}

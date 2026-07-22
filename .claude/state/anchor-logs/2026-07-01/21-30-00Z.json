@@ -1,0 +1,27 @@
+{
+  "anchor_timestamp": "2026-07-01T21:30:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-01T20:12:12Z", "tool": "Bash", "entry": "Bash: python -c hashlib protocol hash"},
+    {"timestamp": "2026-07-01T20:12:31Z", "tool": "Bash", "entry": "Bash: mkdir -p anchor-logs/2026-07-01"},
+    {"timestamp": "2026-07-01T20:13:37Z", "tool": "Bash", "entry": "Bash: ls framework/ | head -30"},
+    {"timestamp": "2026-07-01T20:13:43Z", "tool": "Bash", "entry": "Bash: ls framework/metrics/"},
+    {"timestamp": "2026-07-01T20:14:20Z", "tool": "Write", "entry": "Write: ab_metrics.py"},
+    {"timestamp": "2026-07-01T20:14:34Z", "tool": "Bash", "entry": "Bash: python -c import verify ABMetrics"},
+    {"timestamp": "2026-07-01T20:14:52Z", "tool": "Bash", "entry": "Bash: test -f task file verification"},
+    {"timestamp": "2026-07-01T20:15:58Z", "tool": "Bash", "entry": "Bash: sleep 300 monitor"}
+  ],
+  "agent_logs": {
+    "ab-testing-5-layer-conformance": [
+      {"timestamp": "2026-07-01T20:12:12Z", "tool": "Bash", "entry": "protocol hash computation"},
+      {"timestamp": "2026-07-01T20:12:31Z", "tool": "Bash", "entry": "mkdir anchor-logs"},
+      {"timestamp": "2026-07-01T20:13:37Z", "tool": "Bash", "entry": "ls framework/"},
+      {"timestamp": "2026-07-01T20:13:43Z", "tool": "Bash", "entry": "ls framework/metrics/"},
+      {"timestamp": "2026-07-01T20:14:20Z", "tool": "Write", "entry": "Write ab_metrics.py"},
+      {"timestamp": "2026-07-01T20:14:34Z", "tool": "Bash", "entry": "verify ABMetrics import"},
+      {"timestamp": "2026-07-01T20:14:52Z", "tool": "Bash", "entry": "test -f task file"},
+      {"timestamp": "2026-07-01T20:15:58Z", "tool": "Bash", "entry": "sleep monitor"}
+    ]
+  }
+}

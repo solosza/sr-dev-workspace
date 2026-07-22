@@ -1,0 +1,31 @@
+{
+  "anchor_timestamp": "2026-07-01T07:50:00Z",
+  "actions_count": 24,
+  "violations_found": 0,
+  "actions": [
+    "Bash: test -f harness CLAUDE.md",
+    "Bash: copy kernel files loop",
+    "Bash: copy kernel commands/skills/hooks",
+    "Bash: copy kernel commands/skills/hooks (parallel)",
+    "Bash: copy kernel run-task.sh/lib",
+    "Bash: copy platform-deepeval framework",
+    "Bash: verify harness compilation",
+    "Bash: copy platform-selenium source to harness-under-test",
+    "Bash: verify harness-under-test exists",
+    "Bash: ls harness-under-test contents",
+    "Bash: fix nested directory (rm + recopy)",
+    "Bash: verify harness-under-test CLAUDE.md",
+    "Bash: ls harness-under-test commands",
+    "Bash: ls -R framework _reference",
+    "Bash: ls harness-under-test skills",
+    "Bash: check CLAUDE.md line count (161 lines)",
+    "Bash: ls harness-under-test hooks",
+    "Bash: mkdir tests/",
+    "Write: conftest.py (7 fixtures)",
+    "Write: test_eval_harness.py (5 dimensions, 15 tests)",
+    "Bash: pip show deepeval (3.9.1)",
+    "Bash: verify OPENAI_API_KEY set",
+    "Bash: deepeval test run (first attempt — partial results before compaction)",
+    "Bash: deepeval test run (re-run attempt — blocked by anchor)"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "../../contracts/[LOOP-NAME]-contract.json",
+  "$comment": "[DOMAIN-SPECIFIC] Replace all [DOMAIN-SPECIFIC] and [LOOP-NAME] placeholders with domain values",
+  "title": "[LOOP-NAME] - [DOMAIN-SPECIFIC: Scenario Name] Test Cases",
+  "description": "[DOMAIN-SPECIFIC: N test cases validating [LOOP-NAME] resolution across [describe coverage]. Each case specifies input (matching input contract), expected output (matching output contract), and validation checks.]",
+  "version": "1.0",
+
+  "test_cases": [
+    {
+      "id": "[LOOP-NAME]-scenario-01",
+      "name": "[DOMAIN-SPECIFIC: descriptive test case name]",
+      "description": "[DOMAIN-SPECIFIC: narrative of what happens in this test case]",
+      "input": {
+        "$comment": "[DOMAIN-SPECIFIC] Fields must match input-contract.json 'receives' schema",
+        "[DOMAIN-SPECIFIC: field_1]": "[DOMAIN-SPECIFIC: value]",
+        "[DOMAIN-SPECIFIC: field_2]": "[DOMAIN-SPECIFIC: value]"
+      },
+      "expected_output": {
+        "$comment": "[DOMAIN-SPECIFIC] Fields must match output-contract.json 'returns' schema",
+        "result_code": "[DOMAIN-SPECIFIC: one of the result_codes from output contract]",
+        "[DOMAIN-SPECIFIC: field_1]": "[DOMAIN-SPECIFIC: expected value]",
+        "narration": "(agent-generated - must describe [DOMAIN-SPECIFIC: what the narration covers])"
+      },
+      "validation": {
+        "input_contract_valid": true,
+        "output_matches_schema": true,
+        "[DOMAIN-SPECIFIC: domain_check_name]": "[DOMAIN-SPECIFIC: validation expression or rule]"
+      }
+    },
+    {
+      "id": "[LOOP-NAME]-scenario-02",
+      "name": "[DOMAIN-SPECIFIC: second test case — different code path]",
+      "description": "[DOMAIN-SPECIFIC: narrative covering an alternate code path]",
+      "input": {
+        "$comment": "[DOMAIN-SPECIFIC] Exercise a different code path from scenario-01",
+        "[DOMAIN-SPECIFIC: field_1]": "[DOMAIN-SPECIFIC: value triggering alternate path]",
+        "[DOMAIN-SPECIFIC: field_2]": "[DOMAIN-SPECIFIC: value]"
+      },
+      "expected_output": {
+        "result_code": "[DOMAIN-SPECIFIC: different result_code from scenario-01]",
+        "[DOMAIN-SPECIFIC: field_1]": "[DOMAIN-SPECIFIC: expected value for this path]",
+        "narration": "(agent-generated - must describe [DOMAIN-SPECIFIC: alternate outcome])"
+      },
+      "validation": {
+        "input_contract_valid": true,
+        "output_matches_schema": true,
+        "[DOMAIN-SPECIFIC: domain_check_name]": "[DOMAIN-SPECIFIC: validation for this code path]"
+      }
+    }
+  ],
+
+  "coverage": {
+    "$comment": "[DOMAIN-SPECIFIC] Summarize what code paths and domain variants are tested",
+    "[DOMAIN-SPECIFIC: dimension_1]_tested": ["[DOMAIN-SPECIFIC: variant_a]", "[DOMAIN-SPECIFIC: variant_b]"],
+    "result_codes_tested": ["[DOMAIN-SPECIFIC: result_code_1]", "[DOMAIN-SPECIFIC: result_code_2]"]
+  }
+}

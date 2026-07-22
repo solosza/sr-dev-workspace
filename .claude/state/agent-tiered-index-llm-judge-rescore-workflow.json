@@ -1,0 +1,17 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/tiered-index-llm-judge-rescore/",
+  "total_tasks": 1,
+  "current_task": "001-rescore-with-llm-judge.md",
+  "completed_tasks": [],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": false,
+  "complete_timestamp": null,
+  "anchored": true,
+  "anchor_timestamp": "2026-07-06T22:10:00Z",
+  "actions_since_anchor": 0,
+  "last_anchor_token_confirmed": "d03a6f5d",
+  "timestamp": "2026-07-06T22:10:00Z"
+}

@@ -1,50 +1,53 @@
 {
   "session_started": true,
-  "timestamp": "2026-06-30T21:25:00Z",
-  "resumed_from": "context",
+  "timestamp": "2026-07-22T00:27:00Z",
+  "resumed_from": "session-closed-recovery",
   "context": {
     "current_task": null,
-    "task_folder": null,
-    "progress": "Pipeline 170 complete. Attestation signing pending.",
-    "last_completed": "170-market-build-targeted-resume-pair",
-    "next_step": "Commit and attest all pending work",
-    "notes": "Resumes (v1 + v2 agent, QA) created and converted to PDF. User requested attestation signing for all pending work."
+    "task_folder": "tasks/agent-state-isolation/",
+    "progress": "244 pipeline 9/13 done (001-009 complete, task 009 finished 17:14 just before accidental session close). Runner relaunched in worktree agent-a7560104f65d9033f for 010-013 (010 anchor doc + L1/L2/L3 tests). 208 UT-04 remains ENV-BLOCKED; merge HELD.",
+    "last_completed": "244 runner relaunch (background, env -u CLAUDECODE, 6 iterations max)",
+    "next_step": "1) Await 244 runner completion -> orchestrator-validate per gate-contract -> launch 245 then 246 sequential. 2) Run 236 (click-probe fidelity research). 3) Env remediation investigation (machine-level). 4) 208 merge waits for env fix + green UT-04 rerun.",
+    "notes": "Recovery findings: run-task.sh loop died with closed session but task 009 one-shot completed cleanly (COMPLETE + ONE_SHOT_COMPLETE in iteration_4.log). No lock file left. Worktree branch worktree-agent-a7560104f65d9033f based at 7466bb7 (pre-task-folder commit); tasks read from main repo, builds land in worktree. Worktree run-task.sh exports KERNEL_AGENT_ID (244 scaffolding under test). Env signature unchanged: click-initiated cross-document navigation from doc>=2 wedges cross-stack; app correct via plain HTTP."
   },
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" diff --cached --s",
-    "Bash: git -C \"D:/my_ai_projects/project_test_repos/sr_dev_workspace\" commit -m \"$(cat ",
-    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/attestat",
-    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/\" | ",
-    "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/attestat",
-    "Bash: for n in 156 157 158 159 160 161 163 164 165 166 167 168 169 170; do echo -n \"$n",
-    "Bash: python \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/lib/attestation/at",
-    "Bash: for n in 156 157 158 159 160; do backlog=$(ls \"D:/my_ai_projects/project_test_re",
-    "Bash: for n in 163 164 165 166 167; do backlog=$(ls \"D:/my_ai_projects/project_test_re",
-    "Bash: for n in 168 169 170; do backlog=$(ls \"D:/my_ai_projects/project_test_repos/sr_d"
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: python - <<'EOF'\nimport pathlib\nWT = pathlib.Path(\"D:/my_ai_projects/project_tes",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: WT=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/worktrees/agen",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" stat",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" diff"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
+  "actions_since_anchor": 0,
+  "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
+  "protocol_hash_timestamp": "2026-07-22T00:27:00Z",
   "needs_learn": false,
   "needs_learn_reason": null,
-  "protocol_hash": "ec4c8d13d7b87e7206ce3a4e3443532abb11f0cf1a4a894a8bca337e52d9d303",
-  "protocol_hash_timestamp": "2026-07-01T06:58:00Z",
-  "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-07-01T06:58:00Z",
-    "lessons_read_timestamp": "2026-07-01T06:58:00Z",
-    "actions_reviewed_count": 30,
-    "violations_found": 0,
-    "next_action_stated": "Commit and attest all pending work",
-    "rules_applied": "NEVER ASSUME \u2014 verified all files. NEVER USE cd \u2014 absolute paths only. NEVER QUICK-ANCHOR \u2014 full ceremony done.",
-    "ceremony_completed": true,
-    "ceremony_output_generated": true
-  },
   "pipeline_state": {
     "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/170-market-build-targeted-resume-pair.md",
-    "raw_input": "170"
+    "backlog_path": "docs/backlog/244-kernel-build-agent-state-isolation.md",
+    "route": "default",
+    "task_folder": "tasks/agent-state-isolation/",
+    "task_count": 13,
+    "resume_step": null
   },
   "pipeline_mode": null,
-  "agent_id": null
+  "agent_id": null,
+  "anchor_ceremony": {
+    "protocol_read_timestamp": "2026-07-22T00:24:00Z",
+    "lessons_read_timestamp": "2026-07-22T00:24:00Z",
+    "actions_reviewed_count": 30,
+    "violations_found": 0,
+    "next_action_stated": "Archive actions log, recompute protocol hash (absolute paths, no cd), then monitor 244 runner for tasks 010-013",
+    "rules_applied": "Lesson #26: runner relaunched as background + env -u CLAUDECODE; NEVER-cd: hash recompute uses absolute path; RULE ZERO: verified runner death + task 009 completion from iteration logs before relaunching; merge-not-overwrite on all state writes",
+    "ceremony_output_generated": true
+  }
 }

@@ -1,0 +1,1707 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e5]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - img [ref=e81]
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - link "Blog" [ref=e95] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/blog
+            - img [ref=e96]: 
+            - text: Blog
+          - generic [ref=e98]:
+            - link [ref=e99] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e100]: 
+            - text:        
+          - generic [ref=e102]:
+            - link [ref=e103] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e104]: 
+            - text:   
+          - link "0" [ref=e106] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/messages
+            - img [ref=e107]: 
+            - text: "0"
+          - link "0" [ref=e109] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/notifications
+            - img [ref=e110]: 
+            - text: "0"
+          - generic [ref=e112]:
+            - link [ref=e113] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e114]: 
+            - text:             
+        - list [ref=e116]:
+          - listitem [ref=e117]:
+            - link "Data Update" [ref=e118] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager-data-update
+          - listitem [ref=e119]:
+            - link "Downloads 2" [ref=e120] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/downloads
+              - text: Downloads
+              - generic [ref=e121]: "2"
+          - listitem [ref=e122]:
+            - link "Graphics" [ref=e123] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/graphics
+          - listitem [ref=e124]:
+            - link "Tactics" [ref=e125] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager-2026-tactics
+          - listitem [ref=e126]:
+            - link "Guides" [ref=e127] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager-guide
+          - listitem [ref=e128]:
+            - link "Forums" [ref=e129] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/forums
+          - listitem [ref=e130]:
+            - link "Stories" [ref=e131] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/careers
+          - listitem [ref=e132]:
+            - link "FMTV" [ref=e133] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/fmtv
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - link "Home" [ref=e136] [cursor=pointer]:
+          - /url: /
+        - link "FM Discord" [ref=e137] [cursor=pointer]:
+          - /url: https://discord.com/servers/sortitoutsi-258284368097837056
+          - img [ref=e138]: 
+          - text: FM Discord
+        - link "YouTube Channel" [ref=e140] [cursor=pointer]:
+          - /url: https://www.youtube.com/sortitoutsi?sub_confirmation=1
+          - img [ref=e141]: 
+          - text: YouTube Channel
+        - link "FM24 Data Update" [ref=e143] [cursor=pointer]:
+          - /url: /football-manager-data-update/fm24-transfer-update
+        - link "FM26 Data Update" [ref=e144] [cursor=pointer]:
+          - /url: /football-manager-data-update
+        - link "FM26 OOP Player Roles" [ref=e145] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/tools/player-roles
+        - link "Downloads" [ref=e146] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/downloads
+        - link "Graphics" [ref=e147] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/graphics
+        - generic [ref=e148]:
+          - link "Player Faces" [ref=e149] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/graphics/player-faces
+          - link "Logos" [ref=e150] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/graphics/logos
+          - link "Kits" [ref=e151] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/graphics/kits
+          - link "Backgrounds" [ref=e152] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/graphics/backgrounds
+          - link "Skins" [ref=e153] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-skins
+        - link "Challenges" [ref=e154] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/football-manager-challenges
+        - generic [ref=e155]:
+          - link "FM26 Challenges" [ref=e156] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-2026-challenges
+          - link "FM24 Challenges" [ref=e157] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-2024-challenges
+        - link "Blog" [ref=e158] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/blog
+        - link "Forums" [ref=e159] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/forums
+        - link "Videos" [ref=e160] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/fmtv
+        - link "Tactics" [ref=e161] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/football-manager-tactics
+        - link "FM26" [ref=e162] [cursor=pointer]:
+          - /url: /football-manager-2026
+        - generic [ref=e163]:
+          - link "FM26 Real Name Fix" [ref=e164] [cursor=pointer]:
+            - /url: /content/74677/fm26-real-name-fix
+          - link "FM26 Shortlists" [ref=e165] [cursor=pointer]:
+            - /url: /football-manager-shortlists
+          - link "FM26 DB" [ref=e166] [cursor=pointer]:
+            - /url: /football-manager-2026/database
+          - link "FM26 Men's Wonderkids" [ref=e167] [cursor=pointer]:
+            - /url: /best-football-manager-2026-wonderkids
+          - link "FM26 Women's Wonderkids" [ref=e168] [cursor=pointer]:
+            - /url: /best-football-manager-2026-wonderkids/womens
+          - link "FM26 Men's Club Finances" [ref=e169] [cursor=pointer]:
+            - /url: /football-manager-2026-club-transfer-budgets
+          - link "FM26 Women's Club Finances" [ref=e170] [cursor=pointer]:
+            - /url: /football-manager-2026-club-transfer-budgets/womens
+        - link "FM24 Update" [ref=e171] [cursor=pointer]:
+          - /url: /football-manager-data-update
+        - link "FM24 Update Wonderkids" [ref=e173] [cursor=pointer]:
+          - /url: /best-football-manager-2025-wonderkids
+        - link "FM24" [ref=e174] [cursor=pointer]:
+          - /url: /football-manager-2024
+        - generic [ref=e175]:
+          - link "FM24 Essentials" [ref=e176] [cursor=pointer]:
+            - /url: /football-manager-2024/essentials
+          - link "FM24 Wonderkids" [ref=e177] [cursor=pointer]:
+            - /url: /best-football-manager-2024-wonderkids
+          - link "FM24 Real Name Fix" [ref=e178] [cursor=pointer]:
+            - /url: /content/63651/fm24-real-name-fix
+          - link "FM24 New Leagues" [ref=e179] [cursor=pointer]:
+            - /url: /content/67061/fm24-nation-and-league-expansions-add-playable-leagues-to-football-manager-2024
+          - link "FM24 Downloads" [ref=e180] [cursor=pointer]:
+            - /url: /football-manager-2024-downloads
+        - link "FM23" [ref=e181] [cursor=pointer]:
+          - /url: /football-manager-2023
+        - generic [ref=e182]:
+          - link "FM23 Essentials" [ref=e183] [cursor=pointer]:
+            - /url: /football-manager-2023/essentials
+          - link "FM23 Wonderkids" [ref=e184] [cursor=pointer]:
+            - /url: /best-football-manager-2023-wonderkids
+          - link "FM23 Real Name Fix" [ref=e185] [cursor=pointer]:
+            - /url: /content/61133/fm2023-licensing-and-real-name-fix
+          - link "FM23 New Leagues" [ref=e186] [cursor=pointer]:
+            - /url: /content/61984/fm23-nation-and-league-expansions-add-playable-leagues-to-football-manager-2023
+          - link "FM23 Downloads" [ref=e187] [cursor=pointer]:
+            - /url: /football-manager-2023-downloads
+        - link "FM Saves" [ref=e188] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/careers
+        - generic [ref=e189]:
+          - link "Stories" [ref=e190] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/careers
+          - link "Save Ideas" [ref=e191] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-save-ideas
+          - link "Random Club" [ref=e192] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-2026/club-picker
+          - link "Club Search" [ref=e193] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-2026/club-search
+          - link "Club Compare" [ref=e194] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-2026/club-comparison
+        - link "FM Database" [ref=e195] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/football-manager/database
+        - link "FM Guides" [ref=e196] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/football-manager-guide
+        - link "Installation Guides" [ref=e197] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/installation-instructions
+        - link "Records" [ref=e198] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/records
+        - link "Search" [ref=e199] [cursor=pointer]:
+          - /url: https://sortitoutsi.net/search/posts
+        - generic [ref=e200]:
+          - link "Search Posts" [ref=e201] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/search/posts
+            - text:  Search Posts
+          - link "Search Comments" [ref=e202] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/search/comments
+            - text:  Search Comments
+          - link "Search FM Guides" [ref=e203] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/search/database
+            - text:  Search FM Guides
+          - link "Who to manage?" [ref=e204] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/football-manager-2026/club-search
+            - text:  Who to manage?
+          - link "Search Users" [ref=e205] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/members
+            - text:  Search Users
+          - link "Search Cut Outs" [ref=e206] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/graphics/submissions/1/search
+            - text:  Search Cut Outs
+          - link "Search Backgrounds" [ref=e207] [cursor=pointer]:
+            - /url: https://sortitoutsi.net/graphics/submissions/17/search
+            - text:  Search Backgrounds
+          - link "fmref.com ID Lookups" [ref=e208] [cursor=pointer]:
+            - /url: https://fmref.com
+            - text:  fmref.com ID Lookups
+      - navigation "breadcrumb" [ref=e211]:
+        - list [ref=e212]:
+          - listitem [ref=e213]:
+            - link "Home" [ref=e214] [cursor=pointer]:
+              - /url: https://sortitoutsi.net
+          - listitem [ref=e215]:
+            - link "Downloads" [ref=e216] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/downloads
+          - listitem [ref=e217]:
+            - link "FM24 Downloads" [ref=e218] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager-2024-downloads
+          - listitem [ref=e219]:
+            - link "Forums" [ref=e220] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/forums
+          - listitem [ref=e221]:
+            - link "Football Manager Databases - Editor Data Files" [ref=e222] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/forums/23/editor-data-files-discussion
+          - listitem [ref=e223]: FM24.3 Japan Database Fix - 1708 New Players - 4560 Records Added - Working AFC Champions League
+      - generic [ref=e224]:
+        - generic [ref=e225]:
+          - heading "FM24.3 Japan Database Fix - 1708 New Players - 4560 Records Added - Working AFC Champions League" [level=1] [ref=e227]:
+            - link "FM24.3 Japan Database Fix - 1708 New Players - 4560 Records Added - Working AFC Champions League" [ref=e228] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/content/65860/fm243-japan-database-fix-1708-new-players-4560-records-added-working-afc-champions-league
+              - img [ref=e229]: 
+              - text: FM24.3 Japan Database Fix - 1708 New Players - 4560 Records Added - Working AFC Champions League
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic "54755 Views" [ref=e233]:
+                - generic "54755 Views" [ref=e234]:
+                  - img [ref=e235]: 
+                  - text: 54,755
+              - generic "27 Comments" [ref=e237]:
+                - generic "27 Comments" [ref=e238]:
+                  - img [ref=e239]: 
+                  - text: "27"
+              - generic "32348 Downloads" [ref=e241]:
+                - generic "32348 Downloads" [ref=e242]:
+                  - img [ref=e243]: 
+                  - text: 32,348
+            - link "FM24 Real Leagues" [ref=e245] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/content?game=15&sub_type=real_league
+            - generic [ref=e246]:
+              - button "FM24" [ref=e247] [cursor=pointer]
+              - text:      
+            - generic [ref=e248]:
+              - button [ref=e249] [cursor=pointer]:
+                - img [ref=e250]: 
+              - text:    
+        - generic [ref=e252]:
+          - generic [ref=e255]:
+            - paragraph [ref=e256]: These files will update the Japanese leagues in FM24.3 by adding many players that are missing due to license restrictions. It will also fix the AFC Champions League.
+            - paragraph [ref=e257]
+            - paragraph [ref=e258]:
+              - text: You will need to combine it with the
+              - link "Real Name Fix" [ref=e259] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/content/63651/fm24-real-name-fix
+              - text: otherwise some teams will be missing and some players will have fake names.
+            - paragraph [ref=e260]
+            - paragraph [ref=e261]: Also available for download are relevant graphics including player faces, kits, balls and stadium backgrounds.
+            - paragraph [ref=e262]
+            - paragraph [ref=e263]:
+              - text: Credit and special thanks should go to AzamiNene and the
+              - link "Football Manager Japan Discord" [ref=e264] [cursor=pointer]:
+                - /url: https://discord.gg/kDDq7Ka3G7
+              - text: for all their hard work.
+            - paragraph [ref=e265]
+            - heading "Installation Instructions" [level=1] [ref=e266]
+            - paragraph [ref=e267]: (1) Unzip each of the zips you have downloaded.
+            - paragraph [ref=e268]:
+              - text: (2) Move the three .fmf files in the “Japan Database Fix” folder to the following location.
+              - strong [ref=e269]: "Windows:"
+              - text: Documents/Sports Interactive/Football Manager 2024/editor data
+            - paragraph [ref=e270]:
+              - strong [ref=e271]: Mac
+              - text: /Users/<yourname>/Library/Application Support/Sports Interactive/Football Manager 2024/editor data
+            - paragraph [ref=e272]
+            - paragraph [ref=e273]: "(3) Move the following four folders:"
+            - paragraph [ref=e274]
+            - list [ref=e275]:
+              - listitem [ref=e276]: sortitoutsi Japan Backgrounds
+              - listitem [ref=e277]: sortitoutsi Japan Balls
+              - listitem [ref=e278]: sortitoutsi Japan Facepack
+              - listitem [ref=e279]: sortitoutsi Japan Kits
+            - paragraph [ref=e280]
+            - paragraph [ref=e281]: "to the following location:"
+            - paragraph [ref=e282]
+            - paragraph [ref=e283]:
+              - strong [ref=e284]: "Windows:"
+              - text: Documents/Sports Interactive/Football Manager 2024/graphics
+            - paragraph [ref=e285]:
+              - strong [ref=e286]: Mac
+              - text: /Users/<yourname>/Library/Application Support/Sports Interactive/Football Manager 2024/graphics
+            - paragraph [ref=e287]
+            - paragraph [ref=e288]:
+              - text: For a more detailed guide including screenshots check out our two installation guides “
+              - link "How to install an FM24 Database" [ref=e289] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/installation-instructions/4/how-to-install-fmf-and-xml-editor-data-files-in-football-manager
+              - text: ” and “
+              - link "How to install FM24 Graphics" [ref=e290] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/installation-instructions/1/how-to-install-football-manager-graphics
+              - text: ”
+          - generic [ref=e293]:
+            - generic [ref=e295]:
+              - heading "Footygamer" [level=6] [ref=e296]:
+                - link "Footygamer" [ref=e297] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/user/profile/40
+                  - strong [ref=e298]:
+                    - img [ref=e299]: 
+                    - text: Footygamer
+              - generic [ref=e301]:
+                - img [ref=e302]
+                - generic [ref=e303]:
+                  - img [ref=e304]: 
+                  - text: 20 years ago
+                - generic [ref=e306]:
+                  - img [ref=e307]: 
+                  - text: 5 months ago
+                - generic [ref=e309]:
+                  - img [ref=e310]: 
+                  - text: 981,683
+              - button "Staff" [disabled] [ref=e312]:
+                - img [ref=e313]: 
+                - text: Staff
+            - generic [ref=e316]:
+              - separator [ref=e317]
+              - heading "Download" [level=4] [ref=e318]
+              - list [ref=e319]:
+                - listitem [ref=e320]:
+                  - link "572.69 KiB - 2024-05-22 Japan Database Fix sortitoutsi.zip" [ref=e321] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/media/3186174/download
+                    - img [ref=e323]: 
+                    - generic [ref=e325]:
+                      - text: 572.69 KiB - 2024-05-22
+                      - heading "Japan Database Fix sortitoutsi.zip" [level=6] [ref=e326]
+                - listitem [ref=e327]:
+                  - link "3.49 MiB - 2024-05-22 Japan Facepack sortitoutsi.zip" [ref=e328] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/media/3186175/download
+                    - img [ref=e330]: 
+                    - generic [ref=e332]:
+                      - text: 3.49 MiB - 2024-05-22
+                      - heading "Japan Facepack sortitoutsi.zip" [level=6] [ref=e333]
+                - listitem [ref=e334]:
+                  - link "86.96 MiB - 2024-05-22 Japan Kits sortitoutsi.zip" [ref=e335] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/media/3186176/download
+                    - img [ref=e337]: 
+                    - generic [ref=e339]:
+                      - text: 86.96 MiB - 2024-05-22
+                      - heading "Japan Kits sortitoutsi.zip" [level=6] [ref=e340]
+                - listitem [ref=e341]:
+                  - link "189.47 MiB - 2024-05-22 Japan Backgrounds sortitoutsi.zip" [ref=e342] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/media/3186177/download
+                    - img [ref=e344]: 
+                    - generic [ref=e346]:
+                      - text: 189.47 MiB - 2024-05-22
+                      - heading "Japan Backgrounds sortitoutsi.zip" [level=6] [ref=e347]
+                - listitem [ref=e348]:
+                  - link "31.62 MiB - 2024-05-22 Japan Balls sortitoutsi.zip" [ref=e349] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/media/3186178/download
+                    - img [ref=e351]: 
+                    - generic [ref=e353]:
+                      - text: 31.62 MiB - 2024-05-22
+                      - heading "Japan Balls sortitoutsi.zip" [level=6] [ref=e354]
+            - generic [ref=e357]:
+              - term [ref=e358]: Date Created
+              - definition [ref=e359]: 22 May 2024 23:15:05
+              - term [ref=e360]: Date Updated
+              - definition [ref=e361]: 22 May 2024 23:15:07
+              - term [ref=e362]: Last Comment
+              - definition [ref=e363]: 28 Mar 2026 22:53:57
+              - term [ref=e364]: You Last Downloaded
+              - definition [ref=e365]: 23 May 2024 15:39:33
+        - generic [ref=e366]:
+          - heading "Comments" [level=6] [ref=e368]:
+            - img [ref=e369]: 
+            - text: Comments
+          - navigation [ref=e372]:
+            - generic [ref=e374]:
+              - button [ref=e375] [cursor=pointer]:
+                - img [ref=e376]: 
+              - text:    
+          - generic [ref=e378]:
+            - generic [ref=e379]:
+              - generic [ref=e380]:
+                - heading "Tomasz Tomasz" [level=6] [ref=e381]:
+                  - link "Tomasz Tomasz" [ref=e382] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/849914
+                    - strong [ref=e383]:
+                      - img [ref=e384]: 
+                      - text: Tomasz Tomasz
+                - generic [ref=e386]:
+                  - generic [ref=e387]:
+                    - img [ref=e388]: 
+                    - text: 10 years ago
+                  - generic [ref=e390]:
+                    - img [ref=e391]: 
+                    - text: 2 hours ago
+                  - generic [ref=e393]:
+                    - img [ref=e394]: 
+                    - text: 12,692
+              - generic [ref=e396]:
+                - link "23 May 2024 00:56:50" [ref=e398] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/783327
+                - generic [ref=e399]:
+                  - paragraph [ref=e400]: Why do the photos have different dimensions?
+                  - paragraph [ref=e401]
+                  - figure [ref=e402]:
+                    - img "ikona Zweryfikowane przez społeczność" [ref=e404]
+                  - paragraph [ref=e405]
+                  - paragraph [ref=e406]
+                - navigation [ref=e408]:
+                  - link "Thanks 1" [ref=e409] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/783327
+                    - img [ref=e410]: 
+                    - text: Thanks
+                    - generic [ref=e412]: "1"
+                  - link "Reply" [ref=e413] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/783327
+                    - img [ref=e414]: 
+                    - text: Reply
+            - generic [ref=e416]:
+              - generic [ref=e417]:
+                - heading "Day Tripper" [level=6] [ref=e418]:
+                  - link "Day Tripper" [ref=e419] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/255451
+                    - strong [ref=e420]:
+                      - img [ref=e421]: 
+                      - text: Day Tripper
+                - generic [ref=e423]:
+                  - generic [ref=e424]:
+                    - img [ref=e425]: 
+                    - text: 15 years ago
+                  - generic [ref=e427]:
+                    - img [ref=e428]: 
+                    - text: 3 months ago
+                  - generic [ref=e430]:
+                    - img [ref=e431]: 
+                    - text: "610"
+                - link "Premium" [ref=e433] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/shop/product/6/premium-membership
+                  - img [ref=e434]: 
+                  - text: Premium
+              - generic [ref=e436]:
+                - link "26 May 2024 13:05:01" [ref=e438] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/783780
+                - generic [ref=e439]:
+                  - paragraph [ref=e440]: Is this file a replacement for or update for the below pictured file?
+                  - figure [ref=e441]:
+                    - img [ref=e443]
+                - navigation [ref=e445]:
+                  - link "Thanks" [ref=e446] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/783780
+                    - img [ref=e447]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e449] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/783780
+                    - img [ref=e450]: 
+                    - text: Reply
+            - generic [ref=e452]:
+              - generic [ref=e453]:
+                - heading "bosco8179" [level=6] [ref=e454]:
+                  - link "bosco8179" [ref=e455] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/1006383
+                    - strong [ref=e456]:
+                      - img [ref=e457]: 
+                      - text: bosco8179
+                - generic [ref=e459]:
+                  - generic [ref=e460]:
+                    - img [ref=e461]: 
+                    - text: 8 years ago
+                  - generic [ref=e463]:
+                    - img [ref=e464]: 
+                    - text: 10 hours ago
+                  - generic [ref=e466]:
+                    - img [ref=e467]: 
+                    - text: "21"
+                - link "Premium" [ref=e469] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/shop/product/6/premium-membership
+                  - img [ref=e470]: 
+                  - text: Premium
+                - link "1 Warning" [ref=e474] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/user-warnings/user/1006383
+                  - img [ref=e475]: 
+                  - text: 1 Warning
+              - generic [ref=e477]:
+                - link "26 May 2024 18:49:28" [ref=e479] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/783806
+                - paragraph [ref=e481]: what do you mean by fixing the afc champions league
+                - navigation [ref=e483]:
+                  - link "Thanks" [ref=e484] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/783806
+                    - img [ref=e485]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e487] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/783806
+                    - img [ref=e488]: 
+                    - text: Reply
+            - generic [ref=e490]:
+              - generic [ref=e491]:
+                - heading "Footygamer" [level=6] [ref=e492]:
+                  - link "Footygamer" [ref=e493] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/40
+                    - strong [ref=e494]:
+                      - img [ref=e495]: 
+                      - text: Footygamer
+                - generic [ref=e497]:
+                  - img [ref=e498]
+                  - generic [ref=e499]:
+                    - img [ref=e500]: 
+                    - text: 20 years ago
+                  - generic [ref=e502]:
+                    - img [ref=e503]: 
+                    - text: 5 months ago
+                  - generic [ref=e505]:
+                    - img [ref=e506]: 
+                    - text: 981,683
+                - button "Staff" [disabled] [ref=e508]:
+                  - img [ref=e509]: 
+                  - text: Staff
+              - generic [ref=e511]:
+                - link "06 Jun 2024 08:58:47" [ref=e513] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/784878
+                - generic [ref=e514]:
+                  - generic [ref=e515]:
+                    - generic [ref=e516]:
+                      - text: By
+                      - link "Day Tripper" [ref=e517] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/user/profile/255451
+                      - link "26 May 2024 - 20:05 PM UTC" [ref=e518] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/comments/get/783780
+                    - blockquote [ref=e519]:
+                      - paragraph [ref=e520]: Is this file a replacement for or update for the below pictured file?
+                      - figure [ref=e521]:
+                        - img [ref=e523]
+                  - paragraph [ref=e524]
+                  - paragraph [ref=e525]: Remove that file 🙂
+                - navigation [ref=e527]:
+                  - link "Thanks 3" [ref=e528] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/784878
+                    - img [ref=e529]: 
+                    - text: Thanks
+                    - generic [ref=e531]: "3"
+                  - link "Reply" [ref=e532] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/784878
+                    - img [ref=e533]: 
+                    - text: Reply
+            - generic [ref=e535]:
+              - generic [ref=e536]:
+                - heading "Jezzabythesea" [level=6] [ref=e537]:
+                  - link "Jezzabythesea" [ref=e538] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/560147
+                    - strong [ref=e539]:
+                      - img [ref=e540]: 
+                      - text: Jezzabythesea
+                - generic [ref=e542]:
+                  - img [ref=e543]
+                  - generic [ref=e544]:
+                    - img [ref=e545]: 
+                    - text: 12 years ago
+                  - generic [ref=e547]:
+                    - img [ref=e548]: 
+                    - text: 5 months ago
+                  - generic [ref=e550]:
+                    - img [ref=e551]: 
+                    - text: "2"
+                - link "Premium" [ref=e553] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/shop/product/6/premium-membership
+                  - img [ref=e554]: 
+                  - text: Premium
+              - generic [ref=e556]:
+                - link "07 Jun 2024 03:39:08" [ref=e558] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/784941
+                - paragraph [ref=e560]: Does the face pack just go in your faces folder under graphics?
+                - navigation [ref=e562]:
+                  - link "Thanks" [ref=e563] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/784941
+                    - img [ref=e564]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e566] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/784941
+                    - img [ref=e567]: 
+                    - text: Reply
+            - generic [ref=e569]:
+              - generic [ref=e570]:
+                - heading "Footygamer" [level=6] [ref=e571]:
+                  - link "Footygamer" [ref=e572] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/40
+                    - strong [ref=e573]:
+                      - img [ref=e574]: 
+                      - text: Footygamer
+                - generic [ref=e576]:
+                  - img [ref=e577]
+                  - generic [ref=e578]:
+                    - img [ref=e579]: 
+                    - text: 20 years ago
+                  - generic [ref=e581]:
+                    - img [ref=e582]: 
+                    - text: 5 months ago
+                  - generic [ref=e584]:
+                    - img [ref=e585]: 
+                    - text: 981,683
+                - button "Staff" [disabled] [ref=e587]:
+                  - img [ref=e588]: 
+                  - text: Staff
+              - generic [ref=e590]:
+                - link "07 Jun 2024 04:07:21" [ref=e592] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/784944
+                - paragraph [ref=e594]:
+                  - text: Yeah check our general guide for
+                  - link "installing graphics in Football Manager" [ref=e595] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/installation-instructions/1/how-to-install-football-manager-graphics
+                  - text: ", this is already linked to at the bottom of the main post"
+                - navigation [ref=e597]:
+                  - link "Thanks" [ref=e598] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/784944
+                    - img [ref=e599]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e601] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/784944
+                    - img [ref=e602]: 
+                    - text: Reply
+            - generic [ref=e604]:
+              - generic [ref=e605]:
+                - heading "Asif Rudnick" [level=6] [ref=e606]:
+                  - link "Asif Rudnick" [ref=e607] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/2315789
+                    - strong [ref=e608]:
+                      - img [ref=e609]: 
+                      - text: Asif Rudnick
+                - generic [ref=e611]:
+                  - generic [ref=e612]:
+                    - img [ref=e613]: 
+                    - text: 2 years ago
+                  - generic [ref=e615]:
+                    - img [ref=e616]: 
+                    - text: 5 months ago
+                  - generic [ref=e618]:
+                    - img [ref=e619]: 
+                    - text: "2"
+              - generic [ref=e621]:
+                - link "07 Jun 2024 07:22:26" [ref=e623] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/784958
+                - paragraph [ref=e625]: I have a red triangle when I choose which leagues will be in the database on Japan. It says a lot of lower teams are missing or something like that
+                - navigation [ref=e627]:
+                  - link "Thanks" [ref=e628] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/784958
+                    - img [ref=e629]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e631] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/784958
+                    - img [ref=e632]: 
+                    - text: Reply
+            - generic [ref=e634]:
+              - generic [ref=e635]:
+                - heading "Footygamer" [level=6] [ref=e636]:
+                  - link "Footygamer" [ref=e637] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/40
+                    - strong [ref=e638]:
+                      - img [ref=e639]: 
+                      - text: Footygamer
+                - generic [ref=e641]:
+                  - img [ref=e642]
+                  - generic [ref=e643]:
+                    - img [ref=e644]: 
+                    - text: 20 years ago
+                  - generic [ref=e646]:
+                    - img [ref=e647]: 
+                    - text: 5 months ago
+                  - generic [ref=e649]:
+                    - img [ref=e650]: 
+                    - text: 981,683
+                - button "Staff" [disabled] [ref=e652]:
+                  - img [ref=e653]: 
+                  - text: Staff
+              - generic [ref=e655]:
+                - link "07 Jun 2024 08:13:30" [ref=e657] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/784962
+                - paragraph [ref=e659]: Can you screenshot? Just saying “or something like that” isn't very helpful and it's usually a good idea to make life as easy as possible for those trying to help you.
+                - navigation [ref=e661]:
+                  - link "Thanks" [ref=e662] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/784962
+                    - img [ref=e663]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e665] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/784962
+                    - img [ref=e666]: 
+                    - text: Reply
+            - generic [ref=e668]:
+              - generic [ref=e669]:
+                - heading "Asif Rudnick" [level=6] [ref=e670]:
+                  - link "Asif Rudnick" [ref=e671] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/2315789
+                    - strong [ref=e672]:
+                      - img [ref=e673]: 
+                      - text: Asif Rudnick
+                - generic [ref=e675]:
+                  - generic [ref=e676]:
+                    - img [ref=e677]: 
+                    - text: 2 years ago
+                  - generic [ref=e679]:
+                    - img [ref=e680]: 
+                    - text: 5 months ago
+                  - generic [ref=e682]:
+                    - img [ref=e683]: 
+                    - text: "2"
+              - generic [ref=e685]:
+                - link "07 Jun 2024 22:46:30" [ref=e687] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/785014
+                - figure [ref=e689]:
+                  - img [ref=e691]
+                - navigation [ref=e693]:
+                  - link "Thanks" [ref=e694] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/785014
+                    - img [ref=e695]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e697] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/785014
+                    - img [ref=e698]: 
+                    - text: Reply
+            - generic [ref=e700]:
+              - generic [ref=e701]:
+                - heading "jnrironside" [level=6] [ref=e702]:
+                  - link "jnrironside" [ref=e703] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/112493
+                    - strong [ref=e704]:
+                      - img [ref=e705]: 
+                      - text: jnrironside
+                - generic [ref=e707]:
+                  - img [ref=e708]
+                  - generic [ref=e709]:
+                    - img [ref=e710]: 
+                    - text: 18 years ago
+                  - generic [ref=e712]:
+                    - img [ref=e713]: 
+                    - text: 2 weeks ago
+                  - generic [ref=e715]:
+                    - img [ref=e716]: 
+                    - text: "18"
+              - generic [ref=e718]:
+                - link "09 Jun 2024 01:28:30" [ref=e720] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/785151
+                - generic [ref=e721]:
+                  - generic [ref=e722]:
+                    - generic [ref=e723]:
+                      - text: By
+                      - link "Asif Rudnick" [ref=e724] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/user/profile/2315789
+                      - link "08 June 2024 - 05:46 AM UTC" [ref=e725] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/comments/get/785014
+                    - blockquote [ref=e726]:
+                      - figure [ref=e727]:
+                        - img [ref=e729]
+                  - paragraph [ref=e730]
+                  - paragraph [ref=e731]: Have exactly the same issue. Only have the editor files for this and the sortitousi real name fix activated!
+                - navigation [ref=e733]:
+                  - link "Thanks" [ref=e734] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/785151
+                    - img [ref=e735]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e737] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/785151
+                    - img [ref=e738]: 
+                    - text: Reply
+            - generic [ref=e740]:
+              - generic [ref=e741]:
+                - heading "Footygamer" [level=6] [ref=e742]:
+                  - link "Footygamer" [ref=e743] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/40
+                    - strong [ref=e744]:
+                      - img [ref=e745]: 
+                      - text: Footygamer
+                - generic [ref=e747]:
+                  - img [ref=e748]
+                  - generic [ref=e749]:
+                    - img [ref=e750]: 
+                    - text: 20 years ago
+                  - generic [ref=e752]:
+                    - img [ref=e753]: 
+                    - text: 5 months ago
+                  - generic [ref=e755]:
+                    - img [ref=e756]: 
+                    - text: 981,683
+                - button "Staff" [disabled] [ref=e758]:
+                  - img [ref=e759]: 
+                  - text: Staff
+              - generic [ref=e761]:
+                - link "09 Jun 2024 09:03:49" [ref=e763] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/785289
+                - generic [ref=e764]:
+                  - paragraph [ref=e765]: I think this is because you haven't installed the real name fix properly, there are dbc/edt files you need to remove. Sometimes the game puts these back when there's an update so you might need to remove them again.
+                  - paragraph [ref=e766]
+                  - paragraph [ref=e767]:
+                    - link "@Asif Rudnick" [ref=e768] [cursor=pointer]:
+                      - /url: https://sortitoutsi.net/user/profile/2315789
+                    - link "@jnrironside" [ref=e769] [cursor=pointer]:
+                      - /url: https://sortitoutsi.net/user/profile/112493
+                - navigation [ref=e771]:
+                  - link "Thanks" [ref=e772] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/785289
+                    - img [ref=e773]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e775] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/785289
+                    - img [ref=e776]: 
+                    - text: Reply
+            - generic [ref=e778]:
+              - generic [ref=e779]:
+                - heading "jnrironside" [level=6] [ref=e780]:
+                  - link "jnrironside" [ref=e781] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/112493
+                    - strong [ref=e782]:
+                      - img [ref=e783]: 
+                      - text: jnrironside
+                - generic [ref=e785]:
+                  - img [ref=e786]
+                  - generic [ref=e787]:
+                    - img [ref=e788]: 
+                    - text: 18 years ago
+                  - generic [ref=e790]:
+                    - img [ref=e791]: 
+                    - text: 2 weeks ago
+                  - generic [ref=e793]:
+                    - img [ref=e794]: 
+                    - text: "18"
+              - generic [ref=e796]:
+                - link "09 Jun 2024 09:20:45" [ref=e798] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/785294
+                - generic [ref=e799]:
+                  - generic [ref=e800]:
+                    - generic [ref=e801]:
+                      - text: By
+                      - link "Footygamer" [ref=e802] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/user/profile/40
+                      - link "09 June 2024 - 16:03 PM UTC" [ref=e803] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/comments/get/785289
+                    - blockquote [ref=e804]:
+                      - paragraph [ref=e805]: I think this is because you haven't installed the real name fix properly, there are dbc/edt files you need to remove. Sometimes the game puts these back when there's an update so you might need to remove them again.
+                      - paragraph [ref=e806]
+                      - paragraph [ref=e807]:
+                        - link "@Asif Rudnick" [ref=e808] [cursor=pointer]:
+                          - /url: https://sortitoutsi.net/user/profile/2315789
+                        - link "@jnrironside" [ref=e809] [cursor=pointer]:
+                          - /url: https://sortitoutsi.net/user/profile/112493
+                  - paragraph [ref=e810]
+                  - paragraph [ref=e811]:
+                    - text: Thanks
+                    - link "@Footygamer" [ref=e812] [cursor=pointer]:
+                      - /url: https://sortitoutsi.net/user/profile/40
+                    - text: a complete/fresh reinstall of the real name fix, has it working!
+                - navigation [ref=e814]:
+                  - link "Thanks" [ref=e815] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/785294
+                    - img [ref=e816]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e818] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/785294
+                    - img [ref=e819]: 
+                    - text: Reply
+            - generic [ref=e821]:
+              - generic [ref=e822]:
+                - heading "Charles van Nes" [level=6] [ref=e823]:
+                  - link "Charles van Nes" [ref=e824] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/2036600
+                    - strong [ref=e825]:
+                      - img [ref=e826]: 
+                      - text: Charles van Nes
+                - generic [ref=e828]:
+                  - generic [ref=e829]:
+                    - img [ref=e830]: 
+                    - text: 3 years ago
+                  - generic [ref=e832]:
+                    - img [ref=e833]: 
+                    - text: 2 months ago
+                  - generic [ref=e835]:
+                    - img [ref=e836]: 
+                    - text: "60"
+              - generic [ref=e838]:
+                - link "09 Jun 2024 16:26:58" [ref=e840] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/785361
+                - generic [ref=e841]:
+                  - paragraph [ref=e842]: "Awesome work! Everything working but only this:"
+                  - paragraph [ref=e843]: I see the facepic for Naoki Yoshikawa but none for Tomoyo Sawa!
+                - navigation [ref=e845]:
+                  - link "Thanks" [ref=e846] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/785361
+                    - img [ref=e847]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e849] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/785361
+                    - img [ref=e850]: 
+                    - text: Reply
+            - generic [ref=e852]:
+              - generic [ref=e853]:
+                - heading "Oskargustus" [level=6] [ref=e854]:
+                  - link "Oskargustus" [ref=e855] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/1298430
+                    - strong [ref=e856]:
+                      - img [ref=e857]: 
+                      - text: Oskargustus
+                - generic [ref=e859]:
+                  - generic [ref=e860]:
+                    - img [ref=e861]: 
+                    - text: 6 years ago
+                  - generic [ref=e863]:
+                    - img [ref=e864]: 
+                    - text: 7 months ago
+                  - generic [ref=e866]:
+                    - img [ref=e867]: 
+                    - text: "2"
+              - generic [ref=e869]:
+                - link "30 Jun 2024 04:35:53" [ref=e871] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/787224
+                - paragraph [ref=e873]: After using these database fixes, most European scouts now have 'very good' knowledge of Japan. A bit immersion breaking when my random lower tier Latvian or Slovakian scout have knowledge in a country they've never been in. After opening up the v1.5.fmf file it seems you've added Japan with partial knowledge into half of the nations in the world. Just why?
+                - navigation [ref=e875]:
+                  - link "Thanks" [ref=e876] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/787224
+                    - img [ref=e877]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e879] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/787224
+                    - img [ref=e880]: 
+                    - text: Reply
+            - generic [ref=e882]:
+              - generic [ref=e883]:
+                - heading "Oskargustus" [level=6] [ref=e884]:
+                  - link "Oskargustus" [ref=e885] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/1298430
+                    - strong [ref=e886]:
+                      - img [ref=e887]: 
+                      - text: Oskargustus
+                - generic [ref=e889]:
+                  - generic [ref=e890]:
+                    - img [ref=e891]: 
+                    - text: 6 years ago
+                  - generic [ref=e893]:
+                    - img [ref=e894]: 
+                    - text: 7 months ago
+                  - generic [ref=e896]:
+                    - img [ref=e897]: 
+                    - text: "2"
+              - generic [ref=e899]:
+                - link "04 Jul 2024 08:46:59" [ref=e901] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/787605
+                - paragraph [ref=e903]: Also Japanese Football League's (4th Divison) rules fail with the latest database.
+                - navigation [ref=e905]:
+                  - link "Thanks" [ref=e906] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/787605
+                    - img [ref=e907]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e909] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/787605
+                    - img [ref=e910]: 
+                    - text: Reply
+            - generic [ref=e912]:
+              - generic [ref=e913]:
+                - heading "Mohayad Mmd" [level=6] [ref=e914]:
+                  - link "Mohayad Mmd" [ref=e915] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/1834680
+                    - strong [ref=e916]:
+                      - img [ref=e917]: 
+                      - text: Mohayad Mmd
+                - generic [ref=e919]:
+                  - generic [ref=e920]:
+                    - img [ref=e921]: 
+                    - text: 4 years ago
+                  - generic [ref=e923]:
+                    - img [ref=e924]: 
+                    - text: 3 days ago
+                  - generic [ref=e926]:
+                    - img [ref=e927]: 
+                    - text: "1"
+              - generic [ref=e929]:
+                - link "01 Aug 2024 14:04:35" [ref=e931] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/790116
+                - generic [ref=e932]:
+                  - generic [ref=e933]:
+                    - generic [ref=e934]:
+                      - text: By
+                      - link "jnrironside" [ref=e935] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/user/profile/112493
+                      - link "09 June 2024 - 16:20 PM UTC" [ref=e936] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/comments/get/785294
+                    - blockquote [ref=e937]:
+                      - paragraph [ref=e938]:
+                        - text: Thanks
+                        - link "@Footygamer" [ref=e939] [cursor=pointer]:
+                          - /url: https://sortitoutsi.net/user/profile/40
+                        - text: a complete/fresh reinstall of the real name fix, has it working!
+                  - paragraph [ref=e940]: how did you do it ?
+                  - paragraph [ref=e941]
+                  - paragraph [ref=e942]
+                - navigation [ref=e944]:
+                  - link "Thanks" [ref=e945] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/790116
+                    - img [ref=e946]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e948] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/790116
+                    - img [ref=e949]: 
+                    - text: Reply
+            - generic [ref=e951]:
+              - generic [ref=e952]:
+                - heading "jnrironside" [level=6] [ref=e953]:
+                  - link "jnrironside" [ref=e954] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/112493
+                    - strong [ref=e955]:
+                      - img [ref=e956]: 
+                      - text: jnrironside
+                - generic [ref=e958]:
+                  - img [ref=e959]
+                  - generic [ref=e960]:
+                    - img [ref=e961]: 
+                    - text: 18 years ago
+                  - generic [ref=e963]:
+                    - img [ref=e964]: 
+                    - text: 2 weeks ago
+                  - generic [ref=e966]:
+                    - img [ref=e967]: 
+                    - text: "18"
+              - generic [ref=e969]:
+                - link "02 Aug 2024 02:11:20" [ref=e971] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/790153
+                - generic [ref=e972]:
+                  - generic [ref=e973]:
+                    - generic [ref=e974]:
+                      - text: By
+                      - link "Mohayad Mmd" [ref=e975] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/user/profile/1834680
+                      - link "01 August 2024 - 21:04 PM UTC" [ref=e976] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/comments/get/790116
+                    - blockquote [ref=e977]:
+                      - paragraph [ref=e978]: how did you do it ?
+                  - paragraph [ref=e979]
+                  - paragraph [ref=e980]: When I first installed I only copied the lnc, edt files over there existing ones. once I deleted them and put just the ones from the fix it worked pefectly. Basically I didn't follow the instructions properly!
+                - navigation [ref=e982]:
+                  - link "Thanks" [ref=e983] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/790153
+                    - img [ref=e984]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e986] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/790153
+                    - img [ref=e987]: 
+                    - text: Reply
+            - generic [ref=e989]:
+              - generic [ref=e990]:
+                - heading "Drag01" [level=6] [ref=e991]:
+                  - link "Drag01" [ref=e992] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/893865
+                    - strong [ref=e993]:
+                      - img [ref=e994]: 
+                      - text: Drag01
+                - generic [ref=e996]:
+                  - img [ref=e997]
+                  - generic [ref=e998]:
+                    - img [ref=e999]: 
+                    - text: 9 years ago
+                  - generic [ref=e1001]:
+                    - img [ref=e1002]: 
+                    - text: 8 months ago
+                  - generic [ref=e1004]:
+                    - img [ref=e1005]: 
+                    - text: "68"
+              - generic [ref=e1007]:
+                - link "16 Aug 2024 10:29:42" [ref=e1009] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/791879
+                - generic [ref=e1010]:
+                  - generic [ref=e1011]:
+                    - generic [ref=e1012]:
+                      - text: By
+                      - link "Oskargustus" [ref=e1013] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/user/profile/1298430
+                      - link "30 June 2024 - 11:35 AM UTC" [ref=e1014] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/comments/get/787224
+                    - blockquote [ref=e1015]:
+                      - paragraph [ref=e1016]: After using these database fixes, most European scouts now have 'very good' knowledge of Japan. A bit immersion breaking when my random lower tier Latvian or Slovakian scout have knowledge in a country they've never been in. After opening up the v1.5.fmf file it seems you've added Japan with partial knowledge into half of the nations in the world. Just why?
+                  - paragraph [ref=e1017]
+                  - paragraph [ref=e1018]: I have this problem too, unfortunately I have to restart the save, luckily I realized right at the start of the season.
+                - navigation [ref=e1020]:
+                  - link "Thanks" [ref=e1021] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/791879
+                    - img [ref=e1022]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1024] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/791879
+                    - img [ref=e1025]: 
+                    - text: Reply
+            - generic [ref=e1027]:
+              - generic [ref=e1028]:
+                - heading "arni789" [level=6] [ref=e1029]:
+                  - link "arni789" [ref=e1030] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/271616
+                    - strong [ref=e1031]:
+                      - img [ref=e1032]: 
+                      - text: arni789
+                - generic [ref=e1034]:
+                  - generic [ref=e1035]:
+                    - img [ref=e1036]: 
+                    - text: 15 years ago
+                  - generic [ref=e1038]:
+                    - img [ref=e1039]: 
+                    - text: 1 year ago
+                  - generic [ref=e1041]:
+                    - img [ref=e1042]: 
+                    - text: "1"
+              - generic [ref=e1044]:
+                - link "06 Sep 2024 01:07:38" [ref=e1046] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/794107
+                - generic [ref=e1047]:
+                  - paragraph [ref=e1048]:
+                    - text: Some questions. Is this based on Dosukoi file?
+                    - link "https://community.sports-interactive.com/forums/topic/579558-fm244-japan-league-system-level7-jleague-2024-real-fixtures/" [ref=e1049] [cursor=pointer]:
+                      - /url: https://community.sports-interactive.com/forums/topic/579558-fm244-japan-league-system-level7-jleague-2024-real-fixtures/
+                  - paragraph [ref=e1050]:
+                    - text: What exactly is the AFC Fix? Can I use it in combination with this file
+                    - link "https://www.fmscout.com/c-fm24-leagues.html?id=10477" [ref=e1051] [cursor=pointer]:
+                      - /url: https://www.fmscout.com/c-fm24-leagues.html?id=10477
+                    - text: or are both achieving the same?
+                  - paragraph [ref=e1052]
+                  - paragraph [ref=e1053]
+                - navigation [ref=e1055]:
+                  - link "Thanks" [ref=e1056] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/794107
+                    - img [ref=e1057]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1059] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/794107
+                    - img [ref=e1060]: 
+                    - text: Reply
+            - generic [ref=e1062]:
+              - generic [ref=e1063]:
+                - heading "SidYang7" [level=6] [ref=e1064]:
+                  - link "SidYang7" [ref=e1065] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/511569
+                    - strong [ref=e1066]:
+                      - img [ref=e1067]: 
+                      - text: SidYang7
+                - generic [ref=e1069]:
+                  - generic [ref=e1070]:
+                    - img [ref=e1071]: 
+                    - text: 12 years ago
+                  - generic [ref=e1073]:
+                    - img [ref=e1074]: 
+                    - text: 1 month ago
+                  - generic [ref=e1076]:
+                    - img [ref=e1077]: 
+                    - text: "3"
+              - generic [ref=e1079]:
+                - link "07 Sep 2024 05:37:21" [ref=e1081] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/794351
+                - generic [ref=e1082]:
+                  - generic [ref=e1083]:
+                    - generic [ref=e1084]:
+                      - text: By
+                      - link "Drag01" [ref=e1085] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/user/profile/893865
+                      - link "16 August 2024 - 17:29 PM UTC" [ref=e1086] [cursor=pointer]:
+                        - /url: https://sortitoutsi.net/comments/get/791879
+                    - blockquote [ref=e1087]:
+                      - paragraph [ref=e1088]: I have this problem too, unfortunately I have to restart the save, luckily I realized right at the start of the season.
+                  - paragraph [ref=e1089]
+                  - paragraph [ref=e1090]: Any idea how to fix this? Doesn't make sense for a lot of European scouts having ‘very good’ knowledge.
+                - navigation [ref=e1092]:
+                  - link "Thanks" [ref=e1093] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/794351
+                    - img [ref=e1094]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1096] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/794351
+                    - img [ref=e1097]: 
+                    - text: Reply
+            - generic [ref=e1099]:
+              - generic [ref=e1100]:
+                - heading "uhyeahah" [level=6] [ref=e1101]:
+                  - link "uhyeahah" [ref=e1102] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/2544029
+                    - strong [ref=e1103]:
+                      - img [ref=e1104]: 
+                      - text: uhyeahah
+                - generic [ref=e1106]:
+                  - generic [ref=e1107]:
+                    - img [ref=e1108]: 
+                    - text: 1 year ago
+                  - generic [ref=e1110]:
+                    - img [ref=e1111]: 
+                    - text: 1 year ago
+                  - generic [ref=e1113]:
+                    - img [ref=e1114]: 
+                    - text: "1"
+              - generic [ref=e1116]:
+                - link "07 Sep 2024 08:54:53" [ref=e1118] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/794379
+                - paragraph [ref=e1120]: I'm using FC12 and TCM, how does this Japan pack work with those packs? Any conflicts?
+                - navigation [ref=e1122]:
+                  - link "Thanks" [ref=e1123] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/794379
+                    - img [ref=e1124]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1126] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/794379
+                    - img [ref=e1127]: 
+                    - text: Reply
+            - generic [ref=e1129]:
+              - generic [ref=e1130]:
+                - heading "Jorgen" [level=6] [ref=e1131]:
+                  - link "Jorgen" [ref=e1132] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/474
+                    - strong [ref=e1133]:
+                      - img [ref=e1134]: 
+                      - text: Jorgen
+                - generic [ref=e1136]:
+                  - generic [ref=e1137]:
+                    - img [ref=e1138]: 
+                    - text: 20 years ago
+                  - generic [ref=e1140]:
+                    - img [ref=e1141]: 
+                    - text: 4 days ago
+                  - generic [ref=e1143]:
+                    - img [ref=e1144]: 
+                    - text: "135"
+              - generic [ref=e1146]:
+                - link "05 Dec 2024 09:22:27" [ref=e1148] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/804259
+                - generic [ref=e1149]:
+                  - paragraph [ref=e1150]: What are the AFC Champions League fix and the other 2 files exactly doing?
+                  - paragraph [ref=e1151]
+                  - paragraph [ref=e1152]: I would like to start a new savegame, if possible with the new AFC continental competitions like the Champions League Elite.
+                - navigation [ref=e1154]:
+                  - link "Thanks" [ref=e1155] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/804259
+                    - img [ref=e1156]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1158] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/804259
+                    - img [ref=e1159]: 
+                    - text: Reply
+            - generic [ref=e1161]:
+              - generic [ref=e1162]:
+                - heading "Footygamer" [level=6] [ref=e1163]:
+                  - link "Footygamer" [ref=e1164] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/40
+                    - strong [ref=e1165]:
+                      - img [ref=e1166]: 
+                      - text: Footygamer
+                - generic [ref=e1168]:
+                  - img [ref=e1169]
+                  - generic [ref=e1170]:
+                    - img [ref=e1171]: 
+                    - text: 20 years ago
+                  - generic [ref=e1173]:
+                    - img [ref=e1174]: 
+                    - text: 5 months ago
+                  - generic [ref=e1176]:
+                    - img [ref=e1177]: 
+                    - text: 981,683
+                - button "Staff" [disabled] [ref=e1179]:
+                  - img [ref=e1180]: 
+                  - text: Staff
+              - generic [ref=e1182]:
+                - link "06 Dec 2024 01:28:07" [ref=e1184] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/804353
+                - generic [ref=e1185]:
+                  - paragraph [ref=e1186]: To fix the AFC Champions League you want to use Master Igor's file here
+                  - paragraph [ref=e1187]
+                  - paragraph [ref=e1188]:
+                    - link "Download link" [ref=e1189] [cursor=pointer]:
+                      - /url: https://www.mediafire.com/file/ky2m7uz30rtedkj/AFC_v24.10.zip/file
+                  - paragraph [ref=e1190]:
+                    - link "Readme link" [ref=e1191] [cursor=pointer]:
+                      - /url: https://master1gor.github.io/FMSites/FM24/AFC/readme.html
+                - navigation [ref=e1193]:
+                  - link "Thanks" [ref=e1194] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/804353
+                    - img [ref=e1195]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1197] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/804353
+                    - img [ref=e1198]: 
+                    - text: Reply
+            - generic [ref=e1200]:
+              - generic [ref=e1201]:
+                - heading "Jorgen" [level=6] [ref=e1202]:
+                  - link "Jorgen" [ref=e1203] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/474
+                    - strong [ref=e1204]:
+                      - img [ref=e1205]: 
+                      - text: Jorgen
+                - generic [ref=e1207]:
+                  - generic [ref=e1208]:
+                    - img [ref=e1209]: 
+                    - text: 20 years ago
+                  - generic [ref=e1211]:
+                    - img [ref=e1212]: 
+                    - text: 4 days ago
+                  - generic [ref=e1214]:
+                    - img [ref=e1215]: 
+                    - text: "135"
+              - generic [ref=e1217]:
+                - link "07 Dec 2024 17:11:41" [ref=e1219] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/804503
+                - generic [ref=e1220]:
+                  - paragraph [ref=e1221]:
+                    - link "@Footygamer" [ref=e1222] [cursor=pointer]:
+                      - /url: https://sortitoutsi.net/user/profile/40
+                    - text: So I don't use the file that comes with the Japan fixes, but instead use masterigors AFC.fmf? Is there a special reason for chosing masterigors file above the one that comes with this update?
+                  - paragraph [ref=e1223]
+                  - paragraph [ref=e1224]
+                  - paragraph [ref=e1225]: "Edit: both the Susie and MasterIgor AFC files show the same behaviour: after game setup the AFC competition names are wrong. After reloading the savegame everything works fine."
+                  - paragraph [ref=e1226]
+                  - paragraph [ref=e1227]: "Edit: qualification spots won't show when using the Susie file. Qualification spots do show when using the MasterIgor file. MasterIgor's also have qualification rounds, so his files seem te be better."
+                - navigation [ref=e1229]:
+                  - link "Thanks" [ref=e1230] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/804503
+                    - img [ref=e1231]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1233] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/804503
+                    - img [ref=e1234]: 
+                    - text: Reply
+            - generic [ref=e1236]:
+              - generic [ref=e1237]:
+                - heading "LBOW6" [level=6] [ref=e1238]:
+                  - link "LBOW6" [ref=e1239] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/693214
+                    - strong [ref=e1240]:
+                      - img [ref=e1241]: 
+                      - text: LBOW6
+                - generic [ref=e1243]:
+                  - img [ref=e1244]
+                  - generic [ref=e1245]:
+                    - img [ref=e1246]: 
+                    - text: 11 years ago
+                  - generic [ref=e1248]:
+                    - img [ref=e1249]: 
+                    - text: 5 hours ago
+                  - generic [ref=e1251]:
+                    - img [ref=e1252]: 
+                    - text: 13,362
+              - generic [ref=e1254]:
+                - link "02 Aug 2025 19:51:39" [ref=e1256] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/835481
+                - paragraph [ref=e1258]: I think the 2026 J-League will now start from August. Is there a fix that can be added to this file?
+                - navigation [ref=e1260]:
+                  - link "Thanks 3" [ref=e1261] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/835481
+                    - img [ref=e1262]: 
+                    - text: Thanks
+                    - generic [ref=e1264]: "3"
+                  - link "Reply" [ref=e1265] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/835481
+                    - img [ref=e1266]: 
+                    - text: Reply
+            - generic [ref=e1268]:
+              - generic [ref=e1269]:
+                - heading "Boh Yamada" [level=6] [ref=e1270]:
+                  - link "Boh Yamada" [ref=e1271] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/2925036
+                    - strong [ref=e1272]:
+                      - img [ref=e1273]: 
+                      - text: Boh Yamada
+                - generic [ref=e1275]:
+                  - generic [ref=e1276]:
+                    - img [ref=e1277]: 
+                    - text: 1 year ago
+                  - generic [ref=e1279]:
+                    - img [ref=e1280]: 
+                    - text: 1 month ago
+                  - generic [ref=e1282]:
+                    - img [ref=e1283]: 
+                    - text: "1"
+              - generic [ref=e1285]:
+                - link "26 Mar 2026 02:25:41" [ref=e1287] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/875849
+                - paragraph [ref=e1289]: I know it's a lot of work to create this, but I'm hoping for a port to FM26.
+                - navigation [ref=e1291]:
+                  - link "Thanks" [ref=e1292] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/875849
+                    - img [ref=e1293]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1295] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/875849
+                    - img [ref=e1296]: 
+                    - text: Reply
+            - generic [ref=e1298]:
+              - generic [ref=e1299]:
+                - heading "NetWanderer" [level=6] [ref=e1300]:
+                  - link "NetWanderer" [ref=e1301] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/user/profile/3123092
+                    - strong [ref=e1302]:
+                      - img [ref=e1303]: 
+                      - text: NetWanderer
+                - generic [ref=e1305]:
+                  - generic [ref=e1306]:
+                    - img [ref=e1307]: 
+                    - text: 3 months ago
+                  - generic [ref=e1309]:
+                    - img [ref=e1310]: 
+                    - text: 1 month ago
+                  - generic [ref=e1312]:
+                    - img [ref=e1313]: 
+                    - text: "1"
+              - generic [ref=e1315]:
+                - link "28 Mar 2026 22:53:57" [ref=e1317] [cursor=pointer]:
+                  - /url: https://sortitoutsi.net/comments/get/876194
+                - paragraph [ref=e1319]: For some reason when I played real world mode with the database some players are at two clubs at the same time? Like in Tottori, Kaneura is also playing for Fujieda, which make him ineligible. I noticed this mostly happen to players that listed as transfer to another team in 2024. How can I fix that? I only use real name fix and this database.
+                - navigation [ref=e1321]:
+                  - link "Thanks" [ref=e1322] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/thank/876194
+                    - img [ref=e1323]: 
+                    - text: Thanks
+                  - link "Reply" [ref=e1325] [cursor=pointer]:
+                    - /url: https://sortitoutsi.net/comments/create/content-65860/876194
+                    - img [ref=e1326]: 
+                    - text: Reply
+        - navigation [ref=e1329]:
+          - generic [ref=e1331]:
+            - button [ref=e1332] [cursor=pointer]:
+              - img [ref=e1333]: 
+            - text:    
+        - heading "Reply" [level=6] [ref=e1336]:
+          - img [ref=e1337]: 
+          - text: Reply
+        - generic [ref=e1339]:
+          - generic [ref=e1340]:
+            - generic [ref=e1341]:
+              - generic [ref=e1342]: Comment
+              - application "Rich Text Editor" [ref=e1344]:
+                - toolbar "Editor toolbar" [ref=e1347]:
+                  - generic [ref=e1348]:
+                    - button "Paragraph" [ref=e1350]:
+                      - generic [ref=e1351]: Paragraph
+                      - img
+                    - button "Bold" [ref=e1353]:
+                      - img [ref=e1354]
+                    - button "Italic" [ref=e1356]:
+                      - img [ref=e1357]
+                    - button "Underline" [ref=e1359]:
+                      - img [ref=e1360]
+                    - button "Strikethrough" [ref=e1362]:
+                      - img [ref=e1363]
+                    - button "Font Color" [ref=e1368]:
+                      - img [ref=e1369]
+                      - img
+                    - button "Font Background Color" [ref=e1372]:
+                      - img [ref=e1373]
+                      - img
+                    - button "Link" [ref=e1376]:
+                      - img [ref=e1377]
+                    - button "Block quote" [ref=e1379]:
+                      - img [ref=e1380]
+                    - button "Code" [ref=e1382]:
+                      - img [ref=e1383]
+                    - button "Spoiler" [ref=e1385]:
+                      - generic [ref=e1386]: Spoiler
+                    - button "Bulleted List" [ref=e1388]:
+                      - img [ref=e1389]
+                    - button "Numbered List" [ref=e1391]:
+                      - img [ref=e1392]
+                    - button "Align left" [pressed] [ref=e1395]:
+                      - img [ref=e1396]
+                    - button "Align right" [ref=e1398]:
+                      - img [ref=e1399]
+                    - button "Align center" [ref=e1401]:
+                      - img [ref=e1402]
+                    - button "Justify" [ref=e1404]:
+                      - img [ref=e1405]
+                    - generic [ref=e1409]:
+                      - button "Insert image" [ref=e1411]:
+                        - img [ref=e1412]
+                      - button [ref=e1414]:
+                        - img [ref=e1415]
+                    - button "Insert table" [ref=e1418]:
+                      - img [ref=e1419]
+                      - img
+                    - button "Insert media" [ref=e1422]:
+                      - img [ref=e1423]
+                      - img
+                    - button "Undo" [disabled] [ref=e1426]:
+                      - img [ref=e1427]
+                    - button "Redo" [disabled] [ref=e1429]:
+                      - img [ref=e1430]
+                - textbox "Rich Text Editor, main" [ref=e1432]:
+                  - paragraph [ref=e1433]: Comment
+            - generic [ref=e1434]:
+              - generic [ref=e1435]: Attachments
+              - button "Add Attachment" [ref=e1438] [cursor=pointer]:
+                - img [ref=e1439]: +
+                - text: Add Attachment
+            - button "Post" [ref=e1441] [cursor=pointer]:
+              - img [ref=e1442]: 
+              - text: Post
+            - button "Preview" [ref=e1444] [cursor=pointer]:
+              - img [ref=e1445]: 
+              - text: Preview
+          - generic [ref=e1447]:
+            - text: Any content you submit to the website is bound by our
+            - link "terms and conditions" [ref=e1448] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/upload-terms
+          - text: .
+    - generic [ref=e1450]:
+      - generic [ref=e1451]:
+        - generic [ref=e1452]:
+          - heading "sortitoutsi" [level=5] [ref=e1453]:
+            - link "sortitoutsi" [ref=e1454] [cursor=pointer]:
+              - /url: https://sortitoutsi.net
+          - list [ref=e1455]:
+            - listitem [ref=e1456]:
+              - link "FM26 Forums" [ref=e1457] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/forums
+            - listitem [ref=e1458]:
+              - link "Terms and Conditions" [ref=e1459] [cursor=pointer]:
+                - /url: https://app.termly.io/policy-viewer/policy.html?policyUUID=8e64c665-b4c9-4b13-992b-5781c6da718f
+            - listitem [ref=e1460]:
+              - link "Privacy Policy" [ref=e1461] [cursor=pointer]:
+                - /url: https://app.termly.io/policy-viewer/policy.html?policyUUID=4024188f-b2a1-4bf1-b6c2-6995104356c7
+            - listitem [ref=e1462]:
+              - link "Cookie Policy" [ref=e1463] [cursor=pointer]:
+                - /url: https://app.termly.io/policy-viewer/policy.html?policyUUID=526ff633-4b2e-4e63-aae3-cec1002dc8dc
+            - listitem [ref=e1464]:
+              - link "Consent Preferences" [ref=e1465] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1466]:
+              - link "Data Removal Request" [ref=e1467] [cursor=pointer]:
+                - /url: https://app.termly.io/dsar/4024188f-b2a1-4bf1-b6c2-6995104356c7
+          - heading "Football Manager Graphics" [level=5] [ref=e1468]:
+            - link "Football Manager Graphics" [ref=e1469] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/graphics
+          - list [ref=e1470]:
+            - listitem [ref=e1471]:
+              - link "FM26 Graphics" [ref=e1472] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/graphics
+            - listitem [ref=e1473]:
+              - link "FM26 Player Faces" [ref=e1474] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/graphics/player-faces
+            - listitem [ref=e1475]:
+              - link "FM26 Logos" [ref=e1476] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/graphics/logos
+            - listitem [ref=e1477]:
+              - link "FM26 Kits" [ref=e1478] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/graphics/kits
+            - listitem [ref=e1479]:
+              - link "FM26 Backgrounds" [ref=e1480] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/graphics/backgrounds
+            - listitem [ref=e1481]:
+              - link "FM26 Installation Instructions" [ref=e1482] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/installation-instructions
+          - heading "Football Manager Guides Database" [level=5] [ref=e1483]:
+            - link "Football Manager Guides Database" [ref=e1484] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager/database
+          - list [ref=e1485]:
+            - listitem [ref=e1486]:
+              - link "FM26 Guides Database" [ref=e1487] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026/database
+            - listitem [ref=e1488]:
+              - link "FM24 Update Guides Database" [ref=e1489] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025/database
+            - listitem [ref=e1490]:
+              - link "FM24 Guides Database" [ref=e1491] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2024/database
+          - heading "Football Manager Data Update" [level=5] [ref=e1492]:
+            - link "Football Manager Data Update" [ref=e1493] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager-data-update
+          - list [ref=e1494]:
+            - listitem [ref=e1495]:
+              - link "FM26 Updated Database with latest transfers" [ref=e1496] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-data-update
+        - generic [ref=e1497]:
+          - heading "Football Manager Shortlists" [level=5] [ref=e1498]:
+            - link "Football Manager Shortlists" [ref=e1499] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager-shortlists
+          - list [ref=e1500]:
+            - listitem [ref=e1501]:
+              - link "FM26 Guides" [ref=e1502] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-guide
+            - listitem [ref=e1503]:
+              - link "FM26 Shortlists" [ref=e1504] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-shortlists#Football Manager 26
+            - listitem [ref=e1505]:
+              - link "Best FM26 Wonderkids" [ref=e1506] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/best-football-manager-2026-wonderkids
+            - listitem [ref=e1507]:
+              - link "Cheap FM26 Wonderkids" [ref=e1508] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/best-football-manager-2026-wonderkids#cheap-wonderkids
+            - listitem [ref=e1509]:
+              - link "FM26 Young Players aged 21-25" [ref=e1510] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-young-players-under-25
+            - listitem [ref=e1511]:
+              - link "FM26 Best Free Players" [ref=e1512] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-free-players
+            - listitem [ref=e1513]:
+              - link "FM26 Expiring Contracts" [ref=e1514] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-expiring-players
+            - listitem [ref=e1515]:
+              - link "FM26 Bargain Players" [ref=e1516] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-bargain-players
+            - listitem [ref=e1517]:
+              - link "FM26 Injury Prone Players" [ref=e1518] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-bargain-players
+            - listitem [ref=e1519]:
+              - link "FM26 Richest Clubs" [ref=e1520] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-club-transfer-budgets
+            - listitem [ref=e1521]:
+              - link "Best FM26 Facilities" [ref=e1522] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-club-facilities
+            - listitem [ref=e1523]:
+              - link "FM24 Update Guides" [ref=e1524] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-guide
+            - listitem [ref=e1525]:
+              - link "FM24 Update Shortlists" [ref=e1526] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-shortlists#Football Manager 2024/25
+            - listitem [ref=e1527]:
+              - link "Best FM24 Update Wonderkids" [ref=e1528] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/best-football-manager-2025-wonderkids
+            - listitem [ref=e1529]:
+              - link "Cheap FM24 Update Wonderkids" [ref=e1530] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/best-football-manager-2025-wonderkids#cheap-wonderkids
+            - listitem [ref=e1531]:
+              - link "FM24 Update Young Players aged 21-25" [ref=e1532] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-young-players-under-25
+            - listitem [ref=e1533]:
+              - link "FM24 Update Best Free Players" [ref=e1534] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-free-players
+            - listitem [ref=e1535]:
+              - link "FM24 Update Expiring Contracts" [ref=e1536] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-expiring-players
+            - listitem [ref=e1537]:
+              - link "FM24 Update Bargain Players" [ref=e1538] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-bargain-players
+            - listitem [ref=e1539]:
+              - link "FM24 Update Injury Prone Players" [ref=e1540] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-bargain-players
+            - listitem [ref=e1541]:
+              - link "FM24 Update Richest Clubs" [ref=e1542] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-club-transfer-budgets
+            - listitem [ref=e1543]:
+              - link "Best FM24 Update Facilities" [ref=e1544] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2025-club-facilities
+        - generic [ref=e1545]:
+          - heading "Football Manager Downloads" [level=5] [ref=e1546]:
+            - link "Football Manager Downloads" [ref=e1547] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/downloads
+          - list [ref=e1548]:
+            - listitem [ref=e1549]:
+              - link "FM26 Downloads" [ref=e1550] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-downloads
+            - listitem [ref=e1551]:
+              - link "FM26 Skins" [ref=e1552] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-skins
+            - listitem [ref=e1553]:
+              - link "FM26 Databases" [ref=e1554] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-databases
+            - listitem [ref=e1555]:
+              - link "FM24 Downloads" [ref=e1556] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2024-downloads
+            - listitem [ref=e1557]:
+              - link "FM24 Skins" [ref=e1558] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2024-skins
+            - listitem [ref=e1559]:
+              - link "FM24 Databases" [ref=e1560] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2024-databases
+            - listitem [ref=e1561]:
+              - link "FM23 Downloads" [ref=e1562] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2023-downloads
+            - listitem [ref=e1563]:
+              - link "FM23 Skins" [ref=e1564] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2023-skins
+            - listitem [ref=e1565]:
+              - link "FM23 Databases" [ref=e1566] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2023-databases
+          - heading "Football Manager Tactics" [level=5] [ref=e1567]:
+            - link "Football Manager Tactics" [ref=e1568] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/football-manager-2022-tactics
+          - list [ref=e1569]:
+            - listitem [ref=e1570]:
+              - link "Download Football Manager 26 Tactics" [ref=e1571] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-tactics
+            - listitem [ref=e1572]:
+              - link "Watch Football Manager 26 Tactic Video" [ref=e1573] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/football-manager-2026-tactic-videos
+            - listitem [ref=e1574]:
+              - link "Tactics Forum" [ref=e1575] [cursor=pointer]:
+                - /url: https://sortitoutsi.net/forums/7/football-manager-tactics
+          - heading "Football Manager Add Ons" [level=5] [ref=e1576]:
+            - link "Football Manager Add Ons" [ref=e1577] [cursor=pointer]:
+              - /url: https://sortitoutsi.net/downloads
+          - list [ref=e1578]:
+            - listitem [ref=e1579]:
+              - link "FM24 Real Name Fix" [ref=e1580] [cursor=pointer]:
+                - /url: /content/63651/fm24-real-name-fix
+            - listitem [ref=e1581]:
+              - link "FM23 Real Name Fix" [ref=e1582] [cursor=pointer]:
+                - /url: /content/61133/fm2023-licensing-and-real-name-fix
+            - listitem [ref=e1583]:
+              - link "FM22 Real Name Fix" [ref=e1584] [cursor=pointer]:
+                - /url: /content/58921/fm2022-licensing-and-real-name-fix-file-not-released-yet
+            - listitem [ref=e1585]:
+              - link "FM22 New Leagues" [ref=e1586] [cursor=pointer]:
+                - /url: /content/59240/complete-list-of-fm22-country-and-league-expansions
+            - listitem [ref=e1587]:
+              - link "FM21 Real Name Fix" [ref=e1588] [cursor=pointer]:
+                - /url: /content/56768/fm2021-licensing-and-real-name-fix-file-v01-beta-for-fm21-beta-not-released-yet
+      - generic [ref=e1589]: This site is not endorsed by Sports Interactive or SEGA and is intended for entertainment purposes only. The views expressed on this site are the views of the individual contributors and not those of Sports Interactive or SEGA.
+  - img [ref=e1592] [cursor=pointer]

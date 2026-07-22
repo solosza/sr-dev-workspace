@@ -1,0 +1,15 @@
+{
+  "command_name": "walkthrough",
+  "description": "Generic teaching/design loop: decompose any artifact or concept into sections, explain each in a fixed plain-English format grounded in the user's actual repos, one section per turn, recording settled decisions into a ledger that feeds /design. One-shot explain mode included.",
+  "reference_design": ".claude/docs/design/review-queue/index.md",
+  "current_step": 7,
+  "steps_complete": [1, 2, 3, 4, 5, 6, 7],
+  "requirements": {
+    "mode": "one command, loop + one-shot (inferred + --once flag)",
+    "depth": "plain default, --terse flag, mid-loop verbal dials",
+    "ledger": "durable file at docs/walkthroughs/, handoff to /design offered at exit",
+    "composability": "v1 standalone; per-iteration contract specced for later /design integration",
+    "state": ".claude/state/walkthrough-state.json — sections, cursor, ledger, depth"
+  },
+  "last_updated": "2026-07-13T07:30:00Z"
+}

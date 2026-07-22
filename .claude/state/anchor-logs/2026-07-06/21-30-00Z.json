@@ -1,0 +1,12 @@
+{
+  "anchor_timestamp": "2026-07-06T21:30:00Z",
+  "actions_count": 5,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-06T09:01:02Z", "tool": "Bash", "entry": "Bash: python -m pytest SSH platform tests"},
+    {"timestamp": "2026-07-06T09:01:02Z", "tool": "Bash", "entry": "Bash: python state update"},
+    {"timestamp": "2026-07-06T09:01:10Z", "tool": "Bash", "entry": "Bash: python -m pytest SSH platform tests"},
+    {"timestamp": "2026-07-06T09:01:21Z", "tool": "Write", "entry": "Write: ssh_batch_executor.py"},
+    {"timestamp": "2026-07-06T09:01:33Z", "tool": "Bash", "entry": "Bash: python state update"}
+  ]
+}

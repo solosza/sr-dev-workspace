@@ -170,3 +170,28 @@ Add to `.claude/settings.local.json`:
 - The kernel is still evolving — premature API stabilization could create backwards-compatibility burden
 
 **Next step:** Create a backlog item for building the prototype MCP server with `kernel_pipeline_status` as the first tool.
+
+## 8. Distribution / Productization Angle (Added 2026-07-07)
+
+The bigger play is not internal convenience — it's distribution. Wrapping the kernel as an MCP server creates an alternative distribution channel beyond the current Claude Code harness pattern:
+
+| Channel | How it works | Who it serves |
+|---------|-------------|---------------|
+| **Harness (current)** | Clone repo, use Claude Code | Claude Code users only |
+| **MCP server (proposed)** | `pip install isagawa-kernel-mcp`, add to any MCP client | Cursor, ChatGPT, VS Code, CI/CD, any MCP-compatible agent |
+
+**Why this matters for productization:**
+- MCP is the universal agent protocol (Anthropic, OpenAI, Google all support it)
+- Buyers don't need to adopt Claude Code — they add one MCP server config line
+- Kernel governance (backlog → pipeline → attestation) becomes consumable by any agent framework
+- Pricing could be per-seat MCP access or per-attestation API calls
+
+**Key challenge:** The kernel currently depends on Claude Code's hook system for enforcement (PostToolUse, PreToolUse). Making governance work over MCP requires rearchitecting enforcement — hooks become server-side middleware instead of client-side hooks. This is a real engineering project, not a wrapper.
+
+**Architecture gap:**
+- Read-only tools (pipeline status, lesson query) work today with zero changes
+- Write tools (backlog create, attestation) need server-side gate enforcement
+- Execution tools (execute-pipeline, run-task) need the full hook → anchor → learn cycle reimplemented as MCP middleware
+- This is essentially building a kernel runtime that doesn't depend on Claude Code internals
+
+**Deferred until:** Distribution strategy is clarified and there's buyer demand for non-Claude-Code access to kernel capabilities.

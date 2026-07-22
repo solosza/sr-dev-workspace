@@ -1,0 +1,18 @@
+{
+  "cycling": false,
+  "cycling_complete": false,
+  "task_folder": "tasks/eval-prod-test-real-llm-tests/",
+  "total_tasks": null,
+  "current_task": null,
+  "completed_tasks": [],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-13T08:45:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-13T20:15:00Z",
+  "actions_since_anchor": 7,
+  "last_anchor_token_confirmed": "9861a985",
+  "pending_anchor_token": null,
+  "timestamp": "2026-07-13T20:15:00Z"
+}

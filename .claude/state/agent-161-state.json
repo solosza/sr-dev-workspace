@@ -1,0 +1,11 @@
+{
+  "backlog": 161,
+  "spawned_at": "2026-07-05T22:20:00Z",
+  "status": "running",
+  "progress": "0/5 tasks",
+  "task_folder": "tasks/linking-convention-research/",
+  "total_tasks": 5,
+  "completed_tasks": [],
+  "deliverable": "Unified file linking convention research",
+  "log_file": "/tmp/execute-pipeline-161.log"
+}

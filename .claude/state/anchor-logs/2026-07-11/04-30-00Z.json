@@ -1,0 +1,14 @@
+{
+  "anchor_timestamp": "2026-07-11T04:30:00Z",
+  "actions_count": 8,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-11T01:00:01Z", "tool": "Write", "entry": "Write: eval-report.md"},
+    {"timestamp": "2026-07-11T01:00:06Z", "tool": "Bash", "entry": "Bash: mkdir -p eval/results"},
+    {"timestamp": "2026-07-11T01:00:16Z", "tool": "Write", "entry": "Write: score-history.json"},
+    {"timestamp": "2026-07-11T01:00:30Z", "tool": "Bash", "entry": "Bash: G6.1 gate check"},
+    {"timestamp": "2026-07-11T04:09:42Z", "tool": "Bash", "entry": "Bash: ls backlog/*.md"},
+    {"timestamp": "2026-07-11T04:09:47Z", "tool": "Bash", "entry": "Bash: ls backlog/done/*.md"},
+    {"timestamp": "2026-07-11T04:10:05Z", "tool": "Write", "entry": "Write: 196-kernel-refactor-eval-prod-test-real-llm-tests.md"}
+  ]
+}

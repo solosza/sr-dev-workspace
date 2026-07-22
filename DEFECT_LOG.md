@@ -438,6 +438,38 @@ Still needed: re-decompose coarse tasks (037-043) into truly atomic ones.
 
 ---
 
+## DEF-014: Dual import roots in hmsa-qa-platform _reference package
+
+**Date:** 2026-07-20
+**Severity:** Medium
+**Status:** OPEN
+
+### What Happened
+Importing `_reference.tasks` (as the 213 pytest suite does) crashes with `ModuleNotFoundError: No module named 'components'` when only `framework/` is on sys.path. Discovered during orchestrator validation of 213's skipped gate 004 (lesson 46).
+
+### Expected Behavior
+The whole `_reference` package imports cleanly from a single root (`framework/` on sys.path), matching the platform-wide import convention (`from _reference...`, `from interfaces...`, `from resources...`).
+
+### Actual Behavior
+`framework/_reference/pages/orders_page.py` (merged in 205) imports `from components.grid_component` / `from components.modal_component` — a style rooted at `framework/_reference/`. One import of the tasks package triggers both styles via the `__init__` chain, so no single path root satisfies it. Masked until 213 because 212's live gate loaded modules via importlib, bypassing the package `__init__`.
+
+### Root Cause
+205 shipped pages with `_reference`-relative imports; every gate passed because nothing imported the package through its real path. Grep confirms only these 2 lines deviate from the framework-root convention repo-wide.
+
+### Proposed Fix
+Change the 2 imports in orders_page.py to `from _reference.components...` (unify on framework-root style — the majority convention, used by 17 other import statements).
+
+### Resolution
+**RESOLVED 2026-07-21** — 2-line fix on `fix/orders-page-import-root` (de05953), merged to main (8a23917) after user approval of the impact assessment.
+
+Verification (orchestrator, live):
+1. Full `_reference` package tree (tasks, roles, pages, api_objects, components) imports cleanly with `PYTHONPATH=framework` only
+2. 213 API suite (pulled verbatim from build/213) run against fresh-seeded Orderly on 8018 with SINGLE-root PYTHONPATH: exit 0, 1 passed, residue clean
+
+Follow-on: 229 conftest bootstrap needs only `framework/` on sys.path (lesson 46's dual-root requirement collapses). Lesson updated via /kernel/learn.
+
+---
+
 ## DEF-013: Production testing requirement missing from step-04-atomize
 
 **Date:** 2026-03-23

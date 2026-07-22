@@ -1,0 +1,20 @@
+{
+  "contract_metadata": {
+    "contract_id": "walkthrough-step-07-exit",
+    "version": "1.0",
+    "artifact_type": "durable-ledger-file"
+  },
+  "canonical_reference": {
+    "path": ".claude/docs/design/walkthrough/references/ledger-spec.md",
+    "note": "Durable file format and handoff contract"
+  },
+  "validations": [
+    "No section left DEFERRED without a revisit offer",
+    "Handoff options presented (feed /design, fold into doc, stop)"
+  ],
+  "mechanical_validations": [
+    {"check": "file_exists", "target": "docs/walkthroughs/*[artifact-slug].md"},
+    {"check": "json_field_equals", "target": "status", "value": "complete"},
+    {"check": "json_field_nonempty", "target": "ledger_file"}
+  ]
+}

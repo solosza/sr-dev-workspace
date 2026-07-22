@@ -1,0 +1,23 @@
+{
+  "cycling": false,
+  "cycling_complete": true,
+  "task_folder": "tasks/browser-interface/",
+  "total_tasks": 5,
+  "current_task": null,
+  "completed_tasks": [
+    "001-build-create-feature-branch.md",
+    "002-build-write-browser-interface.md",
+    "003-test-import-and-primitives.md",
+    "004-test-live-against-orderly.md",
+    "005-build-commit-branch.md"
+  ],
+  "skipped_tasks": [],
+  "attempts_on_current": 0,
+  "complete": true,
+  "complete_timestamp": "2026-07-14T12:03:00Z",
+  "anchored": true,
+  "anchor_timestamp": "2026-07-15T02:20:00Z",
+  "actions_since_anchor": 10,
+  "last_anchor_token_confirmed": null,
+  "timestamp": "2026-07-15T02:20:00Z"
+}

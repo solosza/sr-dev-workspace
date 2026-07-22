@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-07-02T03:15:00Z",
+  "actions_count": 0,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "harness-eval-5-layer-conformance": 24
+  }
+}

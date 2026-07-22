@@ -1,0 +1,24 @@
+{
+  "anchor_timestamp": "2026-07-01T23:20:00Z",
+  "actions_count": 0,
+  "violations_found": 0,
+  "actions": [],
+  "agent_logs": {
+    "ab-testing-5-layer-conformance": [
+      {"timestamp": "2026-07-01T20:33:25Z", "tool": "Bash", "entry": "Bash: ls framework/tests/"},
+      {"timestamp": "2026-07-01T20:33:29Z", "tool": "Bash", "entry": "Bash: mkdir -p framework/tests"},
+      {"timestamp": "2026-07-01T20:33:38Z", "tool": "Write", "entry": "Write: conftest.py"},
+      {"timestamp": "2026-07-01T20:34:00Z", "tool": "Write", "entry": "Write: test_ab_eval.py"},
+      {"timestamp": "2026-07-01T20:34:08Z", "tool": "Bash", "entry": "Bash: pytest test_ab_eval.py"},
+      {"timestamp": "2026-07-01T20:34:13Z", "tool": "Bash", "entry": "Bash: ls framework/"},
+      {"timestamp": "2026-07-01T20:34:18Z", "tool": "Bash", "entry": "Bash: cat _reference conftest"},
+      {"timestamp": "2026-07-01T20:34:26Z", "tool": "Bash", "entry": "Bash: PYTHONPATH pytest re-run"},
+      {"timestamp": "2026-07-01T20:35:52Z", "tool": "Edit", "entry": "Edit: test_ab_eval.py"},
+      {"timestamp": "2026-07-01T20:36:00Z", "tool": "Bash", "entry": "Bash: PYTHONPATH pytest re-run"},
+      {"timestamp": "2026-07-01T20:36:22Z", "tool": "Bash", "entry": "Bash: test -f task file"},
+      {"timestamp": "2026-07-01T20:36:23Z", "tool": "Bash", "entry": "Bash: test -f conftest.py"},
+      {"timestamp": "2026-07-01T20:36:24Z", "tool": "Bash", "entry": "Bash: test -f test_ab_eval.py"},
+      {"timestamp": "2026-07-01T20:36:41Z", "tool": "Bash", "entry": "Bash: sleep 300 monitor"}
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "anchor_timestamp": "2026-07-06T08:55:53.301207Z",
+  "actions_count": 28,
+  "violations_found": 0,
+  "actions": [
+    {
+      "timestamp": "2026-07-06T08:53:14Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/done/\" | ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:15Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/\" | grep ",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:18Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/\" | head -20",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:19Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/completed/\" 2>/d",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:25Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/projects/velocit",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:32Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/an",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:33Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/180-domai",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:35Z",
+      "tool": "Bash",
+      "entry": "Bash: sleep 30 && echo \"=== Poll 3 ===\" && for id in 178 179 180 181; do echo \"--- Age",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:53:55Z",
+      "tool": "Bash",
+      "entry": "Bash: cat \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/.claude/state/anchor-",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:02Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/docs/backlog/180-\"*.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:06Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"\nimport json\npath = 'D:/my_ai_projects/project_test_repos/sr_dev_work",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:44Z",
+      "tool": "Bash",
+      "entry": "Bash: sleep 60 && echo \"=== Poll 4 ===\" && for id in 178 179 180 181; do echo \"--- Age",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:44Z",
+      "tool": "Bash",
+      "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:44Z",
+      "tool": "Write",
+      "entry": "Write: final-report.md",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:52Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/.claude/skills/\" 2",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:56Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/.claude/skills/com",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:57Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/.claude/skills/abi",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:58Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/.claude/skills/orc",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:54:59Z",
+      "tool": "Bash",
+      "entry": "Bash: find \"D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh\" -type f -nam",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:02Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/.claude/skills/abi",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:03Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/dnd-game-engine-test/.claude/skills/com",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:03Z",
+      "tool": "Bash",
+      "entry": "Bash: ls -la \"D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh/framework/_",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:05Z",
+      "tool": "Bash",
+      "entry": "Bash: for d in campaign challenge travel rest item-use social downtime-activities envi",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:13Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/sr_dev_workspace/tasks/velocity-managem",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:17Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh/framework/_refe",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:24Z",
+      "tool": "Bash",
+      "entry": "Bash: ls \"D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh/framework/_refe",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:40Z",
+      "tool": "Bash",
+      "entry": "Bash: mkdir -p \"D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh/framework",
+      "session": "current"
+    },
+    {
+      "timestamp": "2026-07-06T08:55:46Z",
+      "tool": "Bash",
+      "entry": "Bash: cp \"D:/my_ai_projects/project_test_repos/isagawa-qa/platform-ssh/framework/_refe",
+      "session": "current"
+    }
+  ]
+}

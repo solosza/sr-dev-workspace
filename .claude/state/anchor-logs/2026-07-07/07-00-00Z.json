@@ -1,0 +1,9 @@
+{
+  "anchor_timestamp": "2026-07-07T07:00:00Z",
+  "actions_count": 2,
+  "violations_found": 0,
+  "actions": [
+    {"timestamp": "2026-07-07T04:19:08Z", "tool": "Bash", "entry": "Bash: ls dnd-game-loop-integration tasks dir"},
+    {"timestamp": "2026-07-07T04:19:29Z", "tool": "Bash", "entry": "Bash: env -u CLAUDECODE bash run-task.sh"}
+  ]
+}
