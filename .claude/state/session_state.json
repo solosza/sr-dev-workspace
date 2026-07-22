@@ -5,15 +5,15 @@
   "context": {
     "current_task": null,
     "task_folder": "tasks/sql-server-interface/",
-    "progress": "215 batch COMPLETE 5/5 (L1 green, L2 8/8, L3 13/13 live vs orderly DB) \u2014 deliverables UNCOMMITTED on hmsa build/215 branch (interface + 2 test files untracked). Orchestrator validation in progress. 250 (portfolio scaffold) batch running in parallel with health monitor. Portfolio backlogs 250-261 created (12 items, intent chain recorded). 214 + 245 + 246 all merged and archived.",
+    "progress": "215 batch COMPLETE 5/5 (L1 green, L2 8/8, L3 13/13 live vs orderly DB) — deliverables UNCOMMITTED on hmsa build/215 branch (interface + 2 test files untracked). Orchestrator validation in progress. 250 (portfolio scaffold) batch running in parallel with health monitor. Portfolio backlogs 250-261 created (12 items, intent chain recorded). 214 + 245 + 246 all merged and archived.",
     "last_completed": "Portfolio backlog batch 250-261 + 250 pipeline launch",
     "next_step": "1) Spot-validate 215 interface (no pyodbc/sqlalchemy, method surface, reraise pattern, lexicon) + re-run its L3 test live. 2) Commit on build/215, merge to platform main, archive backlog 215 on workspace main. 3) Launch 216 (reference-data-objects). 4) Await 250 completion -> validate -> live URL to user. 5) Still pending: backlogs for runner-wedge/CDN/stale-base defects; 208 env-blocked; restart advice when no batches running.",
-    "notes": "215 findings from batch: iteration 1 log 0-byte again (runner completion-signal loss recurrence, resumed OK); worktree was missing jit-rule-injector.py pre-reset (stale base again \u2014 STEP 0 pin fixed it). JIT injector phase-2 refinement candidates observed live: S01 fires on new-file Writes (file_not_read trivially true) and S01 cannot see Read-tool usage (actions log only records Write/Edit/Bash) \u2014 both advisory-only, note for 246 phase 2. DB validation constraint: only databases orderly + orderly_v3 are ours.",
+    "notes": "215 findings from batch: iteration 1 log 0-byte again (runner completion-signal loss recurrence, resumed OK); worktree was missing jit-rule-injector.py pre-reset (stale base again — STEP 0 pin fixed it). JIT injector phase-2 refinement candidates observed live: S01 fires on new-file Writes (file_not_read trivially true) and S01 cannot see Read-tool usage (actions log only records Write/Edit/Bash) — both advisory-only, note for 246 phase 2. DB validation constraint: only databases orderly + orderly_v3 are ours.",
     "ledger": [
       {
         "ts": "2026-07-22T02:58:00Z",
         "kind": "failure",
-        "summary": "Docker registry blob downloads machine-blocked: MCR AND Docker Hub CDN EOF mid-transfer, TLS handshakes fine \u2014 do not retry pulls, it is not transient",
+        "summary": "Docker registry blob downloads machine-blocked: MCR AND Docker Hub CDN EOF mid-transfer, TLS handshakes fine — do not retry pulls, it is not transient",
         "refs": [
           "tasks/harness-db-slice/008",
           "backlog 224"
@@ -30,7 +30,7 @@
       {
         "ts": "2026-07-22T03:00:30Z",
         "kind": "constraint",
-        "summary": "Native SQL Server instance holds real databases (KCC) \u2014 pipelines may only touch orderly/orderly_v3",
+        "summary": "Native SQL Server instance holds real databases (KCC) — pipelines may only touch orderly/orderly_v3",
         "refs": [
           "tasks/harness-db-slice/008",
           "tasks/sql-server-interface/005"
@@ -39,7 +39,7 @@
       {
         "ts": "2026-07-22T05:28:00Z",
         "kind": "failure",
-        "summary": "run-task.sh batches lose completion signals (0-byte iteration logs, 4th occurrence in 215 iter1) and can die silently \u2014 verify via iteration logs + artifacts, never trust runner state alone",
+        "summary": "run-task.sh batches lose completion signals (0-byte iteration logs, 4th occurrence in 215 iter1) and can die silently — verify via iteration logs + artifacts, never trust runner state alone",
         "refs": [
           "lesson pending",
           "backlog pending"
@@ -57,7 +57,7 @@
       {
         "ts": "2026-07-22T06:05:30Z",
         "kind": "constraint",
-        "summary": "KERNEL_BACKLOG_INTENT=1 marker must PREFIX the whole Bash command (enforcer checks startswith) \u2014 one intent.py record per Bash call, never in a loop",
+        "summary": "KERNEL_BACKLOG_INTENT=1 marker must PREFIX the whole Bash command (enforcer checks startswith) — one intent.py record per Bash call, never in a loop",
         "refs": [
           "backlog command step 3"
         ]
@@ -70,7 +70,9 @@
     "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro",
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\nPYTHONIOENCODING=utf-8",
     "Bash: H=\"D:/my_ai_projects/project_test_repos/hmsa-qa-platform\"\ngit -C \"$H\" add framew",
-    "Write: gen_216_tasks.py"
+    "Write: gen_216_tasks.py",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython \"C:/Users/so",
+    "Bash: PYTHONIOENCODING=utf-8 python - <<'EOF'\nimport sys, urllib.request, re\nr = urlli"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
@@ -97,7 +99,7 @@
     "actions_reviewed_count": 50,
     "violations_found": 0,
     "next_action_stated": "Spot-validate the 215 interface (imports, method surface, reraise, lexicon greps) then re-run its L3 test live before committing on build/215",
-    "rules_applied": "Lesson #39: L3 is a gate \u2014 orchestrator re-runs it live, not just reads the claim; RULE ZERO: read the interface before merging; ledger constraint: only orderly/orderly_v3 databases",
+    "rules_applied": "Lesson #39: L3 is a gate — orchestrator re-runs it live, not just reads the claim; RULE ZERO: read the interface before merging; ledger constraint: only orderly/orderly_v3 databases",
     "ceremony_output_generated": true
   },
   "pipeline_state_250": {
