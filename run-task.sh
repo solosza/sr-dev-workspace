@@ -46,6 +46,7 @@ resolve_paths "$REPO"
 
 # --- Lock file (prevent concurrent invocations on same task folder) ---
 LOCK_FILE="${REPO}/.claude/state/${TASK_SUBFOLDER:-default}_run-task.lock"
+HEARTBEAT_FILE="${LOG_DIR}/${TASK_SUBFOLDER:-default}_runner-heartbeat.json"
 if [ -f "$LOCK_FILE" ]; then
   LOCK_PID=$(cat "$LOCK_FILE" 2>/dev/null)
   if [ -n "$LOCK_PID" ] && kill -0 "$LOCK_PID" 2>/dev/null; then
@@ -60,7 +61,7 @@ if [ -f "$LOCK_FILE" ]; then
 fi
 echo $$ > "$LOCK_FILE"
 # Clean up lock on exit
-cleanup_lock() { rm -f "$LOCK_FILE"; }
+cleanup_lock() { rm -f "$LOCK_FILE" "$HEARTBEAT_FILE"; }
 trap 'cleanup_lock; cleanup' SIGINT SIGTERM
 trap 'cleanup_lock' EXIT
 
@@ -276,6 +277,13 @@ for i in $(seq 1 "$MAX_ITERATIONS"); do
   echo ""
   echo "=== Iteration $i/$MAX_ITERATIONS ==="
 
+  # Write heartbeat (RH-03): python json.dump, UTF-8 no BOM (lesson #49)
+  $PYTHON_CMD -c "
+import json, datetime
+with open('$HEARTBEAT_FILE', 'w', encoding='utf-8') as f:
+    json.dump({'pid': $$, 'iteration': $i, 'ts': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}, f, indent=2)
+"
+
   # PRE-ITERATION EXIT GUARD: check workflow state before spawning another claude -p
   # This prevents the bug where ALL_TASKS_COMPLETE was returned but we still spawn the next iteration
   # Uses AGENT_ID from shell (not session_state.json) to avoid cross-agent contamination
@@ -387,38 +395,83 @@ print('  [SEED] Created ' + ss.name)
     pre_init_state "session_started=True,one_shot=True"
   fi
 
-  # Identify current task from workflow state (uses shell AGENT_ID, not session_state.json)
-  CURRENT_TASK=$($PYTHON_CMD -c "
-import json, pathlib
+  # Identify current task via filesystem listing minus completed/skipped (direct resolution)
+  TASK_RESOLUTION=$($PYTHON_CMD -c "
+import json, pathlib, re, sys
+
+task_dir = pathlib.Path('tasks/${TASK_SUBFOLDER}') if '${TASK_SUBFOLDER}' else pathlib.Path('tasks')
+if not task_dir.is_dir():
+    print('unknown|'); sys.exit()
+
+# List numbered .md files, exclude index/gate/context/test meta-files
+exclude = {'000-index.md', 'gate-contract.md'}
+exclude_prefixes = ('_context', '_test')
+task_files = sorted([
+    f.name for f in task_dir.glob('[0-9]*.md')
+    if f.name not in exclude and not any(f.name.startswith(p) for p in exclude_prefixes)
+])
+
+# Read completed + skipped from routed workflow file (utf-8-sig tolerant)
+done = set()
 sf = pathlib.Path('$STATE_FILE')
-if not sf.exists(): print('unknown'); exit()
-s = json.loads(sf.read_text())
-d = s.get('domain', '')
-if not d: print('unknown'); exit()
-agent_id = '$AGENT_ID'
-if agent_id and agent_id != 'default':
-    wf = sf.parent / f'agent-{agent_id}-workflow.json'
-    if not wf.exists():
-        wf = sf.parent / (d + '_workflow.json')
+if sf.exists():
+    s = json.loads(sf.read_text(encoding='utf-8-sig'))
+    d = s.get('domain', '')
+    agent_id = '$AGENT_ID'
+    if agent_id and agent_id != 'default':
+        wf = sf.parent / f'agent-{agent_id}-workflow.json'
+        if not wf.exists():
+            wf = sf.parent / (d + '_workflow.json') if d else None
+    else:
+        wf = sf.parent / (d + '_workflow.json') if d else None
+    if wf and wf.exists():
+        w = json.loads(wf.read_text(encoding='utf-8-sig'))
+        done = set(w.get('completed_tasks', []) + w.get('skipped_tasks', []))
+
+remaining = [f for f in task_files if f not in done]
+if remaining:
+    pick = remaining[0]
+    print(pick + '|' + str(task_dir / pick))
 else:
-    wf = sf.parent / (d + '_workflow.json')
-if not wf.exists(): print('unknown'); exit()
-w = json.loads(wf.read_text())
-print(w.get('current_task', '') or 'unknown')
-" 2>/dev/null || echo "unknown")
+    # Fallback: state-based current_task if folder listing empty
+    fallback = 'unknown'
+    if sf.exists():
+        s = json.loads(sf.read_text(encoding='utf-8-sig'))
+        d = s.get('domain', '')
+        agent_id = '$AGENT_ID'
+        if agent_id and agent_id != 'default':
+            wf = sf.parent / f'agent-{agent_id}-workflow.json'
+            if not wf.exists():
+                wf = sf.parent / (d + '_workflow.json') if d else None
+        else:
+            wf = sf.parent / (d + '_workflow.json') if d else None
+        if wf and wf.exists():
+            w = json.loads(wf.read_text(encoding='utf-8-sig'))
+            fallback = w.get('current_task', '') or 'unknown'
+    print(fallback + '|')
+" 2>/dev/null || echo "unknown|")
+  CURRENT_TASK="${TASK_RESOLUTION%%|*}"
+  TASK_FILE_PATH="${TASK_RESOLUTION#*|}"
   echo "[TASK] Attempting: $CURRENT_TASK"
 
   # Route to appropriate model tier
-  TASK_FILE_PATH=""
-  if [ -n "$TASK_SUBFOLDER" ] && [ "$CURRENT_TASK" != "unknown" ]; then
-    TASK_FILE_PATH=$(ls "tasks/${TASK_SUBFOLDER}/"*"${CURRENT_TASK}"* 2>/dev/null | head -1)
-  fi
   SELECTED_MODEL=$(route_model "${TASK_FILE_PATH:-}" "${SCRIPT_DIR}/lib/model-routing-config.json")
   echo "[MODEL] Selected: $SELECTED_MODEL (task: $CURRENT_TASK)"
 
   # Fresh run
   LOGFILE="${LOG_DIR}/${LOG_PREFIX}iteration_${i}.log"
   run_claude "fresh" "" "$LOGFILE" "$SELECTED_MODEL"
+
+  # Empty-output retry: 0-byte logfile after timeout → retry same iteration once (RH-02)
+  if [ ! -s "$LOGFILE" ]; then
+    echo "[EMPTY-RETRY] 0-byte output on iteration $i ($CURRENT_TASK). Retrying once..."
+    sleep "$SLEEP_BETWEEN"
+    LOGFILE="${LOG_DIR}/${LOG_PREFIX}iteration_${i}_retry.log"
+    run_claude "fresh" "" "$LOGFILE" "$SELECTED_MODEL"
+    if [ ! -s "$LOGFILE" ]; then
+      echo "[EMPTY-RETRY] Second consecutive empty output. Proceeding to failure path."
+    fi
+  fi
 
   # --- Handle result ---
   if [ "$LAST_STATUS" = "all_done" ]; then

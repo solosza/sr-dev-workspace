@@ -24,6 +24,12 @@ route_model() {
   # Resolve Python command (PYTHON_CMD set by common.sh, fallback to python)
   local py="${PYTHON_CMD:-python}"
 
+  # Convert MSYS paths to Windows paths for Python (MSYS /tmp → C:/Users/.../Temp)
+  if command -v cygpath &>/dev/null; then
+    config_file=$(cygpath -m "$config_file")
+    task_file=$(cygpath -m "$task_file")
+  fi
+
   # Normalize paths (Windows backslashes break Python string literals)
   local config_norm="${config_file//\\//}"
   local task_norm="${task_file//\\//}"
