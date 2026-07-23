@@ -397,6 +397,52 @@ if wf:
   return 1
 }
 
+# --- 291: verify a task's declared POSTCONDITION (the deliverable must actually exist) ---
+# A task file may declare a "## Postcondition" section listing its expected artifact(s)
+# (one per bullet: a path or glob). A task_done signal is only true if every declared
+# artifact exists and is non-empty. No section => pass (backward-compatible). This is
+# completion-truth for the DELIVERABLE; verify_completion_write covers STATE.
+# $1 = task file path   $2 = repo root
+verify_postcondition() {
+  local task_file="$1" repo="$2"
+  [ -f "$task_file" ] || return 0
+  local tf
+  if command -v cygpath >/dev/null 2>&1; then tf=$(cygpath -m "$task_file"); else tf="$task_file"; fi
+  local paths
+  paths=$($PYTHON_CMD -c '
+import re, sys, pathlib
+bt = chr(96)
+try:
+    txt = pathlib.Path(sys.argv[1]).read_text(encoding="utf-8-sig", errors="ignore")
+except Exception:
+    sys.exit(0)
+m = re.search(r"(?ims)^[ \t]*##[ \t]*postcondition[ \t]*$(.*?)(?=^[ \t]*##[ \t]|\Z)", txt)
+if not m:
+    sys.exit(0)
+for line in m.group(1).splitlines():
+    s = line.strip()
+    if not (s.startswith("-") or s.startswith("*")):
+        continue
+    parts = s.lstrip("-*").strip().strip(bt).split()
+    if parts:
+        sys.stdout.write(parts[0].strip(bt) + chr(10))
+' "$tf" 2>/dev/null)
+  [ -z "$paths" ] && return 0
+  local missing=0 p g matched
+  while IFS= read -r p; do
+    [ -z "$p" ] && continue
+    matched=0
+    for g in "$repo"/$p; do
+      [ -s "$g" ] && matched=1
+    done
+    if [ "$matched" -eq 0 ]; then
+      echo "[POSTCONDITION] declared deliverable '$p' is missing or empty"
+      missing=1
+    fi
+  done <<< "$paths"
+  return "$missing"
+}
+
 # --- Write output safely (handles -n, -e in content) ---
 write_log() {
   local content="$1"

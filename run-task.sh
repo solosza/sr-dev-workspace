@@ -542,6 +542,14 @@ else:
     fi
   fi
 
+  # 291 completion-truth: honor a task_done signal only if the task's declared postcondition
+  # (its "## Postcondition" deliverable) actually exists + is non-empty. Otherwise downgrade to
+  # no_signal so the retry/resume path runs — an agent can't "complete" without its deliverable.
+  if [ "$LAST_STATUS" = "task_done" ] && ! verify_postcondition "$TASK_FILE_PATH" "$REPO"; then
+    echo "[POSTCONDITION] '$CURRENT_TASK' signaled done but its declared deliverable is missing/empty — completion rejected (291), retrying."
+    LAST_STATUS="no_signal"
+  fi
+
   # --- Handle result ---
   if [ "$LAST_STATUS" = "all_done" ]; then
     COMPLETED=$((COMPLETED + 1))
@@ -595,6 +603,12 @@ else:
 
       RESUME_LOGFILE="${LOG_DIR}/${LOG_PREFIX}iteration_${i}_resume_${r}.log"
       run_claude "resume" "$RESUME_SESSION_ID" "$RESUME_LOGFILE" "$SELECTED_MODEL"
+
+      # 291 completion-truth on the resume path too: reject a task_done without its deliverable.
+      if [ "$LAST_STATUS" = "task_done" ] && ! verify_postcondition "$TASK_FILE_PATH" "$REPO"; then
+        echo "[POSTCONDITION] '$CURRENT_TASK' resumed as done but declared deliverable missing/empty — rejected (291)."
+        LAST_STATUS="no_signal"
+      fi
 
       if [ "$LAST_STATUS" = "all_done" ]; then
         COMPLETED=$((COMPLETED + 1))
