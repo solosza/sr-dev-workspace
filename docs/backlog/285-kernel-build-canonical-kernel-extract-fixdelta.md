@@ -1,37 +1,37 @@
-# Canonical Kernel — Extract Fix-Delta + Build Clean Distributable Kernel
+# Canonical Kernel — Graft Base Runner Hardening onto Minimal
 
 ## Status
-Open
+Open — in progress (scope corrected; base-hardening graft remaining)
 
 ## Priority
-High — 30 kernel installs exist on the machine and only `sr_dev_workspace` has tonight's fixes; the *published* canonical (`isagawa-kernel-a/b`) is 5 months stale with none of them. There is currently NO clean, distributable kernel that has the fixes. Every downstream (factory, platforms, prod-test) depends on there being one. First of the 3-backlog kernel-consolidation chain.
+High — 30 kernel installs on the machine, only `sr_dev_workspace` has the hardening; the minimal base is the right distributable shape but has none of it. Establish ONE lean canonical (minimal + base hardening) that every harness includes going forward. First of the 3-backlog kernel-consolidation chain.
 
-## Summary
-Produce ONE clean, distributable canonical kernel = the `kernel-minimal` base (June, 7 commands, 473-line `run-task.sh`, clean shape — the right *distributable* form) grafted with the bounded fix-delta developed in `sr_dev_workspace` tonight (270/271/272/273/276/280). The workspace kernel has the fixes but is a bloated dev environment (661-line `run-task.sh`, 25 commands, 21 skills, project cruft) — NOT distributable. Extract exactly the fixes, nothing else, onto the clean base, and carry the fixes' own regression tests so the canonical ships with proof.
+## Scope decisions (2026-07-23, owner)
+- **Minimal stays minimal** = base RUNNER hardening only. It is the common base ALL harnesses include going forward, so it must be lean.
+- **IN (base hardening):** 270 (completion write-verify + stall detection + commit-on-complete) · 262 (heartbeat; empty-retry already in minimal) · 271 (routed `skip_current_task`) · **244 per-agent routing (`KERNEL_AGENT_ID`)** — owner: concurrency IS base · 280 (block-to-completion spawn skill)
+- **OUT → optional layers (NOT in minimal):** 276 observability · 273 gate-integrity · 272 model-router. These are opt-in layers distributed separately (carve out later).
+- **Sync/update mechanism: DEFERRED** — how harnesses track the canonical is a workspace/factory concern, not sorted now.
 
-## Requirements
-- **Diff first (the fix-delta is bounded and known):** diff the workspace `run-task.sh` + `lib/` + the `spawn-subagent` skill against the `kernel-minimal` base to isolate EXACTLY the fix-delta:
-  - `run-task.sh` hardening (270: completion write-verify + stall detection + commit-on-complete; 262 heartbeat/empty-retry/task-resolution if not already in minimal; 271 fresh-base + routed-state containment)
-  - `lib/common.sh` helpers `verify_completion_write` + `check_stall` + the `skip_current_task` parent-write fix (270/271)
-  - `lib/observability.py` (276) + `lib/kernel_status.py` (276)
-  - `lib/gate_integrity.py` (273)
-  - `lib/model-router.sh` + `lib/model-routing-config.json` re-weighting (272) — with the current model IDs (opus-4-8/sonnet-5/haiku-4.5)
-  - the `spawn-subagent` skill block-to-completion change (280) + the launcher-death lesson
-  - the relevant hooks (whatever the fixes depend on)
-- **Graft onto the clean minimal base — NOT the workspace:** start from `kernel-minimal` (the distributable shape), apply the delta. Do NOT carry the workspace's 25 commands / 21 skills / project-specific state, backlogs, or projects. Minimal-core + fixes only.
-- **Ship with proof:** carry the fixes' regression tests into the canonical (270 RH-05, 271 WI-03/04, 272 MR-03, 273 GI-04, 276 OBS-05) so `286`'s prod-test can run them in a clean install.
-- **Verify the graft is coherent:** the fixes were written against the 661-line `run-task.sh`; grafting onto the 473-line minimal base needs reconciliation (line offsets, function presence, sourcing). The regression suite must pass 5/5 on the canonical before this backlog is done — orchestrator re-runs live (lesson #39).
-- **Clean-room / no leakage:** no client/project identifiers, no workspace paths hardcoded, no `sr_dev`-specific protocol. A generic distributable kernel.
+## Progress
+- ✅ Safety feature branch `canonical-fixdelta-graft` on `kernel-minimal` + private backup `isagawa-co/isagawa-kernel-canonical` (both branches pushed).
+- ✅ Repo consolidation started: `isagawa-kernel-a`/`-b` ARCHIVED; `isagawa-kernel` kept as reference; `isagawa-kernel-canonical` = canonical going forward.
+- ✅ Over-ported layers (272/273/276) STRIPPED off the canonical (`e0a238b`) — 280 skill + 270/271 tests retained. Canonical is now lean.
+
+## Remaining requirements (the base-hardening graft)
+- **Graft `lib/common.sh`:** port the 244 per-agent state routing (`KERNEL_AGENT_ID` → `agent-{id}-workflow.json` resolution) + `verify_completion_write` (270) + `check_stall` (270) + the 271-fixed `skip_current_task` (routes off agent_id). Minimal's `common.sh` has NONE of these — port the routing infra + the helpers together (they're intertwined: 271 depends on 244).
+- **Graft `run-task.sh`:** wire the hardening into minimal's 473-line runner — state pre-init routes by `KERNEL_AGENT_ID` (244); call `verify_completion_write` after task completion (270); write + check the HEARTBEAT each loop (262); `check_stall` on stale heartbeat (270); commit-on-complete (270); fresh-base worktree note (271). Reconcile against minimal's structure (different from the 661-line workspace runner).
+- **WIRING, not just presence (avoid the false-complete trap):** the runner must actually CALL the hardening — functions present-but-unwired is a false completion (the exact class 270/273 exist to catch). The run-task.sh graft is what makes the hardening live; its proof is 286's integration prod-test.
+- **Proof:** the 2 base tests pass live on the canonical — 270 RH-05 (`verify_completion_write` re-persists) + 271 WI-03/04 (routed isolation) — orchestrator re-runs live (lesson #39). Full runtime proof is 286.
+- **Clean-room:** no client/workspace paths hardcoded; generic distributable kernel.
 
 ## References
-- Base: `D:\my_ai_projects\project_test_repos\kernel-minimal` (June, clean shape, 7 cmds, 1 lib/py)
-- Fix source: `D:\my_ai_projects\project_test_repos\sr_dev_workspace` (`run-task.sh` @661, `lib/{common.sh,observability.py,kernel_status.py,gate_integrity.py,model-router.sh,model-routing-config.json}`, `.claude/skills/spawn-subagent/`)
-- Stale published canonical to supersede: `isagawa-kernel-a` (Feb, v3), `isagawa-kernel-b` (Feb) — consolidated in `287`
-- The fixes: backlogs 270/271/272/273/276/280 (all in `docs/backlog/done/`)
-- Next in chain: [[286-...]] prod-test the canonical, [[287-...]] publish + deprecate sprawl
+- Canonical (work here): `D:\my_ai_projects\project_test_repos\kernel-minimal` branch `canonical-fixdelta-graft` (remote `isagawa-co/isagawa-kernel-canonical`)
+- Fix source: `sr_dev_workspace` `run-task.sh` @661 + `lib/common.sh` @405 (has 244 routing + `verify_completion_write`/`check_stall`/`skip_current_task`)
+- Base gaps confirmed: minimal has 0 `KERNEL_AGENT_ID`, 0 heartbeat, HAS empty-retry
+- Next in chain: [[286-kernel-test-prodtest-canonical-kernel]], [[287-kernel-build-publish-canonical-deprecate-sprawl]]
 
 ## Task Builder Input
-- **Deliverable:** A clean canonical kernel repo (`kernel-minimal` base + the extracted 270/271/272/273/276/280 fix-delta + their regression tests), with the regression suite passing 5/5 live.
-- **Location:** new-repo:D:\my_ai_projects\isagawa-kernel-canonical
+- **Deliverable:** The lean canonical kernel = minimal base + grafted base runner hardening (244 routing + 270 + 271 + 262 heartbeat + 280 skill), WIRED into `run-task.sh`, with 270 RH-05 + 271 WI-03/04 passing live. No 272/273/276.
+- **Location:** new-repo:D:\my_ai_projects\project_test_repos\kernel-minimal (branch `canonical-fixdelta-graft`)
 - **Scope:** BUILD
-- **Constraints:** Graft onto the MINIMAL base, not the workspace — minimal-core + fixes only, no workspace cruft. The fix-delta is bounded (270/271/272/273/276/280); do not re-derive the fixes, port them. Orchestrator re-runs the 5-test regression suite live before done. STRICTLY SEQUENTIAL — 286 (prod-test) and 287 (publish) run only after this is verified. This is the machine's single-source-of-truth reset.
+- **Constraints:** Base runner hardening ONLY (272/273/276 are optional layers, out). 244 per-agent routing IS base. Port + wire — presence-without-wiring is a false complete. Orchestrator re-runs the 2 base tests live before done. STRICTLY SEQUENTIAL (gates 286/287). Delicate cross-base graft — do it carefully, not rushed.
