@@ -1,73 +1,48 @@
 {
   "session_started": true,
-  "timestamp": "2026-07-22T18:28:00Z",
+  "timestamp": "2026-07-23T06:26:00Z",
   "resumed_from": null,
   "context": {
-    "current_task": null,
+    "current_task": "285 — graft base runner hardening onto kernel-minimal (canonical)",
     "task_folder": null,
-    "progress": "219 (HMSA DB slice EXIT GATE) merged - V3 DB slice 214-219 COMPLETE. Router config updated to opus-4-8 + sonnet-5 (both probe-verified). 262 (runner hardening) finalized to main by background agent (routing fix + empty-output retry + heartbeat now live in run-task.sh). Now creating backlog for ADU-laws research (Vegas/Clark + Honolulu counties). 4 backlogs unlaunched but ready: 220 (SOAP harness, unblocked), 236 (click-probe), 256 (case study relaunch), 247 (DAG wave).",
-    "last_completed": "Router config bump (opus 4-8/sonnet 5) + 262 finalized to main",
-    "next_step": "1) Finish ADU research backlog (267): intent recorded, write file, subproject:adu-research. 2) On user go: launch parallel set on the now-hardened+correctly-routing runner (220/236/256/247). 3) HMSA next: SOAP slice 220->221->222->223 sequential; then V5 224-229 (224 Docker-blocked by CDN). 4) 208 still env-blocked pending 236.",
-    "notes": "Runner now hardened (262 live): filesystem task resolution means model routing actually works (was defaulting Opus on every task); empty-output retry + heartbeat added. Router IDs bumped to current-gen. Fable 5 deliberately NOT in fleet router (kept for orchestration only - cost/capability rationale). ADU research is personal real-estate (properties in both counties) - new 'property' tag, subproject location, RESEARCH scope. Las Vegas has a specific new casita/ADU law to dig into.",
+    "progress": "285 COMPLETE — canonical kernel built + validated live (e36c18a pushed to isagawa-co/isagawa-kernel-canonical). 286 prod-test next; 287 publish owner-gated.",
+    "last_completed": "285 — grafted base runner hardening onto kernel-minimal (common.sh clean-superset + run-task.sh wiring: 271 routed skip, 270 verify_completion_write x2, 262 heartbeat, 272 router demoted to optional). 270 RH-05 + 271 WI-03 pass live; bash -n + source-smoke OK. Moved to done (d333ebb).",
+    "next_step": "286: prod-test the canonical in a FRESH disposable install + canary failure-injection of 5 modes (false-done-no-artifact, stranded worktree, relative DATABASE_URL fixture, empty-output step, build-verb->model). Heavy /kernel/prod-test sub-agent flow (block-to-completion). Then 287 publish+deprecate-sprawl = OWNER SIGN-OFF GATED (outward-facing published repos) — do NOT run autonomously.",
+    "notes": "USER DIRECTIVE: run the 285 graft NOW with Opus 4.8 (main session, direct surgical work per lesson #24 — not a run-task.sh loop; the graft edits kernel-minimal's OWN runner so a run-task.sh pipeline would be circular). SCOPE LOCKED: minimal = base runner hardening ONLY = 270+262+271+244 per-agent routing+280; 272/273/276 = optional layers (OUT); sync deferred. KEY FINDING: kernel-minimal's run-task.sh ALREADY has 244 AGENT_ID routing wired (per-agent workflow seed, routed PRECHECK/current-task) + empty-retry backoff + all-done guard — so graft is small: wire skip_current_task agent_id + verify_completion_write + heartbeat. Stale model IDs (claude-opus-4-6 lines 132/435) belong to the 272 router layer (out of base) — note as follow-up, not this graft. Canonical repo: kernel-minimal branch canonical-fixdelta-graft (remote isagawa-co/isagawa-kernel-canonical, PRIVATE backup). SOFT DEVIATION persists: 286/287 backlogs via inline intent.py (lesson #28 recurrence, already escalated). USE /kernel/backlog skill for future backlogs.",
     "ledger": [
       {
-        "ts": "2026-07-22T02:58:00Z",
+        "ts": "2026-07-23T00:05:00Z",
         "kind": "failure",
-        "summary": "Docker registry blob downloads machine-blocked: MCR AND Docker Hub CDN EOF mid-transfer, TLS handshakes fine \u2014 do not retry pulls, it is not transient",
+        "summary": "Background pipelines launched INSIDE a sub-agent DIE when that sub-agent ends its turn. Fix: PERSISTENT background bash from MAIN session, or a sub-agent that BLOCKS to completion (never detach-then-end). Codified in 280",
         "refs": [
-          "tasks/harness-db-slice/008",
-          "backlog 224"
+          "docs/backlog/done/280-kernel-fix-launcher-death-block-to-completion.md"
         ]
       },
       {
-        "ts": "2026-07-22T03:00:30Z",
-        "kind": "constraint",
-        "summary": "Native SQL Server instance holds real databases (KCC) \u2014 pipelines may only touch orderly/orderly_v3",
-        "refs": [
-          "tasks/harness-db-slice/008",
-          "tasks/sql-server-interface/005"
-        ]
-      },
-      {
-        "ts": "2026-07-22T05:28:00Z",
+        "ts": "2026-07-23T00:45:00Z",
         "kind": "failure",
-        "summary": "run-task.sh batches lose completion signals (0-byte iteration logs) and can die silently \u2014 verify via iteration logs + artifacts, never trust runner state alone; fix pipeline 262 in flight",
+        "summary": "Completed pipelines stranded un-ported in worktrees (275 owner-facing RT plan + 269 research both sat unmerged; user had to ask 'where is my plan'). 276 observability now detects complete-but-unmerged worktree deliverables",
         "refs": [
-          "docs/backlog/262-kernel-fix-runtask-hardening.md"
+          "276",
+          "275",
+          "269"
         ]
       },
       {
-        "ts": "2026-07-22T06:05:00Z",
+        "ts": "2026-07-23T03:30:00Z",
         "kind": "decision",
-        "summary": "Portfolio guide split into backlogs 250-261; evidence metrics stay [INSERT] until user supplies verified numbers",
+        "summary": "platform-hybrid = generic clean-room standalone platform (the shareable asset); HMSA/clients = private customizations; meta-factory = private moat. Pushed platform-hybrid to PRIVATE isagawa-qa/platform-hybrid, clean-room verified 0 leaks",
         "refs": [
-          "docs/backlog/250-261",
-          "projects/portfolio-site/format-guide-v1.2.md"
+          "docs/backlog/done/284-qa-build-platform-hybrid-finalize-push.md"
         ]
       },
       {
-        "ts": "2026-07-22T06:05:30Z",
-        "kind": "constraint",
-        "summary": "KERNEL_BACKLOG_INTENT=1 marker must PREFIX the whole Bash command \u2014 one intent.py record per Bash call, never in a loop",
-        "refs": [
-          "backlog command step 3"
-        ]
-      },
-      {
-        "ts": "2026-07-22T07:45:00Z",
-        "kind": "failure",
-        "summary": "Model switcher never routes: current_task null at iteration start -> route_model file-missing fallback -> Opus 13/13 sampled iterations; fix = resolve next task from folder listing minus completed_tasks (262 task 001)",
-        "refs": [
-          "docs/backlog/262-kernel-fix-runtask-hardening.md",
-          "lib/model-router.sh"
-        ]
-      },
-      {
-        "ts": "2026-07-22T07:50:00Z",
+        "ts": "2026-07-23T06:26:00Z",
         "kind": "decision",
-        "summary": "GitHub Pages CDN caches aggressively \u2014 orchestrator live checks use cache-busting (query param or size/sha comparison) before declaring content missing (253 false FAIL precedent)",
+        "summary": "285 scope LOCKED: canonical = kernel-minimal + base runner hardening ONLY (270+262+271+244 per-agent routing+280). 272/273/276 are optional layers, OUT of minimal. common.sh grafted as clean superset (270 RH-05 + 271 WI-03 pass live). Minimal's runner already had 244 AGENT_ID routing — remaining graft is small (skip_current_task agent_id + verify_completion_write + heartbeat)",
         "refs": [
-          "tasks/portfolio-architecture/gate-contract.md PA-04"
+          "docs/backlog/285-kernel-build-canonical-kernel-extract-fixdelta.md",
+          "kernel-minimal:canonical-fixdelta-graft"
         ]
       }
     ]
@@ -75,73 +50,36 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" commit",
-    "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 267 \"research AD",
-    "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" log --",
-    "Write: 267-property-research-adu-laws-vegas-honolulu.md",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$MAIN\" add ",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== 256 task ",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\necho \"=== 220 SOAP ",
-    "Write: gen_220_tasks.py",
-    "Write: gen_247_tasks.py",
-    "Write: gen_267_tasks.py"
+    "Bash: K=\"D:/my_ai_projects/project_test_repos/kernel-minimal\"\nINSTALL=\"D:/my_ai_projec",
+    "Write: test_canary_base_modes.sh",
+    "Bash: INSTALL=\"D:/my_ai_projects/project_test_repos/_canonical-prodtest-install\"\nbash ",
+    "Edit: test_canary_base_modes.sh",
+    "Edit: test_canary_base_modes.sh",
+    "Bash: INSTALL=\"D:/my_ai_projects/project_test_repos/_canonical-prodtest-install\"\nbash ",
+    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython -c \"\nimport ",
+    "Bash: K=\"D:/my_ai_projects/project_test_repos/kernel-minimal\"\nINSTALL=\"D:/my_ai_projec",
+    "Write: prod-test-report.md",
+    "Edit: 286-kernel-test-prodtest-canonical-kernel.md"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
   "actions_since_anchor": 0,
   "protocol_hash": "453920fd59c26e32c5c4c0caa72d42b370cf59a07ac8973299992e8db3a40bd5",
-  "protocol_hash_timestamp": "2026-07-22T18:28:00Z",
+  "protocol_hash_timestamp": "2026-07-23T06:26:00Z",
   "compaction_anchor_reason": null,
   "needs_learn": false,
   "needs_learn_reason": null,
-  "pipeline_state": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/219-qa-build-reference-tests-db.md",
-    "route": "default",
-    "task_folder": "tasks/reference-tests-db/",
-    "task_count": 5,
-    "resume_step": null,
-    "prior_pipeline": "218 merged to platform main (orchestrator L3 re-run 5/5); LAST V3 DB slice item"
-  },
+  "pipeline_state": null,
   "pipeline_mode": null,
   "agent_id": null,
   "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-07-22T15:01:00Z",
-    "lessons_read_timestamp": "2026-07-22T15:01:00Z",
-    "actions_reviewed_count": 35,
+    "protocol_read_timestamp": "2026-07-23T06:26:00Z",
+    "lessons_read_timestamp": "2026-07-23T06:26:00Z",
+    "actions_reviewed_count": 25,
     "violations_found": 0,
-    "next_action_stated": "Read backlog 162 from docs/backlog/done/, locate eval learning loop deliverables, check for superseding work, write verdict report to projects/review-followups/162-verdict.md",
-    "rules_applied": "RULE ZERO: READ all files before claiming content; absolute paths only; follow task 001 procedure exactly (5 steps); read-only except verdict report",
+    "next_action_stated": "Wire run-task.sh hardening into kernel-minimal (skip_current_task agent_id + verify_completion_write + heartbeat), re-run 270+271 tests, commit+push canonical",
+    "rules_applied": "RULE ZERO verify before act (read both runners before editing); lesson #24 do surgical work in main session not spawned agent; #39 re-run gates live before claiming done; use /kernel/backlog skill for any future backlog (not inline intent.py)",
     "ceremony_output_generated": true
   },
-  "pipeline_state_250": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/256-market-build-portfolio-case-study.md",
-    "route": "default",
-    "task_folder": "tasks/portfolio-case-study/",
-    "task_count": 4,
-    "parallel_with": "219 (reference-tests-db, V3 exit gate) + 262 (runtask-hardening)",
-    "prior": "250-255 live and validated"
-  },
-  "pipeline_state_262": {
-    "input_mode": "existing_backlog",
-    "backlog_path": "docs/backlog/262-kernel-fix-runtask-hardening.md",
-    "route": "default",
-    "task_folder": "tasks/runtask-hardening/",
-    "task_count": 6,
-    "parallel_with": "217 (reference-tasks-db) + 254 (portfolio-architecture)"
-  },
-  "parallel_launch_2026-07-22": {
-    "set": [
-      "220",
-      "247",
-      "256",
-      "267"
-    ],
-    "held": [
-      "236 (reboot-gated)",
-      "248/249 (run-task/enforcement churn)"
-    ],
-    "runner": "262-hardened, router opus-4-8/sonnet-5"
-  }
+  "compaction_timestamp": "2026-07-23T06:23:21.842052+00:00"
 }

@@ -1,7 +1,7 @@
 # Canonical Kernel — Prod-Test in a Fresh Install (Canary Failure-Injection)
 
 ## Status
-Open (blocked on 285)
+COMPLETE (2026-07-23) — ✅ PASS. Clean-install bootstrap confirmed, regression 2/2, canary 6/6 base-failure modes caught. Report: `projects/canonical-kernel-prodtest/prod-test-report.md`. Canary shipped in canonical `tests/test_canary_base_modes.sh` (`cc0555b`). Canary re-scoped to BASE modes (270/271/262/244); the 4 optional-layer modes (oracle/stranded/portability/router) validate with 276/273/272 when packaged. One finding: test-script MSYS-path false-fail (kernel unaffected; lesson recorded). Gates 287 (publish) — OWNER SIGN-OFF required.
 
 ## Priority
 High — this is the meaningful validation the whole kernel-fix effort was aiming at: prove the fixed kernel works in a CLEAN install, not just in the scarred workspace. Second of the 3-backlog kernel-consolidation chain.
