@@ -183,12 +183,21 @@ run_claude() {
     claude_env_args+=("-u" "$var")
   done < <(env | grep -i '^CLAUDECODE' || true)
 
-  # Build the full command array (export KERNEL_AGENT_ID for state isolation)
+  # Build the full command array (export KERNEL_AGENT_ID for state isolation).
+  # 290 output-sandbox: if KERNEL_AGENT_OUTPUT_ROOT is set (by the caller or below),
+  # propagate it so the sandbox hook confines this agent's writes to that dir. When
+  # unset, the hook still blocks runner-owned-state writes (*_factory_state.json) — the
+  # confinement half is opt-in so a generic task with no single output dir is never
+  # wrongly blocked.
+  local sandbox_args=(KERNEL_AGENT_ID="${TASK_SUBFOLDER}")
+  if [ -n "${KERNEL_AGENT_OUTPUT_ROOT:-}" ]; then
+    sandbox_args+=(KERNEL_AGENT_OUTPUT_ROOT="${KERNEL_AGENT_OUTPUT_ROOT}")
+  fi
   local full_cmd=()
   if [ ${#claude_env_args[@]} -gt 0 ]; then
-    full_cmd=(env "${claude_env_args[@]}" KERNEL_AGENT_ID="${TASK_SUBFOLDER}" claude "${cmd_args[@]}" "$prompt")
+    full_cmd=(env "${claude_env_args[@]}" "${sandbox_args[@]}" claude "${cmd_args[@]}" "$prompt")
   else
-    full_cmd=(env KERNEL_AGENT_ID="${TASK_SUBFOLDER}" claude "${cmd_args[@]}" "$prompt")
+    full_cmd=(env "${sandbox_args[@]}" claude "${cmd_args[@]}" "$prompt")
   fi
 
   # File-based output capture: write directly to logfile, no $() substitution

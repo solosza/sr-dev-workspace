@@ -1,7 +1,16 @@
 # Subagent Output-Sandbox Hook — Confine Writes, Block Runner-Owned State
 
 ## Status
-Open
+COMPLETE (2026-07-23) — built directly + orchestrator-verified (9/9), wired live.
+
+## Completion
+- **Hook:** `.claude/hooks/subagent-output-sandbox.py` — self-contained PreToolUse hook (no `lib.validators` dependency). For subagent sessions only (`KERNEL_AGENT_ID` set, or `KERNEL_SUBAGENT=1`): (a) blocks Write/Edit to `*_factory_state.json` (runner-owned state); (b) if `KERNEL_AGENT_OUTPUT_ROOT` is set, blocks any Write/Edit resolving outside it, naming the allowed root. Escape hatch: `KERNEL_SANDBOX_ALLOW=1`. Non-subagent (interactive/orchestrator) sessions are untouched — proven by test 1.
+- **Wiring:** registered in `.claude/settings.local.json` PreToolUse (Edit|Write|Bash) after `sr_dev-gate-enforcer.py`. `run-task.sh` propagates `KERNEL_AGENT_OUTPUT_ROOT` into the spawned-agent env when set (confinement opt-in so a generic task with no single output dir is never wrongly blocked; the `factory_state` block is always on via `KERNEL_AGENT_ID`).
+- **Tests:** `tests/test_290_output_sandbox.sh` — 9/9 (interactive passes; factory_state blocked; outside-root blocked; inside-root passes; escape hatch passes; non-Write passes; + wiring assertions: hook registered, runner propagates, syntax OK).
+- **Prevents the two live failures:** the wrong-path `SKILL.md` write (blocked at the Write, not caught after 3 retries) and the `factory_state.json` clobber (hard-blocked).
+- **Follow-up (parity requirement):** port to kernel-minimal (canonical) so every harness inherits it — deferred, not done here.
+
+Product feature #2 of the reliability set: **"can't write outside its lane."** (291 = can't lie about finishing; 292 = can't clobber the repo.)
 
 ## Priority
 High — subagents mis-write and clobber even when the prompt forbids it. Prevention-by-hook is the hard fix; this converts two failure modes observed live this session into "impossible."
