@@ -15,6 +15,12 @@ Read the backlog file's `Scope` field to determine isolation mode:
 | RESEARCH | Subfolder | `Bash(run_in_background: true)` + unique subfolder | No code to merge, but needs lock isolation |
 | TEST | Subfolder | `Bash(run_in_background: true)` + unique subfolder | Tests don't change main, just produce reports |
 
+## Launcher-Death: Spawned Agent Must Block on Its Own Pipeline (CRITICAL)
+
+The `run_in_background: true` on the outer `Agent(...)`/`Bash(...)` call below is what makes the CALLER non-blocking — that's correct and required. It does NOT license the SPAWNED agent to detach the pipeline it runs inside its own turn.
+
+Once the spawned agent is executing, `run-task.sh` / `run-spec-factory.sh` / `prod-test` MUST run in that agent's FOREGROUND — the agent blocks on it and does not end its turn until the pipeline finishes or definitively fails. The spawned agent must NOT nest another `run_in_background: true`, background the pipeline with a shell `&`, or otherwise detach-then-return inside its own session. A detached child does not outlive the sub-agent session that spawned it — if the spawned agent ends its turn while the pipeline runs detached, the pipeline dies silently with no error. This is why Pattern A's prompt below says "Wait for completion" — that instruction is mandatory, not optional framing.
+
 ## Pattern A: Worktree Mode (BUILD / REFACTOR)
 
 Use the Agent tool with `isolation: "worktree"`:
@@ -24,7 +30,8 @@ Agent(
   description: "Pipeline: [backlog title]",
   prompt: "Run this command and return full output:
     env -u CLAUDECODE bash \"[repo_path]/run-task.sh\" \"[repo_path]\" [count+2] \"[subfolder]\" \"[backlog_path]\"
-    Wait for completion. Return the full output including final status banner.",
+    Wait for completion. Return the full output including final status banner.
+    Do NOT background this command and end your turn — run it in your foreground and block until it completes or definitively fails (launcher-death).",
   isolation: "worktree",
   run_in_background: true
 )
