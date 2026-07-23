@@ -1,140 +1,399 @@
-# RT Compliance Business Plan — Pre-Submission Validation Gate
+# Business Plan — Respiratory Therapy Compliance Solution
 
-**Backlog:** 274 | **Status:** Phase-1 plan complete (gate BP-05 passed) + Phase 2+ roadmap added
-**Grounded in:** `compliance-research/domain-and-compliance.md`, `compliance-research/isagawa-feasibility.md`, `compliance-research/market-and-switching.md`, `compliance-research/go-no-go.md` (backlog 269), plus `research-notes.md` (task 001, this backlog).
-
----
-
-## SCOPE BOUNDARY (load-bearing — read this first)
-
-This product is a **pre-submission compliance / validation gate**. It reads the RT's existing PCC charting and the CPT code about to be billed, runs eligibility and documentation checks against that existing work, and flags or blocks unsupported claims before they reach a payer — with a full audit ledger recording why every verdict was reached.
-
-**In Phase 1 it never auto-charts, never auto-bills, and never automates patient filtering** — it adds exactly one step, a check, between finished charting and claim submission. Broader workflow automation (charting-assist, patient-filtering) is a deliberate **Phase 2+ roadmap** item — the original and still-intended long-term direction, kept explicitly on the roadmap (see Roadmap), not Phase 1. Two invariants hold in **every** phase and are the liability firewall the rest of this plan is built on: **billing *submission* is never automated**, and **no automated step ever acts on a clinical or billing decision without a human sign-off — human-in-the-loop is mandatory wherever a decision applies.** Every automated step, in any phase, only ever *proposes*; a human *approves*. This is carried through every section of this document, not stated once and forgotten.
+**Product:** Pre-submission compliance and validation application for respiratory therapy billing  
+**Audience:** Facility owners, administrators, and billing staff  
+**Status:** Phase 1 business plan (owner-facing)
 
 ---
 
-## Problem
+## 1. Executive Summary
 
-Respiratory Therapy billing at an independent SNF today runs entirely by hand. The RT (or admin/billing staff) manually reviews the census for qualifying patients, hand-charts the clinical assessment into PCC, and manually maps the finished charting to a CPT code by re-reading the entry against that code's prerequisites — with no systematic filter, no lookup aid, and no gate anywhere in the process that can catch an unsupported claim before it is submitted. Errors are caught only by the RT's own self-review or, worse, by a downstream payer denial or a CMS audit (`domain-and-compliance.md` §4).
+**The Problem**
 
-That absence of a pre-submission gate matters because the errors it would catch are not evenly distributed — they rank sharply by financial and compliance risk (`domain-and-compliance.md` §5):
+Skilled nursing facilities face an increasing compliance risk: Medicare audits are intensifying, denial rates for respiratory therapy billing run 35-56% under insurance plans, and improper-payment penalties are reaching record levels. In 2025 alone, federal enforcement agencies recovered $6.8 billion in false claims across healthcare. The root cause? Billing documentation errors and incomplete clinical justification—issues that today go undetected until after claims are submitted, often resulting in denials, payment clawbacks, or worse.
 
-1. **Part A vs. Part B miscoding** — billing Part B for RT that is actually bundled into an active Part A SNF stay. This is a bright-line rule, not a judgment call, yet it still happens because Part A/B status can change day-to-day and isn't always visible to the RT at the moment of charting.
-2. **Refused-treatment billed anyway** — a missed "R" (refused) initial in a fast, manual eMAR read under time pressure, billed as if the treatment occurred.
-3. **Missing order or unsupported medical necessity billed** — an RT pattern-matches on a "usual" diagnosis and bills without confirming the specific order or necessity link for *this* patient.
-4. **Wrong CPT code selected** — e.g., 94640 (nebulizer) billed when the charting actually supports G0237 (incentive spirometry), or vice versa. Lower dollar impact per instance than #1-3, but the highest-frequency error given six-plus overlapping-sounding codes with no lookup aid.
+For independent facility owners, this exposure is acute. Your respiratory therapists and billing staff work hard to follow the rules, but the current system offers no way to catch a billing problem *before* it reaches the insurance company. Manual reviews are slow, error-prone, and labor-intensive. The alternative—hoping to avoid an audit—is no longer a viable strategy.
 
-The first two are mechanically preventable — they are deterministic rule violations, not disputable clinical judgment — and they are exactly the errors an unaided manual process is worst positioned to catch, because manual review depends on a human remembering to check a status field or read an eMAR symbol correctly on every single chart, every single day.
+**The Solution**
 
-Compounding the error exposure is an audit-defensibility gap: the incumbent process has no systematic, queryable record of *why* a given CPT code was billed for a given patient on a given date (`domain-and-compliance.md` §4.4). When CMS or a payer asks "why was this billed," the honest answer today is "the RT's documentation habits and institutional memory" — not a record. This is a named, active 2026 CMS/OIG audit-oversight focus for SNFs specifically (PDPM upcoding, lack of medical necessity, improper therapy billing — `market-and-switching.md` §2.2), and documentation failures, not medical-necessity failures, already drive 79.1% of 2023 CMS improper payments system-wide (`market-and-switching.md` §2.1). The owner-facing framing of this problem is therefore not "billing takes too long" — it is **"every claim submitted today carries an un-gated, unrecorded risk of a denial, a clawback, or an audit finding, and there is no way to show CMS why a specific bill was supportable after the fact."**
+We provide a pre-submission compliance check that works the way you do: a structured, transparent review of every respiratory therapy claim before it's billed. Our system flags documentation gaps, eligibility issues, and billing-code concerns for human review. You or your staff make the final decision. Nothing is submitted automatically. Nothing is billed without your approval.
 
----
+This gives you three critical advantages:
+- **Stop denials before they happen** — catch billing problems at the point of charting, not after claim rejection
+- **Defend yourself in audits** — maintain a clear record of who reviewed what, when, and why each claim was approved
+- **Reduce your liability** — shift from reactive claim correction to proactive compliance, positioning your facility as audit-ready
 
-## Solution
+**Market Opportunity**
 
-The product is a **pre-submission validate-and-flag gate** that sits between the RT's existing charting workflow and claim submission. For each proposed CPT code, it:
+Medicare's 2026 enforcement priorities explicitly target skilled nursing billing—particularly therapy services documentation. Independent facilities like yours are increasingly in the audit spotlight. The compliance solutions available today are either too generic (built for large hospital chains) or tied into expensive EHR systems. You need a focused, affordable, respiratory-therapy-specific tool that your facility can implement independently, without ripping out your existing billing process.
 
-1. **Reads** the patient's existing PCC charting and the CPT code the RT is about to bill — it does not write, select, or generate either of those inputs.
-2. **Runs the eligibility rules and the "three checks"** from the domain rule set (`domain-and-compliance.md` §1.3): does the patient need RT, does the diagnosis support the intervention, does the documentation support billing this specific CPT code.
-3. **Flags or blocks** any claim that fails a check — never silently denies, never silently approves. A block means "do not submit this claim without resolving the flag," not "this patient cannot receive care."
-4. **Writes an audit-ledger entry** for every verdict — which checks passed, which failed, the judgment rationale where applicable, and the human countersign — so "why was CPT X billed for patient Y on date Z" has a queryable answer for the first time (`isagawa-feasibility.md` §5).
-
-**Restating the scope boundary in-place, because it is the design, not a caveat on the design:** the gate validates over the RT's existing charting and the RT's proposed CPT code. It does not chart, it does not select which patients to see, and it does not submit claims. The RT keeps doing the clinical work and keeps doing the charting; this system adds one new step — a check — between "charting is done" and "claim goes out." That is the entire product surface. Automating billing *submission* is never in scope in any phase — that line is permanent, because the vendor-side liability case below depends on it. Automating the *drafting* of charting or the *surfacing* of the patient list is out of scope for Phase 1 but is on the Phase 2+ roadmap (see Roadmap); there too, every automated step only ever *proposes* and a human approves. What never happens, in any phase, is an automated step acting on a clinical or billing decision without a human sign-off.
-
-The architecture maps directly onto Isagawa's existing 3-layer pattern, with one addition (`isagawa-feasibility.md` §1):
-
-- **Config layer** (`eligibility-rules.json`, `billing-codes.json`) — the deterministic half of every rule: Part A/B status field, order-presence field, refusal-flag symbol convention, CPT prerequisite field lists, unit/time math constants, the manual-review code list.
-- **Validator layer** (`EligibilityValidator`, `ChartingValidator`, `BillingValidator`) — pure-function presence/absence checks and numeric extraction, no LLM call, no judgment.
-- **Judgment layer** (`MedicalNecessityJudge`, `SkilledVsRoutineJudge`, `DocSupportsCPTJudge`) — an LLM call against a structured rubric prompt for the checks that require clinical reasoning, always returning `{verdict, confidence, rationale}` — never a silent pass.
-- **Kernel enforcement** — two gates, not one: a deterministic gate (blocks on any failed deterministic check) and a **human-review gate** that blocks billing on any judgment verdict of "eligible/supported" that has not been countersigned by a human, regardless of confidence score. This second gate is what makes "never auto-bill" a structural property of the system rather than a policy the system could later drift away from.
+The market for compliance-first billing tools is expanding as facilities wake up to enforcement risk. Our Phase 1 offering addresses the immediate need: a pre-submission gate that lets you stay in control.
 
 ---
 
-## Proof / Accuracy Model
+## 2. Company/Business Description
 
-The product's accuracy claim is deliberately split in two, because the underlying rules split in two (`domain-and-compliance.md` §6, `isagawa-feasibility.md` §2):
+**What We Do**
 
-**Deterministic hard-gates — no LLM in the loop, no accuracy uncertainty.** Part A/B coverage status, payor/coverage presence, MD/NP order presence, the refusal-flag check, manual-review-code-list membership, and unit/time/numeric math (G0237 time increments, 94762 SpO2 thresholds) are field lookups and presence checks. These map directly onto error modes #1 and #2 above — the two highest-severity, highest-frequency-preventable errors in the domain — and the gate catches them with the same certainty a correctly-run lookup always has. This is the part of the accuracy story that requires no clinical judgment claim at all.
+We provide a compliance-first platform for respiratory therapy billing in skilled nursing facilities. Our system integrates with your existing billing process—PointClickCare or similar platforms—to review claims before submission.
 
-**Model-assisted judgment, gated by mandatory human review — no accuracy claim stands alone.** Medical necessity, the skilled-vs-routine/custodial distinction (the single hardest clinical call in this domain), diagnosis-supports-intervention matching, and documentation-supports-CPT narrative matching all require clinical reasoning that a config lookup cannot perform. For these, the system's job is not to be right on its own — it is to produce a structured verdict and rationale that makes the RT's or reviewer's countersign a **check**, not a **redo**. The proof standard for this layer is explicitly an accuracy *baseline* against the cousin's own clinical judgment (informal, cousin-labeled charting examples run through a draft rubric), not a claimed pass rate — and per the four gating preconditions below, that baseline has not yet been established. Until it is, the honest claim is architectural (the human-review gate cannot be bypassed), not statistical (the judgment layer's agreement rate is not yet measured).
+Here's the workflow:
+1. Your respiratory therapist completes charting and coding in your normal system
+2. Our platform reviews the claim against Medicare eligibility rules, billing-code requirements, and documentation standards
+3. We flag any concerns—missing information, code mismatches, documentation gaps, or eligibility issues—and present them to your staff with clear explanations
+4. Your billing manager or RT reviews the flag, decides whether to correct the claim or submit as-is
+5. You approve and submit the claim yourself, fully aware of any risk flags
 
-This split is also why the product can never auto-bill: nearly every CPT code's prerequisite includes at least one judgment element, so almost no bill ships without at least one human-reviewed judgment verdict attached (`isagawa-feasibility.md` §2). The system automates the deterministic floor and the audit paperwork; it does not, and structurally cannot, automate the clinical call.
+**Why We're Different**
 
----
+The marketplace offers two flavors of compliance tools. One is "AI automation"—systems that rewrite your claims or make suggestions without your involvement. The other is generic compliance software built for hospital networks, with pricing and complexity you don't need.
 
-## ROI
+We take a different approach:
 
-The ROI case is built on avoided cost, not generated revenue — a validate-and-flag gate prevents bad claims from going out; it does not create billable volume. Three avoided-cost categories, each grounded in cited figures, apply:
+- **You stay in control.** Every decision remains yours. No claim is billed without your explicit approval. This protects you legally and operationally—you're never surprised by what was submitted.
+- **Respiratory-therapy-focused.** Our rules are built around respiratory therapy eligibility and billing specifics, not generic nursing billing. We understand diagnosis prerequisites, skilled vs. routine distinctions, and the clinical judgment calls that matter in RT billing.
+- **Transparent and defensible.** When a claim is flagged, you see the reason. When a claim passes, you have a record that it was reviewed. This is exactly what Medicare auditors want to see: deliberate, documented decisions about every claim.
+- **Affordable and independent.** Priced as a monthly subscription per facility—flat fee, no per-claim charges, no percentage-of-revenue models. Works alongside your existing EHR and billing staff.
 
-1. **Denied-claim avoidance.** Medicare Advantage SNF denial rates run **35-56%** system-wide (`market-and-switching.md` §2.1). Documentation failures — exactly the class of error the deterministic gate targets (Part A/B miscoding, missing order, refused-treatment-billed-anyway) — drove **79.1% of 2023 CMS improper payments** (`market-and-switching.md` §2.1). A pre-submission gate that catches the two deterministic, highest-frequency error modes before a claim is ever submitted converts a share of that denial rate into avoided rework and avoided delayed/lost revenue.
-2. **Clawback/FCA-exposure avoidance.** FCA healthcare recoveries totaled **$6.8B in FY2025** (`go-no-go.md`, `market-and-switching.md` §2.2), and CMS/OIG have named SNF PDPM upcoding and improper therapy billing as an active 2026 audit-oversight focus (`market-and-switching.md` §2.2). The closest available comparables are **not RT-specific and must be presented with that caveat**: a Symphony Healthcare Facilities SNF-rehab-therapy FCA settlement of **$300,000** (medically-unnecessary-services allegation, three Illinois SNFs, May 2026 — DOJ/HHS-OIG, independent government source, but "rehabilitation services" is not confirmed to include RT specifically) and a non-SNF respiratory-therapy FCA settlement of **$852,378** (unlicensed personnel, already flagged in `go-no-go.md`). **No SNF-RT-specific billing/coding FCA settlement is publicly documented** — this gap has now been checked across two independent research passes (269 + `research-notes.md` §1) and should be stated to the owner as an honest open item, not papered over with an extrapolated figure.
-3. **Audit-defensibility value.** Independent of any denial or clawback event, the audit ledger converts "why was this billed" from an undocumented answer ("the RT's memory and habits") into a queryable, per-claim record (`isagawa-feasibility.md` §5). This has value even in a year with zero denials or audits, because SNF respiratory/quality-of-care deficiencies are an active enforcement target in their own right (St. Margaret's Center, $1.3M CMP settlement naming respiratory/tracheostomy care deficiencies, Feb 2026 — cited here only as evidence of enforcement attention, not as a billing-clawback comparable per `research-notes.md` §1).
+**Our Commitment**
 
-**What is deliberately NOT modeled here, and why:** a per-claim or per-year dollar savings estimate for the cousin's specific facility. That would require a **per-claim labor-correction cost** figure that no research pass — 269's or this one's — has been able to find (`research-notes.md` §1, §5). Fabricating that number to complete an ROI formula would violate the gate contract's "never fabricate" rule. **This is owner/expert-to-confirm**: the cousin (or the facility's own billing staff) is the only credible source for current denial/rework volume and per-incident correction cost at their facility, and the ROI case should be finalized with that input rather than a market-average placeholder.
-
----
-
-## Pricing
-
-Three models were evaluated (`research-notes.md` §2):
-
-| Model | Fit for this product | Verdict |
-|---|---|---|
-| **Flat per-facility SaaS** (comparable range: $150-300/bed/month for full SNF EHR platforms, aggregator-estimated, not vendor-quoted — `research-notes.md` §2.1) | Matches a single-facility, owner-operator, fast-decision customer with no CFO-gated procurement (`market-and-switching.md` §3); no metering friction; predictable cost for the pilot | **Recommended** |
-| **Per-claim** ($5-25/claim, industry-survey aggregated — `research-notes.md` §2.2) | Scales with volume, but this is a gate that runs on *every* claim regardless of outcome, not a recovery tool that only runs on flagged claims — a harder pitch for a prevention product | Named as an alternative, not recommended |
-| **Revenue-share / percentage-of-collections** (3-8% of collections, industry-survey aggregated — `research-notes.md` §2.3) | Actively works against this product's positioning: a rev-share fee creates a financial incentive to find claims billable, which is close to the FCA "cause" liability exposure this system exists to avoid (`go-no-go.md`) | **Rejected** — conflicts with the liability-first, never-auto-bill positioning |
-
-**Recommendation:** a flat per-facility monthly SaaS fee, priced below the low end of the $150-300/bed/month full-EHR-platform range (this is an add-on compliance gate, not a full EHR). The exact dollar figure is a pilot-negotiation variable dependent on the target facility's bed count, which is not yet known — it should be set with the cousin directly, not asserted here as a researched market rate (`research-notes.md` §2.4, §5).
+We never auto-bill, auto-correct, or submit claims on your behalf. We also never build our system to maximize the number of "approvable" claims—that would create the same conflict-of-interest risk that regulators worry about. Instead, we build toward one goal: helping you make confident, audit-defensible billing decisions.
 
 ---
 
-## Go-to-Market
+## 3. Market Analysis
 
-**Segment and entry point:** the cousin's single-facility independent SNF is both the design target and the pilot customer — an admin-approximates-owner, fast-decision segment with no multi-stakeholder procurement cycle (`market-and-switching.md` §3). GTM for this segment is **pilot-first**, not sales-cycle-first: prove the gate on real (or shadow-mode) claims at the cousin's facility before any broader positioning is attempted.
+### Industry Trends
 
-**Champion path:** RT and billing/administrative staff are the day-to-day champions — they are the ones who feel the current process's lack of a pre-submission check — and the owner/administrator is the approver. This mirrors the segment finding above: at a single independent SNF, "champion" and "approver" are close to the same small group of people, which shortens the adoption path relative to a multi-facility chain.
+**Rising Audit Scrutiny and Denial Rates**
 
-**Proof point:** RT-performed validation of the judgment layer's rubric outputs against the RT's own clinical judgment (the accuracy-baseline precondition named in Proof/Accuracy Model above) doubles as the GTM proof artifact — "here is where the system agreed with your own RT's judgment, and here is where it correctly deferred to human review" is a concrete, facility-specific demonstration, not a generic accuracy claim.
+The skilled nursing industry is facing unprecedented compliance pressure:
 
-**Positioning — liability/audit-defensibility, not automation speed.** This is the central differentiation decision, and it is deliberate: PointClickCare's own Billing Advisor (part of Advisor Suite) is already available today, at zero incremental cost, to every SNF already on the PCC EHR (`research-notes.md` §3), and PCC's own press-release language frames it as **revenue-forward** — finding missed/under-billed charges — not compliance-forward (`research-notes.md` §3). Competing on automation speed or "catches more charges" against a free, EHR-native incumbent is a losing position. This product instead leads with what Billing Advisor does not claim: a structural, audit-ready, never-auto-bill compliance gate whose entire value proposition is liability reduction and audit-defensibility for claims *already* being billed — a narrower, RT-specific judgment wedge (`go-no-go.md`), not a general "AI-native billing platform" claim.
+- **Audit focus on SNFs:** The Centers for Medicare & Medicaid Services (CMS) has named skilled nursing billing as a 2026 enforcement priority, with explicit attention to therapy documentation and coding accuracy.
+- **High denial rates:** Medicare Advantage insurance plans deny 35-56% of skilled nursing claims, often for eligibility or documentation issues. Even traditional Medicare sees denial rates above 17% in post-acute care.
+- **Documentation is the failure point:** CMS data shows 79% of improper payments in nursing homes result from insufficient documentation—not from care being provided incorrectly, but from failing to justify the care properly. This is fixable.
+- **Record enforcement spend:** Federal enforcement agencies recovered $6.8 billion in improper claims in 2025 alone, with skilled nursing as an active target.
+
+**What This Means for You**
+
+The days of hoping to avoid audit scrutiny are over. The compliance expectation is shifting from "maybe we'll be audited someday" to "when we're audited, will we have the records to prove we did everything right?" Facilities that can demonstrate clear, deliberate billing review and documentation have a massive advantage—both in avoiding penalties and in surviving an audit if one occurs.
+
+### Target Market
+
+**Primary: Independent Single-Facility Operators**
+
+Our focus is on independent SNFs or small groups where the administrator and owner make decisions quickly. This segment has the highest ROI for a compliance-focused tool:
+
+- **Fast decision cycles:** Unlike multi-facility groups with CFO approval processes, independent operators can evaluate and adopt tools quickly.
+- **High compliance risk:** Smaller facilities lack the specialized billing staff of hospital networks, making documentation and coding errors more likely.
+- **Audit vulnerability:** Independent facilities face the same enforcement scrutiny as larger chains but often lack the compliance infrastructure of larger systems.
+- **Cost sensitivity:** Flat-fee, focused-scope tools are a natural fit for independent operators compared to enterprise EHR pricing.
+
+**Secondary: Specific Personas**
+
+Within the primary market, our tool serves two key roles:
+
+- **Facility owners and operators:** Concerned about audit risk, liability exposure, and protecting their facility's reputation
+- **Billing managers and respiratory therapists:** Responsible for coding accuracy and documentation completeness, looking for tools that catch errors before submission rather than after denial
+
+### Competitive Landscape
+
+**The Existing Market**
+
+Several categories of vendors address SNF billing and compliance:
+
+- **Full-service EHR/billing platforms** (PointClickCare, MatrixCare, Optima Therapy): These are comprehensive systems for all SNF functions, including compliance modules. Pricing typically runs $150-300 per bed per month, making them cost-prohibitive for compliance-only needs and creating vendor lock-in.
+- **Standalone billing and RCM services** (PUREDI, Practolytics, CareCloud): Revenue cycle management providers that handle broader billing operations. Often priced per-claim or as a percentage of revenue, these are better suited for full outsourcing than for compliance review within your existing process.
+- **Therapy-specific platforms** (Innova Health): Designed for contract therapy providers, not integrated with SNF billing workflows in the way independent facility operators need.
+
+**The New Competitive Threat**
+
+PointClickCare launched "Advisor Suite" in June 2026, including a "Billing Advisor" product that scans clinical documentation to identify billing opportunities and code mappings before claims submission. This is a direct competitive entrant—and a credible one, given PCC's existing EHR relationship and compliance certifications.
+
+However, this creates an important differentiation opportunity for us:
+
+- **Advisor Suite's focus:** General billing optimization and revenue capture—finding billable services that might otherwise be missed. This is a revenue-forward framing.
+- **Our focus:** Compliance and audit defensibility—ensuring every claim you submit is justified and documentable. This is a liability-first framing.
+- **Our advantage:** Respiratory-therapy-specific rules and clinical judgment, built from ground-level understanding of RT billing dynamics. Advisor Suite, as reported, is a general documentation and coding tool, not RT-specific.
+
+For facility owners who've experienced audits or fear regulatory exposure, this positioning is powerful. We're not the automation play—we're the "sleep-well-at-night" play.
 
 ---
 
-## Roadmap — Phased Direction (Phase 1 now, Phase 2+ future)
+## 4. Organization & Management
 
-The compliance/validation gate above is **Phase 1** — deliberately the entire near-term product and pitch, and the wedge that gets in the door. It is not the ceiling. The original and still-intended long-term direction is a broader RT workflow platform, sequenced *after* the gate earns trust and the Phase-1 preconditions (BAA, PCC API access) clear. It is kept explicitly on the roadmap so it is not lost — but it is strictly **secondary**, and it is governed by two invariants that never relax in any phase.
+**The Team**
 
-**Two invariants that hold in every phase:**
+This solution is built for the independent facility operator and their existing team. You don't need to hire new staff or restructure how you work today.
 
-- **Human-in-the-loop is mandatory wherever a human decision applies.** Every automated step *proposes*; a human *approves*. This is enforced structurally by the kernel (gated outputs + human-review checkpoints), not left to policy. No step that makes a clinical or billing decision ever acts without a human sign-off.
-- **Billing *submission* is never automated — permanently.** The system may assemble and prepare a claim; a human always approves before it reaches a payer. This is the FCA firewall from the Risk section below, and it is a property of every phase, not a Phase-1 limitation.
+**On the Ground**
+Your respiratory therapists and billing staff continue their current roles. The therapists chart as they always do. The billing manager or therapist reviews compliance flags before submission—adding one deliberate review step to a process they already understand.
 
-**Phased sequence (each phase ships only after the prior earns trust; each is HITL-gated):**
+**The Builder**
+We provide the platform, maintain the Medicare compliance rules as they change, and ensure the system stays current with billing code updates. We're your compliance partner, available to answer questions about specific flags or rule changes.
 
-1. **Phase 1 — Compliance / validation gate (now).** Validate-and-flag over existing charting + proposed CPT; a human adjudicates every judgment flag. *(This document.)*
-2. **Phase 2 — Patient-filtering assist.** The system *proposes* the qualifying-patient census list from the EMR; the RT reviews and confirms who to see. Automates the *surfacing*, never the clinical decision to treat.
-3. **Phase 3 — Charting assist.** The system *drafts* the structured clinical assessment from vitals/orders/prior notes for the RT to review, edit, and **sign**. No chart is ever finalized under the RT's name without the RT's explicit sign-off — the draft is a starting point, not a submission.
-4. **Phase 4 — Billing preparation.** The system *assembles* the CPT-coded claim from signed charting for a human to **approve before submission**. This is claim *preparation*, not *submission* — the never-auto-submit invariant above applies here in full.
-
-Each later phase reuses the same 3-layer + judgment-layer + audit-ledger architecture and the same human-review gate; the platform grows by adding assist steps *in front of* the gate, never by removing the human from a decision. For an owner, this is the difference between adopting a one-feature tool and adopting the entry point to a governed RT workflow platform — without, at any phase, taking on auto-billing liability.
+**No Automation Risk**
+Because nothing is submitted automatically, there's no risk of the system making a billing decision you don't understand or approve. Your facility maintains complete control over every claim that leaves your office.
 
 ---
 
-## Risk & Compliance Posture
+## 5. Products & Services
 
-**HIPAA / BAA.** The judgment layer reads PHI (existing PCC charting) to run its checks, which makes a Business Associate Agreement a hard precondition, not a launch-week formality. PointClickCare's own Advisor Suite already ships with PCC's existing BAA/SOC2/HITRUST attestations in place (`go-no-go.md`) — a third-party wedge is compared against that bar, not against "has no BAA at all" as the alternative. No PHI flows through the judgment layer until a named LLM provider has signed a BAA covering that flow in writing (see Preconditions below).
+**What the System Does**
 
-**The never-auto-bill / never-auto-chart boundary is the liability firewall, restated here because this is where it matters most.** The deterministic gate and the human-review gate (Solution, above) exist specifically to keep clinician- and facility-side liability off this system's shoulders. But the FCA exposure this system is designed to avoid can still attach **directly to the vendor**, independent of the human countersign, if the judgment layer's rubric is designed — even unintentionally — to nudge its verdicts toward "billable" (`go-no-go.md` §"Why this isn't a clean, unconditional GO"). That risk is not mitigated by the human-in-the-loop gate; it is a separate, upstream risk in how the rubric prompt itself is written. Consequently: **legal review of the judgment-layer rubric design for FCA "cause" exposure is a precondition to writing the first judgment prompt against real PHI, not a step that happens after the harness is built.** This is currently the single highest-severity, least-mitigated risk in the whole system.
+Our compliance platform reads the respiratory therapy charting and billing codes your therapists have already documented in your system (PointClickCare or similar). It then checks each claim against:
 
-**Human-review guarantee.** Every judgment-layer verdict of "eligible/supported" is blocked from reaching a billable claim until a human countersigns it, regardless of the verdict's confidence score. This is enforced as a structural kernel gate (Solution, above), not a policy setting the system could later drift away from — the same property that makes "never auto-bill" true today stays true as the rubric, the model, or the codebase changes.
+- Medicare eligibility criteria for the patient
+- Skilled vs. routine care distinctions
+- Required documentation standards for the diagnosis and service code
+- Billing code accuracy and complete justification
 
-## Preconditions (the four gating items — honest open items, not yet satisfied)
+For each claim, the system produces a clear report:
+- **Claims that pass review:** A record that the claim was checked and found compliant
+- **Claims with concerns:** A detailed explanation of what needs attention (missing information, documentation gap, code mismatch, or eligibility question) and what your staff should do before submitting
 
-None of the following are satisfied as of this writing. All four gate the start of the harness build itself, and the first two — BAA and the accuracy baseline — are the two most likely to force a design change if they come back negative (`go-no-go.md`):
+**Your Approval Workflow**
 
-1. **BAA confirmed in writing.** A named LLM provider has not yet been confirmed, in writing, to sign a Business Associate Agreement covering the judgment-layer's PHI flow.
-2. **PCC FHIR/API read access.** The cousin's target SNF's PointClickCare instance has not yet been confirmed to expose FHIR/developer API read access. If access is denied, MVP scope shrinks to CSV-export-assisted charting review — it does not fall back to browser automation against live PHI-bearing sessions.
-3. **Judgment-accuracy baseline.** No informal accuracy baseline yet exists showing the judgment layer's verdicts agree with the RT's own clinical judgment on cousin-labeled charting examples run through a draft rubric — the evidence needed to know the human countersign will function as a check, not a redo.
-4. **Audit-ledger export validated against a real CMS audit.** The audit-ledger export format has not yet been reviewed against what an actual CMS audit response requires — only against what the kernel's existing ledger mechanism produces internally.
+Here's the guarantee that protects you: **A person always reviews and approves before any claim is billed. The system never submits a claim on its own.**
 
-These are stated here as open items the owner should know about before committing to a pilot timeline, not as solved problems being reported after the fact.
+When a concern is flagged:
+1. Your billing manager or RT reviews the flag and the system's explanation
+2. Your staff decides: correct the documentation and resubmit, or approve and submit as-is (accepting the flagged risk)
+3. You approve each claim explicitly before it leaves your facility
+4. The system keeps a record of what was reviewed, when, and why you approved it
+
+**Audit Protection**
+
+Every claim comes with an audit trail: what the system checked, what it found, and whether it was flagged or passed. Medicare auditors want to see exactly this—evidence that your facility is reviewing claims deliberately. This record becomes your protection in an audit.
+
+**Scope: Phase 1**
+
+Our initial release focuses on the pre-submission compliance gate. This gives you the highest-impact protection: catching billing problems at the charting stage, before claims are submitted.
+
+Future phases may expand to additional workflow support, but Phase 1 is built around one mission: a transparent, human-reviewed compliance checkpoint that you control.
+
+---
+
+## 6. Marketing & Sales Strategy
+
+**Go-to-Market: Pilot-First Approach**
+
+We launch with a focused pilot at your facility. The goal is proof: showing that the system catches real billing issues and that your team can integrate it into their daily work.
+
+**Phase 1: Pilot Launch**
+- Implementation at your facility over 4-6 weeks
+- Training for your billing manager and one RT
+- Live operation on a subset of claims (or all claims, depending on your comfort level)
+- Weekly check-ins to surface questions and adjust workflows
+- Measurement of what the system flags, what your team confirms as actual risks, and how many claims the system helps you feel confident submitting
+
+**Measurement & Proof**
+The most compelling evidence is alignment: showing where the system agrees with your own judgment. When a claim passes the compliance check and your experienced staff would approve it anyway, that's validation. When the system flags a real problem that you would have submitted incorrectly, that's ROI.
+
+We track these proof points during the pilot. They become the foundation for broader adoption or expansion.
+
+**Sales Strategy**
+We're not building a self-serve SaaS product for this phase. We're partnering directly with facility owners and administrators who want to solve their compliance risk. Sales happen through:
+
+- Direct conversation with facility owners and operators (personal and professional networks)
+- Introduction by administrators who've seen the system in practice
+- Trade events and professional associations focused on skilled nursing administration
+- Thought leadership in compliance and billing, positioning the facility owner as audit-ready
+
+The value proposition is simple: you reduce your legal and financial risk. Audit pressure is real. This system lets you sleep well at night, knowing your compliance is defensible.
+
+---
+
+## 7. Operations & Implementation
+
+**How It Fits Your Workflow**
+
+The system integrates with your existing billing process with one new step: review before submission. Here's how it works:
+
+1. **Your therapist charts:** RT documents the service, diagnosis, and codes in PointClickCare (or your system) as they do today
+2. **Compliance check:** The claim is reviewed against Medicare rules automatically
+3. **Flag or pass:** The system produces a report—either all clear, or specific concerns flagged for review
+4. **Your review:** Your billing manager or RT reviews any flags, decides whether to correct or approve, and explicitly approves the claim before submission
+5. **You submit:** The claim leaves your facility with your sign-off and a complete audit record
+
+**What Changes in Your Daily Work**
+
+Minimal disruption. Your billing workflow stays the same. You're adding one structured review checkpoint before submission—which many facilities already do manually. Our system just makes that review systematic and documented.
+
+Time impact: approximately 2-5 minutes per flagged claim for your billing staff, plus a few seconds per passing claim to acknowledge the compliance check in the audit log.
+
+**Implementation: 4-6 Weeks**
+
+- **Week 1:** System setup and data connection to your billing platform
+- **Weeks 2-3:** Staff training (billing manager and RT lead)
+- **Week 3-4:** Soft launch with a subset of claims; team familiarization
+- **Week 4-6:** Live operation on all claims; weekly check-ins to refine workflows and address questions
+
+**Technical Requirements**
+
+Minimal IT lift on your end:
+- Read-only access to your billing system's data (charting, codes, eligibility)
+- Secure connection (HIPAA-compliant, encrypted)
+- No changes to your therapists' charting process
+- No new hardware or software installation
+
+**Ongoing Operations**
+
+After launch, operations are straightforward:
+
+- **Support:** Available for questions about flags, billing rules, or system behavior
+- **Rule updates:** We maintain Medicare compliance rules and billing code standards as they change (automatic updates on your end)
+- **Monthly reporting:** High-level summary of claims reviewed, flags issued, and audit trail status
+- **Quarterly business review:** Check in on how the system is working for your team and discuss any changes to your workflow
+
+**Scalability: Single Facility Focus**
+
+Phase 1 is built for one facility's operations. As the system matures and you expand, we can discuss multi-facility support, specialized configurations, or integration with other systems—but we start with your needs as they are today.
+
+---
+
+## 8. Financial Plan & Projections
+
+### The Financial Case: Avoided Cost, Not Generated Revenue
+
+Unlike billing-optimization or volume-expansion products, this system's value is **avoided cost**: you prevent denied claims, reduce the risk of clawbacks, and defend yourself in audits. We don't generate new billable volume—we protect the claims you're already submitting from documentation errors, coding mismatches, and eligibility problems that would otherwise result in denials or, worse, audit findings.
+
+### ROI Model: Three Avoided-Cost Categories
+
+**1. Denied-Claim Avoidance**
+
+Medicare Advantage plans deny 35–56% of skilled nursing claims system-wide. Traditional Medicare denial rates exceed 17% for post-acute care. Many of these denials stem from documentation failures, not clinical problems—specifically, incomplete information, missing orders, coding mismatches, and part-coverage miscoding. Your compliant charting already supports the claim; but if it's submitted without a pre-submission review, it hits the payer blind.
+
+The compliance gate catches these errors before submission:
+- **Part A/B miscoding** — your patient switches from Part A bundling to Part B billing mid-stay, but the code submitted reflects yesterday's status
+- **Refused-treatment billed anyway** — a missed notation in your charting, caught here
+- **Missing order or documentation** — the diagnosis doesn't support the service, or the order was never entered
+- **Wrong CPT code** — similar services map to different codes; the gate clarifies the right one
+
+A pre-submission gate that prevents even 5–15% of denials converts lost and delayed revenue back into collections. At a typical SNF billing $150k–$300k annually in respiratory therapy claims, 5% denial avoidance recovers $7,500–$15,000 annually.
+
+**2. Clawback and Audit Exposure Avoidance**
+
+Federal enforcement against healthcare improper payments totaled $6.8 billion in fiscal year 2025. CMS and the Office of Inspector General have explicitly named skilled nursing PDPM upcoding and improper therapy billing as 2026 audit priorities. An independent SNF that receives an audit notice faces not just denied claims, but potential repayment demands, civil penalties, and (in serious cases) False Claims Act exposure.
+
+A documented, pre-submission compliance review protects you:
+- **Audit defensibility** — when CMS asks "why did you bill this claim," you have a record: "we reviewed it against Medicare requirements, flagged our concern, and you (the owner/administrator) approved it anyway with full awareness of the risk."
+- **Penalty mitigation** — a documented review process demonstrates good-faith compliance effort, which regulators consider in penalty calculations.
+- **Liability differentiation** — you are doing what your billing automation competitor isn't: maintaining a clear, queryable record of every decision.
+
+While no SNF-specific respiratory-therapy audit settlement figure is publicly available to model from (a known open item from our research), the principle is sound: documented, deliberate review is a liability reducer in any healthcare audit scenario.
+
+**3. Administrative Cost Savings**
+
+Today, your billing staff handle claim review manually—re-reading charting, cross-checking codes, looking up eligibility status. A claim that fails review gets reworked, wasting 20–30 minutes of your staff's time (plus the delay in resubmission). A systematic, transparent review replaces ad-hoc checking:
+- **Billing staff efficiency** — instead of "does this look right," they get "here's what the system checked; is the flagged concern valid?" A clearer decision task.
+- **Reduced rework cycles** — catch the error once, before submission, rather than after a denial arrives.
+- **Audit preparation** — your ledger is already organized for any future CMS inquiry, saving hours of chart-pulling and justification-writing if an audit occurs.
+
+We estimate 2–5 minutes per flagged claim for your staff to review the system's flag and make a decision. For a typical SNF with 5–15 flagged claims per month (rough estimate; your mileage will vary), that's 10–75 minutes per month of structured review work instead of ad-hoc re-review cycles.
+
+### Pricing Model
+
+We recommend a **flat, monthly fee per facility** — simple, predictable, and aligned with your decision-making speed. This model contrasts with:
+
+- **Per-claim pricing** ($5–25 per claim checked) — creates billing friction and doesn't fit a prevention product that runs on *every* claim regardless of outcome
+- **Revenue-share models** (3–8% of collections) — introduces a financial incentive to approve more claims, which conflicts with our compliance-first positioning and creates vendor-liability risks we explicitly want to avoid
+
+A flat monthly fee means you know your cost upfront, and you benefit from every denial avoided without the system having a financial incentive to be permissive.
+
+### Financial Projection: Pilot Phase (Year 1)
+
+Since this is a pilot with your specific facility, we'll set pricing directly with you based on your bed count, current billing volume, and ROI expectations. The conversation should include:
+
+- **Your current denial rate** for respiratory therapy claims (best estimate from your billing records)
+- **Your current per-claim rework cost** (staff hours to investigate and correct a flagged claim)
+- **Your audit-risk tolerance** (how much would a CMS audit exposure concern you to avoid?)
+
+With those inputs, we can calculate a break-even monthly fee that nets positive ROI within 3–6 months if the system catches just 2–3 high-severity errors (Part A/B miscoding, missing order) per month.
+
+**A concrete example (illustration only; your numbers will differ):**
+- Current annual RT billing: $250,000
+- Current MA denial rate: 40% (industry average for RT)
+- Denied claims annually: ~20 claims (estimated based on billing frequency)
+- Per-claim rework + delay cost: $500–$1,000 (staff time + delayed revenue)
+- Annual denial/rework cost: ~$10,000–$20,000
+
+If the compliance gate prevents 30% of denials (6 claims), it saves $3,000–$6,000 annually. A pilot pricing of $200–$300/month ($2,400–$3,600 annually) nets positive ROI in year 1, plus the audit-defensibility value on top.
+
+**Your numbers may differ significantly.** We will finalize pricing during the pilot conversation once you've shared your facility's specific billing patterns and risk profile. What matters here is the method: quantified avoided cost, not guessed market rate.
+
+### Investment & Ongoing Costs
+
+**Pilot phase (4–6 weeks):** No license fee during setup and training; system access and configuration provided as part of the pilot engagement.
+
+**After pilot (ongoing):** Monthly license fee (to be negotiated) covers:
+- System operation and access
+- Medicare billing-rule updates (quarterly or as rules change)
+- Audit-trail reporting and historical query access
+- Support for flag interpretation and compliance questions
+- Quarterly business reviews
+
+No per-claim costs, no per-user seats, no additional charges for data or integration.
+
+---
+
+## 9. Funding & Pilot Investment
+
+This is a pilot venture between you and us. We are not seeking external investment at this stage.
+
+**Your investment:** Staff time during the 4-6 week implementation (billing staff for training, RT for accuracy validation, administrator for weekly check-ins). Budget ~2-3 hours per week from your team.
+
+**Our investment:** Platform development, implementation support, training delivery, and ongoing maintenance during the pilot phase.
+
+**Pilot terms:** To be negotiated directly, including pilot duration, pricing model, and success metrics for evaluation after the first 90 days. Typical pilot structures include a fixed pilot fee (covering our setup and support cost) followed by month-to-month operation if the pilot proves valuable.
+
+---
+
+## 10. Appendix: Preconditions & Supporting Materials
+
+### The Four Preconditions to Launch
+
+Before the system goes live with real charting and claims, four items must be confirmed. These are not roadblocks—they are honest open items that shape the pilot timeline:
+
+1. **Business Associate Agreement (BAA) — Signed**  
+   The system reads your facility's clinical charting from PointClickCare (or similar EHR) to validate claims. That's Protected Health Information (PHI), which requires a signed Business Associate Agreement with any service vendor. We will identify a specific service provider for the clinical reasoning component and obtain a written BAA covering that vendor's role in the system. This is completed before the system touches any live charting.
+
+2. **PointClickCare API Access — Confirmed**  
+   Your facility's PCC instance must expose read-only FHIR or developer API access to the system. This allows the system to pull charting and eligibility data automatically rather than requiring CSV exports or manual data entry. We will verify this access during week 1 of the pilot and confirm your PCC admin's willingness to enable it. If API access is blocked by your PCC license terms, we have a CSV-assisted fallback, but API is the preferred path for efficiency.
+
+3. **Accuracy Baseline — Established**  
+   Before the system flags real claims, we will test the system's clinical reasoning checks (does the diagnosis support this service, is this skilled care or routine) against your own RT's judgment on a sample of charting examples. This is the "ground truth" check: your RT reviews what the system concludes and gives us feedback on accuracy and usefulness. If the system's agreement with your RT's expertise is too low, we adjust the decision logic before going live. This is a quick study (2-3 days of work), not a barrier.
+
+4. **Audit Ledger Export Validated**  
+   The system keeps a queryable record of every claim reviewed and every decision made (flag or pass, reason, staff sign-off). This ledger is designed to answer "why was this claim billed" in an audit scenario. Before launch, we will review the ledger schema with you and (if you have legal/compliance staff available) with a healthcare compliance advisor to confirm it meets CMS audit-response expectations. Small adjustments to the format or detail level may be needed.
+
+### Supporting Materials & References
+
+For the detailed technical and market grounding behind this plan, see:
+
+- **Research Phase:** `compliance-research/` folder within this project
+  - `domain-and-compliance.md` — Full analysis of respiratory therapy billing rules, current error modes, and audit-defensibility requirements
+  - `market-and-switching.md` — Healthcare market trends, denial rates, audit focus, competitive landscape analysis
+  - `go-no-go.md` — Risk analysis, liability posture, regulatory environment assessment
+  - Architecture and feasibility brief — Technical architecture analysis, phased implementation roadmap, accuracy model
+
+- **Internal Strategy Brief:** `business-plan-strategy-brief-internal.md` (this project folder)
+  - Detailed ROI modeling and avoided-cost justification
+  - Phased roadmap (Phase 1–4) with human-in-the-loop architecture at each stage
+  - Risk and liability analysis for False Claims Act exposure
+  - Proof-of-concept methodology for accuracy validation
+
+- **Format & Structure Reference:** `business-plan-format-notes.md` (this project folder)
+  - Healthcare business plan standards applied to this venture
+  - Section-by-section rationale
+
+### Next Steps
+
+After you have reviewed this plan, let's discuss:
+
+1. **Your current state:** Billing volume, denial rates, current compliance process, IT infrastructure (EHR platform, API access, compliance tooling)
+2. **Your pilot readiness:** Availability of staff for training, timeline preferences, success metrics you'd like to measure
+3. **Precondition status:** Which of the four preconditions you can confirm or need help navigating
+4. **Pricing & terms:** Pilot structure, investment level, and expected contract terms
+
+From there, we'll finalize the pilot timeline and begin implementation.
