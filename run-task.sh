@@ -284,13 +284,21 @@ move_to_done() {
 # actions-log churn every iteration, never the actual deliverable) so
 # complete never leaves an uncommitted deliverable on the branch.
 commit_on_complete() {
+  # 292 isolation: ONLY auto-commit inside an isolated worktree (BUILD/REFACTOR spawns).
+  # In a SHARED tree (RESEARCH/TEST subfolder mode), a broad `git add -- .` sweeps in
+  # sibling agents' in-progress files + the .claude/worktrees dirs — the swarm collision.
+  # There, leave the deliverable uncommitted for review; no shared-tree auto-commit.
+  if [ "$IS_WORKTREE" != true ]; then
+    echo "[COMMIT] Shared tree (not an isolated worktree) — skipping auto-commit; deliverable left uncommitted for review (292)."
+    return 0
+  fi
   local dirty
-  dirty=$(git -C "$REPO" status --porcelain -- . ':!.claude/state')
+  dirty=$(git -C "$REPO" status --porcelain -- . ':!.claude/state' ':!.claude/worktrees')
   if [ -z "$dirty" ]; then
     return 0
   fi
   echo "[COMMIT] Dirty deliverable tree detected at complete. Committing..."
-  if git -C "$REPO" add -- . ':!.claude/state' && \
+  if git -C "$REPO" add -- . ':!.claude/state' ':!.claude/worktrees' && \
      git -C "$REPO" commit -m "chore: commit deliverable on task completion (${TASK_SUBFOLDER:-default})" >/dev/null 2>&1; then
     echo "[COMMIT] Deliverable committed."
   else

@@ -41,3 +41,6 @@ htmlcov/
 *.jpg
 *.jpeg
 .playwright-mcp/
+
+# 292: never commit pipeline worktrees (broad git-add embedded them as gitlinks)
+.claude/worktrees/
