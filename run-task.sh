@@ -85,6 +85,20 @@ if git -C "$REPO" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   fi
 fi
 
+# --- Guarded base-freshness assertion (WI-01 safety net) ---
+# Agent isolation:"worktree" branches from current HEAD at spawn time, so the
+# base is already fresh by construction — a `git reset --hard main` is NOT
+# required for correctness. This check is a detection-only safety net: if the
+# worktree's fork point predates main's current tip, warn (never auto-reset —
+# that would discard in-worktree commits).
+if [ "$IS_WORKTREE" = true ]; then
+  MAIN_HEAD=$(git -C "$REPO" rev-parse main 2>/dev/null || echo "")
+  MERGE_BASE=$(git -C "$REPO" merge-base HEAD main 2>/dev/null || echo "")
+  if [ -n "$MAIN_HEAD" ] && [ -n "$MERGE_BASE" ] && [ "$MERGE_BASE" != "$MAIN_HEAD" ]; then
+    echo "[WARN] Worktree base is stale: fork point $MERGE_BASE predates main HEAD $MAIN_HEAD. Continuing — detection-only safety net, not an auto-reset."
+  fi
+fi
+
 # --- Resolve task folder ---
 if [ -n "$TASK_SUBFOLDER" ]; then
   TASK_DIR="tasks/${TASK_SUBFOLDER}/"
@@ -618,7 +632,7 @@ else:
       FAILED=$((FAILED + 1))
       CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
       echo "-> Task failed after $MAX_RESUME_RETRIES resume attempts. Skipping."
-      skip_current_task
+      skip_current_task "$AGENT_ID"
 
       if [ $CONSECUTIVE_FAILS -ge $MAX_CONSECUTIVE_FAILS ]; then
         echo ""

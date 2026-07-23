@@ -207,7 +207,12 @@ check_completion() {
 }
 
 # --- Skip current task in workflow state ---
+# $1: agent_id (or "default"/empty) — routes to agent-{id}-workflow.json when set,
+# matching verify_completion_write/check_stall. Must NOT be derived from the
+# parent session_state.json's 'agent_id' field, which is unset for routed runs
+# (that fallback silently wrote the PARENT workflow file — WI-02).
 skip_current_task() {
+  local agent_id="$1"
   $PYTHON_CMD -c "
 import json, pathlib
 sf = pathlib.Path('$STATE_FILE')
@@ -217,8 +222,8 @@ s = json.loads(sf.read_text(encoding='utf-8-sig'))
 domain = s.get('domain', '')
 if not domain:
     exit(0)
-agent_id = s.get('agent_id')
-if agent_id:
+agent_id = '$agent_id'
+if agent_id and agent_id != 'default':
     wf = sf.parent / f'agent-{agent_id}-workflow.json'
     if not wf.exists():
         wf = sf.parent / (domain + '_workflow.json')
