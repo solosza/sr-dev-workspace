@@ -1,7 +1,21 @@
 # Factory Runner Empty-Output Hardening — Port 262/270 Empty-Retry to run-spec-factory.sh
 
 ## Status
-Open
+COMPLETE (2026-07-23) — ported directly (not via pipeline; editing the runner via a pipeline is circular). `domain-spec-factory` commit `778d8d3`, pushed.
+
+### Root cause (audited)
+`run_step_claude` passed the raw `claude -p` JSON **text** to `extract_session_id`/`extract_result`, which do `test -f "$1"` (expect a **file path**) → always empty → `check_step_completion("")` → **always `no_signal`**. So the runner could never see `STEP_COMPLETE`; it fell to resume, then failed (killed platform-hybrid at step 7). Compounding it: `update_factory_state` and the agent both wrote `current_step`, so state drifted (`current_step=12` while only 2 steps ran).
+
+### As-built fixes
+1. **Root:** extract from `$logfile`, not raw text.
+2. **Completion-truth (270):** a step counts complete only if it signaled done **AND** `check_step_output` confirms its declared artifact exists — false-complete blocked + retried.
+3. **Empty-retry (262):** empty output → backoff + retry fresh (MAX_EMPTY_RETRIES) before resume.
+4. **No-session-id fallback:** re-run the step **fresh** instead of "cannot resume → stop".
+5. **Drift-repair:** the runner owns `current_step` and recomputes it as the max actually-`_complete` step; agent prompt no longer writes it.
+6. **Step-11 schema fix:** gate parse reads the true gate array (`result`, count == total) — a summary `failed:0` can lie (platform-hybrid: 15/31 pass, failed:0).
+
+### Proof
+`domain-spec-factory/tests/test_281_completion_truth.sh` → **9/9** (syntax, wiring, drift 12→3, step-11 correctly rejects platform-hybrid 15/31, accepts pci-dss 26/26). `bash -n` clean. `.pre281.bak` saved.
 
 ## Priority
 High — the meta-factory's runner has the same empty-output fragility that repeatedly broke `run-task.sh`, and it just killed a live platform-hybrid build at step 7. The factory is the tool that builds every platform; its runner must be as hardened as `run-task.sh` now is.
