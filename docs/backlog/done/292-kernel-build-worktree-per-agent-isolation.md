@@ -1,7 +1,16 @@
 # Worktree-Per-Agent Isolation — Every Concurrent Spawn Gets Its Own Tree
 
 ## Status
-Open
+COMPLETE (2026-07-23) — collision killed via commit-scoping (simpler than full worktrees). `sr_dev` `2cce202`.
+
+### As-built (decision: commit-scoping > full worktree-per-agent)
+Root cause of the swarm collision was NOT the shared tree per se — it was `run-task.sh` `commit_on_complete` doing a whole-tree `git add -- .` that swept sibling agents' files + `.claude/worktrees` (as gitlinks) into one agent's commit. Fixed at the source:
+- **Auto-commit only inside an isolated worktree** (`IS_WORKTREE`); shared-tree RESEARCH/TEST deliverables left uncommitted for review — no cross-agent sweep.
+- **`.claude/worktrees` excluded** from the add pathspec **and** gitignored (was the embedded-repo root cause).
+- **Behavioral test passed:** shared-tree auto-commit skipped (HEAD unchanged); worktree add stays scoped (0 worktree files staged, deliverable staged).
+- **Port finding:** the canonical + resynced platforms have **no** `commit_on_complete` — the vulnerable code existed only in sr_dev, so no cross-repo port was needed for the collision fix (worktrees `.gitignore` added to canonical as cheap safety).
+
+Full worktree-per-agent for RESEARCH/TEST is now **optional** (the failure it targets is already solved) — left as a future enhancement, not required.
 
 ## Priority
 High — the concurrency failure class that contracts and hooks cannot touch. Two honest agents sharing one git tree WILL collide; only isolation fixes it. Third of the subagent-reliability set (with 290 prevention, 291 verification).

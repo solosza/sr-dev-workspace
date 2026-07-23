@@ -44,6 +44,7 @@ You are a render layer. You take any agent artifact (review queue, chain status,
 6. **One active render session at a time** (v1). `--close` before rendering a different template.
 7. **Process hygiene.** Server/watcher PIDs in state; teardown kills both; no stray listeners.
 8. **Destructive actions re-confirm in chat** before routing (template-flagged).
+9. **Response-board convention (this operator).** This user works *through* boards — deliver responses AS a render board, not a text wall ("keep it like this for every response"). Every generated board MUST include (a) **per-card reply controls** — 👍 OK / ⏸ Hold / ↕ Redirect + a per-card note — so they can respond per item, and (b) a **general-comments free-text field at the bottom**, above the send button, for session-wide input. On submit, the general-comments value rides the `__session__` submit annotation's `raw_words`. See memory `render-board-responses`.
 
 ## Workflow
 
