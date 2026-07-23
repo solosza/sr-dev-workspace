@@ -9,6 +9,6 @@
 
 ## Rules
 - READ guide sections 13 + 15 + fetch the full live page FIRST (RULE ZERO)
-- Absolute-claims / kernel-internal greps: strip <style>, print match CONTEXT, only fail on real occurrences (CSS max-width:100% is NOT a claim - lessons 255/256/258)
+- Absolute-claims / kernel-internal greps: use `lib/gate_integrity.py`'s `strip_markup_then_grep` (RS-01) / `check_absolute_claims` (RS-02) — strips <style>/<script>/inline style="..." THEN greps THEN reports match CONTEXT, only failing on real occurrences (CSS max-width:100% is NOT a claim - lessons 255/256/258; helper added backlog 273 GI-03)
 - If a checklist item genuinely fails (e.g., a visible [INSERT], a real absolute claim), that is a RED - fix on the live page then re-verify (or flag as a HUMAN item if it needs user input like verified metrics)
 - Any red -> fix then /kernel/learn
