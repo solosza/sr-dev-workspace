@@ -3,18 +3,18 @@
   "tiers": {
     "opus": {
       "model_id": "claude-opus-4-8",
-      "description": "Architecture, complex code, production precision, multi-file coordination",
-      "keywords": ["architecture", "refactor", "security", "migration", "multi-file", "production", "critical"]
+      "description": "The hardest work: multi-file architecture, gate/verify synthesis, production-critical precision",
+      "keywords": ["architecture", "refactor", "security", "migration", "multi-file", "production", "critical", "gate", "verify", "synthesize"]
     },
     "sonnet": {
       "model_id": "claude-sonnet-5",
-      "description": "Standard builds, test writing, research synthesis, moderate complexity",
-      "keywords": ["implement", "write", "create", "update", "test", "research"]
+      "description": "Real authoring: build/implement/write/author/design/create/generate, test writing, research synthesis. Default tier for unclassified work.",
+      "keywords": ["build", "implement", "write", "author", "design", "create", "generate", "update", "test", "research"]
     },
     "haiku": {
       "model_id": "claude-haiku-4-5-20251001",
-      "description": "File scaffolding, data formatting, simple edits, copy tasks",
-      "keywords": ["copy", "scaffold", "format", "rename", "move", "simple", "trivial"]
+      "description": "Mechanical-only: copy, scaffold, rename, move, stub, register, index, list",
+      "keywords": ["copy", "scaffold", "rename", "move", "stub", "register", "index", "list"]
     }
   },
   "routing_rules": {
