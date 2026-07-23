@@ -1,7 +1,14 @@
 # Per-Step Postcondition Contract — Verify Every Step at the Boundary
 
 ## Status
-Open
+COMPLETE (2026-07-23) — `run-task.sh` tasks now carry a declarative postcondition; the runner accepts `task_done` only if the deliverable exists. Format **B** (`## Postcondition` section) per owner. `sr_dev`.
+
+### As-built
+- `lib/common.sh` `verify_postcondition(task_file, repo)` — parses a task's `## Postcondition` section (bullets = artifact path/glob), returns non-zero if any declared artifact is missing/empty, zero if all present OR no section (backward-compatible).
+- `run-task.sh` — on both the fresh and resume `task_done` paths, a signaled completion is **downgraded to `no_signal`** (→ existing retry/resume) unless `verify_postcondition` passes. The agent can't "complete" without producing its declared deliverable.
+- Generalizes 281's completion-truth from the factory to every `run-task.sh` task (the swarm's 288 1/3 false-complete would have been caught).
+- **Test:** `tests/test_291_postcondition.sh` → 8/8 (missing/present/empty/no-section/glob + syntax + both-paths wiring).
+- These are the product's headline feature #1 ("can't lie about finishing") for [[293-market-build-ship-first-public-tool]].
 
 ## Priority
 High — verification-at-the-boundary is the single highest-leverage reliability lever (proven this session). This makes it a first-class, declarative contract instead of ad-hoc per-runner code.
