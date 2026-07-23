@@ -53,21 +53,28 @@ criteria = len(re.findall(r'- \[ \]', task))
 # Check keywords (case-insensitive)
 task_lower = task.lower()
 haiku_keywords = config['tiers']['haiku']['keywords']
+sonnet_keywords = config['tiers']['sonnet']['keywords']
 opus_keywords = config['tiers']['opus']['keywords']
 
 haiku_hits = sum(1 for k in haiku_keywords if k in task_lower)
+sonnet_hits = sum(1 for k in sonnet_keywords if k in task_lower)
 opus_hits = sum(1 for k in opus_keywords if k in task_lower)
 
 # Routing decision
 rules = config.get('routing_rules', {})
 
-# Explicit complexity signals win
+# Precedence: opus > sonnet > haiku — on a multi-tier keyword match, the
+# HIGHER tier always wins (e.g. 'copy then adapt' hits both haiku ('copy')
+# and sonnet ('adapt') -> sonnet). Haiku only fires on an UNAMBIGUOUS
+# mechanical match (no sonnet or opus keyword present). Unmatched tasks
+# (no keyword hits in any tier) fall through to the sonnet default below —
+# no silent cheapest-tier routing.
 if criteria >= rules.get('opus_if_criteria_above', 5) or opus_hits >= 2:
     print(config['tiers']['opus']['model_id'])
-elif criteria <= rules.get('haiku_if_criteria_below', 2) and haiku_hits >= 1 and opus_hits == 0:
+elif criteria <= rules.get('haiku_if_criteria_below', 2) and haiku_hits >= 1 and opus_hits == 0 and sonnet_hits == 0:
     print(config['tiers']['haiku']['model_id'])
 else:
-    # Default tier: sonnet for standard work
+    # Default tier: sonnet — standard work, ties, and unmatched tasks
     print(config['tiers']['sonnet']['model_id'])
 " 2>/dev/null || echo "claude-opus-4-6"
 }
