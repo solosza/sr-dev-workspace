@@ -1,7 +1,13 @@
 # Canonical Kernel — Graft Base Runner Hardening onto Minimal
 
 ## Status
-Open — in progress (scope corrected; base-hardening graft remaining)
+COMPLETE (2026-07-23) — canonical built + validated live at Layer 1; commit `e36c18a` on `canonical-fixdelta-graft`, pushed to `isagawa-co/isagawa-kernel-canonical`. Layer-2 clean-install proof is [[286-kernel-test-prodtest-canonical-kernel]].
+
+### Completion evidence
+- **common.sh:** clean-superset graft — `verify_completion_write` (270 RH-01), `check_stall` (270 RH-02), `resolve_workflow_file` + agent-routed `skip_current_task` (271/244), utf-8-sig defensive reads.
+- **run-task.sh WIRED (not just present):** `skip_current_task "$AGENT_ID"` (271 — fixes the empty-arg WI-02 parent-write bug) · `verify_completion_write` after task_done on BOTH fresh + resume paths (270) · heartbeat stamped each iteration → `agent-{id}-heartbeat` (262) · 272 router demoted to OPTIONAL layer (guarded `source` + `command -v route_model/upgrade_model`; base runs on `DEFAULT_MODEL=claude-opus-4-8`). This also FIXED a latent break: the layer-strip had left `run-task.sh` sourcing the now-missing `lib/model-router.sh` — the canonical runner could not start until this graft.
+- **Validated live:** 270 RH-05 PASS, 271 WI-03 PASS, `bash -n` OK, runtime source-smoke OK (all hardening fns defined, router gracefully absent). Orchestrator re-ran gates live (lesson #39).
+- 244 per-agent routing was ALREADY wired in minimal's runner (per-agent workflow seed, routed PRECHECK/current-task) — confirmed, not re-added.
 
 ## Priority
 High — 30 kernel installs on the machine, only `sr_dev_workspace` has the hardening; the minimal base is the right distributable shape but has none of it. Establish ONE lean canonical (minimal + base hardening) that every harness includes going forward. First of the 3-backlog kernel-consolidation chain.
