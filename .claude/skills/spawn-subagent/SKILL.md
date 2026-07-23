@@ -162,6 +162,20 @@ The skill MUST return control immediately after invoking the bash subprocess.
 
 ---
 
+## Launcher-Death: Caller Non-Blocking ≠ Spawned-Agent Non-Blocking
+
+**This is a different rule from "Non-Blocking Guarantee" above — do not conflate them.**
+
+The Non-Blocking Guarantee above governs the CALLER: the top-level agent/user invoking `/spawn-subagent` returns immediately and is never blocked. That stays correct and unchanged.
+
+This rule governs the SPAWNED agent itself: once that agent is running (in its worktree or subfolder), if it launches a LONG-RUNNING pipeline (`run-task.sh`, `run-spec-factory.sh`, `prod-test`), it MUST run that pipeline in the FOREGROUND and BLOCK until it completes or definitively fails. It must NOT detach the pipeline (nested `run_in_background: true`, a backgrounded shell `&`, or any other detach-then-return) and then end its own turn.
+
+**Failure mode ("launcher-death"):** A detached child process does not outlive the sub-agent session that spawned it. If the spawned agent backgrounds the pipeline and ends its turn, the pipeline's process tree is torn down with it — the run dies silently, with no error and no completion signal. This killed a factory build mid-run (step 6, no error surfaced); a separate runner survived an identical pattern only because it happened to finish before its launcher agent ended.
+
+**Rule:** Spawned agent + long-running pipeline → foreground + block to completion. Never detach-then-end.
+
+---
+
 ## When to Use
 
 → See `references/step-02-validate-background-safe.md` for full decision tree
