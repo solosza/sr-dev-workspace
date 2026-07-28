@@ -236,3 +236,57 @@ The factory's COMPILE stage is **already implemented in v1, scoped to commands.*
   falsification criterion; every citation resolves). Without a done-criterion, "prose can't fail a test" bites.
 - `[NOTE]` `evaluate` (reuse gate) is trivially moot at instance one (empty capability library → always
   "build new"); it earns its value at instance two+.
+
+## 10. Build model: prose-primary, self-similar, hand-bootstrapped
+
+- `[DECIDED]` **The platform is prose-primary (LLM-orchestrated).** Corrects a drift. The LLM is the
+  orchestrator/executor. Capabilities are PROSE (commands / skills / references). Contracts are DATA
+  (JSON). **Code = hooks only** (mechanical enforcement). This is how the whole repo is already built;
+  the factory follows it, not generic scripting.
+- `[DECIDED]` **One primitive, one build-machinery, recursive (self-similar).** The single primitive is a
+  command/skill (prose + a contract; a hook only where enforcement is mechanical). The single machinery
+  that produces it is the loop (`/kernel/backlog` → `/kernel/execute-pipeline` → task-builder → design/build
+  → run-task.sh). The factory's four steps, a harness, a workflow, and the thing that builds them are ALL
+  that same primitive. **No new abstraction layer** — a new layer would break the self-similarity.
+- `[DECIDED]` **"Identify / generalize my existing assets" = the `evaluate` step on our own assets**, not a
+  layer above. Inventory kernel · spec-factory · design/build · execute-pipeline · domain-setup ·
+  tiered-index-architecture; per asset decide reuse / adapt / generalize. That catalog IS the factory's
+  parts list. The loop evaluating its own parts is the self-hosting.
+- `[DECIDED]` **Generalize per capability as you build, not in one big upfront pass** (the upfront pass is
+  the guess-the-factory trap). Build one capability; where the machinery can't handle it, that gap is the
+  generalization work, surfaced by real friction.
+- `[DECIDED]` **`validate` is a SKILL, not a script.** The LLM is the validator: it reads a claim, decides
+  the authoritative corpus, checks reality via its tools, judges, and EMITS A CONTRACT (a claim-register:
+  per claim `{tag, verdict, source, evidence}`). That contract is **gated for correctness** (a mechanical
+  check / hook — the one place code belongs). Same shape as `/design` → doc → gated by `/build-command`'s
+  input-contract. Token spend is warranted here (verifying reality is the value); spend in proportion to
+  how checkable / load-bearing a claim is.
+- `[SUPERSEDED]` `projects/isagawa-v2.0/validate/validate.py` was the wrong artifact (a generic Python
+  validator). Superseded by the `validate` skill + claim-register contract; its reference-resolution logic
+  may fold into the optional gate hook. Kept as scaffolding for now, not the validator.
+- `[DECIDED]` **The factory (the bootstrap) is HAND-BUILT manually, NOT run through backlog/execute-pipeline.**
+  You cannot use the loop to build the loop from nothing (bootstrap paradox, §8.2). Hand-build the factory
+  live and fix blockers in place as they arise. Once the factory exists, future harnesses (and future
+  factory changes) go through the loop.
+
+## 11. The capability library (accumulating private asset)
+
+- `[DECIDED]` **Every generalized contract is KEPT and accumulates into a private capability library** —
+  not just validate-contracts, but ANY generalized contract (scope-contracts, capability specs, the
+  reusable commands/skills themselves). The library is the **compounding moat**: every engagement leaves
+  the engine more capable for the next.
+- `[DECIDED]` **A new client usually REUSES or ADAPTS an existing contract, not builds fresh** (the
+  `evaluate` gate: reuse / adapt / build-new). Reuse dominates as the library grows — you build LESS as
+  it gets bigger. A genuinely-new client contract, once built, becomes a reusable asset: **client work
+  FEEDS the library** (the Customer-Zero + client-evidence compounding of §8.3).
+- `[DECIDED]` **The library is PRIVATE (§8.3).** It is the IP. Clients get their compiled output +
+  runtime, never the contract library. "Scope increases" = the *private engine* gets more capable.
+- `[DECIDED]` **Curate as a graph, not a pile.** Reuse-first (`evaluate`) + periodic **consolidation**:
+  when N client contracts are variations of one thing, generalize them into one parameterized contract
+  (many specifics → one general + params) + tiered-index the library itself. Otherwise scope-increase
+  becomes scope-sprawl (the graph-explosion risk).
+- `[DECIDED]` **Contract format = JSON (data); judgment = prose.** Corrects a drift (scope contracts were
+  briefly `.md`). A contract is DATA the gate checks (schemas, enums, thresholds, required fields, pass
+  conditions) → JSON, per command-skill-pattern Layer 5. The reasoning it triggers (how to unitize,
+  determine authority, judge) is PROSE in the skill's `steps/`. Structural checks = hard gate (hook reads
+  JSON); semantic checks = soft gate (LLM follows steps, fills the register the JSON then validates).

@@ -1,0 +1,22 @@
+{
+  "artifact": "projects/isagawa-v2.0/design-decisions.md",
+  "scope": "doc",
+  "contract": ".claude/skills/validate/contracts/doc.json",
+  "generated_by": "validate skill v1 (dogfood run, executor: Opus 4.8)",
+  "units": [
+    { "id": "ref-source-chat", "text": ".claude/docs/isagawa_co/isagawa v.2.0/my_long_factory_chat_openai.md", "tag": "citation", "weight": "supporting", "verdict": "confirmed", "authority": "repo tree", "evidence": "path resolves in repo", "flagged": false },
+    { "id": "ref-design-command", "text": "`.claude/docs/design/design-command/`", "tag": "citation", "weight": "supporting", "verdict": "confirmed", "authority": "repo tree", "evidence": "resolves", "flagged": false },
+    { "id": "ref-build-command", "text": "`.claude/docs/design/build-command/`", "tag": "citation", "weight": "supporting", "verdict": "confirmed", "authority": "repo tree", "evidence": "resolves", "flagged": false },
+    { "id": "ref-intent-py", "text": "`lib/attestation/intent.py`", "tag": "citation", "weight": "supporting", "verdict": "confirmed", "authority": "repo tree", "evidence": "resolves", "flagged": false },
+    { "id": "ref-validate-py", "text": "`projects/isagawa-v2.0/validate/validate.py`", "tag": "citation", "weight": "incidental", "verdict": "confirmed", "authority": "repo tree", "evidence": "resolves", "flagged": false },
+    { "id": "ref-competitive-memory", "text": "[[alaindustries-competitive-positioning]]", "tag": "citation", "weight": "supporting", "verdict": "confirmed", "authority": "memory namespace (external)", "evidence": "resolves in the memory namespace; external reference, recorded not gated as in-repo", "flagged": false }
+  ],
+  "internal_units": {
+    "count": "~55 decided / open / hypothesis claims",
+    "authority": "none (internal)",
+    "method": "consistency-checked against the corpus; no external authority needed (spent proportionally)",
+    "verdict": "not-applicable for external check; no internal contradiction found",
+    "hypothesis-rule": "the 2 HYPOTHESIS units carry falsifiability / 'unproven' language -> pass hypothesis-falsifiable"
+  },
+  "gate": { "verdict": "pass", "findings": 0 }
+}

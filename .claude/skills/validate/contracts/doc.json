@@ -1,0 +1,46 @@
+{
+  "scope": "doc",
+  "description": "Validate a tagged canonical / design doc. Units are CLAIMS. The claim-discipline lives here as data (not in the shell): tag vocabulary, hypothesis-falsifiability, citation-verification, and the pass condition. The how-to-judge is prose in the steps this points to.",
+  "output_schema": "contracts/verdict-register.schema.json",
+  "unit": {
+    "name": "claim",
+    "unitize": "steps/step-02-unitize.md#doc",
+    "tag_vocabulary": ["decided", "open", "hypothesis", "fact", "citation", "prior-art", "note", "caveat"]
+  },
+  "rules": [
+    {
+      "id": "tagged",
+      "applies_to": "every top-level claim",
+      "requires": "a tag drawn from unit.tag_vocabulary",
+      "gate": "hard",
+      "desc": "no untagged assertion. Sub-bullets inherit the parent claim's tag."
+    },
+    {
+      "id": "hypothesis-falsifiable",
+      "applies_to": "tag == hypothesis",
+      "requires": "a stated falsification criterion (how it could be proven wrong, or an explicit 'unproven')",
+      "gate": "hard",
+      "desc": "a hypothesis that cannot fail is not a hypothesis; it is an unmarked assumption."
+    },
+    {
+      "id": "citation-verified",
+      "applies_to": "tag in [citation, fact, prior-art]",
+      "requires": "verdict == confirmed AND authority set AND evidence set",
+      "gate": "soft",
+      "desc": "external claims are fetched and confirmed against their authority, never assumed. Unreachable -> unresolved; source does not support the claim -> unsupported."
+    },
+    {
+      "id": "reference-resolves",
+      "applies_to": "any in-repo path cited (`.claude/...`, `projects/...`, etc.)",
+      "requires": "resolves in the repo tree",
+      "gate": "hard",
+      "desc": "an in-repo path that resolves nowhere is a finding. A [[wikilink]] to a recognized external namespace (memory) is recorded as external and is NOT a finding."
+    }
+  ],
+  "authorities": {
+    "citation": "the cited work itself: arXiv id / DOI / publisher page",
+    "fact": "the live source of truth: the site, dataset, standard, or registry the fact belongs to",
+    "path": "the repository tree for in-repo paths; the memory namespace is a recognized EXTERNAL namespace (real, recorded, not gated as in-repo)"
+  },
+  "pass": "no unit flagged: every claim tagged, every hypothesis falsifiable, every external claim confirmed, every in-repo reference resolved"
+}

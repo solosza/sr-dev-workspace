@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "verdict-register",
+  "description": "Output of the validate skill. Scope-independent: one verdict record per unit, plus a gate result. What a UNIT is comes from the scope contract; this schema fixes the record shape and the show-your-work rules the hard gate enforces.",
+  "type": "object",
+  "required": ["artifact", "scope", "contract", "units", "gate"],
+  "additionalProperties": true,
+  "properties": {
+    "artifact": { "type": "string", "description": "path or handle of the validated artifact" },
+    "scope": { "type": "string", "description": "which validate-contract applied (doc, command, code, ...)" },
+    "contract": { "type": "string", "description": "path to the scope contract used" },
+    "generated_by": { "type": "string", "description": "validate skill version / executor id" },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "verdict"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string" },
+          "text": { "type": "string", "description": "the unit's assertion or requirement, as extracted" },
+          "tag": { "type": "string", "description": "scope-defined classification, if the contract uses tags" },
+          "weight": { "type": "string", "enum": ["load-bearing", "supporting", "incidental"] },
+          "verdict": { "type": "string", "enum": ["confirmed", "refuted", "unresolved", "unsupported", "not-applicable"] },
+          "authority": { "type": "string", "description": "the source of truth checked (arXiv, statute, repo, test run, ...)" },
+          "evidence": { "type": "string", "description": "what the authority said: quote / value / resolved link / test output" },
+          "flagged": { "type": "boolean", "description": "true when this unit is a finding needing attention" }
+        },
+        "allOf": [
+          {
+            "$comment": "show your work: a checked verdict must name its authority and evidence",
+            "if": { "properties": { "verdict": { "enum": ["confirmed", "refuted", "unsupported"] } } },
+            "then": { "required": ["authority", "evidence"] }
+          },
+          {
+            "$comment": "findings must be flagged so nothing bad passes silently",
+            "if": { "properties": { "verdict": { "enum": ["refuted", "unresolved", "unsupported"] } } },
+            "then": { "required": ["flagged"], "properties": { "flagged": { "const": true } } }
+          }
+        ]
+      }
+    },
+    "gate": {
+      "type": "object",
+      "required": ["verdict", "findings"],
+      "properties": {
+        "verdict": { "type": "string", "enum": ["pass", "fail"] },
+        "findings": { "type": "integer", "minimum": 0, "description": "count of flagged units; gate.verdict is pass iff 0" }
+      }
+    }
+  }
+}
