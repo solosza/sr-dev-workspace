@@ -62,7 +62,7 @@ A **verdict register** written next to the artifact (or returned to the caller),
 
 | Step | Responsibility | Reads | HITL |
 |------|---------------|-------|------|
-| 1. Load contract | Resolve the scope and load its validate-contract | `contracts/<scope>.json` | — |
+| 1. Discover + load | Characterize the artifact; determine scope + contract (HITL if ambiguous); load it | `steps/step-01-discover.md` + `contracts/<scope>.json` | ambiguous scope → ask |
 | 2. Unitize | Decompose the artifact into units, as the contract defines | `steps/step-02-unitize.md` | — |
 | 3. Plan checks | Per unit: what must be true, and the authority to check against | `steps/step-03-authority.md` | ambiguous authority → ask |
 | 4. Check reality | Fetch / resolve / read / run the authority with your tools; never assume | `steps/step-04-check.md` | — |
@@ -89,6 +89,7 @@ A **verdict register** written next to the artifact (or returned to the caller),
 | File | Purpose |
 |------|---------|
 | `SKILL.md` | This file — the general validator orchestrator |
+| `steps/step-01-discover.md` | Characterize the artifact; determine scope + contract; HITL on ambiguity |
 | `steps/step-02-unitize.md` | Decomposing an artifact into units per the contract |
 | `steps/step-03-authority.md` | Choosing the authoritative source per unit type |
 | `steps/step-04-check.md` | Reaching reality: fetch / resolve / read / run patterns |

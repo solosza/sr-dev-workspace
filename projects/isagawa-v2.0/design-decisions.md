@@ -290,3 +290,21 @@ The factory's COMPILE stage is **already implemented in v1, scoped to commands.*
   conditions) → JSON, per command-skill-pattern Layer 5. The reasoning it triggers (how to unitize,
   determine authority, judge) is PROSE in the skill's `steps/`. Structural checks = hard gate (hook reads
   JSON); semantic checks = soft gate (LLM follows steps, fills the register the JSON then validates).
+
+## 12. Capability conventions (discovered while building)
+
+- `[DECIDED]` **Every capability begins with DISCOVER** — characterize the input and locate WHERE the
+  relevant target lives (the scope/contract for an artifact; where candidate capabilities live for a
+  need). Do NOT hardcode the location. This is the loop's DISCOVER (§1) at capability scope, self-similar.
+- `[DECIDED]` **Discover is a shared PRIMITIVE, not copy-pasted.** `.claude/skills/discover/` — a skill any
+  capability invokes as its step-01 (the `reference-scanner` "Step 0" pattern). Extracted on its 2nd use
+  (validate + evaluate) per §11 consolidate-on-repeat; both step-01 files now INVOKE it.
+- `[DECIDED]` **Discover uses ambiguity-triggered HITL** (§3): material + unresolvable → one bounded
+  question; else best reading, recorded.
+- `[DECIDED]` **validate kept distinct from gap-check** (the evaluate dogfood surfaced the overlap):
+  validate verifies claims against an EXTERNAL authority and emits a gated register; gap-check checks
+  INTERNAL consistency / coverage. Adjacent shells, different jobs.
+- `[NOTE]` The evaluate dogfood corrected a stale belief: `design-command` and `build-command` are BUILT
+  skills (`.claude/skills/`), not just draft design docs.
+- `[DECIDED]` **Factory capabilities built so far** (hand-bootstrap): `discover` (primitive), `validate`
+  (+ `validate-gate.py` hook), `evaluate`. Remaining: generalize `design`/`build`, the coordinator.

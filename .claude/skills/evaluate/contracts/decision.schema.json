@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "evaluation-decision",
+  "description": "Output of the evaluate skill: the reuse/adapt/build decision for a need, with the candidates surveyed (show your work).",
+  "type": "object",
+  "required": ["need", "decision", "rationale", "candidates"],
+  "additionalProperties": true,
+  "properties": {
+    "need": { "type": "string", "description": "the capability required (purpose / scope / behaviours)" },
+    "scope": { "type": "string", "description": "the scope of the need (command, domain, doc, ...)" },
+    "decision": { "type": "string", "enum": ["reuse", "adapt", "build"] },
+    "target": { "type": "string", "description": "the capability to reuse/adapt (name or path); absent for build" },
+    "delta": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "for adapt: the specific changes, usually 'add a <scope> contract' or a small edit"
+    },
+    "rationale": { "type": "string", "description": "why this decision, in a line or two" },
+    "candidates": {
+      "type": "array",
+      "description": "every library capability surveyed and its fit (the evidence for the decision)",
+      "items": {
+        "type": "object",
+        "required": ["capability", "fit"],
+        "properties": {
+          "capability": { "type": "string" },
+          "fit": { "type": "string", "enum": ["exact", "adaptable", "none"] },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$comment": "reuse and adapt must name the target capability",
+      "if": { "properties": { "decision": { "enum": ["reuse", "adapt"] } } },
+      "then": { "required": ["target"] }
+    },
+    {
+      "$comment": "adapt must declare its delta",
+      "if": { "properties": { "decision": { "const": "adapt" } } },
+      "then": { "required": ["delta"] }
+    }
+  ]
+}
