@@ -48,15 +48,8 @@ We don't let prose become canonical just because it's written down — the same 
   departmentalization.)
 - `[DECIDED]` **COMPILE emits:** operating model = capability graph (nodes + edges); harnesses =
   payload nodes; coordinator = index node; workflows = edges.
-- `[DECIDED]` **The tiered-index law IS the node-type law — do not lose this.** The capability-graph
-  *node* (factory chat: "you're compiling a network, not a tree"; "the capability graph is the canonical
-  representation") and the kernel's *tiered-index* unit ("every file is an index or a payload") are the
-  SAME thing at every level. A node is either an **index-node** (routes, holds pointers, owns no artifact)
-  or a **payload-node** (owns the artifact). Coordinator = index-node; a capability = payload-node; within
-  a skill, SKILL.md = index, its `steps/` + `contracts/` = payloads. Adhere top to bottom: an index never
-  inlines a payload; a payload is extracted only when it grows (the ~50-line / 200-line threshold), never
-  pre-emptively. Provenance: node/graph = factory chat (lines 431, 699, 712, 1821); index/payload =
-  `.claude/docs/design/tiered-index-architecture/`.
+- `[DECIDED]` **Node = tiered-index unit** (index-node routes / payload-node owns the artifact). This is a
+  foundational structural law with its own DD — see **§14**.
 
 ## 3. Invariants adopted from the source chat
 
@@ -333,3 +326,21 @@ The factory's COMPILE stage is **already implemented in v1, scoped to commands.*
   - `domain-setup` → **reuse as-is** (the bootstrap tool; ships unchanged, §8.2).
 - `[DECIDED]` **"Copy-tailor" = reference + build lean**, not clone-then-gut. The coordinator is far
   thinner than `execute-pipeline`; use the original as the pattern reference and build the small tailored version.
+
+## 14. Node = tiered-index (the canonical structural law)
+
+_Its own DD because it is foundational and referenced everywhere. Do not lose it._
+
+- `[DECIDED]` **A capability-graph node IS a tiered-index unit.** Two sources, one law: the **node / graph**
+  (factory chat: "you're compiling a network, not a tree"; "the capability graph is the canonical
+  representation" — lines 431 / 699 / 712 / 1821) and the kernel's **tiered-index** ("every file is an index
+  or a payload" — `.claude/docs/design/tiered-index-architecture/`). Same thing at every level.
+- `[DECIDED]` **Every node is one of two kinds:**
+  - **index-node** — routes, holds pointers, owns NO artifact (a coordinator; a SKILL.md; a command entry).
+  - **payload-node** — owns the actual artifact (a capability's output; a step; a contract).
+- `[DECIDED]` **Adhere top to bottom:** an index never inlines a payload; a payload is extracted only when
+  it grows past the threshold (~50 lines in a section / 200 in a file), never pre-emptively. This is both
+  the anti-over-engineering rule (no empty structure) and the anti-monolith rule (no payload swallowing an
+  index).
+- `[DECIDED]` **The graph is canonical; hierarchies are projections.** Departments / org-charts / workflow
+  diagrams are optional *views* over the node graph (factory chat, line 712). The nodes + edges are the truth.

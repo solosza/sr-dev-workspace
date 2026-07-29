@@ -1,0 +1,24 @@
+{
+  "need": "a command that reports the IOM factory state (capabilities + command-skill-pattern conformance + gate)",
+  "scope": "command",
+  "decision": "build",
+  "target": null,
+  "steps": [
+    { "capability": "evaluate", "result": "build — surveyed .claude/skills; gap-check/summarize/walkthrough are different jobs; no factory-status reporter exists" },
+    { "capability": "design", "result": "spec: read-only survey of the factory capabilities' layers + callability + status; prose-primary (LLM reads the filesystem, no script)" },
+    { "capability": "build", "result": "scaffolded command-skill-pattern L1 (commands/kernel/iom-status.md) + L2 (skills/iom-status/SKILL.md); lean, no L3/L4/L5 (nothing grew)" },
+    { "capability": "validate", "result": "GAP: no command.json scope-contract exists yet, so validate could not run at command scope. Fell back to a by-hand structural check (matches command-skill-pattern L1+L2). See evidence.architectural." }
+  ],
+  "validate_verdict": "n/a",
+  "evidence": {
+    "operational": [
+      "the loop ran end-to-end and produced a working, individually-callable /iom-status command",
+      "prose-primary held: iom-status is a skill (the LLM surveys via tools), no script needed"
+    ],
+    "architectural": [
+      "SURFACED GAP: validate needs a command.json scope-contract to gate command-scope artifacts. Per evaluate's own logic this is ADAPT validate (add contracts/command.json), not a new validator. Routes to review (a change to the validate capability), not auto-applied.",
+      "SURFACED GAP: no coordinator-invoked automation yet; the run was driven by hand (the LLM as executor). Expected at bootstrap."
+    ]
+  },
+  "outcome": "PARTIAL PASS — factory produced a real, useful, callable command end-to-end; validate blocked at command scope for lack of a command.json contract (the run's honest finding)."
+}
