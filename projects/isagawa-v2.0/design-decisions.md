@@ -48,6 +48,15 @@ We don't let prose become canonical just because it's written down — the same 
   departmentalization.)
 - `[DECIDED]` **COMPILE emits:** operating model = capability graph (nodes + edges); harnesses =
   payload nodes; coordinator = index node; workflows = edges.
+- `[DECIDED]` **The tiered-index law IS the node-type law — do not lose this.** The capability-graph
+  *node* (factory chat: "you're compiling a network, not a tree"; "the capability graph is the canonical
+  representation") and the kernel's *tiered-index* unit ("every file is an index or a payload") are the
+  SAME thing at every level. A node is either an **index-node** (routes, holds pointers, owns no artifact)
+  or a **payload-node** (owns the artifact). Coordinator = index-node; a capability = payload-node; within
+  a skill, SKILL.md = index, its `steps/` + `contracts/` = payloads. Adhere top to bottom: an index never
+  inlines a payload; a payload is extracted only when it grows (the ~50-line / 200-line threshold), never
+  pre-emptively. Provenance: node/graph = factory chat (lines 431, 699, 712, 1821); index/payload =
+  `.claude/docs/design/tiered-index-architecture/`.
 
 ## 3. Invariants adopted from the source chat
 
