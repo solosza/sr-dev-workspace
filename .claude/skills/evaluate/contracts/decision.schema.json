@@ -15,6 +15,7 @@
       "items": { "type": "string" },
       "description": "for adapt: the specific changes, usually 'add a <scope> contract' or a small edit"
     },
+    "adapt_mode": { "type": "string", "enum": ["in-place", "by-copy"], "description": "for adapt: edit the target in place, or fork a renamed v2 copy. Must be by-copy when the target is load-bearing." },
     "rationale": { "type": "string", "description": "why this decision, in a line or two" },
     "candidates": {
       "type": "array",
@@ -37,9 +38,9 @@
       "then": { "required": ["target"] }
     },
     {
-      "$comment": "adapt must declare its delta",
+      "$comment": "adapt must declare its delta and its mode (in-place vs by-copy)",
       "if": { "properties": { "decision": { "const": "adapt" } } },
-      "then": { "required": ["delta"] }
+      "then": { "required": ["delta", "adapt_mode"] }
     }
   ]
 }

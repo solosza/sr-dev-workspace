@@ -19,7 +19,8 @@ the one already in the library.
 3. **Match on PURPOSE and shape, not name.** A capability fits if it does the job (possibly with a
    contract swap), whatever it is called.
 4. **Adapt = reuse + a declared delta.** Prefer adapting an existing capability (a new/edited contract,
-   a small change) over building fresh.
+   a small change) over building fresh. When the target is **load-bearing** (a live dependency), adapt
+   **by-copy**: fork a renamed v2 copy and tailor it; never mutate a working original.
 5. **The decision is the product** — structured `{decision, target, delta, rationale, candidates}`,
    conforming to `contracts/decision.schema.json`.
 6. **Prose orchestrates; the library is the data you read; enforcement is the gate.**

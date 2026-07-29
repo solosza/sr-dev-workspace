@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "compile-run",
+  "description": "The coordinator's run record: what it compiled, the evaluate decision, the steps it routed through, the validate verdict, and the evidence it closed the loop with.",
+  "type": "object",
+  "required": ["need", "decision", "steps", "outcome"],
+  "additionalProperties": true,
+  "properties": {
+    "need": { "type": "string" },
+    "scope": { "type": "string" },
+    "decision": { "type": "string", "enum": ["reuse", "adapt", "build"], "description": "from evaluate" },
+    "target": { "type": "string", "description": "the reused/adapted capability (if any)" },
+    "adapt_mode": { "type": "string", "enum": ["in-place", "by-copy"] },
+    "steps": {
+      "type": "array",
+      "description": "the capabilities routed through, in order, with each result",
+      "items": {
+        "type": "object",
+        "required": ["capability", "result"],
+        "properties": {
+          "capability": { "type": "string", "description": "evaluate / design / build / validate" },
+          "result": { "type": "string" }
+        }
+      }
+    },
+    "validate_verdict": { "type": "string", "enum": ["pass", "fail", "n/a"] },
+    "evidence": {
+      "type": "object",
+      "description": "the closed evidence loop, split by authority",
+      "properties": {
+        "operational": { "type": "array", "items": { "type": "string" }, "description": "autonomous: the capability improves at its job" },
+        "architectural": { "type": "array", "items": { "type": "string" }, "description": "reviewed: changes to model/contract/governance" }
+      }
+    },
+    "outcome": { "type": "string", "description": "one-line result" }
+  }
+}

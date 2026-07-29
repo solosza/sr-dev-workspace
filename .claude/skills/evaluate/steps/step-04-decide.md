@@ -13,6 +13,15 @@ Pick the decision, emit it, self-gate.
 
 Reuse > adapt > build. Never choose `build` while an `adaptable` candidate exists.
 
+## Adapt mode (in-place vs by-copy)
+When the decision is `adapt`, choose how:
+- **by-copy** when the target is LOAD-BEARING (a live dependency; mutating it would break something that
+  works) OR belongs to a different repo/boundary than the output. Fork a renamed v2 copy, tailor it,
+  leave the original untouched.
+- **in-place** only when the target is not depended-on and shares the output's boundary.
+
+Default to `by-copy` when unsure. Record `adapt_mode` in the decision.
+
 ## Emit + gate
 1. Write the decision conforming to `decision.schema.json`:
    `{need, scope, decision, target?, delta?, rationale, candidates[]}`.

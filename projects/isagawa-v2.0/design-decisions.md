@@ -307,4 +307,20 @@ The factory's COMPILE stage is **already implemented in v1, scoped to commands.*
 - `[NOTE]` The evaluate dogfood corrected a stale belief: `design-command` and `build-command` are BUILT
   skills (`.claude/skills/`), not just draft design docs.
 - `[DECIDED]` **Factory capabilities built so far** (hand-bootstrap): `discover` (primitive), `validate`
-  (+ `validate-gate.py` hook), `evaluate`. Remaining: generalize `design`/`build`, the coordinator.
+  (+ `validate-gate.py` hook), `evaluate`, `coordinator` (thin router, copy-tailored from execute-pipeline).
+  Remaining: v2 `design`/`build` (adapt by-copy from design/build-command).
+
+## 13. v1 -> v2 method: adapt-by-copy, never mutate the working kernel
+
+- `[DECIDED]` **Generalize v1 assets by COPY-tailor, not in-place refactor.** The workspace's v1 kernel
+  (`execute-pipeline`, `design`/`build-command`, `domain-setup`) is LOAD-BEARING; mutating it to build v2
+  risks breaking the repo's own loop, for no benefit (the v2 asset lives in a different repo anyway). The
+  v2 platform assets are COPIES tailored for the platform; the workspace originals keep running. The copies
+  ARE the extraction taking shape (§8/§9). Encoded in `evaluate` as `adapt_mode: by-copy` (default for
+  load-bearing targets).
+- `[DECIDED]` **Per-asset decisions (the `evaluate` output for the v1 factory):**
+  - `execute-pipeline` → adapt by-copy → the new `coordinator` (thin router). **Built.**
+  - `design-command` / `build-command` → adapt by-copy → v2 `design`/`build` (scope-pluggable output). Pending.
+  - `domain-setup` → **reuse as-is** (the bootstrap tool; ships unchanged, §8.2).
+- `[DECIDED]` **"Copy-tailor" = reference + build lean**, not clone-then-gut. The coordinator is far
+  thinner than `execute-pipeline`; use the original as the pattern reference and build the small tailored version.
