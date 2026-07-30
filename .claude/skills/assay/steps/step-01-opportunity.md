@@ -15,7 +15,7 @@ From one idea, produce a ranked set of capturable revenue wedges. Diverge wide a
 
 ## Output
 
-- `Wedge[]` — ranked surviving wedges. An empty array is VALID and means "no opening found" (must be explicit, not an error).
+- `Wedge[]` — the **FULL candidate set**, every idea generated. Survivors carry `status:"survived"` (ranked); killed carry `status:"killed"` + a plain-language `kill_reason`. Nothing generated is discarded — the killed ideas are preserved for the report/ledger (content fodder). Downstream steps process only survivors; an empty *survivor* set is VALID and means "no opening found" (explicit, not an error).
 
 ## Acceptance Criteria
 
@@ -44,7 +44,7 @@ From one idea, produce a ranked set of capturable revenue wedges. Diverge wide a
 4. **DIVERGE:** apply the 7 lenses (adjacent, transpose, recombine, invert/picks-and-shovels, constraint-break, zoom, payer-swap) to each rung -> candidate wedges. Generous, no killing yet. **Enforce the quotas:** you MUST produce at least one transpose wedge (strip the artifact, keep the mechanism — a different domain) and at least one payer-swap wedge (a different buyer). If genuinely none is viable, log `quota_miss` with the reason instead of skipping silently.
 5. **GATE:** run every candidate through the adversarial battery (legal/reg, unit economics, saturation, timing/why-now, moat, fit-to-me, speed+cost-to-first-dollar, recurring-vs-one-shot, TAM/demand-density, reachability), kill-by-default. Reachability especially: can you actually *reach* this buyer through a channel you can run, given they may be defined by low digital engagement?
 6. **Find the opening:** for survivors, name the un-easy part the crowd skips (distribution / integration / service / compliance).
-7. **Rank** survivors by gate scores; emit `Wedge[]` with `lens_origin` + `abstraction_rung` recorded.
+7. **Rank + preserve:** rank survivors by gate scores; emit the FULL `Wedge[]` (survivors ranked + every killed candidate with `status:"killed"` and a one-line `kill_reason`), each with `lens_origin` + `abstraction_rung` recorded. Never drop a generated idea.
 
 ## Verification
 
