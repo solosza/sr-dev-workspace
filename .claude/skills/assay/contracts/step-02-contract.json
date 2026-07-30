@@ -1,0 +1,28 @@
+{
+  "contract_metadata": {
+    "contract_id": "assay:step-02:output",
+    "version": "1.0",
+    "artifact_type": "json",
+    "artifact_filename": "build_verdicts.json",
+    "canonical_reference": {
+      "path": ".claude/docs/design/assay/references/io-contracts.md",
+      "hash": null
+    },
+    "dependencies": ["assay:step-01:output"],
+    "validation_metadata": {
+      "validation_count": 0,
+      "last_validated_at": null,
+      "staleness_threshold_hours": 24
+    }
+  },
+  "validations": [
+    { "id": "reuse-first", "rule": "buildable scored against reusing the existing stack before proposing new build" },
+    { "id": "hitl-line", "rule": "the automate/HITL boundary is stated per verdict" },
+    { "id": "moat-honesty", "rule": "moat_applies is false when governance adds no real defensibility" },
+    { "id": "pns-reentry", "rule": "a picks-and-shovels variant, if emitted, is flagged for 1-hop re-entry into Step 1" }
+  ],
+  "mechanical_validations": [
+    { "id": "shape", "rule": "output is a BuildVerdict[] matching io-contracts, one per input Wedge, decision in {build, pass}" }
+  ],
+  "overrides": []
+}

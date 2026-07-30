@@ -1,0 +1,29 @@
+{
+  "contract_metadata": {
+    "contract_id": "assay:step-04:output",
+    "version": "1.0",
+    "artifact_type": "json",
+    "artifact_filename": "decision.json",
+    "canonical_reference": {
+      "path": ".claude/docs/design/assay/references/io-contracts.md",
+      "hash": null
+    },
+    "dependencies": ["assay:step-01:output", "assay:step-02:output", "assay:step-03:output"],
+    "validation_metadata": {
+      "validation_count": 0,
+      "last_validated_at": null,
+      "staleness_threshold_hours": 24
+    }
+  },
+  "validations": [
+    { "id": "three-of-three", "rule": "green light ONLY when market AND build AND demand all pass; two-of-three = park" },
+    { "id": "ranked", "rule": "shortlist ranked by speed-to-first-dollar x defensibility x reuse" },
+    { "id": "precondition", "rule": "each shortlisted wedge names one precondition to clear first" },
+    { "id": "no-act", "rule": "no action taken; the commit is left to the human (HITL)" }
+  ],
+  "mechanical_validations": [
+    { "id": "shape", "rule": "output is a Decision matching io-contracts (idea_ref, shortlist[], committed_wedge?)" },
+    { "id": "ledger", "rule": "the full run is appended to state/ledger.jsonl" }
+  ],
+  "overrides": []
+}

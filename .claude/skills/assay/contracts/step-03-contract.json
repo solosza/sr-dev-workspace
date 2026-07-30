@@ -1,0 +1,27 @@
+{
+  "contract_metadata": {
+    "contract_id": "assay:step-03:output",
+    "version": "1.0",
+    "artifact_type": "json",
+    "artifact_filename": "validations.json",
+    "canonical_reference": {
+      "path": ".claude/docs/design/assay/references/io-contracts.md",
+      "hash": null
+    },
+    "dependencies": ["assay:step-02:output"],
+    "validation_metadata": {
+      "validation_count": 0,
+      "last_validated_at": null,
+      "staleness_threshold_hours": 24
+    }
+  },
+  "validations": [
+    { "id": "threshold-first", "rule": "the pass threshold is defined BEFORE the signal is recorded (no post-hoc goalposts)" },
+    { "id": "cheapest", "rule": "the chosen test is the cheapest signal that would actually change the decision" },
+    { "id": "boxed", "rule": "the test is time- and cost-boxed" }
+  ],
+  "mechanical_validations": [
+    { "id": "shape", "rule": "output is a ValidationResult[] matching io-contracts (wedge_ref, test, threshold, signal, pass)" }
+  ],
+  "overrides": []
+}

@@ -1,0 +1,32 @@
+{
+  "contract_metadata": {
+    "contract_id": "assay:step-01:output",
+    "version": "1.0",
+    "artifact_type": "json",
+    "artifact_filename": "wedges.json",
+    "canonical_reference": {
+      "path": ".claude/docs/design/assay/references/io-contracts.md",
+      "hash": null
+    },
+    "dependencies": [],
+    "validation_metadata": {
+      "validation_count": 0,
+      "last_validated_at": null,
+      "staleness_threshold_hours": 24
+    }
+  },
+  "validations": [
+    { "id": "diverge-coverage", "rule": "candidates were generated from all 6 lenses across the abstraction rungs BEFORE any gating" },
+    { "id": "gate-legal", "rule": "each surviving wedge cleared the legal/reg gate (no missing license, not ToS-violating)" },
+    { "id": "gate-saturation", "rule": "each survivor names a seam vs incumbents + generic tools" },
+    { "id": "gate-whynow", "rule": "each survivor cites a timing catalyst" },
+    { "id": "gate-moat", "rule": "each survivor has a defensible edge, not pure commodity" },
+    { "id": "gate-fit", "rule": "each survivor maps to an asset/skill/channel the operator has" },
+    { "id": "kill-by-default", "rule": "uncertain gates killed or flagged for escalation, never silent-passed" }
+  ],
+  "mechanical_validations": [
+    { "id": "shape", "rule": "output is a Wedge[] matching io-contracts (id, idea_ref, abstraction_rung, lens_origin, description, opening, gate_scores, rank)" },
+    { "id": "empty-ok", "rule": "an empty array is VALID and means no opening found (must be explicit, not an error)" }
+  ],
+  "overrides": []
+}
