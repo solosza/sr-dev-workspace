@@ -23,9 +23,10 @@ description: Front-of-pipeline DISPATCHER. Give it a seed (theme/space); it runs
 | # | Step | Do |
 |---|------|-----|
 | 1 | Dispatch | Run the 6 hunters on the seed (each returns candidate ideas its own way). Run the fitting ones; a narrow seed may skip some. |
-| 2 | Cross-reference | THE quality step: find ideas that hit **multiple** signals — **pain × why-now × fit-to-you**. An idea surfaced by 2-3 hunters (real demand + a catalyst + your moat) beats one from a single hunter. |
+| 2 | Cross-reference | THE quality step: find ideas that hit **multiple** signals — **pain × why-now × defensibility**. An idea surfaced by 2-3 hunters (real demand + a catalyst + a real edge) beats one from a single hunter. **Fit-to-you is NOT a cross-reference signal** — compute it, show it as a tag, but do not rank on it. |
 | 3 | Dedup | Drop anything already in the assay ledger (by meaning). |
-| 4 | Rank | By how many signals it hits × strength. Top of the queue = multi-signal ideas. |
+| 4 | Rank on merit | By opportunity strength (signals hit × strength) — NOT by fit. A great idea with fit:low ranks above a mediocre one that happens to be yours. Attach fit as a displayed tag. |
+| 4b | Bias-check | If the top of the queue all clusters around the operator's assets/domain, raise a **bias-failure flag** and push the far hunters (`/arbitrage`, `/trends` into unfamiliar domains) + `/lateral` before handing off. |
 | 5 | Hand off / auto-run | Present the ranked queue AND auto-run the **top 1-3** through `/assay` (the loop takes it from there). Assay's own kill-by-default + HITL apply downstream. |
 
 ## Output (lean)

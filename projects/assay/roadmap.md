@@ -47,6 +47,9 @@ Runs on demand (any seed) + a **weekly ambient drop**. `/sharpen`'s learnings st
 ## UI — render boards
 Loop output renders as a **pipeline board** via the render skill (`/kernel/render venture-board`): a funnel summary on top + **stage columns** (Ideas → Assayed → Competition → Deep-Dive → GO → Killed) + **verdict cards** (GO/GO-IF/KILL/PARK pills, fit + signal chips, per-card 👍 Take-deeper / ⏸ Hold / ↕ Redirect + note, general-comments). The board is a *capture surface* — clicks route back through the loops (raw words verbatim). Template: `.claude/skills/render/templates/venture-board/`. Format follows dashboard best-practice (summary-first, state-in-form, semantic color ≠ accent).
 
+## Unbiased by default (calibration, iterated)
+The engine surfaces the best ideas **period**, not the best ideas *for the operator*. **Fit-to-me is a displayed tag, never a gate or a ranker** — it was funneling every assessment back to what the operator already does (caught 2026-07-31 on the real-estate run: even a foreign domain got pulled to ALA/governance). Now: rank on absolute merit (pain + why-now + defensibility + size); fit shows as high/cond/low; fit only influences the call **consciously at `/deep-dive` decide**. A **bias-failure flag** fires if survivors all cluster on the operator's assets → force distant ideas (`/lateral`, `/arbitrage`, transpose). Tuned over iterations via `/sharpen`.
+
 ## Self-extending
 Loops **capture their own blind spots**: spot a monetization/expansion path with no loop -> append to `projects/assay/loop-candidates.jsonl` (never dropped). `/sharpen` reads the register and, when a candidate recurs (>=2x), **proposes scaffolding it into a new loop**. The system grows new loops by noticing what it's missing — add angle-loops anytime without touching the rest.
 

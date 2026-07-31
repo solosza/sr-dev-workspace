@@ -30,7 +30,8 @@ description: Loop B of the venture loops. Pressure-test a chosen business into a
 | 6 | Economics | Pricing, unit economics, CAC/LTV, path to profit. Kill if no margin path. |
 | 7 | Build & ops | What it takes to deliver: reuse assay's buildability + the human-in-the-loop line (what's automated vs. approved). |
 | 8 | Risks & stress test | Legal/reg, reachability, worst-case, and the explicit kill-conditions. |
-| 9 | Go/No-Go + plan | Decide on the evidence; if go, a concrete first-90-days plan (milestones + the first experiment). If no-go, the reasons. |
+| 8b | Fit-to-you (conscious, LATE) | NOW — and only now — weigh fit: given the idea is real, is it the right one for YOU given finite time + assets, or would you build/partner/acquire the capability? This is the ONE place fit is allowed to influence the call (deliberately, by the human), never upstream. A high-merit / low-fit idea is a real option — pursue, partner, or pass with eyes open. |
+| 9 | Go/No-Go + plan | Decide on the evidence (+ the conscious fit call); if go, a concrete first-90-days plan (milestones + the first experiment). If no-go, the reasons. |
 
 ## Research
 Use `WebSearch`/`WebFetch` for Steps 2, 4, 6 (market size, comparable demand signals, pricing benchmarks). Cite. Thin evidence → flag + lean toward kill, never invent a signal.
