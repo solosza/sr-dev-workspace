@@ -23,5 +23,9 @@
 **Angles:** platform (biggest) · data · license · stack · productize · adjacent · distribution. [run](../expand/runs/2026-07-30-ai-automation-agency-local.md)
 **Captured a new angle:** /acquire (rollup/M&A) -> loop-candidates register (queued, needs recurrence).
 
+**Reframe trio:**
+- **Small:** one automation for ONE dental office, $500 pilot this week (= the deep-dive's pilot; land the beachhead first). [run](../small/runs/2026-07-30-ai-automation-agency-local.md)
+- **Lateral:** rev-share / outcome-only (no upfront, take a cut of value recovered) + operator-owned proof (run your own automated office as the demo) - attacks reachability + trust from the side. [run](../lateral/runs/2026-07-30-ai-automation-agency-local.md)
+
 ## Post-GO status
 Not committed - pending the 30-day pilot. If it lands, this is the real thing (your governance edge, a real niche).
