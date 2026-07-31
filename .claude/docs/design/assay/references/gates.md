@@ -14,6 +14,7 @@
 | recurring vs one-shot | one-and-done with no repeat (soft: down-ranks, does not auto-kill) |
 | TAM / demand-density | too few reachable buyers in a servable unit (e.g. per metro/niche) to sustain the model — forces a rough count, not a vibe. A wedge that exhausts a geography in a week fails unless it scales cheaply across geos |
 | reachability | you cannot actually *reach* the buyer through a channel you can run. Watch the self-selection trap: if the target is defined by low digital engagement (no website/profile), digital outreach selects against the very people you must reach |
+| guru-source / doer-vs-seller | the idea's loudest promoters make their money **selling the blueprint** (course/community/coaching), not **running the business** — a strong tell the business is harder / less lucrative than pitched. Kill-weight the wedge; the real money in a guru-hyped space is usually the picks-and-shovels (which the guru already owns). Survives only with a genuine edge the crowd lacks (see fit-to-me / moat) |
 
 Survivors carry a per-gate score (`gate_scores`) used for ranking in Steps 1 and 4.
 
