@@ -67,9 +67,13 @@ You are a render layer. You take any agent artifact (review queue, chain status,
 | `workflow.md` | Session lifecycle, state schema, resume |
 | `gate-contract.md` | Per-step gates |
 | `steps/step-01-resolve.md` … `steps/step-06-rerender-close.md` | Step specs |
-| `lib/render_server.py` | Localhost server (built by pipeline — backlog pending) |
+| `lib/render_server.py` | Localhost annotation server (BUILT + operational) |
+| `lib/serve_and_watch.py` | Launcher: generate page + start server detached + record port (BUILT, 308) |
+| `adapters/loop_to_leaderboard.py` + `adapters/INDEX.md` | Loop output -> leaderboard items.json, plain-vocab + rank-on-merit baked in (BUILT, 308) |
+| `steps/step-serve-and-watch.md` + `steps/step-route-annotations.md` | Shared render step + answer routing (BUILT, 308) |
 | `templates/INDEX.md` | Template registry |
-| `templates/venture-board/` | Venture-loop board — pipeline stage-columns + funnel + verdict cards (BUILT). The format for all venture-loop output |
-| `templates/review-board/` | First template (built by pipeline — backlog pending) |
+| `templates/leaderboard/` | Plain-English ranked list (BUILT). The default for venture-loop ranked output |
+| `templates/venture-board/` | Venture-loop board: pipeline stage-columns + funnel + verdict cards (BUILT) |
+| `templates/review-board/` | Review-queue board: unreviewed done-backlog cards (BUILT: generate.py + template.md) |
 | `references/INDEX.md` | Links to design doc payloads |
 | `contracts/step-03-contract.json`, `contracts/step-05-contract.json` | Serve + routing validations |
