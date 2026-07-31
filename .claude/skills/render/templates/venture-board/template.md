@@ -26,6 +26,10 @@ Sources: a `/source` drop (cards = ideas), a loop's ledger, or the venture recor
 | `signals` | which hunters/lenses/gates flagged it → chips |
 | `summary` | one-line what-it-is |
 | `take` | the next move (rendered as "Next: …") |
+| `rank` (opt) | rank badge, e.g. "#1" |
+| `subtext` (opt) | italic muted note under the summary (e.g. "demoted — was #1 only because it fit you") |
+
+**fit** renders as a colored tag — `low` (red), `cond` (amber), `high` (green) — it is a *displayed tag, never a ranker* (unbiased calibration). **funnel** stats accept `"tone":"go|kill"` (colors the number) and `"wide":true` (a wide stat for a one-line insight/pattern).
 
 ## Action Map
 | action | destructive | routes to |
