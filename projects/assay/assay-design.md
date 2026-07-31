@@ -1,6 +1,6 @@
 # Assay — Idea → Capturable-Revenue Engine (Design)
 
-**Status:** design only, NO CODE. Build via `/design` + build pipeline.
+**Status:** BUILT 2026-07-30 — grew from a single idea-engine into a **9-command venture-loop family** (see "The venture-loop system" below). This doc = the system spec (commands + dependencies) + the original assay-engine design kept for lineage.
 **Emerged:** 2026-07-30, from manually vetting hustle reels (surplus recovery, YouTube nursery-rhymes, AI real-estate video). That manual vetting WAS the prototype.
 
 ## Goal
@@ -11,6 +11,54 @@ Raw idea = ore. Assay = test for real value + extractability. Output = the **lod
 
 ## Core principle
 **Diverge wide, converge hard.** Generation is generous (weird welcome); gates are adversarial, **kill-by-default**. Separate the two modes or it becomes a rationalization machine. Same shape as the kernel's fan-out -> adversarially-verify -> rank.
+
+---
+
+## The venture-loop system (built 2026-07-30)
+
+Assay is the origin; the system is a **family of governed loops** that carry a business from idea -> money. Each loop is a command + a lean single-file skill, **standalone + modular** (callable alone or as a sub-step by another loop).
+
+### Commands (9)
+
+| Command | Loop | One-liner | Kind |
+|---------|------|-----------|------|
+| `/source` | Source/Scan | surface + dedup + rank ideas -> feeds assay | queue |
+| `/assay` | Idea-worth | diverge + kill-by-default -> capturable shortlist | kill |
+| `/competition` | Arena | rivals + gaps + winning angle | kill |
+| `/deep-dive` | Validate | evidence -> go/no-go + first-90-days plan (calls `/competition`) | kill |
+| `/offer` | Offer/Pricing | package + price to capture, honestly | kill |
+| `/gtm` | Go-to-Market | channel + funnel to get customers | kill |
+| `/launch` | Build/Launch | ship the smallest sellable thing (reuse-first) | kill |
+| `/operate` | Operate | run it, propose -> human approves | govern |
+| `/sharpen` | Learn/Meta | outcomes -> propose engine upgrades | meta |
+
+### Chain
+`/source -> /assay -> /competition -> /deep-dive -> [GO] -> /offer -> /gtm -> /launch -> /operate`; `/sharpen` reads all.
+
+### Dependencies
+- `/source` **feeds** `/assay` (hands it ranked candidates).
+- `/deep-dive` **calls** `/competition` (reuses the arena read; doesn't repeat it).
+- `/sharpen` **reads** every loop's ledger + the venture records (to propose upgrades).
+- **Every loop writes** the venture record `projects/assay/ventures/<slug>.md` — the cross-loop journey (Stage · Verdict · Next-action + a Journey table). Dashboard: `ventures/INDEX.md`.
+- **All loops standalone + modular:** a missing upstream input is gathered/asked, never required.
+
+### Two phases
+- **Pre-GO** (`/source`->`/assay`->`/competition`->`/deep-dive`): light, adversarial, **kill-fast** — burn ideas, not money.
+- **GO line** = `/deep-dive` go/no-go.
+- **Post-GO** (`/offer`->`/gtm`->`/launch`->`/operate`): real spend, **heavier HITL** (propose -> approve) — the kernel's governance.
+
+### Shared conventions (every loop)
+- **Prior-art check** at start (dedup vs its ledger, match on meaning).
+- **Kill-by-default** (pre-GO + offer/gtm/launch) or **govern-by-default** (`/operate`).
+- **One HITL commit** — the loops never act; the human decides.
+- **Lean output** — quickest view, never long docs.
+- **Persist 3-layer:** readable report (`projects/assay/<loop>/runs/`) + ledger (`.claude/skills/<loop>/state/ledger.jsonl`) + index; plus the venture record.
+
+### Where it lives
+- Commands: `.claude/commands/kernel/<name>.md` · Skills: `.claude/skills/<name>/SKILL.md` (lean single-file; deeper per-loop design/contracts can come later) · Output + state: `projects/assay/` · One-screen map: `projects/assay/roadmap.md`.
+- **Future:** lift the whole system into its own kernel-governed spec repo when it grows (frees this workspace).
+
+*The "Architecture — 5 loops, 2 tiers" below is the ORIGINAL assay-engine design — now realized as `/assay`'s internal steps (Opportunity/Buildability/Validate) plus the extracted `/source` and `/sharpen`. Kept for lineage.*
 
 ---
 
