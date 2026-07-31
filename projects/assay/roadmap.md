@@ -44,6 +44,9 @@ The system was reactive (you bring an idea). `/source` is now a **dispatcher** t
 
 Runs on demand (any seed) + a **weekly ambient drop**. `/sharpen`'s learnings steer the hunters. This is also the content engine for a "vetted business ideas" channel.
 
+## UI — render boards
+Loop output renders as a **pipeline board** via the render skill (`/kernel/render venture-board`): a funnel summary on top + **stage columns** (Ideas → Assayed → Competition → Deep-Dive → GO → Killed) + **verdict cards** (GO/GO-IF/KILL/PARK pills, fit + signal chips, per-card 👍 Take-deeper / ⏸ Hold / ↕ Redirect + note, general-comments). The board is a *capture surface* — clicks route back through the loops (raw words verbatim). Template: `.claude/skills/render/templates/venture-board/`. Format follows dashboard best-practice (summary-first, state-in-form, semantic color ≠ accent).
+
 ## Self-extending
 Loops **capture their own blind spots**: spot a monetization/expansion path with no loop -> append to `projects/assay/loop-candidates.jsonl` (never dropped). `/sharpen` reads the register and, when a candidate recurs (>=2x), **proposes scaffolding it into a new loop**. The system grows new loops by noticing what it's missing — add angle-loops anytime without touching the rest.
 

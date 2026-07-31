@@ -69,6 +69,7 @@ You are a render layer. You take any agent artifact (review queue, chain status,
 | `steps/step-01-resolve.md` … `steps/step-06-rerender-close.md` | Step specs |
 | `lib/render_server.py` | Localhost server (built by pipeline — backlog pending) |
 | `templates/INDEX.md` | Template registry |
+| `templates/venture-board/` | Venture-loop board — pipeline stage-columns + funnel + verdict cards (BUILT). The format for all venture-loop output |
 | `templates/review-board/` | First template (built by pipeline — backlog pending) |
 | `references/INDEX.md` | Links to design doc payloads |
 | `contracts/step-03-contract.json`, `contracts/step-05-contract.json` | Serve + routing validations |

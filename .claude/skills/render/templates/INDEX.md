@@ -4,6 +4,7 @@ One template = one integration point. Anatomy: `[name]/template.md` (data source
 
 | Template | Renders | Consuming flow | Status |
 |----------|---------|----------------|--------|
+| venture-board | Venture-loop ideas as pipeline stage-columns (funnel + verdict cards) | the venture loops (/source, /assay, /competition, /deep-dive, ... /expand) | BUILT (generate.py + template.md) |
 | review-board | Unreviewed done-backlog queue as actionable cards | /kernel/review-queue | PENDING BUILD (backlog 232 pipeline) |
 | chain-status | Verticals × gates dashboard | execute-pipeline reporting | planned |
 | gate-report | Orchestrator validation checklists | per-merge gate passes | planned |
