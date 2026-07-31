@@ -52,6 +52,9 @@ The 9 loops above *converge* (kill/validate/gate/govern). **`/expand`** is the *
 
 **Self-extending:** any loop that spots an angle/loop it lacks appends to `projects/assay/loop-candidates.jsonl` (never dropped); `/sharpen` promotes recurring candidates (>=2x) into new scaffolded loops. The family grows itself.
 
+### Source family (idea provision — the proactive front)
+The pipeline is *reactive* (you bring an idea). **`/source`** is a **dispatcher** that *provides* ideas: give it a seed (theme/space) and it takes it from there — runs 6 hunters, each finding ideas a different way (`/trends` why-now, `/pain` real demand, `/arbitrage` proven-elsewhere, `/assets` your moat, `/gaps` underserved, `/bookmarks` your saves), **cross-references** for ideas hitting multiple signals (pain × why-now × fit), dedups vs the assay ledger, ranks, and **auto-feeds the top 1-3 into `/assay`**. Runs on demand or on a **weekly** ambient schedule; `/sharpen`'s learnings steer the hunters. This closes the engine: `source → assay → … → operate → sharpen → (new signals) → source`.
+
 ### Shared conventions (every loop)
 - **Prior-art check** at start (dedup vs its ledger, match on meaning).
 - **Kill-by-default** (pre-GO + offer/gtm/launch) or **govern-by-default** (`/operate`).

@@ -37,6 +37,13 @@ The adversarial pipeline *converges* (kill/validate/gate/govern). The generative
 
 Reframe big / small / sideways; the adversarial loops test what survives.
 
+## Source family — idea provision (the proactive front)
+The system was reactive (you bring an idea). `/source` is now a **dispatcher** that *provides* ideas: **you give a seed, the loop takes it from there.** It runs 6 hunters, each finding ideas a different way, cross-references for multi-signal winners (pain × why-now × fit), and auto-feeds the top into `/assay`:
+
+`/trends` (why-now) · `/pain` (real demand) · `/arbitrage` (proven-elsewhere) · `/assets` (your moat) · `/gaps` (underserved) · `/bookmarks` (your saves)
+
+Runs on demand (any seed) + a **weekly ambient drop**. `/sharpen`'s learnings steer the hunters. This is also the content engine for a "vetted business ideas" channel.
+
 ## Self-extending
 Loops **capture their own blind spots**: spot a monetization/expansion path with no loop -> append to `projects/assay/loop-candidates.jsonl` (never dropped). `/sharpen` reads the register and, when a candidate recurs (>=2x), **proposes scaffolding it into a new loop**. The system grows new loops by noticing what it's missing — add angle-loops anytime without touching the rest.
 

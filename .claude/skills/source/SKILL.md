@@ -1,45 +1,48 @@
 ---
 name: source
-description: Front-of-pipeline loop. Surface fresh ideas worth assaying, deduped against past runs, ranked by signal. Feeds /assay. Lean output, every scan saved.
+description: Front-of-pipeline DISPATCHER. Give it a seed (theme/space); it runs 6 idea-hunters, cross-references for the strongest ideas, and auto-feeds the top into /assay. Lean output, saved. Runs on demand or weekly.
 ---
 
-# Source / Scan Loop
+# Source Dispatcher (idea-provision pipeline)
 
-**Purpose:** Answer *"what ideas are even worth putting through the pipeline right now?"* — the front of the funnel that feeds `/assay`.
-**Feeds** `/assay`.
-**Philosophy:** wide, signal-ranked, dedup-aware. Generous on generation (killing happens in assay), strict on not re-surfacing what's already been explored.
+**Purpose:** *"You give a seed; the loop takes it from there."* From one seed theme/space, produce a ranked queue of business ideas and start assaying the best — the proactive front-end that feeds the whole pipeline.
+**Dispatches:** the 6 hunters — `/trends` · `/pain` · `/arbitrage` · `/assets` · `/gaps` · `/bookmarks`.
+**Feeds:** `/assay` (auto-runs the top idea(s)).
 
 ## Cross-cutting rules
-- **LEAN OUTPUT.** A short ranked queue, never a long doc. See [[loop-output-lean]].
-- **Standalone & modular.** Runs alone (a broad or themed scan), OR as a sub-step called by another loop that needs fresh candidates. Returns its ranked idea queue cleanly so a caller (e.g. `/assay`) can consume it.
-- **Dedup against history.** Drop ideas already in the assay ledger (match on meaning) — don't re-surface explored ground.
-- **Never acts.** Produces an idea queue; the human (or `/assay`) picks what to run.
-- **Every scan saved** (see Persist).
+- **LEAN OUTPUT** ([[loop-output-lean]]). A ranked queue, never a long doc.
+- **Standalone & modular.** Runs alone, OR called by another loop that needs fresh candidates.
+- **Dedup against history** — drop ideas already in the assay ledger (match on meaning).
+- **Every run saved** (see Persist).
+
+## Input modes
+- **Seeded (primary):** `/source <seed>` — a theme/space (e.g. "AI for local services", "boring businesses", "healthcare admin"). The hunters explore *from* the seed.
+- **Ambient (the weekly drop):** `/source` with no seed — a broad scan across the operator's standing interests for anything new.
 
 ## Steps
-
 | # | Step | Do |
 |---|------|-----|
-| 1 | Scan | Pull candidate ideas from sources: trends, web search, communities (Reddit/X/forums), recurring pain-points, the user's bookmarks/notes. Optional theme narrows it. |
-| 2 | Extract | Normalize each to a one-line idea (value · who-pays · mechanism). |
-| 3 | Dedup | Drop any that match an existing assay-ledger idea by MEANING (already explored). Note dupes dropped. |
-| 4 | Rank | Score the fresh ones by signal (demand evidence, momentum, fit-to-operator, why-now). |
-| 5 | Hand off | Present the top few + offer to run the top pick through `/assay`. |
-
-## Research
-Use `WebSearch`/`WebFetch` for Step 1 (trends, pain-points, what's rising). Cite sources. Also read `.claude/skills/assay/state/ledger.jsonl` for the dedup.
+| 1 | Dispatch | Run the 6 hunters on the seed (each returns candidate ideas its own way). Run the fitting ones; a narrow seed may skip some. |
+| 2 | Cross-reference | THE quality step: find ideas that hit **multiple** signals — **pain × why-now × fit-to-you**. An idea surfaced by 2-3 hunters (real demand + a catalyst + your moat) beats one from a single hunter. |
+| 3 | Dedup | Drop anything already in the assay ledger (by meaning). |
+| 4 | Rank | By how many signals it hits × strength. Top of the queue = multi-signal ideas. |
+| 5 | Hand off / auto-run | Present the ranked queue AND auto-run the **top 1-3** through `/assay` (the loop takes it from there). Assay's own kill-by-default + HITL apply downstream. |
 
 ## Output (lean)
-1. **Top ideas** — a short ranked table (idea one-line · signal · why-now).
-2. **Dropped as already-explored** — one line (count + which).
-3. **One line:** which to send to `/assay`?
+1. **The idea drop** — a short ranked table (idea · which hunters flagged it · why-now).
+2. **Auto-assayed** — the top 1-3, each with `/assay`'s one-line verdict.
+3. **Dropped as already-explored** (one line).
+4. **One line:** take which deeper (`/competition` → `/deep-dive`)?
 
-Table over prose. No essay.
+Tables over prose. No essay.
 
 ## Persist (compact, mandatory)
-- **Report** -> `projects/assay/source/runs/<YYYY-MM-DD>-<theme-or-scan>.md` — the ranked queue.
-- **Ledger** -> `.claude/skills/source/state/ledger.jsonl` — one JSON line (ts, theme, candidates, dropped_dupes, top[], report path).
+- **Report** -> `projects/assay/source/runs/<YYYY-MM-DD>-<seed-or-ambient>.md` — the idea drop + verdicts.
+- **Ledger** -> `.claude/skills/source/state/ledger.jsonl` — one line (ts, seed, hunters_run, candidates, multi_signal[], auto_assayed[], report path).
 UTF-8, no BOM.
 
+## Cadence
+Runs **on demand** (any seed, anytime — the main mode early on) AND on a **weekly schedule** (ambient drop). `/sharpen`'s learnings feed the hunters (what wins → hunt more of it; anti-library → "everyone dies on X" becomes a hunt target).
+
 ## Chain
-**`/source` (find ideas)** -> `/assay` (which is worth it) -> competition -> deep-dive -> ...
+**`/source` (idea drop)** -> `/assay` (which is worth it) -> `/competition` -> `/deep-dive` -> [GO] -> `/offer`... The front of the whole engine.
