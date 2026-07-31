@@ -17,5 +17,11 @@
 | /operate | propose->approve, target 0 compliance incidents | [run](../operate/runs/ai-automation-agency-local.md) |
 | /sharpen | proposed a new "guru-source" gate (queued) | [run](../sharpen/runs/2026-07-30.md) |
 
+## Expansion (/expand)
+**Empire version:** compliance-grade automation **platform + standard** for regulated local businesses. Win one niche -> own the compliance **data** -> **platform** the governed layer -> **license/certify** operators. Kernel = moat; data + certification = compounding assets.
+**Highest-leverage next move:** /platform (own the compliance layer) - gated on proving one niche (the pilot).
+**Angles:** platform (biggest) · data · license · stack · productize · adjacent · distribution. [run](../expand/runs/2026-07-30-ai-automation-agency-local.md)
+**Captured a new angle:** /acquire (rollup/M&A) -> loop-candidates register (queued, needs recurrence).
+
 ## Post-GO status
 Not committed - pending the 30-day pilot. If it lands, this is the real thing (your governance edge, a real niche).
