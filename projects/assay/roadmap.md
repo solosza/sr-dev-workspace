@@ -29,6 +29,16 @@ Family of governed, kill-by-default loops that take a business from idea → mon
 
 **Home:** all loop output lives under `projects/assay/` (assay/competition/deep-dive runs + ventures + this roadmap). Designed to lift out into its own governed repo when the family grows — see "Future: own repo" below.
 
+## Generative family — `/expand` (the other mode)
+The adversarial pipeline *converges* (kill/validate/gate/govern). `/expand` is the **generative** counterweight — *how big can this get?* It dispatches an idea through small **angle-loops**, each thinking BIGGER (empire, not increment):
+
+`/data` · `/distribution` · `/platform` · `/productize` · `/license` · `/stack` · `/adjacent` (adjacent ventures -> back to `/assay`)
+
+Diverge-big here; the adversarial loops test what survives.
+
+## Self-extending
+Loops **capture their own blind spots**: spot a monetization/expansion path with no loop -> append to `projects/assay/loop-candidates.jsonl` (never dropped). `/sharpen` reads the register and, when a candidate recurs (>=2x), **proposes scaffolding it into a new loop**. The system grows new loops by noticing what it's missing — add angle-loops anytime without touching the rest.
+
 ## Future: own governed repo
 When the loops grow, extract this whole system into its own repo — a kernel-governed **spec** (like the QA platform): loops = commands, kill-by-default gates + HITL commits = the protocol, venture records + ledgers = the state. Frees this workspace for other dev work. Don't extract prematurely — grow + stabilize here first.
 

@@ -5,7 +5,7 @@ description: Meta/learn loop. Read outcomes across the loops, find the misses, p
 
 # Sharpen / Learn Loop
 
-**Purpose:** Answer *"where were the loops wrong, and how do we make them better?"* — the meta-loop that turns outcomes into engine upgrades.
+**Purpose:** Answer *"where were the loops wrong, how do we make them better, and what loops are we missing?"* — the meta-loop that turns outcomes into engine upgrades AND promotes recurring captured gaps into brand-new loops (the family self-extends).
 **Reads** every loop's ledger + the venture records; **improves** the loops themselves.
 **Philosophy:** evidence-driven self-improvement. Compare what the loops PREDICTED to what actually HAPPENED; every miss is a lesson the engine should encode. This automates the manual v2 tuning (adding the payer-swap lens, the reachability gate) that was done by hand.
 
@@ -20,11 +20,11 @@ description: Meta/learn loop. Read outcomes across the loops, find the misses, p
 
 | # | Step | Do |
 |---|------|-----|
-| 1 | Gather | Read the ledgers (`assay/competition/deep-dive/offer/gtm/launch/operate/state/ledger.jsonl`) + venture records + their outcomes. |
+| 1 | Gather | Read the ledgers (every loop's `state/ledger.jsonl`) + venture records + their outcomes + the **loop-candidates register** `projects/assay/loop-candidates.jsonl` (angles/loops the loops flagged as missing). |
 | 2 | Compare | Predicted vs actual: killed ideas that would've worked, GOs that flopped, "moats" that turned out copyable, thresholds that were wrong. |
 | 3 | Pattern | Extract the recurring failure/blind-spot behind the misses. |
-| 4 | Propose | A concrete engine upgrade per pattern: a new lens, a new gate, a changed threshold, a new mandatory quota, a wording fix. Name the exact file + change. |
-| 5 | Apply-or-queue | On human approval, apply the upgrade to the skill; else queue it. Log it. |
+| 4 | Propose | Two kinds: (a) an **engine upgrade** per pattern — a new lens, gate, threshold, quota, wording fix (name the exact file + change); (b) a **NEW LOOP** — when the loop-candidates register shows the same missing angle/loop flagged **>=2 times** (recurrence = it's real, not a one-off), propose scaffolding it from the loop template (a new `/<name>` command + compact skill). This is how the family self-extends. |
+| 5 | Apply-or-queue | On human approval, apply the upgrade / scaffold the new loop; else queue it. Log it (and clear promoted candidates from the register). |
 
 ## HITL (the one stop)
 After Step 4, present the misses + proposed upgrades. User: `apply <upgrade>` / `queue` / `skip`. Skill files change only on approval.

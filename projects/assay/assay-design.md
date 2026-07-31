@@ -47,6 +47,11 @@ Assay is the origin; the system is a **family of governed loops** that carry a b
 - **GO line** = `/deep-dive` go/no-go.
 - **Post-GO** (`/offer`->`/gtm`->`/launch`->`/operate`): real spend, **heavier HITL** (propose -> approve) — the kernel's governance.
 
+### Generative family (`/expand`) + self-extension
+The 9 loops above *converge* (kill/validate/gate/govern). **`/expand`** is the **generative** counterweight — *how big can this get?* — a dispatcher over small angle-loops, each thinking bigger (empire, not increment): `/data`, `/distribution`, `/platform`, `/productize`, `/license`, `/stack`, `/adjacent` (adjacent ventures -> feed `/assay`). Diverge-big here; the adversarial loops test what survives.
+
+**Self-extending:** any loop that spots an angle/loop it lacks appends to `projects/assay/loop-candidates.jsonl` (never dropped); `/sharpen` promotes recurring candidates (>=2x) into new scaffolded loops. The family grows itself.
+
 ### Shared conventions (every loop)
 - **Prior-art check** at start (dedup vs its ledger, match on meaning).
 - **Kill-by-default** (pre-GO + offer/gtm/launch) or **govern-by-default** (`/operate`).
