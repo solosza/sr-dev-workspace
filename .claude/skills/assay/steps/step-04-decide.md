@@ -30,6 +30,8 @@ Intersect the three verdicts and hand back a ranked shortlist for the human comm
 
 The typed `Decision`/contract shapes are for the ledger. What you SHOW the human must read like a sharp advisor talking to a smart non-technical founder — not a data dump.
 
+**LEAN IS THE RULE (user directive).** Quickest view to the most pertinent info — NOT a long multi-section essay/doc. The whole thing reads in well under two minutes. The saved report is compact too: verdict line + the idea list (one line each, good & bad) + the single cheapest test + the killed one-liners. No paragraph-per-item write-ups. If it's getting long, cut.
+
 Rules:
 - **No jargon, no contract field names, no big grids of columns.** Say "the idea," "who'd pay," "why it wins or dies," "the cheapest way to find out."
 - **Lead with the verdict in one plain sentence** ("Your original plan is too crowded to win; here's the one version that could.").
@@ -50,6 +52,7 @@ Rules:
    a. **Readable report** -> `projects/assay/runs/<YYYY-MM-DD>-<idea-slug>.md`. Contains: (1) the full PLAIN-LANGUAGE writeup (per Output Style above); (2) a **"Every idea this run (good & bad)"** section — the COMPLETE list of wedges generated, survivors AND killed, each as a one-line pitch + verdict + plain reason (this is the content-fodder list — e.g. for a hustle round-up; never truncate it to just survivors); (3) a short "Under the hood" section (verdicts, boxed tests). This is the human artifact. If a report for the same date+slug exists (a re-run), suffix `-2`, `-3`, ... — never overwrite a prior run.
    b. **Ledger line** -> append ONE JSON record (idea incl. normalized, wedges, build_verdicts, validations, decision, committed_wedge, ts, and the report path) to `.claude/skills/assay/state/ledger.jsonl`. Machine index + the substrate the prior-art check (Step 1) reads.
    c. **Index row** -> append/update a row in `projects/assay/runs/INDEX.md` (table: date · idea · verdict · best wedge · link to the report). Create the file with a header if it doesn't exist.
+   d. **Venture record (cross-loop journey)** -> `projects/assay/ventures/<venture-slug>.md`. Match this idea to an existing venture (by meaning, like the prior-art check); if none, create the record. Append this run to its **Journey** table (loop · date · verdict · link) and update its Stage / Verdict-so-far / Next-action header. Also add/refresh its row in `projects/assay/ventures/INDEX.md`. This is the single place a business's whole path across loops is tracked.
    Write files with plain UTF-8 (no BOM). All three must land before presenting.
 4. **Present** the ranked shortlist in plain language (Output Style) + each wedge's single precondition-to-clear-first, plus any ambiguous gate flagged upstream. Tell the human where the run was saved (the report path).
 5. **HITL:** the human picks which wedge (if any) to actually pursue — the only real-world commit. Record the choice in `committed_wedge` (append the update; do not mutate the prior ledger record — append-only).

@@ -101,6 +101,7 @@ The ledger is the audit trail and the substrate v2's self-sharpening (outcomes, 
 ## Cross-Cutting Rules
 
 - **Never acts.** Assay produces verdicts only; downstream build/operate carries the kernel's mandatory HITL.
+- **Standalone & modular.** Runs alone on any idea, OR as a sub-step called by another loop (e.g. `/source` hands it a candidate). Returns its shortlist cleanly so a caller can consume it.
 - **Kill-by-default.** Uncertain gates kill or escalate — never silent-pass.
 - **1-hop re-entry.** A picks-and-shovels variant re-enters Step 1 once; no infinite loops.
 - **Prior-art first.** Before diverging, check the ledger for an equivalent past idea (match on meaning); surface a hit and let the human choose — never silently re-run or skip.
