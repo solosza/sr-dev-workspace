@@ -53,5 +53,8 @@ Before presenting, save all three:
 - **Venture record** -> `projects/assay/ventures/<slug>.md` — match this business to its venture (create if none); append this run to its Journey table + update Stage/Verdict/Next-action; refresh `projects/assay/ventures/INDEX.md`. The cross-loop journey.
 UTF-8, no BOM. All land before presenting.
 
+## Render the result (final step, optional)
+After presenting, render the arena verdict + positioning angles as a live, question-able board via [[../render/steps/step-serve-and-watch]]: pass this loop's output through the adapter [[../render/adapters/INDEX]] (`to_items`), then serve-and-watch. Standalone and modular — the loop still runs headless without it. Plain vocabulary, no em dashes, fit as a tag only are baked into the adapter.
+
 ## Chain
 `/assay` (which idea) -> **`/competition` (can I win the field)** -> `/deep-dive` (is it real + plan; calls this loop).

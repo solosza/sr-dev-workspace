@@ -71,3 +71,7 @@ Triggered core (v1): one idea in -> Loops 1-3 + Decide -> a ranked, logged short
 | `contracts/step-03-contract.json` | ValidationResult[] output validation |
 | `contracts/step-04-contract.json` | Decision output validation + ledger append |
 | `state/ledger.jsonl` | Append-only run log (created at runtime) |
+
+## Render the result (final step, optional)
+
+After Step 4 (Decide), render the ranked shortlist as a live, question-able board via [[../render/steps/step-serve-and-watch]]: pass the decide output through the adapter [[../render/adapters/INDEX]] (`to_items`), then serve-and-watch. Standalone and modular — assay still runs headless without it. Plain vocabulary, rank on merit, fit shown as a tag only, and no em dashes are already baked into the adapter.

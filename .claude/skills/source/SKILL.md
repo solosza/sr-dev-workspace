@@ -45,5 +45,8 @@ UTF-8, no BOM.
 ## Cadence
 Runs **on demand** (any seed, anytime — the main mode early on) AND on a **weekly schedule** (ambient drop). `/sharpen`'s learnings feed the hunters (what wins → hunt more of it; anti-library → "everyone dies on X" becomes a hunt target).
 
+## Render the result (final step, optional)
+After presenting, render the ranked idea drop as a live, question-able board via [[../render/steps/step-serve-and-watch]]: pass the ranked queue through the adapter [[../render/adapters/INDEX]] (`to_items`), then serve-and-watch. Standalone and modular — the loop still runs headless without it. Plain vocabulary, no em dashes, fit as a tag only (never a ranker) are baked into the adapter.
+
 ## Chain
 **`/source` (idea drop)** -> `/assay` (which is worth it) -> `/competition` -> `/deep-dive` -> [GO] -> `/offer`... The front of the whole engine.

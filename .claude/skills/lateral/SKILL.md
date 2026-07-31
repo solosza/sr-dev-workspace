@@ -32,5 +32,8 @@ description: Reframe loop - think OUT OF THE BOX. Unconventional, contrarian, as
 - **Ledger** -> `.claude/skills/lateral/state/ledger.jsonl` (idea, default, flip, recombine, contrarian_bet, report path).
 - **Venture record** -> add a Lateral-angle note to the venture.
 
+## Render the result (final step, optional)
+After presenting, render the contrarian angles as a live, question-able board via [[../render/steps/step-serve-and-watch]]: pass this loop's output through the adapter [[../render/adapters/INDEX]] (`to_items`), then serve-and-watch. Standalone and modular — the loop still runs headless without it. Plain vocabulary, no em dashes, fit as a tag only are baked into the adapter.
+
 ## Chain
 Reframe trio: `/expand` (big) · `/small` (small) · **`/lateral` (sideways)**. Run any on any idea.

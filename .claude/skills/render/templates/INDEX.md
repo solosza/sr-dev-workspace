@@ -10,3 +10,9 @@ One template = one integration point. Anatomy: `[name]/template.md` (data source
 | chain-status | Verticals × gates dashboard | execute-pipeline reporting | planned |
 | gate-report | Orchestrator validation checklists | per-merge gate passes | planned |
 | research-report | Report sections + shortlist cards | RESEARCH pipeline outputs | planned |
+
+## Ranked loops vs plan-shaped loops (render integration, backlog 308)
+
+The `leaderboard` fits loops whose output is a **ranked list**: `/source`, `/assay`, `/competition`, `/deep-dive`, `/expand`, `/small`, `/lateral`. These are wired to render via [[../steps/step-serve-and-watch]] + the adapter [[../adapters/INDEX]].
+
+The **plan-shaped loops** — `/offer`, `/gtm`, `/launch`, `/operate` — emit a plan or a running state, not a ranked list, so they are deliberately NOT wired to the leaderboard. They need their own board template (future work); the closest existing option is `venture-board` for stage/plan views. This is a known gap, not an omission.

@@ -54,5 +54,8 @@ Tables over prose. No essay.
 - **Venture record** -> `projects/assay/ventures/<slug>.md` — add an "Expansion" note (the ceiling + the top move); refresh ventures INDEX.
 UTF-8, no BOM.
 
+## Render the result (final step, optional)
+After presenting, render the angles + top move as a live, question-able board via [[../render/steps/step-serve-and-watch]]: pass this loop's output through the adapter [[../render/adapters/INDEX]] (`to_items`), then serve-and-watch. Standalone and modular — the loop still runs headless without it. Plain vocabulary, no em dashes, fit as a tag only are baked into the adapter.
+
 ## Chain
 `/deep-dive` (GO) -> **`/expand` (how big?)** -> pick expansions -> the adversarial loops test them. Or standalone anytime.
