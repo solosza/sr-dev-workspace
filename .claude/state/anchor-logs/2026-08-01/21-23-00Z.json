@@ -1,0 +1,11 @@
+{
+  "anchor_timestamp": "2026-08-01T21:23:00Z",
+  "actions_count": 32,
+  "violations_found": 0,
+  "note": "Log carried stale entries from prior sessions (2026-07-22 kernel-285 work, 2026-07-31 git pull) plus this session's nurse-signup build. This-session work reviewed against protocol: no cd, no direct intent.py/backlog, no agent spawning, no test failures. The 2026-07-22 KERNEL_BACKLOG_INTENT intent.py line (entry 6) is a prior-session action already recorded as lesson #28 recurrence 6.",
+  "actions": [
+    "2026-07-22..07-31 (stale, prior sessions): kernel-285 state edits, intent.py 267 (already lessoned), git pull + checkout of sr-dev-workspace, clone isagawa-venture-studio",
+    "2026-08-01 (this session, nurse-signup build): mkdir artifacts (removed), mkdir projects/nurse-visit-signup-sheet, Write supabase-config.md, Write data-model-notes.md, Write site/index.html, python http.server test, git init + commit deploy repo, Write README.md, gh repo create solosza/nurse-visit-signup, gh api enable Pages, poll Pages build, kill test server",
+    "2026-08-01 (this session): inspect isagawa-venture-studio structure + assay SKILL.md"
+  ]
+}

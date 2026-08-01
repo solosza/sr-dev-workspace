@@ -1,8 +1,22 @@
-{"timestamp": "2026-07-22T18:28:51Z", "tool": "Bash", "entry": "Bash: python - <<'EOF'\nimport json, pathlib\nbase = pathlib.Path(\"D:/my_ai_projects/pro", "session": "current"}
-{"timestamp": "2026-07-22T18:28:51Z", "tool": "Bash", "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('D:/my_ai_projects/project_", "session": "current"}
-{"timestamp": "2026-07-22T18:29:04Z", "tool": "Bash", "entry": "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\n{ ls \"$MAIN/docs/ba", "session": "current"}
-{"timestamp": "2026-07-22T18:29:06Z", "tool": "Bash", "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" status", "session": "current"}
-{"timestamp": "2026-07-22T18:29:11Z", "tool": "Bash", "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" commit", "session": "current"}
-{"timestamp": "2026-07-22T18:29:11Z", "tool": "Bash", "entry": "Bash: KERNEL_BACKLOG_INTENT=1 python lib/attestation/intent.py record 267 \"research AD", "session": "current"}
-{"timestamp": "2026-07-22T18:29:15Z", "tool": "Bash", "entry": "Bash: DST=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\ngit -C \"$DST\" log --", "session": "current"}
-{"timestamp": "2026-07-22T18:29:37Z", "tool": "Write", "entry": "Write: 267-property-research-adu-laws-vegas-honolulu.md", "session": "current"}
+{"timestamp": "2026-08-01T21:45:06Z", "tool": "Bash", "entry": "Bash: python -c \"import hashlib; print(hashlib.sha256(open('.claude/protocols/sr_dev-p", "session": "current"}
+{"timestamp": "2026-08-01T21:45:30Z", "tool": "Write", "entry": "Write: idea.md", "session": "current"}
+{"timestamp": "2026-08-01T21:46:03Z", "tool": "Bash", "entry": "Bash: L=\".claude/skills/assay/state/ledger.jsonl\"; echo \"=== ledger exists? ===\"; if [", "session": "current"}
+{"timestamp": "2026-08-01T21:49:10Z", "tool": "Write", "entry": "Write: 2026-08-01-tech-person-micro-tools.md", "session": "current"}
+{"timestamp": "2026-08-01T21:49:42Z", "tool": "Bash", "entry": "Bash: python - <<'EOF'\nimport json, io\nrec = {\n  \"ts\": \"2026-08-01T21:25:00Z\",\n  \"idea", "session": "current"}
+{"timestamp": "2026-08-01T21:49:50Z", "tool": "Edit", "entry": "Edit: INDEX.md", "session": "current"}
+{"timestamp": "2026-08-01T22:20:11Z", "tool": "Bash", "entry": "Bash: L=\".claude/skills/expand/state/ledger.jsonl\"; if [ -f \"$L\" ]; then echo \"expand ", "session": "current"}
+{"timestamp": "2026-08-01T22:21:03Z", "tool": "Write", "entry": "Write: 2026-08-01-tech-person-micro-tools.md", "session": "current"}
+{"timestamp": "2026-08-01T22:21:13Z", "tool": "Bash", "entry": "Bash: python - <<'EOF'\nimport json, io\n# expand ledger append\nrec = {\"ts\":\"2026-08-01T", "session": "current"}
+{"timestamp": "2026-08-01T22:21:21Z", "tool": "Bash", "entry": "Bash: ls projects/assay/ventures/ 2>/dev/null | head; echo \"--- INDEX ---\"; head -15 p", "session": "current"}
+{"timestamp": "2026-08-01T22:21:33Z", "tool": "Write", "entry": "Write: tech-person-micro-tools.md", "session": "current"}
+{"timestamp": "2026-08-01T22:21:40Z", "tool": "Edit", "entry": "Edit: INDEX.md", "session": "current"}
+{"timestamp": "2026-08-01T22:42:41Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== projects/assa", "session": "current"}
+{"timestamp": "2026-08-01T22:42:59Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== assay runs IN", "session": "current"}
+{"timestamp": "2026-08-01T22:43:32Z", "tool": "Bash", "entry": "Bash: python - <<'EOF'\nimport os, io, shutil\nSRC = \"C:/Users/solos/my_ai_projects/sr-d", "session": "current"}
+{"timestamp": "2026-08-01T22:43:43Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"files:\"; ls \"$D/p", "session": "current"}
+{"timestamp": "2026-08-01T22:53:02Z", "tool": "Bash", "entry": "Bash: echo \"########## VENTURE-STUDIO ##########\"\nD=\"C:/Users/solos/my_ai_projects/isa", "session": "current"}
+{"timestamp": "2026-08-01T22:53:40Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\ngit -C \"$D\" add -A\ngit ", "session": "current"}
+{"timestamp": "2026-08-01T22:53:52Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\ngit -C \"$D\" pull --reba", "session": "current"}
+{"timestamp": "2026-08-01T22:54:01Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== conflicted fi", "session": "current"}
+{"timestamp": "2026-08-01T22:54:10Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== ledger confli", "session": "current"}
+{"timestamp": "2026-08-01T22:54:26Z", "tool": "Bash", "entry": "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\nF=\"$D/.claude/skills/as", "session": "current"}

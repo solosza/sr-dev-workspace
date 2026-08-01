@@ -1,14 +1,14 @@
 {
   "session_started": true,
-  "timestamp": "2026-07-23T06:26:00Z",
+  "timestamp": "2026-08-01T21:23:00Z",
   "resumed_from": null,
   "context": {
-    "current_task": "285 — graft base runner hardening onto kernel-minimal (canonical)",
+    "current_task": "Ad-hoc user work: nurse-signup app (SHIPPED) + evaluating a business idea via /assay",
     "task_folder": null,
-    "progress": "285 COMPLETE — canonical kernel built + validated live (e36c18a pushed to isagawa-co/isagawa-kernel-canonical). 286 prod-test next; 287 publish owner-gated.",
-    "last_completed": "285 — grafted base runner hardening onto kernel-minimal (common.sh clean-superset + run-task.sh wiring: 271 routed skip, 270 verify_completion_write x2, 262 heartbeat, 272 router demoted to optional). 270 RH-05 + 271 WI-03 pass live; bash -n + source-smoke OK. Moved to done (d333ebb).",
-    "next_step": "286: prod-test the canonical in a FRESH disposable install + canary failure-injection of 5 modes (false-done-no-artifact, stranded worktree, relative DATABASE_URL fixture, empty-output step, build-verb->model). Heavy /kernel/prod-test sub-agent flow (block-to-completion). Then 287 publish+deprecate-sprawl = OWNER SIGN-OFF GATED (outward-facing published repos) — do NOT run autonomously.",
-    "notes": "USER DIRECTIVE: run the 285 graft NOW with Opus 4.8 (main session, direct surgical work per lesson #24 — not a run-task.sh loop; the graft edits kernel-minimal's OWN runner so a run-task.sh pipeline would be circular). SCOPE LOCKED: minimal = base runner hardening ONLY = 270+262+271+244 per-agent routing+280; 272/273/276 = optional layers (OUT); sync deferred. KEY FINDING: kernel-minimal's run-task.sh ALREADY has 244 AGENT_ID routing wired (per-agent workflow seed, routed PRECHECK/current-task) + empty-retry backoff + all-done guard — so graft is small: wire skip_current_task agent_id + verify_completion_write + heartbeat. Stale model IDs (claude-opus-4-6 lines 132/435) belong to the 272 router layer (out of base) — note as follow-up, not this graft. Canonical repo: kernel-minimal branch canonical-fixdelta-graft (remote isagawa-co/isagawa-kernel-canonical, PRIVATE backup). SOFT DEVIATION persists: 286/287 backlogs via inline intent.py (lesson #28 recurrence, already escalated). USE /kernel/backlog skill for future backlogs.",
+    "progress": "Nurse app live + verified. Business idea folded into projects/tech-person-business/idea.md. Next: run /assay on it.",
+    "last_completed": "Deployed nurse-visit-signup (Supabase DB + realtime + GitHub Pages at https://solosza.github.io/nurse-visit-signup/), full flow tested live.",
+    "next_step": "Retry the blocked Write of projects/tech-person-business/idea.md (folded business description), then run the /assay engine against that idea and report the verdict.",
+    "notes": "This is ad-hoc user work, NOT a kernel backlog/pipeline. Nurse app: Supabase project 'nurse-signup' (ref toqcipuepxdmlhkpjozw) under solosza's account, publishable key public-safe, table 'visits' (341 rows = 31 days x 11), RLS read+update, realtime on, no-double-booking via conditional update on claimed_by is null (verified). Repo solosza/nurse-visit-signup (master, Pages on). Business = 'the tech person for non-technical people': done-for-you custom micro-tools, referral-bootstrapped, niche-clustering -> templatize. Prior context.current_task (285 kernel graft) is from a pre-compaction session and is STALE/complete.",
     "ledger": [
       {
         "ts": "2026-07-23T00:05:00Z",
@@ -37,12 +37,12 @@
         ]
       },
       {
-        "ts": "2026-07-23T06:26:00Z",
+        "ts": "2026-08-01T21:23:00Z",
         "kind": "decision",
-        "summary": "285 scope LOCKED: canonical = kernel-minimal + base runner hardening ONLY (270+262+271+244 per-agent routing+280). 272/273/276 are optional layers, OUT of minimal. common.sh grafted as clean superset (270 RH-05 + 271 WI-03 pass live). Minimal's runner already had 244 AGENT_ID routing — remaining graft is small (skip_current_task agent_id + verify_completion_write + heartbeat)",
+        "summary": "Built+shipped nurse-visit-signup live (Supabase DB + realtime + GitHub Pages, solosza/nurse-visit-signup) for a friend; reframed as proof-point for a 'tech person for non-technical people / done-for-you micro-tools, referral-bootstrapped' business now being run through /assay",
         "refs": [
-          "docs/backlog/285-kernel-build-canonical-kernel-extract-fixdelta.md",
-          "kernel-minimal:canonical-fixdelta-graft"
+          "projects/nurse-visit-signup-sheet/",
+          "projects/tech-person-business/idea.md"
         ]
       }
     ]
@@ -50,22 +50,21 @@
   "domain": "sr_dev",
   "one_shot": false,
   "actions_log": [
-    "Bash: K=\"D:/my_ai_projects/project_test_repos/kernel-minimal\"\nINSTALL=\"D:/my_ai_projec",
-    "Write: test_canary_base_modes.sh",
-    "Bash: INSTALL=\"D:/my_ai_projects/project_test_repos/_canonical-prodtest-install\"\nbash ",
-    "Edit: test_canary_base_modes.sh",
-    "Edit: test_canary_base_modes.sh",
-    "Bash: INSTALL=\"D:/my_ai_projects/project_test_repos/_canonical-prodtest-install\"\nbash ",
-    "Bash: MAIN=\"D:/my_ai_projects/project_test_repos/sr_dev_workspace\"\npython -c \"\nimport ",
-    "Bash: K=\"D:/my_ai_projects/project_test_repos/kernel-minimal\"\nINSTALL=\"D:/my_ai_projec",
-    "Write: prod-test-report.md",
-    "Edit: 286-kernel-test-prodtest-canonical-kernel.md"
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== projects/assa",
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== assay runs IN",
+    "Bash: python - <<'EOF'\nimport os, io, shutil\nSRC = \"C:/Users/solos/my_ai_projects/sr-d",
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"files:\"; ls \"$D/p",
+    "Bash: echo \"########## VENTURE-STUDIO ##########\"\nD=\"C:/Users/solos/my_ai_projects/isa",
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\ngit -C \"$D\" add -A\ngit ",
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\ngit -C \"$D\" pull --reba",
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== conflicted fi",
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\necho \"=== ledger confli",
+    "Bash: D=\"C:/Users/solos/my_ai_projects/isagawa-venture-studio\"\nF=\"$D/.claude/skills/as"
   ],
   "anchor_token_confirmed": true,
   "pending_anchor_token": null,
-  "actions_since_anchor": 0,
   "protocol_hash": "453920fd59c26e32c5c4c0caa72d42b370cf59a07ac8973299992e8db3a40bd5",
-  "protocol_hash_timestamp": "2026-07-23T06:26:00Z",
+  "protocol_hash_timestamp": "2026-08-01T21:23:00Z",
   "compaction_anchor_reason": null,
   "needs_learn": false,
   "needs_learn_reason": null,
@@ -73,12 +72,12 @@
   "pipeline_mode": null,
   "agent_id": null,
   "anchor_ceremony": {
-    "protocol_read_timestamp": "2026-07-23T06:26:00Z",
-    "lessons_read_timestamp": "2026-07-23T06:26:00Z",
-    "actions_reviewed_count": 25,
+    "protocol_read_timestamp": "2026-08-01T21:23:00Z",
+    "lessons_read_timestamp": "2026-08-01T21:23:00Z",
+    "actions_reviewed_count": 32,
     "violations_found": 0,
-    "next_action_stated": "Wire run-task.sh hardening into kernel-minimal (skip_current_task agent_id + verify_completion_write + heartbeat), re-run 270+271 tests, commit+push canonical",
-    "rules_applied": "RULE ZERO verify before act (read both runners before editing); lesson #24 do surgical work in main session not spawned agent; #39 re-run gates live before claiming done; use /kernel/backlog skill for any future backlog (not inline intent.py)",
+    "next_action_stated": "Retry Write of projects/tech-person-business/idea.md, then run /assay on the business idea",
+    "rules_applied": "RULE ZERO verify before act (read assay SKILL/workflow before executing its steps); NEVER USE cd (absolute paths in any assay bash); NEVER SPAWN AGENTS (execute assay inline, not via Agent tool); use /kernel/backlog for any backlog (assay produces verdicts, not backlogs)",
     "ceremony_output_generated": true
   },
   "compaction_timestamp": "2026-07-23T06:23:21.842052+00:00"
